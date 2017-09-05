@@ -1,0 +1,232 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	html {
+		font-size: 8px;
+		/*used for rem-units*/
+	}
+
+	.circle_container {
+		left: -40px;
+		top: -17px;
+		width: 31px;
+		height: 62px;
+	}
+
+	.semi_circle_container {
+		visibility: hidden;
+	}
+
+	.full_circle {
+		border-left: 2px solid rgba(44, 35, 80, 0.5);
+	}
+
+	.headings_section .hammer_big {
+		right: -11%;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	.circle_container {
+		display: none;
+	}
+
+	.advantages_section h2 {
+		margin-bottom: 7%;
+	}
+
+	.advantages_section .adv_item {
+		width: 49%;
+	}
+
+	.advantages_section .adv_item img {
+		top: -2rem;
+		bottom: initial;
+		left: initial;
+		right: 0;
+		margin: 0;
+		width: 7rem;
+		height: auto;
+	}
+
+	.testimonials_section .testim_item {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width : 620px) {
+	.menu_logo_line {
+		height: 5rem;
+		margin-top: 40px;
+	}
+
+	.logo {
+		width: 12rem;
+		height: 12rem;
+	}
+
+	.mobile_menu_btn {
+		display: block;
+	}
+
+	.main_menu {
+		display: none;
+	}
+
+	.yelow_line {
+		height: 5rem;
+	}
+
+	.yellow_line_base,
+	.wide_blue_line,
+	.narrow_blue_line,
+	.persefona {
+		opacity: .5;
+	}
+
+	.description .consult_btn .consult_text {
+		font-size: 1.7rem;
+	}
+
+	.appointment_container {
+		position: relative;
+		top: initial;
+		right: initial;
+		bottom: 0;
+		left: 0;
+		-webkit-justify-content: center;
+		min-height: 7rem;
+		width: 100%;
+		padding-right: 10%;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.appointment_container  .appoint_btn_cont {
+		max-width: 270px;
+	}
+
+	.appointment_container .appoint_text {
+		padding-right: 19%;
+	}
+
+	.appointment_container  .appoint_desc {
+		text-align: center;
+	}
+
+	.testimonials_section .wrapper .testim_item {
+		width: 100%;
+		text-align: left;
+		padding: 2rem;
+	}
+
+	.testimonials_section .wrapper .testim_item .testim_item_bg {
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+	}
+
+	.testimonials_section .wrapper .testim_item .testim_photo {
+		position: static;
+		float: left;
+		width: 13rem;
+		height: 13rem;
+		margin: 0 1.5rem .7rem 0;
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+
+	.footer {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.footer_logo {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		max-width: initial;
+		width: 100%;
+	}
+
+	.footer_logo h3 {
+		max-width: initial;
+		text-align: center;	
+	}
+
+	.mail a {
+		padding: 10px;
+		text-align: center;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	h1,
+	h2 {
+		font-size: 4rem;
+	}
+
+	.menu_text {
+		display: none;
+	}
+
+	.callback .number {
+		font-family: ProximaNovaLight, sans-serif;
+		font-size: 1.8rem;
+	}
+
+	.headings_section h2 span {
+		font-size: 1.8rem;
+	}
+
+	.description .consult_btn {
+		width: 100%;
+	}
+
+	.description .consult_btn .consult_text {
+		font-size: 1.7rem;
+	}
+
+	.h_list {
+		font-size: 1.5rem;
+	}
+
+	.h_list li h3 {
+		padding: 0 5px;
+	}
+
+	.advantages_section .adv_container {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.advantages_section .adv_item {
+		width: calc(100% - 30px);
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+
+}
+

@@ -1,0 +1,56 @@
+.timer {
+	padding: 10px;
+	text-align: center;
+}
+
+.timer-text {
+	font-size: 18px;
+	color: #333;
+}
+
+.timer-time {
+	margin-top: 0.5rem;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.timer-item {
+	position: relative;
+	width: 25%;
+	text-align: center;
+}
+
+.timer-item:after {
+	content: ':';
+	position: absolute;
+	right: -33%;
+	top: 0px;
+	display: block;
+	font-size: 36px;
+	color: #900;
+}
+
+.timer-item:last-child:after {
+	display: none;
+}
+
+.timer-item span {
+	display: block;
+	font-size: 20px;
+}
+
+.timer-item .timer-item__numbers {
+	font-size: 36px;
+	color: #900;
+}
+
+.timer-item .timer-item__units {
+	font-size: 14px;
+	color: #333;
+}
+
+
+
+.

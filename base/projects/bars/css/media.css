@@ -1,0 +1,226 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.features-section>.wrapper.flex {
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+	}
+
+	.options-container,
+	.order-form-button {
+		margin-top: 20px;
+	}
+	
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	html {
+		font-size: 8px;
+	}
+
+	.flex {
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+	}
+
+	.form-section>.wrapper.flex {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.pic-container {
+		text-align: center;
+	}
+	
+	.form-section .rotate img {
+		display: none;
+	}
+
+	label.flex{
+		-webkit-box-pack: start;
+		-webkit-justify-content: flex-start;
+		-ms-flex-pack: start;
+		justify-content: flex-start !important;
+	}
+
+	.specif-container {
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+	}
+
+	.order-form-container  {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.order-form-button:hover,
+	.alt-order-btn:hover {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	.accomp-item-img {
+		margin-bottom: 10px;
+	} 
+
+	.videos {
+		margin-top: 10px;
+	}
+
+	.changes-item:hover {
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	html {
+		font-size: 7px;
+	}
+
+	.form-section .change-price,
+	.features-section .feature {
+		visibility: visible;
+	}
+
+
+	.form-section .pic-container {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.pics-container {
+		margin-bottom: 15px;
+	}
+
+	.changes-item {
+		max-width: 100%;
+	}
+
+	.remain {
+		text-align: center;
+		margin-bottom: 8px;
+	}
+
+	.callback-section>.wrapper {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+
+
+	/*Disable Animation on Mobile Devices*/
+	* {
+		/*CSS transitions*/
+/*		-webkit-transition-property: none !important;
+		-o-transition-property: none !important;
+		transition-property: none !important;*/
+		/*CSS transforms*/
+	/*	-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;*/
+		/*CSS animations*/
+		/*-webkit-animation: none !important;
+		animation: none !important;*/
+	}
+
+}
+
+@media only screen and (max-width : 575px) {
+	header>.wrapper {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	/*Disable Animation on Mobile Devices*/
+	* {
+		/*CSS transitions*/
+/*		-webkit-transition-property: none !important;
+		-o-transition-property: none !important;
+		transition-property: none !important;*/
+		/*CSS transforms*/
+	/*	-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;*/
+		/*CSS animations*/
+		/*-webkit-animation: none !important;
+		animation: none !important;*/
+	}
+
+	header .flex {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.logo {
+		margin-bottom: 1rem;
+	}
+
+	.form-section .rotate {
+		bottom: 3%;
+	}
+
+	.form-section .change-price {
+		bottom: 65%;
+	}
+
+	.pullups-img {
+		min-height: 85vw;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
