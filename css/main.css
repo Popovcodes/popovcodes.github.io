@@ -253,11 +253,12 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
   background: url(../img/bg0.jpg) no-repeat center;
   background-size: cover;
-  -webkit-transition: initial;
-  -o-transition: initial;
-  transition: initial;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 
 .header {
@@ -632,6 +633,12 @@ h2 {
 .buttons > div:hover {
   opacity: 1;
   color: #edf;
+}
+
+.liveInternetCounter {
+  position: absolute;
+  left: -100px;
+  top: -100px;
 }
 
 /*# sourceMappingURL=main.css.map */
