@@ -1,10 +1,8 @@
-// preloader
-$(window).on('load', function(){
-	$('.preloader').fadeOut(300);
-});
 
 $(document).ready(function(){
 
+	$('.preloader').fadeOut(300);
+	
 	$('#slider').slick({
 		infinite: true,
 		slidesToShow: 1,
