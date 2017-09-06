@@ -103,6 +103,19 @@ preloader
 }
 
 /*-------------------------------
+css-animations
+--------------------------------*/
+@-webkit-keyframes light_move {
+	0% {left: -25%;}
+	100% {left: 115%;}
+}
+
+@keyframes light_move {
+	0% {left: -25%;}
+	100% {left: 115%;}
+}
+
+/*-------------------------------
 scss variables & mixins
 --------------------------------*/
 
@@ -113,6 +126,8 @@ $m_font: Scada, sans-serif;
 reset 
 --------------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+
+
 /*-------------------------------
 common styles
 --------------------------------*/
@@ -170,7 +185,7 @@ section {
 .wrapper {
 	position: relative;
 	max-width: 1170px;
-	padding: 3% 15px 1%; /*1140px*/
+	padding: 15px 15px 5px; /*1140px*/
 	margin: 0 auto;
 	height: 100%;
 }
@@ -182,7 +197,6 @@ section {
 
 .about_section {
 	position: relative;
-	min-height: 50vh;
 }
 
 .parallax_bg {
@@ -200,12 +214,11 @@ section {
 }
 
 .header {
-	padding: 3%;
-} /*header*/
+	padding: 15px;
+}
 
 h1, 
 h2 {
-	/*flex-basis: 50px;*/
 	line-height: 100%;
 	text-align: center;
 	text-transform: uppercase;
@@ -234,7 +247,6 @@ h1 {
 
 h2 {
 	font-size: 4.5rem;
-	margin-top: 20px;
 }
 
 .about {
@@ -246,7 +258,7 @@ h2 {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding: 0 1%;
+	padding: 0 5px;
 	margin-bottom: 15px;
 }
 
@@ -276,7 +288,6 @@ h2 {
 		display: block;
 		width: 100%;
 		height: 100%;
-		
 	}
 }
 
@@ -285,7 +296,7 @@ h2 {
 		font-size: 3.5rem;
 		text-transform: uppercase;
 		text-decoration: underline;
-		margin-bottom: 3%;
+		margin-bottom: 10px;
 	}
 }
 
@@ -294,7 +305,7 @@ h2 {
 	-webkit-flex: 1 1 450px;
 	-ms-flex: 1 1 450px;
 	flex: 1 1 450px;
-	padding: 2% 1%;
+	padding: 10px 5px 20px;
 }
 
 .skills_part {
@@ -308,17 +319,18 @@ h2 {
 	-webkit-flex: 1 1 350px;
 	-ms-flex: 1 1 350px;
 	flex: 1 1 350px;
-	padding: 2% 1%;
+	padding: 10px 5px;
 }
 
 .contact_list li {
-	padding: 1%;
+	padding: 5px;
 
 	a {
 		display: inline-block;
 		height: 100%;
 		font-family: $m_font;
 		font-size: 19px;
+		z-index: 1000;
 
 		&:hover,
 		&:active {
@@ -336,7 +348,7 @@ h2 {
 							works_section
 ===========================================*/
 .works_header {
-	margin-bottom: 2%;
+	margin-bottom: 5px;
 }
 
 .grid {
@@ -348,7 +360,7 @@ h2 {
 .portf_item {
 	display: block;
 	min-height: 40vh;
-	margin: 2.5vh;
+	margin: 12px;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1 1 270px;
 	-ms-flex: 1 1 270px;
@@ -449,7 +461,7 @@ h2 {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 2%;
+	padding: 8px;
 	z-index: 9;
 	opacity: 0;
 	-webkit-transition: all .5s .7s;
@@ -477,49 +489,56 @@ h2 {
 		cursor: context-menu;
 	}
 
-	p a {
-		color: #aaf;
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-
 	.accent {
 		text-decoration: underline;
 	}
 }
 
-.portf_item button {
-	display: block;
+.link_container {
 	width: 60%;
+	position: relative;
+	overflow: hidden;
+	margin: 5px 5px 15px;
+}
+
+a.link {
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
 	background: transparent;
 	border: 2px solid $m_color;
 	border-radius: 6px;
-	margin: 1vh 1vh 3vh;
+	
 
 	&:hover,
 	&:active {
 		border: 2px solid #aaf;
-	}
-
-	a {
-		display: block;
-		width: 100%;
-		height: 40px;
-		line-height: 40px;
-		font-size: 20px;
-		text-transform: uppercase;
-
-		&:hover,
-		&:active {
-			color: #aaf;
-		}
+		color: #aaf;
 	}
 }
 
-.portf_item .for_mobile_btn {
+.light {
+	position: absolute;
+	width: 25px;
+	height: 150%;
+	background: linear-gradient(90deg, transparent, #ccf, transparent);
+	transform: rotate(35deg);
+	top: -15%;
+	left: -25%;
+}
+
+.link:hover+.light {
+	animation: light_move .7s .3s;
+}
+
+.portf_item .mob_link {
 	display: none;
+	width: 60%;
+	margin: 5px 5px 15px;
 }
 
 

@@ -83,11 +83,8 @@ function init() {
 
 							infoWindow.setContent(infoContent);
 							infoWindow.open(map, marker);
-
 					 });
-
 				}, timeout);
-
 		}
 
 		
@@ -133,6 +130,4 @@ function init() {
 		google.maps.event.addDomListener(window, 'resize', function() {
 				map.setCenter(getCen);
 		});
-
-
 }

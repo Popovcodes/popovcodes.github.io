@@ -1,6 +1,6 @@
 //preloader
 $(window).on('load', function(){
-	$('.preloader').delay(750).fadeOut(500);
+	$('.preloader').delay(650).fadeOut(300);
 });
 
 $(document).ready(function(){

@@ -1,6 +1,6 @@
 // preloader
 $(window).on('load', function(){
-	$('.preloader').delay(1000).fadeOut(300);
+	$('.preloader').fadeOut(300);
 });
 
 $(document).ready(function(){
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 	$('#js-typed').typed({
 		strings: ["we design"],
-		startDelay: 2000,
+		startDelay: 3000,
 		typeSpeed: 150,
 		showCursor: false,
 	});

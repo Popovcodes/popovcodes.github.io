@@ -9,7 +9,7 @@
 @media only screen and (max-width : 992px) {
 
 	.contact_list li {
-		padding: 3%;
+		padding: 15px 5px;
 	}
 
 	.portf_item {
@@ -42,14 +42,14 @@
 	}
 
 	.item_desc_below,
-	.portf_item .for_mobile_btn {
+	.portf_item .mob_link  {
 		display: block;
 	}
 
 	.desc_text_container p {
 		font-size: 13px;
 		text-align: left;
-		padding: 1.5vh;
+		padding: 7px;
 	}
 
 }

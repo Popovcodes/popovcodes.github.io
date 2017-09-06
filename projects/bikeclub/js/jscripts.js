@@ -8,7 +8,6 @@ $(document).ready(function() {
 // parallax
 $(window).scroll(function(){
   var yPos = $(this).scrollTop();
-  console.log(yPos);
   $('.main-img').css({
     'transform' : 'translate(0%, ' + yPos/2+'px)'
   });
