@@ -11,7 +11,7 @@ $(document).ready(function(){
 		autoplaySpeed: 2000,
 		pauseOnHover: false,
 		arrows: false,
-		dots: true
+		dots: false
 	});
 
 	$('#js-typed').typed({
