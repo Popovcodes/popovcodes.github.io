@@ -5,7 +5,7 @@
 
 $(document).ready(function(){
 
-	$('.preloader').fadeOut(0); //right here, in (document).ready
+	$('.preloader').delay(700).fadeOut(0); //right here, in (document).ready
 
 	if(document.documentElement.clientWidth > 768) {
 		// wow.js animation  http://mynameismatthieu.com/WOW/

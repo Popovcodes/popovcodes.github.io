@@ -487,6 +487,11 @@ h2 {
 		text-align: center;
 		padding: 0;
 		cursor: context-menu;
+
+		a {
+			color: #88f;
+			text-decoration: underline;
+		}
 	}
 
 	.accent {

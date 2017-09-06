@@ -581,6 +581,11 @@ h2 {
   cursor: context-menu;
 }
 
+.desc_text_container p a {
+  color: #88f;
+  text-decoration: underline;
+}
+
 .desc_text_container .accent {
   text-decoration: underline;
 }

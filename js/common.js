@@ -1,16 +1,13 @@
-//preloader
-$(window).on('load', function(){
-	$('.preloader').delay(650).fadeOut(300);
-});
-
 $(document).ready(function(){
+
+	$('.preloader').delay(800).fadeOut(150);
 
 	$(window).scroll(function(){
 		var st = $(this).scrollTop();
 		$('.parallax_bg').css({
-			'-webkit-transform' : 'translate(0%,  '+ st/20 +'%)',
-			'-ms-transform' : 'translate(0%,  '+ st/20 +'%)',
-			'transform' : 'translate(0%,  '+ st/20 +'%)'
+			'-webkit-transform' : 'translate(0%,  '+ st/10 +'%)',
+			'-ms-transform' : 'translate(0%,  '+ st/10 +'%)',
+			'transform' : 'translate(0%,  '+ st/10 +'%)'
 		});
 	});
 });
