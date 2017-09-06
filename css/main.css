@@ -583,6 +583,9 @@ h2 {
 
 .desc_text_container p a {
   color: #88f;
+}
+
+.desc_text_container p a:hover {
   text-decoration: underline;
 }
 

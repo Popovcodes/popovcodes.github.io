@@ -490,7 +490,10 @@ h2 {
 
 		a {
 			color: #88f;
-			text-decoration: underline;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 
