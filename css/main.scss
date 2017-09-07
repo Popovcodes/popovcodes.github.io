@@ -533,13 +533,19 @@ a.link {
 	position: absolute;
 	width: 25px;
 	height: 150%;
+	background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#ccf), to(transparent));
+	background: -webkit-linear-gradient(left, transparent, #ccf, transparent);
+	background: -o-linear-gradient(left, transparent, #ccf, transparent);
 	background: linear-gradient(90deg, transparent, #ccf, transparent);
+	-webkit-transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
 	transform: rotate(35deg);
 	top: -15%;
 	left: -25%;
 }
 
 .link:hover+.light {
+	-webkit-animation: light_move .7s .3s;
 	animation: light_move .7s .3s;
 }
 
