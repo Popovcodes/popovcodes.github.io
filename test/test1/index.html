@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<!-- <link rel="shortcut icon" href="img/favicon/icon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css"> -->
+	<!-- <link rel="stylesheet" href="libs/wow.js/animate.css"> -->
+	<!-- <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+	<!-- <link rel="stylesheet" href="libs/slick-1.6.0/slick/slick.css"> -->
+	<!-- <link rel="stylesheet" href="libs/slick-1.6.0/slick/slick-theme.css"> -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<!-- <script src="libs/modernizr/modernizr.js"></script> -->
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<a href="partscout.me" class="home_ref">partscout<span>.me</span></a>
+			<div class="auth_panel">
+				<a href="#">Sign Up</a>
+				<a href="#">Log In</a>
+			</div>
+			<div class="clear"></div>
+		</div> <!-- /..header -->
+		<!-- <h1>Easy way to find<br>parts you need</h1> -->
+		<div class="step step_1">
+
+			<object type="image/svg+xml" data="img/step1.svg"></object>
+			<form action="" name="requestForm" class="request_form">
+
+				<div class="select_block">
+					<div class="select_container ">
+						<label for="partSelect" class="select_label">Part Name</label>
+						<select name="partSelect" id ="partSelect">
+							<option value="Back bumper">Back bumper</option>
+							<option value="Back bumper">Back bumper</option>
+							<option value="Back bumper Back bumper">Back bumper Back bumper</option>
+						</select>
+						<div class="clear"></div>
+					</div>
+				</div><!-- /. select_block-->
+
+				<div class="checkbox_container manufact_ch">
+					<h4>Part Origin</h4>
+					<input type="checkbox" name="manufacturer" id="manuf_orig" value="manuf_orig" checked>
+					<label  for="manuf_orig">Original</label>
+
+					<input type="checkbox" name="manufacturer" id="manuf_oem" value="manuf_oem">
+					<label for="manuf_oem">OEM</label>
+				</div>
+
+				<div class="checkbox_container newness_ch">
+					<h4>Part Origin</h4>
+					<input type="checkbox" name="newness" id="newness_new" value="new" checked>
+					<label for="newness_new">New</label>
+
+					<input type="checkbox" name="newness" id="newness_used" value="used">
+					<label  for="newness_used">Used</label>
+
+
+					<input type="checkbox" name="newness" id="newness_any" value="any">
+					<label  for="newness_any">Any</label>
+				</div>
+
+				<div class="select_block">
+					<div  class="select_container">
+						<label for="carMake" class="select_label">Car Make</label>
+						<select name="carMake" id="carMake">
+							<option value="Tesla">Tesla</option>
+							<option value="Tesla">Tesla</option>
+							<option value="Tesla">Tesla</option>
+						</select>
+						<div class="clear"></div>
+					</div>
+
+					<div  class="select_container">
+						<label for="carModel" class="select_label">Car Model</label>
+						<select name="carModel" id="carModel">
+							<option value="Model 3">Model 3</option>
+							<option value="Model 3">Model 3</option>
+							<option value="Model 3">Model 3</option>
+						</select>
+						<div class="clear"></div>
+					</div>
+
+					<div  class="select_container">
+						<label for="carYear" class="select_label">Car Year</label>
+						<select name="carYear" id="carYear">
+							<option value="2017">2017</option>
+							<option value="2016">2016</option>
+							<option value="2015">2015</option>
+						</select>
+						<div class="clear"></div>
+					</div>
+				</div> <!-- /.select_block -->
+
+			<div class="text_bloc">
+				<input type="text" placeholder="Your Name *" name="userName" id="user_name" required>
+			</div>
+
+			<div>
+				<input type="email" placeholder="Your Email *" name="userMail" id="user_mail" required>
+			</div>
+
+			<div>
+				<input type="submit" value="Create Request" name="req_btn">
+			</div>
+
+
+			</form> <!-- /.request_form -->
+			<div class="clear"></div>
+		</div> <!-- /.step_1 -->
+		<div class="step_2"></div>
+		<div class="step_3"></div>
+	</div>
+
+	<!-- modals -->
+	<div class="overlay hidden"></div>
+
+	<div class="modal register_modal hidden">
+		<h3>Register</h3>
+		<div class="close_btn">&#10006;</div>
+		<div class="clear"></div>
+		<!-- ===============================  =============================== -->
+		<form action="" name="registerForm" class="register_form">
+			<div>
+				<label for="regMail">Email</label>
+				<input type="email" name="regMail" placeholder="johndoe@gmail.com" required>
+				<div class="clear"></div>
+			</div>
+			<div>
+				<label for="regPassword">Password</label>
+				<input type="password" name="regPassword" required>
+				<div class="clear"></div>
+			</div>
+			<div>
+				<label class="select_label" for="state">State</label>
+				<select name="state" id="state">
+					<option value="California">California</option>
+					<option value="California">California</option>
+					<option value="California">California</option>
+				</select>
+				<div class="clear"></div>
+			</div>
+
+		</form>
+		<!-- ===============================  =============================== -->
+	</div>
+
+
+	<script src="libs/jquery/jquery-3.2.0.min.js"></script>
+	<!-- <script src="js/common.js"></script> -->
+	
+</body>
+</html>
