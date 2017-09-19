@@ -104,7 +104,7 @@ textarea {
 
 .header {
   padding: 1% 0 2%;
-  max-height: 10vh;
+  min-height: 10vh;
 }
 
 .home_ref {
@@ -140,6 +140,7 @@ steps
 ===========================================*/
 .step {
   position: relative;
+  min-height: 90vh;
 }
 
 .step object {
