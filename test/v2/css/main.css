@@ -1,0 +1,460 @@
+/*===========================================
+              reset 
+===========================================*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*===========================================
+              fonts
+===========================================*/
+/*===========================================
+              common styles
+===========================================*/
+body {
+  overflow-x: hidden;
+  background: #E8EAF6;
+  font-family: Raleway, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.clear {
+  width: 0;
+  height: 0;
+  display: block;
+  position: relative;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*===========================================
+detailed styles         
+===========================================*/
+.wrapper {
+  width: 96%;
+  min-height: 100vh;
+  max-width: 1170px;
+  min-width: 320px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 25px;
+  overflow: hidden;
+}
+
+.header {
+  padding: 5px 0 20px;
+  min-height: 10vh;
+}
+
+.home_ref {
+  color: #2B333F;
+  font-size: 30px;
+  font-weight: 600;
+  float: left;
+  letter-spacing: 1px;
+}
+
+.home_ref span {
+  color: #1A8EAE;
+}
+
+.auth_panel {
+  float: right;
+}
+
+.auth_panel a {
+  color: #616161;
+  font-size: 14px;
+  margin-right: 48px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.auth_panel a:last-child {
+  margin-right: 17px;
+}
+
+/*===========================================
+steps (background images)
+===========================================*/
+.bg_container {
+  position: relative;
+  max-width: calc(100% - 260px);
+  min-height: 90vh;
+}
+
+.bg {
+  position: relative;
+  left: -25px;
+  height: 100%;
+  width: 100%;
+}
+
+.step {
+  position: absolute;
+  top: 0;
+  left: -2.8%;
+  width: 100%;
+  z-index: 10;
+}
+
+/*===========================================
+forms and modals common styles
+===========================================*/
+form {
+  padding: 0 20px 15px;
+  margin: 0 0 10px;
+}
+
+form,
+.modal {
+  border-radius: 3px;
+}
+
+label {
+  cursor: pointer;
+}
+
+form h4 {
+  margin-bottom: 20px;
+}
+
+form h4,
+.select_label {
+  color: #1A8EAE;
+  font-size: 13.3px;
+  font-weight: 500;
+}
+
+.select_block {
+  border-bottom: 3px solid #eee;
+  padding: 20px 0 0;
+}
+
+.select_container {
+  padding: 0 0 16px;
+}
+
+select {
+  padding: 5px 12px;
+  height: 41px;
+  width: 73%;
+  min-width: 160px;
+  border: 2px solid #dedede;
+  border-radius: 4px;
+  float: right;
+  outline: none;
+  color: #898989;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none !important;
+  background: url(../img/arrow.jpg) no-repeat;
+  background-position: right center;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select_label {
+  height: 41px;
+  line-height: 41px;
+  cursor: default;
+}
+
+.checkbox_container {
+  padding: 11px 0 17px;
+}
+
+.checkbox_container,
+.select_block {
+  border-bottom: 2px solid #eee;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  color: #898989;
+  margin-right: 12%;
+  padding-left: 29px;
+}
+
+input[type="checkbox"] + label:before {
+  content: ' ';
+  display: inline-block;
+  width: 18px;
+  height: 19px;
+  margin-right: 12px;
+  border: 2px solid #616161;
+  border-radius: 2px;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background: url(../img/checked_sign.jpg) no-repeat;
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  padding: 12px;
+  font-size: 14px;
+  border-bottom: 2px solid #A9C6D5;
+}
+
+::-webkit-input-placeholder {
+  color: #1A8EAE;
+  font-size: 13.3px;
+  font-weight: 500;
+}
+
+::-moz-placeholder {
+  color: #1A8EAE;
+  font-size: 13.3px;
+  font-weight: 500;
+}
+
+:-ms-input-placeholder {
+  color: #1A8EAE;
+  font-size: 13.3px !important;
+}
+
+::placeholder {
+  color: #1A8EAE;
+  font-size: 13.3px;
+  font-weight: 500;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 23px auto 8px;
+  width: 164px;
+  height: 45px;
+  color: #fff;
+  font-size: 16px;
+  background: #1A8EAE;
+  border-radius: 23px;
+  cursor: pointer;
+}
+
+/*===========================================
+request form detalizations styles
+===========================================*/
+form.request_form {
+  position: absolute;
+  top: 10%;
+  right: 2.4%;
+  width: 354px;
+  float: right;
+  -webkit-box-shadow: 0px 0px 20px #555;
+  box-shadow: 0px 0px 20px #555;
+  background: #fff;
+  z-index: 20;
+}
+
+.manufact_ch label:last-of-type {
+  margin-left: 30%;
+}
+
+.newness_ch label:last-of-type {
+  margin-left: 4%;
+}
+
+/*===========================================
+modals (register, login) detalizations styles
+===========================================*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 5, 0.5);
+  z-index: 900;
+}
+
+.modal {
+  padding: 20px;
+  background: #fff;
+  width: 97%;
+  max-width: 440px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 910;
+}
+
+.modal h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #616161;
+  max-width: 90%;
+  float: left;
+  margin-bottom: 42px;
+}
+
+.close_btn {
+  font-size: 18px;
+  color: #FF848E;
+  float: right;
+  max-width: 10%;
+  cursor: pointer;
+}
+
+form.register_form,
+form.auth_form {
+  padding: 0 20px 20px;
+}
+
+form.register_form .password_container,
+form.auth_form .password_container {
+  position: relative;
+}
+
+form.register_form input[type="email"],
+form.register_form input[type="password"],
+form.register_form input[type="text"],
+form.auth_form input[type="email"],
+form.auth_form input[type="password"],
+form.auth_form input[type="text"] {
+  float: right;
+  width: 73%;
+  height: 42px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+form.register_form input[type="email"]:focus,
+form.register_form input[type="password"]:focus,
+form.register_form input[type="text"]:focus,
+form.auth_form input[type="email"]:focus,
+form.auth_form input[type="password"]:focus,
+form.auth_form input[type="text"]:focus {
+  border-bottom: 2px solid #1A8EAE;
+}
+
+form.register_form input[type="password"],
+form.auth_form input[type="password"] {
+  font-size: 16px;
+  color: #898989;
+  letter-spacing: 3px;
+}
+
+form.register_form label,
+form.auth_form label {
+  height: 42px;
+  line-height: 42px;
+  color: #1A8EAE;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+form.register_form ::-webkit-input-placeholder,
+form.auth_form ::-webkit-input-placeholder {
+  color: #898989;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+form.register_form ::-moz-placeholder,
+form.auth_form ::-moz-placeholder {
+  color: #898989;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+form.register_form :-ms-input-placeholder,
+form.auth_form :-ms-input-placeholder {
+  color: #898989;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+form.register_form ::placeholder,
+form.auth_form ::placeholder {
+  color: #898989;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+form.register_form select:focus,
+form.auth_form select:focus {
+  border: 2px solid #1A8EAE;
+}
+
+form.register_form .show_password_btn,
+form.auth_form .show_password_btn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 18px;
+  height: 12px;
+  background: url(../img/eye.jpg) no-repeat;
+  cursor: pointer;
+}
