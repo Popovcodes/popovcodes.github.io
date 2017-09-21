@@ -1,0 +1,460 @@
+/*===========================================
+fonts
+===========================================*/
+	@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800');
+
+	$reg_font: Raleway, sans-serif;
+	$bright_color: #1A8EAE;
+	$light_gray: #eee;
+	$dark_gray: #616161;
+
+/*===========================================
+reset 
+===========================================*/
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, *, *:before, *:after { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+
+/*===========================================
+common styles
+===========================================*/
+	body {
+		background: #E8EAF6;
+		font-family: $reg_font;
+	}
+
+	*,
+	*:before,
+	*:after {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.clear {
+		position: relative;
+		width: 0;
+		height: 0;
+		margin: 0;
+		padding: 0;
+		display: block;
+		
+		clear: both;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+/*===========================================
+detailed styles					
+===========================================*/
+.wrapper {
+	width: 96%;
+	min-height: 100vh;
+	max-width: 1170px;
+	min-width: 768px;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 25px;
+}
+
+.header {
+	padding: 30px 0 20px;
+}
+
+.home_ref {
+	color: #2B333F;
+	font-size: 30px;
+	font-weight: 600;
+	float: left;
+	letter-spacing: 1px;
+
+	span {
+		color: $bright_color;
+	}
+}
+
+.auth_panel {
+	float: right;
+	a {
+		color: $dark_gray;
+		font-size: 14px;
+		margin-right: 48px;
+		height: 30px;
+		line-height: 30px;
+		&:last-child {
+			margin-right: 17px;
+		}
+	}
+}
+
+/*===========================================
+steps (background images)
+===========================================*/
+.bg_container {
+	position: relative;
+	max-width: calc(100% - 260px);
+	min-height: 90vh;
+}
+
+.bg {
+	position: relative;
+	left: -25px;
+	height: 100%;
+	width: 100%;
+}
+
+.step {
+	position: absolute; 
+	top: 0;
+	left: -2.8%;
+	width: 100%;
+	z-index: 10;
+}
+
+/*steps animation start*/													
+.step {
+	transform: scale(0);
+}
+
+.step_1,
+.step_2 {
+	animation: anim 7s;
+}
+
+.step_2 {
+	animation-delay: 7.5s;
+}
+
+.step_3 {
+	animation: anim_stay 1.4s 15s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes anim {
+	0% {transform: scale(0);}
+	20% {transform: none;}
+	80% {transform: none;}
+	100% {transform: scale(0);}
+}
+
+@keyframes anim_stay {
+	0% {transform: scale(0);}
+	100% {transform: none;}
+}
+/*steps animation end*/
+
+/*===========================================
+forms common styles
+===========================================*/
+
+form {
+	padding: 8px 20px;
+	margin: 10px;
+	border-radius: 3px;
+}
+
+
+.options_block {
+	padding: 12px 0 15px;
+	border-bottom: 2px solid $light_gray;
+
+	>div:not(:nth-last-of-type(1)) {
+		margin-bottom: 16px;
+	}
+}
+
+form h4 {
+	margin-bottom: 15px;
+}
+
+form h4,
+label {
+	color: $bright_color;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+label {
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+select { /*change default arrow*/
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none!important;
+	background: url(../img/arrow.jpg) no-repeat;
+	background-position: right center;
+}
+
+select::-ms-expand { /*change default arrow*/
+	display: none;
+}
+
+.select_label {
+	cursor: default;
+}
+
+input[type="radio"] {
+	display: none;
+	&:checked + label:before {
+		background: url(../img/checked_sign.jpg) no-repeat;
+		border: none;
+	}
+}
+
+input[type="radio"]+label {
+	position: relative;
+	display: inline-block;
+	height: 19px;
+	line-height: 19px;
+	font-size: 13px;
+	color: #898989;
+	margin-right: 11%;
+	padding-left: 29px;
+}
+
+input[type="radio"]+label:before {
+	content: ' ';
+	display: inline-block;
+	width: 18px;
+	height: 19px;
+	margin-right: 12px;
+	border: 2px solid $dark_gray;
+	border-radius: 2px;
+	transition: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+select,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	width: 100%;
+	height: 40px;
+	padding: 0 12px;
+	font-size: 14px;
+	border: 2px solid #dedede;
+	border-radius: 4px;
+	color: #898989;
+}
+
+select,
+input[type="text"] {
+	width: 73%;
+	float: right;
+}
+
+::-webkit-input-placeholder {
+	color: $bright_color;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+::-moz-placeholder {
+	color: $bright_color;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+:-ms-input-placeholder {
+	color: $bright_color;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+::placeholder {
+	color: $bright_color;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+input[type="submit"] {
+	display: block;
+	margin: 23px auto 17px;
+	width: 164px;
+	height: 45px;
+	color: #fff;
+	font-size: 16px;
+	background: $bright_color;
+	border-radius: 23px;
+	cursor: pointer;
+}
+
+/*===========================================
+request form detalizations styles
+===========================================*/
+.request_form {
+	position: absolute;
+	top: 10%;
+	right: 2.4%;
+	width: 354px;
+	float: right;
+	box-shadow: 0px 0px 20px #555;
+	background: #fff;
+	z-index: 20;
+}
+
+.origin_block label:last-of-type {
+	margin-left: 30%;
+}
+
+.condition_block label:last-of-type {
+	margin-left: 5%;
+}
+
+.contacts_block {
+	>div {
+		margin-bottom: 8px;
+	}
+
+	>div:last-child {
+		padding-top: 8px;
+	}
+
+	input {
+		float: none;
+		width: 100%;
+		padding: 0;
+		border-radius: 0;
+		border: none;
+		border-bottom: 2px solid #A9C6D5;
+	}
+}
+
+/*===========================================
+modals (register, login) etc. detalizations styles
+===========================================*/
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 5, .5);
+	z-index: 900;
+}
+
+.modal {
+	padding: 20px;
+	background: #fff;
+	width: 97%;
+	max-width: 440px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border-radius: 3px;
+	transform: translate(-50%, -50%);
+	z-index: 910;
+
+	form>div {
+		margin-bottom: 8px;
+	}
+
+	h3 {
+		font-size: 22px;
+		font-weight: 600;
+		color: $dark_gray;
+		max-width: 90%;
+		float: left;
+		margin-bottom: 25px;
+	}
+
+	select {
+		border: none;
+		border-radius: 0;
+		border-bottom: 2px solid $light_gray;
+
+		&:focus {
+			border-bottom: 2px solid $bright_color;
+		}
+	}
+
+	input[type="email"],
+	input[type="password"],
+	input[type="text"] {
+		float: right;
+		width: 73%;
+		border: none;
+		border-radius: 0;
+		border-bottom: 2px solid $light_gray;
+		
+		&:focus {
+			border-bottom: 2px solid $bright_color;
+		}
+	}
+
+	input[type="password"] {
+		font-size: 16px;
+		color: #898989;
+		letter-spacing: 3px;
+	}
+	
+	label {
+		color: $bright_color;
+		font-size: 13px;
+		font-weight: 600;
+	}
+
+	::-webkit-input-placeholder {
+		color: #898989;
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	::-moz-placeholder {
+		color: #898989;
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	:-ms-input-placeholder {
+		color: #898989;
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	::placeholder {
+		color: #898989;
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	select:focus {
+		border-bottom: 2px solid $bright_color;
+	}
+
+	input[type="submit"] {
+		margin: 30px auto 0;
+	}
+
+	.password_container { /*for "show password" btn position*/
+		position: relative;
+	}
+
+	.show_password_btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 18px;
+		height: 100%;
+		background: url(../img/eye.jpg) no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+
+	.close_btn {
+		font-size: 18px;
+		color: #FF848E;
+		float: right;
+		max-width: 10%;
+		cursor: pointer;
+	}
+}

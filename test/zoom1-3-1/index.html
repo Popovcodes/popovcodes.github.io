@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="img/favicon/icon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!-- ============ header start ============ -->
+		<div class="header">
+			<a href="partscout.me" class="home_ref">partscout<span>.me</span></a>
+			<div class="auth_panel">
+				<a href="# " class="signup_btn">Sign Up</a>
+				<a href="#" class="login_btn">Log In</a>
+			</div>
+			<div class="clear"></div>
+		</div> 
+		<!-- ============ header end ============ -->
+	
+		<!-- ============ steps (background changing images) start============ -->
+		<div class="bg_container">
+			<object class="bg" type="image/svg+xml" data="img/bg.svg"></object>
+			<object class="step step_1" type="image/svg+xml" data="img/step1inner.svg"></object>
+			<object class="step step_2" type="image/svg+xml" data="img/step2inner.svg"></object>
+			<object class="step step_3" type="image/svg+xml" data="img/step3inner.svg"></object>
+		</div>
+		<!-- ============ steps (background changing images) end ============ -->
+
+		<!-- ============ request form start (main form) ============ -->
+		<form action="" method="post" name="requestForm" class="request_form">
+
+			<div class="options_block">
+					<label for="partName" class="text_label">Part Name</label>
+					<input type="text" name="partName" id="partName">
+					<div class="clear"></div>
+			</div>
+			
+			<!-- radio origin/OEM -->
+			<div class="options_block origin_block">
+				<h4>Part Origin</h4>
+				<input type="radio" name="origin" id="origin_orig" value="origin" checked>
+				<label  for="origin_orig">Original</label>
+				<input type="radio" name="origin" id="origin_oem" value="oem">
+				<label for="origin_oem">OEM</label>
+			</div>
+
+			<!-- radio new/used/any -->
+			<div class="options_block condition_block">
+				<h4>Part Condition</h4>
+				<input type="radio" name="conditions" id="condition_new" value="new" checked>
+				<label for="condition_new">New</label>
+				<input type="radio" name="conditions" id="conditions_used" value="used">
+				<label  for="conditions_used">Used</label>
+				<input type="radio" name="conditions" id="conditions_any" value="any">
+				<label  for="conditions_any">Any</label>
+			</div>
+
+			
+			<div class="options_block">
+				<!-- select car make -->
+				<div>
+					<label for="carMake">Car Make</label>
+					<select name="carMake" id="carMake">
+						<option value="Tesla">Tesla</option>
+						<option value="Tesla">Tesla</option>
+						<option value="Tesla">Tesla</option>
+					</select>
+					<div class="clear"></div>
+				</div>	
+	
+				<!-- input model -->
+				<div>
+					<label for="model">Car Model</label>
+					<input type="text" name="model" id="model">
+					<div class="clear"></div>
+				</div>
+
+				<!-- select year -->
+				<div>
+					<label for="carYear" class="select_label">Car Year</label>
+					<select name="carYear" id="carYear">
+						<option value="2017">2017</option>
+						<option value="2016">2016</option>
+						<option value="2015">2015</option>
+					</select>
+					<div class="clear"></div>
+				</div>
+			</div> <!-- /.options block -->
+
+			<div class="contacts_block">
+				<div>
+					<input type="text" placeholder="Your Name *" name="userName" id="user_name" required>
+				</div>
+				<div>
+					<input type="email" placeholder="Your Email *" name="userMail" id="user_mail" required>
+				</div>
+				<div>
+					<label class="select_label" for="req_state">State</label>
+					<select name="state" id="req_state">
+						<option value="Alabama">Alabama</option>
+						<option value="Alaska">Alaska</option>
+						<option value="Arizona">Arizona</option>
+						<option value="Arkansas">Arkansas</option>
+						<option value="California">California</option>
+						<option value="Colorado">Colorado</option>
+						<option value="Connecticut">Connecticut</option>
+						<option value="Delaware">Delaware</option>
+						<option value="District of Columbia">District of Columbia</option>
+						<option value="Florida">Florida</option>
+						<option value="Georgia">Georgia</option>
+						<option value="Hawaii">Hawaii</option>
+						<option value="Idaho">Idaho</option>
+						<option value="Illinois">Illinois</option>
+						<option value="Indiana">Indiana</option>
+						<option value="Iowa">Iowa</option>
+						<option value="Kansas">Kansas</option>
+						<option value="Kentucky">Kentucky</option>
+						<option value="Louisiana">Louisiana</option>
+						<option value="Maine">Maine</option>
+						<option value="Maryland">Maryland</option>
+						<option value="Massachusetts">Massachusetts</option>
+						<option value="Michigan">Michigan</option>
+						<option value="Minnesota">Minnesota</option>
+						<option value="Mississippi">Mississippi</option>
+						<option value="Missouri">Missouri</option>
+						<option value="Montana">Montana</option>
+						<option value="Nebraska">Nebraska</option>
+						<option value="Nevada">Nevada</option>
+						<option value="New Hampshire">New Hampshire</option>
+						<option value="New Jersey">New Jersey</option>
+						<option value="New Mexico">New Mexico</option>
+						<option value="New York">New York</option>
+						<option value="North Carolina">North Carolina</option>
+						<option value="North Dakota">North Dakota</option>
+						<option value="Ohio">Ohio</option>
+						<option value="Oklahoma">Oklahoma</option>
+						<option value="Oregon">Oregon</option>
+						<option value="Pennsylvania">Pennsylvania</option>
+						<option value="Rhode Island">Rhode Island</option>
+						<option value="South Carolina">South Carolina</option>
+						<option value="South Dakota">South Dakota</option>
+						<option value="Tennessee">Tennessee</option>
+						<option value="Texas">Texas</option>
+						<option value="Utah">Utah</option>
+						<option value="Vermont">Vermont</option>
+						<option value="Virginia">Virginia</option>
+						<option value="Washington">Washington</option>
+						<option value="West Virginia">West Virginia</option>
+						<option value="Wisconsin">Wisconsin</option>
+						<option value="Wyoming">Wyoming</option>
+					</select>
+					<div class="clear"></div>
+				</div>
+			</div> <!-- /.contacts_block -->
+			
+			<div  class="submit_block">
+				<input type="submit" value="Create Request" name="reqest_btn">
+			</div>
+
+		</form> <!-- /.request_form -->
+		<div class="clear"></div>
+		<!-- ============ request form end ============ -->
+
+
+
+		<!-- ============ modals windows start (hidden initially) ============ -->
+		<div class="hidden overlay"></div>
+
+		<!-- ============ register modal window start ============ -->
+		<div class="hidden modal register_modal">
+			<h3>Register</h3>
+			<div class="close_btn">&#10006;</div>
+			<div class="clear"></div>
+			<form action=""  method="post"  name="registerForm" class="register_form">
+				<div>
+					<label for="regMail">Email</label>
+					<input type="email" name="regMail" id="regMail" placeholder="johndoe@gmail.com" required>
+					<div class="clear"></div>
+				</div>
+				<div  class="password_container">
+					<label for="regPassword">Password</label>
+					<input type="password" name="regPassword" id="regPassword" required>
+					<div class="clear"></div>
+					<div class="show_password_btn"></div>
+				</div>
+				<div>
+					<label class="select_label" for="auth_state">State</label>
+					<select name="state" id="auth_state">
+						<option value="Alabama">Alabama</option>
+						<option value="Alaska">Alaska</option>
+						<option value="Arizona">Arizona</option>
+						<option value="Arkansas">Arkansas</option>
+						<option value="California">California</option>
+						<option value="Colorado">Colorado</option>
+						<option value="Connecticut">Connecticut</option>
+						<option value="Delaware">Delaware</option>
+						<option value="District of Columbia">District of Columbia</option>
+						<option value="Florida">Florida</option>
+						<option value="Georgia">Georgia</option>
+						<option value="Hawaii">Hawaii</option>
+						<option value="Idaho">Idaho</option>
+						<option value="Illinois">Illinois</option>
+						<option value="Indiana">Indiana</option>
+						<option value="Iowa">Iowa</option>
+						<option value="Kansas">Kansas</option>
+						<option value="Kentucky">Kentucky</option>
+						<option value="Louisiana">Louisiana</option>
+						<option value="Maine">Maine</option>
+						<option value="Maryland">Maryland</option>
+						<option value="Massachusetts">Massachusetts</option>
+						<option value="Michigan">Michigan</option>
+						<option value="Minnesota">Minnesota</option>
+						<option value="Mississippi">Mississippi</option>
+						<option value="Missouri">Missouri</option>
+						<option value="Montana">Montana</option>
+						<option value="Nebraska">Nebraska</option>
+						<option value="Nevada">Nevada</option>
+						<option value="New Hampshire">New Hampshire</option>
+						<option value="New Jersey">New Jersey</option>
+						<option value="New Mexico">New Mexico</option>
+						<option value="New York">New York</option>
+						<option value="North Carolina">North Carolina</option>
+						<option value="North Dakota">North Dakota</option>
+						<option value="Ohio">Ohio</option>
+						<option value="Oklahoma">Oklahoma</option>
+						<option value="Oregon">Oregon</option>
+						<option value="Pennsylvania">Pennsylvania</option>
+						<option value="Rhode Island">Rhode Island</option>
+						<option value="South Carolina">South Carolina</option>
+						<option value="South Dakota">South Dakota</option>
+						<option value="Tennessee">Tennessee</option>
+						<option value="Texas">Texas</option>
+						<option value="Utah">Utah</option>
+						<option value="Vermont">Vermont</option>
+						<option value="Virginia">Virginia</option>
+						<option value="Washington">Washington</option>
+						<option value="West Virginia">West Virginia</option>
+						<option value="Wisconsin">Wisconsin</option>
+						<option value="Wyoming">Wyoming</option>
+					</select>
+					<div class="clear"></div>
+				</div>
+				<div>
+					<input type="submit" value="Register">
+				</div>
+			</form>
+		</div>
+		<!-- ============ register modal window end ============ -->
+
+		<!-- ============ authorization modal window start ============ -->
+		<div class="hidden modal auth_modal">
+			<h3>Log In</h3>
+			<div class="close_btn">&#10006;</div>
+			<div class="clear"></div>
+			<form action=""  method="post" name="authForm" class="register_form">
+				<div>
+					<label for="authMail">Email</label>
+					<input type="email" name="authMail" id="authMail" placeholder="johndoe@gmail.com" required>
+					<div class="clear"></div>
+				</div>
+				<div class="password_container">
+					<label for="authPassword">Password</label>
+					<input type="password" name="authPassword" id="authPassword" required>
+					<div class="clear"></div>
+					<div class="show_password_btn"></div>
+				</div>
+				<div>
+					<input type="submit" value="Log In">
+				</div>
+			</form>
+		</div>
+		<!-- ============ authorization modal window end ============ -->
+		<!-- ============ modals windows end ============ -->
+
+	</div> <!-- /.wrapper -->
+
+	<!-- scripts used for: show/hide modal windows; showing password symbols by "eye" button. 
+	Delete or comment if aren't needed -->
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/common.js"></script>
+
+	
+</body>
+</html>
