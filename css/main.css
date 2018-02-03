@@ -160,7 +160,7 @@ css-animations
 scss variables & mixins
 --------------------------------*/
 /*-------------------------------
-reset 
+reset
 --------------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -232,11 +232,9 @@ body {
 }
 
 .flex {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -254,17 +252,31 @@ section {
 .wrapper {
   position: relative;
   max-width: 1170px;
-  padding: 15px 15px 5px;
+  padding: 80px 15px 30px;
   /*1140px*/
   margin: 0 auto;
   height: 100%;
 }
 
 /*===========================================
-						about_section	
+						about_section
 ===========================================*/
 .about_section {
   position: relative;
+  min-height: 100vh;
+}
+
+.about_section .wrapper {
+  min-height: 100vh;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 10vh 0;
 }
 
 .parallax_bg {
@@ -274,7 +286,7 @@ section {
   left: 0;
   right: 0;
   width: 100%;
-  background: url(../img/bg0.jpg) no-repeat center;
+  background: url(../img/bg0.jpg) no-repeat center fixed;
   background-size: cover;
   -webkit-transition: none;
   -o-transition: none;
@@ -283,6 +295,8 @@ section {
 
 .header {
   padding: 15px;
+  width: 100%;
+  text-align: center;
 }
 
 h1,
@@ -308,7 +322,6 @@ h1:after {
   bottom: -15px;
   width: 100%;
   height: 10px;
-  background: -webkit-radial-gradient(50% 50%, #edf, transparent);
   background: -o-radial-gradient(50% 50%, #edf, transparent);
   background: radial-gradient(50% 50%, #edf, transparent);
 }
@@ -319,11 +332,9 @@ h2 {
 
 .about {
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 0 5px;
@@ -332,7 +343,6 @@ h2 {
 
 .desc {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 400px;
   -ms-flex: 1 1 400px;
   flex: 1 1 400px;
   font-size: 18px;
@@ -342,7 +352,6 @@ h2 {
 .photo {
   width: 150px;
   height: 150px;
-  -webkit-flex-basis: 150px;
   -ms-flex-preferred-size: 150px;
   flex-basis: 150px;
   background: url(../img/photo.jpg) no-repeat;
@@ -367,10 +376,9 @@ h2 {
 }
 
 .skills {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 450px;
-  -ms-flex: 1 1 450px;
-  flex: 1 1 450px;
+  -webkit-box-flex: 6;
+  -ms-flex: 6 1 450px;
+  flex: 6 1 450px;
   padding: 10px 5px 20px;
 }
 
@@ -382,7 +390,6 @@ h2 {
 
 .contacts {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 350px;
   -ms-flex: 1 1 350px;
   flex: 1 1 350px;
   padding: 10px 5px;
@@ -413,11 +420,10 @@ h2 {
 							works_section
 ===========================================*/
 .works_header {
-  margin-bottom: 5px;
+  margin-bottom: 50px;
 }
 
 .grid {
-  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
@@ -427,7 +433,6 @@ h2 {
   min-height: 40vh;
   margin: 12px;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 270px;
   -ms-flex: 1 1 270px;
   flex: 1 1 270px;
   -webkit-box-shadow: 0px 0px 15px 2px #85f;
@@ -497,6 +502,10 @@ h2 {
   background-image: url(../img/baxter_prev.jpg);
 }
 
+.shopy .item_preview {
+  background-image: url(../img/shopy_prev.jpg);
+}
+
 .newyear .item_preview {
   background-image: url(../img/newyear_prev.jpg);
 }
@@ -513,9 +522,9 @@ h2 {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  -webkit-transition: all 1.2s .4s;
-  -o-transition: all 1.2s .4s;
-  transition: all 1.2s .4s;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
 }
 
 .curtain_1 {
@@ -541,33 +550,28 @@ h2 {
   height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 8px;
   z-index: 9;
   opacity: 0;
-  -webkit-transition: all .5s .7s;
-  -o-transition: all .5s .7s;
-  transition: all .5s .7s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .desc_text_container {
   width: 100%;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
@@ -622,13 +626,6 @@ a.link:hover, a.link:active {
   position: absolute;
   width: 25px;
   height: 150%;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#ccf), to(transparent));
-  background: -webkit-linear-gradient(left, transparent, #ccf, transparent);
-  background: -o-linear-gradient(left, transparent, #ccf, transparent);
-  background: linear-gradient(90deg, transparent, #ccf, transparent);
-  -webkit-transform: rotate(35deg);
-  -ms-transform: rotate(35deg);
-  transform: rotate(35deg);
   top: -15%;
   left: -25%;
 }
@@ -650,10 +647,8 @@ a.link:hover, a.link:active {
 
 .footer {
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: -webkit-radial-gradient(50% 50%, #85f, #01000A 80%, #01000A);
   background: -o-radial-gradient(50% 50%, #85f, #01000A 80%, #01000A);
   background: radial-gradient(50% 50%, #85f, #01000A 80%, #01000A);
   padding: 12px;
