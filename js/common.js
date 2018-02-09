@@ -1,13 +1,32 @@
 $(document).ready(function(){
 
-	$('.preloader').fadeOut(150);
+  // page scroll
+    $("a[rel='Scroll2id']").mPageScroll2id({
+    	offset: 35
+    });
 
-	$(window).scroll(function(){
-		var st = $(this).scrollTop();
-		// $('.parallax_bg').css({
-		// 	'-webkit-transform' : 'translate(0%,  '+ st/10 +'%)',
-		// 	'-ms-transform' : 'translate(0%,  '+ st/10 +'%)',
-		// 	'transform' : 'translate(0%,  '+ st/10 +'%)'
-		// });
-	});
+  //sticky_menu
+	var stickyFunc = function(){
+
+			if($(this).scrollTop() > 200) {
+				$('.desktop_nav a').css({"padding": "5px 30px"});
+			} else {
+				$('.desktop_nav a').css({"padding": "20px 30px"});
+			}
+
+	}
+	stickyFunc();
+	$(window).scroll(stickyFunc).resize(stickyFunc);
+
+  // show / hide mob menu
+  $('.mob_nav_btn, .mob_nav a, .overlay, .mob_close_btn' ).click(function(){
+      $('.mob_nav_container').toggleClass('active');
+      $('.overlay').toggleClass('hidden')
+  });
+
+  if(document.documentElement.clientWidth > 768) {
+  		// wow.js animation  http://mynameismatthieu.com/WOW/
+  		new WOW().init();
+  	};
+
 });
