@@ -1,0 +1,183 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 1140px) {
+
+	html {
+		font-size: 9px;
+	}
+
+	.wrapper {
+		padding:  3.5rem 1.5rem !important;
+	}
+
+	.subscribe-section {
+		height: 20vh;
+	}
+
+	.works-section .row1 {
+		margin-bottom: 2.6rem;
+	}
+
+	.works-section .row2 {
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+
+		margin-bottom: 2.2rem;
+	}
+
+	.testimonials-section {
+		padding: 3rem 0;
+	}
+
+	.testimonials-section .ava {
+		margin-bottom: 2rem;
+	}
+
+	.team-section ul.flex {
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+
+		margin-bottom: 1.5rem;
+	}
+
+	.team-section ul.flex li {
+		-webkit-filter: none;
+		filter: none;
+		height: 450px;
+	}
+
+
+	.team-section ul.flex li  a.photo {
+		background-size: contain !important;
+	}
+
+	.team-section ul.flex li  a.photo {
+		width: 80%;
+		height: 80%;
+		border-bottom: 0;
+	}
+
+	.team-section ul li h3,
+	.team-section ul li .social,
+	.team-section ul li p {
+		opacity: 1;
+	}
+
+	.team-section h4 {
+		margin: 0 auto 0.5rem;
+	}
+
+	.contact-section h4 {
+		margin-bottom: 3rem;
+	}
+
+	.contact-section .form-container {
+		margin: 0 auto;
+	}
+
+	.contact-section .form-container input[type="submit"],
+	 {
+		margin-bottom: 2rem;
+	}
+
+	.contact-section .form-container .social-bar {
+		margin-bottom: 0;
+	}
+
+
+	footer {
+		padding: 1rem 0 0;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.contact-section input[type="submit"]{
+		margin: 0 auto 3rem;
+		opacity: 1 !important;
+	}
+
+	.works-section .row2 .display-on-hover  {
+		opacity: 0.8;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Disable Animation on Mobile Devices*/
+	* {
+		/*CSS transitions*/
+		transition-property: none !important;
+		/*CSS transforms*/
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		animation: none !important;
+	}
+
+	.contact-section .form-container input[type="email"],
+	.contact-section .form-container input[type="text"] {
+		width: 100%;
+	}
+
+
+
+	.social-bar {
+		width: 100%;
+		text-align: center;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.header-btns a {
+		width: 100%;
+		margin: 10px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

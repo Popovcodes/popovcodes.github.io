@@ -819,6 +819,15 @@ nav {
 }
 
 @media only screen and (max-width: 1024px) {
+  .header .wrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .desktop_nav a {
+    font-size: 14px;
+  }
   .work_item_bg {
     display: none;
   }
@@ -842,7 +851,7 @@ nav {
             flex-basis: 100%;
   }
   .shopy_wrapper {
-    display: none;
+    display: none !important;
   }
 }
 

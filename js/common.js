@@ -13,7 +13,6 @@ $(document).ready(function(){
 			} else {
 				$('.desktop_nav a').css({"padding": "20px 30px"});
 			}
-
 	}
 	stickyFunc();
 	$(window).scroll(stickyFunc).resize(stickyFunc);
