@@ -206,7 +206,7 @@ section {
 }
 
 .header a:hover, .header a.active {
-  background: #493fc8;
+  background: #645AE3;
 }
 
 .header a.active {
@@ -229,7 +229,7 @@ section {
 }
 
 .nav_link:hover, .nav_link.active {
-  background: #493fc8;
+  background: #645AE3;
 }
 
 .nav_link.active {
@@ -321,7 +321,7 @@ nav {
   top: 0;
   left: -320px;
   bottom: 0;
-  background: #493fc8;
+  background: #645AE3;
   padding: 5vh 10vh;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;

@@ -29,4 +29,9 @@ $(document).ready(function(){
   		new WOW().init();
   	};
 
+  $('.nav_link').click(function(){
+    $('.nav_link').removeClass('active');
+    $(this).addClass('active');
+  });
+
 });
