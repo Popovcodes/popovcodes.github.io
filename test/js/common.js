@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('nav ul').hide();
+	$('nav ul').slideUp();
   $('nav h4').click(function(){
     $(this).next().slideToggle();
     $(this).toggleClass('active');
