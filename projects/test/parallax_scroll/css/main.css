@@ -167,7 +167,7 @@ section {
 }
 
 
-.header_text p {
+.header_text  {
   transition: transform .5s cubic-bezier(.17,.67,.41,5.01);
 }
 
