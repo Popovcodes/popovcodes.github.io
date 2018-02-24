@@ -217,11 +217,11 @@ h6 {
   margin: 0 auto;
 }
 
-.img-texture {
+.slide-item__texture {
   position: relative;
 }
 
-.img-texture:after {
+.slide-item__texture:after {
   content: "";
   display: block;
   position: absolute;
@@ -465,7 +465,7 @@ h6 {
 .nav-links a {
   position: relative;
   font-size: 17px;
-  display: block;
+  display: inline-block;
   font-family: "rodchenkoctt", "Arial Black", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -487,6 +487,10 @@ h6 {
 
 .nav-links a:hover:before, .nav-links a:active:before, .nav-links a.active:before {
   width: 100%;
+}
+
+.mobile-nav .nav-links a:before {
+  background: #fff;
 }
 
 /*mobile menu button*/
@@ -571,6 +575,7 @@ h6 {
   right: 20px;
   color: #fff;
   font-size: 36px;
+  cursor: pointer;
 }
 
 .mobile-contacts {

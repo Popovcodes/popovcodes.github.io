@@ -25,4 +25,14 @@ $(document).ready(function(){
     $('#next').click(function(){
       $('#js-main-slider').slick('slickNext');
     });
+
+
+    //decoration of current link in navigation
+    $('.nav-links a').each(function(){
+        var location = window.location.href;
+        var link = this.href
+        if(location == link) {
+          $(this).addClass('active');
+        }
+      });
  });
