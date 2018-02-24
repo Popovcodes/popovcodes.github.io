@@ -6,28 +6,12 @@ $(document).ready(function(){
     $('#js-main-slider').slick({
       infinite: true,
       slidesToShow: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
       speed: 3000,
       arrows: false,
       dots: false,
-      // responsive: [
-      //   {
-      //     breakpoint: 620,
-      //     settings: {
-      //       rows: 2
-      //     }
-      //   },
-      //   {
-      //     breakpoint: 480,
-      //     settings: {
-      //       rows: 1,
-      //       autoplay: false,
-      //     }
-      //   }
-      // ]
     });
-
 
     $('#prev').click(function(){
       $('#js-main-slider').slick('slickPrev');
