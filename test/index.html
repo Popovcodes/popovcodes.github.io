@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="ru-RU">
-<!--<![endif]-->
 
   <head>
     <meta charset="utf-8">
@@ -15,84 +10,90 @@
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-    <!-- <link rel="stylesheet" type="text/css" href="css/libs.min.css"> -->
-    <link rel="stylesheet" href="libs/slick-1.6.0/slick/slick.css">
-    <!-- <link rel="stylesheet" href="libs/slick-1.6.0/slick/slick-theme.css"> -->
+    <link rel="stylesheet" href="libs/slick-1.6.0/slick.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Motogarage USSR</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
+
+    <!-- =========================== header =========================== -->
     <header class="header">
         <div class="header-slider__container">
+
             <div class="main-slider" id="js-main-slider">
+
                 <div class="slide-item">
                     <div class="img-texture">
                         <img src="img/mainSlider/slide1.jpg" alt="slide image">
                     </div>
-                </div>
+                </div><!-- /.slide-item -->
 
                 <div class="slide-item">
                     <div class="img-texture">
                         <img src="img/mainSlider/slide2.jpg" alt="slide image">
                     </div>
-                </div>
+                </div><!-- /.slide-item -->
 
             </div><!-- /.main-slider -->
         </div><!-- /.header-slider__container -->
 
-        <div class="wrapper header-content flex">
+        <div class="header-content">
+            <div class="wrapper flex">
+                <div class="header-top__contacts flex">
+                    <ul class="header-social">
+                        <li>
+                            <a href="javascript:void(0);" class="header-social__link--tw"></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="header-social__link--ig"></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="header-social__link--fb"></a>
+                        </li>
+                    </ul>
 
-            <div class="header-top__contacts flex">
-                <ul class="header-social">
-                    <li>
-                        <a href="javascript:void(0);" class="header-social__link--tw"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="header-social__link--ig"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="header-social__link--fb"></a>
-                    </li>
-                </ul>
-                <ul class="header-contacts flex">
-                    <li><a href="javascript:void(0);" class="header-contacts__link--map decorated">Торжок, ул. Торжок 23</a></li>
-                    <li><a href="tel: +89215553434" class="header-contacts__link--phone decorated">8(921)555-34-34</a></li>
-                    <li><a href="mailto: mail@mail.ru" class="header-contacts__link--mail decorated">mail@mail.ru</a></li>
-                </ul>
-            </div><!-- /.header-top__contacts -->
-            
+                    <ul class="header-contacts flex">
+                        <li><a href="javascript:void(0);" class="header-contacts__link--map decorated">Торжок, ул. Торжок 23</a></li>
+                        <li><a href="tel: +89215553434" class="header-contacts__link--phone decorated">8(921)555-34-34</a></li>
+                        <li><a href="mailto: mail@mail.ru" class="header-contacts__link--mail decorated">mail@mail.ru</a></li>
+                    </ul>
+                </div><!-- /.header-top__contacts -->
 
-            <nav class="header-nav flex">
-                <ul class="header-nav__links flex">
-                    <li>
-                        <a href="index.html">главная</a>
-                    </li>
-                    <li>
-                        <a href="works.html">наши работы</a>
-                    </li>
-                    <li>
-                        <a href="services.html">услуги</a>
-                    </li>
-                </ul>
-                <div class="header-logo">
-                    <img src="img/Logo.png" alt="" class="logo">
-                </div>
-                <ul class="header-nav__links flex">
-                    <li>
-                        <a href="about.html">о компании</a>
-                    </li>
-                    <li>
-                        <a href="video.html">видео</a>
-                    </li>
-                    <li>
-                        <a href="actions.html">акции</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">контакты</a>
-                    </li>
-                </ul>
-            </nav>
+                <nav class="header-nav flex">
+                    <ul class="nav-links flex">
+                        <li>
+                            <a href="index.html">главная</a>
+                        </li>
+                        <li>
+                            <a href="works.html">наши работы</a>
+                        </li>
+                        <li>
+                            <a href="services.html">услуги</a>
+                        </li>
+                    </ul>
+                    <div class="header-logo">
+                        <img src="img/Logo.png" alt="" class="logo">
+                    </div>
+                    <ul class="nav-links flex">
+                        <li>
+                            <a href="about.html">о компании</a>
+                        </li>
+                        <li>
+                            <a href="video.html">видео</a>
+                        </li>
+                        <li>
+                            <a href="actions.html">акции</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- /.wrapper -->
         </div><!-- /.header-content -->
+
+            
         
         <div class="slider-controls">
             <div class="wrapper flex">
@@ -100,9 +101,57 @@
                 <div class="next" id="next"></div>
             </div>
         </div>
-    </header>
 
-    <section class="services">
+        <div class="mob-nav__btn">
+            <span></span>
+        </div>
+
+        <nav class="mobile-nav flex">
+            
+            <div class="mobile-nav__close">&#10006;</div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">главная</a>
+                </li>
+                <li>
+                    <a href="works.html">наши работы</a>
+                </li>
+                <li>
+                    <a href="services.html">услуги</a>
+                </li>
+                <li>
+                    <a href="about.html">о компании</a>
+                </li>
+                <li>
+                    <a href="video.html">видео</a>
+                </li>
+                <li>
+                    <a href="actions.html">акции</a>
+                </li>
+                <li>
+                    <a href="contacts.html">контакты</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-contacts">
+                <li>
+                    <a href="tel: +89215553434" class="mobile-contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="mobile-contacts__link--map decorated">Торжок, ул. Торжок 23</a>
+                </li>
+                <li>
+                    <a href="mailto: mail@mail.ru" class="mobile-contacts__link--mail decorated">mail@mail.ru</a>
+                </li>
+            </ul> <!-- /.mobile-contacts -->
+        </nav>
+
+    </header><!-- /.header -->
+
+        
+    <!-- ===========================  services list section =========================== -->
+    <section class="services-section">
         <div class="wrapper">
             <div class="services-list flex">
                 <div class="service-item powder-painting">
@@ -187,18 +236,22 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section><!-- /.services list section -->
 
+    
+<!-- ===========================  banner section =========================== -->
     <section class="banner-section flex">
         <div class="wrapper flex">
             <div class="banner-content flex">
                 <h2>Порошковая покраска автодисков</h2>
-                <p>в день обращения за 10.000 руб.</p>
-                <a href="servicePage.html" class="button banner-button">подробнее</a>
+                <p>в день обращения за&nbsp;10.000&nbsp;руб.</p>
+                <a href="servicePage.html" class="button  button-light banner-button">подробнее</a>
             </div>
-            <img src="img/wheel.png" class="banner-img">
+            <div class="banner-img__container">
+                <img src="img/wheel.png" class="banner-img">
+            </div>
          </div>
-    </section>
+    </section><!-- /. banner section -->
 
     
 <!-- =========================== news section =========================== -->
@@ -222,7 +275,9 @@
                 <ul class="news-list">
 
                     <li class="news-item flex">
-                        <img src="img/newsPreviews/newsImg-1.jpg" alt="news preview">
+                        <div class="news-img">
+                            <img src="img/newsPreviews/newsImg-1.jpg" alt="news preview">
+                        </div>
                         <div class="news-content">
                             <h3>Новость про то что все хорошо и надо</h3>
                             <p>При облучении инфракрасным лазером среда растягивает вихревой кристалл.</p>
@@ -231,7 +286,9 @@
                     </li><!-- /.news-item -->
 
                     <li class="news-item flex">
-                        <img src="img/newsPreviews/newsImg-2.jpg" alt="news preview">
+                        <div class="news-img">
+                            <img src="img/newsPreviews/newsImg-2.jpg" alt="news preview">
+                        </div>
                         <div class="news-content">
                             <h3>Новость про то что все хорошо и надо</h3>
                             <p>При облучении инфракрасным лазером среда растягивает вихревой кристалл.</p>
@@ -240,7 +297,9 @@
                     </li><!-- /.news-item -->
 
                     <li class="news-item flex">
-                        <img src="img/newsPreviews/newsImg-3.jpg" alt="news preview">
+                        <div class="news-img">
+                            <img src="img/newsPreviews/newsImg-3.jpg" alt="news preview">
+                        </div>
                         <div class="news-content">
                             <h3>Новость про то что все хорошо и надо</h3>
                             <p>При облучении инфракрасным лазером среда растягивает вихревой кристалл.</p>
@@ -253,7 +312,6 @@
     </section><!-- /.news-section -->
 
 
-        
     <!-- =========================== map section =========================== -->
     <section class="map-section">
         <div class="map" id="map"></div>
@@ -319,17 +377,35 @@
                         <a href="javascript:void(0);" class="footer-social__link--fb"></a>
                     </li>
                 </ul>
-                <p class="copy">МотогаражСССР<span>&copy;</span>2018, Все права защищены</p>
+                <p class="copy">МотогаражСССР<span>&copy;</span>2018, Все&nbsp;права&nbsp;защищены</p>
                 <span class="empty"></span>
             </div><!-- /.footer-bottom -->
         </div>
     </footer>
 
-    
+    <div class="overlay hidden"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="libs/slick-1.6.0/slick/slick.js"></script>
-<!--     <script src="js/libs.min.js"></script> -->
+    <script src="libs/slick-1.6.0/slick.min.js"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+        function init(){
+            myMap = new ymaps.Map("map", {
+                center: [57.041338, 34.960140],
+                zoom: 15,
+                controls: ['zoomControl', 'geolocationControl']
+            });
+            myPlacemark = new ymaps.Placemark([57.041338, 34.960140], { 
+                hintContent: 'Москва!', 
+                balloonContent: 'Столица России' 
+            });
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+        }
+    </script>
+
     <script src="js/common.js"></script>
 
   </body>

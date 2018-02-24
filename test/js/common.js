@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  // show / hide mob menu
+    $('.mob-nav__btn, .mobile-nav a, .overlay, .mobile-nav__close' ).click(function(){
+        $('.mobile-nav').toggleClass('active');
+        $('.overlay').toggleClass('hidden')
+    });
 
 
   // slick.js slider   http://kenwheeler.github.io/slick/
@@ -20,24 +25,4 @@ $(document).ready(function(){
     $('#next').click(function(){
       $('#js-main-slider').slick('slickNext');
     });
-
-
-    // yandex map settings https://tech.yandex.ru/maps/jsbox/2.1
-    ymaps.ready(function () {
-        var myMap = new ymaps.Map('map', {
-                center: [57.041338, 34.960140],
-                zoom: 15,
-                // Также доступны наборы 'default' и 'largeMapDefaultSet'
-                // Элементы управления в наборах подобраны оптимальным образом
-                // для карт маленького, среднего и крупного размеров.
-                controls: ['zoomControl', 'searchControl']
-            }, {
-                searchControlProvider: 'yandex#search'
-            });
-        });
-
-  if(document.documentElement.clientWidth > 768) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    // new WOW().init();
-  };
-});
+ });
