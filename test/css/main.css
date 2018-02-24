@@ -1081,6 +1081,7 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-bottom: 8px;
+  padding-top: 0;
 }
 
 .footer-nav__links a:after {
