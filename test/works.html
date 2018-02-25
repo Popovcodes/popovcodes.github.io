@@ -20,21 +20,9 @@
     <!-- =========================== header =========================== -->
     <header class="header">
         <div class="header-slider__container">
-
             <div class="main-slider" id="js-main-slider">
-
-                <div class="slide-item">
-                    <div class="slide-item__texture">
-                        <img src="img/mainSlider/slide1.jpg" alt="slide image">
-                    </div>
-                </div><!-- /.slide-item -->
-
-                <div class="slide-item">
-                    <div class="slide-item__texture">
-                        <img src="img/mainSlider/slide2.jpg" alt="slide image">
-                    </div>
-                </div><!-- /.slide-item -->
-
+                <img src="img/mainSlider/slide1.jpg" alt="slide image" class="slide-item">
+                <img src="img/mainSlider/slide2.jpg" alt="slide image" class="slide-item">
             </div><!-- /.main-slider -->
         </div><!-- /.header-slider__container -->
 
@@ -329,7 +317,8 @@
         // select styling https://github.com/FormstoneClassic/Selecter; https://formstone.it/components/dropdown/
         $("#make").selecter({
           label: 'Mарка автомобиля',
-          customClass: 'car-make-select'
+          customClass: 'car-make-select',
+          native: true
         });
 
         $("#work-type").selecter({
