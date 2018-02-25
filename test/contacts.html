@@ -11,7 +11,6 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
     <link rel="stylesheet" href="libs/slick-1.6.0/slick.css">
-    <link rel="stylesheet" href="libs/selecter/jquery.fs.selecter.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Motogarage USSR</title>
   </head>
@@ -134,10 +133,10 @@
 
             <ul class="mobile-contacts">
                 <li>
-                    <a href="tel: +89215553434" class="mobile-contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
+                    <a href="javascript:void(0);" class="mobile-contacts__link--map decorated">Торжок, ул. Торжок 23</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" class="mobile-contacts__link--map decorated">Торжок, ул. Торжок 23</a>
+                    <a href="tel: +89215553434" class="mobile-contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
                 </li>
                 <li>
                     <a href="mailto: mail@mail.ru" class="mobile-contacts__link--mail decorated">mail@mail.ru</a>
@@ -148,109 +147,43 @@
     </header><!-- /.header -->
 
         
-    <!-- ===========================  works list section =========================== -->
-    <section class="works-section">
+    <!-- ===========================  contacts form section =========================== -->
+    <section class="contacts-section">
         <div class="wrapper">
 
-            <div class="heading works-heading flex">
-                <h2>Наши работы</h2>
-                <form action="" class="select-container flex">
-                    <select name="make" id="make">
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="lorem">Lorem ipsum dolor sit amet</option>
-                    </select>
-                    <select name="work-type" id="work-type">
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="lorem">Lorem ipsum dolor sit amet</option>
-                    </select>
+            <div class="heading flex">
+                <h2>Свяжитесь с нами</h2>
+                <ul class="contacts-list flex">
+                    <li>
+                        <a href="javascript:void(0);" class="contacts__link--map decorated">Торжок, ул.&nbsp;Торжок&nbsp;23</a>
+                    </li>
+                    <li>
+                        <a href="tel: +89215553434" class="contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
+                    </li>
+                    <li>
+                        <a href="mailto: mail@mail.ru" class="contacts__link--mail decorated">mail@mail.ru</a>
+                    </li>
+                </ul>
+            </div><!-- /.heading -->
+            <div class="form-container">
+                <form action="" class="contacts-form flex" id="contacts-form" method="GET">
+                    <input type="text" placeholder="Имя" name="username" required>
+                    <input type="email"  placeholder="Электронная почта"  name="email" required>
+                    <input type="phone" placeholder="Телефон" name="phone">
+                    <input type="text" placeholder="Марка автомобиля" name="car">
+                    <textarea name="" id="" placeholder="Сообщение" name="message"></textarea>
+                    <input type="submit" value="отправить" class="button button-bright">
                 </form>
-            </div><!-- /.works-heading -->
+            </div>
+            
             
 
-            <div class="works-list flex">
-
-                <div class="works-item powder-painting">
-                    <h3>Порошковая покраска</h3>
-                    <div class="description">
-                        <h3>Порошковая покраска</h3>
-                        <p>Движимое имущество, если рассматривать процессы в рамках астно-правовой теории, защищает депозитный субъект, именно такой позиции придерживается арбитражная практика.</p>
-                        <a href="work1.html">Гипер ссылка</a>
-                    </div>
-                </div>
-
-                <div class="works-item immersion-print">
-                    <h3>Иммерсионная печать</h3>
-                    <div class="description">
-                        <h3>Иммерсионная печать</h3>
-                        <p>Движимое имущество, если рассматривать процессы в рамках астно-правовой теории, защищает депозитный субъект, именно такой позиции придерживается арбитражная практика.</p>
-                        <a href="work1.html">Гипер ссылка</a>
-                    </div>
-                </div>
-
-                <div class="works-item chemical-metallization">
-                    <h3>Химическая металлизация</h3>
-                    <div class="description">
-                        <h3>Химическая металлизация</h3>
-                        <p>Движимое имущество, если рассматривать процессы в рамках астно-правовой теории, защищает депозитный субъект, именно такой позиции придерживается арбитражная практика.</p>
-                        <a href="work1.html">Гипер ссылка</a>
-                    </div>
-                </div>
-
-                <div class="works-item sandblasting">
-                    <h3>Пескоструйная обработка</h3>
-                    <div class="description">
-                        <h3>Пескоструйная обработка</h3>
-                        <p>Движимое имущество, если рассматривать процессы в рамках астно-правовой теории, защищает депозитный субъект, именно такой позиции придерживается арбитражная практика.</p>
-                        <a href="work1.html">Гипер ссылка</a>
-                    </div>
-                </div>
-
-                <div class="works-item shot-blasting">
-                    <h3>Дробеструйная обработка</h3>
-                    <div class="description">
-                        <h3>Дробеструйная обработка</h3>
-                        <p>Движимое имущество, если рассматривать процессы в рамках астно-правовой теории, защищает депозитный субъект, именно такой позиции придерживается арбитражная практика.</p>
-                        <a href="work1.html">Гипер ссылка</a>
-                    </div>
-                </div>
-
-                <div class="works-item spraygun-painting">
-                    <h3>Покраска краскопультом</h3>
-                    <div class="description">
-                        <h3>Покраска краскопультом</h3>
-                        <p>Движимое имущество, если рассматривать процессы в рамках астно-правовой теории, защищает депозитный субъект, именно такой позиции придерживается арбитражная практика.</p>
-                        <a href="work1.html">Гипер ссылка</a>
-                    </div>
-                </div>
-
-                <div class="works-item candy-painting">
-                    <h3>Кэнди покраска</h3>
-                    <div class="description">
-                        <h3>Кэнди покраска</h3>
-                        <p>Движимое имущество, если рассматривать процессы в рамках астно-правовой теории, защищает депозитный субъект, именно такой позиции придерживается арбитражная практика.</p>
-                        <a href="work1.html">Гипер ссылка</a>
-                    </div>
-                </div>
-
-                <div class="works-item aerography">
-                    <h3>Аэрография</h3>
-                    <div class="description">
-                        <h3>Аэрография</h3>
-                        <p>Движимое имущество, если рассматривать процессы в рамках астно-правовой теории, защищает депозитный субъект, именно такой позиции придерживается арбитражная практика.</p>
-                        <a href="work1.html">Гипер ссылка</a>
-                    </div>
-                </div>
-
-                <div class="loading-button">
-                    <button class="button button-bright" id="load-more">Загрузить еще</button>
-                </div>
-            </div><!-- /.works-list -->
         </div><!-- /.wrapper -->
-    </section><!-- /.services list section -->
+    </section><!-- /.contacts section -->
+
+    <section class="map-section">
+        <div class="map" id="map"></div>
+    </section> <!-- /.map-section -->
 
 
         
@@ -274,7 +207,7 @@
                             <a href="services.html">услуги</a>
                         </li>
                     </ul>
-                    <ul class="footer-nav__links">
+                    <ul class="nav-links footer-nav__links">
                         <li>
                             <a href="about.html">о компании</a>
                         </li>
@@ -324,18 +257,21 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="libs/slick-1.6.0/slick.min.js"></script>
-    <script src="libs/selecter/jquery.fs.selecter.min.js"></script>
-    <script>
-        // select styling https://github.com/FormstoneClassic/Selecter; https://formstone.it/components/dropdown/
-        $("#make").selecter({
-          label: 'Mарка автомобиля',
-          customClass: 'car-make-select'
-        });
-
-        $("#work-type").selecter({
-          label: 'Вид работ',
-          customClass: 'work-type-select'
-        });
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+        function init(){
+            myMap = new ymaps.Map("map", {
+                center: [57.041338, 34.960140],
+                zoom: 15,
+                controls: ['zoomControl', 'geolocationControl']
+            });
+            myPlacemark = new ymaps.Placemark([57.041338, 34.960140], {});
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable(['scrollZoom', 'drag']);
+        }
     </script>
     <script src="js/common.js"></script>
 

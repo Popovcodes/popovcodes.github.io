@@ -318,7 +318,7 @@
     <!-- ===========================  footer =========================== -->
     <footer class="footer">
         <div class="wrapper">
-            <div class="footer-top flex qqqr">
+            <div class="footer-top flex">
                 <div class="footer-logo">
                     <img src="img/Logo.png" alt="logo" class="logo">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
@@ -363,7 +363,7 @@
                 </ul>
             </div><!-- /.footer-top -->
 
-            <div class="footer-bottom flex qqqr">
+            <div class="footer-bottom flex">
                 <ul class="footer-social">
                     <li>
                         <a href="javascript:void(0);" class="footer-social__link--tw"></a>
@@ -383,8 +383,8 @@
 
     <div class="overlay hidden"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="libs/slick-1.6.0/slick.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript">
       ymaps.ready(init);
         var myMap,
@@ -395,12 +395,9 @@
                 zoom: 15,
                 controls: ['zoomControl', 'geolocationControl']
             });
-            myPlacemark = new ymaps.Placemark([57.041338, 34.960140], { 
-                hintContent: 'Москва!', 
-                balloonContent: 'Столица России' 
-            });
+            myPlacemark = new ymaps.Placemark([57.041338, 34.960140], {});
             myMap.geoObjects.add(myPlacemark);
-            myMap.behaviors.disable('scrollZoom');
+            myMap.behaviors.disable(['scrollZoom', 'drag']);
         }
     </script>
 
