@@ -160,7 +160,6 @@ section {
 }
 
 .wrapper {
-  outline: 1px solid cyan;
   position: relative;
   width: 96%;
   max-width: 1110px;
@@ -1384,7 +1383,6 @@ h3 {
 }
 
 .contacts-list {
-  outline: 1px solid red;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: end;
@@ -1463,7 +1461,6 @@ h3 {
 }
 
 form {
-  outline: 1px solid red;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
