@@ -821,25 +821,10 @@ h3 {
   padding: 0;
   background-image: url(../img/bannerBg.jpg);
   background-repeat: repeat;
-}
-
-.banner-section:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: #fd322b;
-  opacity: .85;
+  background-position: 50% 50%;
 }
 
 .banner-section .wrapper {
-  position: relative;
-  z-index: 2;
   height: 100vh;
   min-height: 370px;
   max-height: 645px;
@@ -852,8 +837,6 @@ h3 {
 
 .banner-content {
   max-width: 540px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   position: relative;
   z-index: 3;
   color: #fff;
@@ -870,20 +853,6 @@ h3 {
 .banner-content p {
   font-size: 18px;
   margin-bottom: 11%;
-}
-
-.banner-img__container {
-  position: absolute;
-  bottom: 118px;
-  right: -50px;
-  width: 67%;
-  height: 67%;
-  z-index: -1;
-}
-
-.banner-img {
-  position: absolute;
-  width: 100%;
 }
 
 /*------------------------------ news section ------------------------------*/
@@ -1089,9 +1058,6 @@ h3 {
 }
 
 .footer-nav__links {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   padding: 0 10px;
   max-width: 190px;
 }
@@ -1475,6 +1441,143 @@ input[type="submit"] {
   margin: 0 auto;
 }
 
+/*------------------------------ actions ------------------------------*/
+.action-info-section {
+  padding-top: 3%;
+}
+
+.action-info-section p {
+  font-size: 16px;
+}
+
+.actions-heading {
+  text-align: center;
+  margin: 8.7% 0 2%;
+}
+
+.action-banner-section {
+  padding: 2% 0;
+}
+
+.action-banner-section .wrapper {
+  background-image: url(../img/bannerBg.jpg);
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  height: 100vh;
+  min-height: 255px;
+  max-height: 355px;
+  overflow: hidden;
+}
+
+.action-banner-section .wrapper p {
+  line-height: 1.2;
+}
+
+.action-banner-section .banner-content {
+  max-width: 635px;
+  padding-top: 5.5%;
+  padding-left: 8%;
+}
+
+.action-banner-section h2 {
+  margin-bottom: 2%;
+}
+
+.action-banner-section p {
+  margin-bottom: 7%;
+}
+
+.action-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 13px;
+}
+
+.action-presentation {
+  text-align: center;
+  max-width: 85%;
+  margin: 0 auto 5.6%;
+}
+
+.action-details {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 3.5%;
+}
+
+.action-details__text,
+.action-details__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 410px;
+          flex: 1 1 410px;
+}
+
+.action-details__text {
+  margin-right: 10px;
+}
+
+.action-details__img {
+  padding-top: 5px;
+  margin-left: 10px;
+}
+
+.action-details__img img {
+  width: 100%;
+}
+
+/*------------------------------ end actions ------------------------------*/
+/*------------------------------ prides ------------------------------*/
+.prides-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.prides-container h2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 320px;
+          flex: 1 0 320px;
+}
+
+.prides-list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 730px;
+          flex: 1 1 730px;
+}
+
+.prides-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 300px;
+          flex: 1 0 300px;
+}
+
+.prides-img {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #fd322b;
+  margin-top: 5px;
+  margin-right: 8%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.prides-text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 255px;
+          flex: 0 1 255px;
+}
+
+/*------------------------------ end prides ------------------------------*/
+/*------------------------------ gallery ------------------------------*/
+.gallery-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*------------------------------ end gallery ------------------------------*/
 /* ==================== Media queries ======================= */
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -1557,6 +1660,9 @@ input[type="submit"] {
     line-height: 30px;
     max-width: 100%;
   }
+  .action-details__img {
+    margin: 0;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -1611,7 +1717,7 @@ input[type="submit"] {
   .footer-contacts {
     max-width: 100%;
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
   .footer-bottom {
     -ms-flex-wrap: wrap;
@@ -1667,6 +1773,12 @@ input[type="submit"] {
   input[type="phone"] {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .banner-content {
+    padding-left: 5%;
+  }
+  .banner-content h2 {
+    font-size: 45px;
   }
 }
 
