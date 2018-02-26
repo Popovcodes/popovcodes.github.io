@@ -1,0 +1,13 @@
+/* ==================== fonts ======================= */
+@font-face {
+  font-family: "PT-moto";
+  src: url("../fonts/pt-mono_allfont_ru.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "rodchenkoctt";
+  src: url("../fonts/rodchenkoctt_allfont_ru.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/*# sourceMappingURL=_fonts.css.map */

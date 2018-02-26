@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="img/favicon/icon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -42,8 +42,8 @@
 
                     <ul class="header-contacts flex">
                         <li><a href="javascript:void(0);" class="header-contacts__link--map decorated">Торжок, ул. Торжок 23</a></li>
-                        <li><a href="tel: +89215553434" class="header-contacts__link--phone decorated">8(921)555-34-34</a></li>
-                        <li><a href="mailto: mail@mail.ru" class="header-contacts__link--mail decorated">mail@mail.ru</a></li>
+                        <li><a href="tel:+89215553434" class="header-contacts__link--phone decorated">8(921)555-34-34</a></li>
+                        <li><a href="mailto:mail@mail.ru" class="header-contacts__link--mail decorated">mail@mail.ru</a></li>
                     </ul>
                 </div><!-- /.header-top__contacts -->
 
@@ -124,10 +124,10 @@
                     <a href="javascript:void(0);" class="mobile-contacts__link--map decorated">Торжок, ул. Торжок 23</a>
                 </li>
                 <li>
-                    <a href="tel: +89215553434" class="mobile-contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
+                    <a href="tel:+89215553434" class="mobile-contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
                 </li>
                 <li>
-                    <a href="mailto: mail@mail.ru" class="mobile-contacts__link--mail decorated">mail@mail.ru</a>
+                    <a href="mailto:mail@mail.ru" class="mobile-contacts__link--mail decorated">mail@mail.ru</a>
                 </li>
             </ul> <!-- /.mobile-contacts -->
         </nav>
@@ -146,15 +146,15 @@
                         <a href="javascript:void(0);" class="contacts__link--map decorated">Торжок, ул.&nbsp;Торжок&nbsp;23</a>
                     </li>
                     <li>
-                        <a href="tel: +89215553434" class="contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
+                        <a href="tel:+89215553434" class="contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
                     </li>
                     <li>
-                        <a href="mailto: mail@mail.ru" class="contacts__link--mail decorated">mail@mail.ru</a>
+                        <a href="mailto:mail@mail.ru" class="contacts__link--mail decorated">mail@mail.ru</a>
                     </li>
                 </ul>
             </div><!-- /.heading -->
             <div class="form-container">
-                <form action="" class="contacts-form flex" id="contacts-form" method="GET">
+                <form action="action.php" class="contacts-form flex" id="contacts-form" method="GET">
                     <input type="text" placeholder="Имя" name="username" required>
                     <input type="email"  placeholder="Электронная почта"  name="email" required>
                     <input type="phone" placeholder="Телефон" name="phone">
@@ -212,13 +212,13 @@
                 </nav>
                 <ul class="footer-contacts">
                     <li>
-                        <a href="tel: +89215553434" class="footer-contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
+                        <a href="tel:+89215553434" class="footer-contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="footer-contacts__link--map decorated">Торжок, ул. Торжок 23</a>
                     </li>
                     <li>
-                        <a href="mailto: mail@mail.ru" class="footer-contacts__link--mail decorated">mail@mail.ru</a>
+                        <a href="mailto:mail@mail.ru" class="footer-contacts__link--mail decorated">mail@mail.ru</a>
                     </li>
                 </ul>
             </div><!-- /.footer-top -->
@@ -235,7 +235,7 @@
                         <a href="javascript:void(0);" class="footer-social__link--fb"></a>
                     </li>
                 </ul>
-                <p class="copy">МотогаражСССР<span>&copy;</span>2018, Все&nbsp;права&nbsp;защищены</p>
+                <p class="copy">МотогаражСССР<span>&copy;</span>2018<span class="footer-copy__comma">, </span>Все&nbsp;права&nbsp;защищены</p>
                 <span class="empty"></span>
             </div><!-- /.footer-bottom -->
         </div>
@@ -245,8 +245,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="libs/slick-1.6.0/slick.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" ></script>
+    <script >
       ymaps.ready(init);
         var myMap,
             myPlacemark;
