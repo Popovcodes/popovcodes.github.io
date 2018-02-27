@@ -11,7 +11,7 @@ $(document).ready(function(){
     $('#js-main-slider').slick({
       infinite: true,
       slidesToShow: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
       speed: 3000,
       arrows: false,
