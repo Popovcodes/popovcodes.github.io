@@ -21,6 +21,15 @@ ol, ul {
   list-style: none;
 }
 
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -1464,7 +1473,7 @@ form {
 
 input[type="text"],
 input[type="email"],
-input[type="phone"],
+input[type="tel"],
 textarea {
   border: 1px solid #000000;
   padding: 14px 25px;
@@ -1476,14 +1485,14 @@ textarea {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="phone"]:focus,
+input[type="tel"]:focus,
 textarea:focus {
   border: 1px solid #fd322b;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="phone"] {
+input[type="tel"] {
   -ms-flex-preferred-size: 48.6%;
       flex-basis: 48.6%;
   max-width: 48.6%;
@@ -1923,7 +1932,7 @@ input[type="submit"] {
   /*contacts form*/
   input[type="text"],
   input[type="email"],
-  input[type="phone"],
+  input[type="tel"],
   textarea {
     margin-bottom: 15px;
   }
@@ -2030,7 +2039,7 @@ input[type="submit"] {
   /*contacts form*/
   input[type="text"],
   input[type="email"],
-  input[type="phone"] {
+  input[type="tel"] {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     width: 100%;
@@ -2056,5 +2065,3 @@ input[type="submit"] {
     height: 100px;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
