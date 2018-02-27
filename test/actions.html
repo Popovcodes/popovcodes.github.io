@@ -41,9 +41,9 @@
                     </ul>
 
                     <ul class="header-contacts flex">
-                        <li><a href="javascript:void(0);" class="header-contacts__link--map decorated">Торжок, ул. Торжок 23</a></li>
-                        <li><a href="tel:+89215553434" class="header-contacts__link--phone decorated">8(921)555-34-34</a></li>
-                        <li><a href="mailto:mail@mail.ru" class="header-contacts__link--mail decorated">mail@mail.ru</a></li>
+                        <li><a href="javascript:void(0);" class="header-contacts__link--map">Торжок, ул. Торжок 23</a></li>
+                        <li><a href="tel:+89215553434" class="header-contacts__link--phone">8(921)555-34-34</a></li>
+                        <li><a href="mailto:mail@mail.ru" class="header-contacts__link--mail">mail@mail.ru</a></li>
                     </ul>
                 </div><!-- /.header-top__contacts -->
 
@@ -121,13 +121,13 @@
 
             <ul class="mobile-contacts">
                 <li>
-                    <a href="tel:+89215553434" class="mobile-contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
+                    <a href="tel:+89215553434" class="mobile-contacts__link--phone">8&nbsp;921&nbsp;555-34-34</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" class="mobile-contacts__link--map decorated">Торжок, ул. Торжок 23</a>
+                    <a href="javascript:void(0);" class="mobile-contacts__link--map">Торжок, ул. Торжок 23</a>
                 </li>
                 <li>
-                    <a href="mailto:mail@mail.ru" class="mobile-contacts__link--mail decorated">mail@mail.ru</a>
+                    <a href="mailto:mail@mail.ru" class="mobile-contacts__link--mail">mail@mail.ru</a>
                 </li>
             </ul> <!-- /.mobile-contacts -->
         </nav>
@@ -137,8 +137,8 @@
         <h2 class="actions-heading">Акции</h2>
     </div>
 
-<!-- ===========================  banner section =========================== -->
-    <section class="action-banner-section">
+    <!-- ===========================  banner section =========================== -->
+    <section class="banner-section__actions">
         <div class="wrapper">
             <div class="banner-content">
                 <h2>Порошковая покраска автодисков</h2>
@@ -147,10 +147,7 @@
          </div>
     </section><!-- /. banner section -->
 
-    
-    
-<!-- =========================== actions section =========================== -->
-    
+    <!-- =========================== actions section =========================== -->
     <section class="action-info-section">
         <div class="wrapper">
             <h3 class="action-title">Название акции и ее условия</h3>
@@ -166,12 +163,12 @@
                 </div>
             </div><!-- /.action-details -->
             <div class="form-container">
-                <form action="action.php" class="contacts-form flex" id="contacts-form" method="GET">
+                <form action="action.php" class="contacts-form flex" id="contacts-form" method="POST">
                     <input type="text" placeholder="Имя" name="username" required>
                     <input type="email"  placeholder="Электронная почта"  name="email" required>
-                    <input type="phone" placeholder="Телефон" name="phone">
+                    <input type="tel" placeholder="Телефон" name="phone">
                     <input type="text" placeholder="Марка автомобиля" name="car">
-                    <textarea name="" id="" placeholder="Сообщение" name="message"></textarea>
+                    <textarea placeholder="Сообщение" name="message"></textarea>
                     <input type="submit" value="участвовать" class="button button-bright">
                 </form>
             </div><!-- /.form-container -->
@@ -179,12 +176,7 @@
      </section><!-- /.actions-section -->
 
 
-    
-
-
-
-
-<!-- ===========================  footer =========================== -->
+    <!-- ===========================  footer =========================== -->
     <footer class="footer">
         <div class="wrapper">
             <div class="footer-top flex">
@@ -221,13 +213,13 @@
                 </nav>
                 <ul class="footer-contacts">
                     <li>
-                        <a href="tel:+89215553434" class="footer-contacts__link--phone decorated">8&nbsp;921&nbsp;555-34-34</a>
+                        <a href="tel:+89215553434" class="footer-contacts__link--phone">8&nbsp;921&nbsp;555-34-34</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="footer-contacts__link--map decorated">Торжок, ул. Торжок 23</a>
+                        <a href="javascript:void(0);" class="footer-contacts__link--map">Торжок, ул. Торжок 23</a>
                     </li>
                     <li>
-                        <a href="mailto:mail@mail.ru" class="footer-contacts__link--mail decorated">mail@mail.ru</a>
+                        <a href="mailto:mail@mail.ru" class="footer-contacts__link--mail">mail@mail.ru</a>
                     </li>
                 </ul>
             </div><!-- /.footer-top -->
@@ -244,8 +236,8 @@
                         <a href="javascript:void(0);" class="footer-social__link--fb"></a>
                     </li>
                 </ul>
-                <p class="copy">МотогаражСССР<span>&copy;</span>2018<span class="footer-copy__comma">, </span>Все&nbsp;права&nbsp;защищены</p>
-                <span class="empty"></span>
+                <p class="copy">МотогаражСССР<span>&copy;</span>2018, Все&nbsp;права&nbsp;защищены</p>
+                
             </div><!-- /.footer-bottom -->
         </div>
     </footer>
