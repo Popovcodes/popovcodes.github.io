@@ -1806,6 +1806,9 @@ input[type="submit"] {
   .news-section:after {
     opacity: .4;
   }
+  .about-button {
+    margin-bottom: 5%;
+  }
   /*video*/
   .video-description {
     padding-top: 1%;
@@ -2065,3 +2068,5 @@ input[type="submit"] {
     height: 100px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
