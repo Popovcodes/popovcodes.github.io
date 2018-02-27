@@ -35,6 +35,10 @@
     margin-top: 3%; }
 
   /*news section*/
+  .about-img {
+    flex-basis: 100%;
+    margin-top: 6%; }
+
   .news-section:after {
     opacity: .4; }
 
@@ -116,9 +120,13 @@
   h2 {
     font-size: 30px; }
 
+  /*action banner section*/
   /*news section*/
   .news-item {
     flex-wrap: wrap; }
+
+  .news-section:after {
+    background-image: url(../img/newspapers-sm.jpg); }
 
   /*works and services img galleries*/
   .service-item {
@@ -126,6 +134,9 @@
 
   .col-3-container .item {
     max-width: 49%; }
+
+  .about-calculate {
+    flex-wrap: wrap; }
 
   /*footer*/
   .footer-nav,
@@ -185,7 +196,10 @@
   input[type="text"],
   input[type="email"],
   input[type="phone"] {
-    flex-basis: 100%; }
+    flex-basis: 100%;
+    width: 100%;
+    /*for IE10, 11 fix*/
+    max-width: 100%; }
 
   /*action banner*/
   .banner-content {
