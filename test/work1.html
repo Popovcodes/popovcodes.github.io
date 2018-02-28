@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
     <link rel="stylesheet" href="libs/slick-1.6.0/slick.css">
+    <link rel="stylesheet" href="libs/Magnific-Popup/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Работа 1</title>
   </head>
@@ -163,55 +164,55 @@
             <div class="col-3-container flex">
 
                 <div class="item">
-                    <a href="img/gallery-thumb.jpg" class="gallery-item__link">
+                    <a href="img/gallery-thumb.jpg" class="js-gallery-img">
                         <img src="img/gallery-thumb.jpg" alt="gallery thumb">
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="img/gallery-thumb.jpg" class="gallery-item__link">
+                    <a href="img/gallery-thumb2.jpg" class="js-gallery-img">
+                        <img src="img/gallery-thumb2.jpg" alt="gallery thumb">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="img/gallery-thumb.jpg" class="js-gallery-img">
                         <img src="img/gallery-thumb.jpg" alt="gallery thumb">
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="img/gallery-thumb.jpg" class="gallery-item__link">
+                    <a href="img/gallery-thumb2.jpg" class="js-gallery-img">
+                        <img src="img/gallery-thumb2.jpg" alt="gallery thumb">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="img/gallery-thumb.jpg" class="js-gallery-img">
                         <img src="img/gallery-thumb.jpg" alt="gallery thumb">
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="img/gallery-thumb.jpg" class="gallery-item__link">
+                    <a href="img/gallery-thumb2.jpg" class="js-gallery-img">
+                        <img src="img/gallery-thumb2.jpg" alt="gallery thumb">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="img/gallery-thumb.jpg" class="js-gallery-img">
                         <img src="img/gallery-thumb.jpg" alt="gallery thumb">
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="img/gallery-thumb.jpg" class="gallery-item__link">
-                        <img src="img/gallery-thumb.jpg" alt="gallery thumb">
+                    <a href="img/gallery-thumb2.jpg" class="js-gallery-img">
+                        <img src="img/gallery-thumb2.jpg" alt="gallery thumb">
                     </a>
                 </div>
 
                 <div class="item">
-                    <a href="img/gallery-thumb.jpg" class="gallery-item__link">
-                        <img src="img/gallery-thumb.jpg" alt="gallery thumb">
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="img/gallery-thumb.jpg" class="gallery-item__link">
-                        <img src="img/gallery-thumb.jpg" alt="gallery thumb">
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="img/gallery-thumb.jpg" class="gallery-item__link">
-                        <img src="img/gallery-thumb.jpg" alt="gallery thumb">
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="img/gallery-thumb.jpg" class="gallery-item__link">
+                    <a href="img/gallery-thumb.jpg" class="js-gallery-img">
                         <img src="img/gallery-thumb.jpg" alt="gallery thumb">
                     </a>
                 </div>
@@ -330,7 +331,20 @@
     <div class="overlay hidden"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="libs/slick-1.6.0/slick.min.js"></script>
-
+    <script src="libs/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //gallery  http://dimsemenov.com/plugins/magnific-popup/documentation.html  
+            $('.js-gallery-img').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+                    removalDelay: 300,
+                    mainClass: 'mfp-fade'
+            });
+        });
+    </script>
     <script src="js/common.js"></script>
 
   </body>

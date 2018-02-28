@@ -418,25 +418,26 @@
     <script src="libs/slick-1.6.0/slick.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" ></script>
     <script>
-        //news text expanding
-        $('.js-read-more').click(function(e){
-          e.preventDefault();
-          var $this = $(this),
+        $(document).ready(function(){
+            //news text expanding
+            $('.js-read-more').click(function(e){
+                e.preventDefault();
+                var $this = $(this),
                 text = $this.text();
-
-          if(text == "развернуть") {
-            $this.text("свернуть").addClass("expanded");
-          } else {
-            $this.text("развернуть").removeClass("expanded");
-          }
-          $this.prev(".news-text").toggleClass("compact");
+                $this.prev(".news-text").toggleClass("compact");
+                if(text == "развернуть") {
+                    $this.text("свернуть").addClass("expanded");
+                } else {
+                    $this.text("развернуть").removeClass("expanded");
+                }
+            });
         });
     </script>
     <script >
-    //yandex map
-      ymaps.ready(init);
+        //yandex map
+        ymaps.ready(init);
         var myMap,
-            myPlacemark;
+        myPlacemark;
         function init(){
             myMap = new ymaps.Map("map", {
                 center: [57.041338, 34.960140],
