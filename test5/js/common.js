@@ -28,7 +28,15 @@ $(document).ready(function(){
         speed: 1000,
         arrows: false,
         dots: false,
-        fade: true
+        fade: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              autoplay: false
+            }
+          }  
+        ]
       });
 
       $('#slider-prev_category').click(function(){
@@ -53,7 +61,7 @@ $(document).ready(function(){
           {
             breakpoint: 768,
             settings: {
-              autoplay: false,
+              autoplay: false
             }
           }  
         ]
@@ -111,7 +119,7 @@ $(document).ready(function(){
           {
             breakpoint: 768,
             settings: {
-              autoplay: false,
+              autoplay: false
             }
           }  
         ]
@@ -198,7 +206,7 @@ $(document).ready(function(){
 
         if (insuranceSectionVisible > 0) {
           $('.coin-1').css({"transform":  "translate(0%, "+ -insuranceSectionVisible/1 +"px)"});
-          $('.coin-2').css({"transform":  "translate(0%, "+ -insuranceSectionVisible/5+"px)"});
+          $('.coin-2').css({"transform":  "translate(0%, "+ -insuranceSectionVisible/3+"px)"});
           $('.coin-3').css({"transform":  "translate(0%, "+ -insuranceSectionVisible/21+"px)"});
         } else {};
 
@@ -206,10 +214,8 @@ $(document).ready(function(){
       $(window).scroll(parallax);
     };
 
-    if(document.documentElement.clientWidth > 768) {
+    if(document.documentElement.clientWidth > 992) {
       // wow.js animation  http://mynameismatthieu.com/WOW/
       new WOW().init();
     };
-
-
 });

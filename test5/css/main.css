@@ -549,6 +549,7 @@ input[type="submit"] {
   bottom: 0;
   left: -320px;
   width: 320px;
+  height: 100vh;
   padding: 10vh 20px;
   background: rgba(51, 51, 51, 0.9);
   color: #fff;
@@ -556,7 +557,7 @@ input[type="submit"] {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .sidebar-navigation_container.active {
@@ -595,8 +596,6 @@ input[type="submit"] {
   background-size: contain;
   background-repeat: repeat-x;
   background-position: 0 0;
-  -webkit-animation: ruler 40s linear infinite;
-          animation: ruler 40s linear infinite;
 }
 
 @-webkit-keyframes ruler {
@@ -1815,86 +1814,6 @@ sup {
   transition: color .4s;
 }
 
-.step-item:nth-child(1) .step-num_value {
-  -webkit-animation: textColorBright 12s 3s linear infinite;
-          animation: textColorBright 12s 3s linear infinite;
-}
-
-.step-item:nth-child(1) .step-num_name {
-  -webkit-animation: textColorDark 12s 3s linear infinite;
-          animation: textColorDark 12s 3s linear infinite;
-}
-
-.step-item:nth-child(1) .step-text {
-  -webkit-animation: textColorMain 12s 3s linear infinite;
-          animation: textColorMain 12s 3s linear infinite;
-}
-
-.step-item:nth-child(1):after {
-  -webkit-animation: stepsBg 12s 3s linear infinite;
-          animation: stepsBg 12s 3s linear infinite;
-}
-
-.step-item:nth-child(2) .step-num_value {
-  -webkit-animation: textColorBright 12s 6s linear infinite;
-          animation: textColorBright 12s 6s linear infinite;
-}
-
-.step-item:nth-child(2) .step-num_name {
-  -webkit-animation: textColorDark 12s 6s linear infinite;
-          animation: textColorDark 12s 6s linear infinite;
-}
-
-.step-item:nth-child(2) .step-text {
-  -webkit-animation: textColorMain 12s 6s linear infinite;
-          animation: textColorMain 12s 6s linear infinite;
-}
-
-.step-item:nth-child(2):after {
-  -webkit-animation: stepsBg 12s 6s linear infinite;
-          animation: stepsBg 12s 6s linear infinite;
-}
-
-.step-item:nth-child(3) .step-num_value {
-  -webkit-animation: textColorBright 12s 9s linear infinite;
-          animation: textColorBright 12s 9s linear infinite;
-}
-
-.step-item:nth-child(3) .step-num_name {
-  -webkit-animation: textColorDark 12s 9s linear infinite;
-          animation: textColorDark 12s 9s linear infinite;
-}
-
-.step-item:nth-child(3) .step-text {
-  -webkit-animation: textColorMain 12s 9s linear infinite;
-          animation: textColorMain 12s 9s linear infinite;
-}
-
-.step-item:nth-child(3):after {
-  -webkit-animation: stepsBg 12s 9s linear infinite;
-          animation: stepsBg 12s 9s linear infinite;
-}
-
-.step-item:nth-child(4) .step-num_value {
-  -webkit-animation: textColorBright 12s 12s linear infinite;
-          animation: textColorBright 12s 12s linear infinite;
-}
-
-.step-item:nth-child(4) .step-num_name {
-  -webkit-animation: textColorDark 12s 12s linear infinite;
-          animation: textColorDark 12s 12s linear infinite;
-}
-
-.step-item:nth-child(4) .step-text {
-  -webkit-animation: textColorMain 12s 12s linear infinite;
-          animation: textColorMain 12s 12s linear infinite;
-}
-
-.step-item:nth-child(4):after {
-  -webkit-animation: stepsBg 12s 12s linear infinite;
-          animation: stepsBg 12s 12s linear infinite;
-}
-
 @-webkit-keyframes stepsBg {
   0% {
     left: -100%;
@@ -2756,6 +2675,78 @@ nav a:hover, nav a:active {
 @media only screen and (max-width: 320px) {
   .table-container {
     width: 288px !important;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .calculator-section {
+    -webkit-animation: ruler 40s linear infinite;
+            animation: ruler 40s linear infinite;
+  }
+  .step-item:nth-child(1) .step-num_value {
+    -webkit-animation: textColorBright 12s 3s linear infinite;
+            animation: textColorBright 12s 3s linear infinite;
+  }
+  .step-item:nth-child(1) .step-num_name {
+    -webkit-animation: textColorDark 12s 3s linear infinite;
+            animation: textColorDark 12s 3s linear infinite;
+  }
+  .step-item:nth-child(1) .step-text {
+    -webkit-animation: textColorMain 12s 3s linear infinite;
+            animation: textColorMain 12s 3s linear infinite;
+  }
+  .step-item:nth-child(1):after {
+    -webkit-animation: stepsBg 12s 3s linear infinite;
+            animation: stepsBg 12s 3s linear infinite;
+  }
+  .step-item:nth-child(2) .step-num_value {
+    -webkit-animation: textColorBright 12s 6s linear infinite;
+            animation: textColorBright 12s 6s linear infinite;
+  }
+  .step-item:nth-child(2) .step-num_name {
+    -webkit-animation: textColorDark 12s 6s linear infinite;
+            animation: textColorDark 12s 6s linear infinite;
+  }
+  .step-item:nth-child(2) .step-text {
+    -webkit-animation: textColorMain 12s 6s linear infinite;
+            animation: textColorMain 12s 6s linear infinite;
+  }
+  .step-item:nth-child(2):after {
+    -webkit-animation: stepsBg 12s 6s linear infinite;
+            animation: stepsBg 12s 6s linear infinite;
+  }
+  .step-item:nth-child(3) .step-num_value {
+    -webkit-animation: textColorBright 12s 9s linear infinite;
+            animation: textColorBright 12s 9s linear infinite;
+  }
+  .step-item:nth-child(3) .step-num_name {
+    -webkit-animation: textColorDark 12s 9s linear infinite;
+            animation: textColorDark 12s 9s linear infinite;
+  }
+  .step-item:nth-child(3) .step-text {
+    -webkit-animation: textColorMain 12s 9s linear infinite;
+            animation: textColorMain 12s 9s linear infinite;
+  }
+  .step-item:nth-child(3):after {
+    -webkit-animation: stepsBg 12s 9s linear infinite;
+            animation: stepsBg 12s 9s linear infinite;
+  }
+  .step-item:nth-child(4) .step-num_value {
+    -webkit-animation: textColorBright 12s 12s linear infinite;
+            animation: textColorBright 12s 12s linear infinite;
+  }
+  .step-item:nth-child(4) .step-num_name {
+    -webkit-animation: textColorDark 12s 12s linear infinite;
+            animation: textColorDark 12s 12s linear infinite;
+  }
+  .step-item:nth-child(4) .step-text {
+    -webkit-animation: textColorMain 12s 12s linear infinite;
+            animation: textColorMain 12s 12s linear infinite;
+  }
+  .step-item:nth-child(4):after {
+    -webkit-animation: stepsBg 12s 12s linear infinite;
+            animation: stepsBg 12s 12s linear infinite;
   }
 }
 
