@@ -6,6 +6,12 @@ $(document).ready(function(){
           $('.overlay').toggleClass('hidden')
       });
 
+    //scroll ti Id
+    $("a[rel='Scroll2id']").mPageScroll2id({
+          offset: 30
+        });
+
+
   // slick.js slider   http://kenwheeler.github.io/slick/
   /*main header slider*/
       $('#js-mainSlider').slick({
@@ -182,11 +188,6 @@ $(document).ready(function(){
       $(window).resize(slideWiidthSet);
 
     if(document.documentElement.clientWidth > 1200) {
-
-      //animated counter  https://github.com/bfintal/Counter-Up
-      $('#js-trust-counter_value').counterUp({
-        time: 600
-      });
 
       //parallax
         var parallax = function(){
