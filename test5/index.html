@@ -7,16 +7,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="">
-<link rel="shortcut icon" href="img/favicon/icon.ico">
+<link rel="shortcut icon" href="img/favicon/icon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 <link rel="stylesheet" href="libs/slick-1.6.0/slick.css">
-<!-- <link rel="stylesheet" href="libs/responsive-tabs/responsive-tabs.css"> -->
-<!-- <link rel="stylesheet" type="text/css" href="css/libs.min.css"> -->
+<link rel="stylesheet" href="libs/wow.js/animate.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <title>Title</title>
+<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"> </script>
 </head>
 <body>
 
-        
     <!-- =========================== header =========================== -->
     <header class="header">
 
@@ -34,36 +36,34 @@
             </div>
         </div><!-- /.header_sliderContainer -->
 
-        <div class="header_content flex">
-            <div class="wrapper flex">
-
-                <div class="header_content-top flex">
-                    <div class="logo_container">
-                        <div class="logo"><span>L</span>OGO</div>
-                        <div class="logo-text">Натяжные потолки в Москве и МО с доставкой и монтажом</div>
-                    </div>
-                    <div class="menu-btn_container">
-                        <span class="menu-btn">МЕНЮ</span>
-                        <a href="tel:+8800000000" class="header-phone">8&nbsp;(800)&nbsp;000-00-00</a>
-                    </div>
-                </div><!-- /.header_content-top -->
-
-                <div class="header_content-main">
-                    <p>В москве и Московской области</p>
-                    <h1 class="heading_lg">Натяжные потолки</h1>
-                    <p class="turnkey">с установкой под &ldquo;ключ&rdquo;</p>
-                    <a href="javascript:void(0);" class="button button-bright">заказать потолок</a>
-                </div><!-- /.header_content-main -->
-
-            </div><!-- /.wrapper -->
-        </div><!-- /.header_content -->
+        <div class="wrapper header_wrapper-top">
+            <div class="header_content-top flex">
+                <div class="logo_container">
+                    <div class="logo"><a href="javascript:void(0);"><span>L</span>OGO</a></div>
+                    <div class="logo-text">Натяжные потолки в Москве и МО с доставкой и монтажом</div>
+                </div>
+                <div class="menu-btn_container">
+                    <span class="menu-btn">МЕНЮ</span>
+                    <a href="tel:+8800000000" class="header-phone">8&nbsp;(800)&nbsp;000-00-00</a>
+                </div>
+            </div><!-- /.header_content-top -->
+        </div>
         
+        <div class="wrapper header_wrapper-main">
+            <div class="header_content-main">
+                <p>В Москве и Московской области</p>
+                <h1 class="heading_lg">Натяжные потолки</h1>
+                <p class="turnkey">с установкой под &ldquo;ключ&rdquo;</p>
+                <a href="javascript:void(0);" class="button button-bright">заказать потолок</a>
+            </div><!-- /.header_content-main -->
+        </div>
+
         <div class="form_bg">
             <div class="form_container">
-                <div class="logo"><span>L</span>OGO</div>
+                <div class="logo"><a href="javascript:void(0);"><span>L</span>OGO</a></div>
                 <h3>Закажите обратный звонок</h3>
                 <p>и совсем скоро мы Вам перезвоним!</p>
-                <form action="" name="header-form" class="callback-form">
+                <form action="action.php" name="header-form" class="callback-form">
                     <input type="text" name="userName" placeholder="Имя">
                     <input type="tel" name="userPhone" placeholder="Телефон">
                     <textarea name="commentText" placeholder="Комментарий"></textarea>
@@ -73,6 +73,34 @@
         </div><!-- /.form_bg -->
     </header>
 
+
+    <!-- =========================== sidebar navigation =========================== -->
+    <div class="sidebar-navigation_container">
+        <div class="sidebar-navigation_close">&#10006;</div>
+        <div class="logo"><a href="javascript:void(0);"><span>L</span>OGO</a></div>
+        <a href="tel:+8800000000" class="header-phone">8&nbsp;(800)&nbsp;000-00-00</a>
+        <nav class="sidebar-navigation">
+            <ul class="pages-links">
+                <li><a href="javascript:void(0);">Калькулятор</a></li>
+                <li><a href="javascript:void(0);">Преимущества</a></li>
+                <li><a href="javascript:void(0);">Каталог</a></li>
+                <li><a href="javascript:void(0);">Примеры</a></li>
+                <li><a href="javascript:void(0);">О компании</a></li>
+                <li><a href="javascript:void(0);">Отзывы</a></li>
+                <li><a href="javascript:void(0);">Заказ</a></li>
+                <li><a href="javascript:void(0);">Контакты</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="javascript:void(0);" class="social-fb"></a></li>
+                <li><a href="javascript:void(0);" class="social-tw"></a></li>
+                <li><a href="javascript:void(0);" class="social-dr"></a></li>
+                <li><a href="javascript:void(0);" class="social-ig"></a></li>
+                <li><a href="javascript:void(0);" class="social-pi"></a></li>
+            </ul>
+    </nav>
+    </div><!-- /.sidebar-navigation_container
+
+ -->
     <!-- =========================== calculator section =========================== -->
     <section class="calculator-section">
         <div class="wrapper">
@@ -107,17 +135,25 @@
                     </div><!-- /.approximate-cost -->
                     <div class="accurate-cost flex">
                         <a href="javascript:void(0);" class="accurate-cost_btn button button-bright">точный расчет</a>
-                        <a href="javascript:void(0);" class="accurate-consist_btn">Что входит в&nbsp;стоимость</a>
-
+                        <span class="accurate-consist_btn">Что входит в&nbsp;стоимость
+                            <span class="accurate-tooltip">
+                                <span class="accurate-tooltip_heading">В стоимость входит:</span>
+                                <ul>
+                                    <li>Замер</li>
+                                    <li>Доставка</li>
+                                    <li>Материал - белые полотна коллекции "Классика"</li>
+                                    <li>Профили крепежный ПВХ</li>
+                                    <li>Работы - установка профиля и полотна</li>
+                                </ul>
+                            </span>
+                        </span>
                     </div><!-- /.accurate-cost -->
                 </div><!-- /.calculator-valuation -->
-
             </div><!-- /.calculator-content -->
         </div><!-- /.wrapper -->
     </section><!-- /.calculator-section -->
 
 
-        
     <!-- =========================== advantages section =========================== -->
     <section class="advantages-section">
         <div class="wrapper">
@@ -125,7 +161,7 @@
                 <div class="trust-counter">
                     <p>сформировали заказ</p>
                     <p class="trust-counter_value">
-                        <span class="js-trust-counter_value">1175</span>
+                        <span class="js-trust-counter_value" id="js-trust-counter_value">1175</span>
                     </p>
                     <p>клиентов</p>
                 </div>
@@ -137,37 +173,37 @@
             </div><!-- /.trust-container -->
             <div class="advantages-container">
                 <ul class="advantages-list flex">
-                    <li class="advantages-item advantages-item_fresh">
+                    <li class="advantages-item advantages-item_fresh wow flipInY"  data-wow-offset="150">
                         <div class="advantage-img_bottom"></div>
                         <div class="advantage-img_top"></div>
                         <h4>100% без запаха</h4>
                         <p>Физические свойства полотна и технологические особенности установки позволяют улучшить.</p>
                     </li>
-                    <li class="advantages-item advantages-item_price">
+                    <li class="advantages-item advantages-item_price wow flipInY" data-wow-delay="0.5s" data-wow-offset="150">
                         <div class="advantage-img_bottom"></div>
                         <div class="advantage-img_top"></div>
                         <h4>Лучшая цена</h4>
                         <p>Физические свойства полотна и технологические особенности установки позволяют улучшить.</p>
                     </li>
-                    <li class="advantages-item advantages-item_manufacture">
+                    <li class="advantages-item advantages-item_manufacture wow flipInY" data-wow-delay="1s" data-wow-offset="150">
                         <div class="advantage-img_bottom"></div>
                         <div class="advantage-img_top"></div>
                         <h4>Производство</h4>
                         <p>Физические свойства полотна и технологические особенности установки позволяют улучшить.</p>
                     </li>
-                    <li class="advantages-item advantages-item_noise">
+                    <li class="advantages-item advantages-item_noise wow flipInY" data-wow-delay="1.5s" data-wow-offset="150">
                         <div class="advantage-img_bottom"></div>
                         <div class="advantage-img_top"></div>
                         <h4>+25% шумоизоляция</h4>
                         <p>Физические свойства полотна и технологические особенности установки позволяют улучшить.</p>
                     </li>
-                    <li class="advantages-item advantages-item_original">
+                    <li class="advantages-item advantages-item_original wow flipInY" data-wow-delay="2s" data-wow-offset="150">
                         <div class="advantage-img_bottom"></div>
                         <div class="advantage-img_top"></div>
                         <h4>Подлинность</h4>
                         <p>Физические свойства полотна и технологические особенности установки позволяют улучшить.</p>
                     </li>
-                    <li class="advantages-item advantages-item_montage">
+                    <li class="advantages-item advantages-item_montage wow flipInY" data-wow-delay="2.5s" data-wow-offset="150">
                         <div class="advantage-img_bottom"></div>
                         <div class="advantage-img_top"></div>
                         <h4>Бесплатный монтаж</h4>
@@ -178,8 +214,6 @@
             
         </div><!-- /.wrapper -->
     </section><!-- /.advantages-section -->
-
-
         
     <!-- =========================== catalog section =========================== -->
     <section class="catalog-section">
@@ -191,14 +225,13 @@
                 <li class="glossy-btn active">Глянцевые</li>
                 <li class="frosted-btn">Матовые</li>
                 <li class="satin-btn">Сатиновые</li>
-                <li class="twolevel-btn">2-уровневые</li>
                 <li class="illustated-btn">С рисунком</li>
+                <li class="twolevel-btn">2-уровневые</li>
                 <li class="illuminated-btn">С подсветкой</li>
             </ul>
 
             <div class="slider-container slider-container_category">
-                <span class="pagingInfo"></span>
-
+ 
                 <div class="js-category-slider" id="js-category-slider">
 
                     <div class="category-slide-item">
@@ -271,48 +304,364 @@
 
                 <div class="slider-arrows slider-arrows_categories">
                     <span id="slider-prev_category" class="slider-prev"></span>
-                    <span  id="slider-next_category" class="slider-next"></span>
+                    <span id="slider-next_category" class="slider-next"></span>
                 </div><!-- /.slider-arrows -->
 
                 <div class="decor-dots decor-dots_slider"></div>
             </div><!-- /.category-slider_container" -->
 
         </div><!-- /.wrapper -->
-        
+        <div class="dotted-decor_left"></div>
+        <div class="dotted-decor_right"></div>
     </section><!-- /.catalog-section -->
 
 
     <!-- =========================== gifts section =========================== -->
     <section class="gifts-section">
         <div class="wrapper">
-            <div class="gifts-content flex">
-                <div class="bag-container">
+            <div class="feature-content flex">
+                <div class="feature-img_container wow slideInLeft" data-wow-offset="200">
                     <img src="img/shopping-bag.jpg" alt="shopping bag">
-                    <div class="gift-logo">
-                        <div class="logo"><span>L</span>OGO</div>
+                    <div class="bag-logo">
+                        <div class="logo"><a href="javascript:void(0);"><span>L</span>OGO</a></div>
                     </div>
-                </div><!-- /.bag-container -->
-                <div class="gifts-text">
+                </div><!-- /.feature-img_container -->
+                <div class="feature-text wow slideInRight" data-wow-offset="200">
                     <h2>Выбирайте подарки</h2>
                     <p>В нашем ассортименте доступно множество подарков в категориях: Натяжной потолок, Дом и семья, Техника, Электрика и многих других.</p>
                     <a href="javascript:void(0);" class="button button-bright">заказать звонок</a>
                 </div><!-- /.gifts-text -->
-            </div><!-- /.gifts-content -->
+            </div><!-- /.feature-content -->
         </div><!-- /.wrapper -->
-        <img src="img/parallax/present-1.png" alt="gift" class="present-box present-box-1">
-        <img src="img/parallax/present-2.png" alt="gift" class="present-box present-box-2">
-        <img src="img/parallax/present-3.png" alt="gift" class="present-box present-box-3">
+        <img src="img/parallax/present-1.png" alt="gift" class="parallaxed-1 present-box-1">
+        <img src="img/parallax/present-2.png" alt="gift" class="parallaxed-2 present-box-2">
+        <img src="img/parallax/present-3.png" alt="gift" class="parallaxed-3 present-box-3">
     </section><!-- /.gifts-section -->
 
+    <!-- =========================== top10 section =========================== -->
+    <section class="top10-section">
+        <div class="wrapper">
+            <h2 class="heading top10-heading"><span class="accent">топ-10</span><br>готовых решений по&nbsp;натяжным потолкам</h2>
+
+            <div class="slider-container slider-container_top10">
+
+                <div class="js-top10-slider" id="js-top10-slider">
+
+                    <div class="top10-slide-item">
+                        <div class="slide-description_top10">
+                            <img src="img/top10-slides/top-img-1.jpg" alt="image" class="top10-slide_img">
+                            <div class="table-container">
+                                <h4>Белый сатиновый натяжной потолок в гостиную, 20 м2</h4>
+                                <table class="item-cost-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="column-title_name">Материалы и работы</th>
+                                            <th class="column_title_price">Стоимость</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="estimate-item_name">Полотно "Классика" белое глянцевое, 3 м2</td>
+                                            <td class="estimate-item_price"><span class="price-value">2500</span>р.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="estimate-item_name">Полотно "Классика" белое глянцевое, 3 м2</td>
+                                            <td class="estimate-item_price"><span class="price-value">7500</span>р.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="estimate-item_name">Полотно "Классика" белое глянцевое, 3 м2</td>
+                                            <td class="estimate-item_price"><span class="price-value">2500</span>р.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="estimate-item_name">Полотно "Классика" белое глянцевое, 3 м2</td>
+                                            <td class="estimate-item_price"><span class="price-value">7500</span>р.</td>
+                                        </tr>
+                                        <tr class="estimate-total">
+                                            <td class="estimate-total_name">Итого</td>
+                                            <td class="estimate-total_price"><span class="total-value">20000</span>р.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="javascript:void(0);" class="button button-light slide-order-button">заказать похожий потолок</a>
+                                <a href="javascript:void(0);" class="top10-slide_info">Узнайте заранее примерную стоимость потолка</a>
+                            </div><!-- /.table-container -->
+                        </div><!-- /.slide-description_top10 -->
+                    </div><!-- /.top10-slide-item -->
+
+                    <div class="top10-slide-item">
+                        <div class="slide-description_top10">
+                            <img src="img/top10-slides/top-img-2.jpg" alt="image" class="top10-slide_img">
+                            <div class="table-container">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing., 20 м2</h4>
+                                <table class="item-cost-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="column-title_name">Материалы и работы</th>
+                                            <th class="column_title_price">Стоимость</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="estimate-item_name">Полотно "Классика" белое глянцевое, 3 м2</td>
+                                            <td class="estimate-item_price"><span class="price-value">2500</span>р.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="estimate-item_name">Полотно "Классика" белое глянцевое, 3 м2</td>
+                                            <td class="estimate-item_price"><span class="price-value">7500</span>р.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="estimate-item_name">Полотно "Классика" белое глянцевое, 3 м2</td>
+                                            <td class="estimate-item_price"><span class="price-value">2500</span>р.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="estimate-item_name">Полотно "Классика" белое глянцевое, 3 м2</td>
+                                            <td class="estimate-item_price"><span class="price-value">7500</span>р.</td>
+                                        </tr>
+                                        <tr class="estimate-total">
+                                            <td class="estimate-total_name">Итого</td>
+                                            <td class="estimate-total_price"><span class="total-value">20000</span>р.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="javascript:void(0);" class="button button-light slide-order-button">заказать похожий потолок</a>
+                                <a href="javascript:void(0);" class="top10-slide_info">Узнайте заранее примерную стоимость потолка</a>
+                            </div><!-- /.table-container -->
+                        </div><!-- /.slide-description_top10 -->
+                    </div><!-- /.top10-slide-item -->
+
+                </div><!-- /.js-top10-slider -->
+
+                <div class="slider-arrows slider-arrows_top10">
+                    <span id="slider-prev_top10" class="slider-prev"></span>
+                    <span id="slider-next_top10" class="slider-next"></span>
+                </div><!-- /.slider-arrows -->
+
+            </div><!-- /.slider-container_top10 -->
+        </div><!-- /.wrapper -->
+    </section><!-- /.top10-section -->
+
+    <!-- =========================== insurance section =========================== -->
+    <section class="insurance-section">
+        <div class="wrapper">
+            <div class="feature-content flex">
+                <div class="feature-img_container wow slideInLeft" data-wow-offset="200">
+                    <img src="img/cards.jpg" alt="payment cards" class="insurance-img">
+                </div><!-- /.feature-img_container -->
+                <div class="feature-text wow slideInRight" data-wow-offset="200">
+                    <h2>Получи страховку до&nbsp;400&nbsp;000&nbsp;руб.</h2>
+                    <p>В нашем ассортименте доступно множество подарков в категориях: Натяжной потолок, Дом и семья</p>
+                    <a href="javascript:void(0);" class="button button-bright">заказать звонок</a>
+                </div><!-- /.gifts-text -->
+            </div><!-- /.feature-content -->
+        </div><!-- /.wrapper -->
+        <img src="img/parallax/coin-1.png" alt="coin" class="parallaxed-1 coin-1">
+        <img src="img/parallax/coin-2.png" alt="coin" class="parallaxed-2 coin-2">
+        <img src="img/parallax/coin-3.png" alt="coin" class="parallaxed-3 coin-3">
+    </section><!-- /.insurance-section -->
+
+    <!-- =========================== about section =========================== -->
+    <section class="about-section">
+        <div class="wrapper">
+            <h2 class="heading">О компании</h2>
+            <p class="heading-notation">Почему выбирают нас?</p>
+            <div class="about-content">
+                <div class="about-img_container wow slideInLeft" data-wow-offset="300">
+                    <img src="img/about-img.jpg" alt="image" class="about-img">
+                </div><!-- /.about-img_container -->
+                <div class="facts-board wow slideInRight" data-wow-offset="300">
+
+                    <div class="facts-item">
+                        <h4 class="facts-year">2017</h4>
+                        <p>Харизматическое лидерство вызывает христианско-демократичeский национализм. Элемент политического процесса означает коммунизм, об этом прямо сказано в статье 2</p>
+                    </div>
+
+                    <div class="facts-item">
+                        <h4 class="facts-year">2018</h4>
+                        <p>Харизматическое лидерство вызывает христианско-демократический национализм. Элемент политического процесса означает коммунизм, об этом прямо сказано в статье 2</p>
+                    </div>
+
+                    <a href="javascript:void(0);" class="button button-light button-morefacts">больше фактов</a>
+
+                </div><!-- /.facts-board -->
+            </div><!-- /.about-content -->
+        </div><!-- /.wrapper -->
+    </section><!-- /.about section -->
+
+    <!-- =========================== testimonials section =========================== -->
+    <section class="testimonials-section">
+        <div class="wrapper">
+            <div class="slider-container_testimonials">
+                <div class="js-testimonials-slider" id="js-testimonials-slider">
+                    
+                    <div class="testimonial-slide-item">
+                        <img src="img/photo/photo-1.jpg" alt="photo" class="testimonial-photo">
+                        <p class="testimonial-date">10.03.2018</p>
+                        <p class="testimonial-name">Черепанов Олег А.</p>
+                        <p class="testimonial-text">Не думал, что такие потолки можно делать в ванной, оказывается не только можно, но и нужно, на все мои опасения, что влажность, конденсат, грибок – технолог убедительно заверил, что как раз натяжной будет хорошим решением. </p>
+                    </div><!-- /.slide-item -->
+
+                    <div class="testimonial-slide-item">
+                        <img src="img/photo/photo-2.jpg" alt="photo" class="testimonial-photo">
+                        <p class="testimonial-date">10.03.2018</p>
+                        <p class="testimonial-name">Lorem Ipsum D.</p>
+                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nobis minima vero repudiandae ab expedita sit, facilis corrupti molestias eius, fuga eum eligendi quaerat tempora atque quod dignissimos amet. </p>
+                    </div><!-- /.slide-item -->
+
+                </div><!-- /.js-testimonials-slider -->
+
+                <div class="slider-arrows slider-arrows_testimonials">
+                    <span id="slider-prev_testimonials" class="slider-prev"></span>
+                    <span id="slider-next_testimonials" class="slider-next"></span>
+                </div><!-- /.slider-arrows -->
+
+            </div><!-- /.slider-container_testimonials -->
+        </div><!-- /.wrapper -->
+    </section><!-- /.testimonials-section -->
+        
+    <!-- =========================== steps section =========================== -->
+    <section class="steps-section">
+        <div class="wrapper">
+            <h2 class="heading">Как сделать заказ?</h2>
+            <p class="heading-notation">4 шага к идеальному натяжному потолку</p>
+            <div class="steps-container flex">
+
+                <div class="step-item wow flipInY" data-wow-offset="150" >
+                    <div class="step-num">
+                        <span class="step-num_value">1</span>
+                        <span class="step-num_name">пункт</span>
+                    </div>
+                    <div class="step-text">Физические свойства полотна и технологические особенности.</div>
+                </div><!-- /.step-item -->
+
+                <div class="step-item wow flipInY" data-wow-delay="0.5s" data-wow-offset="150">
+                    <div class="step-num">
+                        <span class="step-num_value">2</span>
+                        <span class="step-num_name">пункт</span>
+                    </div>
+                    <div class="step-text">Физические свойства полотна и технологические особенности. Lorem ipsum dolor.</div>
+                </div><!-- /.step-item -->
+
+                <div class="step-item wow flipInY" data-wow-delay="1s" data-wow-offset="150">
+                    <div class="step-num">
+                        <span class="step-num_value">3</span>
+                        <span class="step-num_name">пункт</span>
+                    </div>
+                    <div class="step-text">Физические свойства полотна и технологические особенности.</div>
+                </div><!-- /.step-item -->
+
+               <div class="step-item  wow flipInY" data-wow-delay="1.5s" data-wow-offset="150">
+                   <div class="step-num">
+                       <span class="step-num_value">4</span>
+                       <span class="step-num_name">пункт</span>
+                   </div>
+                   <div class="step-text">Физические свойства полотна и технологические особенности. Lorem ipsum dolor sit amet.</div>
+               </div><!-- /.step-item -->
+
+            </div><!-- /.steps-container -->
+        </div><!-- /.wrapper -->
+    </section><!-- /.steps-section -->
+        
+        
+    <!-- ===========================  questions section=========================== -->
+    <section class="questions-section">
+        <div class="wrapper">
+            <h2 class="heading_lg">Остались вопросы&nbsp;?</h2>
+        </div><!-- /.wrapper -->
+        <div class="form_bg">
+            <div class="form_container">
+                <div class="logo"><a href="javascript:void(0);"><span>L</span>OGO</a></div>
+                <h3>Закажите обратный звонок</h3>
+                <p>и совсем скоро мы Вам перезвоним!</p>
+                <form action="action.php" name="header-form" class="callback-form">
+                    <input type="text" name="userName" placeholder="Имя">
+                    <input type="tel" name="userPhone" placeholder="Телефон">
+                    <textarea name="commentText" placeholder="Комментарий"></textarea>
+                    <input type="submit" value="заказать звонок" class="button-bright">
+                </form>
+            </div><!-- /.form_container -->
+        </div><!-- /.form_bg -->
+        
+    </section><!-- /.questions-section -->
+
+
+    <!-- =========================== map section =========================== -->
+    <section class="map-section">
+        <div class="map" id="map">
+            
+        </div>
+    </section>
+
+    <!-- =========================== footer =========================== -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-top flex">
+                <nav class="footer-list_pages">
+                    <h5>Страницы</h5>
+                    <ul class="pages-links pages-links_footer flex">
+                        <li><a href="javascript:void(0);">Калькулятор</a></li>
+                        <li><a href="javascript:void(0);">Преимущества</a></li>
+                        <li><a href="javascript:void(0);">Каталог</a></li>
+                        <li><a href="javascript:void(0);">Примеры</a></li>
+                        <li><a href="javascript:void(0);">О компании</a></li>
+                        <li><a href="javascript:void(0);">Отзывы</a></li>
+                        <li><a href="javascript:void(0);">Заказ</a></li>
+                        <li><a href="javascript:void(0);">Контакты</a></li>
+                    </ul>
+                </nav><!-- /.footer-list_pages -->
+                <nav class="footer-list_social">
+                    <h5>Соцсети</h5>
+                    <ul class="social-links social-links_footer">
+                        <li><a href="javascript:void(0);" class="social-fb"></a></li>
+                        <li><a href="javascript:void(0);" class="social-tw"></a></li>
+                        <li><a href="javascript:void(0);" class="social-dr"></a></li>
+                        <li><a href="javascript:void(0);" class="social-ig"></a></li>
+                        <li><a href="javascript:void(0);" class="social-pi"></a></li>
+                    </ul>
+                </nav><!-- /.footer-list_pages -->
+            </div><!-- /.footer-top -->
+            <div class="footer-bottom flex">
+                <div class="logo logo_footer"><a href="javascript:void(0);"><span>L</span>OGO</a></div>
+                <div class="adress">
+                    <h5>адрес</h5>
+                    <p><a href="javascript:void(0);">170007, г. Москва, ул. Шишкова, д.90В</a></p>
+                </div>
+                <div class="help">
+                    <h5>помощь</h5>
+                    <p><a href="javascript:void(0);">Duis aute irure dolor in reprehenderit in  iste natus esse.</a></p>
+                </div>
+                <div class="button-container_footer">
+                    <a href="javascript:void(0);" class="button button-bright">заказать звонок</a>
+                </div>
+            </div><!-- /.footer-bottom -->
+        </div><!-- /.wrapper -->
+    </footer>
+
+    <div class="overlay hidden"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="libs/slick-1.6.0/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
-<!-- <script src="libs/jquery-waypoints/waypoints.min.js"></script> -->
 <script src="libs/Counter-Up/jquery.counterup.min.js"></script>
-<!-- <script src="libs/responsive-tabs/responsive-tabs.min.js"></script> -->
-<!-- <script src="js/libs.min.js"></script> -->
+<script src="libs/wow.js/wow.min.js"></script>
+<script>
+    //yandex map
+    ymaps.ready(init);
+    var myMap;
+
+    function init(){
+        myMap = new ymaps.Map("map", {
+            center: [55.792878, 37.793103],
+            zoom: 15,
+            controls: ['zoomControl', 'geolocationControl']
+        });
+        var myPlacemark = new ymaps.Placemark([55.792878, 37.793103], {}, {
+            preset: 'twirl#redDotIcon'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable(['scrollZoom']);
+    }
+</script>
 <script src="js/common.js"></script>
 </body>
 </html>
