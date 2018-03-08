@@ -1214,7 +1214,7 @@ sup {
 }
 
 .slick-list {
-  overflow: visible !important;
+  //overflow: visible !important;
 }
 
 .category-slide-item {
@@ -2752,4 +2752,3 @@ nav a:hover, nav a:active {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
