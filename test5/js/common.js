@@ -37,7 +37,7 @@ $(document).ready(function(){
         fade: true,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 992,
             settings: {
               autoplay: false
             }
@@ -65,7 +65,7 @@ $(document).ready(function(){
         fade: true,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 992,
             settings: {
               autoplay: false
             }
@@ -117,13 +117,14 @@ $(document).ready(function(){
         slidesToShow: 1,
         autoplay: true,
         autoplaySpeed: 4000,
-        speed: 200,
+        speed: 100,
         arrows: false,
         dots: false,
+        adaptiveHeight: true,
         fade: true,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 992,
             settings: {
               autoplay: false
             }
@@ -217,6 +218,6 @@ $(document).ready(function(){
 
     if(document.documentElement.clientWidth > 992) {
       // wow.js animation  http://mynameismatthieu.com/WOW/
-      new WOW().init();
+      //new WOW().init();
     };
 });
