@@ -218,6 +218,6 @@ $(document).ready(function(){
 
     if(document.documentElement.clientWidth > 992) {
       // wow.js animation  http://mynameismatthieu.com/WOW/
-      //new WOW().init();
+      new WOW().init();
     };
 });
