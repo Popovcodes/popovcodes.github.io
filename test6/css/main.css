@@ -1,0 +1,86 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #161616;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.preloader-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 90%;
+}
+
+.preload-dots {
+  text-align: center;
+  padding: 0 18px 0 0;
+}
+
+.preload-dots li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.preload-dots span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url(../loader.png);
+  background-position: 50% 50%;
+}
+
+.preload-dots .dot-1 {
+  -webkit-animation: preloading 2s .3s infinite;
+          animation: preloading 2s .3s infinite;
+}
+.preload-dots .dot-2 {
+  -webkit-animation: preloading 2s .4s infinite;
+          animation: preloading 2s .4s infinite;
+}
+.preload-dots .dot-3 {
+  -webkit-animation: preloading 2s .5s infinite;
+          animation: preloading 2s .5s infinite;
+}
+.preload-dots .dot-4 {
+  -webkit-animation: preloading 2s .6s infinite;
+          animation: preloading 2s .6s infinite;
+}
+.preload-dots .dot-5 {
+  -webkit-animation: preloading 2s .7s infinite;
+          animation: preloading 2s .7s infinite;
+}
+.preload-dots .dot-6 {
+  -webkit-animation: preloading 2s .8s infinite;
+          animation: preloading 2s .8s infinite;
+}
+
+@-webkit-keyframes preloading {
+  0% {background-image: url(../loader.png);}
+  50% {background-image: url(../loader.png);}
+  51% {background-image: url(../active.png);}
+  100% {background-image: url(../active.png);}
+}
+
+@keyframes preloading {
+  0% {background-image: url(../loader.png);}
+  50% {background-image: url(../loader.png);}
+  51% {background-image: url(../active.png);}
+  100% {background-image: url(../active.png);}
+}
+
+.dummy {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
