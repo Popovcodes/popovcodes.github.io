@@ -407,6 +407,8 @@ h2 {
   font-size: 45px;
   margin-left: 9vw;
   cursor: pointer;
+  color: #ffffff;
+  z-index: 3;
 }
 
 /*------------------------------ mobile navigation ------------------------------*/
