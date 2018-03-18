@@ -60,7 +60,7 @@
                 <h1 class="slogan">Сосредоточьтесь<br>на вашем бизнесе,</h1>
                 <p class="slogan-aftertext">бухгалтерию мы возьмём на себя</p>
                 <a href="#" class="button button-light header-button">Подробнее &gt;&gt;</a>
-                <img src="img/tree.png" alt="image" class="index-image">
+                <img src="img/tree.png" alt="image" class="index-image" id="index-image">
             </div><!-- /.header-content -->
         </div><!-- /.wrapper -->
     </header>
@@ -154,7 +154,8 @@
             <div class="advantages-img_container">
                 <div class="abbreviation">КМ</div>
                 <div class="slogan-small">- это бухгалтерия, которая действует в интересах вашего бизнеса</div>
-                <img src="img/plant.png" alt="image" class="advantages-img wow slideInRight"  data-wow-offset="500"> 
+<!--                 <img src="img/plant.png" alt="image" class="advantages-img wow slideInRight"  data-wow-offset="500" id="advantages-img"> 
+ -->                <img src="img/plant.png" alt="image" class="advantages-img"  id="advantages-img"> 
             </div><!-- /.advantages-img_container -->
         </div><!-- /.wrapper -->
     </section><!-- /.advantages-section -->
@@ -208,6 +209,7 @@
                 </a>
             </div><!-- /.services-container -->
         </div><!-- /.wrapper -->
+        <div class="services-section-decor" id="services-section-decor"></div><!-- not :after -->
     </section><!-- /.services-section -->
 
     <!-- =========================== testimonials slider =========================== -->
@@ -285,7 +287,8 @@
                     <a href="#" class="tarif-readMore">Подробнее</a>
                 </div><!-- /.tarif-item -->
             </div>
-            <img src="img/pen.png" alt="image" class="cost-section-img wow slideInLeft" data-wow-delay="1s" data-wow-ofset="100"> 
+          <!--   <img src="img/pen.png" alt="image" class="cost-section-img wow slideInLeft" data-wow-delay="1s" data-wow-ofset="100">  -->
+            <img src="img/pen.png" alt="image" class="cost-section-img" id="cost-section-img"> 
         </div><!-- /.wrapper -->
     </div><!-- /.cost-section -->
 
@@ -326,45 +329,82 @@
     <script src="libs/slick-1.6.0/slick.min.js"></script>
     <script src="libs/wow.js/wow.min.js"></script>
     <script>
-        //slick.js slider   http://kenwheeler.github.io/slick/
-        $('#js-testimonials-slider').slick({
-          infinite: true,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 3800,
-          arrows: false,
-          dots: false,
-          responsive: [
-            {
-              breakpoint: 1199,
-              settings: {
-                autoplay: false,
-                slidesToShow: 1
+        $(document).ready(function(){
+            //slick.js slider   http://kenwheeler.github.io/slick/
+            $('#js-testimonials-slider').slick({
+              infinite: true,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 3800,
+              arrows: false,
+              dots: false,
+              responsive: [
+                {
+                  breakpoint: 1199,
+                  settings: {
+                    autoplay: false,
+                    slidesToShow: 1
+                  }
+                },
+                {
+                  breakpoint: 480, /*duplicate breakpoint for fix*/
+                  settings: {
+                    autoplay: false,
+                    slidesToShow: 1
+                  }
+                }
+              ]
+            });
+
+            $('#prev-btn').click(function(){
+              $('#js-testimonials-slider').slick('slickPrev');
+            });
+
+            $('#next-btn').click(function(){
+              $('#js-testimonials-slider').slick('slickNext');
+            });
+
+            // turn on js-animation
+            if(document.documentElement.clientWidth > 1023) {
+              // wow.js animation  http://mynameismatthieu.com/WOW/
+              new WOW().init();
+
+              //parallax
+              var parallax = function() {
+                var pageScrolled = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                var scrolledToWindowBottom = pageScrolled + windowHeight;
+
+                var advantagesSectionPosition = $('.advantages-img_container').offset().top;
+                var advantagesSectionVisible = scrolledToWindowBottom - advantagesSectionPosition;
+
+                var costSectionPosition = $('.cost-section').offset().top;
+                var costSectionVisible = scrolledToWindowBottom - costSectionPosition;
+
+                var servicesSectionPosition = $('.services-section').offset().top;
+                var servicesSectionVisible = scrolledToWindowBottom - servicesSectionPosition;
+
+                if (advantagesSectionVisible > 0) {
+                  $('#advantages-img').css({"transform":  "translate(0%, "+ -advantagesSectionVisible/1.7 +"px)"});
+                } else {};
+
+                if (costSectionVisible > 0) {
+                  $('#cost-section-img').css({"transform":  "translate(0%, "+ -costSectionVisible/3+"px)"});
+                } else {};
+
+                if (servicesSectionVisible > 0) {
+                  var decorMove = -1070 + servicesSectionVisible/3.5 +'px';
+                  $('#services-section-decor').css("bottom", decorMove);
+                } else {};
+
+                $('#index-image').css({"transform":  "translate(0%, "+ pageScrolled/3 +"px)"});
               }
-            },
-            {
-              breakpoint: 480, /*duplicate breakpoint for fix*/
-              settings: {
-                autoplay: false,
-                slidesToShow: 1
-              }
-            }
-          ]
-        });
 
-        $('#prev-btn').click(function(){
-          $('#js-testimonials-slider').slick('slickPrev');
+                $(window).scroll(parallax);
+            };
         });
-
-        $('#next-btn').click(function(){
-          $('#js-testimonials-slider').slick('slickNext');
-        });
-
-        if(document.documentElement.clientWidth > 1023) {
-          // wow.js animation  http://mynameismatthieu.com/WOW/
-          new WOW().init();
-        };
+        
     </script>
     
     <script src="js/common.js"></script>

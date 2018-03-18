@@ -100,8 +100,7 @@
     </div><!-- /.mobile-nav-container -->
 
     <!-- =========================== service description section =========================== -->
-    <div class="service-description-section">
-        <div class="service-description-bg"></div>
+    <div class="service-description-section" id="service-description-section">
         <div class="wrapper">
             <div class="service-content">
                 <h2 class="service-heading">Бухгалтерский учёт</h2>
@@ -154,6 +153,19 @@
     <div class="overlay hidden"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            if(document.documentElement.clientWidth > 1023) {
+                //bg - parallax
+              var parallax = function() {
+                var pageScrolled = $(window).scrollTop();
+                var bgMove = '50% ' +  (pageScrolled/2-160) +'px';
+                $('#service-description-section').css("background-position", bgMove);
+              }
+            $(window).scroll(parallax);
+            }
+        });
+    </script>
     <script src="js/common.js"></script>
   </body>
 </html>

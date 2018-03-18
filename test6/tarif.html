@@ -159,7 +159,7 @@
                     <a href="#" class="button button-color">Кнопка</a>
                 </div><!-- /.tarif-actions -->
             </div><!-- /.tarif-type-container -->
-            <img src="img/lamp.png" alt="image" class="lamp">
+            <img src="img/lamp.png" alt="image" class="lamp" id="lamp">
         </div><!-- /.wrapper -->
 
     </section><!-- /.tarifs-description-section -->
@@ -232,6 +232,23 @@
     <div class="overlay hidden"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            if(document.documentElement.clientWidth > 1023) {
+                //bg - parallax
+                  var parallax = function() {
+                    var pageScrolled = $(window).scrollTop();
+                    var bgMove = '50% ' +  (pageScrolled/2-160) +'px';
+                        $('#lamp').css({"transform": "translate(0%, "+ pageScrolled/4.5+"px)"});
+                        $('.tarif-type-container, .compare-table').css({"transform": "translate(0%, "+ -pageScrolled/30+"px)"});
+                        setTimeout (function(){
+                            $('.tarif-type-container, .compare-table').css({"transform": "translate(0%, 0px)"});
+                        }, 700);
+                  }
+                $(window).scroll(parallax);
+            }
+        });
+    </script>
     <script src="js/common.js"></script>
   </body>
 </html>
