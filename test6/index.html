@@ -398,7 +398,8 @@
                   $('#services-section-decor').css("bottom", decorMove);
                 } else {};
 
-                $('#index-image').css({"transform":  "translate(0%, "+ pageScrolled/3 +"px)"});
+                var treeMove = 13 + pageScrolled/3 + "px";
+                $('#index-image').css("top", treeMove);
               }
 
                 $(window).scroll(parallax);
