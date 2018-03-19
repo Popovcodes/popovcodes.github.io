@@ -230,10 +230,6 @@ h2 {
   color: #ffffff;
 }
 
-.logo img {
-  display: block;
-}
-
 .logo-text {
   display: inline-block;
   padding: 0 10px;
@@ -397,9 +393,9 @@ h2 {
   top: 13px;
   left: 41%;
   z-index: -1;
-  -webkit-transition: all 0.8s cubic-bezier(0.46, 1.9, 0.72, 0.87);
-  -o-transition: all 0.8s cubic-bezier(0.46, 1.9, 0.72, 0.87);
-  transition: all 0.8s cubic-bezier(0.46, 1.9, 0.72, 0.87);
+  -webkit-transition: all 0.5s cubic-bezier(0.46, 1.9, 0.72, 0.87);
+  -o-transition: all 0.5s cubic-bezier(0.46, 1.9, 0.72, 0.87);
+  transition: all 0.5s cubic-bezier(0.46, 1.9, 0.72, 0.87);
 }
 
 .mobile-menu-btn {
@@ -1360,96 +1356,156 @@ h2 {
 }
 
 /* ==================== css-animations ======================= */
-@-webkit-keyframes treecoloring {
+@-webkit-keyframes zoom-logoImg {
   0% {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    width: 75px;
+    height: 73px;
   }
   100% {
-    -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
+    width: 65px;
+    height: 62px;
   }
 }
-@keyframes treecoloring {
+@keyframes zoom-logoImg {
   0% {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    width: 75px;
+    height: 73px;
   }
   100% {
-    -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
-  }
-}
-
-@-webkit-keyframes zoom-1 {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 0;
-  }
-  75% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
+    width: 65px;
+    height: 62px;
   }
 }
 
-@keyframes zoom-1 {
+@-webkit-keyframes zoom-logoText {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 0;
+    font-size: 0px;
+    padding: 0px 0px;
   }
-  75% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-    opacity: 1;
+  50% {
+    font-size: 30px;
+    padding: 0px 11px;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
+    font-size: 24px;
+    padding: 0px 10px;
   }
 }
 
-@-webkit-keyframes zoom-2 {
+@keyframes zoom-logoText {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 0;
+    font-size: 0px;
+    padding: 0px 0px;
   }
-  75% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    opacity: 1;
+  50% {
+    font-size: 30px;
+    padding: 0px 11px;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
+    font-size: 24px;
+    padding: 0px 10px;
   }
 }
 
-@keyframes zoom-2 {
+@-webkit-keyframes zoom-slogan {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 0;
+    font-size: 0px;
   }
-  75% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    opacity: 1;
+  50% {
+    font-size: 65px;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
+    font-size: 60px;
+  }
+}
+
+@keyframes zoom-slogan {
+  0% {
+    font-size: 0px;
+  }
+  50% {
+    font-size: 65px;
+  }
+  100% {
+    font-size: 60px;
+  }
+}
+
+@-webkit-keyframes zoom-sloganAftertext {
+  0% {
+    font-size: 0px;
+  }
+  50% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 18px;
+  }
+}
+
+@keyframes zoom-sloganAftertext {
+  0% {
+    font-size: 0px;
+  }
+  50% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 18px;
+  }
+}
+
+@-webkit-keyframes zoom-headerButton {
+  0% {
+    color: transparent;
+    font-size: 0px;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+  }
+  50% {
+    font-size: 17px;
+    width: 263px;
+    height: 60px;
+    line-height: 60px;
+  }
+  100% {
+    color: #191919;
+    font-size: 16px;
+    width: 255px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+
+@keyframes zoom-headerButton {
+  0% {
+    color: transparent;
+    font-size: 0px;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+  }
+  50% {
+    font-size: 17px;
+    width: 263px;
+    height: 60px;
+    line-height: 60px;
+  }
+  100% {
+    color: #191919;
+    font-size: 16px;
+    width: 255px;
+    height: 55px;
+    line-height: 55px;
   }
 }
 
@@ -1893,53 +1949,56 @@ h2 {
 /*==========  Mobile First Method  ==========*/
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 1024px) {
-  .index-image {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-    -webkit-animation: treecoloring 3.5s 6s;
-            animation: treecoloring 3.5s 6s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
   .header .logo {
-    opacity: 0;
-    -webkit-animation: zoom-1 1s 1.5s;
-            animation: zoom-1 1s 1.5s;
+    width: 276px;
+    height: 69px;
+    line-height: 69px;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-transform-origin: left center;
         -ms-transform-origin: left center;
             transform-origin: left center;
+  }
+  .header .logo img {
+    width: 0px;
+    height: 0px;
+    -webkit-animation: zoom-logoImg 1s 1.5s;
+            animation: zoom-logoImg 1s 1.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .header .logo-text {
+    font-size: 0px;
+    padding: 0px 0px;
+    -webkit-animation: zoom-logoText 1s 1.5s;
+            animation: zoom-logoText 1s 1.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .slogan {
-    opacity: 0;
-    -webkit-animation: zoom-2 1s 2.5s;
-            animation: zoom-2 1s 2.5s;
+    font-size: 0px;
+    -webkit-animation: zoom-slogan 1s 2.5s;
+            animation: zoom-slogan 1s 2.5s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-transform-origin: left center;
-        -ms-transform-origin: left center;
-            transform-origin: left center;
   }
   .slogan-aftertext {
-    opacity: 0;
-    -webkit-animation: zoom-2 1s 3.5s;
-            animation: zoom-2 1s 3.5s;
+    font-size: 0px;
+    -webkit-animation: zoom-sloganAftertext 1s 3.5s;
+            animation: zoom-sloganAftertext 1s 3.5s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-transform-origin: left center;
-        -ms-transform-origin: left center;
-            transform-origin: left center;
   }
   .header-button {
-    opacity: 0;
-    -webkit-animation: zoom-2 1s 4.5s;
-            animation: zoom-2 1s 4.5s;
+    font-size: 0px;
+    width: 0px;
+    height: 0px;
+    line-height: 55px;
+    color: transparent;
+    -webkit-animation: zoom-headerButton 1s 4.5s;
+            animation: zoom-headerButton 1s 4.5s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-transform-origin: left center;
-        -ms-transform-origin: left center;
-            transform-origin: left center;
   }
   .lamp {
     top: -840px;
