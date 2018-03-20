@@ -110,7 +110,8 @@ body {
   display: none;
 }
 
-.overlay {
+.overlay,
+.overlay-modal {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -155,19 +156,27 @@ input:focus {
 }
 
 ::-webkit-input-placeholder {
-  color: #888;
+  color: #191919;
+  font-family: OpenSansRegular, sans-serif;
+  font-size: 18px;
 }
 
 :-ms-input-placeholder {
-  color: #888;
+  color: #191919;
+  font-family: OpenSansRegular, sans-serif;
+  font-size: 18px;
 }
 
 ::-ms-input-placeholder {
-  color: #888;
+  color: #191919;
+  font-family: OpenSansRegular, sans-serif;
+  font-size: 18px;
 }
 
 ::placeholder {
-  color: #888;
+  color: #191919;
+  font-family: OpenSansRegular, sans-serif;
+  font-size: 18px;
 }
 
 section {
@@ -1353,6 +1362,79 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/*------------------------------ popup form ------------------------------*/
+.popup-container {
+  position: fixed;
+  padding: 9vh 5% 16vh;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 90%;
+  max-width: 540px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.form-heading {
+  text-align: center;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 36px;
+  color: #191919;
+  margin-bottom: 4.7vh;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  height: 5.5vh;
+  line-height: 5.5vh;
+  padding: 0px 2px;
+  margin-bottom: 8.3%;
+  border-bottom: 2px solid #757575;
+  font-size: 18px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+  border-bottom-color: #2579bf;
+}
+
+input[type="text"]:nth-last-child(2),
+input[type="tel"]:nth-last-child(2),
+input[type="email"]:nth-last-child(2) {
+  margin-bottom: 4.7vh;
+}
+
+.submit-button {
+  width: 260px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  background: #2579bf;
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #2579bf;
+  cursor: pointer;
+  font-size: 30px;
 }
 
 /* ==================== css-animations ======================= */

@@ -128,7 +128,7 @@
                         <br>
                         <span class="period">за месяц</span>
                     </div>
-                    <a href="#" class="button button-color">Кнопка</a>
+                    <a href="javascript:void(0);" class="button button-color form-button">Кнопка</a>
                 </div><!-- /.tarif-actions -->
             </div><!-- /.tarif-type-container -->
 
@@ -156,7 +156,7 @@
                         <br>
                         <span class="period">за месяц</span>
                     </div>
-                    <a href="#" class="button button-color">Кнопка</a>
+                    <a href="javascript:void(0);" class="button button-color form-button">Кнопка</a>
                 </div><!-- /.tarif-actions -->
             </div><!-- /.tarif-type-container -->
             <img src="img/lamp.png" alt="image" class="lamp" id="lamp">
@@ -189,8 +189,8 @@
                     </tr>
                     <tr class="button-row">
                         <td></td>
-                        <td><a href="#" class="button button-color">Кнопка</a></td>
-                        <td><a href="#" class="button button-color">Кнопка</a></td>
+                        <td><a href="javascript:void(0);" class="button button-color form-button">Кнопка</a></td>
+                        <td><a href="javascript:void(0);" class="button button-color form-button">Кнопка</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -229,7 +229,20 @@
         </div><!-- /.footer-bottom -->
     </footer>
 
+    <!-- =========================== popup form =========================== -->
+    <div class="popup-container hidden" id="popup-form-container">
+        <span class="modal-close" id="modal-close">&#10006;</span>
+        <form action="action.php" name="form" class="popup-form">
+            <h3 class="form-heading">Напишите нам</h3>
+            <input type="text" placeholder="Введите имя" required>
+            <input type="tel" placeholder="Введите номер телефона" required>
+            <input type="email" placeholder="Введите e-mail">
+            <input type="submit" class="button submit-button" value="Заказать звонок">
+        </form>
+    </div><!-- /.popup -->
+
     <div class="overlay hidden"></div>
+    <div class="overlay-modal hidden"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
@@ -246,7 +259,12 @@
                         }, 700);
                   }
                 $(window).scroll(parallax);
-            }
+            };
+
+            $('.form-button, .overlay-modal, #modal-close').click(function(){
+                $('#popup-form-container, .overlay-modal').toggleClass('hidden');
+            });
+
         });
     </script>
     <script src="js/common.js"></script>
