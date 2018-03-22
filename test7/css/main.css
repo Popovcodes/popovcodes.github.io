@@ -2031,6 +2031,11 @@ input[type="email"]:nth-last-child(2) {
 /*==========  Mobile First Method  ==========*/
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 1024px) {
+	
+	.header {
+		min-height: 1295px;
+	}
+	
   .header .logo {
     width: 276px;
     height: 69px;
