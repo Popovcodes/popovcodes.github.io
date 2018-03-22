@@ -40,6 +40,11 @@ $(document).ready(function(){
           autoplay: false
         }
       },
+      {
+        breakpoint: 480,
+        settings: {
+        }
+      }
     ]
   });
 
@@ -59,7 +64,19 @@ $(document).ready(function(){
     autoplay: false,
     autoplaySpeed: 3000,
     arrows: false,
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 620,
+        settings: {
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+        }
+      }
+    ]
   });
 
   $('#manSlider-custom-prev').click(function(){
@@ -154,9 +171,9 @@ $(document).ready(function(){
     $('#js-clients-slider').slick('slickNext');
   });
 
-  //modal window
   $('#modal-btn').click(function(){
     $('#overlay, #modal-container').fadeIn(200);
+
   });
 
   $('#overlay, #modal-close').click(function(){
@@ -171,7 +188,10 @@ $(document).ready(function(){
     };
 
   if(document.documentElement.clientWidth > 768) {
+    // wow.js animation  http://mynameismatthieu.com/WOW/
+    // 
 
+    //parallax and js-animation
       //parallax
       var parallax = function() {
         var pageScrolled = $(window).scrollTop();
@@ -196,3 +216,4 @@ $(document).ready(function(){
         $(window).scroll(parallax);
   };
 });
+    
