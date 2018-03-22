@@ -42,6 +42,7 @@ $(document).ready(function(){
       {
         breakpoint: 480,
         settings: {
+          vertical: true
         }
       }
     ]
@@ -73,6 +74,7 @@ $(document).ready(function(){
       {
         breakpoint: 480,
         settings: {
+          vertical: true
         }
       }
     ]
