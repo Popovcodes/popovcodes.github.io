@@ -180,7 +180,7 @@ $(document).ready(function(){
   });
 
     $('.video-prev-container').fancybox();
-    $('.fancybox').fancybox();
+    $('.fancybox').fancybox({});
 
     if(document.documentElement.clientWidth > 992) {
       new WOW().init();

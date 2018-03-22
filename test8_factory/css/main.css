@@ -582,10 +582,6 @@ p {
   max-width: 66.7%;
 }
 
-.category-text.dark-font {
-  color: #191919;
-}
-
 /*------------------------------ small form section ------------------------------*/
 .smallForm-section .wrapper {
   -webkit-box-pack: justify;
@@ -1149,6 +1145,10 @@ p {
   background-position: 0px -150px;
   width: 42px;
   height: 25px;
+}
+
+.compensate-for-scrollbar {
+  margin-right: 0 !important;
 }
 
 /*------------------------------ clients section ------------------------------*/
