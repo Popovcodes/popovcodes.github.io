@@ -29,7 +29,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -37,7 +37,6 @@ $(document).ready(function(){
       {
         breakpoint: 1024,
         settings: {
-          autoplay: false
         }
       },
       {

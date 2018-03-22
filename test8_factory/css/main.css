@@ -1266,7 +1266,8 @@ p {
 .main-form input[type="email"] {
   font-family: OpenSansRegular, sans-serif;
   height: 58px;
-  line-height: 58px;
+  line-height: 38px;
+  padding: 15px 0 5px;
   background: transparent;
   width: 100%;
   font-size: 18px;
@@ -1370,7 +1371,7 @@ p {
   display: none;
   position: fixed;
   max-height: 100vh;
-  padding-bottom: 30px;
+  padding-bottom: 55px;
   top: 50%;
   left: 50%;
   max-width: 100%;
@@ -1397,6 +1398,13 @@ p {
 
 /* ==================== Media queries ======================= */
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1400px) {
+  .works-slide-textPart,
+  .manuf-slide-textPart {
+    padding-top: 1%;
+  }
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .wrapper-w {
