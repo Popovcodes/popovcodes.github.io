@@ -908,8 +908,8 @@ p {
 .video-prev-container:after {
   content: "";
   display: block;
-  width: 107px;
-  height: 75px;
+  width: 108px;
+  height: 76px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -917,6 +917,14 @@ p {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-image: url(../img/youtube-logo.png);
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.video-prev-container:hover:after {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
 }
 
 .video-prev-container .button.slide-button {
@@ -1675,6 +1683,12 @@ p {
   }
   .collection-link:before {
     display: none;
+  }
+  .slider-custom-next,
+  .slider-custom-prev {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .testimonials-heading {
     font-size: 28px;
