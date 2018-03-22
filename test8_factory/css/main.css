@@ -1686,9 +1686,9 @@ p {
   }
   .slider-custom-next,
   .slider-custom-prev {
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
   .testimonials-heading {
     font-size: 28px;
