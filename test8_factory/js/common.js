@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
   //header fixing
-  
   $(window).scroll(function(){
     if(document.documentElement.clientWidth > 992) {
       var pageIsScrolled = $(window).scrollTop();
@@ -11,12 +10,7 @@ $(document).ready(function(){
         $('#header').removeClass('fixed');
       }
     };
-   
   });
-
-
-
-
 
   //slick.js slider   http://kenwheeler.github.io/slick/
   $('#js-main-slider').slick({
@@ -35,21 +29,17 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
     responsive: [
       {
-        breakpoint: 620,
+        breakpoint: 1024,
         settings: {
+          autoplay: false
         }
       },
-      {
-        breakpoint: 480,
-        settings: {
-        }
-      }
     ]
   });
 
@@ -69,19 +59,7 @@ $(document).ready(function(){
     autoplay: false,
     autoplaySpeed: 3000,
     arrows: false,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 620,
-        settings: {
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-        }
-      }
-    ]
+    dots: true
   });
 
   $('#manSlider-custom-prev').click(function(){
@@ -176,26 +154,14 @@ $(document).ready(function(){
     $('#js-clients-slider').slick('slickNext');
   });
 
+  //modal window
   $('#modal-btn').click(function(){
     $('#overlay, #modal-container').fadeIn(200);
-
   });
 
   $('#overlay, #modal-close').click(function(){
     $('#overlay, #modal-container').fadeOut(200);
   });
-
-
-  // modal windows
-  // $('.callback_btn').on('click', function(){
-  //   $('.overlay, .callback_modal').fadeIn(200);
-  // });
-  // $('.appoint_btn, .consult_btn').on('click', function(){
-  //   $('.overlay, .appointment_modal').fadeIn(200);
-  // });
-  // $('.overlay, .modal_close').on('click', function(){
-  //   $('.overlay, .callback_modal, .appointment_modal').fadeOut(200);
-  // });
 
     $('.video-prev-container').fancybox();
     $('.fancybox').fancybox();
@@ -205,10 +171,7 @@ $(document).ready(function(){
     };
 
   if(document.documentElement.clientWidth > 768) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    // 
 
-    //parallax and js-animation
       //parallax
       var parallax = function() {
         var pageScrolled = $(window).scrollTop();
@@ -233,4 +196,3 @@ $(document).ready(function(){
         $(window).scroll(parallax);
   };
 });
-    

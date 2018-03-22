@@ -36,17 +36,6 @@ table {
 }
 
 /* ==================== fonts ======================= */
-/*
-@import "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i";
-
-@font-face {
-	font-family: "ProximaNovaLight";
-	src: url("../fonts/Proxima-Nova-Cyr/ProximaNova-Light.woff") format('woff'),
-	url("../fonts/Proxima-Nova-Cyr/ProximaNova-Light.otf") format("opentype");
-	font-style: normal;
-	font-weight: normal;
-}
-*/
 @font-face {
   font-family: "OpenSansRegular";
   src: url("../fonts/opensans/opensans.woff") format("woff"), url("../fonts/opensans/opensans.ttf") format("truetype");
@@ -89,14 +78,8 @@ table {
   font-weight: 400;
 }
 
-/* ==================== variables ======================= */
-/* $reg_font: ProximaNovaReg;*/
-/* $lig_col:#fff;*/
-/* ==================== mixines ======================= */
 /* ==================== common styles ======================= */
 html {
-  font-size: 14px;
-  /*used for rem-units*/
   overflow-x: hidden;
 }
 
@@ -406,17 +389,9 @@ p {
   transition: all 1.2s;
 }
 
-.slick-active .main-slider-heading {
-  left: 0;
-}
-
-.slick-active .collection-link {
-  left: 0;
-}
-
 .main-slider-heading {
   position: relative;
-  left: 150vw;
+  left: 0;
   font-size: 90px;
   color: #191919;
   font-family: OpenSansXBold, sans-serif;
@@ -429,7 +404,7 @@ p {
 .collection-link {
   display: inline-block;
   position: relative;
-  left: -150vw;
+  left: 0;
   padding-left: 38px;
   font-family: OpenSansSemiBold, sans-serif;
   font-size: 18px;
@@ -484,7 +459,7 @@ p {
 .main-slider-item-bg {
   display: block;
   position: absolute;
-  top: -200%;
+  top: 52%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -498,10 +473,6 @@ p {
   transition: all 1.2s;
 }
 
-.slick-active .main-slider-item-bg {
-  top: 52%;
-}
-
 .main-slider-item-img {
   display: block;
   margin: 0 auto;
@@ -509,10 +480,22 @@ p {
   max-width: 90%;
   max-height: 80vh;
   z-index: 1;
-  top: 100vh;
+  top: 0;
   -webkit-transition: all 1.2s;
   -o-transition: all 1.2s;
   transition: all 1.2s;
+}
+
+.slick-active .main-slider-heading {
+  left: 0;
+}
+
+.slick-active .collection-link {
+  left: 0;
+}
+
+.slick-active .main-slider-item-bg {
+  top: 52%;
 }
 
 .slick-active .main-slider-item-img {
@@ -785,11 +768,11 @@ p {
 }
 
 .slider-custom-prev {
-  background-image: url(../img/sprite/arrow-l-sm.png);
+  background-image: url(../img/arrows/arrow-l-sm.png);
 }
 
 .slider-custom-next {
-  background-image: url(../img/sprite/arrow-r-sm.png);
+  background-image: url(../img/arrows/arrow-r-sm.png);
 }
 
 .js-works-slider .slick-dots,
@@ -1412,7 +1395,6 @@ p {
   cursor: pointer;
 }
 
-/* ==================== Addictional styles ======================= */
 /* ==================== Media queries ======================= */
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -1596,7 +1578,6 @@ p {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /*Disable Animation on Mobile Devices*/
   .about-section .wrapper {
     white-space: normal;
   }
@@ -1732,12 +1713,19 @@ p {
   }
 }
 
-/* Custom, iPhone Retina */
-/*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1024px) {
+  .main-slider-heading {
+    left: 150vw;
+  }
+  .collection-link {
+    left: -150vw;
+  }
+  .main-slider-item-bg {
+    top: -200%;
+  }
+  .main-slider-item-img {
+    top: 100vh;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
