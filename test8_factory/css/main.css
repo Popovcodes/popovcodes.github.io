@@ -1477,6 +1477,12 @@ p {
   .main-slider-item {
     text-align: center;
   }
+  .main-slider-img {
+    width: 90%;
+  }
+  .main-slider-heading {
+    margin-bottom: 30px;
+  }
   .materials-container {
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
