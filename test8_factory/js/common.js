@@ -17,7 +17,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -190,10 +190,7 @@ $(document).ready(function(){
     };
 
   if(document.documentElement.clientWidth > 768) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    // 
 
-    //parallax and js-animation
       //parallax
       var parallax = function() {
         var pageScrolled = $(window).scrollTop();
