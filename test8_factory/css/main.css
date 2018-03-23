@@ -366,6 +366,7 @@ p {
 .main-slider-item {
   position: relative;
   white-space: nowrap;
+  min-height: 70vh;
   overflow: hidden;
 }
 
@@ -1541,6 +1542,7 @@ p {
     padding-left: 1%;
     bottom: 2%;
     right: auto;
+    left: 2%;
   }
   .button.slide-button {
     margin-bottom: 20px;
