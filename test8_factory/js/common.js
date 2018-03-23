@@ -182,18 +182,17 @@ $(document).ready(function(){
     $('#overlay, #modal-container').fadeOut(200);
   });
 
-  $('.video-prev-container').fancybox();
-  $('.fancybox').fancybox({});
+    $('.video-prev-container').fancybox();
+    $('.fancybox').fancybox({});
 
-  $('body').flowtype();
-
-  if(document.documentElement.clientWidth > 992) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    new WOW().init();
-  };
-
+    if(document.documentElement.clientWidth > 992) {
+      new WOW().init();
+    };
 
   if(document.documentElement.clientWidth > 768) {
+    // wow.js animation  http://mynameismatthieu.com/WOW/
+    // 
+
     //parallax and js-animation
       //parallax
       var parallax = function() {
