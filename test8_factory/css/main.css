@@ -471,17 +471,6 @@ p {
   margin: 0 auto;
 }
 
-.slick-slide {
-  opacity: 0;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
-}
-
-.slick-active {
-  opacity: 1;
-}
-
 .slick-active .main-slider-heading {
   left: 0;
 }
