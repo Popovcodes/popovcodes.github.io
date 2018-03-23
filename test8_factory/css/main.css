@@ -1639,7 +1639,7 @@ p {
   .small-form input {
     display: block;
     width: 100%;
-    margin-bottom: 20px !important;
+    margin: 0 auto 20px !important;
   }
   .button.slide-button {
     height: 40px;
