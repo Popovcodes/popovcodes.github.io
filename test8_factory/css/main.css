@@ -276,7 +276,7 @@ p {
           align-items: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  padding: 2.95% 0 1.35%;
+  padding: 32px 0 11px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
@@ -469,6 +469,17 @@ p {
 .main-slider-img img {
   max-width: 90%;
   margin: 0 auto;
+}
+
+.slick-slide {
+  opacity: 0;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.slick-active {
+  opacity: 1;
 }
 
 .slick-active .main-slider-heading {
@@ -1530,7 +1541,7 @@ p {
   .js-manufactory-slider .slick-dots {
     left: auto;
     right: 43%;
-    bottom: 0%;
+    bottom: 4%;
   }
   .manufactory-section .slider-custom-arrows {
     left: auto;
@@ -1829,6 +1840,12 @@ p {
   }
   .collection-link {
     left: -150vw;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  body {
+    padding-top: 215px;
   }
 }
 

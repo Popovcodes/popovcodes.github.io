@@ -17,7 +17,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -182,17 +182,18 @@ $(document).ready(function(){
     $('#overlay, #modal-container').fadeOut(200);
   });
 
-    $('.video-prev-container').fancybox();
-    $('.fancybox').fancybox({});
+  $('.video-prev-container').fancybox();
+  $('.fancybox').fancybox({});
 
-    if(document.documentElement.clientWidth > 992) {
-      new WOW().init();
-    };
+  $('body').flowtype();
+
+  if(document.documentElement.clientWidth > 992) {
+    // wow.js animation  http://mynameismatthieu.com/WOW/
+    new WOW().init();
+  };
+
 
   if(document.documentElement.clientWidth > 768) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    // 
-
     //parallax and js-animation
       //parallax
       var parallax = function() {
