@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="img/favicon/icon.ico">
+<link rel="stylesheet" type="text/css" href="libs/bxslider/jquery.bxslider.min.css">
+<link rel="stylesheet" type="text/css" href="libs/wow.js/animate.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<title>Главная</title>
+</head>
+<body onload="init();">
+        
+        
+    <!-- =========================== header =========================== -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="headerTop flex">
+                <div class="logo">
+                    <div id="animation_container">
+                            <canvas id="canvas"></canvas>
+                            <div id="dom_overlay_container"></div>
+                        </div>
+                </div>
+                <div class="headerTop_contacts">
+                    <span>Свяжитесь с нами</span>
+                    <ul class="contacts_links">
+                        <li class="phoneLink"><a href="tel:+74999513199">+7 (499) 951-31-99</a></li>
+                        <li class="phoneLink"><a href="tel:+74957205697">+7 (495) 720-56-97</a></li>
+                        <li class="mailLink"><a href="mailto:info@quantum-apc.ru">info@quantum-apc.ru</a></li>
+                    </ul>
+                </div><!-- /.headerTop_contacts -->
+                <div class="headerTop_lang">
+                    <ul class="headerTop_lang-list">
+                        <li><a href="javascript:void(0);" class="lang_ru"></a></li>
+                        <li><a href="javascript:void(0);" class="lang_en"></a></li>
+                    </ul>
+                </div><!-- /.headerTop_lang -->
+            </div><!-- /.headerTop -->
+        </div><!-- /.wrapper -->
+
+        <nav class="headerNav">
+            <div class="wrapper">
+                <ul class="headerNav_list flex">
+                    <li><a href="about.html">о компании</a></li>
+                    <li><a href="production.html">продукция</a></li>
+                    <li><a href="services.html">услуги</a></li>
+                    <li><a href="gallery.html">галерея</a></li>
+                    <li><a href="manufacturing.html">производство</a></li>
+                    <li><a href="designing.html">проектирование</a></li>
+                    <li><a href="installation.html">монтаж</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                </ul>
+                <div class="searchBtn" id="searchBtn">
+                    <span class="searchBtn-trigger" id="searchBtn-trigger"></span>
+                    <form action="action.php" class="search-form" id="search-form">
+                        <span class="search-close" id="search-close">&#10006;</span>
+                        <input type="text" class="search-input" placeholder="Введите поисковый запрос">
+                    </form>
+                </div>
+            </div><!-- /.wrapper -->
+        </nav><!-- /.headerNav -->
+    </header>
+
+    <div class="mob-nav-btn" id="mob-nav-btn"><span></span></div>
+    <div class="mob-nav-cont">
+        <div class="mob-nav-close" id="mob-nav-close">&#10006;</div>
+        <img src="img/logo-static.png" alt="" class="mob-logo">
+        <ul class="mobNav_list">
+            <li><a href="about.html">о компании</a></li>
+            <li><a href="production.html">продукция</a></li>
+            <li><a href="services.html">услуги</a></li>
+            <li><a href="gallery.html">галерея</a></li>
+            <li><a href="manufacturing.html">производство</a></li>
+            <li><a href="designing.html">проектирование</a></li>
+            <li><a href="installation.html">монтаж</a></li>
+            <li><a href="contacts.html">контакты</a></li>
+        </ul>
+    </div><!-- /.mob-nav-cont -->
+
+
+    <!-- =========================== banner section =========================== -->
+    <section class="banner-section">
+        <img src="img/indexBig.jpg" alt="image">
+    </section><!-- /.banner-section -->
+
+
+        
+    <!-- =========================== works slider =========================== -->
+    <section class="worksSlider-section">
+        <div class="wrapper">
+            <div class="heading-container">
+                <span class="hex-container">
+                    <img src="img/geometryForms/c-1.png" alt="image" class="hex hex-1">
+                    <img src="img/geometryForms/c-2.png" alt="image" class="hex hex-2">
+                    <img src="img/geometryForms/c-3.png" alt="image" class="hex hex-3">
+                </span>
+                <h2 class="heading works-heading">наши работы</h2>
+            </div><!-- /.heading-container -->
+        </div>
+        
+        <div class="sliderContainer worksSliderContainer">
+
+            <div class="js-worksSlider" id="js-worksSlider">
+                <img src="img/indexPageSlides/indexSlide1.jpg" alt="image">
+                <img src="img/indexPageSlides/indexSlide2.jpg" alt="image">
+                <img src="img/indexPageSlides/indexSlide1.jpg" alt="image">
+                <img src="img/indexPageSlides/indexSlide2.jpg" alt="image">
+            </div><!-- /.js-worksSlider -->
+            <div class="sliderArrowsContainer">
+                <span class="sliderArrow sliderArrow_prev" id="worksSlider_prev"><span></span></span>
+                <span class="sliderArrow sliderArrow_next" id="worksSlider_next"><span></span></span>
+            </div>
+        </div><!-- /.worksSliderContainer -->
+    </section><!-- /.worksSlider-section -->
+
+        
+    <!-- =========================== geography section =========================== -->
+    <section class="geography-section">
+        <div class="wrapper">
+            <div class="heading-container">
+                <span class="hex-container">
+                    <img src="img/geometryForms/c-1.png" alt="image" class="hex hex-1">
+                    <img src="img/geometryForms/c-2.png" alt="image" class="hex hex-2">
+                    <img src="img/geometryForms/c-3.png" alt="image" class="hex hex-3">
+                </span>
+                <h2 class="heading geography-heading">география проектов</h2>
+            </div><!-- /.heading-container -->
+        </div><!-- /.wrapper -->
+        <div class="mapContainer">
+            <div class="pinsContainer">
+                <div class="mapPin" style="top: 190px; left: 70px;">
+                    <a href="#" class="map-link">
+                        <span class="pin-img-container">
+                            <img src="img/commonImgs/pin.png" alt="map pin">
+                        </span>
+                        <span class="map-title">Москва</span>
+                    </a>
+                </div>
+                <div class="mapPin" style="top: 250px; left: 110px;">
+                    <a href="#" class="map-link">
+                        <span class="pin-img-container">
+                            <img src="img/commonImgs/pin.png" alt="map pin">
+                        </span>
+                        <span class="map-title">Lorem Ipsum</span>
+                    </a>
+                </div>
+                <div class="mapPin" style="top: 110px; left: 80px;">
+                    <a href="#" class="map-link">
+                        <span class="pin-img-container">
+                            <img src="img/commonImgs/pin.png" alt="map pin">
+                        </span>
+                        <span class="map-title">Lorem Lorem Ipsum</span>
+                    </a>
+                </div>
+                <div class="mapPin" style="top: 200px; left: 150px;">
+                    <a href="#" class="map-link">
+                        <span class="pin-img-container">
+                            <img src="img/commonImgs/pin.png" alt="map pin">
+                        </span>
+                        <span class="map-title">LoremIpsumD</span>
+                    </a>
+                </div>
+                <div class="mapPin" style="top: 180px; left: 340px;">
+                    <a href="#" class="map-link">
+                        <span class="pin-img-container">
+                            <img src="img/commonImgs/pin.png" alt="map pin">
+                        </span>
+                        <span class="map-title">Loremipsum Dolorsit</span>
+                    </a>
+                </div>
+                <div class="mapPin" style="top: 170px; left: 210px;">
+                    <a href="#" class="map-link">
+                        <span class="pin-img-container">
+                            <img src="img/commonImgs/pin.png" alt="map pin">
+                        </span>
+                        <span class="map-title">Loremip</span>
+                    </a>
+                </div>
+            </div><!-- /.pinsContainer -->
+        </div><!-- /.mapContainer -->
+
+        <div class="mob-locations-cont">
+            <div class="wrapper">
+                <ul class="mob-locations-list flex">
+                    <li><a href="#">Москва</a></li>
+                    <li><a href="#">Lorem Ipsum</a></li>
+                    <li><a href="#">Lorem Loreem Loreem Lorem Ipsum</a></li>
+                    <li><a href="#">LoremIpsumD</a></li>
+                    <li><a href="#">Loremipsum Dolorsitpsum Dolorsit</a></li>
+                    <li><a href="#">Loremip</a></li>
+                </ul>
+                <a href="portfolio.html" class="mob-portfolio-link">Смотреть другие города</a><!-- /.portfolio-link -->
+            </div><!-- /.wrapper -->
+        </div><!-- /.mob-locations-cont -->
+
+    </section><!-- /.geography-section -->
+
+
+    <!-- =========================== about section =========================== -->
+
+    <section class="about-section" id="about-section">
+        <div class="wrapper">
+            <div class="heading-container">
+                <span class="hex-container">
+                    <img src="img/geometryForms/c-1.png" alt="image" class="hex hex-1">
+                    <img src="img/geometryForms/c-2.png" alt="image" class="hex hex-2">
+                    <img src="img/geometryForms/c-3.png" alt="image" class="hex hex-3">
+                </span>
+                <h2 class="heading about-heading">о компании</h2>
+            </div><!-- /.heading-container -->
+            <div class="about-content flex">
+                <ul class="advantages-list">
+                    <li>
+                        <span class="adv-hex-container wow rotateIn">
+                            <img src="img/geometryForms/rombs.png" alt="i" class="rombs-img wow bounceInLeft" data-wow-delay="1s">
+                            <span class="adv-icon gears wow fadeIn"></span>
+                        </span>
+                        <span class="advantages-text wow fadeInRight" data-wow-delay="2s">Комплексный подход к работе</span>
+                    </li>
+                    <li>
+                        <span class="adv-hex-container wow rotateIn">
+                            <img src="img/geometryForms/rombs.png" alt="i" class="rombs-img wow bounceInLeft" data-wow-delay="1s">
+                            <span class="adv-icon calendar wow fadeIn"></span>
+                        </span>
+                        <span class="advantages-text wow fadeInRight" data-wow-delay="2s">соблюдение сроков и условий</span>
+                    </li>
+                    <li>
+                        <span class="adv-hex-container wow rotateIn">
+                            <img src="img/geometryForms/rombs.png" alt="i" class="rombs-img wow bounceInLeft" data-wow-delay="1s">
+                            <span class="adv-icon puzzle wow fadeIn"></span>
+                        </span>
+                        <span class="advantages-text wow fadeInRight" data-wow-delay="2s">инновации и креативность</span>
+                    </li>
+                    <li>
+                        <span class="adv-hex-container wow rotateIn">
+                            <img src="img/geometryForms/rombs.png" alt="i" class="rombs-img wow bounceInLeft" data-wow-delay="1s">
+                            <span class="adv-icon quality wow fadeIn"></span>
+                        </span>
+                        <span class="advantages-text wow fadeInRight" data-wow-delay="2s">безупречность качества</span>
+                    </li>
+                    <li>
+                        <span class="adv-hex-container wow rotateIn">
+                            <img src="img/geometryForms/rombs.png" alt="i" class="rombs-img wow bounceInLeft" data-wow-delay="1s">
+                            <span class="adv-icon wallet wow fadeIn"></span>
+                        </span>
+                        <span class="advantages-text wow fadeInRight" data-wow-delay="2s">Фиксированное ценообразование</span>
+                </ul>
+                <div class="about-text">
+                    <p class="text">Мы проектируем, производим и монтируем: стандартную и уникальную навигацию, вывески, стелы, пилоны, крышные установки, светодиодные вывески любого уровня и сложности, а также выполняем монтажные работы по всему миру!</p>
+                    <p>Мы предлагаем комплексное решение по наружным фасадам, интерьерное оформление. Наша компания органично сочетает в себе огромный творческий потенциал дизайнеров, а так же качественное изготовление и монтаж наружной рекламы.</p>
+                    <div class="lines-decor-cont">
+                        <div class="narrow-decor-cont"></div>
+                        <div class="wide-decor-cont"></div>
+                    </div>
+                </div><!-- /.about-text -->
+            </div><!-- /.about-content -->
+            <img src="img/geometryForms/glare-sm.png" alt="" class="glare about-glare-l-1">
+            <img src="img/geometryForms/glare-md.png" alt="" class="glare about-glare-l-2">
+            <img src="img/geometryForms/glare-sm.png" alt="" class="glare about-glare-r-1">
+            <img src="img/geometryForms/glare-md.png" alt="" class="glare about-glare-r-2">
+        </div><!-- /.wrapper -->
+
+    </section><!-- /.about-section -->
+
+
+    <!-- =========================== contacts section =========================== -->
+    <section class="contacts-section" id="contacts-section">
+        <div class="wrapper">
+            <div class="contacts-container flex">
+                <div class="contacts-links-part">
+                    <div>
+                        <h4>связаться с нами:</h4>
+                        <div class="contacts-phones">
+                            <a href="tel:+74999513199" class="contact-item tel-item">+7 (499) 951-31-99</a>
+                            <a href="tel:+74999061008" class="contact-item tel-item">+7 (499) 906-10-08</a>
+                            <a href="tel:+74957205697" class="contact-item tel-item">+7 (495) 720-56-97</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>напишите email:</h4>
+                        <div class="contacts-mail">
+                            <a href="mailto:inform@mail.ru" class="contact-item">inform@mail.ru</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>мы находимся:</h4>
+                        <div class="contacts-adress">
+                            <span href="mailto:inform@mail.ru" class="contact-item">Россия, Москва, ул. Бусиновская горка, д.&nbsp;1а</span>
+                        </div>
+                    </div>
+                    <div class="lines-decor-cont">
+                        <div class="narrow-decor-cont"></div>
+                        <div class="wide-decor-cont"></div>
+                    </div>
+                </div><!-- /.contacts-links-part -->
+                <div class="contacts-form-part">
+                    <h4>Заполните форму обратной связи:</h4>
+                    <form action="action.php" class="main-form flex" name="main-form">
+                        <input type="text" placeholder="Ваше имя" name="name">
+                        <input type="tel" placeholder="Телефон" name="phone">
+                        <input type="email" placeholder="Ваш email" name="email">
+                        <div>
+                            <div class="captcha"></div>
+                            <input type="submit" value="Обратная связь" class="button">
+                        </div>
+                        
+                    </form>
+                    <img class="form-decor" src="img/geometryForms/hexagonBig.png"></img>
+                </div><!-- /.contacts-form-part -->
+            </div><!-- /.contacts-container -->
+            <img src="img/geometryForms/glare-md.png" alt="" class="glare contacts-glare-t-1">
+            <img src="img/geometryForms/glare-lg.png" alt="" class="glare contacts-glare-t-2">
+            <img src="img/geometryForms/glare-sm.png" alt="" class="glare contacts-glare-b-1">
+            <img src="img/geometryForms/glare-md.png" alt="" class="glare contacts-glare-b-2">
+        </div><!-- /.wrapper -->
+    </section><!-- /.contacts-section -->
+
+
+    <!-- =========================== map section =========================== -->
+    <section class="map-section" id="main-map"></section><!-- /.map-section -->
+
+        
+    <!-- =========================== footer =========================== -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-top flex">
+                <a href="index.html" class="footer-logo">
+                    <img src="img/logo-static.png" alt="">
+                </a>
+                <div class="footer-links-cont">
+                    <ul class="footer-pages-links flex">
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="production.html">Продукция</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="manufacturing.html">Производство</a></li>
+                        <li><a href="designing.html">Проектирование</a></li>
+                        <li><a href="installation.html">Монтаж</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <ul class="contacts_links footer-contacts_links">
+                        <li class="phoneLink"><a href="tel:+74999513199">+7 (499) 951-31-99</a></li>
+                        <li class="phoneLink"><a href="tel:+74999061008">+7 (499) 906-10-08</a></li>
+                        <li class="phoneLink"><a href="tel:+74957205697">+7 (495) 720-56-97</a></li>
+                        <li class="mailLink"><a href="mailto:info@quantum-apc.ru">info@quantum-apc.ru</a></li>
+                    </ul>
+                </div><!-- /.footer-links-cont -->
+            </div><!-- /.footer-top -->
+            <div class="footer-bottom flex">
+                <div class="copy">&copy; 2017 Все права защищены</div>
+                <div class="creator">Создание сайта - <a href="https://group-s.ru/">Group-S</a></div>
+            </div><!-- /.footer-bottom -->
+        </div><!-- /.wrapper -->
+    </footer>
+    
+    <div class="overlay hidden"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-ydnwQtl-Vbi_9ZtOP1JcYPhYplVwkVk"></script>
+    <script src="js/googlemap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script><!-- for logo animation -->
+    <script src="js/animation.js"></script><!-- for logo animation -->
+    <script src="libs/bxslider/jquery.bxslider.min.js"></script>
+    <script src="libs/wow.js/wow.min.js"></script>
+    <script src="js/common-index.js"></script>
+    
+
+</body>
+</html>
