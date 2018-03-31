@@ -1666,7 +1666,7 @@ p.nominalBounds = new cjs.Rectangle(-277.5,-58.1,560.1,120);
         /*
         Загружает веб-страницу в новом окне браузера.
         */
-        window.open('http://www.adobe.com', '_blank');
+        window.open('index.html');
         });
         var _this = this;
         /*

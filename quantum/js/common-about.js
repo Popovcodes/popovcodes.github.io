@@ -6,22 +6,94 @@ $(document).ready(function(){
     $('.overlay').toggleClass('hidden')
   });
 
-  //https://bxslider.com/options/
-  var aboutSlider = $('#js-aboutSlider').bxSlider({
-    speed: 3000,
-    autoHover: true,
-    pager: false,
-    auto: false,
-    controls: false
+  //slick.js slider   http://kenwheeler.github.io/slick/
+  $('#js-about-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 890,
+        settings: {
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          }
+        },
+        {
+          breakpoint: 375,
+          settings: {
+          }
+      }
+    ]
   });
 
-  $('#aboutSlider_prev').click(function(){
-    aboutSlider.goToPrevSlide();
-  })
+  $('#about-slider-prev').click(function(){
+    $('#js-about-slider').slick('slickPrev');
+  });
 
-  $('#aboutSlider_next').click(function(){
-    aboutSlider.goToNextSlide();
-  })
+  $('#about-slider-next').click(function(){
+    $('#js-about-slider').slick('slickNext');
+  });
+ 
+  //slick.js slider   http://kenwheeler.github.io/slick/
+  $('#js-clients-slider').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 890,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            }
+          },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+      }
+    ]
+  });
+
+  $('#clients-arow-prev').click(function(){
+    $('#js-clients-slider').slick('slickPrev');
+  });
+
+  $('#clients-arow-next').click(function(){
+    $('#js-clients-slider').slick('slickNext');
+  });
+
+
+
+
 
   // show/hide searh input
   $('#searchBtn-trigger').click(function(){
@@ -55,7 +127,7 @@ $(document).ready(function(){
   //   } else {};
   // }
 
-  $(window).scroll(parallax);
+  //$(window).scroll(parallax);
 
 
   if(document.documentElement.clientWidth > 1200) {
@@ -63,3 +135,4 @@ $(document).ready(function(){
     new WOW().init();
   };
 });
+

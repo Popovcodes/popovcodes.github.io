@@ -7,8 +7,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="">
 <link rel="shortcut icon" href="img/favicon/icon.ico">
-<link rel="stylesheet" type="text/css" href="libs/bxslider/jquery.bxslider.min.css">
 <link rel="stylesheet" type="text/css" href="libs/wow.js/animate.css">
+<link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
 <title>О компании</title>
@@ -22,9 +22,10 @@
             <div class="headerTop flex">
                 <div class="logo">
                     <div id="animation_container">
-                            <canvas id="canvas"></canvas>
-                            <div id="dom_overlay_container"></div>
-                        </div>
+                        <canvas id="canvas"></canvas>
+                        <div id="dom_overlay_container"></div>
+                    </div>
+                    <a href="index.html" class="logo-link"></a>
                 </div>
                 <div class="headerTop_contacts">
                     <span>Свяжитесь с нами</span>
@@ -47,10 +48,10 @@
             <div class="wrapper">
                 <ul class="headerNav_list flex">
                     <li><a href="about.html">о компании</a></li>
-                    <li><a href="production.html">продукция</a></li>
+                    <li><a href="products.html">продукция</a></li>
                     <li><a href="services.html">услуги</a></li>
                     <li><a href="gallery.html">галерея</a></li>
-                    <li><a href="manufacturing.html">производство</a></li>
+                    <li><a href="production.html">производство</a></li>
                     <li><a href="designing.html">проектирование</a></li>
                     <li><a href="installation.html">монтаж</a></li>
                     <li><a href="contacts.html">контакты</a></li>
@@ -67,8 +68,9 @@
     </header>
 
     <div class="path-container">
+        <div class="decor-horizontal"></div>
         <div class="wrapper">
-            <span class="path-item">Главная</span>
+            <span class="path-item"><a href="index.html">Главная</a></span>
             <span class="path-item">О компании</span>
         </div><!-- /.wrapper -->
     </div><!-- /.path-container -->
@@ -79,10 +81,10 @@
         <img src="img/logo-static.png" alt="" class="mob-logo">
         <ul class="mobNav_list">
             <li><a href="about.html">о компании</a></li>
-            <li><a href="production.html">продукция</a></li>
+            <li><a href="products.html">продукция</a></li>
             <li><a href="services.html">услуги</a></li>
             <li><a href="gallery.html">галерея</a></li>
-            <li><a href="manufacturing.html">производство</a></li>
+            <li><a href="production.html">производство</a></li>
             <li><a href="designing.html">проектирование</a></li>
             <li><a href="installation.html">монтаж</a></li>
             <li><a href="contacts.html">контакты</a></li>
@@ -93,8 +95,10 @@
     <section class="aboutSlider-section">
         <div class="wrapper">
             <div class="heading-container">
-                <span class="hex-container single-hex-container">
-                    <img src="img/geometryForms/singleHexagon.png" alt="image" class="single-hex">
+                <span class="hex-container">
+                    <img src="img/geometryForms/c-1.png" alt="image" class="hex hex-1">
+                    <img src="img/geometryForms/c-2.png" alt="image" class="hex hex-2">
+                    <img src="img/geometryForms/c-3.png" alt="image" class="hex hex-3">
                 </span>
                 <h2 class="heading">о компании</h2>
             </div><!-- /.heading-container -->
@@ -103,15 +107,15 @@
         
         <div class="sliderContainer aboutSliderContainer">
 
-            <div class="js-aboutSlider" id="js-aboutSlider">
+            <div class="js-aboutSlider" id="js-about-slider">
                 <img src="img/indexPageSlides/indexSlide1.jpg" alt="image">
                 <img src="img/indexPageSlides/indexSlide2.jpg" alt="image">
                 <img src="img/indexPageSlides/indexSlide1.jpg" alt="image">
                 <img src="img/indexPageSlides/indexSlide2.jpg" alt="image">
             </div><!-- /.js-worksSlider -->
             <div class="sliderArrowsContainer">
-                <span class="sliderArrow sliderArrow_prev" id="aboutSlider_prev"><span></span></span>
-                <span class="sliderArrow sliderArrow_next" id="aboutSlider_next"><span></span></span>
+                <span class="sliderArrow sliderArrow_prev" id="about-slider-prev"><span></span></span>
+                <span class="sliderArrow sliderArrow_next" id="about-slider-next"><span></span></span>
                 <div class="arrows-bg"></div>
             </div>
         </div><!-- /.worksSliderContainer -->
@@ -127,9 +131,115 @@
             <p>Мы предлагаем комплексное решение по наружным фасадам, интерьерное оформление. Наша компания органично сочетает в себе огромный творческий потенциал дизайнеров, а так же качественное изготовление и монтаж наружной рекламы.</p>
         </div><!-- /.wrapper -->
     </section><!-- /.about-text-section -->
- 
+
+
+        
+    <!-- =========================== clients slider section =========================== -->
+    <section class="clients-section">
+        <div class="wrapper">
+
+            <div class="subheading-container">
+                <h3 class="subheading subheading-uppercase">клиенты и партнёры</h3>
+                <img src="img/geometryForms/verticalSkew.png" alt="" class="subheading-decor wow slideInLeft">
+            </div><!-- /.subheading-container -->
+
+            <div class="clients-slider-container">
+                <div class="js-clients-slider" id="js-clients-slider">
+                    <img src="img/brands/brand1.png" alt="">
+                    <img src="img/brands/brand2.png" alt="">
+                    <img src="img/brands/brand3.png" alt="">
+                    <img src="img/brands/brand4.png" alt="">
+                    <img src="img/brands/brand5.png" alt="">
+                    <img src="img/brands/brand1.png" alt="">
+                    <img src="img/brands/brand2.png" alt="">
+                    <img src="img/brands/brand3.png" alt="">
+                    <img src="img/brands/brand4.png" alt="">
+                    <img src="img/brands/brand5.png" alt="">
+                </div><!-- /.js-clients-slider -->
+                <span class="clients-arrow clients-arow-prev" id="clients-arow-prev"><span></span></span>
+                <span class="clients-arrow clients-arow-next" id="clients-arow-next"><span></span></span>
+            </div><!-- /.clients-slider-container -->
+        </div><!-- /.wrapper -->
+    </section><!-- /.clients-section -->
+
+        
+    <!-- =========================== team section =========================== -->
+    <section class="team-section" id="team-section">
+        <div class="wrapper">
+            <div class="subheading-container">
+                <h3 class="subheading subheading-uppercase team-subheading">наша команда</h3>
+                <img src="img/geometryForms/verticalSkew.png" alt="" class="subheading-decor wow slideInLeft">
+            </div><!-- /.subheading-container -->
+            <div class="team-container flex">
+
+                <div class="team-item-container">
+                    <img src="img/team/person-1.jpg" alt="" class="team-item-img wow slideInLeft">
+                    <div class="team-item-text">
+                        <h4 class="team-item-name">Александрийский Вениамин Константинович</h4>
+                        <p class="team-item-position">Менеджер по работе с клиентами</p>
+                        <img src="img/geometryForms/shevron.png" alt="" class="team-photo-shevron wow slideInLeft">
+                    </div><!-- /.team-item-text -->
+                    <img src="img/geometryForms/portraitDecor.png" alt="" class="team-photo-hex wow fadeInLeft" data-wow-delay="1s">
+                </div><!-- /.team-item-container -->
+
+                <div class="team-item-container">
+                    <img src="img/team/person-2.jpg" alt="" class="team-item-img wow slideInLeft">
+                    <div class="team-item-text">
+                        <h4 class="team-item-name">Павленкова Инна Алексеевна</h4>
+                        <p class="team-item-position">Коммерческий директор</p>
+                        <img src="img/geometryForms/shevron.png" alt="" class="team-photo-shevron wow slideInLeft">
+                    </div><!-- /.team-item-text -->
+                    <img src="img/geometryForms/portraitDecor.png" alt="" class="team-photo-hex wow fadeInLeft" data-wow-delay="1s">
+                </div><!-- /.team-item-container -->
+
+                <div class="team-item-container">
+                    <img src="img/team/person-3.jpg" alt="" class="team-item-img wow slideInLeft">
+                    <div class="team-item-text">
+                        <h4 class="team-item-name">Иванов Алексей Петрович</h4>
+                        <p class="team-item-position">Менеджер по работе с клиентами</p>
+                        <img src="img/geometryForms/shevron.png" alt="" class="team-photo-shevron wow slideInLeft">
+                    </div><!-- /.team-item-text -->
+                    <img src="img/geometryForms/portraitDecor.png" alt="" class="team-photo-hex wow fadeInLeft" data-wow-delay="1s">
+                </div><!-- /.team-item-container -->
+
+                <div class="team-item-container">
+                    <img src="img/team/person-4.jpg" alt="" class="team-item-img wow slideInLeft">
+                    <div class="team-item-text">
+                        <h4 class="team-item-name">Шутова Елена Александровна</h4>
+                        <p class="team-item-position">Специалист технического отдела </p>
+                        <img src="img/geometryForms/shevron.png" alt="" class="team-photo-shevron wow slideInLeft">
+                    </div><!-- /.team-item-text -->
+                    <img src="img/geometryForms/portraitDecor.png" alt="" class="team-photo-hex wow fadeInLeft" data-wow-delay="1s">
+                </div><!-- /.team-item-container -->
+
+                <div class="team-item-container">
+                    <img src="img/team/person-5.jpg" alt="" class="team-item-img wow slideInLeft">
+                    <div class="team-item-text">
+                        <h4 class="team-item-name">Клименкова Анастасия Ивановна</h4>
+                        <p class="team-item-position">Менеджер по работе с клиентами</p>
+                        <img src="img/geometryForms/shevron.png" alt="" class="team-photo-shevron wow slideInLeft">
+                    </div><!-- /.team-item-text -->
+                    <img src="img/geometryForms/portraitDecor.png" alt="" class="team-photo-hex wow fadeInLeft" data-wow-delay="1s">
+                </div><!-- /.team-item-container -->
+
+                <div class="team-item-container">
+                    <img src="img/team/person-6.jpg" alt="" class="team-item-img wow slideInLeft">
+                    <div class="team-item-text">
+                        <h4 class="team-item-name">Алексеев Юрий Викторович</h4>
+                        <p class="team-item-position">Дизайнер</p>
+                        <img src="img/geometryForms/shevron.png" alt="" class="team-photo-shevron wow slideInLeft">
+                    </div><!-- /.team-item-text -->
+                    <img src="img/geometryForms/portraitDecor.png" alt="" class="team-photo-hex wow fadeInLeft" data-wow-delay="1s">
+                </div><!-- /.team-item-container -->
+
+            </div><!-- /.team-container -->
+        </div><!-- /.wrapper -->
+    </section><!-- /.team-section -->
+
+
     <!-- =========================== footer =========================== -->
-    <footer class="footer">
+    <footer class="footer footer-light">
+        <div class="decor-horizontal"></div>
         <div class="wrapper">
             <div class="footer-top flex">
                 <a href="index.html" class="footer-logo">
@@ -138,10 +248,10 @@
                 <div class="footer-links-cont">
                     <ul class="footer-pages-links flex">
                         <li><a href="about.html">О компании</a></li>
-                        <li><a href="production.html">Продукция</a></li>
+                        <li><a href="products.html">Продукция</a></li>
                         <li><a href="services.html">Услуги</a></li>
                         <li><a href="gallery.html">Галерея</a></li>
-                        <li><a href="manufacturing.html">Производство</a></li>
+                        <li><a href="production.html">Производство</a></li>
                         <li><a href="designing.html">Проектирование</a></li>
                         <li><a href="installation.html">Монтаж</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
@@ -166,9 +276,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script><!-- for logo animation -->
     <script src="js/animation.js"></script><!-- for logo animation -->
-    <script src="libs/bxslider/jquery.bxslider.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
     <script src="libs/wow.js/wow.min.js"></script>
-    <script src="js/common-about.js"></script>
+    <script src="js/aboutPage.js"></script>
     
 
 </body>

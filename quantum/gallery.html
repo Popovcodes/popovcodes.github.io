@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="img/favicon/icon.ico">
+<link rel="stylesheet" type="text/css" href="libs/bxslider/jquery.bxslider.min.css">
+<link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="libs/wow.js/animate.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<title>Галерея</title>
+</head>
+<body onload="init();">
+        
+        
+    <!-- =========================== header =========================== -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="headerTop flex">
+                <div class="logo">
+                    <div id="animation_container">
+                        <canvas id="canvas"></canvas>
+                        <div id="dom_overlay_container"></div>
+                    </div>
+                    <a href="index.html" class="logo-link"></a>
+                </div>
+                <div class="headerTop_contacts">
+                    <span>Свяжитесь с нами</span>
+                    <ul class="contacts_links">
+                        <li class="phoneLink"><a href="tel:+74999513199">+7 (499) 951-31-99</a></li>
+                        <li class="phoneLink"><a href="tel:+74957205697">+7 (495) 720-56-97</a></li>
+                        <li class="mailLink"><a href="mailto:info@quantum-apc.ru">info@quantum-apc.ru</a></li>
+                    </ul>
+                </div><!-- /.headerTop_contacts -->
+                <div class="headerTop_lang">
+                    <ul class="headerTop_lang-list">
+                        <li><a href="javascript:void(0);" class="lang_ru"></a></li>
+                        <li><a href="javascript:void(0);" class="lang_en"></a></li>
+                    </ul>
+                </div><!-- /.headerTop_lang -->
+            </div><!-- /.headerTop -->
+        </div><!-- /.wrapper -->
+
+        <nav class="headerNav">
+            <div class="wrapper">
+                <ul class="headerNav_list flex">
+                    <li><a href="about.html">о компании</a></li>
+                    <li><a href="products.html">продукция</a></li>
+                    <li><a href="services.html">услуги</a></li>
+                    <li><a href="gallery.html">галерея</a></li>
+                    <li><a href="production.html">производство</a></li>
+                    <li><a href="designing.html">проектирование</a></li>
+                    <li><a href="installation.html">монтаж</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                </ul>
+                <div class="searchBtn" id="searchBtn">
+                    <span class="searchBtn-trigger" id="searchBtn-trigger"></span>
+                    <form action="action.php" class="search-form" id="search-form">
+                        <span class="search-close" id="search-close">&#10006;</span>
+                        <input type="text" class="search-input" placeholder="Введите поисковый запрос">
+                    </form>
+                </div>
+            </div><!-- /.wrapper -->
+        </nav><!-- /.headerNav -->
+    </header>
+
+    <div class="path-container">
+        <div class="decor-horizontal"></div>
+        <div class="wrapper">
+            <span class="path-item"><a href="index.html">Главная</a></span>
+            <span class="path-item">Галерея</span>
+        </div><!-- /.wrapper -->
+    </div><!-- /.path-container -->
+
+    <div class="mob-nav-btn" id="mob-nav-btn"><span></span></div>
+    <div class="mob-nav-cont">
+        <div class="mob-nav-close" id="mob-nav-close">&#10006;</div>
+        <img src="img/logo-static.png" alt="" class="mob-logo">
+        <ul class="mobNav_list">
+            <li><a href="about.html">о компании</a></li>
+            <li><a href="products.html">продукция</a></li>
+            <li><a href="services.html">услуги</a></li>
+            <li><a href="gallery.html">галерея</a></li>
+            <li><a href="production.html">производство</a></li>
+            <li><a href="designing.html">проектирование</a></li>
+            <li><a href="installation.html">монтаж</a></li>
+            <li><a href="contacts.html">контакты</a></li>
+        </ul>
+    </div><!-- /.mob-nav-cont -->
+
+        
+        
+    <!-- =========================== gallery section =========================== -->
+    <section class="gallery-section">
+        <div class="wrapper">
+            <div class="heading-container">
+                <span class="hex-container">
+                    <img src="img/geometryForms/c-1.png" alt="image" class="hex hex-1">
+                    <img src="img/geometryForms/c-2.png" alt="image" class="hex hex-2">
+                    <img src="img/geometryForms/c-3.png" alt="image" class="hex hex-3">
+                </span>
+                <h2 class="heading">галерея</h2>
+            </div><!-- /.heading-container -->
+            <div class="gallery-links-container">
+                <ul class="gallery-links flex">
+                    <li><a href="javascript:void(0);" class="button allProjects-button">Все проекты</a></li>
+                    <li><a href="javascript:void(0);" class="video">Видео</a></li>
+                    <li><a href="javascript:void(0);">Объемные буквы</a></li>
+                    <li><a href="javascript:void(0);">Стеллы и пилоны</a></li>
+                    <li><a href="javascript:void(0);">Входная группа</a></li>
+                    <li><a href="javascript:void(0);">Брендирование транспорта</a></li>
+                    <li><a href="javascript:void(0);">Интерьерная реклама</a></li>
+                    <li><a href="javascript:void(0);">Фасадные вывески</a></li>
+                    <li><a href="javascript:void(0);">Крышные конструкции</a></li>
+                </ul>
+            </div><!-- /.gallery-links-container -->
+            <div class="gallery-common-container">
+
+                <div class="gallery-slider-container">
+                    <div class="js-gallery-slider" id="js-gallery-slider-1">
+                        <img src="img/productSlides/slide-1.jpg" alt="image">
+                        <img src="img/productSlides/slide-2.jpg" alt="image">
+                        <img src="img/productSlides/slide-3.jpg" alt="image">
+                        <img src="img/productSlides/slide-4.jpg" alt="image">
+                    </div><!-- /.js-gallery-slider -->
+                    <div class="gallery-slider-text">
+                        <p>интерьерная реклама для спортивного клуба в Москве</p>
+                    </div><!-- /.gallery-slider-text -->
+                    <div class="sliderArrowsContainer">
+                        <span class="sliderArrow sliderArrow_prev" id="gallery-slider-1_prev"><span></span></span>
+                        <span class="sliderArrow sliderArrow_next" id="gallery-slider-1_next"><span></span></span>
+                    </div>
+                    <div class="lines-decor-cont">
+                        <div class="narrow-decor-cont"></div>
+                    </div>
+                </div><!-- /.gallery-slider-container -->
+
+                <div class="gallery-slider-container">
+                    <div class="js-gallery-slider" id="js-gallery-slider-2">
+                        <img src="img/productSlides/slide-2.jpg" alt="image">
+                        <img src="img/productSlides/slide-3.jpg" alt="image">
+                        <img src="img/productSlides/slide-4.jpg" alt="image">
+                        <img src="img/productSlides/slide-1.jpg" alt="image">
+                    </div><!-- /.js-gallery-slider -->
+                    <div class="gallery-slider-text">
+                        <p>интерьерная реклама для спортивного клуба в Москве</p>
+                    </div><!-- /.gallery-slider-text -->
+                    <div class="sliderArrowsContainer">
+                        <span class="sliderArrow sliderArrow_prev" id="gallery-slider-2_prev"><span></span></span>
+                        <span class="sliderArrow sliderArrow_next" id="gallery-slider-2_next"><span></span></span>
+                    </div>
+                    <div class="lines-decor-cont">
+                        <div class="narrow-decor-cont"></div>
+                    </div>
+                </div><!-- /.gallery-slider-container -->
+
+                <div class="gallery-slider-container">
+                    <div class="js-gallery-slider" id="js-gallery-slider-3">
+                        <img src="img/productSlides/slide-3.jpg" alt="image">
+                        <img src="img/productSlides/slide-4.jpg" alt="image">
+                        <img src="img/productSlides/slide-1.jpg" alt="image">
+                        <img src="img/productSlides/slide-2.jpg" alt="image">
+                    </div><!-- /.js-gallery-slider -->
+                    <div class="gallery-slider-text">
+                        <p>интерьерная реклама для спортивного клуба в Москве</p>
+                    </div><!-- /.gallery-slider-text -->
+                    <div class="sliderArrowsContainer">
+                        <span class="sliderArrow sliderArrow_prev" id="gallery-slider-3_prev"><span></span></span>
+                        <span class="sliderArrow sliderArrow_next" id="gallery-slider-3_next"><span></span></span>
+                    </div>
+                    <div class="lines-decor-cont">
+                        <div class="narrow-decor-cont"></div>
+                    </div>
+                </div><!-- /.gallery-slider-container -->
+
+                <div class="gallery-slider-container">
+                    <div class="js-gallery-slider" id="js-gallery-slider-4">
+                        <img src="img/productSlides/slide-4.jpg" alt="image">
+                        <img src="img/productSlides/slide-1.jpg" alt="image">
+                        <img src="img/productSlides/slide-2.jpg" alt="image">
+                        <img src="img/productSlides/slide-3.jpg" alt="image">
+                    </div><!-- /.js-gallery-slider -->
+                    <div class="gallery-slider-text">
+                        <p>интерьерная реклама для спортивного клуба в Москве</p>
+                    </div><!-- /.gallery-slider-text -->
+                    <div class="sliderArrowsContainer">
+                        <span class="sliderArrow sliderArrow_prev" id="gallery-slider-4_prev"><span></span></span>
+                        <span class="sliderArrow sliderArrow_next" id="gallery-slider-4_next"><span></span></span>
+                    </div>
+                    <div class="lines-decor-cont">
+                        <div class="narrow-decor-cont"></div>
+                    </div>
+                </div><!-- /.gallery-slider-container -->
+
+            </div><!-- /.gallery-common-container -->
+        </div><!-- /.wrapper -->
+    </section><!-- /.gallery-section -->
+
+    <!-- =========================== footer =========================== -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-top flex">
+                <a href="index.html" class="footer-logo">
+                    <img src="img/logo-static.png" alt="">
+                </a>
+                <div class="footer-links-cont">
+                    <ul class="footer-pages-links flex">
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="products.html">Продукция</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="production.html">Производство</a></li>
+                        <li><a href="designing.html">Проектирование</a></li>
+                        <li><a href="installation.html">Монтаж</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <ul class="contacts_links footer-contacts_links">
+                        <li class="phoneLink"><a href="tel:+74999513199">+7 (499) 951-31-99</a></li>
+                        <li class="phoneLink"><a href="tel:+74999061008">+7 (499) 906-10-08</a></li>
+                        <li class="phoneLink"><a href="tel:+74957205697">+7 (495) 720-56-97</a></li>
+                        <li class="mailLink"><a href="mailto:info@quantum-apc.ru">info@quantum-apc.ru</a></li>
+                    </ul>
+                </div><!-- /.footer-links-cont -->
+            </div><!-- /.footer-top -->
+            <div class="footer-bottom flex">
+                <div class="copy">&copy; 2017 Все права защищены</div>
+                <div class="creator">Создание сайта - <a href="https://group-s.ru/">Group-S</a></div>
+            </div><!-- /.footer-bottom -->
+        </div><!-- /.wrapper -->
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script><!-- for logo animation -->
+    <script src="js/animation.js"></script><!-- for logo animation -->
+    <script src="libs/bxslider/jquery.bxslider.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/wow.js/wow.min.js"></script>
+    <script src="js/galleryPage.js"></script>
+
+</body>
+</html>

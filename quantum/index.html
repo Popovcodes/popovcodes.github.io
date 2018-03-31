@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="">
 <link rel="shortcut icon" href="img/favicon/icon.ico">
-<link rel="stylesheet" type="text/css" href="libs/bxslider/jquery.bxslider.min.css">
+<link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="libs/wow.js/animate.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -22,9 +22,10 @@
             <div class="headerTop flex">
                 <div class="logo">
                     <div id="animation_container">
-                            <canvas id="canvas"></canvas>
-                            <div id="dom_overlay_container"></div>
-                        </div>
+                        <canvas id="canvas"></canvas>
+                        <div id="dom_overlay_container"></div>
+                    </div>
+                    <a href="index.html" class="logo-link"></a>
                 </div>
                 <div class="headerTop_contacts">
                     <span>Свяжитесь с нами</span>
@@ -47,10 +48,10 @@
             <div class="wrapper">
                 <ul class="headerNav_list flex">
                     <li><a href="about.html">о компании</a></li>
-                    <li><a href="production.html">продукция</a></li>
+                    <li><a href="products.html">продукция</a></li>
                     <li><a href="services.html">услуги</a></li>
                     <li><a href="gallery.html">галерея</a></li>
-                    <li><a href="manufacturing.html">производство</a></li>
+                    <li><a href="production.html">производство</a></li>
                     <li><a href="designing.html">проектирование</a></li>
                     <li><a href="installation.html">монтаж</a></li>
                     <li><a href="contacts.html">контакты</a></li>
@@ -72,10 +73,10 @@
         <img src="img/logo-static.png" alt="" class="mob-logo">
         <ul class="mobNav_list">
             <li><a href="about.html">о компании</a></li>
-            <li><a href="production.html">продукция</a></li>
+            <li><a href="products.html">продукция</a></li>
             <li><a href="services.html">услуги</a></li>
             <li><a href="gallery.html">галерея</a></li>
-            <li><a href="manufacturing.html">производство</a></li>
+            <li><a href="production.html">производство</a></li>
             <li><a href="designing.html">проектирование</a></li>
             <li><a href="installation.html">монтаж</a></li>
             <li><a href="contacts.html">контакты</a></li>
@@ -89,7 +90,6 @@
     </section><!-- /.banner-section -->
 
 
-        
     <!-- =========================== works slider =========================== -->
     <section class="worksSlider-section">
         <div class="wrapper">
@@ -104,7 +104,6 @@
         </div>
         
         <div class="sliderContainer worksSliderContainer">
-
             <div class="js-worksSlider" id="js-worksSlider">
                 <img src="img/indexPageSlides/indexSlide1.jpg" alt="image">
                 <img src="img/indexPageSlides/indexSlide2.jpg" alt="image">
@@ -116,6 +115,7 @@
                 <span class="sliderArrow sliderArrow_next" id="worksSlider_next"><span></span></span>
             </div>
         </div><!-- /.worksSliderContainer -->
+        
     </section><!-- /.worksSlider-section -->
 
         
@@ -249,6 +249,7 @@
                             <span class="adv-icon wallet wow fadeIn"></span>
                         </span>
                         <span class="advantages-text wow fadeInRight" data-wow-delay="2s">Фиксированное ценообразование</span>
+                    </li>
                 </ul>
                 <div class="about-text">
                     <p class="text">Мы проектируем, производим и монтируем: стандартную и уникальную навигацию, вывески, стелы, пилоны, крышные установки, светодиодные вывески любого уровня и сложности, а также выполняем монтажные работы по всему миру!</p>
@@ -266,7 +267,6 @@
         </div><!-- /.wrapper -->
 
     </section><!-- /.about-section -->
-
 
     <!-- =========================== contacts section =========================== -->
     <section class="contacts-section" id="contacts-section">
@@ -301,11 +301,34 @@
                 <div class="contacts-form-part">
                     <h4>Заполните форму обратной связи:</h4>
                     <form action="action.php" class="main-form flex" name="main-form">
-                        <input type="text" placeholder="Ваше имя" name="name">
-                        <input type="tel" placeholder="Телефон" name="phone">
-                        <input type="email" placeholder="Ваш email" name="email">
-                        <div>
-                            <div class="captcha"></div>
+
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Ваше имя" name="name">
+                            <div class="input-line">
+                                <svg width="100%" height="28px" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                    <path style="fill:none; stroke: #fff; stroke-width: 2px" d="M0,56 c0,0, 298,0, 398,0 C448,56, 514,46, 596,46 c78,0, 134,10, 200,10 c94,0, 402,0, 402,0"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="tel" placeholder="Телефон" name="phone">
+                            <div class="input-line">
+                                <svg width="100%" height="28px" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                    <path style="fill:none; stroke: #fff; stroke-width: 2px" d="M0,56 c0,0, 298,0, 398,0 C448,56, 514,46, 596,46 c78,0, 134,10, 200,10 c94,0, 402,0, 402,0"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="email" placeholder="Ваш email" name="email">
+                            <div class="input-line">
+                                <svg width="100%" height="28px" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                    <path style="fill:none; stroke: #fff; stroke-width: 2px" d="M0,56 c0,0, 298,0, 398,0 C448,56, 514,46, 596,46 c78,0, 134,10, 200,10 c94,0, 402,0, 402,0"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="form-inner-wrapper">
+                            <img src="img/captchaDummy.jpg" class="captcha">
                             <input type="submit" value="Обратная связь" class="button">
                         </div>
                         
@@ -335,10 +358,10 @@
                 <div class="footer-links-cont">
                     <ul class="footer-pages-links flex">
                         <li><a href="about.html">О компании</a></li>
-                        <li><a href="production.html">Продукция</a></li>
+                        <li><a href="products.html">Продукция</a></li>
                         <li><a href="services.html">Услуги</a></li>
                         <li><a href="gallery.html">Галерея</a></li>
-                        <li><a href="manufacturing.html">Производство</a></li>
+                        <li><a href="production.html">Производство</a></li>
                         <li><a href="designing.html">Проектирование</a></li>
                         <li><a href="installation.html">Монтаж</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
@@ -365,9 +388,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script><!-- for logo animation -->
     <script src="js/animation.js"></script><!-- for logo animation -->
-    <script src="libs/bxslider/jquery.bxslider.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
     <script src="libs/wow.js/wow.min.js"></script>
-    <script src="js/common-index.js"></script>
+    <script src="js/indexPage.js"></script>
     
 
 </body>
