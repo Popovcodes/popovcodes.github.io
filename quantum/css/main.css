@@ -73,6 +73,7 @@ body {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.8);
+  z-index: 11;
 }
 
 .flex {
@@ -446,7 +447,7 @@ p {
 .mob-nav-btn {
   position: fixed;
   top: 75px;
-  right: 30px;
+  right: 10px;
   width: 35px;
   height: 35px;
   background: #050505;
@@ -494,7 +495,7 @@ p {
   background: rgba(0, 0, 0, 0.9);
   overflow-y: auto;
   padding: 40px 15px;
-  z-index: 11;
+  z-index: 12;
   -webkit-transition: all .7s;
   -o-transition: all .7s;
   transition: all .7s;

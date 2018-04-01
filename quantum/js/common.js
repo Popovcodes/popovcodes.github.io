@@ -3,7 +3,7 @@ $(document).ready(function(){
   // mobile navigation
   $('#mob-nav-btn, .mob-nav-cont a, #overlay, #mob-nav-close' ).click(function(){
     $('.mob-nav-cont').toggleClass('active');
-    $('.overlay').toggleClass('hidden')
+    $('#overlay').toggleClass('hidden')
   });
 
   // show/hide searh input
