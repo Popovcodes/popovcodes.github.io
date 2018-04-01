@@ -141,7 +141,7 @@ section {
 
 .wrapper {
   position: relative;
-  width: 97%;
+  width: 94%;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -1226,8 +1226,7 @@ p {
   letter-spacing: 1px;
   text-align: center;
   border: none;
-  margin-right: 20px;
-  margin-bottom: 25px;
+  margin: 0 20px 25px;
   background-color: transparent;
   background-image: url(../img/geometryForms/btnContur.png);
   background-size: 100% 100%;
@@ -2781,8 +2780,8 @@ p {
   .team-photo-hex {
     left: 30.6%;
   }
-  .team-item-name {
-    min-height: 28px;
+  .team-item-position {
+    text-align: center;
   }
   .team-item-text {
     padding-left: 0;
@@ -3029,12 +3028,10 @@ p {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-top: 25px;
+    text-align: left;
   }
   .advantages-text {
     letter-spacing: 0;
-  }
-  .contacts-form-part {
-    padding: 3%;
   }
   .team-item-container {
     padding: 20px 10px;
@@ -3111,12 +3108,47 @@ p {
 }
 
 @media only screen and (max-width: 650px) {
+  .contacts-form-part {
+    padding: 3% 0;
+  }
   .main-form {
     display: block;
     text-align: center;
   }
-  .main-form input {
-    min-width: 60%;
+  .main-form > div {
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+  }
+  .main-form .input-wrapper {
+    width: 100%;
+  }
+  .main-form .input-wrapper input {
+    width: 100%;
+  }
+  .main-form .form-inner-wrapper {
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-form .captcha,
+  .main-form input[type="submit"] {
+    display: block;
+  }
+  .main-form input[type="submit"] {
+    margin: 20px 50px;
+  }
+  .form-inner-wrapper {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
 }
 
@@ -3126,24 +3158,6 @@ p {
   }
   .mob-locations-cont {
     display: block;
-  }
-  .contacts-form-part .main-form > div {
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 0;
-  }
-  .contacts-form-part .main-form > div .captcha,
-  .contacts-form-part .main-form > div input[type="submit"] {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    display: block;
-  }
-  .contacts-form-part .main-form > div input[type="submit"] {
-    margin: 20px 50px;
   }
   .gallery-links li:last-child a:after {
     display: none;
@@ -3171,6 +3185,12 @@ p {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  p {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+  }
   h2 {
     font-size: 20px;
   }
@@ -3198,7 +3218,17 @@ p {
   }
   .about-text,
   .contacts-links-part {
-    padding-left: 14%;
+    padding-left: 0%;
+  }
+  .lines-decor-cont {
+    display: none;
+  }
+  .contacts-phones, .contacts-mail, .contacts-adress {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  .contacts-phones:before, .contacts-mail:before, .contacts-adress:before {
+    display: none;
   }
   .product-type-slider-container .lines-decor-cont {
     display: none;
@@ -3210,6 +3240,12 @@ p {
   .installation-img-text,
   .production-img-text {
     padding-left: 1%;
+  }
+  .service-link-text {
+    font-size: 13px;
+  }
+  .main-contacts-links .button {
+    margin-left: 0;
   }
 }
 
