@@ -7,6 +7,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="">
 <link rel="shortcut icon" href="img/favicon/icon.ico">
+<link rel="apple-touch-icon" href="img/favicon/57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
 <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="libs/wow.js/animate.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -78,7 +81,7 @@
     <div class="mob-nav-btn" id="mob-nav-btn"><span></span></div>
     <div class="mob-nav-cont">
         <div class="mob-nav-close" id="mob-nav-close">&#10006;</div>
-        <img src="img/logo-static.png" alt="" class="mob-logo">
+        <img src="img/logo-static.png" alt="image" class="mob-logo">
         <ul class="mobNav_list">
             <li><a href="about.html">о компании</a></li>
             <li><a href="products.html">продукция</a></li>
@@ -91,8 +94,6 @@
         </ul>
     </div><!-- /.mob-nav-cont -->
 
-    
-    
     <!-- =========================== main-contacts section =========================== -->
     <section class="main-contacts-section">
         <div class="wrapper">
@@ -145,10 +146,6 @@
                             <div class="wide-decor-cont"></div>
                         </div>
                     </div>
-                    <!--<div class="lines-decor-cont">
-                        <div class="narrow-decor-cont"></div>
-                        <div class="wide-decor-cont"></div>
-                    </div>-->
                 </div><!-- /.contacts-links-part -->
             </div><!-- /.main-contacts-blocks -->
         </div><!-- /.wrapper -->
@@ -157,13 +154,13 @@
     <!-- =========================== map section =========================== -->
     <section class="map-section" id="main-map"></section><!-- /.map-section -->
 
-        
     <!-- =========================== footer =========================== -->
     <footer class="footer">
+        <div class="decor-horizontal"></div>
         <div class="wrapper">
             <div class="footer-top flex">
                 <a href="index.html" class="footer-logo">
-                    <img src="img/logo-static.png" alt="">
+                    <img src="img/logo-static.png" alt="image">
                 </a>
                 <div class="footer-links-cont">
                     <ul class="footer-pages-links flex">
@@ -198,10 +195,39 @@
         <span class="modal-close" id="modal-close">&#10006;</span>
         <h4>Заполните форму обратной связи:</h4>
         <form action="action.php" class="main-form-modal" name="main-form-modal">
-            <input type="text" placeholder="Ваше имя" name="name">
-            <input type="tel" placeholder="Телефон" name="phone">
-            <input type="email" placeholder="Ваш email" name="email">
-            <textarea name="message" placeholder="Ваше сообщение"></textarea>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Ваше имя" name="name">
+                <div class="input-line">
+                    <svg width="100%" height="28px" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                        <path style="fill:none; stroke: #fff; stroke-width: 3px" d="M0,56 c0,0, 298,0, 398,0 C448,56, 514,46, 596,46 c78,0, 134,10, 200,10 c94,0, 402,0, 402,0"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <input type="tel" placeholder="Телефон" name="phone">
+                <div class="input-line">
+                    <svg width="100%" height="28px" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                        <path style="fill:none; stroke: #fff; stroke-width: 3px" d="M0,56 c0,0, 298,0, 398,0 C448,56, 514,46, 596,46 c78,0, 134,10, 200,10 c94,0, 402,0, 402,0"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <input type="email" placeholder="Ваш email" name="email">
+                <div class="input-line">
+                    <svg width="100%" height="28px" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                        <path style="fill:none; stroke: #fff; stroke-width: 3px" d="M0,56 c0,0, 298,0, 398,0 C448,56, 514,46, 596,46 c78,0, 134,10, 200,10 c94,0, 402,0, 402,0"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <textarea name="message" placeholder="Ваше сообщение"></textarea>
+                <div class="input-line">
+                    <svg width="100%" height="28px" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                        <path style="fill:none; stroke: #fff; stroke-width: 3px" d="M0,56 c0,0, 298,0, 398,0 C448,56, 514,46, 596,46 c78,0, 134,10, 200,10 c94,0, 402,0, 402,0"></path>
+                    </svg>
+                </div>
+            </div>
+            
             <div>
                 <img src="img/captchaDummy.jpg" class="captcha">
                 <input type="submit" value="Отправить" class="button">
@@ -218,6 +244,7 @@
     <script src="libs/slick/slick.min.js"></script>
     <script src="libs/wow.js/wow.min.js"></script>
     <script src="js/contactsPage.js"></script>
+    <script src="js/common.js"></script>
     
 
 </body>

@@ -1,11 +1,5 @@
 $(document).ready(function(){
 
-  // mobile navigation
-  $('#mob-nav-btn, .mob-nav-cont a, .overlay, #mob-nav-close' ).click(function(){
-    $('.mob-nav-cont').toggleClass('active');
-    $('.overlay').toggleClass('hidden')
-  });
-
   //slick.js slider   http://kenwheeler.github.io/slick/
   $('#js-worksSlider').slick({
     infinite: true,
@@ -56,12 +50,6 @@ $(document).ready(function(){
       $('.contacts-glare-t-2, .contacts-glare-b-2').css({"transform": "translate(0%, "+ -contactsSectionVisible/2.5 + "px)"});
     } else {};
   }
-
   $(window).scroll(parallax);
 
-
-  if(document.documentElement.clientWidth > 1200) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    new WOW().init();
-  };
 });

@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
   // mobile navigation
-  $('#mob-nav-btn, #overlay, #mob-nav-close, .mob-nav-cont a' ).click(function(){
+  $('#mob-nav-btn, .mob-nav-cont a, #overlay, #mob-nav-close' ).click(function(){
     $('.mob-nav-cont').toggleClass('active');
-    $('#overlay').toggleClass('hidden')
+    $('.overlay').toggleClass('hidden')
   });
 
   // show/hide searh input
@@ -15,6 +15,14 @@ $(document).ready(function(){
     $('#search-form').removeClass('active');
   });
 
+  //decoration of current link in navigation
+  $('nav a').each(function(){
+    var location = window.location.href;
+    var link = this.href
+    if(location == link) {
+      $(this).addClass('active');
+    }
+  });
 
   if(document.documentElement.clientWidth > 1200) {
     // wow.js animation  http://mynameismatthieu.com/WOW/

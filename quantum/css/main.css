@@ -1,5 +1,6 @@
-/* ==================== styles reset ======================= */
+/* ==================== fonts ======================= */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic");
+/* ==================== styles reset ======================= */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -36,10 +37,6 @@ table {
   border-spacing: 0;
 }
 
-/* ==================== fonts ======================= */
-/* $reg_font: ProximaNovaReg;*/
-/* $lig_col:#fff;*/
-/* ==================== mixines ======================= */
 /* ==================== common styles ======================= */
 html {
   font-size: 10px;
@@ -75,7 +72,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .flex {
@@ -84,23 +81,13 @@ body {
   display: flex;
 }
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-
 a {
   text-decoration: none;
   color: inherit;
+}
+
+nav a.active {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 img
@@ -183,6 +170,7 @@ p {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: .8px;
+  max-width: 100%;
 }
 
 .glare {
@@ -192,17 +180,6 @@ p {
 /*------------------------------ header ------------------------------*/
 .logo {
   position: relative;
-}
-
-.logo-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
 }
 
 .headerTop {
@@ -358,7 +335,7 @@ p {
 
 .headerNav_list a {
   display: block;
-  padding: 15px 1vw;
+  padding: 18px 1vw;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
@@ -367,7 +344,7 @@ p {
   background-image: none;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: 50% 45%;
+  background-position: 50% 50%;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
@@ -377,6 +354,8 @@ p {
   background-color: rgba(0, 0, 0, 0.7);
   background-image: url(../img/geometryForms/corners-w.png);
   background-size: 90% 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   color: #0f0;
 }
 
@@ -386,12 +365,8 @@ p {
   top: 0;
   bottom: 0;
   height: 100%;
-  width: 16px;
+  width: 50px;
   right: 0;
-}
-
-.searchBtn:hover {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .searchBtn .searchBtn-trigger {
@@ -408,6 +383,10 @@ p {
   -o-transition: all .4s;
   transition: all .4s;
   cursor: pointer;
+}
+
+.searchBtn .searchBtn-trigger:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .form-wrap {
@@ -432,7 +411,7 @@ p {
 }
 
 .search-form.active {
-  width: 245px;
+  width: 240px;
   padding-right: 16px;
   border: 1px solid #029402;
 }
@@ -560,7 +539,7 @@ p {
 
 /*------------------------------ works slider section ------------------------------*/
 .worksSlider-section {
-  padding-bottom: 3px;
+  padding: 6rem 0 6rem;
 }
 
 .heading-container {
@@ -571,6 +550,7 @@ p {
   height: 80px;
   line-height: 80px;
   padding-left: 27px;
+  font-weight: 500;
 }
 
 .works-heading {
@@ -604,6 +584,7 @@ p {
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .sliderArrowsContainer {
@@ -616,7 +597,7 @@ p {
   -webkit-transform: skew(-30deg);
   -ms-transform: skew(-30deg);
   transform: skew(-30deg);
-  padding: 15px 10px 0px 34px;
+  padding: 10px 10px 0px 34px;
   overflow-x: hidden;
   white-space: nowrap;
 }
@@ -854,9 +835,9 @@ p {
 
 .advantages-list {
   padding-left: 1.25%;
-  -ms-flex-preferred-size: 53%;
-  flex-basis: 53%;
-  max-width: 53%;
+  -ms-flex-preferred-size: 52%;
+  flex-basis: 52%;
+  max-width: 52%;
 }
 
 .advantages-list li {
@@ -981,11 +962,16 @@ p {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   max-width: 536px;
-  padding: 2.5% .4% 1% 8.9%;
+  padding: 2.5% .4% 1% 8.3%;
 }
 
 .about-text p {
   margin-bottom: 4%;
+}
+
+.about-text .narrow-decor-cont,
+.about-text .wide-decor-cont {
+  height: 80%;
 }
 
 .lines-decor-cont {
@@ -1072,8 +1058,6 @@ p {
 
 .contacts-links-part {
   position: relative;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
   max-width: 334px;
   padding: 2.3% 3% 3% 9%;
 }
@@ -1150,10 +1134,8 @@ p {
 
 .contacts-form-part {
   position: relative;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  padding: 3.1% 0% 3% 21%;
+  max-width: 807px;
+  padding: 3.1% 0% 3% 22%;
 }
 
 .contacts-form-part .main-form {
@@ -1299,7 +1281,7 @@ p {
   position: absolute;
   z-index: -1;
   top: -7.4%;
-  left: 7%;
+  left: 10%;
 }
 
 .map-section {
@@ -1333,9 +1315,6 @@ p {
 .footer {
   position: relative;
   padding-bottom: 5.5%;
-}
-
-.footer.footer-light {
   background: #121212;
 }
 
@@ -1368,7 +1347,7 @@ p {
 }
 
 .footer-pages-links li {
-  padding-right: 24.5px;
+  padding-right: 27.5px;
 }
 
 .footer-pages-links li:last-child {
@@ -1446,12 +1425,12 @@ p {
 /*------------------------------ about page ------------------------------*/
 .aboutSlider-section {
   outline: 0;
-  padding: 6.1rem 0px 0px;
+  padding: 5rem 0px 0px;
 }
 
 .aboutSlider-section .sliderArrowsContainer {
   padding-top: 14px;
-  bottom: 0;
+  bottom: -1px;
   -webkit-box-shadow: 0 3px 10px #202020;
   box-shadow: 0 3px 10px #202020;
   z-index: 5;
@@ -1539,7 +1518,7 @@ p {
 .arrows-bg {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 0px;
   left: -30px;
   right: 0;
   width: 100%;
@@ -1577,16 +1556,21 @@ p {
 }
 
 .subheading {
-  height: 70px;
-  line-height: 65px;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  letter-spacing: 1.5px;
   margin-bottom: 8px;
+  font-weight: 500;
 }
 
 .subheading-uppercase {
   text-transform: uppercase;
+  height: 70px;
+  line-height: 65px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 26px;
 }
 
 .subheading-decor {
@@ -1599,7 +1583,6 @@ p {
 
 .clients-slider-container {
   position: relative;
-  outline: 2px solid blue;
   padding: 0 100px;
 }
 
@@ -1620,6 +1603,14 @@ p {
           transform: translateY(-50%) skew(-30deg);
   cursor: pointer;
   background-color: #1c1c1c;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.clients-arrow:hover {
+  -webkit-box-shadow: 0 0 20px #888;
+          box-shadow: 0 0 20px #888;
 }
 
 .clients-arrow span {
@@ -1657,10 +1648,6 @@ p {
   margin-bottom: -6rem;
 }
 
-.team-subheading {
-  margin-bottom: 26px;
-}
-
 .team-container {
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
@@ -1670,6 +1657,7 @@ p {
 .team-item-container {
   -ms-flex-preferred-size: 33.33%;
       flex-basis: 33.33%;
+  max-width: 33.33%;
   position: relative;
   padding: 50px 25px 68px 48px;
 }
@@ -1716,7 +1704,7 @@ p {
 
 /*------------------------------ production page ------------------------------*/
 .productSlider-section {
-  padding: 1rem 0 7rem;
+  padding: 5.6rem 0 7rem;
 }
 
 .product-types-section {
@@ -1727,17 +1715,9 @@ p {
   margin-bottom: 3.6rem;
 }
 
-.product-types-section .subheading {
-  font-size: 24px;
-  height: 50px;
-  line-height: 50px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-}
-
 .product-type-container {
   position: relative;
-  margin-bottom: 7.7rem;
+  margin-bottom: 7.5rem;
 }
 
 .product-type-slider-container,
@@ -1778,7 +1758,7 @@ p {
 .slide-text-container {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: -3px;
   width: 100%;
   max-width: 570px;
   height: 100%;
@@ -1788,20 +1768,20 @@ p {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.slide-text-container.toRight {
-  right: 0;
-}
-
-.slide-text-container.toLeft {
-  left: 0;
-}
-
 .slide-text-container .sliderArrowsContainer {
   background: transparent;
   bottom: 2px;
-  right: 32%;
+  right: 35%;
   width: auto;
   z-index: 5;
+}
+
+.type-group-wrapper:nth-child(odd) .slide-text-container {
+  right: 0;
+}
+
+.type-group-wrapper:nth-child(even) .slide-text-container {
+  left: 0;
 }
 
 /*------------------------------ INSTALLATION PAGE ------------------------------*/
@@ -1814,20 +1794,25 @@ p {
 }
 
 .installation-section .subheading {
-  font-size: 24px;
-  height: 50px;
-  line-height: 50px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
   margin-bottom: 14px;
 }
 
 .installation-img-container {
   position: relative;
+  overflow: hidden;
+}
+
+.installation-img-container:hover img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .installation-img-container img {
   max-width: 100%;
+  -webkit-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
 }
 
 .installation-img-container .corner-hex-container {
@@ -1861,11 +1846,11 @@ p {
 
 /*------------------------------ GALLERY PAGE ------------------------------*/
 .gallery-section {
-  padding: 6rem 0 7rem;
+  padding: 5rem 0 7rem;
 }
 
 .gallery-section .heading {
-  margin-bottom: 2.9rem;
+  margin-bottom: 1.9rem;
 }
 
 .gallery-links-container {
@@ -1895,6 +1880,9 @@ p {
   padding: 0 26px 0 29px;
   font-size: 14px;
   letter-spacing: .5px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
 }
 
 .gallery-links a:hover {
@@ -1913,6 +1901,9 @@ p {
   background-image: url(../img/geometryForms/linesSmall.png);
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
 }
 
 .gallery-links li:last-child a:after {
@@ -1966,6 +1957,8 @@ p {
 }
 
 .gallery-slider-container .sliderArrowsContainer {
+  padding-top: 15px;
+  padding-left: 25px;
   width: 21.3%;
   height: 60px;
 }
@@ -2091,14 +2084,6 @@ p {
   margin-bottom: 6rem;
 }
 
-.production-section .subheading {
-  font-size: 24px;
-  font-weight: 500;
-  height: 50px;
-  line-height: 50px;
-  margin-bottom: 1.5rem;
-}
-
 .production-block {
   position: relative;
   margin-bottom: 6rem;
@@ -2107,6 +2092,7 @@ p {
 .production-block .corner-hex-container {
   bottom: -64px;
   right: -138px;
+  height: 269px;
 }
 
 .production-img-container {
@@ -2147,6 +2133,11 @@ p {
 
 .production-block:nth-child(odd) .production-img-text {
   left: 0;
+}
+
+/*------------------------------ DESIGNING PAGE ------------------------------*/
+.designing-section {
+  min-height: 60vh;
 }
 
 /*------------------------------ CONTACTS PAGE ------------------------------*/
@@ -2213,6 +2204,10 @@ p {
   height: 22px;
 }
 
+.main-contacts-links .button:hover {
+  text-decoration: none;
+}
+
 .main-contacts-links .button:after {
   display: none;
 }
@@ -2221,12 +2216,26 @@ p {
 .main-contacts-links .contact-shceme,
 .main-contacts-links .contact-message {
   padding: 0 37px 0 26px;
+  height: 27px;
+  line-height: 27px;
 }
 
 .main-contacts-links .contact-team span,
 .main-contacts-links .contact-shceme span,
 .main-contacts-links .contact-message span {
   margin-right: 9px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.main-contacts-links .contact-team:hover span, .main-contacts-links .contact-team:active span,
+.main-contacts-links .contact-shceme:hover span,
+.main-contacts-links .contact-shceme:active span,
+.main-contacts-links .contact-message:hover span,
+.main-contacts-links .contact-message:active span {
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
 }
 
 .main-contacts-links .contact-team span {
@@ -2308,6 +2317,12 @@ p {
   margin-bottom: 15px;
 }
 
+.modal-form-container .input-wrapper {
+  margin: 0 auto 27px;
+  width: 300px;
+  max-width: 100%;
+}
+
 .main-form-modal {
   padding: 10px 0;
   text-align: center;
@@ -2317,16 +2332,17 @@ p {
 .main-form-modal input[type="tel"],
 .main-form-modal input[type="email"],
 .main-form-modal textarea {
+  position: relative;
   width: 100%;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #fff;
   color: #fff;
   padding: 2px 5px;
-  margin-bottom: 20px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
+  overflow: hidden;
+  z-index: 5;
 }
 
 .main-form-modal input[type="text"]:focus,
@@ -2334,7 +2350,6 @@ p {
 .main-form-modal input[type="email"]:focus,
 .main-form-modal textarea:focus {
   outline: none;
-  border-bottom-color: #029402;
 }
 
 .main-form-modal .button {
@@ -2663,7 +2678,6 @@ p {
   }
 }
 
-/* ==================== Addictional styles ======================= */
 /* ==================== Media queries ======================= */
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -2679,6 +2693,11 @@ p {
     height: 195px;
     bottom: -57px;
     right: -93px;
+  }
+  .production-block .corner-hex-container {
+    bottom: -60px;
+    right: -100px;
+    height: 190px;
   }
 }
 
@@ -2749,6 +2768,7 @@ p {
   .team-item-container {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    max-width: 100%;
     text-align: center;
   }
   .team-item-img {
@@ -2816,8 +2836,8 @@ p {
     left: 0;
   }
   .sliderArrowsContainer {
-    width: 115px;
-    right: -20px;
+    width: 175px;
+    right: -40px;
   }
   .sliderArrow {
     width: 45px;
@@ -2939,6 +2959,10 @@ p {
   .main-contacts-links .contact-message {
     padding: 0 22px;
   }
+  .sliderContainer,
+  .sliderArrowsContainer {
+    overflow: visible !important;
+  }
 }
 
 @media only screen and (max-width: 890px) {
@@ -2961,8 +2985,9 @@ p {
   }
   .search-form {
     top: 0px;
+    bottom: auto;
     right: 100%;
-    margin-right: 20px;
+    margin-right: 5px;
     padding-right: 25px;
   }
   .search-form input {
@@ -3236,10 +3261,6 @@ p {
 }
 
 /*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   .decor-horizontal:after {
@@ -3300,6 +3321,29 @@ p {
   .single-hex-container {
     -webkit-animation: blink1 3s infinite;
             animation: blink1 3s infinite;
+  }
+  img.slick-slide {
+    -webkit-transition: all 6s;
+    -o-transition: all 6s;
+    transition: all 6s;
+  }
+  img.slick-active {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .headerNav_list a {
+    padding: 18px 20px;
+  }
+  .aboutSlider-section {
+    margin-bottom: -50px;
+    z-index: 5;
+  }
+  .about-text-section {
+    padding-top: 11rem;
   }
 }
 

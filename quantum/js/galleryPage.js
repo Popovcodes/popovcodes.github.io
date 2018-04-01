@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-  // mobile navigation
-  $('#mob-nav-btn, .mob-nav-cont a, .overlay, #mob-nav-close' ).click(function(){
-    $('.mob-nav-cont').toggleClass('active');
-    $('.overlay').toggleClass('hidden')
-  });
 
   //slick.js slider   http://kenwheeler.github.io/slick/
   $('#js-gallery-slider-1').slick({
@@ -81,19 +76,5 @@ $(document).ready(function(){
   $('#gallery-slider-4_next').click(function(){
     $('#js-gallery-slider-4').slick('slickNext');
   });
-
-  // show/hide searh input
-  $('#searchBtn-trigger').click(function(){
-    $('#search-form').addClass('active');
-  });
-
-  $('#search-close').click(function(){
-    $('#search-form').removeClass('active');
-  });
-
-   if(document.documentElement.clientWidth > 1200) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    new WOW().init();
-  };
 });
 
