@@ -1446,8 +1446,8 @@ p {
 
 .path-container {
   position: relative;
-  height: 4.5rem;
-  line-height: 4.5rem;
+  height: 45px;
+  line-height: 45px;
   background: #111111;
   border-bottom: 1px solid #002700;
 }
@@ -1538,6 +1538,8 @@ p {
   padding: 4rem 0 9.8rem;
   background-position: 50% 100%;
   background-image: url(../img/breaks1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about-text-section p {
