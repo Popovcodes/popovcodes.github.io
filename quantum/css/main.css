@@ -1482,7 +1482,8 @@ p {
 .path-item {
   font-size: 13px;
   position: relative;
-  padding: 12px 22px;
+  padding: 5px 22px;
+  min-height: 30px;
 }
 
 .path-item:after {
