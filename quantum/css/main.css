@@ -603,6 +603,11 @@ p {
   white-space: nowrap;
 }
 
+.js-productSlider img,
+.slick-slider img {
+  min-height: auto;
+}
+
 .sliderArrow {
   display: inline-block;
   width: 66px;
