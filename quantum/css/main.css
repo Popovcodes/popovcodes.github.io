@@ -1732,7 +1732,7 @@ p {
 .gallery-slider-container img {
   display: block;
   z-index: 5;
-  outline: 1px solid red;
+  min-height: auto;
 }
 
 .product-type-slider-container .lines-decor-cont,
@@ -2318,7 +2318,7 @@ p {
   overflow-y: auto;
   border: 1px solid #029402;
   background: #050505;
-  z-index: 7;
+  z-index: 12;
 }
 
 .modal-form-container h4 {
