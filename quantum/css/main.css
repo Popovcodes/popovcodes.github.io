@@ -1732,7 +1732,8 @@ p {
 .gallery-slider-container img {
   display: block;
   z-index: 5;
-  min-height: 32%;
+  min-height: 32vw;
+  outline: 1px solid red;
 }
 
 .product-type-slider-container .lines-decor-cont,
