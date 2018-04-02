@@ -1732,7 +1732,7 @@ p {
 .gallery-slider-container img {
   display: block;
   z-index: 5;
-  min-height: 94px;
+  min-height: 32%;
 }
 
 .product-type-slider-container .lines-decor-cont,
