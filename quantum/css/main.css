@@ -2375,6 +2375,51 @@ p {
   margin-bottom: 25px;
 }
 
+/*------------------------------ sticky menu on scroll ------------------------------*/
+.headerNav.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 12;
+  width: 100%;
+}
+
+.headerNav.sticky .wrapper {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.headerNav.sticky .headerNav_list {
+  width: 75%;
+  margin-right: 60px;
+  float: right;
+}
+
+.headerNav.sticky .headerNav_list a {
+  font-size: 12px;
+  padding: 12px .7vw;
+}
+
+.sticky-logo {
+  background: black;
+  padding: 0px 10px;
+  display: inline-block;
+  opacity: 0;
+}
+
+.sticky-logo img {
+  max-width: 200px;
+}
+
 /* ==================== css-animations ======================= */
 @-webkit-keyframes blink1 {
   0% {
