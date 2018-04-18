@@ -1,0 +1,14 @@
+/* ==================== css-animations ======================= */
+@keyframes blink {
+  0% {
+    filter: brightness(50%); }
+  30% {
+    filter: brightness(50%); }
+  50% {
+    filter: brightness(300%); }
+  70% {
+    filter: brightness(50%); }
+  100% {
+    filter: brightness(50%); } }
+
+/*# sourceMappingURL=_animations.css.map */
