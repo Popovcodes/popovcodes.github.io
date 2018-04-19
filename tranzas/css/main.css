@@ -1935,6 +1935,7 @@ td:first-child {
   .slick-dots li {
     margin: 30px auto;
   }
+  .contact-map,
   .map {
     height: 80vh;
   }
