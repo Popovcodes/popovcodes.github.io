@@ -1935,6 +1935,9 @@ td:first-child {
   .slick-dots li {
     margin: 30px auto;
   }
+  .map {
+    height: 80vh;
+  }
   .flex-elem-fourth,
   .flex-elem-third {
     -ms-flex-preferred-size: 50%;
