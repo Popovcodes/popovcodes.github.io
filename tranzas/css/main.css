@@ -1162,7 +1162,7 @@ h2 {
 }
 
 .news-adv .news-prev-text {
-  padding: 3rem 0 6.5rem;
+  padding: 3rem 0 65px;
 }
 
 /*------------------------------ bottom links section ------------------------------*/
@@ -2177,7 +2177,8 @@ td:first-child {
   .news-prev-heading {
     font-size: 18px;
   }
-  .news-prev-text {
+  .news-prev-text,
+  .news-adv .news-prev-text {
     padding-bottom: 45px;
   }
   .footer-content {
