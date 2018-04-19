@@ -2017,6 +2017,7 @@ td:first-child {
   }
   .aside-nav a {
     font-size: 24px;
+    padding: 2.4vh 0;
   }
   .main-slide h2,
   .page-heading,
