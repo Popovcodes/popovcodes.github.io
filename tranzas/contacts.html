@@ -215,6 +215,9 @@
 
             //myMap.setBounds(myMap.geoObjects.getBounds(), {checkZoomRange:true}).then(function(){ if(myMap.getZoom() > 16) myMap.setZoom(16);});
             myPlacemark1.balloon.open();
+            myMap.events.add('click', function() {
+                myMap.balloon.close();
+            });
         }
     </script>
     <script src="js/common.js"></script>
