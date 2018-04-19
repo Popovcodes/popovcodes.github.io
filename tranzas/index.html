@@ -613,6 +613,10 @@
                   myMap.geoObjects.add(myPin);
                   myMap.setBounds(myMap.geoObjects.getBounds(), {checkZoomRange:true}).then(function(){ if(myMap.getZoom() > 10) myMap.setZoom(10);});
                   //myPlacemark2.balloon.open();
+
+                  myMap.events.add('click', function() {
+                      myMap.balloon.close();
+                  });
               }
         });
 
