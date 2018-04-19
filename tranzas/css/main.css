@@ -1866,52 +1866,6 @@ td:first-child {
   visibility: hidden;
 }
 
-/* ==================== css-animations ======================= */
-@-webkit-keyframes blink {
-  0% {
-    -webkit-filter: brightness(50%);
-            filter: brightness(50%);
-  }
-  20% {
-    -webkit-filter: brightness(50%);
-            filter: brightness(50%);
-  }
-  50% {
-    -webkit-filter: brightness(150%);
-            filter: brightness(150%);
-  }
-  80% {
-    -webkit-filter: brightness(50%);
-            filter: brightness(50%);
-  }
-  100% {
-    -webkit-filter: brightness(50%);
-            filter: brightness(50%);
-  }
-}
-@keyframes blink {
-  0% {
-    -webkit-filter: brightness(50%);
-            filter: brightness(50%);
-  }
-  20% {
-    -webkit-filter: brightness(50%);
-            filter: brightness(50%);
-  }
-  50% {
-    -webkit-filter: brightness(150%);
-            filter: brightness(150%);
-  }
-  80% {
-    -webkit-filter: brightness(50%);
-            filter: brightness(50%);
-  }
-  100% {
-    -webkit-filter: brightness(50%);
-            filter: brightness(50%);
-  }
-}
-
 /* ==================== Media queries ======================= */
 @media only screen and (max-width: 1700px) {
   .service-prev-content {
@@ -2087,14 +2041,14 @@ td:first-child {
   .page-heading span {
     font-size: 16px;
   }
-  .slick-dots {
+  .js-main-slider .slick-dots {
     position: static;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
     white-space: nowrap;
   }
-  .slick-dots li {
+  .js-main-slider .slick-dots li {
     display: inline-block;
     vertical-align: middle;
     margin: 10px;
