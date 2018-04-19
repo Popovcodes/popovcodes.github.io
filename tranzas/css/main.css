@@ -2178,6 +2178,9 @@ td:first-child {
   .news-prev-heading {
     font-size: 18px;
   }
+  .news-prev-text {
+    padding-bottom: 45px;
+  }
   .footer-content {
     font-size: 12px;
   }
