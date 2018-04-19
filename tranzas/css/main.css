@@ -2092,6 +2092,7 @@ td:first-child {
         flex-basis: 100%;
   }
   .aside-news-item {
+    min-height: auto;
     width: 100%;
   }
   .email-item {
