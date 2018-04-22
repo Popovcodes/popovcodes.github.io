@@ -65,16 +65,10 @@ li.r-tabs-state-active a:after {
   }
   .r-tabs-anchor {
     padding: 10px 0;
-    font-size: 20px;
-    margin-right: 40px;
+    font-size: 18px;
+    margin-right: 30px;
   }
 }
-
-@media only screen and (max-width : 1200px) {
-
-}
-
-
 
 /* Accordion responsive breakpoint */
 @media only screen and (max-width: 479px) {
@@ -86,7 +80,7 @@ li.r-tabs-state-active a:after {
         display: block;
     }*/
     .r-tabs-anchor {
-      font-size: 16px;
-      margin-right: 20px;
+      font-size: 15px;
+      margin-right: 12px;
     }
 }

@@ -18,6 +18,8 @@ $(document).ready(function(){
     appendDots:$('.slide-notations')
   });
 
+
+
   $('#area-arrow-prev').click(function(){
     $('#js-areas-slider').slick('slickPrev');
   });
@@ -27,9 +29,30 @@ $(document).ready(function(){
   });
 
   $('#js-areas-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-    var ind = $('.slick-active').find('.slide-category').html();
-    $('#area-heading').html(ind);
+    var catName = $('.slick-active').find('.slide-category').html();
+    $('#area-heading').html(catName);
   });
+
+  $(".tabs-list li").on('click', function(){
+    var filter = $(this).data('filter');
+    $("#js-areas-slider").slick('slickUnfilter');
+    
+    if(filter == 'doors'){
+      $("#js-areas-slider").slick('slickFilter','.doors');
+    }
+    else if(filter == 'tiles'){
+      $("#js-areas-slider").slick('slickFilter','.tiles');
+    }
+    else if(filter == 'furniture'){
+
+      $("#js-areas-slider").slick('slickFilter','.furniture');
+    }
+    else if(filter == 'all'){
+      
+      $("#js-areas-slider").slick('slickUnfilter');
+    }
+    
+  })
 
    // tabs
   $('#tabs-container').responsiveTabs({
