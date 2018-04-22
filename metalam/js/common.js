@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+  //header fixing
+  $(window).scroll(function(){
+
+      var pageIsScrolled = $(window).scrollTop();
+
+      if(document.documentElement.clientWidth > 767) {
+        if(pageIsScrolled > 0) {
+          $('#header').addClass('fixed');
+        } else {
+          $('#header').removeClass('fixed');
+        }
+      } else {
+        $('#header').removeClass('fixed');
+      };
+    });
+
   // mobile navigation
   $('#mob-menu-btn, .mobile-nav-container a, #mob-nav-overlay, #mob-nav-close' ).click(function(){
     $('.mobile-nav-container').toggleClass('active');
@@ -200,4 +216,8 @@ $(document).ready(function(){
        });
     }
   /*===============================*/
+  if(document.documentElement.clientWidth > 1199) {
+    // wow.js animation  http://mynameismatthieu.com/WOW/
+    new WOW().init();
+  };
 });

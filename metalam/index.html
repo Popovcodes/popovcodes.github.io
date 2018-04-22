@@ -12,6 +12,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
     <link rel="stylesheet" type="text/css" href="libs/slick-1.6.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="libs/wow.js/animate.css">
     <link rel="stylesheet" type="text/css" href="libs/responsive-tabs/responsive-tabs.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>METALAM</title>
@@ -20,7 +21,7 @@
     <header class="header" id="header">
       <div class="wrapper flex">
           <a href="#header" class="logo">meta<span>lam</span></a>
-          <nav class="nav flex">
+          <nav class="nav main-nav flex">
             <ul class="main-nav-list">
               <li><a href="#about-section">о материале</a></li>
               <li><a href="#areas-slider-section">области применения</a></li>
@@ -28,26 +29,32 @@
               <li><a href="#contacts-section">контакты</a></li>
             </ul>
           </nav>
-          <a href="tel:+84951500999" class="phone">8-495-150-09-99</a>
+          <div class="flex">
+            <a href="tel:+84951500999" class="phone">8-495-150-09-99</a>
+            <a href="javascript:void(0);" class="button order-button">заказать образец</a>
+            <div class="mob-menu-btn" id="mob-menu-btn"><span></span></div>
+          </div>
       </div><!-- /.wrapper -->
 
-      <div class="mob-menu-btn" id="mob-menu-btn"><span></span></div>
-
-      <div class="mobile-nav-container">
-        <span class="mob-nav-close" id="mob-nav-close"></span>
-        <a href="#header" class="logo">meta<span>lam</span></a>
-        <nav class="nav flex">
-          <ul>
-            <li><a href="#about-section">о материале</a></li>
-            <li><a href="#areas-slider-section">области применения</a></li>
-            <li><a href="#catalog-section">каталог</a></li>
-            <li><a href="#contacts-section">контакты</a></li>
-          </ul>
-        </nav>
-        <a href="tel:+84951500999" class="phone">8-495-150-09-99</a>
-      </div>
     </header>
       
+    <!-- =========================== mobile navigation =========================== -->
+
+    <div class="mobile-nav-container">
+      <span class="mob-nav-close" id="mob-nav-close"></span>
+      <a href="#header" class="logo">meta<span>lam</span></a>
+      <nav class="nav flex">
+        <ul>
+          <li><a href="#about-section">о материале</a></li>
+          <li><a href="#areas-slider-section">области применения</a></li>
+          <li><a href="#catalog-section">каталог</a></li>
+          <li><a href="#contacts-section">контакты</a></li>
+        </ul>
+      </nav>
+      <a href="javascript:void(0);" class="button order-button">заказать образец</a>
+      <a href="tel:+84951500999" class="phone">8-495-150-09-99</a>
+    </div>
+
     <!-- =========================== heading-section =========================== -->
     <section class="heading-section">
       <div class="wrapper-wide">
@@ -58,27 +65,15 @@
    
     <!-- =========================== about section =========================== -->
     <section class="about-section" id="about-section">
-     <div class="nav-bar">
-        <div class="wrapper flex">
-            <a href="#header" class="logo">meta<span>lam</span></a>
-            <nav class="nav flex">
-              <ul class="main-nav-list">
-                <li><a href="#about-section">о материале</a></li>
-                <li><a href="#areas-slider-section">области применения</a></li>
-                <li><a href="#catalog-section">каталог</a></li>
-                <li><a href="#contacts-section">контакты</a></li>
-              </ul>
-            </nav>
-            <a href="javascript:void(0);" class="button order-button">заказать образец</a>
-        </div><!-- /.wrapper -->
-      </div><!-- /.nav-bar -->
       <div class="wrapper-wide">
         <img src="img/aboutImg.jpg" alt="alt">
         <div class="about-content">
+          <div class="about-content-anim wow slideInUp">
             <p>Металам - металлизированный высокоэластичный, декоративно-отделочный 2D материал.</p>
             <p>Предназначен для применения в качестве облицовочного материала при производстве мебели и ее компонентов, входных межкомнатных дверей, стеновых и потолочных панелей, профилированых  деталей из МДФ, ПВХ, алюминия, предметов интерьера, декоративных элементов (молдингов, раскладок и т.п.) а также потребительсокой электроники.</p>
             <p>Материал совместим с большим асортиментом клеевых систем и готов для нанесения на индустриальном оборудовани различными способами.</p>
             <p>Дополнительную информацию по использованию материала можно получить у наших технических специалистов.</p>
+          </div>
         </div><!-- /.about-content -->
       </div><!-- /.wrapper-wide -->
     </section><!-- /.about-section -->
@@ -86,7 +81,7 @@
       
     <!-- =========================== usage areas slider section =========================== -->
     <section class="areas-slider-section" id="areas-slider-section">
-      <div class="nav-bar">
+<!--       <div class="nav-bar">
          <div class="wrapper flex">
              <a href="#header" class="logo">meta<span>lam</span></a>
              <nav class="nav flex">
@@ -98,8 +93,8 @@
                </ul>
              </nav>
              <a href="javascript:void(0);" class="button order-button">заказать образец</a>
-         </div><!-- /.wrapper -->
-       </div><!-- /.nav-bar -->
+         </div>
+       </div>-->
         <div class="wrapper-wide">
             <div class="areas-slider-container">
                 <div class="js-areas-slider" id="js-areas-slider">
@@ -153,7 +148,7 @@
 
                 </div><!-- /.js-areas-slider -->
 
-                <div class="slide-notations flex">
+                <div class="slide-notations flex wow slideInRight" data-wow-duration="2s">
                     <h3 class="slider-heading">Области применения</h3>
                     <div class="slider-arrows-container flex">
                         <span class="arrow-prev" id="area-arrow-prev"></span>
@@ -199,20 +194,6 @@
       
     <!-- =========================== catalog slider section =========================== -->
     <section class="catalog-section" id="catalog-section">
-        <div class="nav-bar">
-          <div class="wrapper flex">
-            <a href="#header" class="logo">meta<span>lam</span></a>
-              <nav class="nav flex">
-                <ul class="main-nav-list">
-                  <li><a href="#about-section">о материале</a></li>
-                  <li><a href="#areas-slider-section">области применения</a></li>
-                  <li><a href="#catalog-section">каталог</a></li>
-                  <li><a href="#contacts-section">контакты</a></li>
-                </ul>
-              </nav>
-            <a href="javascript:void(0);" class="button order-button">заказать образец</a>
-          </div><!-- /.wrapper -->
-        </div><!-- /.nav-bar -->
         <div class="wrapper">
             <div class="catalog-slider-container">
                 <div class="js-catalog-slider" id="js-catalog-slider">
@@ -273,24 +254,10 @@
       
     <!-- =========================== contacts section =========================== -->
     <section class="contacts-section" id="contacts-section">
-      <div class="nav-bar">
-        <div class="wrapper flex">
-          <a href="#header" class="logo">meta<span>lam</span></a>
-            <nav class="nav flex">
-              <ul class="main-nav-list">
-                <li><a href="#about-section">о материале</a></li>
-                <li><a href="#areas-slider-section">области применения</a></li>
-                <li><a href="#catalog-section">каталог</a></li>
-                <li><a href="#contacts-section">контакты</a></li>
-              </ul>
-            </nav>
-          <a href="javascript:void(0);" class="button order-button">заказать образец</a>
-        </div><!-- /.wrapper -->
-      </div><!-- /.nav-bar -->
       <div class="wrapper-wide">
         <div class="map" id="map"></div>
         <div class="wrapper">
-            <div class="form-container">
+            <div class="form-container wow slideInLeft"  data-wow-duration="2s">
               <h4 class="form-heading">Отправить сообщение</h4>
               <form action="" method="post" class="main-form" name="main-form">
                 <input type="text" name="name" placeholder="Ваше имя" required>
@@ -340,6 +307,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="libs/slick-1.6.0/slick.min.js"></script>
     <script src="libs/responsive-tabs/responsive-tabs.min.js"></script>
+    <script src="libs/wow.js/wow.min.js"></script>
     <script src="libs/waterwheel-carousel/jquery.waterwheelCarousel.min.js"></script>
     <script src="js/common.js"></script>
 
