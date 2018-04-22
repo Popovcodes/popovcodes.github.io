@@ -1112,9 +1112,6 @@ input[type="submit"]:hover {
     text-align: center;
     margin-bottom: 20px;
   }
-  .phone {
-    font-size: 14px;
-  }
   .main-heading {
     position: static;
     -webkit-transform: none;
