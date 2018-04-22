@@ -393,6 +393,7 @@ section {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
+  padding: 0;
 }
 
 .mobile-nav-container nav a.active {
