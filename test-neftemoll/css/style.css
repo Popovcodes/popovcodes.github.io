@@ -7177,10 +7177,14 @@ body {
 	height: 30px;
 	line-height: 30px;
 	border: 1px solid #cbcbcb;
+	border-right: none;
 	background: #ffffff;
 	white-space: nowrap;
 	transition: all .4s;
 	cursor: pointer;
+}
+.control-block:last-child {
+	border-right: 1px solid #cbcbcb;
 }
 
 .control-block:hover,
