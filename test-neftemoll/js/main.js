@@ -11,7 +11,20 @@ jQuery("document").ready(function($) {
 });
 
 $('select').styler({
-	selectSearch: true
+   selectSearch: true,
+});
+
+/*prevent select heading replacing with text of selected item*/
+$('.select-invisible').styler('destroy');
+$('.select-invisible').styler({
+    onFormStyled: function(){
+      var initText = $('.select-invisible').data('placeholder');
+      $('.jq-selectbox__select-text').html(initText);
+    },
+    onSelectClosed: function(){
+      var replaceText =  $(this).data('placeholder');
+      $('.jq-selectbox__select-text').html(replaceText);
+    }
 });
 
 $('.choose-country-toggle').click(function (event) {
@@ -229,12 +242,15 @@ $(document).ready(function() {
     dayOfWeekStart: 1
    });
    $.datetimepicker.setLocale('ru');
+   $('#filter-reset').click(function(){
+      $('.datetime').val('');
+   });
    
 
    /*show filter dropdown*/
    $('.action-select, .filter-select').click(function(){
-      $(this).parent('.control-block').siblings().removeClass('active').find('.control-dropdown').slideUp();
-      $(this).parent('.control-block').toggleClass('active').find('.control-dropdown').slideToggle();
+      $(this).parent('.control-block').siblings().removeClass('active').find('.control-dropdown').slideUp(0);
+      $(this).parent('.control-block').toggleClass('active').find('.control-dropdown').delay(200).slideToggle(0);
    });
 
    $('#filter-reset, #actions-reset').click(function(){
@@ -243,12 +259,26 @@ $(document).ready(function() {
    });
 
    /*check all ads*/
-   $('#check-all').change(function(){
+   $('#check-all').click(function(){
       if($(this).prop('checked')) {
         $('.check-ad-item').prop('checked', true);
       } else {
         $('.check-ad-item').prop('checked', false);
       }
    });
+   var checkedStatus = function(){
+      var adsTotalNum = $('.check-ad-item').length;
+      var adsCheckedNum = $('.check-ad-item:checked').length;
+      $('#check-all').prop('indeterminate', false);
+      if (adsTotalNum == adsCheckedNum) {
+        $('#check-all').prop('checked', true);
+      } else if (adsCheckedNum == 0) {
+        $('#check-all').prop('checked', false);
+      } else {
+        $('#check-all').prop('indeterminate', true);
+      }
+   };
+   $('.check-ad-item').change(checkedStatus);
+
 });
 
