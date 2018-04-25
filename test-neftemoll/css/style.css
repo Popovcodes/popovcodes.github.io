@@ -3313,7 +3313,6 @@ main.a50-main {
 .geography-companies-gallery .slick-prev {
     left: -20px;
 }
-
 .geography-companies-gallery .slick-next {
     right: -20px;
 }
@@ -7077,7 +7076,6 @@ footer .right-col .contacts-footer a:last-of-type:before {
 .modal-div input:focus::-moz-placeholder          {color: transparent;}
 .modal-div input:focus:-moz-placeholder           {color: transparent;}
 .modal-div input:focus:-ms-input-placeholder      {color: transparent;}
-
 .rouble {
 	font-family: 'rouble' !important;
 	font-weight: normal !important;
@@ -7086,29 +7084,16 @@ footer .right-col .contacts-footer a:last-of-type:before {
 	border: none !important;
 	box-shadow: 1px 1px 1px 0 #666 !important;
 }
-
-/*my styles*/
-body {
-/*	max-width: 1440px;
-	margin: 0 auto;*/
-}
-
-.right-content {
-
-
-}
-
+/*new styles from apr 22 2018*/
 .ads-types-list {
 	font-size: 0px;
 	margin-bottom: 45px;
 }
-
 .ads-types-list li {
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 600;
 }
-
 .ads-types-list a {
 	display: block;
 	padding: 10px 17px;
@@ -7117,7 +7102,6 @@ body {
 	margin-right: -2px;
 	letter-spacing: 1px;
 }
-
 .ads-types-list a.active,
 .ads-types-list a:hover {
 	position: relative;
@@ -7125,7 +7109,6 @@ body {
 	border-color: #ff7519;
 	z-index: 2;
 }
-
 .ads-type-num {
 	font-size: 14px;
 	font-weight: 400;
@@ -7133,20 +7116,16 @@ body {
 .activity-links {
 	margin-bottom: 10px;
 }
-
 .activity-links li {
 	display: inline-block;
 	border-right: 1px solid #666666;
 }
-
 .activity-links li:last-child {
 	border: none;
 }
-
 .activity-links li:last-child a {
 	padding-left: 14px;
 }
-
 .activity-links a {
 	display: block;
 	padding: 2px 18px 2px 7px;
@@ -7156,9 +7135,6 @@ body {
 	font-size: 15px;
 	transition: all .4s;
 }
-
-
-
 .activity-links a:hover,
 .activity-links a.active {
 	color: #ff7519;
@@ -7186,24 +7162,17 @@ body {
 .control-block:last-child {
 	border-right: 1px solid #cbcbcb;
 }
-
 .control-block:hover,
 .control-block.active {
 	color: #ff7519;
 }
-
 .control-block.active .control-title:after {
 	background: url(../img/drop1-h.png) no-repeat;
 }
-
-
-
-
 .control-check-all {
 	width: 36px;
 	text-align: center;
 }
-
 .control-check-all input {
 	display: none;
 }
@@ -7221,12 +7190,6 @@ body {
 	vertical-align: middle;
 	cursor: pointer;
 }
-
-/*.control-check-all input[type="checkbox"]:checked+label:before {
-	background: #ff7519;
-	box-shadow: inset 0 0 0 3px #fff;
-}*/
-
 .control-filter {
 	width: 153px;
 }
@@ -7256,7 +7219,6 @@ body {
 .control-sorting {
 	width: 325px;
 }
-
 .list-control-panel ::-webkit-input-placeholder {
 	color: #d6d3d3;
 	font-size: 12px;
@@ -7264,7 +7226,6 @@ body {
 	font-weight: 600;
 	font-family: Arial, helvetica, sans-serif;
 }
-
 .list-control-panel ::-moz-placeholder {
 	color: #d6d3d3;
 	font-size: 12px;
@@ -7272,7 +7233,6 @@ body {
 	font-weight: 600;
 	font-family: Arial, helvetica, sans-serif;
 }
-
 .list-control-panel :-ms-input-placeholder {
 	color: #d6d3d3;
 	font-size: 12px;
@@ -7280,7 +7240,6 @@ body {
 	font-weight: 600;
 	font-family: Arial, helvetica, sans-serif;
 }
-
 .list-control-panel ::placeholder {
 	color: #d6d3d3;
 	font-size: 12px;
@@ -7288,17 +7247,14 @@ body {
 	font-weight: 600;
 	font-family: Arial, helvetica, sans-serif;
 }
-
-
 .control-title {
 	padding: 10px 22px 10px 20px;
 	font-size: 12px;
 	font-weight: 600;
 	color: inherit;
 	transition: all .4s;
-	letter-spacing: 1px;
+	letter-spacing: .7px;
 }
-
 .control-title:after {
 	content: "";
 	display: inline-block;
@@ -7310,7 +7266,6 @@ body {
 	height: 7px;
 	background: url(../img/drop1.png) no-repeat;
 }
-
 .control-num {
 	display: inline-block;
 	width: 18px;
@@ -7323,7 +7278,6 @@ body {
 	font-weight: 600;
 	color: #666;
 }
-
 .control-dropdown {
 	display: none;
 	position: absolute;
@@ -7337,19 +7291,16 @@ body {
 	z-index: 5;
 	cursor: default;
 }
-
 .control-dropdown h5 {
 	font-size: 10px;
 	color: #474747;
 	line-height: 1.4;
 }
-
 .control-dropdown span {
 	font-size: 9px;
 	margin-right: 5px;
 	color: #666;
 }
-
 .datetime {
 	width: 100px;
 	height: 17px;
@@ -7361,10 +7312,9 @@ body {
 	background: transparent;
 	border: 1px solid #cbcbcb;
 	cursor: pointer;
-	
 }
-
 .period-set {
+	display: block;
 	white-space: nowrap;
 	margin-bottom: 9px;
 }
@@ -7387,15 +7337,11 @@ span.datetime-wrap {
 	cursor: pointer;
 	z-index: -1;
 }
-
-
-
 .dropdown-actions {
 	padding: 0px 4px;
 	text-align: right;
 	border-top: 1px solid #ebebeb;
 }
-
 .dropdown-actions button {
 	display: inline-block;
 	font-family: inherit;
@@ -7411,31 +7357,29 @@ span.datetime-wrap {
 	transition: all .4s;
 	cursor: pointer;
 }
-
 .dropdown-actions button:hover,
 .dropdown-actions button:active {
 	color: #ff7519;
 	border-color: #ff7519;
 }
-
-.action-choose {
-	
-}
 .action-choose input[type="checkbox"]{
 	display: none;
 }
-
 .action-choose label{
 	position: relative;
 	font-size: 10px;
 	color: #666;
 	cursor: pointer;
 }
-
 .action-choose label:first-of-type {
 	margin-right: 72px;
 }
-
+.inactive-action-choose {
+	padding-bottom: 20px;
+}
+.inactive-action-choose label:first-of-type {
+	margin-right: 22px;
+}
 .action-choose label:before {
 	content: '';
 	display: inline-block;
@@ -7447,23 +7391,67 @@ span.datetime-wrap {
 	vertical-align: middle;
 	cursor: pointer;
 }
-
 .action-choose input[type="checkbox"]:checked+label:before {
 	background: #ff7519;
 	box-shadow: inset 0 0 0 4px #fff;
+}
+select.select-invisible {
+	opacity: 0;
 }
 .control-block  .jq-selectbox {
 	width: 100%;
 }
 .control-block .jq-selectbox__select {
-	outline: 1px solid red;
-	background: #ff0;
+	height: 28px;
+	top: -2px;
+	padding: 0;
+	border: none;
 }
-/*jq-selectbox jqselect*/
+.control-block .jq-selectbox__select-text {
+	padding: 0 20px;
+}
+.control-block .jq-selectbox .placeholder {
+	padding: 0px 22px 0px 16px;
+	font-size: 12px;
+	font-weight: 600;
+	color: inherit;
+	transition: all .4s;
+	letter-spacing: 1px;
+}
+.control-block .jq-selectbox__trigger{
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top: 56%;
+	transform: translateY(-50%);
+	width: 14px;
+	height: 7px;
+	background: url(../img/drop1.png) no-repeat;
+}
+.control-block .jq-selectbox__dropdown {
+	top: 25px;
+	right: 0;
+	width: 210px;
+	padding: 3px 2px;
+}
+.control-block .jq-selectbox li {
+	width: 100%;
+	font-style: italic;
+	font-size: 12px;
+	color: #474747;
+	line-height: .9;
+	letter-spacing; .7px;
+	transition: all .4s;
+}
+.control-block .jq-selectbox li:hover {
+	color: #ff7519;
+}
+.control-block .jq-selectbox__trigger-arrow {
+	display: none;
+}
 .ads-holder {
 	width: 980px;
 }
-
 .ads-item {
 	position: relative;
 	background: #fff;
@@ -7474,7 +7462,6 @@ span.datetime-wrap {
 	border-bottom: 1px solid #e0e0e0;
 	margin-bottom: 7px;
 }
-
 .check-container {
 	position: absolute;
 	top: 6px;
@@ -7485,11 +7472,8 @@ span.datetime-wrap {
 	text-align: center;
 	z-index: 1;
 }
-
 .ad-check-container {
-
 }
-
 .check-ad-item {
 	display: none;
 }
@@ -7512,7 +7496,6 @@ input[type="checkbox"]:checked+label:before {
 	display: inline-block;
 	white-space: normal;
 }
-
 .ads-item-left {
 	position: relative;
 	width: 658px;
@@ -7527,16 +7510,13 @@ input[type="checkbox"]:checked+label:before {
 	background: #e0e0e0;
 	width: 1px;
 	height: 184px;
-
 }
 .ads-item-left h4 {
 	font-weight: 600;
 	font-size: 14px;
 	letter-spacing: .8px;
 	margin-bottom: 10px;
-
 }
-
 .path {
 	width: 500px;
 	font-style: italic;
@@ -7545,28 +7525,23 @@ input[type="checkbox"]:checked+label:before {
 	color: #666;
 	margin-bottom: 10px;
 }
-
 .path a {
 	color: inherit;
 }
-
 .description-block {
 	white-space: nowrap;
 	margin-bottom: 13px;
 	font-size: 12px;
 	color: #474747;
 }
-
 .description-block > div {
 	display: inline-block;
 }
 .description-text {
-
 	position: relative;
 	width: 445px;
 	white-space: normal;
 	letter-spacing: .6px;
-
 }
 .description-text:after {
 	content: "";
@@ -7584,19 +7559,14 @@ input[type="checkbox"]:checked+label:before {
 	vertical-align: top;
 	padding-left: 7px;
 }
-
 .ads-info {
-
 }
-
 .ads-info>div {
 	display: inline-block;
 }
-
 .ads-params {
 	width: 180px;
 }
-
 .params-drop {
 	position: relative;
 	font-style: italic;
@@ -7607,7 +7577,6 @@ input[type="checkbox"]:checked+label:before {
 	margin-bottom: 4px;
 	cursor: pointer;
 }
-
 .params-drop >span {
 	display: block;
 	width: 12px;
@@ -7623,7 +7592,6 @@ input[type="checkbox"]:checked+label:before {
 .params-drop:active >span {
 	background: #ff7519;;
 }
-
 .params-drop span:before,
 .params-drop span:after {
 	content: "";
@@ -7634,15 +7602,12 @@ input[type="checkbox"]:checked+label:before {
 	height: 1px;
 	background: inherit;
 }
-
 .params-drop span:before {
 	top: -3px;
 }
-
 .params-drop span:after {
 	top: 3px;
 }
-
 .param-popup {
 	display: none;
 	position: absolute;
@@ -7656,34 +7621,28 @@ input[type="checkbox"]:checked+label:before {
 	color: #666;
 	font-size: 11px;
 }
-
 .product-param-popup {
 	width: 222px;
 }
-
 .deal-param-popup {
 	width: 420px;
 }
-
 .param-popup>div {
 	margin-bottom: 4px;
 	white-space: nowrap;
 }
-
 .param-popup span {
 	display: inline-block;
 	line-height: 1.2;
 	vertical-align: top;
 	white-space: normal;
 }
-
 .param-popup h5 {
 	font-size: 13px;
 	padding-bottom: 10px;
 	margin-bottom: 15px;
 	border-bottom: 1px solid #d6d6d6;
 }
-
 .param-name {
 	display: inline-block;
 	width: 110px;
@@ -7691,38 +7650,29 @@ input[type="checkbox"]:checked+label:before {
 	font-size: 10px;
 	padding-right: 5px;
 }
-
 .param-value {
 	display: inline-block;
 	color: #000;
 	//padding-left: 5px;
 }
-
 .param-value span {
 	display: block;
 	width: 100%;
 }
-
 .params-drop:hover .param-popup,
 .params-drop:active .param-popup {
 	display: block;
 }
-
-.ads-actuality {
+.ad-status {
 	float: right;
 	font-size: 12px;
 	color: #474747;
 	margin: 20px 3px 0;
 	text-align: right;
 }
-
-
-
-
-
-
-
-
+.activity-status {
+	color: #ff0000;
+}
 .ads-item-right {
 	width: 320px;
 	padding: 17px 20px 10px 18px;
@@ -7740,13 +7690,11 @@ input[type="checkbox"]:checked+label:before {
 	font-size: 12px;
 	color: #474747;
 }
-
 .views-num >span:first-child {
 	display: inline-block;
 	position: relative;
 	padding-right: 22px;
 }
-
 .views-num >span:first-child:after {
 	content: "";
 	display: block;
@@ -7757,51 +7705,43 @@ input[type="checkbox"]:checked+label:before {
 	top: 2px;
 	right: 0px;
 }
-
 .views-num >span:last-child {
 	padding-left: 18px;
 }
-
 .ads-link {
 	display: block;
 	font-size: 12px;
 	
 	margin-bottom: 11px;
 }
-
 .ads-link:hover {
 	text-decoration: underline;
 }
-
-
-
 .options-item {
 	position: relative;
 	font-size: 12px;
 	margin-bottom: 3px;
 }
-
 .options-item:last-of-type {
 	margin-bottom: 25px;
 }
-
 .option-name {
 	display: inline-block;
 	min-width: 110px;
 	text-transform: uppercase;
 	color: #ff7519;
 }
-
+.options-item .option-name {
+	color: #474747;
+}
 .option-status {
 	display: inline-block;
 	min-width: 110px;
 	text-align: center;
 }
-
 .option-date {
 	color: #fe0000;
 }
-
 .option-about {
 	display: inline-block;
 	position: absolute;
@@ -7816,12 +7756,10 @@ input[type="checkbox"]:checked+label:before {
 	border: 1px solid #a1a1a1;
 	cursor: pointer;
 }
-
 .option-about:hover .tooltip,
 .option-about:active .tooltip {
 	display: block;
 }
-
 .tooltip {
 	display: none;
 	width: 300px;
@@ -7837,25 +7775,19 @@ input[type="checkbox"]:checked+label:before {
 	right: -30px;
 	box-shadow: 0 0 7px rgba(0,0,0,.3);
 }
-
 .tooltip:after {
 	content: "";
 	display: block;
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	background: #eee;
+	background: #f2f3f7;
 	right: 31px;
 	bottom: -6px;
 	transform: rotate(45deg);
 	border-right:1px solid #a1a1a1;
 	border-bottom:1px solid #a1a1a1;
 }
-
-.manage-ad {
-
-}
-
 .manage-ad a{
 	display: inline-block;
 	padding: 0 5px;

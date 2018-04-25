@@ -120,8 +120,8 @@
                 </ul>
                 <div class="ads-container">
                     <ul class="activity-links">
-                        <li><a href="A631.html" class="active">Активные</a></li>
-                        <li><a href="A632.html">Завершенные</a></li>
+                        <li><a href="A631.html">Активные</a></li>
+                        <li><a href="A632.html"  class="active">Завершенные</a></li>
                     </ul>
                     <div class="list-control-panel">
                         <div class="control-block control-check-all">
@@ -131,21 +131,17 @@
                         <div class="control-block control-filter">
                             <div class="filter-select">
                                 <span class="control-title">Фильтры</span>
-                                <span class="control-num">2</span>
+                                <span class="control-num">1</span>
                             </div>
                             <div class="control-dropdown">
-                                <form action="" name="ads-filter" method="post">
-                                    <div class="period-set">
-                                        <h5>Период</h5>
-                                        <span>с</span>
-                                        <span class="datetime-wrap">
-                                            <input type="" class="datetime" id="date-from">
-                                        </span>
-                                        <span>по</span>
-                                        <span class="datetime-wrap">
-                                            <input type="" class="datetime" id="date-to">
-                                        </span>
-                                    </div>
+                                <form action="" name="ads-actions">
+                                    <div class="action-choose inactive-action-choose">
+                                        <input type="checkbox" id="deactive-check">
+                                        <label for="deactive-check">деактивированы</label>
+                                        <input type="checkbox" id="returned-check">
+                                        <label for="returned-check">возвращены модератором</label>
+                                    </div><!-- /.action-choose -->
+
                                     <div class="dropdown-actions">
                                         <button id="filter-reset">Очистить фильтры</button>
                                         <button id="filter-submit">Показать</button>
@@ -161,8 +157,6 @@
                             <div class="control-dropdown">
                                 <form action="" name="ads-actions">
                                     <div class="action-choose">
-                                        <input type="checkbox" id="deactivate-check">
-                                        <label for="deactivate-check">деактивировать</label>
                                         <input type="checkbox" id="delete-check">
                                         <label for="delete-check">удалить</label>
                                     </div><!-- /.action-choose -->
@@ -183,8 +177,8 @@
                             <div class="sort-select">
                                  <select data-placeholder="Сортировка" class="select-invisible">
                                     <option value=""></option>
-                                    <option value="new">сначала новые</option>
-                                    <option value="old">сначала старые</option>
+                                    <option value="default">по умолчанию</option>
+                                    <option value="returned">сначала возвращенные</option>
                                 </select>
                             </div>
                         </div>
@@ -282,30 +276,30 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="ads-actuality">Актуально до <span>01.03.2018</span></div>
+                                    <div class="ad-status activity-status">Деактивировано</div>
                                 </div><!-- /.ads-info -->
                             </div><!-- /.ads-item-left -->
 
                             <div class="ads-item-right">
                                 <div class="views-num">
-                                    <span>Просмотров: <span>654</span></span>
-                                    <span>Сегодня: <span>45</span></span>
+                                    <span>Просмотров: <span>-</span></span>
+                                    <span>Сегодня: <span>-</span></span>
                                 </div>
                                 <a href="#" class="ads-link">Перейти к объявлению</a>
                                 <div class="options-block">
                                     <h5>Опции:</h5>
-                                    <div class="options-item">
+                                    <div class="options-item inactive-options-item">
                                         <span class="option-name">Выделение</span>
-                                        <span class="option-status"><span class="option-date">до 01.03.2018</span></span>
+                                        <span class="option-status">-</span>
                                         <span class="option-about">?
                                             <span class="tooltip">
                                                 Текст описания опции. Текст описания опции.Текст описания опции.
                                             </span>
                                         </span>
                                     </div>
-                                    <div class="options-item">
+                                    <div class="options-item inactive-options-item">
                                         <span class="option-name">Премиум</span>
-                                        <span class="option-status"><a href="#" class="option-set">подключить</a></span>
+                                        <span class="option-status">-</span>
                                         <span class="option-about">?
                                             <span class="tooltip">
                                                 Текст описания опции. Текст описания опции.Текст описания опции.
@@ -315,13 +309,13 @@
                                 </div><!-- /.options-block -->
                                 <div class="manage-ad">
                                     <h5>Управление:</h5>
-                                    <a href="#" class="edit-btn">редактировать</a>
-                                    <a href="#" class="deactivate-btn">деактивировать</a>
-                                    <a href="#" class="delete-btn">удалить</a>
+                                    <a href="#">открыть</a>
+                                    <a href="#">удалить</a>
                                 </div>
                             </div><!-- /.ads-item-right -->
                         </div><!-- /.ads-item -->
 <!-- =========================== ad item end =========================== -->
+
 <!-- =========================== ad item begin =========================== -->
                         <div class="ads-item">
                             <div class="check-container">
@@ -412,30 +406,30 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="ads-actuality">Актуально до <span>25.03.2018</span></div>
+                                    <div class="ad-status activity-status">Возвращено модератором</div>
                                 </div><!-- /.ads-info -->
                             </div><!-- /.ads-item-left -->
 
                             <div class="ads-item-right">
                                 <div class="views-num">
-                                    <span>Просмотров: <span>234</span></span>
-                                    <span>Сегодня: <span>15</span></span>
+                                    <span>Просмотров: <span>-</span></span>
+                                    <span>Сегодня: <span>-</span></span>
                                 </div>
                                 <a href="#" class="ads-link">Перейти к объявлению</a>
                                 <div class="options-block">
                                     <h5>Опции:</h5>
-                                    <div class="options-item">
+                                    <div class="options-item inactive-options-item">
                                         <span class="option-name">Выделение</span>
-                                        <span class="option-status"><a href="#" class="option-set">подключить</a></span>
+                                        <span class="option-status">-</span>
                                         <span class="option-about">?
                                             <span class="tooltip">
                                                 Текст описания опции. Текст описания опции.Текст описания опции.
                                             </span>
                                         </span>
                                     </div>
-                                    <div class="options-item">
+                                    <div class="options-item inactive-options-item">
                                         <span class="option-name">Премиум</span>
-                                        <span class="option-status"><a href="#" class="option-set">подключить</a></span>
+                                        <span class="option-status">-</span>
                                         <span class="option-about">?
                                             <span class="tooltip">
                                                 Текст описания опции. Текст описания опции.Текст описания опции.
@@ -445,13 +439,13 @@
                                 </div><!-- /.options-block -->
                                 <div class="manage-ad">
                                     <h5>Управление:</h5>
-                                    <a href="#" class="edit-btn">редактировать</a>
-                                    <a href="#" class="deactivate-btn">деактивировать</a>
-                                    <a href="#" class="delete-btn">удалить</a>
+                                    <a href="#">открыть</a>
+                                    <a href="#">удалить</a>
                                 </div>
                             </div><!-- /.ads-item-right -->
                         </div><!-- /.ads-item -->
 <!-- =========================== ad item end =========================== -->
+
 <!-- =========================== ad item begin =========================== -->
                         <div class="ads-item">
                             <div class="check-container">
@@ -542,30 +536,30 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="ads-actuality">Актуально до <span>01.03.2018</span></div>
+                                    <div class="ad-status activity-status">Деактивировано</div>
                                 </div><!-- /.ads-info -->
                             </div><!-- /.ads-item-left -->
 
                             <div class="ads-item-right">
                                 <div class="views-num">
-                                    <span>Просмотров: <span>654</span></span>
-                                    <span>Сегодня: <span>45</span></span>
+                                    <span>Просмотров: <span>-</span></span>
+                                    <span>Сегодня: <span>-</span></span>
                                 </div>
                                 <a href="#" class="ads-link">Перейти к объявлению</a>
                                 <div class="options-block">
                                     <h5>Опции:</h5>
-                                    <div class="options-item">
+                                    <div class="options-item inactive-options-item">
                                         <span class="option-name">Выделение</span>
-                                        <span class="option-status"><span class="option-date">до 01.03.2018</span></span>
+                                        <span class="option-status">-</span>
                                         <span class="option-about">?
                                             <span class="tooltip">
                                                 Текст описания опции. Текст описания опции.Текст описания опции.
                                             </span>
                                         </span>
                                     </div>
-                                    <div class="options-item">
+                                    <div class="options-item inactive-options-item">
                                         <span class="option-name">Премиум</span>
-                                        <span class="option-status"><a href="#" class="option-set">подключить</a></span>
+                                        <span class="option-status">-</span>
                                         <span class="option-about">?
                                             <span class="tooltip">
                                                 Текст описания опции. Текст описания опции.Текст описания опции.
@@ -575,13 +569,13 @@
                                 </div><!-- /.options-block -->
                                 <div class="manage-ad">
                                     <h5>Управление:</h5>
-                                    <a href="#" class="edit-btn">редактировать</a>
-                                    <a href="#" class="deactivate-btn">деактивировать</a>
-                                    <a href="#" class="delete-btn">удалить</a>
+                                    <a href="#">открыть</a>
+                                    <a href="#">удалить</a>
                                 </div>
                             </div><!-- /.ads-item-right -->
                         </div><!-- /.ads-item -->
 <!-- =========================== ad item end =========================== -->
+
 <!-- =========================== ad item begin =========================== -->
                         <div class="ads-item">
                             <div class="check-container">
@@ -672,30 +666,30 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="ads-actuality">Актуально до <span>25.03.2018</span></div>
+                                    <div class="ad-status activity-status">Возвращено модератором</div>
                                 </div><!-- /.ads-info -->
                             </div><!-- /.ads-item-left -->
 
                             <div class="ads-item-right">
                                 <div class="views-num">
-                                    <span>Просмотров: <span>234</span></span>
-                                    <span>Сегодня: <span>15</span></span>
+                                    <span>Просмотров: <span>-</span></span>
+                                    <span>Сегодня: <span>-</span></span>
                                 </div>
                                 <a href="#" class="ads-link">Перейти к объявлению</a>
                                 <div class="options-block">
                                     <h5>Опции:</h5>
-                                    <div class="options-item">
+                                    <div class="options-item inactive-options-item">
                                         <span class="option-name">Выделение</span>
-                                        <span class="option-status"><a href="#" class="option-set">подключить</a></span>
+                                        <span class="option-status">-</span>
                                         <span class="option-about">?
                                             <span class="tooltip">
                                                 Текст описания опции. Текст описания опции.Текст описания опции.
                                             </span>
                                         </span>
                                     </div>
-                                    <div class="options-item">
+                                    <div class="options-item inactive-options-item">
                                         <span class="option-name">Премиум</span>
-                                        <span class="option-status"><a href="#" class="option-set">подключить</a></span>
+                                        <span class="option-status">-</span>
                                         <span class="option-about">?
                                             <span class="tooltip">
                                                 Текст описания опции. Текст описания опции.Текст описания опции.
@@ -705,269 +699,8 @@
                                 </div><!-- /.options-block -->
                                 <div class="manage-ad">
                                     <h5>Управление:</h5>
-                                    <a href="#" class="edit-btn">редактировать</a>
-                                    <a href="#" class="deactivate-btn">деактивировать</a>
-                                    <a href="#" class="delete-btn">удалить</a>
-                                </div>
-                            </div><!-- /.ads-item-right -->
-                        </div><!-- /.ads-item -->
-<!-- =========================== ad item end =========================== -->
-<!-- =========================== ad item begin =========================== -->
-                        <div class="ads-item">
-                            <div class="check-container">
-                                <input type="checkbox" class="check-ad-item" id="ad-ch-5">
-                                <label for="ad-ch-5"></label>
-                            </div>
-
-                            <div class="ads-item-left">
-                                <h4>Бензин  АИ-95, ГОСТ, низкое содержание серы, прямые поставки с завода-изготовителя</h4>
-                                <div class="path">
-                                    <a href="#">Нефтепродукты, жидкое топливо, масла и смазки</a> &gt; 
-                                    <a href="#">Бензин</a> &gt; 
-                                    <a href="#">Бензин автомобильный</a> &gt; 
-                                    <a href="#">АИ-95</a>
-                                </div>
-                                <div class="description-block">
-                                    <div class="description-text">Текст описания продукции текст описания продукции текст описания продукции текст описания продукции текст описания продукции.</div>
-                                    <div class="attachment-block">Вложенных файлов:&nbsp;&nbsp;<span>2</span></div>
-                                </div>
-                                <div class="ads-info">
-                                    <div class="ads-params">
-                                        <div class="params-drop">
-                                            Параметры продукции
-                                            <span></span>
-                                            <div class="param-popup product-param-popup">
-                                                <div>
-                                                    <span class="param-name">Производитель:</span>
-                                                    <span class="param-value">Лукойл</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Октановое число (исслед. метод):</span>
-                                                    <span class="param-value">97</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Тип:</span>
-                                                    <span class="param-value">Евро-5</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Состояние:</span>
-                                                    <span class="param-value">новый</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="params-drop">
-                                            Условия сделки
-                                            <span></span>
-                                            <div class="param-popup  deal-param-popup">
-                                                <h5>Продажа</h5>
-                                                <div>
-                                                    <span class="param-name">Объем в наличии:</span>
-                                                    <span class="param-value">140 тн</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Цена:</span>
-                                                    <span class="param-value">
-                                                        <span>28900 р/тонна (мин. заказ - 5 тонн)</span>
-                                                        <span>27000-33000 р/тонна (мин. заказ - 15 тонн)</span>
-                                                     </span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Условия оплаты:</span>
-                                                    <span class="param-value">ГУ</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Базис поставки:</span>
-                                                    <span class="param-value">не указан</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Пункт отгрузки:</span>
-                                                    <span class="param-value">ж/д станция Алабино</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Вид поставки:</span>
-                                                    <span class="param-value">поставщиком ж/д; поставщиком автоналив</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Вид тары:</span>
-                                                    <span class="param-value">ж/д цистерны 60м3</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Цена доставки в автоцистернах:</span>
-                                                    <span class="param-value">
-                                                        <span>Волгоград - 1200 р/тонна (24м3)</span>
-                                                        <span>Воронеж - 2 р/литр (1 км)</span>
-                                                        <span>Москва - 6500 р/партия (30м3)</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ads-actuality">Актуально до <span>01.03.2018</span></div>
-                                </div><!-- /.ads-info -->
-                            </div><!-- /.ads-item-left -->
-
-                            <div class="ads-item-right">
-                                <div class="views-num">
-                                    <span>Просмотров: <span>654</span></span>
-                                    <span>Сегодня: <span>45</span></span>
-                                </div>
-                                <a href="#" class="ads-link">Перейти к объявлению</a>
-                                <div class="options-block">
-                                    <h5>Опции:</h5>
-                                    <div class="options-item">
-                                        <span class="option-name">Выделение</span>
-                                        <span class="option-status"><span class="option-date">до 01.03.2018</span></span>
-                                        <span class="option-about">?
-                                            <span class="tooltip">
-                                                Текст описания опции. Текст описания опции.Текст описания опции.
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="options-item">
-                                        <span class="option-name">Премиум</span>
-                                        <span class="option-status"><a href="#" class="option-set">подключить</a></span>
-                                        <span class="option-about">?
-                                            <span class="tooltip">
-                                                Текст описания опции. Текст описания опции.Текст описания опции.
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div><!-- /.options-block -->
-                                <div class="manage-ad">
-                                    <h5>Управление:</h5>
-                                    <a href="#" class="edit-btn">редактировать</a>
-                                    <a href="#" class="deactivate-btn">деактивировать</a>
-                                    <a href="#" class="delete-btn">удалить</a>
-                                </div>
-                            </div><!-- /.ads-item-right -->
-                        </div><!-- /.ads-item -->
-<!-- =========================== ad item end =========================== -->
-<!-- =========================== ad item begin =========================== -->
-                        <div class="ads-item">
-                            <div class="check-container">
-                                <input type="checkbox" class="check-ad-item" id="ad-ch-6">
-                                <label for="ad-ch-6"></label>
-                            </div>
-
-                            <div class="ads-item-left">
-                                <h4>Бензин  АИ-92</h4>
-                                <div class="path">
-                                    <a href="#">Нефтепродукты, жидкое топливо, масла и смазки</a> &gt; 
-                                    <a href="#">Бензин</a> &gt; 
-                                    <a href="#">Бензин автомобильный</a> &gt; 
-                                    <a href="#">АИ-95</a>
-                                </div>
-                                <div class="description-block">
-                                    <div class="description-text">Текст описания продукции текст описания продукции текст описания продукции текст описания продукции текст описания продукции.</div>
-                                    <div class="attachment-block">Вложенных файлов:&nbsp;&nbsp;<span>0</span></div>
-                                </div>
-                                <div class="ads-info">
-                                    <div class="ads-params">
-                                        <div class="params-drop">
-                                            Параметры продукции
-                                            <span></span>
-                                            <div class="param-popup product-param-popup">
-                                                <div>
-                                                    <span class="param-name">Производитель:</span>
-                                                    <span class="param-value">Лукойл</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Октановое число (исслед. метод):</span>
-                                                    <span class="param-value">97</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Тип:</span>
-                                                    <span class="param-value">Евро-5</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Состояние:</span>
-                                                    <span class="param-value">новый</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="params-drop">
-                                            Условия сделки
-                                            <span></span>
-                                            <div class="param-popup  deal-param-popup">
-                                                <h5>Продажа</h5>
-                                                <div>
-                                                    <span class="param-name">Объем в наличии:</span>
-                                                    <span class="param-value">140 тн</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Цена:</span>
-                                                    <span class="param-value">
-                                                        <span>28900 р/тонна (мин. заказ - 5 тонн)</span>
-                                                        <span>27000-33000 р/тонна (мин. заказ - 15 тонн)</span>
-                                                     </span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Условия оплаты:</span>
-                                                    <span class="param-value">ГУ</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Базис поставки:</span>
-                                                    <span class="param-value">не указан</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Пункт отгрузки:</span>
-                                                    <span class="param-value">ж/д станция Алабино</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Вид поставки:</span>
-                                                    <span class="param-value">поставщиком ж/д; поставщиком автоналив</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Вид тары:</span>
-                                                    <span class="param-value">ж/д цистерны 60м3</span>
-                                                </div>
-                                                <div>
-                                                    <span class="param-name">Цена доставки в автоцистернах:</span>
-                                                    <span class="param-value">
-                                                        <span>Волгоград - 1200 р/тонна (24м3)</span>
-                                                        <span>Воронеж - 2 р/литр (1 км)</span>
-                                                        <span>Москва - 6500 р/партия (30м3)</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ads-actuality">Актуально до <span>25.03.2018</span></div>
-                                </div><!-- /.ads-info -->
-                            </div><!-- /.ads-item-left -->
-
-                            <div class="ads-item-right">
-                                <div class="views-num">
-                                    <span>Просмотров: <span>234</span></span>
-                                    <span>Сегодня: <span>15</span></span>
-                                </div>
-                                <a href="#" class="ads-link">Перейти к объявлению</a>
-                                <div class="options-block">
-                                    <h5>Опции:</h5>
-                                    <div class="options-item">
-                                        <span class="option-name">Выделение</span>
-                                        <span class="option-status"><a href="#" class="option-set">подключить</a></span>
-                                        <span class="option-about">?
-                                            <span class="tooltip">
-                                                Текст описания опции. Текст описания опции.Текст описания опции.
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="options-item">
-                                        <span class="option-name">Премиум</span>
-                                        <span class="option-status"><a href="#" class="option-set">подключить</a></span>
-                                        <span class="option-about">?
-                                            <span class="tooltip">
-                                                Текст описания опции. Текст описания опции.Текст описания опции.
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div><!-- /.options-block -->
-                                <div class="manage-ad">
-                                    <h5>Управление:</h5>
-                                    <a href="#" class="edit-btn">редактировать</a>
-                                    <a href="#" class="deactivate-btn">деактивировать</a>
-                                    <a href="#" class="delete-btn">удалить</a>
+                                    <a href="#">открыть</a>
+                                    <a href="#">удалить</a>
                                 </div>
                             </div><!-- /.ads-item-right -->
                         </div><!-- /.ads-item -->

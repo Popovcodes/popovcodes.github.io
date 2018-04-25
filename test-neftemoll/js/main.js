@@ -221,7 +221,7 @@ $(document).ready(function() {
              );
      });
 
-   /*new scripts*/
+   /*new scripts from apr 22 2018*/
    /*calendar*/
    $('.datetime').datetimepicker({
     timepicker:false,
@@ -231,18 +231,18 @@ $(document).ready(function() {
    $.datetimepicker.setLocale('ru');
    
 
-   /*show dropdown*/
+   /*show filter dropdown*/
    $('.action-select, .filter-select').click(function(){
       $(this).parent('.control-block').siblings().removeClass('active').find('.control-dropdown').slideUp();
       $(this).parent('.control-block').toggleClass('active').find('.control-dropdown').slideToggle();
    });
 
-   $('#actions-reset').click(function(){
-      $(this).parents('.control-dropdown').slideUp();
-      $(this).parents('.control-block').removeClass('active');
+   $('#filter-reset, #actions-reset').click(function(){
+      event.preventDefault();
+      var uu = $(this).parents('.control-dropdown').find('input:checkbox').prop('checked', false);
    });
 
-   /*scek all ads*/
+   /*check all ads*/
    $('#check-all').change(function(){
       if($(this).prop('checked')) {
         $('.check-ad-item').prop('checked', true);
@@ -250,7 +250,5 @@ $(document).ready(function() {
         $('.check-ad-item').prop('checked', false);
       }
    });
-
-
 });
 
