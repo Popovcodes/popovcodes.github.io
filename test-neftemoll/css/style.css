@@ -7353,6 +7353,7 @@ footer .right-col .contacts-footer a:last-of-type:before {
 span.datetime-wrap {
 	width: 100px;
 	margin-right: 17px;
+	line-height: 1;
 	display: inline-block;
 	position: relative;
 }
