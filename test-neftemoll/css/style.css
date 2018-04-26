@@ -7119,11 +7119,9 @@ footer .right-col .contacts-footer a:last-of-type:before {
 	background: transparent;
 	z-index: 2;
 }
-
 .hidden {
 	display: none;
 }
-
 .ads-types-list {
 	font-size: 0px;
 	margin-bottom: 45px;
@@ -7407,8 +7405,6 @@ span.datetime-wrap {
 	letter-spacing: .6px;
 	color: #474747;
 	padding: 3px 10px;
-/*	height: 17px;
-	line-height 17px;*/
 	margin-left: 8px;
 	border-radius: 3px;
 	border: 1px solid #474747;
@@ -7736,7 +7732,6 @@ input[type="checkbox"]:indeterminate+label:before {
 .param-value {
 	display: inline-block;
 	color: #000;
-	//padding-left: 5px;
 }
 .param-value span {
 	display: block;

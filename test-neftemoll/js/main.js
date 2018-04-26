@@ -295,8 +295,12 @@ $(document).ready(function() {
          $('.jq-selectbox__select-text').html(initText);
        },
        onSelectClosed: function(){
-         var placeholder =  $(this).data('placeholder') + ': ';
-         var replaceText= placeholder + $('.jq-selectbox__select-text').html().split(placeholder).join("");
+         var placeholder =  $(this).data('placeholder');
+         var replaceText= placeholder + ': '+ $('.jq-selectbox__select-text').html().split(placeholder).join('').split(': ').join('');
+         if(replaceText == placeholder+': ') {
+          replaceText = placeholder;
+         }
+         console.log(replaceText);
          $('.jq-selectbox__select-text').html(replaceText);
        }
    });
