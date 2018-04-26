@@ -14,19 +14,6 @@ $('select').styler({
    selectSearch: true,
 });
 
-/*prevent select heading replacing with text of selected item*/
-$('.select-invisible').styler('destroy');
-$('.select-invisible').styler({
-    onFormStyled: function(){
-      var initText = $('.select-invisible').data('placeholder');
-      $('.jq-selectbox__select-text').html(initText);
-    },
-    onSelectClosed: function(){
-      var replaceText =  $(this).data('placeholder');
-      $('.jq-selectbox__select-text').html(replaceText);
-    }
-});
-
 $('.choose-country-toggle').click(function (event) {
 	event.preventDefault();
 	$(this).closest('.choose-country-wrap').toggleClass('active');
@@ -234,7 +221,8 @@ $(document).ready(function() {
              );
      });
 
-   /*new scripts from apr 22 2018*/
+
+   /*---------------new scripts from apr 22 2018----------*/
    /*calendar*/
    $('.datetime').datetimepicker({
     timepicker:false,
@@ -243,19 +231,38 @@ $(document).ready(function() {
    });
    $.datetimepicker.setLocale('ru');
    $('#filter-reset').click(function(){
+      event.preventDefault();
       $('.datetime').val('');
    });
    
-
    /*show filter dropdown*/
    $('.action-select, .filter-select').click(function(){
       $(this).parent('.control-block').siblings().removeClass('active').find('.control-dropdown').slideUp(0);
       $(this).parent('.control-block').toggleClass('active').find('.control-dropdown').delay(200).slideToggle(0);
+      if($(this).parent('.control-block').hasClass('active')) {
+        $('#filter-overlay').removeClass('hidden');
+      } else {
+        $('#filter-overlay').addClass('hidden');
+      }
+   });
+   $('#filter-overlay').click(function(){
+      $('.control-dropdown').slideUp(0);
+      $('.control-block').removeClass('active');
+      $(this).addClass('hidden');
+   });
+   $('.control-check-all, .control-search, .control-sorting').click(function(){
+      $('.control-dropdown').slideUp(0);
+      $('.control-filter, .control-actions').removeClass('active');
+      $('.overlay').addClass('hidden');
    });
 
    $('#filter-reset, #actions-reset').click(function(){
-      event.preventDefault();
-      var uu = $(this).parents('.control-dropdown').find('input:checkbox').prop('checked', false);
+      // event.preventDefault();
+      $(this).parents('.control-dropdown').find('input:checkbox').prop('checked', false);
+   });
+   $('.dropdown-button').click(function(){
+      $(this).parents('.control-dropdown').slideUp(0);
+      $('.overlay').addClass('hidden');
    });
 
    /*check all ads*/
@@ -279,6 +286,21 @@ $(document).ready(function() {
       }
    };
    $('.check-ad-item').change(checkedStatus);
+
+   /*prevent select heading replacing with text of selected item*/
+   $('.select-invisible').styler('destroy');
+   $('.select-invisible').styler({
+       onFormStyled: function(){
+         var initText = $('.select-invisible').data('placeholder');
+         $('.jq-selectbox__select-text').html(initText);
+       },
+       onSelectClosed: function(){
+         var placeholder =  $(this).data('placeholder') + ': ';
+         var replaceText= placeholder + $('.jq-selectbox__select-text').html().split(placeholder).join("");
+         $('.jq-selectbox__select-text').html(replaceText);
+       }
+   });
+
 
 });
 

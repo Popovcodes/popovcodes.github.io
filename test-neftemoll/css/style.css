@@ -7103,7 +7103,27 @@ footer .right-col .contacts-footer a:last-of-type:before {
 	-webkit-box-shadow: 1px 1px 1px 0 #666 !important;
 	        box-shadow: 1px 1px 1px 0 #666 !important;
 }
-/*new styles from apr 22 2018*/
+
+
+
+
+/*-------------new styles from apr 22 2018. Pages A631, A632 -------------*/
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 2;
+}
+
+.hidden {
+	display: none;
+}
+
 .ads-types-list {
 	font-size: 0px;
 	margin-bottom: 45px;
@@ -7183,6 +7203,7 @@ footer .right-col .contacts-footer a:last-of-type:before {
 	-o-transition: all .4s;
 	transition: all .4s;
 	cursor: pointer;
+	z-index: 3;
 }
 .control-block:last-child {
 	border-right: 1px solid #cbcbcb;
@@ -7501,10 +7522,10 @@ select.select-invisible {
 .control-block .jq-selectbox__trigger-arrow {
 	display: none;
 }
-.ads-holder {
+.adverts-holder {
 	width: 980px;
 }
-.ads-item {
+.advert-item {
 	position: relative;
 	background: #fff;
 	white-space: nowrap;
@@ -7549,17 +7570,17 @@ input[type="checkbox"]:indeterminate+label:before {
   -webkit-box-shadow: inset 0 0 0 4px #fff;
           box-shadow: inset 0 0 0 4px #fff;
 }
-.ads-item-left,
-.ads-item-right {
+.advert-item-left,
+.advert-item-right {
 	display: inline-block;
 	white-space: normal;
 }
-.ads-item-left {
+.advert-item-left {
 	position: relative;
 	width: 658px;
 	padding: 16px 20px 10px 41px;
 }
-.ads-item-left:after {
+.advert-item-left:after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -7569,7 +7590,7 @@ input[type="checkbox"]:indeterminate+label:before {
 	width: 1px;
 	height: 184px;
 }
-.ads-item-left h4 {
+.advert-item-left h4 {
 	font-weight: 600;
 	font-size: 14px;
 	letter-spacing: .8px;
@@ -7735,14 +7756,14 @@ input[type="checkbox"]:indeterminate+label:before {
 .activity-status {
 	color: #ff0000;
 }
-.ads-item-right {
+.advert-item-right {
 	width: 320px;
 	padding: 17px 20px 10px 18px;
 	vertical-align: top;
 	color: #474747;
 	font-size: 12px;
 }
-.ads-item-right h5 {
+.advert-item-right h5 {
 	font-size: 12px;
 	font-weight: 600;
 	color: #474747;
