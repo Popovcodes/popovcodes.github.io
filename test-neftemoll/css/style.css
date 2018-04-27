@@ -7320,10 +7320,11 @@ footer .right-col .contacts-footer a:last-of-type:before {
 	display: inline-block;
 	width: 18px;
 	height: 18px;
-	line-height: 18px;
+	line-height: 17px;
 	border-radius: 50%;
 	border: 1px solid #666666;
 	margin-right: 10px;
+	padding-right: 1px;
 	text-align: center;
 	font-weight: 600;
 	color: #666;
@@ -7398,7 +7399,7 @@ span.datetime-wrap {
 	line-height: 1;
 	padding: 6px 0 5px;
 }
-.dropdown-actions button {
+.dropdown-actions .button {
 	display: inline-block;
 	font-family: inherit;
 	font-size: 9px;
@@ -7415,8 +7416,8 @@ span.datetime-wrap {
 	transition: all .4s;
 	cursor: pointer;
 }
-.dropdown-actions button:hover,
-.dropdown-actions button:active {
+.dropdown-actions .button:hover,
+.dropdown-actions .button:active {
 	color: #ff7519;
 	border-color: #ff7519;
 }
@@ -7573,7 +7574,7 @@ input[type="checkbox"]:indeterminate+label:before {
 }
 .advert-item-left {
 	position: relative;
-	width: 658px;
+	width: 657px;
 	padding: 16px 20px 10px 41px;
 }
 .advert-item-left:after {
@@ -7589,8 +7590,9 @@ input[type="checkbox"]:indeterminate+label:before {
 .advert-item-left h4 {
 	font-weight: 600;
 	font-size: 14px;
+	min-height: 32px;
 	letter-spacing: .8px;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
 .path {
 	width: 500px;
@@ -7605,7 +7607,7 @@ input[type="checkbox"]:indeterminate+label:before {
 }
 .description-block {
 	white-space: nowrap;
-	margin-bottom: 13px;
+	margin-bottom: 16px;
 	font-size: 12px;
 	color: #474747;
 }
@@ -7617,6 +7619,7 @@ input[type="checkbox"]:indeterminate+label:before {
 	width: 445px;
 	white-space: normal;
 	letter-spacing: .6px;
+	line-height: 1.2;
 }
 .description-text:after {
 	content: "";
@@ -7741,19 +7744,22 @@ input[type="checkbox"]:indeterminate+label:before {
 .params-drop:active .param-popup {
 	display: block;
 }
+.ads-actuality,
 .ad-status {
 	float: right;
 	font-size: 12px;
 	color: #474747;
 	margin: 20px 3px 0;
 	text-align: right;
+	letter-spacing: .6px;
 }
 .activity-status {
 	color: #ff0000;
 }
+
 .advert-item-right {
 	width: 320px;
-	padding: 17px 20px 10px 18px;
+	padding: 15px 23px 10px 15px;
 	vertical-align: top;
 	color: #474747;
 	font-size: 12px;
@@ -7790,7 +7796,7 @@ input[type="checkbox"]:indeterminate+label:before {
 	display: block;
 	font-size: 12px;
 	
-	margin-bottom: 11px;
+	margin-bottom: 8px;
 }
 .ads-link:hover {
 	text-decoration: underline;
@@ -7801,16 +7807,16 @@ input[type="checkbox"]:indeterminate+label:before {
 	margin-bottom: 3px;
 }
 .options-item:last-of-type {
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 .option-name {
 	display: inline-block;
 	min-width: 110px;
 	text-transform: uppercase;
-	color: #ff7519;
+	color: #474747;;
 }
-.options-item .option-name {
-	color: #474747;
+.activate-option-item .option-name{
+	color: #ff7519;
 }
 .option-status {
 	display: inline-block;
