@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neftemoll.ru</title>
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css"/>
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="a60-header">
+        <div class="container a60-container clearfix">
+            <div class="left-col">
+                <a href="index.html" class="logo">
+                    <img src="img/logo-2.png" alt="">
+                </a>
+            </div>
+            <div class="right-col">
+                <div class="top-row clearfix">
+                    <span class="name-company">ООО “Самаранефтепродукт” <span class="type">Отдел (филиал)</span></span>
+                    <div class="pull-right">
+                        <div class="dropdown dropdown-2">
+                            <span>Центр информации:</span>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Справка</a></li>
+                                <li><a href="#">Торговые инструменты</a></li>
+                                <li><a href="#">Размещение рекламы</a></li>
+                                <li><a href="#">Служба поддержки</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown dropdown-1">
+                            <span>Создать:</span>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Объявление</a></li>
+                                <li><a href="#">Подписку</a></li>
+                                <li><a href="#">Смарт-прайс</a></li>
+                                <li><a href="#">Шаблон</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown dropdown-3">
+                            <span>Мой статус:</span>
+                            <div class="dropdown-menu">
+                                <div class="col status-col">
+                                    <span>Статус компании:</span>
+                                    <ul>
+                                        <li><a href="#">Золотой аккаунт</a></li>
+                                        <li><a href="#">Серебряный аккаунт</a></li>
+                                        <li><a href="#" class="active">Бесплатный аккаунт</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <span>Сервисы компании:</span>
+                                    <ul>
+                                        <li><a href="#">Прайс-лист</a></li>
+                                        <li><a href="#">Шаблоны</a></li>
+                                        <li><a href="#">Подписки</a></li>
+                                        <li><a href="#">Анализ рынка</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-row clearfix">
+                    <span>Руководитель отдела</span>
+                    <div class="pull-right">
+                        <a href="#" class="add-advert-btn">Добавить объявление</a>
+                        <a href="#" class="exit">выход</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main a60-main a70-main">
+        <div class="container a60-container clearfix">
+            <div class="left-sidebar">
+                <a href="#" class="home-btn"></a>
+                <a href="#" class="accordeon-title active">Профиль компании</a>
+                <ul class="accordeon-content active">
+                    <li><a href="#">Основные сведения</a></li>
+                    <li><a href="#">Настройки аккаунта</a></li>
+                    <li><a href="#">Настройки персонала</a></li>
+                </ul>
+                <a href="#" class="accordeon-title active">Объявления <span class="number">17</span></a>
+                <ul class="accordeon-content active">
+                    <li><a href="#">о продаже <span class="number">1</span></a></li>
+                    <li><a href="#">о покупке</a></li>
+                    <li><a href="#">предложение  услуг</a></li>
+                    <li><a href="#">заказ услуг</a></li>
+                </ul>
+                <a href="#" class="accordeon-title active">Сообщения <span class="number">12</span></a>
+                <ul class="accordeon-content active">
+                    <li><a href="#">Предложения <span class="number">5</span></a></li>
+                    <li><a href="#">Заявки <span class="number">5</span></a></li>
+                    <li><a href="#">Исходящие</a></li>
+                    <li><a href="#">От администрации</a></li>
+                    <li><a href="#">Прайс-листы</a></li>
+                    <li><a href="#">Спам</a></li>
+                </ul>
+                <a href="#" class="nav-item active-item">Контакты</a>
+                <a href="#" class="accordeon-title active">Торговые сервисы</a>
+                <ul class="accordeon-content active">
+                    <li><a href="#">Статус компании</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Подписки</a></li>
+                    <li><a href="#">Шаблоны</a></li>
+                    <li><a href="#">Анализ рынка</a></li>
+                </ul>
+            </div>
+
+            <div class="right-content">
+                <ul class="messages-types-list">
+                    <li><a href="javascript:void(0);" class="active">Предложения&nbsp;&nbsp;<span class="ads-type-num">[5]</span></a></li>
+                    <li><a href="javascript:void(0);">Заявки&nbsp;&nbsp;<span class="ads-type-num">[5]</span></a></li>
+                    <li><a href="javascript:void(0);">Исходящие&nbsp;&nbsp;<span class="ads-type-num">[0]</span></a></li>
+                    <li><a href="javascript:void(0);">От администрации&nbsp;&nbsp;<span class="ads-type-num">[0]</span></a></li>
+                    <li><a href="javascript:void(0);">Прайс-листы&nbsp;&nbsp;<span class="ads-type-num">[0]</span></a></li>
+                </ul>
+
+
+                <div class="messages-holder">
+
+                    <div class="list-control-panel">
+
+                        <div class="control-block control-check-all">
+                            <input type="checkbox" id="check-all-messages">
+                            <label for="check-all-messages"></label>
+                        </div>
+
+                        <div class="control-block control-filter">
+                            <div class="filter-select">
+                                <span class="control-title">Фильтры</span>
+                                <span class="control-num">2</span>
+                            </div>
+                            <div class="control-dropdown">
+                                <form action="" name="ads-filter" method="post">
+                                    <div class="period-set">
+                                        <h5>Период</h5>
+                                        <span>с</span>
+                                        <span class="datetime-wrap">
+                                            <input type="text" class="datetime" id="date-from">
+                                        </span>
+                                        <span>по</span>
+                                        <span class="datetime-wrap">
+                                            <input type="text" class="datetime" id="date-to">
+                                        </span>
+                                    </div>
+                                    <div class="dropdown-actions">
+                                        <button type="reset" id="filter-reset" class="button dropdown-button">Очистить фильтры</button>
+                                        <button type="submit" id="filter-submit" class="button dropdown-button">Показать</button>
+                                    </div><!-- /.dropdown-actions -->
+                                </form>
+                            </div><!-- /.control-dropdown -->
+                        </div><!-- /.control-filter -->
+
+                        <div class="control-block control-actions">
+                            <div class="action-select">
+                                <span class="control-title">Действия</span>
+                            </div>
+                            <div class="control-dropdown">
+                                <form action="" name="ads-actions">
+                                    <div class="action-choose">
+                                        <input type="checkbox" id="deactivate-check">
+                                        <label for="deactivate-check">деактивировать</label>
+                                        <input type="checkbox" id="delete-check">
+                                        <label for="delete-check">удалить</label>
+                                    </div><!-- /.action-choose -->
+
+                                    <div class="dropdown-actions">
+                                        <button type="reset" id="actions-reset" class="button dropdown-button">Отменить</button>
+                                        <button type="submit" id="actions-submit" class="button dropdown-button">Выполнить</button>
+                                    </div><!-- /.dropdown-actions -->
+                                </form>
+                            </div><!-- /.control-dropdown -->
+                        </div><!-- /.control-actions -->
+
+                        <div class="control-block control-search">
+                            <form action="" name="adds-search" method="post">
+                                <input type="search" placeholder="Найти">
+                            </form>
+                        </div>
+
+                    </div><!-- /.list-control-panel -->
+
+                    <div class="messages-list-container" id="messages-list-container">
+                        <div class="messages-list clearfix" id="messages-list">
+
+                            <!-- message branch-->
+                            <div class="ad-item-messages">
+                                <div class="ad-message-title">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="ad-item-ch-1" class="corresp-group-check">
+                                        <label for="ad-item-ch-1"></label>
+                                    </div><!-- /.check-container -->
+                                    <a href="#">Бензин АИ-95, прямые поставки с завода изготовителя</a>
+                                </div>
+                                <ul class="ad-message-correspondents">
+                                    <li class="active">
+                                        <div class="check-container">
+                                            <input type="checkbox" id="ad-1-ch-1" class="corresp-check">
+                                            <label for="ad-1-ch-1"></label>
+                                        </div><!-- /.check-container -->
+                                        <a href="javascript:void(0);">
+                                            <span class="correspondent-name">Нефтепродукттрейд</span>
+                                            <span class="correspondence-date">23.04.2018</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="check-container">
+                                            <input type="checkbox" id="ad-1-ch-2" class="corresp-check">
+                                            <label for="ad-1-ch-2"></label>
+                                        </div><!-- /.check-container -->
+                                        <a href="javascript:void(0);">
+                                            <span class="correspondent-name">Максима групп</span>
+                                            <span class="correspondence-date">23.04.2018</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /message branch-->
+
+                            <!-- message branch-->
+                            <div class="ad-item-messages">
+                                <div class="ad-message-title">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="ad-item-ch-2" class="corresp-group-check">
+                                        <label for="ad-item-ch-2"></label>
+                                    </div><!-- /.check-container -->
+                                    <a href="#">Перевозка светлых нефтепродуктов</a>
+                                </div>
+                                <ul class="ad-message-correspondents">
+                                    <li>
+                                        <div class="check-container">
+                                            <input type="checkbox" id="ad-2-ch-1" class="corresp-check">
+                                            <label for="ad-2-ch-1"></label>
+                                        </div><!-- /.check-container -->
+                                        <a href="javascript:void(0);">
+                                            <span class="correspondent-name">Трансойл</span>
+                                            <span class="correspondence-date">23.04.2018</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="check-container">
+                                            <input type="checkbox" id="ad-2-ch-2" class="corresp-check">
+                                            <label for="ad-2-ch-2"></label>
+                                        </div><!-- /.check-container -->
+                                        <a href="javascript:void(0);">
+                                            <span class="correspondent-name">Ж/д маркет</span>
+                                            <span class="correspondence-date">23.04.2018</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="check-container">
+                                            <input type="checkbox" id="ad-2-ch-3" class="corresp-check">
+                                            <label for="ad-2-ch-3"></label>
+                                        </div><!-- /.check-container -->
+                                        <a href="javascript:void(0);">
+                                            <span class="correspondent-name">Праймгрупп</span>
+                                            <span class="correspondence-date">23.04.2018</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /message branch-->
+
+                            <!-- message branch-->
+                            <div class="ad-item-messages">
+                                <div class="ad-message-title">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="ad-item-ch-3" class="corresp-group-check">
+                                        <label for="ad-item-ch-3"></label>
+                                    </div><!-- /.check-container -->
+                                    <a href="#">Заголовок условного объявления. Заголовок условного объявления. Заголовок условного объявления.</a>
+                                </div>
+                                <ul class="ad-message-correspondents">
+                                    <li>
+                                        <div class="check-container">
+                                            <input type="checkbox" id="ad-3-ch-1" class="corresp-check">
+                                            <label for="ad-3-ch-1"></label>
+                                        </div><!-- /.check-container -->
+                                        <a href="javascript:void(0);">
+                                            <span class="correspondent-name">Трансойл</span>
+                                            <span class="correspondence-date">23.04.2018</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="check-container">
+                                            <input type="checkbox" id="ad-3-ch-2" class="corresp-check">
+                                            <label for="ad-3-ch-2"></label>
+                                        </div><!-- /.check-container -->
+                                        <a href="javascript:void(0);">
+                                            <span class="correspondent-name">Ж/д маркет</span>
+                                            <span class="correspondence-date">23.04.2018</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="check-container">
+                                            <input type="checkbox" id="ad-3-ch-3" class="corresp-check">
+                                            <label for="ad-3-ch-3"></label>
+                                        </div><!-- /.check-container -->
+                                        <a href="javascript:void(0);">
+                                            <span class="correspondent-name">Праймгрупп</span>
+                                            <span class="correspondence-date">23.04.2018</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="check-container">
+                                            <input type="checkbox" id="ad-3-ch-4" class="corresp-check">
+                                            <label for="ad-3-ch-4"></label>
+                                        </div><!-- /.check-container -->
+                                        <a href="javascript:void(0);">
+                                            <span class="correspondent-name">Условный контрагент</span>
+                                            <span class="correspondence-date">23.04.2018</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /message branch-->
+
+                        </div><!-- /.messages-list -->
+
+                        <div class="messages-content-box clearfix" id="messages-content-box">
+
+                            <div class="current-messages-container">
+                                <div class="corresp-date-delimiter">23 апреля</div>
+
+                                <!-- message-item -->
+                                <div class="message-item message-item-incoming">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="message-ch-1">
+                                        <label for="message-ch-1"></label>
+                                    </div><!-- /.check-container -->
+                                    <div class="message-content">
+                                        <div class="message-top clearfix">
+                                            <div class="message-author">
+                                                <span>Андрей</span>
+                                                <span>Менеджер</span>
+                                            </div>
+                                            <div class="message-datetime">
+                                                <span>23.04.2018</span>
+                                                <span>10:23</span>
+                                            </div>
+                                        </div><!-- /.message-top -->
+                                        <div class="message-text">
+                                            Добрый день! Хотим предложить поставки АИ-95 по цене 34500 р/тонна. Прайс - прилагаем.
+                                        </div>
+                                        <div class="message-attachments">
+                                            <div class="attachment-item">
+                                                <p class="attachment-name">Прайс-лист на продукцию.xls<span class="attachment-size">7 Mb</span></p>
+                                                <p class="attachments-links-container">
+                                                    <a href="#">Скачать</a>
+                                                    <a href="#">Открыть</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.message-content -->
+                                </div><!-- /.message-item -->
+
+                                <!-- message-item -->
+                                <div class="message-item message-item-outcoming">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="message-ch-2">
+                                        <label for="message-ch-2"></label>
+                                    </div><!-- /.check-container -->
+                                    <div class="message-content">
+                                        <div class="message-top clearfix">
+                                            <div class="message-author">
+                                                <span>Павлов И.А.</span>
+                                                <span>Директор</span>
+                                            </div>
+                                            <div class="message-datetime">
+                                                <span>24.04.2018</span>
+                                                <span>09:00</span>
+                                            </div>
+                                        </div><!-- /.message-top -->
+                                        <div class="message-text">
+                                            Добрый день! Вышлите пожалуйста паспорта качества. 
+                                        </div>
+                                        <div class="message-attachments"></div>
+                                    </div><!-- /.message-content -->
+                                </div><!-- /.message-item -->
+
+                                <!-- message-item -->
+                                <div class="message-item message-item-incoming">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="message-ch-3">
+                                        <label for="message-ch-3"></label>
+                                    </div><!-- /.check-container -->
+                                    <div class="message-content">
+                                        <div class="message-top clearfix">
+                                            <div class="message-author">
+                                                <span>Андрей</span>
+                                                <span>Менеджер</span>
+                                            </div>
+                                            <div class="message-datetime">
+                                                <span>24.04.2018</span>
+                                                <span>22:23</span>
+                                            </div>
+                                        </div><!-- /.message-top -->
+                                        <div class="message-text">
+                                            Добрый день! Хотим предложить поставки АИ-95 по цене 34500 р/тонна. Прайс - прилагаем.
+                                        </div>
+                                        <div class="message-attachments"></div>
+                                    </div><!-- /.message-content -->
+                                </div><!-- /.message-item -->
+
+                                <div class="corresp-date-delimiter">23 апреля</div>
+
+                                <!-- message-item -->
+                                <div class="message-item message-item-outcoming">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="message-ch-4">
+                                        <label for="message-ch-4"></label>
+                                    </div><!-- /.check-container -->
+                                    <div class="message-content">
+                                        <div class="message-top clearfix">
+                                            <div class="message-author">
+                                                <span>Павлов И.А.</span>
+                                                <span>Директор</span>
+                                            </div>
+                                            <div class="message-datetime">
+                                                <span>24.04.2018</span>
+                                                <span>09:00</span>
+                                            </div>
+                                        </div><!-- /.message-top -->
+                                        <div class="message-text">
+                                            Добрый день! Вышлите пожалуйста паспорта качества. 
+                                        </div>
+                                        <div class="message-attachments"></div>
+                                    </div><!-- /.message-content -->
+                                </div><!-- /.message-item -->
+
+                                <!-- message-item -->
+                                <div class="message-item message-item-incoming">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="message-ch-5">
+                                        <label for="message-ch-5"></label>
+                                    </div><!-- /.check-container -->
+                                    <div class="message-content">
+                                        <div class="message-top clearfix">
+                                            <div class="message-author">
+                                                <span>Андрей</span>
+                                                <span>Менеджер</span>
+                                            </div>
+                                            <div class="message-datetime">
+                                                <span>23.04.2018</span>
+                                                <span>10:23</span>
+                                            </div>
+                                        </div><!-- /.message-top -->
+                                        <div class="message-text">
+                                            Добрый день! Хотим предложить поставки АИ-95 по цене 34500 р/тонна. Прайс - прилагаем.
+                                        </div>
+                                        <div class="message-attachments">
+                                            <div class="attachment-item">
+                                                <p class="attachment-name">Прайс-лист на продукцию.xls<span class="attachment-size">7 Mb</span></p>
+                                                <p class="attachments-links-container">
+                                                    <a href="#">Скачать</a>
+                                                    <a href="#">Открыть</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.message-content -->
+                                </div><!-- /.message-item -->
+
+                                <!-- message-item -->
+                                <div class="message-item message-item-outcoming">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="message-ch-6">
+                                        <label for="message-ch-6"></label>
+                                    </div><!-- /.check-container -->
+                                    <div class="message-content">
+                                        <div class="message-top clearfix">
+                                            <div class="message-author">
+                                                <span>Павлов И.А.</span>
+                                                <span>Директор</span>
+                                            </div>
+                                            <div class="message-datetime">
+                                                <span>24.04.2018</span>
+                                                <span>09:00</span>
+                                            </div>
+                                        </div><!-- /.message-top -->
+                                        <div class="message-text">
+                                            Добрый день! Вышлите пожалуйста паспорта качества. 
+                                        </div>
+                                        <div class="message-attachments"></div>
+                                    </div><!-- /.message-content -->
+                                </div><!-- /.message-item -->
+
+
+                                <!-- message-item -->
+                                <div class="message-item message-item-incoming">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="message-ch-7">
+                                        <label for="message-ch-7"></label>
+                                    </div><!-- /.check-container -->
+                                    <div class="message-content">
+                                        <div class="message-top clearfix">
+                                            <div class="message-author">
+                                                <span>Андрей</span>
+                                                <span>Менеджер</span>
+                                            </div>
+                                            <div class="message-datetime">
+                                                <span>23.04.2018</span>
+                                                <span>10:23</span>
+                                            </div>
+                                        </div><!-- /.message-top -->
+                                        <div class="message-text">
+                                            Добрый день! Хотим предложить поставки АИ-95 по цене 34500 р/тонна. Прайс - прилагаем.
+                                        </div>
+                                        <div class="message-attachments">
+                                            <div class="attachment-item">
+                                                <p class="attachment-name">Прайс-лист на продукцию.xls<span class="attachment-size">7 Mb</span></p>
+                                                <p class="attachments-links-container">
+                                                    <a href="#">Скачать</a>
+                                                    <a href="#">Открыть</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.message-content -->
+                                </div><!-- /.message-item -->
+
+                                <!-- message-item -->
+                                <div class="message-item message-item-outcoming">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="message-ch-8">
+                                        <label for="message-ch-8"></label>
+                                    </div><!-- /.check-container -->
+                                    <div class="message-content">
+                                        <div class="message-top clearfix">
+                                            <div class="message-author">
+                                                <span>Павлов И.А.</span>
+                                                <span>Директор</span>
+                                            </div>
+                                            <div class="message-datetime">
+                                                <span>24.04.2018</span>
+                                                <span>09:00</span>
+                                            </div>
+                                        </div><!-- /.message-top -->
+                                        <div class="message-text">
+                                            Добрый день! Вышлите пожалуйста паспорта качества. 
+                                        </div>
+                                        <div class="message-attachments"></div>
+                                    </div><!-- /.message-content -->
+                                </div><!-- /.message-item -->
+
+
+
+                                <!-- message-item -->
+                                <div class="message-item message-item-incoming">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="message-ch-9">
+                                        <label for="message-ch-9"></label>
+                                    </div><!-- /.check-container -->
+                                    <div class="message-content">
+                                        <div class="message-top clearfix">
+                                            <div class="message-author">
+                                                <span>Андрей</span>
+                                                <span>Менеджер</span>
+                                            </div>
+                                            <div class="message-datetime">
+                                                <span>23.04.2018</span>
+                                                <span>10:23</span>
+                                            </div>
+                                        </div><!-- /.message-top -->
+                                        <div class="message-text">
+                                            Добрый день! Хотим предложить поставки АИ-95 по цене 34500 р/тонна. Прайс - прилагаем.
+                                        </div>
+                                        <div class="message-attachments">
+                                            <div class="attachment-item">
+                                                <p class="attachment-name">Прайс-лист на продукцию.xls<span class="attachment-size">7 Mb</span></p>
+                                                <p class="attachments-links-container">
+                                                    <a href="#">Скачать</a>
+                                                    <a href="#">Открыть</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.message-content -->
+                                </div><!-- /.message-item -->
+
+                                <!-- message-item -->
+                                <div class="message-item message-item-outcoming">
+                                    <div class="check-container">
+                                        <input type="checkbox" id="message-ch-10">
+                                        <label for="message-ch-10"></label>
+                                    </div><!-- /.check-container -->
+                                    <div class="message-content">
+                                        <div class="message-top clearfix">
+                                            <div class="message-author">
+                                                <span>Павлов И.А.</span>
+                                                <span>Директор</span>
+                                            </div>
+                                            <div class="message-datetime">
+                                                <span>24.04.2018</span>
+                                                <span>09:00</span>
+                                            </div>
+                                        </div><!-- /.message-top -->
+                                        <div class="message-text">
+                                            Добрый день! Вышлите пожалуйста паспорта качества. 
+                                        </div>
+                                        <div class="message-attachments"></div>
+                                    </div><!-- /.message-content -->
+                                </div><!-- /.message-item -->
+
+
+                            </div><!-- /.current-messages-container -->
+
+                            <form action="" name="new-message-form" class="new-massage-form clearfix">
+                                <textarea name="new-message" placeholder="Напишите ваше сообщение"></textarea>
+                                <div class="upload-icon">
+                                    <label class="upload-label">
+                                        <input type="file" name="file">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <input type="submit" value="Отправить" class="new-message-submit">
+                            </form>
+                        </div><!-- /.messages-content-box -->
+                    </div><!-- /.messages-list-container -->
+
+                    <div class="correspondent-info-container">
+                        <div class="corr-info-top">
+                            <div class="corr-name">ООО "Нефтепродукттрейд"</div>
+                            <div class="corr-person clearfix">
+                                <span>Андрей</span>
+                                <span>Менеджер</span>
+                            </div><!-- /.correspondent-person -->
+                        </div><!-- /.corr-info-top -->
+                        <div class="corr-contacts">
+                            <div class="corr-contacts-row clearfix">
+                                <div class="corr-city">Москва</div>
+                                <div class="corr-links">
+                                    <div class="mails">
+                                        <a href="mailto:qweqwe@mail.ru">qweqwe@mail.ru</a>
+                                    </div>
+                                    <div class="phones">
+                                        <a href="tel:+84956574567">8 495 657 4567</a>
+                                        <a href="tel:+89174536543">8 917 453 6543</a>
+                                    </div>
+                                </div>
+                            </div><!-- /.corr-contacts-row -->
+                            <div class="corr-contacts-row clearfix">
+                                <div class="corr-city">Воронеж</div>
+                                <div class="corr-links">
+                                    <div class="mails">
+                                        <a href="mailto:re@mail.ru">re@mail.ru</a>
+                                        <a href="mailto:asdas@mail.ru">asdas@yandex.ru</a>
+                                    </div>
+                                    <div class="phones">
+                                        <a href="tel:+83423424343">8 342 342 4343</a>
+                                    </div>
+                                </div>
+                            </div><!-- /.corr-contacts-row -->
+                        </div><!-- /.corr-contacts -->
+                        <div class="corr-action clearfix">
+                            <a href="#" class="download-price">скачать прайс</a>
+                            <div class="add-contact">
+                                <span>добавить в контакты</span>
+                                <div class="check-container">
+                                    <input type="checkbox" id="add-contact">
+                                    <label for="add-contact"></label>
+                                </div><!-- /.check-container -->
+                            </div>
+                        </div><!-- /.corr-action -->
+                    </div><!-- /.correspondent-info-container -->
+
+                </div><!-- /.messages-holder -->
+                
+            </div><!-- /.right-content -->
+        </div><!-- /.container a60-container clearfix -->
+    </main>
+
+        
+    <!-- =========================== footer =========================== -->
+    <footer>
+        <div class="container a60-container clearfix">
+            <ul class="left-col">
+                <li><a href="#">Как работать на портале (справка)</a></li>
+                <li><a href="#">Торговые инструменты</a></li>
+                <li><a href="#">Рекламные площади</a></li>
+                <li><a href="#">Партнерская программа</a></li>
+            </ul>
+            <div class="right-col">
+                <span>Обратная связь</span>
+                <div class="feedback-wrap">
+                  <div class="feedback-toggle"></div>
+                  <form action="">
+                    <textarea></textarea>
+                      <input type="email" class="mail" placeholder="E-mail" required="">
+                      <button type="submit">Отправить</button>
+                  </form>
+                </div>
+                <div class="contacts-footer">
+                    <a href="tel:88007777777">8-800-777-77-77</a>
+                    <a href="mailto:corporation@mail.ru">corporation@mail.ru</a>
+                </div>
+            </div>
+            <div class="center-col">
+                <ul>
+                    <li><a href="#">Правила публикации товаров</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+                <p>© 2017 <a href="index.html">NEFTEMOLL.RU.</a> Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="filter-overlay" class="overlay hidden"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <script src="js/datepicker-ru.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(function (argument) {
+            var mainHeigth = $('.a60-main').height();
+            $('.left-sidebar').height(mainHeigth - 109);
+
+            var messagesListHeight = $('#messages-list').outerHeight();
+            var messagesContentHeight= $('#messages-content-box').outerHeight();
+            if(messagesListHeight >= messagesContentHeight) {
+                $('#messages-list-container').height(messagesListHeight);
+            } else {
+                $('#messages-list-container').height(messagesContentHeight);
+                $('#messages-list').height(messagesContentHeight -2);
+            }
+
+            /*checkboxes status set: checked, unchecked, indeterminate*/
+            $('#check-all-messages').click(function(){
+               $('.corresp-check').prop('indeterminate', false);
+               if($(this).prop('checked')) {
+                 $('.corresp-check').prop('checked', true);
+                 $('.corresp-group-check').prop('checked', true);
+                 $('.current-messages-container').find('input[type="checkbox"]').prop('checked', true);
+               } else {
+                 $('.corresp-check').prop('checked', false);
+                 $('.corresp-group-check').prop('checked', false);
+                 $('.current-messages-container').find('input[type="checkbox"]').prop('checked', false);
+               }
+            });
+
+            var checkboxesStatus = function(){
+               var corrNumTotal = $('.corresp-check').length;
+               var corrNumChecked = $('.corresp-check:checked').length;
+               $('#check-all-messages').prop('indeterminate', false);
+               $('.corresp-group-check').prop('indeterminate', false);
+               if (corrNumTotal == corrNumChecked) {
+                 $('#check-all-messages').prop('checked', true);
+               } else if (corrNumChecked == 0) {
+                 $('#check-all-messages').prop('checked', false);
+               } else {
+                 $('#check-all-messages').prop('indeterminate', true);
+               };
+               if($('.corresp-check:indeterminate').length > 0) {
+                 $('#check-all-messages').prop('indeterminate', true);
+               };
+               var corrNumTotalInParent = $(this).parents('.ad-item-messages').find($('.corresp-check')).length;
+               var corrNumCheckedInParent = $(this).parents('.ad-item-messages').find($('.corresp-check:checked')).length;
+               var parentCheckbox = $(this).parents('.ad-item-messages').find('.corresp-group-check');
+
+               parentCheckbox.prop('indeterminate', false);
+               if (corrNumTotalInParent == corrNumCheckedInParent) {
+                 parentCheckbox.prop('checked', true);
+               } else if (corrNumCheckedInParent == 0) {
+                 parentCheckbox.prop('checked', false);
+               } else {
+                 parentCheckbox.prop('indeterminate', true);
+               };
+            };
+
+            var nn = function(){
+                
+            };
+
+            $('.corresp-group-check').click(function(){
+               if($(this).prop('checked')) {
+                $(this).parents('.ad-item-messages').find('.corresp-check').prop('checked', true);
+               } else {
+                 $(this).parents('.ad-item-messages').find('.corresp-check').prop('checked', false);
+               }
+            });
+            $('#check-all-messages').change(checkboxesStatus);
+            $('.corresp-check').change(checkboxesStatus);
+            $('.corresp-group-check').change(checkboxesStatus);
+
+            var groupCheckboxStatus = function(){
+                var numTotalInCurrentMessages = $('.current-messages-container').find('input[type="checkbox"]').length;
+                var numCheckedInCurrentMessages = $('.current-messages-container').find('input[type="checkbox"]:checked').length;
+                $('#check-all-messages').prop('indeterminate', false);
+                $('.ad-message-correspondents li.active').find('input[type="checkbox"]').prop('indeterminate', false);
+                $('.ad-message-correspondents li.active').parents('.ad-item-messages').find('.ad-message-title').find('input[type="checkbox"]').prop('indeterminate', false);
+                if (numTotalInCurrentMessages == numCheckedInCurrentMessages) {
+                  $('.ad-message-correspondents li.active').find('input[type="checkbox"]').prop('checked', true);
+                } else if (numCheckedInCurrentMessages == 0) {
+                  $('.ad-message-correspondents li.active').find('input[type="checkbox"]').prop('checked', false);
+                } else {
+                  $('.ad-message-correspondents li.active').find('input[type="checkbox"]').prop('indeterminate', true);
+                };
+                if($('.ad-message-correspondents').find('input[type="checkbox"]:indeterminate').length > 0) {
+                  $('.ad-message-correspondents li.active').parents('.ad-item-messages').find('.ad-message-title').find('input[type="checkbox"]').prop('indeterminate', true);
+                  $('#check-all-messages').prop('indeterminate', true);
+                };
+                
+            };
+            $('.current-messages-container').find('input[type="checkbox"]').change(checkboxesStatus).change(groupCheckboxStatus);
+
+            var checkMessagesItems = function(){
+                $('.ad-message-correspondents li.active').find('input[type="checkbox"]').change(function(){
+                    if($(this).prop('checked')) {
+                        $('.current-messages-container input[type="checkbox"]').prop('checked', true);
+                    } else {
+                        $('.current-messages-container input[type="checkbox"]').prop('checked', false);
+                    }
+                });
+            };
+            checkMessagesItems();
+
+            $('.ad-message-correspondents li span').click(function(){
+                $('.ad-message-correspondents li').removeClass('active');
+                $('.ad-message-correspondents li').find('input[type="checkbox"]').unbind('change');
+                $(this).parents('.ad-message-correspondents li').addClass('active');
+                checkMessagesItems();
+            });
+
+        });
+    </script>
+  </body>
+</html>
