@@ -8905,7 +8905,7 @@ select.select-invisible {
 
 input[type="checkbox"]:checked ~ label:before {
   background: #ff7519;
-  box-shadow: inset 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 4px #fff;
 }
 
 .advert-item .check-container {
@@ -8933,8 +8933,8 @@ input[type="checkbox"]:checked ~ label:before {
 
 input[type="checkbox"]:indeterminate + label:before {
   background: #aaa;
-  -webkit-box-shadow: inset 0 0 0 3px #fff;
-  box-shadow: inset 0 0 0 3px #fff;
+  -webkit-box-shadow: inset 0 0 0 4px #fff;
+  box-shadow: inset 0 0 0 4px #fff;
 }
 
 .advert-item-left,
@@ -9358,7 +9358,7 @@ input[type="checkbox"]:indeterminate + label:before {
 
 .messages-holder .list-control-panel {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .messages-holder .control-filter {
@@ -9393,7 +9393,7 @@ input[type="checkbox"]:indeterminate + label:before {
 .messages-content-box {
   display: inline-block;
   position: relative;
-  padding: 7px 37px 130px 43px;
+  padding: 7px 37px 150px 43px;
   border: 1px solid #ebebeb;
   float: right;
   width: 494px;
@@ -9624,7 +9624,7 @@ input[type="checkbox"]:indeterminate + label:before {
 
 .new-massage-form {
   position: absolute;
-  bottom: 17px;
+  bottom: 25px;
   width: 420px;
 }
 
@@ -9638,7 +9638,7 @@ input[type="checkbox"]:indeterminate + label:before {
   resize: none;
   outline: none;
   padding: 5px 10px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   border: 1px solid #ff7519;
   border-radius: 2px;
   overflow: hidden;
@@ -10006,6 +10006,56 @@ a.open-ad:before {
 .client-btn:hover ~ .client-dropdown,
 .client-btn:active ~ .client-dropdown {
   display: block;
+}
+
+.a647-messages-types-list {
+  position: relative;
+  width: 925px;
+}
+
+.a647-messages-types-list:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 2px solid #666666;
+  border-left: 0;
+  width: 130px;
+  height: 100%;
+}
+
+.dialog-title {
+  display: block;
+  position: relative;
+  padding: 5px 15px 5px 34px;
+  margin-bottom: 5px;
+  height: 45px;
+  line-height: 33px;
+  font-size: 12px;
+  letter-spacing: .6px;
+  color: #474747;
+  border: 1px solid #e8e8e8;
+  transition: all .4s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dialog-title:hover, .dialog-title.active {
+  color: #ff7519;
+  border-color: #ff7519;
+}
+
+.dialog-title span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 20px;
+  transform: translateY(-50%);
+  font-size: 10.5px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
