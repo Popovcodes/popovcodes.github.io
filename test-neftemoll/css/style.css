@@ -8409,6 +8409,14 @@ footer .right-col .contacts-footer a:last-of-type:before {
   display: none;
 }
 
+label {
+  cursor: pointer;
+}
+
+.left-sidebar .active-item {
+  color: #0ff;
+}
+
 .ads-types-list {
   font-size: 0px;
   margin-bottom: 45px;
@@ -8674,7 +8682,7 @@ footer .right-col .contacts-footer a:last-of-type:before {
 }
 
 .control-dropdown span {
-  font-size: 9px;
+  font-size: 11px;
   margin-right: 5px;
   color: #666;
 }
@@ -8733,7 +8741,7 @@ span.datetime-wrap {
 .dropdown-actions .button {
   display: inline-block;
   font-family: inherit;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: .6px;
   color: #474747;
   padding: 3px 10px;
@@ -8760,7 +8768,7 @@ span.datetime-wrap {
 
 .action-choose label {
   position: relative;
-  font-size: 10px;
+  font-size: 11px;
   color: #666;
   cursor: pointer;
 }
@@ -8782,7 +8790,8 @@ span.datetime-wrap {
   display: inline-block;
   background: #fff;
   border: 1px solid #c4c4c4;
-  margin-right: 10px;
+  margin-right: 7px;
+  margin-bottom: 1px;
   width: 14px;
   height: 14px;
   vertical-align: middle;
@@ -8791,8 +8800,8 @@ span.datetime-wrap {
 
 .action-choose input[type="checkbox"]:checked + label:before {
   background: #ff7519;
-  -webkit-box-shadow: inset 0 0 0 4px #fff;
-  box-shadow: inset 0 0 0 4px #fff;
+  -webkit-box-shadow: inset 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 3px #fff;
 }
 
 select.select-invisible {
@@ -8805,7 +8814,6 @@ select.select-invisible {
 
 .control-block .jq-selectbox__select {
   height: 28px;
-  top: -2px;
   padding: 0;
   border: none;
 }
@@ -8829,7 +8837,7 @@ select.select-invisible {
 .control-block .jq-selectbox__trigger {
   display: inline-block;
   position: absolute;
-  right: 10px;
+  right: 4px;
   top: 56%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -8839,7 +8847,7 @@ select.select-invisible {
   background: url(../img/drop1.png) no-repeat;
 }
 
-.control-block .jq-selectbox__dropdown {
+.sort-select .jq-selectbox__dropdown {
   top: 25px;
   right: 0;
   left: auto !important;
@@ -8905,7 +8913,8 @@ select.select-invisible {
 
 input[type="checkbox"]:checked ~ label:before {
   background: #ff7519;
-  box-shadow: inset 0 0 0 4px #fff;
+  -webkit-box-shadow: inset 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 3px #fff;
 }
 
 .advert-item .check-container {
@@ -8933,8 +8942,8 @@ input[type="checkbox"]:checked ~ label:before {
 
 input[type="checkbox"]:indeterminate + label:before {
   background: #aaa;
-  -webkit-box-shadow: inset 0 0 0 4px #fff;
-  box-shadow: inset 0 0 0 4px #fff;
+  -webkit-box-shadow: inset 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 3px #fff;
 }
 
 .advert-item-left,
@@ -9316,9 +9325,11 @@ input[type="checkbox"]:indeterminate + label:before {
 .messages-types-list {
   font-size: 0px;
   margin-bottom: 32px;
+  width: 100%;
 }
 
 .messages-types-list li {
+  width: 20%;
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
@@ -9326,12 +9337,14 @@ input[type="checkbox"]:indeterminate + label:before {
 
 .messages-types-list a {
   display: block;
-  padding: 10px 20px;
+  text-align: center;
+  padding: 10px;
+  white-space: nowrap;
   border: 2px solid #666666;
+  margin-right: -2px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
-  margin-right: -2px;
   letter-spacing: 1px;
 }
 
@@ -9354,6 +9367,7 @@ input[type="checkbox"]:indeterminate + label:before {
 
 .messages-holder .control-dropdown {
   width: 318px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 .messages-holder .list-control-panel {
@@ -9428,7 +9442,7 @@ input[type="checkbox"]:indeterminate + label:before {
 .ad-message-title span,
 .ad-message-title a {
   display: block;
-  font-size: 9.7px;
+  font-size: 12px;
   letter-spacing: 0.4px;
   word-spacing: 2px;
   color: inherit;
@@ -9474,6 +9488,7 @@ input[type="checkbox"]:indeterminate + label:before {
 
 .correspondent-name {
   display: inline-block;
+  font-size: 11px;
   width: 160px;
   letter-spacing: 0.5px;
 }
@@ -9487,14 +9502,14 @@ input[type="checkbox"]:indeterminate + label:before {
 .corresp-date-delimiter {
   position: relative;
   left: 13px;
-  width: 100px;
+  width: 120px;
   height: 20px;
   line-height: 18px;
   text-align: center;
   font-weight: 600;
   letter-spacing: 0.2px;
   margin: 0 auto 17px;
-  font-size: 10px;
+  font-size: 12px;
   color: #848484;
   border: 1px solid #cbcbcb;
   border-radius: 10px/16px;
@@ -9502,7 +9517,7 @@ input[type="checkbox"]:indeterminate + label:before {
 
 .message-item {
   position: relative;
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 29px;
 }
 
@@ -9550,7 +9565,7 @@ input[type="checkbox"]:indeterminate + label:before {
 .message-datetime {
   display: inline-block;
   float: right;
-  font-size: 9.8px;
+  font-size: 12px;
   letter-spacing: .6px;
   padding-right: 5px;
   color: #666;
@@ -9576,7 +9591,7 @@ input[type="checkbox"]:indeterminate + label:before {
   color: #666666;
   margin-bottom: 9px;
   letter-spacing: 0.6px;
-  font-size: 9.7px;
+  font-size: 12px;
   line-height: 1.4;
 }
 
@@ -9647,25 +9662,25 @@ input[type="checkbox"]:indeterminate + label:before {
 .new-massage-form ::-webkit-input-placeholder {
   color: #bbbaba;
   letter-spacing: .8px;
-  font: 9.5px Arial, helvetica, sans-serif;
+  font: 12px Arial, Helvetica, sans-serif;
 }
 
 .new-massage-form ::-moz-placeholder {
   color: #bbbaba;
   letter-spacing: .8px;
-  font: 9.5px Arial, helvetica, sans-serif;
+  font: 12px Arial, Helvetica, sans-serif;
 }
 
 .new-massage-form :-ms-input-placeholder {
   color: #bbbaba;
   letter-spacing: .8px;
-  font: 9.5px Arial, helvetica, sans-serif;
+  font: 12px Arial, Helvetica, sans-serif;
 }
 
 .new-massage-form ::placeholder {
   color: #bbbaba;
   letter-spacing: .8px;
-  font: 9.5px Arial, helvetica, sans-serif;
+  font: 12px Arial, Helvetica, sans-serif;
 }
 
 .upload-icon {
@@ -9702,7 +9717,7 @@ input[type="checkbox"]:indeterminate + label:before {
 }
 
 .correspondent-info-container {
-  width: 333px;
+  width: 325px;
   padding: 10px 12px 7px 12px;
   position: absolute;
   top: 0;
@@ -9772,6 +9787,7 @@ input[type="checkbox"]:indeterminate + label:before {
 .corr-contacts {
   font-weight: 600;
   margin-bottom: 18px;
+  min-height: 75px;
 }
 
 .corr-contacts-row {
@@ -9855,6 +9871,7 @@ a.download-price:hover {
   font-size: 11px;
   color: #294292;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .add-contact .check-container {
@@ -9901,6 +9918,99 @@ a.download-price:hover {
   color: #ff7519;
 }
 
+.control-dropdown .select-title {
+  display: block;
+  letter-spacing: .8px;
+  font-size: 11px;
+  margin-bottom: 14px;
+  color: #000;
+}
+
+.messages-select-container .jq-selectbox__select {
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  height: 20px;
+}
+
+.messages-select-container .jq-selectbox__select-text {
+  font-size: 11px !important;
+  font-weight: 400;
+  height: 20px;
+  line-height: 19px;
+}
+
+.messages-select-container .jq-selectbox li {
+  font-style: normal;
+}
+
+.messages-sort-select-container .jq-selectbox__select {
+  border-radius: 0;
+}
+
+.folder-select-container {
+  margin-bottom: 9px;
+}
+
+.folder-select-container .jq-selectbox__select {
+  width: 170px;
+}
+
+.folder-select-container .control-block .jq-selectbox__dropdown {
+  left: 0;
+}
+
+.messages-filters-form,
+.messages-actions-form {
+  line-height: 1.5;
+}
+
+.messages-filters-form .select-title {
+  line-height: 1.2;
+  margin-bottom: 9px;
+}
+
+.messages-filters-form .status-select-title {
+  margin-bottom: 3px;
+}
+
+.messages-filters-form .period-set {
+  margin-bottom: 17px;
+}
+
+.messages-filters-form .dropdown-actions {
+  margin-top: 9px;
+}
+
+.chapter-select-container {
+  margin-bottom: 9px;
+}
+
+.chapter-select-half,
+.adressees-select-half {
+  display: inline-block;
+  width: 45%;
+}
+
+.chapter-select-half {
+  float: left;
+}
+
+.adressees-select-half {
+  float: right;
+}
+
+.sort-select-title {
+  margin-top: 14px;
+}
+
+.messages-actions {
+  margin-top: 24px;
+}
+
+.unread-check-label {
+  font-size: 9px;
+}
+
 .offer-item-messages {
   background: #ebebeb;
   margin-bottom: 5px;
@@ -9909,6 +10019,29 @@ a.download-price:hover {
 
 .offer-item-messages.active, .offer-item-messages:hover {
   background: #edf6fb;
+}
+
+.unread .check-container:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background: #ff7519;
+}
+
+.ad-item-messages .unread .check-container:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  background: #ff7519;
+  transform: translateX(-50%);
 }
 
 .offer-title {
@@ -9930,6 +10063,7 @@ a.download-price:hover {
 
 .title-text {
   display: inline-block;
+  font-size: 12px;
   letter-spacing: .5px;
   width: 265px;
   line-height: 1.2;
@@ -9940,30 +10074,10 @@ a.download-price:hover {
 .offer-bottom-links {
   position: relative;
   display: block;
+  font-size: 11px;
   line-height: 1;
   font-weight: 400;
   letter-spacing: 0.4px;
-}
-
-.client-btn {
-  display: inline-block;
-  position: relative;
-  color: #7c7c7c;
-  padding-right: 23px;
-  cursor: pointer;
-}
-
-.client-btn:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: 7px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 6px;
-  background-image: url(../img/arrow-transparent.png);
-  background-repeat: no-repeat;
 }
 
 a.open-ad {
@@ -9971,22 +10085,10 @@ a.open-ad {
   position: relative;
   font-style: italic;
   color: #7c7c7c;
-  padding-left: 9px;
 }
 
 a.open-ad:hover {
   text-decoration: underline;
-}
-
-a.open-ad:before {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 10px;
-  background: #7c7c7c;
-  position: absolute;
-  left: 0;
-  top: -1px;
 }
 
 .client-dropdown {
@@ -10008,31 +10110,14 @@ a.open-ad:before {
   display: block;
 }
 
-.a647-messages-types-list {
-  position: relative;
-  width: 925px;
-}
-
-.a647-messages-types-list:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: 2px solid #666666;
-  border-left: 0;
-  width: 130px;
-  height: 100%;
-}
-
 .dialog-title {
   display: block;
   position: relative;
-  padding: 5px 15px 5px 34px;
+  padding: 5px 15px 5px 24px;
   margin-bottom: 5px;
   height: 45px;
   line-height: 33px;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: .6px;
   color: #474747;
   border: 1px solid #e8e8e8;

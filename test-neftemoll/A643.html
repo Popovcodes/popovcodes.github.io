@@ -91,7 +91,7 @@
                     <li><a href="javascript:void(0);">предложение  услуг</a></li>
                     <li><a href="javascript:void(0);">заказ услуг</a></li>
                 </ul>
-                <a href="javascript:void(0);" class="accordeon-title active">Сообщения <span class="number">12</span></a>
+                <a href="javascript:void(0);" class="accordeon-title active active-item">Сообщения <span class="number">12</span></a>
                 <ul class="accordeon-content active">
                     <li><a href="javascript:void(0);">Предложения <span class="number">5</span></a></li>
                     <li><a href="javascript:void(0);">Заявки <span class="number">5</span></a></li>
@@ -100,7 +100,7 @@
                     <li><a href="javascript:void(0);">Прайс-листы</a></li>
                     <li><a href="javascript:void(0);">Спам</a></li>
                 </ul>
-                <a href="javascript:void(0);" class="nav-item active-item">Контакты</a>
+                <a href="javascript:void(0);" class="nav-item">Контакты</a>
                 <a href="javascript:void(0);" class="accordeon-title active">Торговые сервисы</a>
                 <ul class="accordeon-content active">
                     <li><a href="javascript:void(0);">Статус компании</a></li>
@@ -142,22 +142,63 @@
                                 <span class="control-num">2</span>
                             </div>
                             <div class="control-dropdown">
-                                <form action="" name="ads-filter" method="post">
-                                    <div class="period-set">
-                                        <h5>Период</h5>
-                                        <span>с</span>
-                                        <span class="datetime-wrap">
-                                            <input type="text" class="datetime" id="date-from">
-                                        </span>
-                                        <span>по</span>
-                                        <span class="datetime-wrap">
-                                            <input type="text" class="datetime" id="date-to">
-                                        </span>
-                                    </div>
-                                    <div class="dropdown-actions">
-                                        <button type="reset" id="filter-reset" class="button dropdown-button">Очистить фильтры</button>
-                                        <button type="submit" id="filter-submit" class="button dropdown-button">Показать</button>
-                                    </div><!-- /.dropdown-actions -->
+                                <form action="" name="messages-filters-form" method="post" class="messages-filters-form">
+                                    <div class="action-choose">
+                                        <div class="selects-container clearfix">
+                                            <div class="chapter-select-half">
+                                                <span class="select-title">Раздел объявлений</span>
+                                                <div class="chapter-select-container messages-select-container">
+                                                    <select name="chapter-select" id="chapter-select" class="chapter-select" data-placeholder="  ">
+                                                        <option value=""></option>
+                                                        <option value="value">list item</option>
+                                                        <option value="value">list item list item</option>
+                                                        <option value="value">list item</option>
+                                                        <option value="value">list item list item</option>
+                                                        <option value="value">list item</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="adressees-select-half">
+                                                <span class="select-title">Адресаты</span>
+                                                <div class="adressees-select-container messages-select-container">
+                                                    <select name="adressees-select" id="adressees-select" class="adressees-select" data-placeholder="  ">
+                                                        <option value=""></option>
+                                                        <option value="value">list item</option>
+                                                        <option value="value">list item list item</option>
+                                                        <option value="value">list item</option>
+                                                        <option value="value">list item list item</option>
+                                                        <option value="value">list item</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="period-set">
+                                            <span class="select-title">Период</span>
+                                            <span>с</span>
+                                            <span class="datetime-wrap">
+                                                <input type="text" class="datetime" id="date-from">
+                                            </span>
+                                            <span>по</span>
+                                            <span class="datetime-wrap">
+                                                <input type="text" class="datetime" id="date-to">
+                                            </span>
+                                        </div>
+                                        <span class="select-title status-select-title">Статус сообщения</span>
+                                        <input type="checkbox" id="unread-check">
+                                        <label for="unread-check" class="unread-check-label">непрочитанные</label>
+                                        <span class="select-title sort-select-title">Сортировка</span>
+                                        <div class="messages-sort-select-container messages-select-container">
+                                            <select name="messages-sort-select" id="messages-sort-select" class="messages-sort-select" data-placeholder="  ">
+                                                <option value=""></option>
+                                                <option value="new">Новые</option>
+                                                <option value="old">Старые</option>
+                                            </select>
+                                        </div>
+                                        <div class="dropdown-actions">
+                                            <button type="reset" id="filter-reset" class="button dropdown-button">Очистить фильтры</button>
+                                            <button type="submit" id="filter-submit" class="button dropdown-button">Показать</button>
+                                        </div><!-- /.dropdown-actions -->
+                                    </div><!-- /.action-choose -->
                                 </form>
                             </div><!-- /.control-dropdown -->
                         </div><!-- /.control-filter -->
@@ -167,15 +208,25 @@
                                 <span class="control-title">Действия</span>
                             </div>
                             <div class="control-dropdown">
-                                <form action="" name="ads-actions">
+                                <form action="" name="messages-actions" class="messages-actions-form">
                                     <div class="action-choose">
-                                        <input type="checkbox" id="deactivate-check">
-                                        <label for="deactivate-check">деактивировать</label>
+                                        <span class="select-title">Переместить сообщение в папку</span>
+                                        <div class="folder-select-container messages-select-container">
+                                            <select name="folder-select" id="folder-select" class="folder-select" data-placeholder="  ">
+                                                <option value=""></option>
+                                                <option value="offers">Предложения</option>
+                                                <option value="requests">Заявки</option>
+                                                <option value="outgoing">Исходящие</option>
+                                                <option value="fromAdmin">От администрации</option>
+                                                <option value="priceLists">Прайс-листы</option>
+                                                <option value="spam">Спам</option>
+                                            </select>
+                                        </div>
                                         <input type="checkbox" id="delete-check">
                                         <label for="delete-check">удалить</label>
                                     </div><!-- /.action-choose -->
 
-                                    <div class="dropdown-actions">
+                                    <div class="dropdown-actions messages-actions">
                                         <button type="reset" id="actions-reset" class="button dropdown-button">Отменить</button>
                                         <button type="submit" id="actions-submit" class="button dropdown-button">Выполнить</button>
                                     </div><!-- /.dropdown-actions -->
@@ -203,15 +254,13 @@
                                     <div class="offer-title-content">
                                         <span class="title-text">Бензин АИ-95, покупаем ГОСТ</span>
                                         <span class="offer-bottom-links">
-                                            <span class="client-btn">Заказчик</span>
-                                            <span class="client-dropdown">Наименование заказчика</span>
                                             <a href="javascript:void(0);" class="open-ad">открыть объявление</a>
                                         </span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="offer-item-messages">
+                            <div class="offer-item-messages unread">
                                 <div class="offer-title">
                                     <div class="check-container">
                                         <input type="checkbox" id="offer-item-ch-2" class="offer-check">
@@ -220,15 +269,13 @@
                                     <div class="offer-title-content">
                                         <span class="title-text">Нужна база по хранению светлых нефтепродуктов</span>
                                         <span class="offer-bottom-links">
-                                            <span class="client-btn">Заказчик</span>
-                                            <span class="client-dropdown">Наименование заказчика</span>
                                             <a href="javascript:void(0);" class="open-ad">открыть объявление</a>
                                         </span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="offer-item-messages">
+                            <div class="offer-item-messages unread">
                                 <div class="offer-title">
                                     <div class="check-container">
                                         <input type="checkbox" id="offer-item-ch-3" class="offer-check">
@@ -237,14 +284,11 @@
                                     <div class="offer-title-content">
                                         <span class="title-text">Покупаем дизельное топливо сорт Е</span>
                                         <span class="offer-bottom-links">
-                                            <span class="client-btn">Заказчик</span>
-                                            <span class="client-dropdown">Наименование заказчика</span>
                                             <a href="javascript:void(0);" class="open-ad">открыть объявление</a>
                                         </span>
                                     </div>
                                 </div>
                             </div>
-
 
                         </div><!-- /.messages-list -->
 
@@ -341,27 +385,15 @@
                                     </div>
                                     <div class="phones">
                                         <a href="tel:+84956574567">8 495 657 4567</a>
-                                        <a href="tel:+89174536543">8 917 453 6543</a>
                                     </div>
                                 </div>
                             </div><!-- /.corr-contacts-row -->
-                            <div class="corr-contacts-row clearfix">
-                                <div class="corr-city">Воронеж</div>
-                                <div class="corr-links">
-                                    <div class="mails">
-                                        <a href="mailto:re@mail.ru">re@mail.ru</a>
-                                        <a href="mailto:asdas@mail.ru">asdas@yandex.ru</a>
-                                    </div>
-                                    <div class="phones">
-                                        <a href="tel:+83423424343">8 342 342 4343</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.corr-contacts-row -->
+                            
                         </div><!-- /.corr-contacts -->
                         <div class="corr-action clearfix">
-                            <a href="javascript:void(0);" class="download-price">скачать прайс</a>
+                            <a href="#" class="download-price">скачать прайс</a>
                             <div class="add-contact">
-                                <span>добавить в контакты</span>
+                                <label for="add-contact">добавить в контакты</label>
                                 <div class="check-container">
                                     <input type="checkbox" id="add-contact">
                                     <label for="add-contact"></label>
@@ -493,7 +525,7 @@
             $('.offer-item-messages').find('.offer-title-content').click(function(){
               $('.offer-item-messages').removeClass('active');
               $('.offer-item-messages').find('input[type="checkbox"]').unbind('change');
-              $(this).parents('.offer-item-messages').addClass('active');
+              $(this).parents('.offer-item-messages').addClass('active').removeClass('unread');
               itemsCheckboxStatus();
             });
         });
