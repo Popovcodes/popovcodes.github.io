@@ -8097,6 +8097,7 @@ input[type="checkbox"]:indeterminate + label:before {
   border: 1px solid #ebebeb;
 }
 .current-messages-container {
+  min-height: 510px;
   margin-bottom: 50px;
 }
 .ad-item-messages {
@@ -8734,4 +8735,3 @@ a.open-ad:hover {
   font-size: 10.5px;
   text-align: center;
 }
-/*# sourceMappingURL=style.css.map */
