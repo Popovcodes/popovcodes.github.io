@@ -226,7 +226,7 @@ $(document).ready(function() {
    /*calendar*/
    $('.datetime').datetimepicker({
     timepicker:false,
-    mask:'99.99.9999',format:'d.m.Y',
+    mask:'',format:'d.m.Y',
     dayOfWeekStart: 1
    });
    $.datetimepicker.setLocale('ru');
@@ -257,15 +257,16 @@ $(document).ready(function() {
    });
 
    $('#filter-reset, #actions-reset').click(function(){
-      // event.preventDefault();
       $(this).parents('.control-dropdown').find('input:checkbox').prop('checked', false);
+      $('select').attr('selectedIndex',0).trigger('refresh');
    });
    $('.dropdown-button').click(function(){
       $(this).parents('.control-dropdown').slideUp(0);
       $('.overlay').addClass('hidden');
+      $('.control-filter, .control-actions').removeClass('active');
    });
 
-   /*check all ads*/
+   /*check all ads on A631 and A632*/
    $('#check-all').click(function(){
       if($(this).prop('checked')) {
         $('.check-ad-item').prop('checked', true);
@@ -287,7 +288,7 @@ $(document).ready(function() {
    };
    $('.check-ad-item').change(checkedStatus);
 
-   /*prevent select heading replacing with text of selected item*/
+   /*prevent select heading replacing with text of selected item on A631 and A632*/
    $('.select-invisible').styler('destroy');
    $('.select-invisible').styler({
        onFormStyled: function(){
@@ -304,7 +305,5 @@ $(document).ready(function() {
          $('.jq-selectbox__select-text').html(replaceText);
        }
    });
-
-
 });
 

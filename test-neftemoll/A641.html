@@ -116,8 +116,8 @@
                     <li><a href="javascript:void(0);" class="active">Предложения&nbsp;&nbsp;<span class="ads-type-num">[5]</span></a></li>
                     <li><a href="javascript:void(0);">Заявки&nbsp;&nbsp;<span class="ads-type-num">[5]</span></a></li>
                     <li><a href="javascript:void(0);">Исходящие&nbsp;&nbsp;<span class="ads-type-num">[0]</span></a></li>
-                    <li><a href="javascript:void(0);">От администрации&nbsp;&nbsp;<span class="ads-type-num">[0]</span></a></li>
                     <li><a href="javascript:void(0);">Прайс-листы&nbsp;&nbsp;<span class="ads-type-num">[0]</span></a></li>
+                    <li><a href="javascript:void(0);">Чаты&nbsp;&nbsp;<span class="ads-type-num">[0]</span></a></li>
                 </ul>
 
 
@@ -633,17 +633,20 @@
             var mainHeigth = $('.a60-main').height();
             $('.left-sidebar').height(mainHeigth - 109);
 
-            var messagesListHeight = $('#messages-list').outerHeight();
-            var messagesContentHeight= $('#messages-content-box').outerHeight();
-            if(messagesListHeight >= messagesContentHeight) {
-                $('#messages-list-container').height(messagesListHeight);
-            } else {
-                $('#messages-list-container').height(messagesContentHeight);
-                $('#messages-list').height(messagesContentHeight -2);
+            /*content columns height equal set*/
+            colHeightEqual = function(){
+                var maxColHeight = 0;
+                $('.messages-list, .messages-content-box ').each(function(){
+                    if($(this).height() > maxColHeight) {
+                        maxColHeight = $(this).height();
+                    }
+                });
+                $('.messages-list, .messages-content-box ').height(maxColHeight);
             }
+            colHeightEqual();
+            $(window).resize(colHeightEqual);
 
             /*checkboxes status set: checked, unchecked, indeterminate*/
-
             /*root checkbox, check/uncheck all*/
             $('#check-all-messages').change(function(){
                //$('.corresp-check').prop('indeterminate', false);
@@ -708,7 +711,6 @@
                       $(this).find('.corresp-group-check').prop('indeterminate', true);
                     };
                 });
-
                 rootCheckboxStatus();
             };
             $('.corresp-check').change(groupCheckboxStatus);
@@ -752,11 +754,8 @@
                 } else {
                    $('#check-all-messages').prop('indeterminate', false); 
                 };
-
             };
             $('.current-messages-container .message-item input[type="checkbox"]').change(correspondentCheckboxStatus);
-
-
 
             $('.ad-message-correspondents li span').click(function(){
                 $('.ad-message-correspondents li').removeClass('active');

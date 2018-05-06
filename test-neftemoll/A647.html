@@ -125,7 +125,6 @@
                     <li><a href="javascript:void(0);" class="active">От администрации <span>[1]</span></a></li>
                 </ul>
 
-
                 <div class="messages-holder">
 
                     <div class="list-control-panel">
@@ -268,7 +267,6 @@
                           <div class="dialog-title-container">
                               <a href="javascript:void(0);" class="dialog-title">Вопрос по платным опциям<span class="messages-num"></span></a>
                           </div>
-
 
                         </div><!-- /.messages-list -->
 
@@ -441,7 +439,6 @@
             </div><!-- /.right-content -->
         </div><!-- /.container a60-container clearfix -->
     </main>
-
         
     <!-- =========================== footer =========================== -->
     <footer>
@@ -492,14 +489,18 @@
             var mainHeigth = $('.a60-main').height();
             $('.left-sidebar').height(mainHeigth - 109);
 
-            var messagesListHeight = $('#messages-list').outerHeight();
-            var messagesContentHeight= $('#messages-content-box').outerHeight();
-            if(messagesListHeight >= messagesContentHeight) {
-                $('#messages-list-container').height(messagesListHeight);
-            } else {
-                $('#messages-list-container').height(messagesContentHeight);
-                $('#messages-list').height(messagesContentHeight -2);
+            /*content columns height equal set*/
+            colHeightEqual = function(){
+                var maxColHeight = 0;
+                $('.messages-list, .messages-content-box ').each(function(){
+                    if($(this).height() > maxColHeight) {
+                        maxColHeight = $(this).height();
+                    }
+                });
+                $('.messages-list, .messages-content-box ').height(maxColHeight);
             }
+            colHeightEqual();
+            $(window).resize(colHeightEqual);
 
             /*checkboxes switch*/
             $('#check-all').change(function(){
@@ -525,16 +526,11 @@
             $('.current-messages-container input[type="checkbox"]').change(rootCheckboxStatus);
 
 
-
-            
-
-
             /*active dialog switch*/
             $('.dialog-title').click(function(){
                 $('.dialog-title').removeClass('active');
                 $(this).addClass('active');
             });
-            
         });
     </script>
   </body>
