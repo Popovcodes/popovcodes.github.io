@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<html lang="ru-RU">
+
+
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="img/favicon/16.ico">
+    <link rel="apple-touch-icon" href="img/favicon/57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+    <link rel="stylesheet" type="text/css" href="css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Title</title>
+  </head>
+  <body>
+    
+    
+<!-- =========================== header =========================== -->
+<header class="header">
+    <img src="img/commonImgs/main.jpg" alt="" class="main-img">
+    <div class="wrapper header-wrapper">
+        <div class="header-top flex">
+            <nav class="desktop-header-nav">
+                <ul class="flex">
+                    <li><a href="index.html">главная</a></li>
+                    <li><a href="about.html">о компании</a></li>
+                    <li><a href="delivery.html">доставка и оплата</a></li>
+                    <li><a href="contacts">контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-top-right flex">
+                <div class="header-link header-link-phone">
+                    <span class="header-link-icon"></span>
+                    <a href="tel:+79250233157">+7 (925) 023 31 57</a><br>
+                    <a href="javascript:void(0);" class="call-btn">заказать звонок</a>
+                </div><!-- /.header-link -->
+                <div class="header-link header-link-order">
+                    <span class="header-link-icon">
+                        <span class="order-price-container">
+                            <span class="order-price">1050</span>
+                            <span>р.</span>
+                        </span>
+                    </span>
+                    <a href="javascript:void(0);" class="order-btn">оформить<br>заказ</a>
+                </div><!-- /.header-link -->
+            </div><!-- /.header-top-right -->
+        </div><!-- /.header-top -->
+        <div class="header-center">
+            <img src="img/commonImgs/logo.png" alt="" class="header-logo">
+            <div class="header-text">
+                <p>Срочная доставка в течение 2-х часов</p>
+                <p>Доставка воздушных шаров без выходных 24 часа в сутки</p>
+                <p>Шары от 39 рублей!</p>
+            </div>
+            <a href="javascript:void(0);" class="button header-call-btn" id="header-call-btn">заказать звонок</a>
+        </div><!-- /.header-center -->
+    </div><!-- /.wrapper -->
+    <div class="mob-menu-btn hidden" id="mob-menu-btn"><span></span></div>
+</header>
+    
+    
+<!-- =========================== advantages-section =========================== -->
+<section class="advantages-section">
+    <div class="wrapper">
+        <h2>Наши преимущества</h2>
+        <div class="adv-container flex">
+            <div class="adv-item adv-delivery">
+                <div class="adv-img-container">
+                    <img src="img/advantagesIcons/delivery.png" alt="">
+                </div>
+                <p>быстрая доставка шариков</p>
+            </div>
+            <div class="adv-item adv-hifloat">
+                <div class="adv-img-container">
+                    <img src="img/advantagesIcons/present.png" alt="">
+                </div>
+                <p>обработка hifloat в подарок</p>
+            </div>
+            <div class="adv-item adv-warranty">
+                <div class="adv-img-container">
+                    <img src="img/advantagesIcons/warranty.png" alt="">
+                </div>
+                <p>гарантия полета 48 часов</p>
+            </div>
+            <div class="adv-item adv-exclusive">
+                <div class="adv-img-container">
+                    <img src="img/advantagesIcons/exclusive.png" alt="">
+                </div>
+                
+                <p>эксклюзивные предложения</p>
+            </div>
+        </div><!-- /.adv-container -->
+    </div><!-- /.wrapper -->
+</section><!-- /.advantages-section -->
+    
+
+<!-- =========================== catalog section =========================== -->
+<section class="catalog-section">
+    <div class="wrapper">
+        <p class="call-us-parag">Если вы что-то не нашли на нашем сайте <a href="tel:+79250233157">Позвоните нам</a> и мы все решим!</p>
+        <h2 class="catalog-section-heading">Каталог товаров</h2>
+        <ul class="cat-inline-list flex">
+            <li class="birth-girl"><a href="javascript:void(0);">день рождения девочки</a></li>
+            <li class="birth-boy"><a href="javascript:void(0);">день рождения мальчики</a></li>
+            <li class="birth-foil"><a href="javascript:void(0);">фольгированные шары на день рождения</a></li>
+            <li class="birth-set"><a href="javascript:void(0);">наборы из шаров на день рождения</a></li>
+            <li class="kid-set"><a href="javascript:void(0);">наборы из шаров для детей</a></li>
+            <li class="kid-foil"><a href="javascript:void(0);">фольгированные шары детям</a></li>
+            <li class="discharge-girl"><a href="javascript:void(0);">выписка девочки</a></li>
+            <li class="discharge-boy"><a href="javascript:void(0);">выписка мальчики</a></li>
+            <li class="walking-fig"><a href="javascript:void(0);">ходячие фигуры</a></li>
+        </ul>
+
+        <div class="catalog-wrapper flex">
+            <div class="categories-accordion-wrapper">
+                <h3 class="categories-heading">Категории</h3>
+                <ul class="categories-accordion">
+                    <li class="hit">
+                        <h4><a href="javascript:void(0);">Хит продаж</a></h4>
+                    </li>
+                    <li class="extended">
+                        <h4><span>День рождения</span></h4>
+                        <img class="new-mark" src="img/newCategoriesMarks/new-dot.png" alt="">
+                        <ul>
+                            <li><a href="javascript:void(0);">Юбилей 20 лет</a></li>
+                            <li><a href="javascript:void(0);">Юбилей 20 лет</a></li>
+                            <li><a href="javascript:void(0);">Юбилей 20 лет</a></li>
+                            <li><a href="javascript:void(0);">Юбилей 20 лет</a></li>
+                        </ul>
+                    </li>
+                    <li  class="extended new-tag">
+                        <h4><span>Детям</span></h4>
+                        <img class="new-mark" src="img/newCategoriesMarks/new-tag.png" alt="">
+                        <ul>
+                            <li><a href="javascript:void(0);">Мальчику</a></li>
+                            <li><a href="javascript:void(0);">Девочке</a></li>
+                            <li><a href="javascript:void(0);">Lorem Ipsum</a></li>
+                            <li><a href="javascript:void(0);">Dolor Sit Amet</a></li>
+                        </ul>
+                    </li>
+                    <li  class="extended">
+                        <h4><span>Цветовые решения</span></h4>
+                        <img class="new-mark" src="img/newCategoriesMarks/new-rect.png" alt="">
+                        <ul>
+                            <li><a href="javascript:void(0);">Красный</a></li>
+                            <li><a href="javascript:void(0);">Синий</a></li>
+                            <li><a href="javascript:void(0);">Lorem Ipsum</a></li>
+                            <li><a href="javascript:void(0);">Dolor Sit Amet</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4><a href="javascript:void(0);">Звезды, сердце без рисунка</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="javascript:void(0);">Наборы 2018 из шаров</a></h4>
+                        <img class="new-mark" src="img/newCategoriesMarks/new-petals.png" alt="">
+                    </li>
+                    <li>
+                        <h4><a href="javascript:void(0);">Шары-конфетти</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="javascript:void(0);">Олимпийские шары</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="javascript:void(0);">Шары-цифры</a></h4>
+                    </li>
+                    <li class="extended">
+                        <h4><span>Шары по праздникам</span></h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">14 февраля</a></li>
+                            <li><a href="javascript:void(0);">23 февраля</a></li>
+                            <li><a href="javascript:void(0);">8 марта</a></li>
+                            <li><a href="javascript:void(0);">9 мая</a></li>
+                            <li><a href="javascript:void(0);">1 сентября</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4><a href="javascript:void(0);">Влюбленным</a></h4>
+                    </li>
+                    <li class="extended">
+                        <h4><span>Выписка из роддома</span></h4>
+                        <ul>
+                            <li><a href="javascript:void(0);">Мальчик</a></li>
+                            <li><a href="javascript:void(0);">Девочка</a></li>
+                            <li><a href="javascript:void(0);">Двойня</a></li>
+                            <li><a href="javascript:void(0);">Lorem Ipsum</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4><a href="javascript:void(0);">Гирлянды, стойки, арки</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="javascript:void(0);">Готовые оформления</a></h4>
+                    </li>
+                </ul>
+            </div><!-- /.categories-accordion-wrapper -->
+
+            
+            <div class="catalog-items-container flex">
+
+                <!-- item, single product -->
+                <div class="product-item single-unit-item">
+                    <img src="img/products/product-img-1.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Шарик в сетке "Для нее"</h4>
+                            <p>Элегантность и загадочность - это про Неё? Или же вы любите тематические вечеринки в стиле Нуар?</p>
+                            <p>30 см, чёрная сетка</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="cost">
+                                <span class="cost-sum">240</span>
+                                <span class="cost-unit">руб</span>
+                            </div>
+                            <form action="" class="single-item-form">
+                                <span class="mult">&#10006;</span>
+                                <span class="count-container">
+                                    <span class="unit-price hidden">24</span> <!-- Price of single unit. Is not displayed. Used for total cost sum. Delete if is not needed. -->
+                                    <span class="minus"> - </span>
+                                    <input type="number" value="10">
+                                    <span class="plus">+</span>
+                                </span>
+                                <input type="submit" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, single product -->
+                <div class="product-item single-unit-item">
+                    <img src="img/products/product-img-1.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Шарик в сетке "Для нее"</h4>
+                            <p>Элегантность и загадочность - это про Неё? Или же вы любите тематические вечеринки в стиле Нуар? текст текст  текст текст тест текст тест</p>
+                            <p>30 см, чёрная сетка</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="cost">
+                                <span class="cost-sum">240</span>
+                                <span class="cost-unit">руб</span>
+                            </div>
+                            <form action="" class="single-item-form">
+                                <span class="mult">&#10006;</span>
+                                <span class="count-container">
+                                    <span class="unit-price hidden">15</span> <!-- Price of single unit. Is not displayed. Used for total cost sum. Delete if is not needed. -->
+                                    <span class="minus"> - </span>
+                                    <input type="number" value="10">
+                                    <span class="plus">+</span>
+                                </span>
+                                <input type="submit" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, single product -->
+                <div class="product-item single-unit-item">
+                    <img src="img/products/product-img-1.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Шарик в сетке "Для нее"</h4>
+                            <p>Вы любите тематические вечеринки в стиле Нуар?</p>
+                            <p>30 см, чёрная сетка текст текст тест</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="cost">
+                                <span class="cost-sum">240</span>
+                                <span class="cost-unit">руб</span>
+                            </div>
+                            <form action="" class="single-item-form">
+                                <span class="mult">&#10006;</span>
+                                <span class="count-container">
+                                    <span class="unit-price hidden">10</span> <!-- Price of single unit. Is not displayed. Used for total cost sum. Delete if is not needed. -->
+                                    <span class="minus"> - </span>
+                                    <input type="number" value="10">
+                                    <span class="plus">+</span>
+                                </span>
+                                <input type="submit" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, set -->
+                <div class="product-item set-item">
+                    <img src="img/products/product-img-2.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Набор шариков "Горошки"</h4>
+                        </div>
+                        <div class="set-action">
+                            <form action="" class="set-form">
+                                <input type="radio" name="quant-set-1" id="quant-set-1-1" class="hidden">
+                                <label for="quant-set-1-1">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">5 шт - 499 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-1" id="quant-set-1-2" class="hidden">
+                                <label for="quant-set-1-2">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">15 шт - 999 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-1" id="quant-set-1-3"  class="hidden" checked>
+                                <label for="quant-set-1-3">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">50 шт - 2999 руб</span>
+                                </label>
+                                <input type="submit" class="button" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, set -->
+                <div class="product-item set-item">
+                    <img src="img/products/product-img-2.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Набор шариков "Горошки"</h4>
+                        </div>
+                        <div class="set-action">
+                            <form action="" class="set-form">
+                                <input type="radio" name="quant-set-2" id="quant-set-2-1" class="hidden">
+                                <label for="quant-set-2-1">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">5 шт - 499 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-2" id="quant-set-2-2" class="hidden">
+                                <label for="quant-set-2-2">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">15 шт - 999 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-2" id="quant-set-2-3"  class="hidden" checked>
+                                <label for="quant-set-2-3">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">50 шт - 2999 руб</span>
+                                </label>
+                                <input type="submit" class="button" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, set -->
+                <div class="product-item set-item">
+                    <img src="img/products/product-img-2.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Набор шариков "Горошки"</h4>
+                        </div>
+                        <div class="set-action">
+                            <form action="" class="set-form">
+                                <input type="radio" name="quant-set-3" id="quant-set-3-1" class="hidden">
+                                <label for="quant-set-3-1">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">5 шт - 499 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-3" id="quant-set-3-2" class="hidden">
+                                <label for="quant-set-3-2">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">15 шт - 999 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-3" id="quant-set-3-3"  class="hidden" checked>
+                                <label for="quant-set-3-3">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">50 шт - 2999 руб</span>
+                                </label>
+                                <input type="submit" class="button" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, single product -->
+                <div class="product-item single-unit-item">
+                    <img src="img/products/product-img-1.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Шарик в сетке "Для нее"  текст текст тест</h4>
+                            <p>Элегантность и загадочность - это про Неё? Или же вы любите тематические вечеринки в стиле Нуар?</p>
+                            <p>30 см, чёрная сетка</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="cost">
+                                <span class="cost-sum">240</span>
+                                <span class="cost-unit">руб</span>
+                            </div>
+                            <form action="" class="single-item-form">
+                                <span class="mult">&#10006;</span>
+                                <span class="count-container">
+                                    <span class="unit-price hidden">24</span> <!-- Price of single unit. Is not displayed. Used for total cost sum. Delete if is not needed. -->
+                                    <span class="minus"> - </span>
+                                    <input type="number" value="10">
+                                    <span class="plus">+</span>
+                                </span>
+                                <input type="submit" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, single product -->
+                <div class="product-item single-unit-item">
+                    <img src="img/products/product-img-1.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Шарик в сетке</h4>
+                            <p>Элегантность и загадочность - это про Неё? Или же вы любите тематические вечеринки в стиле Нуар? текст текст  текст текст тест  текст  текст текст тест текст тест</p>
+                            <p>30 см, чёрная сетка</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="cost">
+                                <span class="cost-sum">240</span>
+                                <span class="cost-unit">руб</span>
+                            </div>
+                            <form action="" class="single-item-form">
+                                <span class="mult">&#10006;</span>
+                                <span class="count-container">
+                                    <span class="unit-price hidden">15</span> <!-- Price of single unit. Is not displayed. Used for total cost sum. Delete if is not needed. -->
+                                    <span class="minus"> - </span>
+                                    <input type="number" value="10">
+                                    <span class="plus">+</span>
+                                </span>
+                                <input type="submit" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, single product -->
+                <div class="product-item single-unit-item">
+                    <img src="img/products/product-img-1.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Шарик в сетке "Для нее" </h4>
+                            <p>Вы любите тематические вечеринки в стиле Нуар?</p>
+                            <p>30 см, чёрная сетка текст текст тест</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="cost">
+                                <span class="cost-sum">240</span>
+                                <span class="cost-unit">руб</span>
+                            </div>
+                            <form action="" class="single-item-form">
+                                <span class="mult">&#10006;</span>
+                                <span class="count-container">
+                                    <span class="unit-price hidden">10</span> <!-- Price of single unit. Is not displayed. Used for total cost sum. Delete if is not needed. -->
+                                    <span class="minus"> - </span>
+                                    <input type="number" value="10">
+                                    <span class="plus">+</span>
+                                </span>
+                                <input type="submit" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, set -->
+                <div class="product-item set-item">
+                    <img src="img/products/product-img-2.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Набор шариков "Горошки"</h4>
+                        </div>
+                        <div class="set-action">
+                            <form action="" class="set-form">
+                                <input type="radio" name="quant-set-4" id="quant-set-4-1" class="hidden">
+                                <label for="quant-set-4-1">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">5 шт - 499 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-4" id="quant-set-4-2" class="hidden">
+                                <label for="quant-set-4-2">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">15 шт - 999 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-4" id="quant-set-4-3"  class="hidden" checked>
+                                <label for="quant-set-4-3">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">50 шт - 2999 руб</span>
+                                </label>
+                                <input type="submit" class="button" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, set -->
+                <div class="product-item set-item">
+                    <img src="img/products/product-img-2.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Набор шариков "Горошки"  текст текст текст текст текст текст</h4>
+                        </div>
+                        <div class="set-action">
+                            <form action="" class="set-form">
+                                <input type="radio" name="quant-set-5" id="quant-set-5-1" class="hidden">
+                                <label for="quant-set-5-1">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">5 шт - 499 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-5" id="quant-set-5-2" class="hidden">
+                                <label for="quant-set-5-2">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">15 шт - 999 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-5" id="quant-set-5-3"  class="hidden" checked>
+                                <label for="quant-set-5-3">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">50 шт - 2999 руб</span>
+                                </label>
+                                <input type="submit" class="button" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, set -->
+                <div class="product-item set-item">
+                    <img src="img/products/product-img-2.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Набор шариков "Горошки"</h4>
+                        </div>
+                        <div class="set-action">
+                            <form action="" class="set-form">
+                                <input type="radio" name="quant-set-6" id="quant-set-6-1" class="hidden">
+                                <label for="quant-set-6-1">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">5 шт - 499 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-6" id="quant-set-6-2" class="hidden">
+                                <label for="quant-set-6-2">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">15 шт - 999 руб</span>
+                                </label>
+                                <input type="radio" name="quant-set-6" id="quant-set-6-3"  class="hidden" checked>
+                                <label for="quant-set-6-3">
+                                    <span class="toggler-area">
+                                        <span class="toggler">
+                                            <img src="img/commonImgs/toggler-btn.jpg" alt="">
+                                        </span>
+                                    </span>
+                                    <span class="set-variant">50 шт - 2999 руб</span>
+                                </label>
+                                <input type="submit" class="button" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, single product -->
+                <div class="product-item single-unit-item">
+                    <img src="img/products/product-img-1.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Шарик в сетке "Для нее"  текст текст тест</h4>
+                            <p>Элегантность и загадочность - это про Неё? Или же вы любите тематические вечеринки в стиле Нуар?</p>
+                            <p>30 см, чёрная сетка</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="cost">
+                                <span class="cost-sum">240</span>
+                                <span class="cost-unit">руб</span>
+                            </div>
+                            <form action="" class="single-item-form">
+                                <span class="mult">&#10006;</span>
+                                <span class="count-container">
+                                    <span class="unit-price hidden">24</span> <!-- Price of single unit. Is not displayed. Used for total cost sum. Delete if is not needed. -->
+                                    <span class="minus"> - </span>
+                                    <input type="number" value="10">
+                                    <span class="plus">+</span>
+                                </span>
+                                <input type="submit" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, single product -->
+                <div class="product-item single-unit-item">
+                    <img src="img/products/product-img-1.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Шарик в сетке</h4>
+                            <p>Элегантность и загадочность - это про Неё? Или же вы любите тематические вечеринки в стиле Нуар? текст текст  текст текст тест текст тест</p>
+                            <p>30 см, чёрная сетка</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="cost">
+                                <span class="cost-sum">240</span>
+                                <span class="cost-unit">руб</span>
+                            </div>
+                            <form action="" class="single-item-form">
+                                <span class="mult">&#10006;</span>
+                                <span class="count-container">
+                                    <span class="unit-price hidden">15</span> <!-- Price of single unit. Is not displayed. Used for total cost sum. Delete if is not needed. -->
+                                    <span class="minus"> - </span>
+                                    <input type="number" value="10">
+                                    <span class="plus">+</span>
+                                </span>
+                                <input type="submit" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+                <!-- item, single product -->
+                <div class="product-item single-unit-item">
+                    <img src="img/products/product-img-1.jpg" alt="">
+                    <div class="product-text flex">
+                        <div class="product-desc">
+                            <h4>Шарик в сетке "Для нее" </h4>
+                            <p>Вы любите тематические вечеринки в стиле Нуар?</p>
+                            <p>30 см, чёрная сетка текст текст тест</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="cost">
+                                <span class="cost-sum">240</span>
+                                <span class="cost-unit">руб</span>
+                            </div>
+                            <form action="" class="single-item-form">
+                                <span class="mult">&#10006;</span>
+                                <span class="count-container">
+                                    <span class="unit-price hidden">10</span> <!-- Price of single unit. Is not displayed. Used for total cost sum. Delete if is not needed. -->
+                                    <span class="minus"> - </span>
+                                    <input type="number" value="10">
+                                    <span class="plus">+</span>
+                                </span>
+                                <input type="submit" value="купить">
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /.product-item -->
+
+            <div class="load-more-container">
+                <a href="" class="button load-more-btn">загрузить еще</a>
+            </div>
+            </div><!-- /.catalog-items-container -->
+
+        </div><!-- /.catalog-wrapper -->
+    </div><!-- /.wrapper -->
+</section><!-- /.catalog-section -->
+    
+    
+<!-- =========================== about balloons section =========================== -->
+<section class="about-balloons-section">
+    <div class="wrapper flex">
+        <div class="about-balloons-content">
+            <div class="about-block">
+                <h2>О шарах</h2>
+                <div class="about-text">
+                    <p>Фабульный каркас изящно просветляет базовый тип личности. Эротическое, в первом приближении, многопланово образует бессознательный горизонт ожидания. </p>
+                    <p>Выявляя устойчивые архетипы на примере художественного творчества, можно сказать, что калокагатия аккумулирует сангвиник, это же положение обосновывал Ж.Польти в книге "Тридцать шесть драматических ситуаций".</p>
+                    <p>Воображение иллюстрирует самодостаточный этикет.Художественное опосредование </p>
+                </div>
+            </div>
+            <div class="locations-container flex">
+                <ul class="locations-list">
+                    <li><a href="javascript:void(0);">воздушные шары Королев</a></li>
+                    <li><a href="javascript:void(0);">воздушные шары Солнечногорск</a></li>
+                    <li><a href="javascript:void(0);">воздушные шары Лобня</a></li>
+                    <li><a href="javascript:void(0);">воздушные шары Тушино</a></li>
+                    <li><a href="javascript:void(0);">воздушные шары Видное</a></li>
+                    <li><a href="javascript:void(0);">воздушные шары Зеленоград</a></li>
+                    <li><a href="javascript:void(0);">воздушные шары Долгопрудный</a></li>
+                </ul>
+                <ul class="locations-list">
+                    <li><a href="javascript:void(0);">воздушные шары Химки</a></li>
+                    <li><a href="javascript:void(0);">воздушные шары Пушкино</a></li>
+                    <li><a href="javascript:void(0);">воздушные шары Одинцово</a></li>
+                    <li><a href="javascript:void(0);">воздушные шары Красногорск</a></li>
+                    <li><a href="javascript:void(0);">воздушные шары Истра</a></li>
+                    <li><a href="javascript:void(0);">воздушные шары Мытищи</a></li>
+                </ul>
+            </div>
+        </div><!-- /.about-balloons-content -->
+
+    </div><!-- /.wrapper -->
+</section><!-- /.about-balloons-section -->
+
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-top flex">
+            <a href="index.html"  class="footer-logo">
+                <img src="img/commonImgs/logo.png" alt="">
+            </a>
+            <nav class="footer-nav">
+                <ul class="flex">
+                    <li><a href="index.html">главная</a></li>
+                    <li><a href="about.html">о компании</a></li>
+                    <li><a href="delivery.html">доставка и оплата</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                    <li><a href="payment.html">оплата</a></li>
+                </ul>
+            </nav>
+            <div class="footer-top-right flex">
+                <a href="tel:+79250233157" class="footer-link-phone">+7 (925) 023 31 57</a>
+                <a href="javascript:void(0);" class="footer-link-order">
+                    <span>
+                        <span class="order-price">1050</span>
+                        <span>р.</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="payments-block">
+                <h5>Способы оплаты</h5>
+                <ul class="payments-methods">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="img/payIcons/cash.png" alt="">
+                        </a></li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="img/payIcons/card.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="img/payIcons/ya-money.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- /.wrapper -->
+</footer>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/common.js"></script>
+
+  </body>
+</html>
