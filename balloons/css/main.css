@@ -170,7 +170,6 @@ section {
   width: 1110px;
   max-width: 96%;
   margin: 0 auto;
-  outline: 1px solid cyan;
 }
 
 h2 {
@@ -760,7 +759,6 @@ li.extended.active h4 > span:after {
 
 .catalog-items-container {
   position: relative;
-  outline: 1px solid red;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
