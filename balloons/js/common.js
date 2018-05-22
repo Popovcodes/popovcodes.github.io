@@ -1,80 +1,22 @@
 $(document).ready(function(){
 
-  //main page slider
-/*  $('.js-index-slider').bxSlider({
-    mode: 'vertical',
-    pagerCustom: '.js-index-slider__pager',
-    controls: false,
-    auto: true
+  // mobile navigation
+  $('#mob-menu-btn').click(function(){
+    $('#mobile-nav-container').css('right', '0px');
+    $('#overlay').fadeIn(400);
   });
-  // product preview slider
-  $('.product-item__slider').bxSlider({
-    pagerCustom: '.product-item__colors',
-    controls: false
+  $('#mob-close, .mob-nav a, #overlay').click(function(){
+    $('#mobile-nav-container').css('right', '-320px');
+    $('#overlay').fadeOut(400);
   });
-  //product page slider
-  $('.js-product-view-slider').bxSlider({
-    pagerCustom: '.js-product-view-pager',
-    controls: false,
-    auto: true
-  });*/
-
-
-
-  //slick.js slider   http://kenwheeler.github.io/slick/
-  // $('#slider').slick({
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   arrows: true,
-  //   dots: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 620,
-  //       settings: {
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //       }
-  //     }
-  //   ]
-  // });
-
-  //page scroll
-  // $("a[rel='Scroll2id']").mPageScroll2id({
-  //   offset: 35
-  // });
-
-
-  //scroll to top
-  // $(window).on ('scroll', function(){
-  //   if ($(this).scrollTop() > 800) {
-  //     $('#to-top').fadeIn(2000);
-  //   } else {
-  //     $('#to-top').fadeOut();
-  //   }
-  // });
-
-  // $("#to-top").click(function () {
-  //   $("body, html").animate({
-  //     scrollTop: 0
-  //   }, 800);
-  // });
 
   // modal windows
-  // $('.callback_btn').on('click', function(){
-  //   $('.overlay, .callback_modal').fadeIn(200);
-  // });
-  // $('.appoint_btn, .consult_btn').on('click', function(){
-  //   $('.overlay, .appointment_modal').fadeIn(200);
-  // });
-  // $('.overlay, .modal_close').on('click', function(){
-  //   $('.overlay, .callback_modal, .appointment_modal').fadeOut(200);
-  // });
+  $('#header-call-btn, #call-btn').on('click', function(){
+    $('#overlay, #contact-form-container').fadeIn();
+  });
+  $('#overlay, #form-close').on('click', function(){
+    $('#overlay, #contact-form-container').fadeOut();
+  });
 
 /*accordion */
   $('.extended h4').click(function(){
@@ -89,7 +31,12 @@ $(document).ready(function(){
   $('.extended li a').click(function(){
     $('.extended li a').removeClass('active');
     $('.categories-accordion>li').removeClass('active');
+    $(this).parents('.extended').addClass('active');
     $(this).addClass('active');
+    if(document.documentElement.clientWidth < 1200) {
+      $(this).parents('.extended ul').slideUp();
+      $('.categories-accordion>li').removeClass('active');
+    };
   });
 
   $('.categories-accordion>li').not('.extended').click(function(){
@@ -130,11 +77,15 @@ $(document).ready(function(){
       numInput.val(currentQuant + 1).change();
   });
 
+  // masked input
+  $('input[type="tel"]').mask("8(999)999-99-99");
 
-
-
-  if(document.documentElement.clientWidth > 768) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    // new WOW().init();
-  };
+  //decoration of current link in navigation
+  $('nav a').each(function(){
+    var location = window.location.href;
+    var link = this.href
+    if(location == link) {
+      $(this).addClass('active');
+    }
+  });
 });

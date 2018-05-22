@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" href="img/favicon/57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
-    <link rel="stylesheet" type="text/css" href="css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/zoomify/zoomify.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Title</title>
   </head>
@@ -29,14 +29,14 @@
                     <li><a href="index.html">главная</a></li>
                     <li><a href="about.html">о компании</a></li>
                     <li><a href="delivery.html">доставка и оплата</a></li>
-                    <li><a href="contacts">контакты</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
                 </ul>
             </nav>
             <div class="header-top-right flex">
                 <div class="header-link header-link-phone">
                     <span class="header-link-icon"></span>
                     <a href="tel:+79250233157">+7 (925) 023 31 57</a><br>
-                    <a href="javascript:void(0);" class="call-btn">заказать звонок</a>
+                    <a href="javascript:void(0);" class="call-btn" id="call-btn">заказать звонок</a>
                 </div><!-- /.header-link -->
                 <div class="header-link header-link-order">
                     <span class="header-link-icon">
@@ -45,7 +45,7 @@
                             <span>р.</span>
                         </span>
                     </span>
-                    <a href="javascript:void(0);" class="order-btn">оформить<br>заказ</a>
+                    <a href="javascript:void(0);" class="order-btn">оформить заказ</a>
                 </div><!-- /.header-link -->
             </div><!-- /.header-top-right -->
         </div><!-- /.header-top -->
@@ -61,13 +61,26 @@
     </div><!-- /.wrapper -->
     <div class="mob-menu-btn hidden" id="mob-menu-btn"><span></span></div>
 </header>
+
     
+<!-- =========================== mobile nav=========================== -->
+<div class="mobile-nav-container" id="mobile-nav-container">
+    <span class="mob-close" id="mob-close"></span>
+    <nav class="mob-nav">
+       <ul>
+           <li><a href="index.html">главная</a></li>
+           <li><a href="about.html">о компании</a></li>
+           <li><a href="delivery.html">доставка и оплата</a></li>
+           <li><a href="contacts.html">контакты</a></li>
+       </ul>
+    </nav>
+</div>
     
 <!-- =========================== advantages-section =========================== -->
 <section class="advantages-section">
     <div class="wrapper">
         <h2>Наши преимущества</h2>
-        <div class="adv-container flex">
+        <div class="advantages-container flex">
             <div class="adv-item adv-delivery">
                 <div class="adv-img-container">
                     <img src="img/advantagesIcons/delivery.png" alt="">
@@ -93,7 +106,7 @@
                 
                 <p>эксклюзивные предложения</p>
             </div>
-        </div><!-- /.adv-container -->
+        </div><!-- /.advantages-container -->
     </div><!-- /.wrapper -->
 </section><!-- /.advantages-section -->
     
@@ -199,7 +212,7 @@
                 </ul>
             </div><!-- /.categories-accordion-wrapper -->
 
-            
+
             <div class="catalog-items-container flex">
 
                 <!-- item, single product -->
@@ -715,7 +728,6 @@
     </div><!-- /.wrapper -->
 </section><!-- /.catalog-section -->
     
-    
 <!-- =========================== about balloons section =========================== -->
 <section class="about-balloons-section">
     <div class="wrapper flex">
@@ -752,7 +764,7 @@
     </div><!-- /.wrapper -->
 </section><!-- /.about-balloons-section -->
 
-
+<!-- =========================== footer =========================== -->
 <footer class="footer">
     <div class="wrapper">
         <div class="footer-top flex">
@@ -801,8 +813,28 @@
         </div>
     </div><!-- /.wrapper -->
 </footer>
-    <script src="libs/jquery/jquery.min.js"></script>
-    <script src="js/common.js"></script>
+
+<!-- =========================== pop up form =========================== -->
+
+<div class="contact-form-container hidden" id="contact-form-container">
+    <span class="form-close" id="form-close"></span>
+    <form action="" class="contact-form">
+        <input type="text" placeholder="имя" required>
+        <input type="tel" placeholder="телефон" required>
+        <input type="submit" value="Заказать звонок" class="button">
+    </form>
+</div>
+
+<div class="overlay hidden" id="overlay"></div>
+
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/zoomify/zoomify.min.js"></script>
+<script src="libs/maskedInput/jquery.maskedinput.min.js"></script>
+<script>
+    // product img zoom https://github.com/indrimuska/zoomify
+    $('.product-item img').zoomify();
+</script>
+<script src="js/common.js"></script>
 
   </body>
 </html>

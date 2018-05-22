@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="ru-RU">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="img/favicon/16.ico">
+    <link rel="apple-touch-icon" href="img/favicon/57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+    <link rel="stylesheet" type="text/css" href="css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Title</title>
+  </head>
+  <body>
+    
+<!-- =========================== header =========================== -->
+<header class="header">
+    <img src="img/commonImgs/main.jpg" alt="" class="main-img">
+    <div class="wrapper header-wrapper">
+        <div class="header-top flex">
+            <nav class="desktop-header-nav">
+                <ul class="flex">
+                    <li><a href="index.html">главная</a></li>
+                    <li><a href="about.html">о компании</a></li>
+                    <li><a href="delivery.html">доставка и оплата</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-top-right flex">
+                <div class="header-link header-link-phone">
+                    <span class="header-link-icon"></span>
+                    <a href="tel:+79250233157">+7 (925) 023 31 57</a><br>
+                    <a href="javascript:void(0);" class="call-btn" id="call-btn">заказать звонок</a>
+                </div><!-- /.header-link -->
+                <div class="header-link header-link-order">
+                    <span class="header-link-icon">
+                        <span class="order-price-container">
+                            <span class="order-price">1050</span>
+                            <span>р.</span>
+                        </span>
+                    </span>
+                    <a href="javascript:void(0);" class="order-btn">оформить заказ</a>
+                </div><!-- /.header-link -->
+            </div><!-- /.header-top-right -->
+        </div><!-- /.header-top -->
+        <div class="header-center">
+            <img src="img/commonImgs/logo.png" alt="" class="header-logo">
+            <div class="header-text">
+                <p>Срочная доставка в течение 2-х часов</p>
+                <p>Доставка воздушных шаров без выходных 24 часа в сутки</p>
+                <p>Шары от 39 рублей!</p>
+            </div>
+            <a href="javascript:void(0);" class="button header-call-btn" id="header-call-btn">заказать звонок</a>
+        </div><!-- /.header-center -->
+    </div><!-- /.wrapper -->
+    <div class="mob-menu-btn hidden" id="mob-menu-btn"><span></span></div>
+</header>
+
+<!-- =========================== mobile nav=========================== -->
+<div class="mobile-nav-container" id="mobile-nav-container">
+    <span class="mob-close" id="mob-close"></span>
+    <nav class="mob-nav">
+       <ul>
+           <li><a href="index.html">главная</a></li>
+           <li><a href="about.html">о компании</a></li>
+           <li><a href="delivery.html">доставка и оплата</a></li>
+           <li><a href="contacts.html">контакты</a></li>
+       </ul>
+    </nav>
+</div>
+
+<!-- =========================== delivery and payment section =========================== -->
+<section class="delivery-section">
+    <div class="wrapper">
+
+        <div class="delivery-section-heading">
+            <h2>Доставка и оплата</h2>
+        </div>
+
+        <div class="delivery-features-container flex">
+            <div class="deliv-features-left flex">
+                <div class="deliv-feature deliv-fast">
+                    <div class="deliv-img-container">
+                        <img src="img/advantagesIcons/delivery.png" alt="">
+                    </div>
+                    <p>быстрая доставка в течении 2 часов</p>
+                </div>
+                <div class="deliv-feature deliv-allday">
+                    <div class="deliv-img-container">
+                        <img src="img/advantagesIcons/warranty.png" alt="">
+                    </div>
+                    <p>круглосуточная доставка к нужному времени</p>
+                </div>
+            </div><!-- /.deliv-features-left -->
+            <div class="deliv-features-right flex">
+                <div class="deliv-feature deliv-day">
+                    <div class="deliv-img-container">
+                        <img src="img/advantagesIcons/day.png" alt="">
+                    </div>
+                    <p>дневной тариф <span class="tarif-time">(8:00 до 23:00)</span><br><span class="tarif-cost">250р</span></p>
+                </div>
+                <div class="deliv-feature deliv-night">
+                    <div class="deliv-img-container">
+                        <img src="img/advantagesIcons/night.png" alt="">
+                    </div>
+                    <p>ночной тариф <span class="tarif-time">(23:00 до 08:00)</span><br><span class="tarif-cost">150р</span></p>
+                </div>
+            </div><!-- /.deliv-features-right -->
+        </div><!-- /.delivery-features-container -->
+            
+        <div class="map-block flex">
+            <div class="locations-tarifs">
+                <h3>Оплата доставки:</h3>
+                <ul>
+                    <li>
+                        <span class="location">
+                            <span class="loc-name">Москва</span>
+                            <span class="loc-tarif">250 руб</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="location">
+                            <span class="loc-name">Зеленоград</span>
+                            <span class="loc-tarif">1250 руб</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="location">
+                            <span class="loc-name">Лобня</span>
+                            <span class="loc-tarif">250 руб</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="location">
+                            <span class="loc-name">Химки</span>
+                            <span class="loc-tarif">1250 руб</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="location">
+                            <span class="loc-name">Долгопрудный</span>
+                            <span class="loc-tarif">250 руб</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="location">
+                            <span class="loc-name">Куркино</span>
+                            <span class="loc-tarif">1250 руб</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="location">
+                            <span class="loc-name">Митино</span>
+                            <span class="loc-tarif">250 руб</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="location">
+                            <span class="loc-name">Тушино</span>
+                            <span class="loc-tarif">1250 руб</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="location">
+                            <span class="loc-name">Красногорск</span>
+                            <span class="loc-tarif">250 руб</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="location">
+                            <span class="loc-name">Сходня</span>
+                            <span class="loc-tarif">1250 руб</span>
+                        </span>
+                    </li>
+                </ul>
+            </div><!-- /.locations-tarifs -->
+                
+            <div class="map-container">
+                <div class="map" id="map"></div>
+            </div>
+
+        </div><!-- /.map-block  -->
+
+        <div class="self-delivery flex">
+            <h2>Возможен самовывоз по предварительному согласованию.</h2>
+        </div>
+        <div class="attend-text">
+            <p>Как «заставить» человека улыбаться, радоваться, смеяться и веселиться? Как подарить близкому ощущение праздника и соответствующее торжеству настроение? Невероятно, но ответ на эти и подобные вопросы один: воздушные шары! Выбрав в качестве подарка композиции из разноцветных гелиевых шариков, Вы не оставите равнодушным никого! Но тот, кто хоть единожды преподносил в подарок шары, понимает, как сложно и иногда даже невозможно самому доставить целую воздушно-гелиевую охапку к дверям виновника торжества.</p>
+            <p>В Интернет-магазине «Мегашарики.РФ» можно оформить заказ шариков с доставкой. Укажите количество и время, а мы привезем товар по адресу в оговоренный час. Результат будет восхитительным и ошеломляющим, а Вы при этом потратите минимум усилий для воплощения задуманного в жизнь.</p>
+            <p>Заказать доставку воздушного презента можно на любое мероприятие: свадебное гулянье, юбилей, день рождения, годовщина или просто сюрприз для поднятия настроения. Этот метод действует безотказно! Шары, доставленные на порог дома виновника торжества, непременно доставят радость получателю и зарядят бодростью, позитивом и оптимистичным настроением на предстоящий день.</p>
+            <p>Вам необходимы шарики в ночное время? И Это для онлайн-магазина «Мегашарики.РФ» не проблема: у нас осуществляется доставка воздушных шаров круглосуточно. Теперь Вам не придется думать, где спрятать сюрприз, приготовленный на ночь. Курьеры компании доставляют продукцию по Москве и Московской области по указанному адресу и пунктуально, в срок. С нами надежно, выгодно и без хлопот!</p>
+            <p>Имя отправителя, если Вы пожелаете, останется в секрете. Но оно в обязательном порядке обозначается в ходе формирования заявки на доставку. Этот метод востребован, в первую очередь, в случаях, когда посетить праздничное мероприятие лично заказчик не может, а заинтересовать и вызвать удивление получателя хочется.</p>
+            <p>Сегодня на пике популярности – доставка воздушных шариков ранним утром. А кому не понравится, едва пробудившись и открыв глаза, услышать звонок в дверь, за которой стоит курьер с охапкой разноцветных воздушных шариков? Это и для Вас было бы волнующе, не правда ли?</p>
+            <p>С компанией «Мегашарики.РФ» Вы без нервов и хлопот приобретете воздушный подарок  недорого, а круглосуточная доставка шаров позволит создать праздник в любом месте и в любое время! Связывайтесь с сотрудниками магазина посредством телефонного звонка, отправляйте сообщения на электронную почту, обсуждайте созданную заявку, оставляйте комментарии и пожелания. Удивляйте, интригуйте, радуйте близких людей, а мы Вас в этом деле без проблем поддержим и поможем. Планируйте торжественные мероприятия с нами, и мы с радостью воплотим в жизнь Ваши воздушные планы и фантазии.</p>
+        </div>
+        <a href="index.html" class="back-link">Вернуться назад >>></a>
+
+    </div><!-- /.wrapper -->
+</section><!-- /.delivery-section -->
+
+<!-- =========================== footer =========================== -->
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-top flex">
+            <a href="index.html"  class="footer-logo">
+                <img src="img/commonImgs/logo.png" alt="">
+            </a>
+            <nav class="footer-nav">
+                <ul class="flex">
+                    <li><a href="index.html">главная</a></li>
+                    <li><a href="about.html">о компании</a></li>
+                    <li><a href="delivery.html">доставка и оплата</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                    <li><a href="payment.html">оплата</a></li>
+                </ul>
+            </nav>
+            <div class="footer-top-right flex">
+                <a href="tel:+79250233157" class="footer-link-phone">+7 (925) 023 31 57</a>
+                <a href="javascript:void(0);" class="footer-link-order">
+                    <span>
+                        <span class="order-price">1050</span>
+                        <span>р.</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="payments-block">
+                <h5>Способы оплаты</h5>
+                <ul class="payments-methods">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="img/payIcons/cash.png" alt="">
+                        </a></li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="img/payIcons/card.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="img/payIcons/ya-money.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- /.wrapper -->
+</footer>
+
+<!-- =========================== pop up form =========================== -->
+<div class="contact-form-container hidden" id="contact-form-container">
+    <span class="form-close" id="form-close"></span>
+    <form action="" class="contact-form">
+        <input type="text" placeholder="имя" required>
+        <input type="tel" placeholder="телефон" required>
+        <input type="submit" value="Заказать звонок" class="button">
+    </form>
+</div>
+
+<div class="overlay hidden" id="overlay"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCechQsilqhw0CqHflt3dUcVmGCpRDjuwY"></script>
+<script src="js/googlemap.js"></script>
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/maskedInput/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
