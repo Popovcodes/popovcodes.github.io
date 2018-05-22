@@ -930,6 +930,7 @@ li.extended.active h4 > span:after {
   width: 255px;
   text-align: left;
   margin: 0 15px 26px;
+  background: #fff;
   -webkit-box-shadow: 0 0 40px #f9e7ea;
           box-shadow: 0 0 40px #f9e7ea;
 }
