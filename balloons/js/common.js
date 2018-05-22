@@ -1,20 +1,32 @@
 $(document).ready(function(){
 
+  // header phone and order link fixing on scroll
+  var linkFix = function(){
+    var isScrolled = $(window).scrollTop();
+    if (isScrolled > 200) {
+      $('#header-top-right').addClass('sticky').prependTo('body').animate({opacity: "1"}, 1000);
+    } else {
+      $('#header-top-right').removeClass('sticky').appendTo('#header-top');
+    }
+  };
+  linkFix();
+  $(window).scroll(linkFix);
+
   // mobile navigation
   $('#mob-menu-btn').click(function(){
-    $('#mobile-nav-container').css('right', '0px');
+    $('#mobile-nav-container').css('left', '0px');
     $('#overlay').fadeIn(400);
   });
   $('#mob-close, .mob-nav a, #overlay').click(function(){
-    $('#mobile-nav-container').css('right', '-320px');
+    $('#mobile-nav-container').css('left', '-320px');
     $('#overlay').fadeOut(400);
   });
 
   // modal windows
-  $('#header-call-btn, #call-btn').on('click', function(){
+  $('#header-call-btn, #call-btn').click(function(){
     $('#overlay, #contact-form-container').fadeIn();
   });
-  $('#overlay, #form-close').on('click', function(){
+  $('#overlay, #form-close').click(function(){
     $('#overlay, #contact-form-container').fadeOut();
   });
 
