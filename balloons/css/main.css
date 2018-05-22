@@ -1959,6 +1959,7 @@ li.extended.active h4 > span:after {
     vertical-align: middle;
   }
   .count-container input[type="number"] {
+    width: 30px;
     margin: 0 10px;
     font-size: 12px;
     vertical-align: middle;
