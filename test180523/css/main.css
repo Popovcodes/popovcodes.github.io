@@ -31,9 +31,6 @@
   font-weight: 400;
 }
 
-/* ==================== variables ======================= */
-/* $reg_font: ProximaNovaReg;*/
-/* $lig_col:#fff;*/
 /* ==================== common styles ======================= */
 *,
 *:before,
@@ -389,7 +386,6 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-/* ==================== Addictional styles ======================= */
 /* ==================== Media queries ======================= */
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
