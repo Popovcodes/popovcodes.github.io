@@ -39,6 +39,10 @@
           box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   min-width: 320px;
   padding: 3% 0;
