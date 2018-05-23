@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  // skill level dial
+  // skill level
   var levelCalc = function(){
     var itemsTotal = $('.skills-list input[type="checkbox"]').length;
     var itemsChecked = $('.skills-list input[type="checkbox"]:checked').length;
@@ -11,9 +11,4 @@ $(document).ready(function(){
   };
   levelCalc();
   $('.skills-list input[type="checkbox"]').change(levelCalc);
-
-  if(document.documentElement.clientWidth > 768) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    // new WOW().init();
-  };
 });
