@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bitokk</title>
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/slick-theme.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="css/preloader.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<div class="left-col">
+			<a href="#main-page" class="logo">
+				<img src="./img/logo.png" alt="logo">
+			</a>
+			
+			<div class="btn_nav not_active"><span></span></div>
+
+			<nav class="nav nav__desctop">
+				<ul>
+					<li><a href="#about__service-page">О сервисе</a></li>
+					<li><a href="#conditions-page">Правила обмена</a></li>
+					<li><a href="#partners-page">Партнерам</a></li>
+					<li><a href="#questions-page">FAQ</a></li>
+					<li><a href="#feedback-page">Отзывы</a></li>
+					<li><a href="#contacts-page">Контакты</a></li>
+				</ul>
+			</nav>
+
+			<div class="left-col__buttons nav__desctop">
+				<a href="#login-page" class="btn">Вход</a>
+				<a href="#registration-page" class="btn btn-grey">Регистрация</a>
+			</div>
+
+			<p class="left-col__copy nav__desctop">© 2018, «Bitokk» —<br> самый прозрачный криптообменник</p>
+
+			<div class="nav__mob">
+				<nav class="nav">
+					<ul>
+						<li><a href="#about__service-page">О сервисе</a></li>
+						<li><a href="#conditions-page">Правила обмена</a></li>
+						<li><a href="#partners-page">Партнерам</a></li>
+						<li><a href="#questions-page">FAQ</a></li>
+						<li><a href="#feedback-page">Отзывы</a></li>
+						<li><a href="#contacts-page">Контакты</a></li>
+					</ul>
+				</nav>
+
+				<div class="left-col__buttons">
+					<a href="#login-page" class="btn">Вход</a>
+					<a href="#registration-page" class="btn btn-grey">Регистрация</a>
+				</div>
+
+				<p class="left-col__copy">© 2018, «Bitokk» —<br> самый прозрачный криптообменник</p>
+			</div>
+				
+		</div>
+
+		<div class="content">
+			<div class="page main-page mob-slider open" id="main-page">
+				<div class="item item-send">
+					<div class="item__title">Отправить</div>
+					
+					<div class="input-item">
+						<input type="text" name="" placeholder="">
+					</div>						
+					<div class="item__head">
+						<div class="item__head--left">Валюта получения:</div>
+						<div class="item__head--right">Курс:</div>
+					</div>
+					<div class="order-item" style="display: none;">
+						Заказать
+					</div>
+					<div class="item__content scroll-on-click">
+						<table>
+							<!--<thead>
+								<tr>
+									<th>Валюта получения:</th>
+									<th>Курс:</th>
+								</tr>
+							</thead>-->
+							<tbody>
+								<tr>
+									<td><span class="bitcoin "></span>Bitcoin</td>
+									<td><span class="arrow-top"></span>373952.751</td>
+								</tr>
+								<tr>
+									<td><span class="ethereum"></span>Ethereum</td>
+									<td><span class="arrow-top"></span>21464.3687</td>
+								</tr>
+								<tr>
+									<td><span class="litecoin"></span>Litecoin</td>
+									<td><span class="arrow-top"></span>21464.3687</td>
+								</tr>
+								<tr>
+									<td><span class="dash"></span>Dash</td>
+									<td><span class="arrow-top"></span>21464.3687</td>
+								</tr>
+								<tr>
+									<td><span class="neo"></span>Neo</td>
+									<td><span class="arrow-top"></span>21464.3687</td>
+								</tr>
+								<tr>
+									<td><span class="bcc"></span>BCC</td>
+									<td><span class="arrow-bottom"></span>60.0600601</td>
+								</tr>
+								<tr>
+									<td><span class="sberonline"></span>СберОнлайн</td>
+									<td><span class="arrow-bottom"></span>1769.95</td>
+								</tr>
+								<tr>
+									<td><span class="alfabank"></span>Альфа Банк</td>
+									<td><span class="arrow-bottom"></span>1769.95</td>
+								</tr>
+							</tbody>
+						</table>
+						<div style="height: 0"></div>
+					</div>
+				</div>
+				<div class="item item-get">
+					<div class="item__title">Получить</div>
+					
+					<div class="input-item">
+						<input type="text" name="" placeholder="">
+					</div>				
+					<div class="item__head">
+						<div class="item__head--left">Валюта получения:</div>
+						<div class="item__head--right">Курс:</div>
+					</div>
+					<div class="order-item" style="display: none;">
+						Заказать
+					</div>
+					<div class="item__content scroll-on-click">
+						<table>
+							<!--<thead>
+								<tr>
+									<th>Валюта получения:</th>
+									<th>Резерв:</th>
+								</tr>
+							</thead>-->
+							<tbody>
+								<tr>
+									<td><span class="bitcoin"></span>Bitcoin</td>
+									<td><span class="arrow-top"></span>373952.751</td>
+								</tr>
+								<tr>
+									<td><span class="ethereum"></span>Ethereum</td>
+									<td><span class="arrow-top"></span>21464.3687</td>
+								</tr>
+								<tr>
+									<td><span class="litecoin"></span>Litecoin</td>
+									<td><span class="arrow-top"></span>21464.3687</td>
+								</tr>
+								<tr>
+									<td><span class="dash"></span>Dash</td>
+									<td><span class="arrow-top"></span>21464.3687</td>
+								</tr>
+								<tr>
+									<td><span class="neo"></span>Neo</td>
+									<td><span class="arrow-top"></span>21464.3687</td>
+								</tr>
+								<tr>
+									<td><span class="bcc"></span>BCC</td>
+									<td><span class="arrow-bottom"></span>60.0600601</td>
+								</tr>
+								<tr>
+									<td><span class="sberonline"></span>СберОнлайн</td>
+									<td><span class="arrow-bottom"></span>1769.95</td>
+								</tr>
+								<tr>
+									<td><span class="alfabank"></span>Альфа Банк</td>
+									<td><span class="arrow-bottom"></span>1769.95</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="space" style="height: 0"></div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item__title">Ввод данных</div>
+					<div class="item__content">
+						<div class="exchange-res">
+							<div class="exchange-res__item">
+								<span class="exchange-res__currency exchange-res__currency--btc">Bitcoin</span>
+								<span class="exchange-res__sum">373952.751</span>
+							</div>
+							<div class="exchange-res__item">
+								<span class="exchange-res__currency exchange-res__currency--rub">Рубли</span>
+								<span class="exchange-res__sum">111 736</span>
+							</div>
+						</div>
+
+						<span class="item__content--title">Введите данные для завершения обмена:</span>
+
+						<form action="" method="post">
+							<input class="validation validation--empty" type="text" name="" placeholder="ФИО получателя">
+							<input class="validation validation--empty validation--phone" type="text" name="" placeholder="Номер телефона">
+							<input class="validation validation--empty validation--credit" type="text" name="" placeholder="Номер карты Сбербанка, 16-18 цифр">
+							<input class="validation validation--empty validation--bitcoin" type="text" name="" placeholder="Кошелек Bitcoin">
+							<input type="text" name="" placeholder="Промокод">
+
+							<div class="item__content--messanger">
+								<input type="checkbox" id="checkbox-telegram" />
+								<label for="checkbox-telegram"><span>Telegram</span></label>
+
+								<input type="checkbox" id="checkbox-whatsapp" />
+								<label for="checkbox-whatsapp"><span>Whatsapp</span></label>
+							</div>
+
+							<button type="submit" class="btn btn-bold" id="js-btn-exchange">Обменять</button>
+
+							<div class="item__content--agreement">
+								<input type="checkbox" id="checkbox-agree" />
+								<label for="checkbox-agree"><span>Я согласен с <a href="#">условиями и правилами сервиса</a></span></label>
+							</div>
+						</form>
+					</div>
+
+					<div class="item-thanks">
+						<div class="item__close">
+							<div class="item__close--line"></div>
+							<div class="item__close--line"></div>
+						</div>
+						<div class="item__title">Спасибо</div>
+						<div class="item-thanks__text">
+							<p class="item-thanks__par-1">
+								Номер вашей заявки <span>305</span>. Мы свяжемся с вами в ближайшее время для отправки удобных вам реквизитов на оплату.
+							</p>
+							<p class="item-thanks__par-2">
+								Если вы хотите ускорить процесс, напишите нам в Телеграмм — @bitokk. В сообщении укажите номер заявки и мы исполним ее со скоростью света.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="page registration-page item-center" id="registration-page">
+				<div class="item">
+					<div class="item__title">Регистрация</div>
+					<div class="item__content">
+						<span class="item__content--title">Заполните данные для регистрации:</span>
+
+						<form action="" method="post" class="registration-form">
+							<span class="item__content--title">Адрес электронной почты:</span>
+							<input class="validation validation--empty validation--email" type="text" name="" placeholder="E-mail">
+
+							<span class="item__content--title">Пароль</span>
+							<input class="validation validation--empty" type="text" name="" placeholder="Введите пароль">
+
+							<span class="item__content--title">Пароль</span>
+							<input class="validation validation--empty" type="text" name="" placeholder="Введите пароль">
+
+							<button type="submit" class="btn btn-bold">Зарегистрироваться</button>
+
+							<div class="item__content--agreement">
+								<span>Нажимая кнопку «Обменять», Вы принимаете условия <a href="#">пользовательского соглашения</a></span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="page login-page item-center" id="login-page">
+				<div class="item">
+					<div class="item__title">Вход</div>
+					<div class="item__content">
+						<span class="item__content--title">Заполните данные для входа:</span>
+
+						<form action="" method="post" class="registration-form">
+							<span class="item__content--title">Адрес электронной почты:</span>
+							<input class="validation validation--empty validation--email" type="text" name="" placeholder="E-mail">
+
+							<span class="item__content--title">Пароль</span>
+							<input class="validation validation--empty" type="text" name="" placeholder="Введите пароль">
+
+							<button type="submit" class="btn btn-bold">Войти</button>
+
+							<div class="item__content--agreement">
+								<span>Нажимая кнопку "Войти", Вы принимаете условия <a href="#">пользовательского соглашения</a></span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="page partners-page item-rows" id="partners-page">
+				<div class="page__items js-slider-partners">
+					<div class="item">
+						<div class="item__title">Ваш оборот<br> от 500 000₽ до 2 000 000₽</div>
+						<div class="item__content">
+							<div class="item__content--title">Партнёр 1—й линии совершает обмен<br> на любую сумму:</div>
+
+							<div class="grey-block">0,7% — бонус вам на счёт</div>
+
+							<div class="item__content--title">Партнёр 2—й линии совершает обмен на любую сумму:</div>
+
+							<div class="grey-block">0,1% — бонус вам на счёт</div>
+
+							<div class="item__content--title">Ваша скидка на обмен и единоразовый промокод всем партнёрам 1—й линиии</div>
+
+							<div class="grey-block">0,06%</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__title">Ваш оборот<br> от 2 000 000₽ до 5 000 000₽</div>
+						<div class="item__content">
+							<div class="item__content--title">Партнёр 1—й линии совершает обмен<br> на любую сумму:</div>
+
+							<div class="grey-block">1% — бонус вам на счёт</div>
+
+							<div class="item__content--title">Партнёр 2—й линии совершает обмен на любую сумму:</div>
+
+							<div class="grey-block">0,2% — бонус вам на счёт</div>
+
+							<div class="item__content--title">Ваша скидка на обмен и единоразовый промокод всем партнёрам 1—й линиии</div>
+
+							<div class="grey-block">0,07%</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__title">Ваш оборот<br> от 5 000 000₽ до 10 000 000₽</div>
+						<div class="item__content">
+							<div class="item__content--title">Партнёр 1—й линии совершает обмен<br> на любую сумму:</div>
+
+							<div class="grey-block">1,2% — бонус вам на счёт</div>
+
+							<div class="item__content--title">Партнёр 2—й линии совершает обмен на любую сумму:</div>
+
+							<div class="grey-block">0,2% — бонус вам на счёт</div>
+
+							<div class="item__content--title">Ваша скидка на обмен и единоразовый промокод всем партнёрам 1—й линиии</div>
+
+							<div class="grey-block">0,08%</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__title">Ваш оборот<br> от 10 000 000₽</div>
+						<div class="item__content">
+							<div class="item__content--title">Партнёр 1—й линии совершает обмен<br> на любую сумму:</div>
+
+							<div class="grey-block">1,5% — бонус вам на счёт</div>
+
+							<div class="item__content--title">Партнёр 2—й линии совершает обмен на любую сумму:</div>
+
+							<div class="grey-block">0,2% — бонус вам на счёт</div>
+
+							<div class="item__content--title">Ваша скидка на обмен и единоразовый промокод всем партнёрам 1—й линиии</div>
+
+							<div class="grey-block">0,1%</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__title">Ваш оборот<br> от 0₽ до 500 000₽</div>
+						<div class="item__content">
+							<div class="item__content--title">Партнёр 1—й линии совершает обмен<br> на любую сумму:</div>
+
+							<div class="grey-block">0,5% — бонус вам на счёт</div>
+
+							<div class="item__content--title">Партнёр 2—й линии совершает обмен на любую сумму:</div>
+
+							<div class="grey-block">0,1% — бонус вам на счёт</div>
+
+							<div class="item__content--title">Ваша скидка на обмен и единоразовый промокод всем партнёрам 1—й линиии</div>
+
+							<div class="grey-block">0,05%</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="partners-page__btn">
+					<a href="#" class="btn btn-bold">Стать партнером</a>
+				</div>
+			</div>
+
+			<div class="page conditions-page item-center" id="conditions-page">
+				<div class="item">
+					<div class="item__title">Правила обмена</div>
+					<div class="item__content">
+						<div class="item__content_row">
+							<div class="item__content--text">1. Общие положения</div>
+							<div class="item__content--title">Настоящее соглашение (далее по тексту Соглашение) описывает правила и условия, на основании которых предоставляются услуги обменного сервиса Kassa и является официальной письменной публичной офертой адресованной физическим лицам (далее по тексту - Пользователь), заключить Соглашение о предоставлении услуг сервисом Kassa на изложенных ниже условиях. 
+							<br>Перед тем как воспользоваться услугами сервиса Kassa, Пользователь обязан ознакомиться в полном объеме с условиями «Соглашения о предоставлении услуг сервисом Kassa». 
+							<br>Использование услуг сервиса Kassa возможно только при условии, что Пользователь принимает все условия Соглашения.
+							<br>Действующая версия Соглашения расположена для публичного доступа на интернет-сайте сервиса Bitokk.</div>
+						</div>
+						<div class="item__content_row">
+							<div class="item__content--text">2. Термины и определения, используемые в Соглашении</div>
+							<div class="row">
+								<div class="item__term">Сервис Bitokk (Сервис) </div>
+								<div class="item__definition">— система предоставления интернет-услуг по обмену, продаже и покупке электронных активов.</div>
+							</div>
+							<div class="row">
+								<div class="item__term">Интернет-сайт Сервиса </div>
+								<div class="item__definition">— www.bitokk.com</div>
+							</div>
+							<div class="row">
+								<div class="item__term">Пользователь </div>
+								<div class="item__definition">—  любое физическое или юридическое лицо, использующее услуги Сервиса Kassa и осуществившее акцепт Соглашения в соответствии с его условиями.</div>
+							</div>
+							<div class="row">
+								<div class="item__term">Партнер </div>
+								<div class="item__definition">— лицо, оказывающее Сервису услуги по привлечению Пользователей, условия оказания которых описаны в настоящем Соглашении.</div>
+							</div>
+							<div class="row">
+								<div class="item__term">Платежная система </div>
+								<div class="item__definition">—  программный продукт, созданный третьей стороной, представляющий собой механизм реализации учета денежных (электронные деньги) и/или иных обязательств, оплату товаров и услуг в сети Интернет, а также организацию взаиморасчетов между пользователями.</div>
+							</div>
+							<div class="row">
+								<div class="item__term">Электронный актив </div>
+								<div class="item__definition">— денежное и/или иное обязательство между разработчиком данной электронного актива и ее пользователем, выраженное цифровым способом.</div>
+							</div>
+							<div class="row">
+								<div class="item__term">Платеж/Операция </div>
+								<div class="item__definition">—  перевод электронной и/или иной электронного актива от плательщика к получателю.</div>
+							</div>
+							<div class="row">
+								<div class="item__term">Заявка </div>
+								<div class="item__definition">— выражение намерения Пользователя воспользоваться одной из услуг, предлагаемых Сервисом Bitokk, путем заполнения электронной формы через Интернет-сайт Сервиса, на условиях, описанных в Соглашении и указанных в параметрах этой Заявки.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="page about__service-page item-center" id="about__service-page">
+				<div class="item">
+					<div class="item__title">О сервисе</div>
+					<div class="item__content">
+						<div class="item__content_row">
+							<div class="item__content--title">
+								Сервис Bitorr дает возможность быстрого, безопасного и простого обмена электронных валют и вывода денег на банковские карты.
+								<br>Мы поддерживаем для Вас актуальные и вкусные курсы. Наши дизайнеры разработали удобный адаптивный интерфейс для обмена как на компьютере, так и на любых мобильных устройствах. В рамках сервиса действует партнерская программа и система скидок, воспользовавшись которыми, Вы сможете совершать обмен валют на более выгодных условиях. Выгодные курсы каждый день. Быстрый обмен валюты. Теплое клиентское обслуживание.
+							</div>
+						</div>
+						<div class="item__content_row">
+							<div class="item__content--text">Работаем круглосуточно</div>
+							<div class="item__content--title">Наши операторы обрабатывают заявки в ручном режиме. Время обработки заявок от 5 до 20 минут.</div>
+						</div>
+						<div class="item__content_row">
+							<div class="item__content--text">У нас Вы можете обменять:</div>
+							<div class="item__content--title">Рубли, Bitcoin, Ethereum, Доллары.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="page questions-page" id="questions-page">
+				<div class="item">
+					<div class="item__title">Общие  вопросы</div>
+					<div class="item__content">
+						<ul>
+							<li><a class="questions-page__link active_link" href="#">Как создать заявку?</a></li>
+							<li><a class="questions-page__link" href="#">Как обменять крипту?</a></li>
+							<li><a class="questions-page__link" href="#">А это легально?</a></li>
+							<li><a class="questions-page__link" href="#">Какие монеты я могу обменять?</a></li>
+							<li><a class="questions-page__link" href="#">Какая минимальная и максимальная сумма обмена?</a></li>
+							<li><a class="questions-page__link" href="#">Сколько времени обрабатывается заявка?</a></li>
+							<li><a class="questions-page__link" href="#">Я хочу отменить заявку, что мне надо сделать?</a></li>
+							<li><a class="questions-page__link" href="#">Мне нужно срочно обменять криптовалюту. Это возможно?</a></li>
+							<li><a class="questions-page__link" href="#">Как отследить статус моей заявки?</a></li>
+							<li><a class="questions-page__link" href="#">Что такое верификация карты и зачем она нужна? </a></li>
+							<li><a class="questions-page__link" href="#">Через какие платежные системы и банки вы меняете деньги?</a></li>
+							<li><a class="questions-page__link" href="#">Заявка оплачена. Когда деньги будут на моем счету?</a></li>
+							<li><a class="questions-page__link" href="#">Как установить и скопировать свой кошелек?</a></li>
+							<li><a class="questions-page__link" href="#">Как я могу отследить транзакцию?</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="item item__answers">
+					<div class="item__answers__inner item__answers__active">
+						<div class="item__title">Как создать заявку?</div>
+						<div class="item__content">
+							<div class="item__content--title">Для того, чтобы создать заявку, Вам необходимо следовать дальнейшей инструкции:</div>
+							<div class="item__content--title">1. Выберите направление обмена (пример: в столбце “Отдаю” - Сбербанк, в столбце “Получаю” - Payeer) и укажите сумму, которую Вы хотите обменять или получить. </div>
+							<div class="item__content--title">2. Заполните свои данные в столбце “Ввод данных”, а именно укажите свой e-mail, номер кошелька (карты или счета), с которого хотите перевести деньги, номер кошелька (карты или счета), на который хотите получить деньги и поставьте галочку “Я не робот”.</div>
+							<div class="item__content--title">3. Нажмите кнопку “Обменять сейчас”, после чего во всплывающем окне Вы увидите наши реквизиты для перевода. В случае с банками, при первом обмене система попросит Вас верифицировать карту, с которой Вы хотите перевести. Это требуется лишь единожды, на каждую новую карту.</div>
+							<div class="item__content--title">4. Скопируйте наши реквизиты и нажмите кнопку “Перейти к оплате”, после чего у Вас откроется сайт Банка или ПС. Вставьте сумму, указанную в заявке и наши реквизиты, подтвердите перевод. Обязательно убедитесь в том, что сумма с Вас списалась. </div>
+							<div class="item__content--title">5. Далее вернитесь на наш сайт и подтвердите оплату, нажав на кнопку “Я оплатил”. Готово.</div>
+							<div class="item__content--title">6. После создания заявки Вам на почту придет письмо со статусом вашей заявки, а так же Вы автоматически будете зарегистрированы на нашем сервисе. Для того, чтобы подтвердить регистрацию, Вам необходимо пройти по ссылке, указанной в письме. Подтвердив регистрацию, Вы сможете отслеживать статус заявок в своем ЛК, а так же участвовать в реферальной программе и получать скидки.</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Как обменять крипту?</div>
+						<div class="item__content">
+							<div class="item__content--title">Чтобы обменять валюту, оставьте заявку на главной странице сайта. Чтобы оставить заявку, укажите желаемую сумму и валюту обмена, имя и контакт в Telegram  или Whatsapp и нажмите «отправить заявку». Специалисты свяжутся с вами по указанному контакту.</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">А это легально?</div>
+						<div class="item__content">
+							<div class="item__content--title">Пока в России не разработаны законы, которые бы запрещали использование криптовалюты в различных сделках. Купля и продажа их, соответственно, не является наказуемой и не нарушает Гражданский кодекс. Все наши действия подпадают под ГК и никак не запрещены.</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Какие монеты я могу обменять?</div>
+						<div class="item__content">
+							<div class="item__content--title">На нашем сайте вы можете обменять Bitcoin, Ethereum, Litecoin и другие криптовалюты, которые входят в TOP-10 на рубли или доллары и наоборот.
+							</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Какая минимальная и максимальная сумма обмена?</div>
+						<div class="item__content">
+							<div class="item__content--title">
+								Минимальная сумма обмена — 3000 рублей. Максимального порога обмена валюты не существует. В случае нехватки резервов, оставьте заявку на пополнение и мы совершим сделку на нужную Вам сумму. 
+							</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Сколько времени обрабатывается заявка?</div>
+						<div class="item__content">
+							<div class="item__content--title">
+								Время обработки заявки составляет от 5 до 20 минут после поступлений платежа по заявке и в зависимости от загруженности наших операторов. 
+							</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Я хочу отменить заявку, что мне надо сделать?</div>
+						<div class="item__content">
+							<div class="item__content--title">
+								Если по Вашей заявке не поступит оплата, она будет автоматически отменена через 30 минут. Вы также можете написать оператору о отмене сделки. Выбор за Вами.
+							</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Мне нужно срочно обменять криптовалюту. Это возможно?</div>
+						<div class="item__content">
+							<div class="item__content--title">
+								Да, это возможно. Чтобы ускорить процесс, напишите нам в Телеграм — @bitokk. В сообщении укажите номер заявки и мы исполним ее как можно быстрее. INSTANT
+							</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Как отследить статус моей заявки?</div>
+						<div class="item__content">
+							<div class="item__content--title">
+								Статус заявки Вам лично сообщает наш оператор. Указывать статус в ЛК
+							</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Что такое верификация карты и зачем она нужна? </div>
+						<div class="item__content">
+							<div class="item__content--title">
+								Верификация карты позволяет убедиться, что указанная карта принадлежит владельцу. Это обязательное условие, без которого мы не можем обменять ваши деньги. Чтобы пройти верификацию, сфотографируйте лицевую часть карты на фоне сайта bitokk.com. Это абсолютно безопасно, так как ваш CVV-код остается в тайне.
+							</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Через какие платежные системы и банки вы меняете деньги?</div>
+						<div class="item__content">
+							<div class="item__content--title">
+								<b>Банки:</b> СберБанк / Тинькофф / ВТБ24 / АльфаБанк / Русский Стандрат <br>
+ 								<b>Платежные системы:</b>QIWI / PerfectMoney / Payeer  / Advcash  / Yandex 
+							</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Заявка оплачена. Когда деньги будут на моем счету?</div>
+						<div class="item__content">
+							<div class="item__content--title">
+								Ваш статус заявки Вы можете отследить в личном кабинете. Средние время пополнение bitcoin кошелька составляет от 5 до 50 минут, в зависимости от загруженности сети. 
+							</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Как установить и скопировать свой кошелек?</div>
+						<div class="item__content">
+							<div class="item__content--title">
+								<b>1. Проходите по ссылке <a href="http://www.blockchain.info">www.blockchain.info</a>. Нажимайте Get a free Wallet</b>
+								<img src="img/item__answers/1.jpg" alt=""><br>
+
+								<b>2. Укажите свою почту и создайте пароль.</b>
+								<img src="img/item__answers/2.jpg" alt=""><br>
+
+								<b>3. Пароль генерируйте не менее чем из 12 символов на сайте <br> <a href="http://www.onlinepasswordgenerator.ru">http://www.onlinepasswordgenerator.ru</a></b>
+
+								<img src="img/item__answers/3.jpg" alt=""><br>
+
+								<b>4. Проходите в центр безопасности</b>
+								<img src="img/item__answers/4.jpg" alt=""><br>
+
+								<b>5. Верифицируйте почту</b>
+								<img src="img/item__answers/5.jpg" alt=""><br>
+								<img src="img/item__answers/6.jpg" alt=""><br>
+								<img src="img/item__answers/7.jpg" alt=""><br>
+
+								<b>6. Создайте резервную фразу</b>
+								<img src="img/item__answers/8.jpg" alt=""><br>
+								<img src="img/item__answers/9.jpg" alt=""><br>
+
+								<b>7. Сохраните 12 слов из фразы</b>
+								<img src="img/item__answers/10.jpg" alt=""><br>
+								<img src="img/item__answers/11.jpg" alt=""><br>
+								<img src="img/item__answers/12.jpg" alt=""><br>
+
+								<b>8. Получите Ваш адрес</b>
+								<img src="img/item__answers/13.jpg" alt="">
+								<img src="img/item__answers/14.jpg" alt="">
+
+							</div>
+						</div>
+					</div>
+					<div class="item__answers__inner">
+						<div class="item__title">Как я могу отследить транзакцию?</div>
+						<div class="item__content">
+							<div class="item__content--title">
+								<b>Вы можете отследить транзакции на след. сайтах:</b> <br>
+								<a href="https://blockexplorer.com">https://blockexplorer.com</a><br>
+								<a href="https://www.blockchain.com">https://www.blockchain.com</a><br>
+								<b>В поле указывается номер транзакции. Например Ваш</b>  <br><b>txid:</b>deecb08f391f20fec5c5f264daae781295ef961e224bd7b54de7b508c4c98b9e. <b>Вы копируете и вставляете</b> “deecb08f391f20fec5c5f264daae781295ef961e224bd7b54de7b508c4c98b9e” 
+								<img src="img/item__answers/15.jpg" alt="">
+								<img src="img/item__answers/16.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="page feedback-page item-rows" id="feedback-page">
+				<div class="page__items js-slider-feedback">
+					<div class="item">
+						<div class="item__title">Стас</div>
+						<div class="item__content">
+							<div class="item__content--title">«Хороший обменник. Советую»</div>
+							<div class="feedback__stars">
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__title">Руслан</div>
+						<div class="item__content">
+							<div class="item__content--title">«Самый простой и надёжный сервис который я видел! Ребята действительно дают выгодные курсы!»</div>
+							<div class="feedback__stars">
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__title">Владимир</div>
+						<div class="item__content">
+							<div class="item__content--title">«Все четко, всегда на связи, индивидуальный подход!»</div>
+							<div class="feedback__stars">
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__title">Марина Астролог</div>
+						<div class="item__content">
+							<div class="item__content--title">«Потрясающий обменник! Спасибо огромное программисту за работу! Выдающийся человек! Великолепная работа!»</div>
+							<div class="feedback__stars">
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page__items js-slider-feedback">
+					<div class="item">
+						<div class="item__title">Максим</div>
+						<div class="item__content">
+							<div class="item__content--title">«Ответили оперативно, деньги пришли за 10 минут как и было обещано. Рекомендую.»</div>
+							<div class="feedback__stars">
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__title">Олег</div>
+						<div class="item__content">
+							<div class="item__content--title">«Быстро, удобно, всем советую! Курс лучше чем в других обменниках, порадовало , спасибо»</div>
+							<div class="feedback__stars">
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__title">Руслан</div>
+						<div class="item__content">
+							<div class="item__content--title">«Самый простой и надёжный сервис который я видел! Ребята действительно дают выгодные курсы!»</div>
+							<div class="feedback__stars">
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__title">Владимир</div>
+						<div class="item__content">
+							<div class="item__content--title">«Все четко, всегда на связи, индивидуальный подход!»</div>
+							<div class="feedback__stars">
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars stars__active"></div>
+								<div class="stars"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+	
+			<div class="page contacts-page item-center mob-slider" id="contacts-page">
+				<div class="item">
+					<div class="item__title">Техническая поддержка</div>
+					<div class="item__content">
+						<div class="item__content--title">Если у Вас возникли вопросы технического 
+							<br>или финансового плана, напишите нам 
+							<br>и мы поможем Вам в решении вашего 
+							<br>вопроса. Мы отвечаем на вопросы в течение 
+							<br>15-60 минут, в зависимости от загрузки 
+							<br>сервиса.
+						</div>
+						<div class="item__content--title">Время работы:</div>
+						<div class="grey-block">Круглосуточно</div>
+
+						<div class="item__content--title">Поддержка по почте:</div>
+						<div class="grey-block">support@bitokk.com</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item__title">Получить</div>
+					<div class="item__content">
+						<div class="item__content--title">Если у Вас есть вопросы , напишите нам.</div>
+						
+						<div class="item__content--title">Чат онлайн:</div>
+						<button class="btn btn-bold">Написать оператору</button>
+
+						<div class="item__content--title">Telegram:</div>
+						<div class="grey-block">@Bitokk</div>
+
+						<div class="item__content--title">WhatsApp:</div>
+						<div class="grey-block">+66633091449</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="page reg__aplication-page item-center" id="reg__aplication-page">
+				<div class="item">
+					<div class="item__title">Заявка на пополнение резерва</div>
+					<div class="item__content">
+						<span class="item__content--title">Специально для Вас мы пополним резерв на необходимую сумму в ближайшее время. Наш менеджер с Вами свяжется в ближайшее время.</span>
+
+						<form action="" method="post" class="registration-form">
+							<span class="item__content--title">Адрес электронной почты:</span>
+							<input class="validation validation--empty validation--email" type="text" name="" placeholder="E-mail">
+
+							<span class="item__content--title">Телефон:</span>
+							<input class="validation validation--empty validation--email" type="text" name="" placeholder="Номер телефона">
+
+							<span class="item__content--title">Необходимая сумма резерва:</span>
+							<input class="validation validation--empty validation--number" type="text" name="" placeholder="Введите сумму">
+
+							<button type="submit" class="btn btn-bold">Отправить запрос</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="not-work-page">
+			<div class="not-work-page__inner">
+				<img src="./img/not-work-logo.png" alt="">
+				<img src="./img/not-work.png" alt="">
+				<p>Переверните ваше мобильное устройство,<br> для удобного пользования ресурсом.</p>
+			</div>
+		</div>
+
+		<div class="preloader">
+			<div class="preloader__inner">
+				<div class="preloader__light"></div>
+				<div class="preloader__light"></div>
+				<div class="preloader__light"></div>
+				<div class="preloader__light"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/script.js"></script>
+	
+	<script>
+	  window.intercomSettings = {
+	    app_id: "w0kabd5b"
+	  };
+	</script>
+	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/w0kabd5b';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+
+</body>
+</html>
