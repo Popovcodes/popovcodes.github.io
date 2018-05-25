@@ -638,14 +638,19 @@
 
 }
 
-@media screen and (max-height: 900px) and (min-width: 768px) {
-	.main-page {
-		padding: 40px 20px 40px 360px;
-	}
+@media screen and (min-width: 768px) {
 	.content .page {
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
+}
+
+
+@media screen and (max-height: 900px) and (min-width: 768px) {
+	.main-page {
+		padding: 40px 20px 40px 360px;
+	}
+	
 	.content .aplication-page,
 	.content .programs-page,
 	.content .settings-page,

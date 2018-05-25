@@ -315,6 +315,10 @@ input, button {
 	animation-duration: 1s; 
 	animation-fill-mode: forwards; 
 }
+/*.page.login-page {
+	-ms-align-items: center;
+	align-items: center;
+}*/
 
 @keyframes page-open { 
 	0% { left: -120%; opacity: 0; } 
@@ -369,6 +373,9 @@ input, button {
 	box-shadow: 0 0 3px rgba(165, 179, 187, 1);
 	height: 100%;
 	cursor: pointer;
+}
+.login-page .item {
+	max-height: 768px;
 }
 .item__title {
 	width: 100%;
