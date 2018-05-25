@@ -413,7 +413,28 @@ input, button {
 	position: relative;
 	z-index: 1;
 }
+.support-info {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	align-content: space-between;
+	padding-bottom: 70px !important;
+}
 
+.support-info .item__content--info {
+	width: 100%;
+}
+
+.support-info .item-title {
+	margin-bottom: 10px !important;
+}
 
 .item__content table {
 	width: 100%;
@@ -892,6 +913,7 @@ textarea {
 	padding: 120px 0px 124px 430px;
 }
 .contacts-page .item {
+	max-height: 570px;
 	margin: 0 25px;
 }
 .contacts-page .item .item__content--title {
@@ -910,6 +932,7 @@ textarea {
 	margin: 10px 0 10px 30px;
 }
 .contacts-page button {cursor: pointer;}
+
 
 
 .content .reg__aplication-page {
