@@ -1663,7 +1663,8 @@ sup {
     min-height: 0;
   }
   .slider-arr-cont {
-    bottom: 7px;
+    position: static;
+    text-align: right;
   }
   .js-popular-slider .slick-track,
   .offer-slider-cont .slick-track {
