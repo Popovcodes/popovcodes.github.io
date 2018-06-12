@@ -72,6 +72,7 @@ table {
 /* $lig_col:#fff;*/
 /* ==================== common styles ======================= */
 html {
+  overflow-x: hidden;
   font-size: 10px;
   /*used for rem-units*/
 }
