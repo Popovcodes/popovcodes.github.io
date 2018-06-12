@@ -1,0 +1,294 @@
+/* ==================== Media queries ======================= */
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  html {
+    font-size: 3px; }
+
+  .header-top {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+  .header .logo-cont {
+    margin-bottom: 10px; }
+
+  .header-nav li {
+    margin-right: 10px; }
+
+  .main-img-section .wrapper {
+    position: relative;
+    transform: none;
+    left: 0;
+    width: 100%;
+    max-width: 100%; }
+
+  .action-slider-cont {
+    position: static;
+    max-width: 100%;
+    transform: none;
+    padding: 15px; }
+
+  .action-slide-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px; }
+
+  .action-slide-content {
+    min-height: 0; }
+
+  .slider-arr-cont {
+    bottom: 7px; }
+
+  .js-popular-slider .slick-track,
+  .offer-slider-cont .slick-track {
+    background: #224451; }
+
+  .popular-slide {
+    display: block; }
+
+  .popular-slide img {
+    max-width: 100%; }
+
+  .offer-slide .slide-text,
+  .slide-text {
+    max-width: 100%;
+    width: 100%;
+    padding: 15px; }
+
+  .offer-slide .slide-title,
+  .slide-title {
+    max-width: 100%;
+    font-size: 24px; }
+
+  .popular-slide .transparent-button {
+    margin-left: 6px; }
+
+  .popular-slider-cont .slick-dots,
+  .offer-slider-cont .slick-dots {
+    bottom: auto;
+    top: 102%;
+    left: 0;
+    transform: none; }
+
+  .offer-slide {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .offer-slide .slide-text {
+      order: 2; }
+    .offer-slide .slide-type {
+      margin-bottom: 32px; }
+    .offer-slide .slide-title {
+      margin-bottom: 7px; }
+
+  .news-item {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+  .news-prev {
+    max-width: 100%; }
+
+  .news-content {
+    max-width: 100%;
+    padding: 10px 0; } }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  h2 {
+    font-size: 36px !important;
+    margin-bottom: 20px !important; }
+
+  h3 {
+    font-size: 30px !important; }
+
+  .header-nav {
+    display: none; }
+
+  .btn-menu {
+    display: block; }
+
+  .fav-container {
+    left: 0;
+    right: auto; }
+
+  .catalog-section .wrapper {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+  .aside-filters {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    flex-basis: 100%;
+    padding: 15px;
+    margin: 0; }
+    .aside-filters > div {
+      text-align: center;
+      margin-bottom: 10px; }
+
+  .aside-filters h2 {
+    text-align: center; }
+
+  .pagin-cont {
+    -ms-align-items: flex-start;
+    align-items: flex-start; }
+
+  .about-section h2 {
+    margin-left: 0; }
+
+  .about-content {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+  .about-img-cont img {
+    max-width: 100%; }
+
+  .about-text {
+    padding-top: 15px;
+    padding-right: 0; }
+
+  .offer-slide .about-text {
+    order: 2; }
+  .offer-slide img {
+    margin-bottom: 10px; }
+
+  .offer-img-1 {
+    margin-right: 0; }
+
+  /**/
+  .footer-contacts-cont {
+    flex-basis: 100%;
+    min-width: 100%;
+    padding-left: 0; }
+
+  .footer-contacts-cont:before {
+    display: none; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .header-links {
+    white-space: normal;
+    padding-left: 0; }
+
+  .header-links:before {
+    display: none; }
+
+  .header-links .button {
+    display: block;
+    margin: 10px 0; }
+
+  .slide-imgs {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+  /**/
+  .footer-nav-cont {
+    flex-basis: 100%;
+    min-width: 100%; }
+    .footer-nav-cont ul {
+      padding-left: 0; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 30px !important; }
+
+  h3 {
+    font-size: 24px !important; }
+
+  /**/
+  .logo-cont img {
+    margin-right: 15px; }
+
+  .logo-text {
+    min-width: 147px; }
+
+  .logo-text p {
+    font-size: 15px; } }
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .popular-offers-section:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 55.5%;
+    width: 100vw;
+    background: #f8f8f8;
+    z-index: -1; }
+
+  .about-section .wrapper:after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 315px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    background: #f8f8f8;
+    z-index: -1; }
+
+  .about-img-cont:after {
+    content: "";
+    display: block;
+    width: 575px;
+    height: 390px;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    background: #f8f8f8;
+    z-index: -1; }
+
+  .offers-section:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 58%;
+    width: 100vw;
+    background: #f8f8f8;
+    z-index: -1; }
+
+  .news-section .wrapper:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    right: 30%;
+    background: #f8f8f8;
+    z-index: -1; } }
+
+/*# sourceMappingURL=_media.css.map */
