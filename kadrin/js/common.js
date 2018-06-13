@@ -18,6 +18,15 @@ $(document).ready(function(){
     $(this).html(str.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
   });
 
+  //decoration of current link in navigation
+    $('nav a').each(function(){
+      var location = window.location.href;
+      var link = this.href
+      if(location == link) {
+        $(this).addClass('active');
+      }
+    });
+
 
   //main page slider
 /*  $('.js-index-slider').bxSlider({
@@ -95,14 +104,7 @@ $(document).ready(function(){
   //   $('.overlay, .callback_modal, .appointment_modal').fadeOut(200);
   // });
 
-  //decoration of current link in navigation
-    $('nav a').each(function(){
-      var location = window.location.href;
-      var link = this.href
-      if(location == link) {
-        $(this).addClass('active');
-      }
-    });
+
 
   if(document.documentElement.clientWidth > 768) {
     // wow.js animation  http://mynameismatthieu.com/WOW/

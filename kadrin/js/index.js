@@ -42,10 +42,4 @@ $(document).ready(function(){
     appendDots:$('.offer-slider-cont')
   });
 
-
-    
-    
-
-
-
 });

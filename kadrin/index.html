@@ -30,7 +30,7 @@
                 <div class="header-links">
                     <span>Москва: <a href="tel:+84953631722">8 (495) 363-17-22</a></span>
                     <span>Бийск: <a href="tel:+83852584548">8 (3852) 58-45-48</a></span>
-                    <a href="javascript:void(0);" id="order-call" class="button button-dark">Заказать звонок</a>
+                    <a href="#" id="order-call" class="button button-dark">Заказать звонок</a>
                 </div><!-- /.header-links -->
             </div><!-- /.header-top -->
             <div class="header-bottom">
@@ -46,7 +46,7 @@
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
-                <a href="javascript:void(0);" id="fav-btn" class="fav-btn">Мои избранные</a>
+                <a href="#" id="fav-btn" class="fav-btn">Мои избранные</a>
             </div><!-- /.header-bottom -->
             <div id="fav-container" class="fav-container">
                 <ul class="fav-list">
@@ -56,7 +56,7 @@
                         </div>
                         <div class="fav-content">
                             <p>Дом из клееного бруса К-93-1</p>
-                            <a href="javascript:void(0);" class="button-sm">К проекту</a>
+                            <a href="#" class="button-sm">К проекту</a>
                         </div>
                     </li>
                     <li class="fav-item">
@@ -65,7 +65,7 @@
                         </div>
                         <div class="fav-content">
                             <p>Дом  К-93-1</p>
-                            <a href="javascript:void(0);" class="button-sm">К проекту</a>
+                            <a href="#" class="button-sm">К проекту</a>
                         </div>
                     </li>
                     <li class="fav-item">
@@ -74,7 +74,7 @@
                         </div>
                         <div class="fav-content">
                             <p>Дом из клееного бруса К-93-1 текст текст текст текст  текст текст </p>
-                            <a href="javascript:void(0);" class="button-sm">К проекту</a>
+                            <a href="#" class="button-sm">К проекту</a>
                         </div>
                     </li>
                 </ul>
@@ -82,7 +82,6 @@
         </div><!-- /.wrapper -->
     </header>
 
-        
     <!-- =========================== mobile nav =========================== -->
     <div class="btn-menu"><span></span></div>
 
@@ -100,7 +99,7 @@
                             <h2>Название акции либо сезонного предложения</h2>
                             <p>Здесь работали Карл Маркс и Владимир Ленин, но небольшой парк с дикими животными к юго-западу от Манамы притягивает городской кедровый стланик. Поророка начинает коралловый риф.</p>
                         </div>
-                        <a href="javascript:void(0);" class="lighter-button">Заказать</a>
+                        <a href="#" class="lighter-button">Заказать</a>
                     </div>
                 </div>
 
@@ -110,7 +109,7 @@
                              <h2>Другая акция либо сезонное предложение</h2>
                              <p>Дикими животными к юго-западу от Манамы притягивает городской кедровый стланик. Поророка начинает коралловый риф.</p>
                          </div>
-                         <a href="javascript:void(0);" class="lighter-button">Заказать</a>
+                         <a href="#" class="lighter-button">Заказать</a>
                      </div>
                  </div>
 
@@ -120,7 +119,7 @@
                              <h2>Lorem ipsum dolor</h2>
                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ea vitae deserunt minus animi aliquam magnam fugiat eius perspiciatis distinctio!</p>
                          </div>
-                         <a href="javascript:void(0);" class="lighter-button">Заказать</a>
+                         <a href="#" class="lighter-button">Заказать</a>
                      </div>
                  </div>
 
@@ -136,38 +135,41 @@
     </section><!-- /.main-img-section -->
     
     <!-- =========================== catalog section =========================== -->
-    <section class="catalog-section">
-        <div class="wrapper">
-
-            <div class="aside-filters">
-                <h2>Проекты домов</h2>
-                <div class="check-cont">
-                    <form action="" class="filter-form" name="filter-form">
-                        <p>Площадь:</p>
-                        <input type="checkbox" name="square" id="square-1" checked>
-                        <label for="square-1">до 100 м<sup>2</sup></label>
-                        <input type="checkbox" name="square" id="square-2">
-                        <label for="square-2">100 - 200 м<sup>2</sup></label>
-                        <input type="checkbox" name="square" id="square-3">
-                        <label for="square-3">200 - 300 м<sup>2</sup></label>
-                        <input type="checkbox" name="square" id="square-4">
-                        <label for="square-4">от 300 м<sup>2</sup></label>
-                        <input type="submit" class="hidden">
-                    </form>
-                </div>
-                <div class="catalog-link-cont">
-                    <p>Перейти в главный каталог</p>
-                    <a href="catalog.html" class="button">Весь каталог</a>
-                </div>
-                <div class="pagin-cont">
-                    <span id="page-prev" class="pagin-arr pagin-arr-l"></span>
-                    <span class="pagin-counter">
-                        <span id="page-current" class="page-current">01</span>
-                        <span id="page-total" class="page-total">/ 11</span>
-                    </span>
-                    <span id="page-next" class="pagin-arr pagin-arr-r"></span>
-                </div>
-            </div><!-- /.aside-filters -->
+    <section class="catalog-section index-catalog-section">
+        <div class="wrapper wide">
+            <div class="aside">
+                <div class="aside-filters">
+                    <h2>Проекты домов</h2>
+                    <div class="check-cont">
+                        <form action="" class="filter-form" name="filter-form">
+                            <div class="filter-block">
+                                <p>Площадь:</p>
+                                <input type="checkbox" name="square" id="square-1" checked>
+                                <label for="square-1">до 100 м<sup>2</sup></label>
+                                <input type="checkbox" name="square" id="square-2">
+                                <label for="square-2">100 - 200 м<sup>2</sup></label>
+                                <input type="checkbox" name="square" id="square-3">
+                                <label for="square-3">200 - 300 м<sup>2</sup></label>
+                                <input type="checkbox" name="square" id="square-4">
+                                <label for="square-4">от 300 м<sup>2</sup></label>
+                            </div>
+                            <input type="submit" class="hidden">
+                        </form>
+                    </div>
+                    <div class="catalog-link-cont">
+                        <p>Перейти в главный каталог</p>
+                        <a href="catalog.html" class="button">Весь каталог</a>
+                    </div>
+                    <div class="pagin-cont">
+                        <span id="page-prev" class="pagin-arr pagin-arr-l"></span>
+                        <span class="pagin-counter">
+                            <span id="page-current" class="page-current">01</span>
+                            <span id="page-total" class="page-total">/ 11</span>
+                        </span>
+                        <span id="page-next" class="pagin-arr pagin-arr-r"></span>
+                    </div>
+                </div><!-- /.aside-filters -->
+            </div><!-- /.aside -->
 
             <div class="catalog-items-cont">
 
@@ -183,8 +185,8 @@
                         <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
                         <p class="param storey">Этажей: <span>1</span></p>
                         <p class="item-price"><span class="price">1346800</span> руб.</p>
-                        <a href="javascript:void(0);" class="detail-button">Подробнее</a>
-                        <a href="javascript:void(0);" class="to-fav-button">В избранное</a>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
                     </div>
                 </div><!-- /.catalog-item -->
 
@@ -202,8 +204,8 @@
                         <p class="param storey">Этажей: <span>1</span></p>
                         <p class="item-price discounted"><span class="price">1427400</span> руб.</p>
                         <span class="discount">-20%</span>
-                        <a href="javascript:void(0);" class="detail-button">Подробнее</a>
-                        <a href="javascript:void(0);" class="to-fav-button">В избранное</a>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
                     </div>
                 </div><!-- /.catalog-item -->
 
@@ -219,8 +221,8 @@
                         <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
                         <p class="param storey">Этажей: <span>1</span></p>
                         <p class="item-price"><span class="price">1346800</span> руб.</p>
-                        <a href="javascript:void(0);" class="detail-button">Подробнее</a>
-                        <a href="javascript:void(0);" class="to-fav-button">В избранное</a>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
                     </div>
                 </div><!-- /.catalog-item -->
 
@@ -236,8 +238,8 @@
                         <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
                         <p class="param storey">Этажей: <span>1</span></p>
                         <p class="item-price"><span class="price">1346800</span> руб.</p>
-                        <a href="javascript:void(0);" class="detail-button">Подробнее</a>
-                        <a href="javascript:void(0);" class="to-fav-button">В избранное</a>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
                     </div>
                 </div><!-- /.catalog-item -->
 
@@ -253,8 +255,8 @@
                         <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
                         <p class="param storey">Этажей: <span>1</span></p>
                         <p class="item-price"><span class="price">1346800</span> руб.</p>
-                        <a href="javascript:void(0);" class="detail-button">Подробнее</a>
-                        <a href="javascript:void(0);" class="to-fav-button">В избранное</a>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
                     </div>
                 </div><!-- /.catalog-item -->
 
@@ -272,7 +274,7 @@
                         <p class="param storey">Этажей: <span>1</span></p>
                         <p class="item-price discounted"><span class="price">1427400</span> руб.</p>
                         <span class="discount">-20%</span>
-                        <a href="javascript:void(0);" class="detail-button">Подробнее</a>
+                        <a href="#" class="detail-button">Подробнее</a>
                         <a href="javascript:void(0);" class="to-fav-button">В избранное</a>
                     </div>
                 </div><!-- /.catalog-item -->
@@ -282,7 +284,6 @@
         </div><!-- /.wrapper -->
     </section><!-- /.catalog-section -->
 
-        
     <!-- =========================== popular offers slider section =========================== -->
     <section class="popular-offers-section">
         <div class="wrapper">
@@ -301,7 +302,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -320,7 +321,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -339,7 +340,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -358,7 +359,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -377,7 +378,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -396,7 +397,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -415,7 +416,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -434,7 +435,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -453,7 +454,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -472,7 +473,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -491,7 +492,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -510,7 +511,7 @@
                                     <p class="param storey">Этажность: <span>2 этажа</span></p>
                                 </div>
                                 <div class="popular-slide-buttons">
-                                    <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                                    <a href="#" class="lighter-button">Подробнее</a>
                                     <a href="catalog.html" class="transparent-button">Каталог</a>
                                 </div>
                             </div>
@@ -542,13 +543,10 @@
                 <div class="about-img-cont">
                     <img src="img/common/about-i.jpg" alt="">
                 </div>
-                
-
             </div>
         </div><!-- /.wrapper -->
     </section><!-- /.about-section -->
 
-        
     <!-- =========================== offer slide section =========================== -->
     <section class="offers-section">
         <div class="wrapper">
@@ -557,6 +555,14 @@
 
                     <div>
                         <div class="offer-slide">
+                            <div class="slide-imgs">
+                                <div>
+                                    <img src="img/offerSlider/offer-slide.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/offerSlider/offer-slide-sm.jpg" alt="">
+                                </div>
+                            </div>
                             <div class="slide-text">
                                 <div>
                                     <p class="slide-type">Деревянные окна</p>
@@ -564,69 +570,77 @@
                                     <p class="slide-description">Небольшой парк с дикими животными к юго-западу от Манамы притягивает городской кедровый стланик. Поророка начинает коралловый риф.</p>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0);" class="transparent-button">Подробнее</a>
+                                    <a href="#" class="transparent-button">Подробнее</a>
                                 </div>
-                            </div>
-                            <div class="slide-imgs">
-                                <img src="img/offerSlider/offer-slide-1.jpg" alt="" class="offer-img-1">
-                                <img src="img/offerSlider/offer-slide-sm-1.jpg" alt="" class="offer-img-2">
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div class="offer-slide">
+                            <div class="slide-imgs">
+                                <div>
+                                    <img src="img/offerSlider/offer-slide.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/offerSlider/offer-slide-sm.jpg" alt="">
+                                </div>
+                            </div>
                             <div class="slide-text">
                                 <div>
                                     <p class="slide-type">Деревянные окна</p>
-                                    <p class="slide-title">Предложение по окнам или другое</p>
-                                    <p class="slide-description">Небольшой парк с дикими животными к юго-западу от Манамы притягивает городской кедровый стланик. Поророка начинает коралловый риф.</p>
+                                    <p class="slide-title">Lorem ipsum dolor sit amet.</p>
+                                    <p class="slide-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla eaque ratione, hic quaerat ipsa! Commodi utquos distinctio esse aspernatur ipsum necessitatibus eius voluptate et! Nisi.</p>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0);" class="transparent-button">Подробнее</a>
+                                    <a href="#" class="transparent-button">Подробнее</a>
                                 </div>
-                            </div>
-                            <div class="slide-imgs">
-                                <img src="img/offerSlider/offer-slide-1.jpg" alt="" class="offer-img-1">
-                                <img src="img/offerSlider/offer-slide-sm-1.jpg" alt="" class="offer-img-2">
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div class="offer-slide">
+                            <div class="slide-imgs">
+                                <div>
+                                    <img src="img/offerSlider/offer-slide.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/offerSlider/offer-slide-sm.jpg" alt="">
+                                </div>
+                            </div>
                             <div class="slide-text">
                                 <div>
                                     <p class="slide-type">Деревянные окна</p>
-                                    <p class="slide-title">Предложение по окнам или другое</p>
-                                    <p class="slide-description">Небольшой парк с дикими животными к юго-западу от Манамы притягивает городской кедровый стланик. Поророка начинает коралловый риф.</p>
+                                    <p class="slide-title">Lorem ipsum dolor sit amet. Commodi, repudiandae?</p>
+                                    <p class="slide-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt optio error, dolor dignissimos, ab facere Veniam iusto, corrupti culpa nihil.</p>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0);" class="transparent-button">Подробнее</a>
+                                    <a href="#" class="transparent-button">Подробнее</a>
                                 </div>
-                            </div>
-                            <div class="slide-imgs">
-                                <img src="img/offerSlider/offer-slide-1.jpg" alt="" class="offer-img-1">
-                                <img src="img/offerSlider/offer-slide-sm-1.jpg" alt="" class="offer-img-2">
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div class="offer-slide">
+                            <div class="slide-imgs">
+                                <div>
+                                    <img src="img/offerSlider/offer-slide.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/offerSlider/offer-slide-sm.jpg" alt="">
+                                </div>
+                            </div>
                             <div class="slide-text">
                                 <div>
                                     <p class="slide-type">Деревянные окна</p>
-                                    <p class="slide-title">Предложение по окнам или другое</p>
-                                    <p class="slide-description">Небольшой парк с дикими животными к юго-западу от Манамы притягивает городской кедровый стланик. Поророка начинает коралловый риф.</p>
+                                    <p class="slide-title">Lorem ipsum Porro quod, eaque corporis.</p>
+                                    <p class="slide-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0);" class="transparent-button">Подробнее</a>
+                                    <a href="#" class="transparent-button">Подробнее</a>
                                 </div>
-                            </div>
-                            <div class="slide-imgs">
-                                <img src="img/offerSlider/offer-slide-1.jpg" alt="" class="offer-img-1">
-                                <img src="img/offerSlider/offer-slide-sm-1.jpg" alt="" class="offer-img-2">
                             </div>
                         </div>
                     </div>
@@ -636,7 +650,6 @@
         </div><!-- /.wrapper -->
     </section><!-- /.offers-section -->
 
-        
     <!-- =========================== news section =========================== -->
     <section class="news-section">
         <div class="wrapper">
@@ -713,7 +726,7 @@
             <div class="footer-contacts-cont">
                 <span>Москва: <a href="tel:+84953631722">8 (495) 363-17-22</a></span>
                 <span>Бийск: <a href="tel:+83852584548">8 (3852) 58-45-48</a></span>
-                <a href="contacts.html" id="order-call" class="lighter-button">Контакты</a>
+                <a href="contacts.html" class="lighter-button">Контакты</a>
             </div>
             <div class="footer-copy-cont">
                 <p>ООО "Кадрин Строй Комплект"<wbr>&copy;Все&nbsp;права&nbsp;защищены.</p>

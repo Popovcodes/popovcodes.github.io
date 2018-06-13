@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="img/favicon/16.ico">
+    <link rel="apple-touch-icon" href="img/favicon/57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="libs/selecter/jquery.fs.selecter.css">
+    <title>Каталог</title>
+  </head>
+  <body>
+
+    <!-- =========================== header =========================== -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-top">
+                <div class="logo-cont">
+                    <img src="img/common/logo-dark.png" alt="">
+                    <div class="logo-text">
+                        <p>Дома из клееного бруса</p>
+                        <p>Деревянные окна</p>
+                    </div><!-- /.logo-text -->
+                </div><!-- /.logo-cont -->
+                <div class="header-links">
+                    <span>Москва: <a href="tel:+84953631722">8 (495) 363-17-22</a></span>
+                    <span>Бийск: <a href="tel:+83852584548">8 (3852) 58-45-48</a></span>
+                    <a href="#" id="order-call" class="button button-dark">Заказать звонок</a>
+                </div><!-- /.header-links -->
+            </div><!-- /.header-top -->
+            <div class="header-bottom">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="houses.html">Дома</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="production.html">Производство</a></li>
+                        <li><a href="prices.index.html">Цены</a></li>
+                        <li><a href="info.html">Полезная информация</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="#" id="fav-btn" class="fav-btn">Мои избранные</a>
+            </div><!-- /.header-bottom -->
+            <div id="fav-container" class="fav-container">
+                <ul class="fav-list">
+                    <li class="fav-item">
+                        <div>
+                            <img src="img/favThumbs/fav-i.jpg" alt="">
+                        </div>
+                        <div class="fav-content">
+                            <p>Дом из клееного бруса К-93-1</p>
+                            <a href="#" class="button-sm">К проекту</a>
+                        </div>
+                    </li>
+                    <li class="fav-item">
+                        <div>
+                            <img src="img/favThumbs/fav-i.jpg" alt="">
+                        </div>
+                        <div class="fav-content">
+                            <p>Дом  К-93-1</p>
+                            <a href="#" class="button-sm">К проекту</a>
+                        </div>
+                    </li>
+                    <li class="fav-item">
+                        <div>
+                            <img src="img/favThumbs/fav-i.jpg" alt="">
+                        </div>
+                        <div class="fav-content">
+                            <p>Дом из клееного бруса К-93-1 текст текст текст текст  текст текст </p>
+                            <a href="#" class="button-sm">К проекту</a>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- /.fav-container -->
+        </div><!-- /.wrapper -->
+    </header>
+
+    <!-- =========================== mobile nav =========================== -->
+    <div class="btn-menu"><span></span></div>
+
+        
+    <!-- =========================== link-path =========================== -->
+    <section class="path-section">
+        <div class="wrapper wide gray">
+            <div class="path-cont">
+                <span>Главная</span>
+                <span>Дома</span>
+                <span>Проекты домов</span>
+            </div>
+            <div class="sort-select-container">
+                <span>Сортировать:</span>
+                <div class="select-wrapper">
+                    <form action="" name="">
+                        <select name="sort-select" id="sort-select">
+                            <option value="price-ascend"  selected>Цена по возрастанию</option>
+                            <option value="price-descend">Цена по убыванию</option>
+                            <option value="new">Сначала новые</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div><!-- /.wrapper -->
+    </section><!-- /.path-section -->
+    
+    
+    <!-- =========================== catalog section =========================== -->
+    <section class="catalog-section">
+        <div class="wrapper wide">
+            <div class="aside">
+                <div class="aside-filters">
+                    <h2>Проекты домов</h2>
+                    <div class="check-cont">
+                        <form action="" class="filter-form" name="filter-form">
+                            <div class="filter-block">
+                                <p>Тип строения:</p>
+                                <input type="checkbox" name="type" id="type-1" checked>
+                                <label for="type-1">Дом</label>
+                                <input type="checkbox" name="type" id="type-2">
+                                <label for="type-2">Баня</label>
+                            </div>
+                            <div class="filter-block">
+                                <p>Площадь:</p>
+                                <input type="checkbox" name="square" id="square-1" checked>
+                                <label for="square-1">до 100 м<sup>2</sup></label>
+                                <input type="checkbox" name="square" id="square-2">
+                                <label for="square-2">100 - 200 м<sup>2</sup></label>
+                                <input type="checkbox" name="square" id="square-3">
+                                <label for="square-3">200 - 300 м<sup>2</sup></label>
+                                <input type="checkbox" name="square" id="square-4">
+                                <label for="square-4">от 300 м<sup>2</sup></label>
+                            </div>
+                            <div class="filter-block">
+                                <p>Этажность:</p>
+                                <input type="checkbox" name="storey" id="storey-1" checked>
+                                <label for="storey-1">1 этаж</label>
+                                <input type="checkbox" name="storey" id="storey-2">
+                                <label for="storey-2">2 этажа</label>
+                                <input type="checkbox" name="storey" id="storey-3">
+                                <label for="storey-3">1 этаж + мансарда</label>
+                            </div>
+                            <input type="submit" class="hidden">
+                        </form>
+                    </div>
+                </div><!-- /.aside-filters -->
+
+                <div class="aside-banner">
+                    <img src="img/asideBannerImgs/banner-i-sm.jpg" alt="">
+                    <div class="aside-banner-text">
+                        <div>
+                            <h3>Деревянные окна</h3>
+                        </div>
+                        <a href="javascript:void(0);" class="lighter-button">Подробнее</a>
+                    </div>
+                </div><!-- /.aside-banner -->
+
+            </div><!-- /.aside -->
+
+            <div class="catalog-items-cont">
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i1.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Дом из клееного бруса К-93-1</p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Дом из клееного бруса К-93-1</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i2.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Частный дом из клееного бруса К-163-1</p>
+                        <p class="item-price discounted"><span class="price">1427400</span> руб.</p>
+                        <span class="discount">-20%</span>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Частный дом из клееного бруса К-163-1</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price discounted"><span class="price">1427400</span> руб.</p>
+                        <span class="discount">-20%</span>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i3.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Дом К-93-1</p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Дом К-93-1</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i4.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Комплект дома из клееного бруса К-162-3</p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Комплект дома из клееного бруса К-162-3</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i5.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Дом из клееного бруса К-93-1</p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Дом из клееного бруса К-93-1</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i6.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Частный дом из клееного бруса К-163-1</p>
+                        <p class="item-price discounted"><span class="price">1427400</span> руб.</p>
+                        <span class="discount">-20%</span>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Частный дом из клееного бруса К-163-1</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price discounted"><span class="price">1427400</span> руб.</p>
+                        <span class="discount">-20%</span>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="javascript:void(0);" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i1.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Дом из клееного бруса К-93-1</p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Дом из клееного бруса К-93-1</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i2.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Частный дом из клееного бруса К-163-1</p>
+                        <p class="item-price discounted"><span class="price">1427400</span> руб.</p>
+                        <span class="discount">-20%</span>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Частный дом из клееного бруса К-163-1</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price discounted"><span class="price">1427400</span> руб.</p>
+                        <span class="discount">-20%</span>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i3.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Дом К-93-1</p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Дом К-93-1</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i4.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Комплект дома из клееного бруса К-162-3</p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Комплект дома из клееного бруса К-162-3</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i6.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Частный дом из клееного бруса К-163-1</p>
+                        <p class="item-price discounted"><span class="price">1427400</span> руб.</p>
+                        <span class="discount">-20%</span>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Частный дом из клееного бруса К-163-1</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price discounted"><span class="price">1427400</span> руб.</p>
+                        <span class="discount">-20%</span>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="javascript:void(0);" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i3.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Дом К-93-1</p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Дом К-93-1</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i4.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Комплект дома из клееного бруса К-162-3</p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Комплект дома из клееного бруса К-162-3</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="catalog-item">
+                    <img src="img/catalogPrev/i5.jpg" alt="">
+                    <div class="item-text-cont">
+                        <p class="item-name">Дом из клееного бруса К-93-1</p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                    </div>
+                    <div class="item-details">
+                        <p class="item-type">Дома</p>
+                        <p class="item-name">Дом из клееного бруса К-93-1</p>
+                        <p class="param">Площадь: <span>93 м<sup>2</sup></span></p>
+                        <p class="param storey">Этажей: <span>1</span></p>
+                        <p class="item-price"><span class="price">1346800</span> руб.</p>
+                        <a href="#" class="detail-button">Подробнее</a>
+                        <a href="#" class="to-fav-button">В избранное</a>
+                    </div>
+                </div><!-- /.catalog-item -->
+
+                <div class="button-container">
+                    <a href="javascript:void(0);" class="button">Загрузить еще</a>
+                </div>
+            </div><!-- /.catalog-items-cont -->
+
+        </div><!-- /.wrapper -->
+    </section><!-- /.catalog-section -->
+
+    <!-- =========================== footer =========================== -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-logo-cont">
+                <div class="logo-cont">
+                    <img src="img/common/logo-light.png" alt="">
+                    <div class="logo-text">
+                        <p>Дома из клееного бруса</p>
+                        <p>Деревянные окна</p>
+                    </div><!-- /.logo-text -->
+                </div><!-- /.logo-cont -->
+                <p class="footer-parag">Производство и строительство домов из клееного бруса, а также производство деревянных окон.</p>
+            </div>
+            <div class="footer-nav-cont">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="houses.html">Дома</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="production.html">Производство</a></li>
+                        <li><a href="prices.html">Цены</a></li>
+                        <li><a href="info.html">Полезная информация</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="vacancies.html">Вакансии</a></li>
+                        <li><a href="sertificates.html">Сертификаты</a></li>
+                        <li><a href="supliers.html">Поставщикам</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-contacts-cont">
+                <span>Москва: <a href="tel:+84953631722">8 (495) 363-17-22</a></span>
+                <span>Бийск: <a href="tel:+83852584548">8 (3852) 58-45-48</a></span>
+                <a href="contacts.html" class="lighter-button">Контакты</a>
+            </div>
+            <div class="footer-copy-cont">
+                <p>ООО "Кадрин Строй Комплект"<wbr>&copy;Все&nbsp;права&nbsp;защищены.</p>
+            </div>
+        </div><!-- /.wrapper -->
+    </footer>
+    
+    <div id="overlay-transparent" class="overlay transparent hidden"></div>
+
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/selecter/jquery.fs.selecter.min.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/common.js"></script>
+
+  </body>
+</html>
