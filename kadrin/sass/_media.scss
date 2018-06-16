@@ -9,6 +9,9 @@
   .catalog-items-cont {
     justify-content: space-around;
   }
+  .top-back {
+    padding-left: 0;
+  }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
@@ -54,7 +57,8 @@
     text-align: right;
   }
   .js-popular-slider .slick-track,
-  .offer-slider-cont .slick-track {
+  .offer-slider-cont .slick-track,
+  .popular-slide {
     background: #224451;
   }
   .popular-slide {
@@ -73,7 +77,7 @@
   .offer-slide .slide-title,
   .slide-title {
     max-width: 100%;
-    font-size: 24px;
+    font-size: 24px !important;
   }
   .popular-slide .transparent-button {
     margin-left: 6px;
@@ -115,6 +119,45 @@
   .news-content {
     max-width: 100%;
     padding: 10px 0;
+  }
+  .main-char-cont {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .product-parameters {
+    order: 2;
+    max-width: 100%;
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  .product-slider-cont {
+    max-width: 100%;
+    flex-basis: 100%
+  }
+  .param-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    td {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  .to-fav-cont {
+    padding-left: 0;
+  }
+  .scheme-section .wrapper {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .form-buttons-block > div {
+    flex-basis: 100%;
   }
 }
 /* Medium Devices, Desktops */
@@ -210,7 +253,8 @@
   .about-section h2 {
     margin-left: 0;
   }
-  .about-content {
+  .about-content,
+  .features-section .wrapper {
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -220,7 +264,8 @@
   .about-img-cont img {
     max-width: 100%;
   }
-  .about-text {
+  .about-text,
+  .project-descr {
     max-width: 100%;
     padding-top: 15px;
     padding-right: 0;
@@ -230,6 +275,19 @@
       margin-right: 0;
       margin-bottom: 10px;
     }
+  }
+
+  .project-descr,
+  .project-scheme {
+    flex-basis: 100%;
+    padding-top: 20px;
+    
+  }
+  .project-scheme {
+    padding-left: 0;
+  }
+  .features-slider-cont {
+    padding-top: 40px;
   }
   /**/
   .footer-contacts-cont {
@@ -284,6 +342,15 @@
   .index-catalog-section .filter-block {
     width: auto;
   }
+  .form-buttons-block {
+    a,
+    span {
+      display: block;
+    }
+  }
+  .features-slider-cont {
+    max-width: 100%;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -323,7 +390,8 @@
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-  .popular-offers-section {
+  .popular-offers-section,
+  .product-offer-section  {
     &:after {
       content: "";
       display: block;
@@ -379,6 +447,41 @@
     right: 30%;
     background: #f8f8f8;
     z-index: -1;
+  }
+  .scheme-section .wrapper:before,
+  .features-section .wrapper:before {
+    content: "";
+    display: block;
+    position: absolute;
+   
+    width: 243px;
+    height: 288px;
+    background-image: url(../img/common/wood-pattern.jpg);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .scheme-section .wrapper:before {
+    top: 70px;
+    left: -20px;
+  }
+  .features-section .wrapper:before  {
+    top: -30px;
+    left: -40px;
+
+    outline: 1px solid lime;
+  }
+  .features-slider-cont {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -30px;
+      right: -85px;
+      width: 570px;
+      height: 390px;
+      background: #f8f8f8;
+      z-index: -1;
+    }
   }
   .slide-imgs {
     &:hover,
