@@ -1,7 +1,35 @@
 
 /* ==================== css-animations ======================= */
 
-// @keyframes name {
-// 	0% {left: -25%;}
-// 	100% {left: 115%;}
-// }
+@keyframes stages1 {
+	0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+	100% {
+    width: 100%;
+  }
+}
+
+.viewport-dark {
+  max-width: calc(100% - 25px);
+  animation: stages1 14s linear infinite;
+  .decor-line {
+    background: $color1;
+    z-index: -1;
+  }
+}
+
+@keyframes stages2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

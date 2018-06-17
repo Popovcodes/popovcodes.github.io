@@ -1,0 +1,17 @@
+/* ==================== css-animations ======================= */
+@keyframes stages1 {
+  0% {
+    width: 0; }
+  50% {
+    width: 100%; }
+  100% {
+    width: 100%; } }
+@keyframes stages2 {
+  0% {
+    width: 0; }
+  50% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+/*# sourceMappingURL=_animations.css.map */
