@@ -21,14 +21,12 @@
   html {
     font-size: 3px;
   }
-  p {
+  p,
+  li {
     //margin-bottom: 8px !important;
     font-size: 14px !important;
     line-height: 1.4 !important;
 
-  }
-  li {
-    font-size: 14px !important;
   }
   .header-top {
     -webkit-flex-wrap: wrap;
@@ -231,6 +229,9 @@
     flex-wrap: wrap;
     padding-left: 15px;
   }
+  .padded-text {
+    padding: 0;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
@@ -404,6 +405,11 @@
   .map-container {
     flex-basis: 100%;
   }
+  .price-table th, .price-table td {
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
@@ -506,6 +512,18 @@
   .back-link {
     padding-left: 15px !important;
   }
+  .price-table th:nth-last-of-type(1),
+  .price-table td:nth-last-of-type(1),
+  .price-table th:nth-last-of-type(2),
+  .price-table td:nth-last-of-type(2) {
+    width: auto;
+  }
+  .popup:after {
+    top: 4px;
+    right: 4px;
+    width: 15px;
+    height: 15px;
+  }
 
 
   /**/
@@ -554,6 +572,13 @@
   }
   .logo-text p {
     font-size: 15px;
+  }
+  .price-table th,
+  .price-table td {
+    font-size: 12px;
+  }
+  .price-table li {
+    font-size: 12px !important;
   }
 }
 /* Custom, iPhone Retina */
@@ -746,4 +771,12 @@
   .vacancies-section .aside-filters {
     padding: 50px 5px 35px 54px;
   }
+  .table-works {
+    td {
+      &:first-of-type {
+        padding-right: 12%;
+      }
+    }
+  }
 }
+

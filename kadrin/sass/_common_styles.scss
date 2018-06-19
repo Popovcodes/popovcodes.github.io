@@ -625,7 +625,7 @@ label {
 /*------------------------------ link-path ------------------------------*/
 .path-section {
   &.padded {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
   .wrapper {
     display: -webkit-flex;
@@ -1062,6 +1062,9 @@ sup {
   height: 24px;
   line-height: 24px;
   letter-spacing: -.2px;
+}
+.price {
+  white-space: nowrap;
 }
 .item-details {
   position: absolute;
@@ -1686,6 +1689,7 @@ sup {
     height: 23px;
     background-image: url(../img/common/enlarge.png);
     background-repeat: no-repeat;
+    background-size: contain;
     z-index: 2;
   }
 }
@@ -1971,8 +1975,8 @@ sup {
 
 
 .list-heading {
-  font-family: $heavy;
-  font-size: 16px;
+  // font-family: $heavy;
+  // font-size: 16px;
   margin-bottom: 0 !important;
 }
 
@@ -2645,3 +2649,125 @@ sup {
     margin: 10px 0;
   }
 }
+
+/*------------------------------ prices section ------------------------------*/
+.prices-section {
+  padding: 5rem 0 2rem;
+  h2 {
+    margin-bottom: 3rem;
+  }
+  .back-link {
+    padding-top: 0;
+  }
+}
+
+.padded-text {
+  padding: 0 50px 0 100px;
+  margin-bottom: 6rem;
+}
+
+.table-out-cont {
+  max-width: auto;
+  margin-bottom: 7rem;
+  overflow-x: auto;
+}
+
+.table-preheading {
+  font-family: $heavy;
+  font-size: 24px;
+  color: #fff;
+  background: $color1;
+  padding: 2.4rem 2rem 2rem;
+
+}
+
+.price-table {
+  min-width: 100%;
+  thead {
+    background: #f8f8f8;
+    margin-bottom: 10px;
+  }
+  tbody {
+    color: $color1;
+    tr:first-child {
+      td {
+        padding-top: 2.2rem;
+      }
+    }
+  }
+  th,
+  td {
+    padding-left: 4%;
+    padding-right: 3%;
+    min-height: 5.3rem;
+    font-family: $reg;
+    font-size: 18px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.4;
+    &:first-child {
+      padding-left: 0;
+      padding-right: 1%;
+    }
+    &:nth-last-of-type(2) {
+      width: 25%;
+    }
+    &:nth-last-of-type(1) {
+      width: 19%;
+    }
+  }
+  th {
+    padding-top: 1.7rem;
+    padding-bottom: 2.5rem;
+    font-family: $heavy;
+    font-size: 18px;
+    color: $color1;
+    
+  }
+  td {
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    a {
+      display: inline-block;
+      max-width: 100%;
+      min-width: 60px;
+    }
+    img {
+      width: 156px;
+      max-width: 100%;
+    }
+  }
+  ul {
+    margin-bottom: 0;
+   
+  }
+  li {
+    font-size: 18px;
+    line-height: 2.2;
+    white-space: nowrap;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.table-imageless tbody tr:first-child td {
+  padding-top: 3.5rem;
+}
+
+.table-imageless {
+  th,
+  td {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    &:first-of-type {
+      width: 22%;
+    }
+  }
+}
+
+
+
+
+
+

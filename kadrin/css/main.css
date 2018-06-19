@@ -803,7 +803,7 @@ label {
 
 /*------------------------------ link-path ------------------------------*/
 .path-section.padded {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .path-section .wrapper {
@@ -1317,6 +1317,10 @@ sup {
   height: 24px;
   line-height: 24px;
   letter-spacing: -.2px;
+}
+
+.price {
+  white-space: nowrap;
 }
 
 .item-details {
@@ -2069,6 +2073,7 @@ sup {
   height: 23px;
   background-image: url(../img/common/enlarge.png);
   background-repeat: no-repeat;
+  background-size: contain;
   z-index: 2;
 }
 
@@ -2380,8 +2385,6 @@ sup {
 }
 
 .list-heading {
-  font-family: "Lato Heavy", sans-serif;
-  font-size: 16px;
   margin-bottom: 0 !important;
 }
 
@@ -3141,6 +3144,136 @@ sup {
   margin: 10px 0;
 }
 
+/*------------------------------ prices section ------------------------------*/
+.prices-section {
+  padding: 5rem 0 2rem;
+}
+
+.prices-section h2 {
+  margin-bottom: 3rem;
+}
+
+.prices-section .back-link {
+  padding-top: 0;
+}
+
+.padded-text {
+  padding: 0 50px 0 100px;
+  margin-bottom: 6rem;
+}
+
+.table-out-cont {
+  max-width: auto;
+  margin-bottom: 7rem;
+  overflow-x: auto;
+}
+
+.table-preheading {
+  font-family: "Lato Heavy", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  background: #1e414e;
+  padding: 2.4rem 2rem 2rem;
+}
+
+.price-table {
+  min-width: 100%;
+}
+
+.price-table thead {
+  background: #f8f8f8;
+  margin-bottom: 10px;
+}
+
+.price-table tbody {
+  color: #1e414e;
+}
+
+.price-table tbody tr:first-child td {
+  padding-top: 2.2rem;
+}
+
+.price-table th,
+.price-table td {
+  padding-left: 4%;
+  padding-right: 3%;
+  min-height: 5.3rem;
+  font-family: "Lato Regular", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.price-table th:first-child,
+.price-table td:first-child {
+  padding-left: 0;
+  padding-right: 1%;
+}
+
+.price-table th:nth-last-of-type(2),
+.price-table td:nth-last-of-type(2) {
+  width: 25%;
+}
+
+.price-table th:nth-last-of-type(1),
+.price-table td:nth-last-of-type(1) {
+  width: 19%;
+}
+
+.price-table th {
+  padding-top: 1.7rem;
+  padding-bottom: 2.5rem;
+  font-family: "Lato Heavy", sans-serif;
+  font-size: 18px;
+  color: #1e414e;
+}
+
+.price-table td {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+}
+
+.price-table td a {
+  display: inline-block;
+  max-width: 100%;
+  min-width: 60px;
+}
+
+.price-table td img {
+  width: 156px;
+  max-width: 100%;
+}
+
+.price-table ul {
+  margin-bottom: 0;
+}
+
+.price-table li {
+  font-size: 18px;
+  line-height: 2.2;
+  white-space: nowrap;
+}
+
+.price-table li:before {
+  display: none;
+}
+
+.table-imageless tbody tr:first-child td {
+  padding-top: 3.5rem;
+}
+
+.table-imageless th,
+.table-imageless td {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+
+.table-imageless th:first-of-type,
+.table-imageless td:first-of-type {
+  width: 22%;
+}
+
 /* ==================== css-animations ======================= */
 @-webkit-keyframes stages1 {
   0% {
@@ -3226,12 +3359,10 @@ sup {
   html {
     font-size: 3px;
   }
-  p {
-    font-size: 14px !important;
-    line-height: 1.4 !important;
-  }
+  p,
   li {
     font-size: 14px !important;
+    line-height: 1.4 !important;
   }
   .header-top {
     -ms-flex-wrap: wrap;
@@ -3430,6 +3561,9 @@ sup {
     flex-wrap: wrap;
     padding-left: 15px;
   }
+  .padded-text {
+    padding: 0;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -3603,6 +3737,11 @@ sup {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .price-table th, .price-table td {
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -3702,6 +3841,18 @@ sup {
   .back-link {
     padding-left: 15px !important;
   }
+  .price-table th:nth-last-of-type(1),
+  .price-table td:nth-last-of-type(1),
+  .price-table th:nth-last-of-type(2),
+  .price-table td:nth-last-of-type(2) {
+    width: auto;
+  }
+  .popup:after {
+    top: 4px;
+    right: 4px;
+    width: 15px;
+    height: 15px;
+  }
   /**/
   .footer-nav-cont {
     -ms-flex-preferred-size: 100%;
@@ -3749,6 +3900,13 @@ sup {
   }
   .logo-text p {
     font-size: 15px;
+  }
+  .price-table th,
+  .price-table td {
+    font-size: 12px;
+  }
+  .price-table li {
+    font-size: 12px !important;
   }
 }
 
@@ -3902,6 +4060,9 @@ sup {
   }
   .vacancies-section .aside-filters {
     padding: 50px 5px 35px 54px;
+  }
+  .table-works td:first-of-type {
+    padding-right: 12%;
   }
 }
 
