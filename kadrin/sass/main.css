@@ -314,7 +314,7 @@ strong {
   border-radius: 18px;
   text-align: center;
   color: #fff;
-  background: #224451;
+  background: $color1;
   padding-left: 12px;
   margin-right: 20px;
   transition: all .4s; }
@@ -1087,7 +1087,7 @@ sup {
   align-content: space-between;
   max-width: 457px;
   padding: 40px 45px 46px;
-  background: #224451;
+  background: $color1;
   color: #fff; }
   .slide-text > div {
     width: 100%;
@@ -1831,7 +1831,7 @@ sup {
   .js-popular-slider .slick-track,
   .offer-slider-cont .slick-track,
   .popular-slide {
-    background: #224451; }
+    background: $color1; }
 
   .popular-slide {
     display: block; }

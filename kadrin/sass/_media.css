@@ -56,7 +56,7 @@
   .js-popular-slider .slick-track,
   .offer-slider-cont .slick-track,
   .popular-slide {
-    background: #224451; }
+    background: $color1; }
 
   .popular-slide {
     display: block; }
