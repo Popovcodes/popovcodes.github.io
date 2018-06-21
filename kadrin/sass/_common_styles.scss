@@ -1177,9 +1177,11 @@ sup {
     transform: translateX(-50%);
   }
 }
+
 .slick-dots {
   position: absolute;
   bottom: 12px;
+  white-space: nowrap;
   li {
     display: inline-block;
     width: 12px;
@@ -1544,6 +1546,153 @@ sup {
   letter-spacing: .2px;
 }
 /*------------------------------ footer end ------------------------------*/
+/*------------------------------ about, production, services links pages ------------------------------*/
+.links-section {
+  padding: 4.5rem 0 15rem;
+  h2 {
+    margin-bottom: 7rem;
+  }
+
+}
+.links-grid {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 100px;
+}
+
+.link-item {
+  flex: 0 1 26%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-start;
+  -ms-align-items: center;
+  align-items: center;
+  height: 75px;
+  margin-bottom: 6rem;
+
+  outline: 1px solid lime;
+  font-family: $heavy;
+  font-size: 16px;
+  color: $color1;
+  &:before {
+    content: "";
+    display: inline-block;
+    min-width: 72px;
+    height: 100%;
+
+    outline: 1px solid red;
+    background-image: url(../img/sprites/i-sprite.png);
+    background-repeat: no-repeat;
+    margin-right: 2.3rem;
+    vertical-align: middle;
+  }
+  a {
+    display: block;
+    max-width: 50%; /*IE fix*/
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.link-item.our-company {
+  &:before {
+    background-position: 50% -1385px;
+  }
+}
+
+.link-item.our-production {
+  &:before {
+    background-position: 50% -1525px;
+  }
+}
+
+.link-item.services {
+  &:before {
+    background-position: 50% -1682px;
+  }
+}
+
+.link-item.news {
+  &:before {
+    background-position: 50% -1845px;
+  }
+}
+
+.link-item.sertificates {
+  &:before {
+    background-position: 50% -2020px;
+  }
+}
+
+.link-item.suppliers {
+  &:before {
+    background-position: 50% -2160px;
+  }
+}
+
+
+
+.link-item.designing {
+  &:before {
+    background-position: 50% -688px;
+  }
+}
+
+.link-item.bars-production {
+  &:before {
+    background-position: 50% -417px;
+  }
+}
+
+.link-item.build-stages {
+  &:before {
+    background-position: 50% -839px;
+  }
+}
+
+.link-item.windows-production {
+  &:before {
+    background-position: 50% -980px;
+  }
+}
+
+.link-item.windows-production2 {
+  &:before {
+    background-position: 50% -67px;
+  }
+}
+
+.link-item.add-services {
+  &:before {
+    background-position: 50% -1112px;
+  }
+}
+
+.link-item.request {
+  &:before {
+    background-position: 50% -1244px;
+  }
+}
+
+.link-item.bars-advant {
+  &:before {
+    background-position: 50% -545px;
+  }
+}
+
 
 /*------------------------------ product page ------------------------------*/
 .characteristics-section {
@@ -1950,6 +2099,9 @@ sup {
     font-size: 16px;
     line-height: 1.875;
     margin-bottom: 2.5rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   li {
@@ -2173,7 +2325,7 @@ sup {
   max-width: 210px;
   font-family: $heavy;
   font-size: 18px;
-  padding: 7rem 15px 4rem;
+  padding: 5.5rem 18px 0;
   &:after {
     content: ">";
     position: absolute;
@@ -2288,6 +2440,12 @@ sup {
   .slick-dots {
     right: 50px;
     bottom: 50px;
+  }
+}
+
+.equip-slider-cont,
+.production-slider-cont {
+  .slick-dots {
     li {
       border-color: #fff;
       &.slick-active {
@@ -2296,7 +2454,6 @@ sup {
     }
   }
 }
-
 .equip-slide {
   display: -webkit-flex;
   display: -moz-flex;
@@ -2766,8 +2923,209 @@ sup {
   }
 }
 
+/*------------------------------ our production page ------------------------------*/
+.production-text-secton {
+  padding: 10rem 0 3rem;
+  h2 {
+    margin-bottom: 7rem;
+  }
+  .padded-text {
+    padding: 0 190px 0 200px;
+    margin-bottom: 20px;
+  }
+}
+.production-slider-section {
+  padding: 2rem 0 3rem;
+}
+.production-slider-cont {
+  .slick-dots {
+    left: 45px;
+    bottom: 46px;
+  }
+}
+.production-slide {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  .side-text {
+    flex: 1 1 460px;
+    padding: 30px 45px 80px;
+    p {
+      line-height: 1.4; 
+      margin-bottom: 20px;
+    }
+  }
+  h2 {
+    margin-bottom: 25px;
+  }
+  .img-cont {
+    flex-basis: 685px;
+  }
+
+}
+
+.slide-subheading {
+
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.our-advantages-section {
+  padding: 7rem 0 8rem;
+  .wrapper {
+    padding: 5rem 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+
+  }
+  h2 {
+
+    outline: 1px solid lime;
+    flex: 1 1 520px;
+    text-align: center;
+    margin: 1.5rem 0 3rem;
+  }
+}
+.adv-list {
+
+  outline: 1px solid cyan;
+  flex: 1 1 340px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.advantages-item  {
+  outline: 1px solid lime;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 1.67;
+  min-height: 74px;
+  
+  margin: 1rem 18px 2rem;
+  &:before {
+    content: "";
+
+    display: inline-block;
+    background-image: url(../img/sprites/i-sprite.png);
+    background-repeat: no-repeat;
+    min-width: 72px;
+    height: 100%;
+    margin-right: 3rem;
+    overflow: hidden;
+
+    outline: 1px solid red;
+  }
+}
+
+.windows {
+  &:before {
+    background-position: 50% -67px;
+  }
+}
+
+.ecology {
+  &:before {
+    background-position: 50% -184px;
+  }
+}
+
+.lowcost {
+  &:before {
+    background-position: 50% -302px;
+  }
+}
+
+.prod-specialists-slider-section {
+  padding: 14.3rem 0 2.2rem;
+}
 
 
+/*------------------------------ sertificatwes page ------------------------------*/
+.sertificates-section {
+  padding: 5.6rem 0 3rem;
+  h2 {
+    margin-bottom: 11rem;
+  }
+  .button {
+    display: block;
+    margin: -2rem auto 0;
+    font-size: 12px;
+  }
+  .back-link {
+    padding-top: 3rem;
+  }
+}
+
+.sertificates-cont {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+
+  outline: 1px solid cyan;
+  &:after {
+    content: "";
+    display: inline-block;
+    flex: 10 1 10%;
+    height: 0;
+  }
+}
 
 
+.sertificate-item {
+  flex: 1 1 550px;
+  margin: 0 15px 10rem;
+  
+
+  outline: 1px solid red;
+  .popup {
+    display: block;
+    
+    margin-bottom: 2.5rem;
+    img {
+      max-height: 375px;
+    }
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: $color1;
+  }
+}
 

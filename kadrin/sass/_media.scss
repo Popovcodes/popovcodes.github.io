@@ -65,13 +65,9 @@
   .slider-arr-cont {
     position: static;
     text-align: right;
+    padding: 15px;
   }
-  .popular-slider-cont,
-  .offer-slider-cont,
-  .popular-slide,
-  .equip-slider-cont  {
-    background: $color1;
-  }
+
   .popular-slide {
     display: block;
     
@@ -108,6 +104,13 @@
         background: $color1 !important;
       }
     }
+  }
+  .popular-slider-cont,
+  .offer-slider-cont,
+  .popular-slide,
+  .equip-slider-cont,
+  .production-slider-cont {
+    background: $color1;
   }
   .offer-slide {
     -webkit-flex-wrap: wrap;
@@ -185,14 +188,17 @@
   .equip-slider-cont {
     margin-bottom: 50px;
   }
-  .equip-slide {
+  .equip-slide,
+  .production-slide {
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .equip-slide .side-text {
+
+  .equip-slide .side-text,
+  .production-slide .side-text {
     order: 2;
     padding: 15px;
   }
@@ -229,8 +235,15 @@
     flex-wrap: wrap;
     padding-left: 15px;
   }
+
   .padded-text {
-    padding: 0;
+    padding: 0 !important;
+  }
+  .sertificates-cont {
+    justify-content: space-around;
+  }
+  .sertificates-cont:after {
+    display: none;
   }
 }
 /* Medium Devices, Desktops */
@@ -367,6 +380,7 @@
   .features-slider-cont {
     padding-top: 40px;
   }
+
   /**/
   .footer-contacts-cont {
     flex-basis: 100%;
@@ -409,6 +423,13 @@
     font-size: 14px;
     padding-left: 5px;
     padding-right: 5px;
+  }
+  .our-advantages-section h2 {
+    flex-basis: 270px;
+  }
+  .links-grid {
+    //justify-content: space-around;
+    padding-left: 0;
   }
 }
 /* Small Devices, Tablets */
@@ -524,6 +545,12 @@
     width: 15px;
     height: 15px;
   }
+  .link-item {
+    flex-basis: 48%;
+  }
+  .link-item a {
+    max-width: 100%;
+  }
 
 
   /**/
@@ -553,6 +580,9 @@
   }
   .features-slider-cont {
     max-width: 100%;
+  }
+  .link-item {
+    flex-basis: 100%;
   }
 }
 /* Extra Small Devices, Phones */

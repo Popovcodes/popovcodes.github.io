@@ -1457,6 +1457,7 @@ sup {
 .slick-dots {
   position: absolute;
   bottom: 12px;
+  white-space: nowrap;
 }
 
 .slick-dots li {
@@ -1911,6 +1912,134 @@ sup {
 }
 
 /*------------------------------ footer end ------------------------------*/
+/*------------------------------ about, production, services links pages ------------------------------*/
+.links-section {
+  padding: 4.5rem 0 15rem;
+}
+
+.links-section h2 {
+  margin-bottom: 7rem;
+}
+
+.links-grid {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 100px;
+}
+
+.link-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 26%;
+          flex: 0 1 26%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+  margin-bottom: 6rem;
+  outline: 1px solid lime;
+  font-family: "Lato Heavy", sans-serif;
+  font-size: 16px;
+  color: #1e414e;
+}
+
+.link-item:before {
+  content: "";
+  display: inline-block;
+  min-width: 72px;
+  height: 100%;
+  outline: 1px solid red;
+  background-image: url(../img/sprites/i-sprite.png);
+  background-repeat: no-repeat;
+  margin-right: 2.3rem;
+  vertical-align: middle;
+}
+
+.link-item a {
+  display: block;
+  max-width: 50%;
+  /*IE fix*/
+}
+
+.link-item a:hover {
+  text-decoration: underline;
+}
+
+.link-item.our-company:before {
+  background-position: 50% -1385px;
+}
+
+.link-item.our-production:before {
+  background-position: 50% -1525px;
+}
+
+.link-item.services:before {
+  background-position: 50% -1682px;
+}
+
+.link-item.news:before {
+  background-position: 50% -1845px;
+}
+
+.link-item.sertificates:before {
+  background-position: 50% -2020px;
+}
+
+.link-item.suppliers:before {
+  background-position: 50% -2160px;
+}
+
+.link-item.designing:before {
+  background-position: 50% -688px;
+}
+
+.link-item.bars-production:before {
+  background-position: 50% -417px;
+}
+
+.link-item.build-stages:before {
+  background-position: 50% -839px;
+}
+
+.link-item.windows-production:before {
+  background-position: 50% -980px;
+}
+
+.link-item.windows-production2:before {
+  background-position: 50% -67px;
+}
+
+.link-item.add-services:before {
+  background-position: 50% -1112px;
+}
+
+.link-item.request:before {
+  background-position: 50% -1244px;
+}
+
+.link-item.bars-advant:before {
+  background-position: 50% -545px;
+}
+
 /*------------------------------ product page ------------------------------*/
 .characteristics-section {
   padding: 1rem 0 3rem;
@@ -2362,6 +2491,10 @@ sup {
   margin-bottom: 2.5rem;
 }
 
+.text-section p:last-of-type {
+  margin-bottom: 0;
+}
+
 .text-section li {
   font-size: 16px;
   line-height: 1.875;
@@ -2580,7 +2713,7 @@ sup {
   max-width: 210px;
   font-family: "Lato Heavy", sans-serif;
   font-size: 18px;
-  padding: 7rem 15px 4rem;
+  padding: 5.5rem 18px 0;
 }
 
 .back-link:after {
@@ -2716,11 +2849,13 @@ sup {
   bottom: 50px;
 }
 
-.equip-slider-cont .slick-dots li {
+.equip-slider-cont .slick-dots li,
+.production-slider-cont .slick-dots li {
   border-color: #fff;
 }
 
-.equip-slider-cont .slick-dots li.slick-active {
+.equip-slider-cont .slick-dots li.slick-active,
+.production-slider-cont .slick-dots li.slick-active {
   background: #fff;
 }
 
@@ -3274,6 +3409,230 @@ sup {
   width: 22%;
 }
 
+/*------------------------------ our production page ------------------------------*/
+.production-text-secton {
+  padding: 10rem 0 3rem;
+}
+
+.production-text-secton h2 {
+  margin-bottom: 7rem;
+}
+
+.production-text-secton .padded-text {
+  padding: 0 190px 0 200px;
+  margin-bottom: 20px;
+}
+
+.production-slider-section {
+  padding: 2rem 0 3rem;
+}
+
+.production-slider-cont .slick-dots {
+  left: 45px;
+  bottom: 46px;
+}
+
+.production-slide {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.production-slide .side-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 460px;
+          flex: 1 1 460px;
+  padding: 30px 45px 80px;
+}
+
+.production-slide .side-text p {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.production-slide h2 {
+  margin-bottom: 25px;
+}
+
+.production-slide .img-cont {
+  -ms-flex-preferred-size: 685px;
+      flex-basis: 685px;
+}
+
+.slide-subheading {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.our-advantages-section {
+  padding: 7rem 0 8rem;
+}
+
+.our-advantages-section .wrapper {
+  padding: 5rem 0;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-advantages-section h2 {
+  outline: 1px solid lime;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 520px;
+          flex: 1 1 520px;
+  text-align: center;
+  margin: 1.5rem 0 3rem;
+}
+
+.adv-list {
+  outline: 1px solid cyan;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 340px;
+          flex: 1 1 340px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.advantages-item {
+  outline: 1px solid lime;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 1.67;
+  min-height: 74px;
+  margin: 1rem 18px 2rem;
+}
+
+.advantages-item:before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/sprites/i-sprite.png);
+  background-repeat: no-repeat;
+  min-width: 72px;
+  height: 100%;
+  margin-right: 3rem;
+  overflow: hidden;
+  outline: 1px solid red;
+}
+
+.windows:before {
+  background-position: 50% -67px;
+}
+
+.ecology:before {
+  background-position: 50% -184px;
+}
+
+.lowcost:before {
+  background-position: 50% -302px;
+}
+
+.prod-specialists-slider-section {
+  padding: 14.3rem 0 2.2rem;
+}
+
+/*------------------------------ sertificatwes page ------------------------------*/
+.sertificates-section {
+  padding: 5.6rem 0 3rem;
+}
+
+.sertificates-section h2 {
+  margin-bottom: 11rem;
+}
+
+.sertificates-section .button {
+  display: block;
+  margin: -2rem auto 0;
+  font-size: 12px;
+}
+
+.sertificates-section .back-link {
+  padding-top: 3rem;
+}
+
+.sertificates-cont {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -15px;
+  outline: 1px solid cyan;
+}
+
+.sertificates-cont:after {
+  content: "";
+  display: inline-block;
+  -webkit-box-flex: 10;
+      -ms-flex: 10 1 10%;
+          flex: 10 1 10%;
+  height: 0;
+}
+
+.sertificate-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 550px;
+          flex: 1 1 550px;
+  margin: 0 15px 10rem;
+  outline: 1px solid red;
+}
+
+.sertificate-item .popup {
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+.sertificate-item .popup img {
+  max-height: 375px;
+}
+
+.sertificate-item p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #1e414e;
+}
+
 /* ==================== css-animations ======================= */
 @-webkit-keyframes stages1 {
   0% {
@@ -3402,12 +3761,7 @@ sup {
   .slider-arr-cont {
     position: static;
     text-align: right;
-  }
-  .popular-slider-cont,
-  .offer-slider-cont,
-  .popular-slide,
-  .equip-slider-cont {
-    background: #1e414e;
+    padding: 15px;
   }
   .popular-slide {
     display: block;
@@ -3445,6 +3799,13 @@ sup {
   }
   .slick-dots li.slick-active {
     background: #1e414e !important;
+  }
+  .popular-slider-cont,
+  .offer-slider-cont,
+  .popular-slide,
+  .equip-slider-cont,
+  .production-slider-cont {
+    background: #1e414e;
   }
   .offer-slide {
     -ms-flex-wrap: wrap;
@@ -3520,12 +3881,14 @@ sup {
   .equip-slider-cont {
     margin-bottom: 50px;
   }
-  .equip-slide {
+  .equip-slide,
+  .production-slide {
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .equip-slide .side-text {
+  .equip-slide .side-text,
+  .production-slide .side-text {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -3562,7 +3925,14 @@ sup {
     padding-left: 15px;
   }
   .padded-text {
-    padding: 0;
+    padding: 0 !important;
+  }
+  .sertificates-cont {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .sertificates-cont:after {
+    display: none;
   }
 }
 
@@ -3742,6 +4112,13 @@ sup {
     padding-left: 5px;
     padding-right: 5px;
   }
+  .our-advantages-section h2 {
+    -ms-flex-preferred-size: 270px;
+        flex-basis: 270px;
+  }
+  .links-grid {
+    padding-left: 0;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -3853,6 +4230,13 @@ sup {
     width: 15px;
     height: 15px;
   }
+  .link-item {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .link-item a {
+    max-width: 100%;
+  }
   /**/
   .footer-nav-cont {
     -ms-flex-preferred-size: 100%;
@@ -3880,6 +4264,10 @@ sup {
   }
   .features-slider-cont {
     max-width: 100%;
+  }
+  .link-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
