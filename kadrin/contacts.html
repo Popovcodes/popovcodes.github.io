@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Услуги компании</title>
+    <title>Контакты</title>
   </head>
   <body>
 
@@ -113,42 +113,57 @@
         <div class="wrapper">
             <div class="path-cont">
                 <span>Главная</span>
-                <span>Услуги компании</span>
+                <span>Контакты</span>
             </div>
         </div><!-- /.wrapper -->
     </section><!-- /.path-section -->
 
-        
-    <!-- =========================== links section =========================== -->
-    <section class="links-section">
+    <!-- =========================== maps section =========================== -->
+    <section class="maps-section">
         <div class="wrapper">
-            <h1>Услуги компании</h1>
-            <div class="links-grid">
-                <a  href=" designing.html" class="link-item designing">
-                    <span>Проектирование</span> <!-- wrapped with span for IE fix ! -->
-                </a>
-                <a href="barsProduction.html" class="link-item bars-production">
-                    <span>Производство клееного бруса</span>
-                </a>
-                <a href="stages.html" class="link-item build-stages">
-                    <span>Этапы&nbsp;строительства</span>
-                </a>
-                <a href="ourProduction.html" class="link-item windows-production">
-                    <span>Производство деревянных окон</span>
-                </a>
-                <a href="add-services.html" class="link-item add-services">
-                    <span>Дополнительные услуги</span>
-                </a>
-                <a href="request.html" class="link-item request">
-                    <span>Оформить заявку</span>
-                </a>
-                <a href="javascript:void(0);" class="link-item maintenance">
-                    <span>Техобслуживание деревянных&nbsp;домов</span>
-                </a>
-            </div><!-- /.links-grid -->
+            
+                <h2>Москва</h2>
+                <div class="map-block">
+                    <div class="side-text">
+                        <h3>Головной офис</h3>
+                        <p>ООО "Кадрин Строй Комплект" - продажи клееного бруса, проектирование и строительство домов из клееного бруса в Москве, Московской области, а также в Алтайском крае и республике Алтай</p>
+                        <p class="post-adress">105082, Москва, ул. Большая Почтовая, 36, стр.1, офис 21</p>
+                        <p>
+                            <strong>Телефон:</strong> 
+                            <a href="tel:+74953631722">+7 (495) 363-17-22</a> (многоканальный),<br>
+                            <a href="tel:+79670082455">+7 (967) 008-24-55</a>
+                        </p>
+                        <p>
+                            <strong>E-mail:</strong>
+                            <a href="mailto:info@kadrin.ru">info@kadrin.ru</a>
+                        </p>
+                    </div><!-- /.side-text -->
+                    <div class="map-container" id="map-address-1"></div>
+                </div>
+                <h2>Бийск</h2>
+                <div class="map-block">
+                    <div class="map-container" id="map-address-2"></div>
+                    <div class="side-text">
+                        <h3>Производство</h3>
+                        <p>ООО "Кадрин Строй Комплект" - производство клееного бруса и деревянных евроокон под торговой маркой "Кадрин" </p>
+                        <p class="post-adress">659314, г. Бийск, ул. Мамонтова, 11Д</p>
+                        <p>
+                            <strong>Телефон:</strong><br>
+                            <a href="tel:+73852584548">+7 (3852) 58-45-48</a>,<br>
+                            <a href="tel:+73854350840">+7 (3854) 35-08-40</a>,<br>
+                            <a href="tel:+73854350843">35-08-43</a>,<br>
+                            <a href="tel:+73854351949">35-19-49</a>
+                        </p>
+                        <p>
+                            <strong>E-mail:</strong>
+                            <a href="mailto:info@kadrin.ru">info@kadrin.ru</a>
+                        </p>
+                    </div><!-- /.side-text -->
+                </div>
+                <a href="index.html" class="back-link">Вернуться назад</a>
         </div><!-- /.wrapper -->
-    </section><!-- /.links-section -->
-
+    </section><!-- /.maps-section -->
+        
     <!-- =========================== footer =========================== -->
     <footer class="footer">
         <div class="wrapper">
@@ -206,6 +221,8 @@
     </div>
 
     <script src="libs/jquery/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlscWfRaqQXrWIs7iB7mGr9L9psI2Sio8"></script>
+    <script src="js/address-googlemap.js"></script>
     <script src="js/common.js"></script>
 
   </body>

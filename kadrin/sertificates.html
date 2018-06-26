@@ -56,7 +56,7 @@
                         </div>
                         <div class="fav-content">
                             <p>Дом из клееного бруса К-93-1</p>
-                            <a href="javascript:void(0);" class="button-sm">К проекту</a>
+                            <a href="javascript:void(0);" class="button">К проекту</a>
                         </div>
                     </li>
                     <li class="fav-item">
@@ -65,7 +65,7 @@
                         </div>
                         <div class="fav-content">
                             <p>Дом  К-93-1</p>
-                            <a href="javascript:void(0);" class="button-sm">К проекту</a>
+                            <a href="javascript:void(0);" class="button">К проекту</a>
                         </div>
                     </li>
                     <li class="fav-item">
@@ -74,7 +74,7 @@
                         </div>
                         <div class="fav-content">
                             <p>Дом из клееного бруса К-93-1 текст текст текст текст  текст текст </p>
-                            <a href="javascript:void(0);" class="button-sm">К проекту</a>
+                            <a href="javascript:void(0);" class="button">К проекту</a>
                         </div>
                     </li>
                 </ul>
@@ -83,12 +83,35 @@
     </header>
 
     <!-- =========================== mobile nav =========================== -->
-    <div class="btn-menu"><span></span></div>
+    <div class="btn-menu" id="btn-menu"><span></span></div>
+    <div class="mob-nav-cont" id="mob-nav-cont">
+        <div class="logo-cont">
+            <img src="img/common/logo-dark.png" alt="">
+            <div class="logo-text">
+                <p>Дома из клееного бруса</p>
+                <p>Деревянные окна</p>
+            </div><!-- /.logo-text -->
+            <div class="close"><span id="mob-nav-close"></span></div>
+        </div><!-- /.logo-cont -->
+        <nav class="mob-nav" id="mob-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Окомпании</a></li>
+                <li><a href="catalog.html">Дома</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="production.html">Производство</a></li>
+                <li><a href="prices.html">Цены</a></li>
+                <li><a href="info.html">Полезная информация</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="favourite.html" class="fav-btn" id="mob-fav-btn">Мои избранные</a>
+    </div><!-- /.mob-nav-cont -->
 
         
     <!-- =========================== link-path =========================== -->
     <section class="path-section">
-        <div class="wrapper gray">
+        <div class="wrapper">
             <div class="path-cont">
                 <span>Главная</span>
                 <span>О компании</span>
@@ -101,7 +124,7 @@
     <!-- =========================== links section =========================== -->
     <section class="sertificates-section">
         <div class="wrapper">
-            <h2>Сертификаты и дипломы</h2>
+            <h1>Сертификаты и дипломы</h1>
             <div class="sertificates-cont">
 
                 <div class="sertificate-item">
@@ -254,7 +277,19 @@
         </div><!-- /.wrapper -->
     </footer>
     
+    <!-- =========================== overlays and popup form =========================== -->
+    <div id="overlay" class="overlay hidden"></div>
     <div id="overlay-transparent" class="overlay transparent hidden"></div>
+
+    <div class="modal-form-container hidden" id="modal-form-container">
+        <div class="close"><span id="modal-close"></span></div>
+        <form action="" class="contact-form">
+            <input type="text" placeholder="имя" required>
+            <input type="tel" placeholder="телефон" required>
+            <input type="email" placeholder="электронная почта">
+            <input type="submit" value="Заказать звонок" class="button">
+        </form>
+    </div>
 
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/fancybox/jquery.fancybox.min.js"></script>

@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Услуги компании</title>
+    <title>Оформить заявку</title>
   </head>
   <body>
 
@@ -109,45 +109,46 @@
 
         
     <!-- =========================== link-path =========================== -->
-    <section class="path-section">
+    <section class="path-section gray">
         <div class="wrapper">
             <div class="path-cont">
                 <span>Главная</span>
-                <span>Услуги компании</span>
+                <span>Услуги</span>
+                <span>Оформить заявку</span>
             </div>
         </div><!-- /.wrapper -->
     </section><!-- /.path-section -->
-
         
-    <!-- =========================== links section =========================== -->
-    <section class="links-section">
+        
+    <!-- =========================== request form section =========================== -->
+    <section class="request-form-section">
         <div class="wrapper">
-            <h1>Услуги компании</h1>
-            <div class="links-grid">
-                <a  href=" designing.html" class="link-item designing">
-                    <span>Проектирование</span> <!-- wrapped with span for IE fix ! -->
-                </a>
-                <a href="barsProduction.html" class="link-item bars-production">
-                    <span>Производство клееного бруса</span>
-                </a>
-                <a href="stages.html" class="link-item build-stages">
-                    <span>Этапы&nbsp;строительства</span>
-                </a>
-                <a href="ourProduction.html" class="link-item windows-production">
-                    <span>Производство деревянных окон</span>
-                </a>
-                <a href="add-services.html" class="link-item add-services">
-                    <span>Дополнительные услуги</span>
-                </a>
-                <a href="request.html" class="link-item request">
-                    <span>Оформить заявку</span>
-                </a>
-                <a href="javascript:void(0);" class="link-item maintenance">
-                    <span>Техобслуживание деревянных&nbsp;домов</span>
-                </a>
-            </div><!-- /.links-grid -->
+            <h3>Заказать расчет стоимости проекта</h3>
+            <p class="subheading">Заполните и отравьте форму заявки</p>
+            <form action="" class="main-form" method="POST">
+                <div class="form-inputs-block">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="Телефон">
+                    <input type="email" placeholder="Электронная почта">
+                </div>
+                <div class="form-textarea-block">
+                    <textarea name="" id="" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="form-buttons-block">
+                    <div>
+                        <input type="submit" class="button">
+                        <a href="javascript:void(0);">Политика конфиденциальности</a>
+                    </div>
+                    <div>
+                        <input type="file" id="upload" class="hidden">
+                        <label for="upload" class="button">Загрузить</label>
+                        <span>Не понравились наши проекты? Пришлите нам свой!</span>
+                    </div>
+                </div>
+            </form>
+            <a href="production.html" class="back-link">Вернуться назад</a>
         </div><!-- /.wrapper -->
-    </section><!-- /.links-section -->
+    </section><!-- /.request-form-section -->
 
     <!-- =========================== footer =========================== -->
     <footer class="footer">

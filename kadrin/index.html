@@ -56,7 +56,7 @@
                         </div>
                         <div class="fav-content">
                             <p>Дом из клееного бруса К-93-1</p>
-                            <a href="javascript:void(0);" class="button-sm">К проекту</a>
+                            <a href="javascript:void(0);" class="button">К проекту</a>
                         </div>
                     </li>
                     <li class="fav-item">
@@ -65,7 +65,7 @@
                         </div>
                         <div class="fav-content">
                             <p>Дом  К-93-1</p>
-                            <a href="javascript:void(0);" class="button-sm">К проекту</a>
+                            <a href="javascript:void(0);" class="button">К проекту</a>
                         </div>
                     </li>
                     <li class="fav-item">
@@ -74,7 +74,7 @@
                         </div>
                         <div class="fav-content">
                             <p>Дом из клееного бруса К-93-1 текст текст текст текст  текст текст </p>
-                            <a href="javascript:void(0);" class="button-sm">К проекту</a>
+                            <a href="javascript:void(0);" class="button">К проекту</a>
                         </div>
                     </li>
                 </ul>
@@ -83,7 +83,30 @@
     </header>
 
     <!-- =========================== mobile nav =========================== -->
-    <div class="btn-menu"><span></span></div>
+    <div class="btn-menu" id="btn-menu"><span></span></div>
+    <div class="mob-nav-cont" id="mob-nav-cont">
+        <div class="logo-cont">
+            <img src="img/common/logo-dark.png" alt="">
+            <div class="logo-text">
+                <p>Дома из клееного бруса</p>
+                <p>Деревянные окна</p>
+            </div><!-- /.logo-text -->
+            <div class="close"><span id="mob-nav-close"></span></div>
+        </div><!-- /.logo-cont -->
+        <nav class="mob-nav" id="mob-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Окомпании</a></li>
+                <li><a href="catalog.html">Дома</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="production.html">Производство</a></li>
+                <li><a href="prices.html">Цены</a></li>
+                <li><a href="info.html">Полезная информация</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="favourite.html" class="fav-btn" id="mob-fav-btn">Мои избранные</a>
+    </div><!-- /.mob-nav-cont -->
 
     <!-- ===========================  img-section =========================== -->
     <section class="main-img-section">
@@ -633,46 +656,46 @@
     </section><!-- /.offers-section -->
 
     <!-- =========================== news section =========================== -->
-    <section class="news-section">
+    <section class="index-news-section">
         <div class="wrapper">
             <h2>Новости</h2>
             <div class="news-cont">
 
-                <div class="news-item">
-                    <img src="img/newsThumbs/news-thumb.jpg" alt="" class="news-prev">
+                <div class="index-news-item">
+                    <img src="img/newsImgs/news-thumb.jpg" alt="" class="news-prev">
                     <div class="news-content">
                         <p class="news-date">04.03.2018</p>
-                        <h4 class="news-heading">Кадрин Строй Комплект приняло участие в выставке "Красивые дома"</h4>
+                        <p class="news-heading">Кадрин Строй Комплект приняло участие в выставке "Красивые дома"</p>
                         <p>ООО "Кадрин Строй Комплект является ведущим производителем клееного бруса в России, ведущие строительные компании Москвы, специализирующиеся на загородной недвижимости отдают предпочтение именно нашему клееному брусу. По результатам проведения выставки нас отметили дипломом за лучший стенд.</p>
-                        <a href="newsItem.html" class="read-more">Читать</a>
+                        <a href="newsDetailed.html" class="read-more">Читать</a>
                     </div>
-                </div><!-- /.news-item -->
+                </div><!-- /.index-news-item -->
 
-                <div class="news-item">
-                    <img src="img/newsThumbs/news-thumb.jpg" alt="" class="news-prev">
+                <div class="index-news-item">
+                    <img src="img/newsImgs/news-thumb.jpg" alt="" class="news-prev">
                     <div class="news-content">
                         <p class="news-date">04.03.2018</p>
-                        <h4 class="news-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                        <p class="news-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, hic.Dolore voluptatum et necessitatibus nisi ducimus. Saepe.Doloribus esse dolore soluta reiciendis placeat ratione fugiat nulla! Distinctio, iste qui cum reprehenderit totam, quaerat aspernatur magnam, ratione mollitia obcaecati minus deserunt itaque eius reiciendis. Ipsa quo repellendus dolorum dicta, ut architecto quos incidunt aliquam adipisci, voluptatem necessitatibus magnam sunt cum.</p>
-                        <a href="newsItem.html" class="read-more">Читать</a>
+                        <a href="newsDetailed.html" class="read-more">Читать</a>
                     </div>
-                </div><!-- /.news-item -->
+                </div><!-- /.index-news-item -->
 
-                <div class="news-item">
-                    <img src="img/newsThumbs/news-thumb.jpg" alt="" class="news-prev">
+                <div class="index-news-item">
+                    <img src="img/newsImgs/news-thumb.jpg" alt="" class="news-prev">
                     <div class="news-content">
                         <p class="news-date">04.03.2018</p>
-                        <h4 class="news-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error provident consectetur, debitis sit nihil. Sequi animi, eos atque reiciendis, culpa exercitationem officiis fugiat harum unde adipisci repellat, illum obcaecati consequatur.</h4>
+                        <p class="news-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error provident consectetur, debitis sit nihil. Sequi animi, eos atque reiciendis, culpa exercitationem officiis fugiat harum unde adipisci repellat, illum obcaecati consequatur.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iste numquam dolore cupiditate id itaque necessitatibus in, delectus dolorem. Praesentium ipsum sunt, unde fugiat blanditiis dignissimos, ullam itaque adipisci sapiente nihil! Repudiandae architecto corporis unde! Error ad, consectetur! Repellendus, voluptatem.</p>
-                        <a href="newsItem.html" class="read-more">Читать</a>
+                        <a href="newsDetailed.html" class="read-more">Читать</a>
                     </div>
-                </div><!-- /.news-item -->
+                </div><!-- /.index-news-item -->
 
                 <a href="javascript:void(0);" class="button">Все новости</a>
 
             </div><!-- /.news-cont -->
         </div><!-- /.wrapper -->
-    </section><!-- /.news-section -->
+    </section><!-- /.index-news-section -->
 
     <!-- =========================== footer =========================== -->
     <footer class="footer">
@@ -715,8 +738,20 @@
             </div>
         </div><!-- /.wrapper -->
     </footer>
-    
+
+    <!-- =========================== overlays and popup form =========================== -->
+    <div id="overlay" class="overlay hidden"></div>
     <div id="overlay-transparent" class="overlay transparent hidden"></div>
+
+    <div class="modal-form-container hidden" id="modal-form-container">
+        <div class="close"><span id="modal-close"></span></div>
+        <form action="" class="contact-form">
+            <input type="text" placeholder="имя" required>
+            <input type="tel" placeholder="телефон" required>
+            <input type="email" placeholder="электронная почта">
+            <input type="submit" value="Заказать звонок" class="button">
+        </form>
+    </div>
 
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/slick-1.6.0/slick.min.js"></script>
@@ -727,7 +762,7 @@
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3000,
             arrows: false,
             dots: false,
@@ -745,7 +780,7 @@
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3000,
             arrows: false,
             dots: true,
@@ -757,7 +792,7 @@
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 3000,
             arrows: false,
             dots: true,

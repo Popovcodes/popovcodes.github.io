@@ -10,8 +10,9 @@
     <link rel="apple-touch-icon" href="img/favicon/57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+    <link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Услуги компании</title>
+    <title>Дом, 350 м2, г. Подольск, М.О.</title>
   </head>
   <body>
 
@@ -107,47 +108,75 @@
         <a href="favourite.html" class="fav-btn" id="mob-fav-btn">Мои избранные</a>
     </div><!-- /.mob-nav-cont -->
 
-        
     <!-- =========================== link-path =========================== -->
-    <section class="path-section">
+    <section class="path-section gray">
         <div class="wrapper">
             <div class="path-cont">
                 <span>Главная</span>
-                <span>Услуги компании</span>
+                <span>Стройка</span>
+                <span>Дом, 350 м2, г. Подольск, М.О.</span>
             </div>
         </div><!-- /.wrapper -->
     </section><!-- /.path-section -->
 
-        
-    <!-- =========================== links section =========================== -->
-    <section class="links-section">
-        <div class="wrapper">
-            <h1>Услуги компании</h1>
-            <div class="links-grid">
-                <a  href=" designing.html" class="link-item designing">
-                    <span>Проектирование</span> <!-- wrapped with span for IE fix ! -->
-                </a>
-                <a href="barsProduction.html" class="link-item bars-production">
-                    <span>Производство клееного бруса</span>
-                </a>
-                <a href="stages.html" class="link-item build-stages">
-                    <span>Этапы&nbsp;строительства</span>
-                </a>
-                <a href="ourProduction.html" class="link-item windows-production">
-                    <span>Производство деревянных окон</span>
-                </a>
-                <a href="add-services.html" class="link-item add-services">
-                    <span>Дополнительные услуги</span>
-                </a>
-                <a href="request.html" class="link-item request">
-                    <span>Оформить заявку</span>
-                </a>
-                <a href="javascript:void(0);" class="link-item maintenance">
-                    <span>Техобслуживание деревянных&nbsp;домов</span>
-                </a>
-            </div><!-- /.links-grid -->
+    <!-- ===========================  img-section =========================== -->
+    <section class="main-img-section">
+        <img src="img/pagesMainImgs/buildDetailed.jpg" alt="" class="main-img">
+    </section><!-- /.main-img-section -->
+
+
+    <!-- =========================== text section =========================== -->
+    <section class="text-section build-text-section">
+        <div class="wrapper narrow">
+            <h1>Дом, 350 м2, г. Подольск, М.О.</h1>
+            <p>Строительство ведется по проекту «Заокские просторы».</p>
+            <p>Конструктивные решения:</p>
+            <ul class="unmarked">
+                <li>Фундамент дома- цокольный этаж + свайно-ростверковый фундамент с монолитной плитой перекрытия.</li>
+                <li>Домокомплект ― комбинированный клееный брус кедр/ сосна, сечение 180х240мм. </li>
+                <li>Перекрытия ― деревянные клееные несущие балки.</li>
+                <li>Кровельное покрытие ― композитная черепица.</li>
+            </ul>
+            <ul class="unmarked">
+                <li>Общая площадь дома с учетом цокольного этажа и открытых помещений – 854,5 кв.м.</li>
+                <li>Площадь цокольного этажа – 145,72 кв.м.</li>
+            </ul>
         </div><!-- /.wrapper -->
-    </section><!-- /.links-section -->
+    </section><!-- /.text-section -->
+
+    <!-- =========================== gallery section =========================== -->
+    <section class="gallery-section build-gallery-section">
+        <div class="wrapper">
+            <div class="gallery-cont">
+                <a href="img/galleryBuilding/i1.jpg" class="popup gallery-item">
+                    <img src="img/galleryBuilding/i1.jpg" alt="">
+                </a>
+                <a href="img/galleryBuilding/i2.jpg" class="popup gallery-item">
+                    <img src="img/galleryBuilding/i2.jpg" alt="">
+                </a>
+                <a href="img/galleryBuilding/i3.jpg" class="popup gallery-item">
+                    <img src="img/galleryBuilding/i3.jpg" alt="">
+                </a>
+                <a href="img/galleryBuilding/i4.jpg" class="popup gallery-item">
+                    <img src="img/galleryBuilding/i4.jpg" alt="">
+                </a>
+                <a href="img/galleryBuilding/i5.jpg" class="popup gallery-item">
+                    <img src="img/galleryBuilding/i5.jpg" alt="">
+                </a>
+                <a href="img/galleryBuilding/i6.jpg" class="popup gallery-item">
+                    <img src="img/galleryBuilding/i6.jpg" alt="">
+                </a>
+                <a href="img/galleryBuilding/i7.jpg" class="popup gallery-item">
+                    <img src="img/galleryBuilding/i7.jpg" alt="">
+                </a>
+                <a href="img/galleryBuilding/i8.jpg" class="popup gallery-item">
+                    <img src="img/galleryBuilding/i8.jpg" alt="">
+                </a>
+            </div><!-- /.gallery-container -->
+            <a href="javascript:void(0);" class="load-button">Загрузить еще</a>
+            <a href="production.html" class="back-link">Вернуться назад</a>
+        </div><!-- /.wrapper -->
+    </section><!-- /.gallery-section -->
 
     <!-- =========================== footer =========================== -->
     <footer class="footer">
@@ -206,6 +235,13 @@
     </div>
 
     <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           //popup images
+          $('.popup').fancybox({});
+        });
+    </script>
     <script src="js/common.js"></script>
 
   </body>

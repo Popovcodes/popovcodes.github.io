@@ -10,8 +10,9 @@
     <link rel="apple-touch-icon" href="img/favicon/57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+    <link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Услуги компании</title>
+    <title>Стройка</title>
   </head>
   <body>
 
@@ -109,46 +110,92 @@
 
         
     <!-- =========================== link-path =========================== -->
-    <section class="path-section">
+    <section class="path-section gray">
         <div class="wrapper">
             <div class="path-cont">
                 <span>Главная</span>
-                <span>Услуги компании</span>
+                <span>Стройка</span>
             </div>
         </div><!-- /.wrapper -->
     </section><!-- /.path-section -->
 
-        
-    <!-- =========================== links section =========================== -->
-    <section class="links-section">
-        <div class="wrapper">
-            <h1>Услуги компании</h1>
-            <div class="links-grid">
-                <a  href=" designing.html" class="link-item designing">
-                    <span>Проектирование</span> <!-- wrapped with span for IE fix ! -->
-                </a>
-                <a href="barsProduction.html" class="link-item bars-production">
-                    <span>Производство клееного бруса</span>
-                </a>
-                <a href="stages.html" class="link-item build-stages">
-                    <span>Этапы&nbsp;строительства</span>
-                </a>
-                <a href="ourProduction.html" class="link-item windows-production">
-                    <span>Производство деревянных окон</span>
-                </a>
-                <a href="add-services.html" class="link-item add-services">
-                    <span>Дополнительные услуги</span>
-                </a>
-                <a href="request.html" class="link-item request">
-                    <span>Оформить заявку</span>
-                </a>
-                <a href="javascript:void(0);" class="link-item maintenance">
-                    <span>Техобслуживание деревянных&nbsp;домов</span>
-                </a>
-            </div><!-- /.links-grid -->
-        </div><!-- /.wrapper -->
-    </section><!-- /.links-section -->
+    <!-- ===========================  img-section =========================== -->
+    <section class="main-img-section">
+        <img src="img/pagesMainImgs/build.jpg" alt="" class="main-img">
+    </section><!-- /.main-img-section -->
 
+        
+    <!-- =========================== build links section =========================== -->
+<section class="build-links-section">
+    <div class="wrapper">
+        <div class="wrapper narrow">
+            <h1>Строительство</h1>
+            <div class="build-links-cont">
+                
+                <a href="buildDetailed.html" class="build-link">
+                    <img src="img/catalogImgs/i2.jpg" alt="">
+                    <p class="build-name">Коттедж из клееного бруса К-166-2</p>
+                </a>
+
+                <a href="buildDetailed.html" class="build-link">
+                    <img src="img/catalogImgs/i3.jpg" alt="">
+                    <p class="build-name">Частный дом из клееного бруса К-163-1</p>
+                </a>
+
+                <a href="buildDetailed.html" class="build-link">
+                    <img src="img/catalogImgs/i4.jpg" alt="">
+                    <p class="build-name">Комплект дома из клееного бруса К-162-3</p>
+                </a>
+
+                <a href="buildDetailed.html" class="build-link">
+                    <img src="img/catalogImgs/i5.jpg" alt="">
+                    <p class="build-name">Комплект дома из клееного бруса К-162-3</p>
+                </a>
+
+                <a href="buildDetailed.html" class="build-link">
+                    <img src="img/catalogImgs/i6.jpg" alt="">
+                    <p class="build-name">Дом из клееного бруса К-100-2</p>
+                </a>
+
+                <a href="buildDetailed.html" class="build-link">
+                    <img src="img/catalogImgs/i2.jpg" alt="">
+                    <p class="build-name">Дом из клееного бруса К-100-2</p>
+                </a>
+
+                <a href="buildDetailed.html" class="build-link">
+                    <img src="img/catalogImgs/i3.jpg" alt="">
+                    <p class="build-name">Коттедж из клееного бруса К-166-2</p>
+                </a>
+
+                <a href="buildDetailed.html" class="build-link">
+                    <img src="img/catalogImgs/i4.jpg" alt="">
+                    <p class="build-name">Коттедж из клееного бруса К-166-2</p>
+                </a>
+
+                <a href="buildDetailed.html" class="build-link">
+                    <img src="img/catalogImgs/i5.jpg" alt="">
+                    <p class="build-name">Частный дом из клееного бруса К-163-1</p>
+                </a>
+
+                <a href="buildDetailed.html" class="build-link">
+                    <img src="img/catalogImgs/i6.jpg" alt="">
+                    <p class="build-name">Комплект дома из клееного бруса К-162-3</p>
+                </a>
+
+                <a href="buildDetailed.html" class="build-link">
+                    <img src="img/catalogImgs/i4.jpg" alt="">
+                    <p class="build-name">Комплект дома из клееного бруса К-162-3</p>
+                </a>
+
+            </div><!-- /.build-links-cont -->
+            <a href="javascript:void(0);" class="button">Загрузить еще</a>
+        </div><!-- /.wtapper narrow-->
+
+        
+        
+
+    </div><!-- /.wrapper -->
+</section><!-- /.build-links-section -->
     <!-- =========================== footer =========================== -->
     <footer class="footer">
         <div class="wrapper">
@@ -206,6 +253,19 @@
     </div>
 
     <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //set sertificate item block width accordingly to img width
+            $('.sertificate-item').each(function(){
+                var setWidth = $(this).find('img').width();
+                $(this).css('max-width', setWidth);
+            });
+
+           //popup images
+          $('.popup').fancybox({});
+        });
+    </script>
     <script src="js/common.js"></script>
 
   </body>

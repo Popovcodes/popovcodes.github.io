@@ -10,8 +10,10 @@
     <link rel="apple-touch-icon" href="img/favicon/57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+    <link rel="stylesheet" type="text/css" href="libs/slick-1.6.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Услуги компании</title>
+    <title>Проектирование</title>
   </head>
   <body>
 
@@ -109,46 +111,68 @@
 
         
     <!-- =========================== link-path =========================== -->
-    <section class="path-section">
+    <section class="path-section  gray">
         <div class="wrapper">
             <div class="path-cont">
                 <span>Главная</span>
-                <span>Услуги компании</span>
+                <span>Услуги</span>
+                <span>Проектирование</span>
             </div>
         </div><!-- /.wrapper -->
     </section><!-- /.path-section -->
+    
+    <!-- ===========================  img-section =========================== -->
+    <section class="main-img-section">
+        <img src="img/pagesMainImgs/designing.jpg" alt="" class="main-img">
+    </section><!-- /.main-img-section -->
 
         
-    <!-- =========================== links section =========================== -->
-    <section class="links-section">
+    <!-- =========================== designing text section =========================== -->
+    <section class="text-section decored">
         <div class="wrapper">
-            <h1>Услуги компании</h1>
-            <div class="links-grid">
-                <a  href=" designing.html" class="link-item designing">
-                    <span>Проектирование</span> <!-- wrapped with span for IE fix ! -->
-                </a>
-                <a href="barsProduction.html" class="link-item bars-production">
-                    <span>Производство клееного бруса</span>
-                </a>
-                <a href="stages.html" class="link-item build-stages">
-                    <span>Этапы&nbsp;строительства</span>
-                </a>
-                <a href="ourProduction.html" class="link-item windows-production">
-                    <span>Производство деревянных окон</span>
-                </a>
-                <a href="add-services.html" class="link-item add-services">
-                    <span>Дополнительные услуги</span>
-                </a>
-                <a href="request.html" class="link-item request">
-                    <span>Оформить заявку</span>
-                </a>
-                <a href="javascript:void(0);" class="link-item maintenance">
-                    <span>Техобслуживание деревянных&nbsp;домов</span>
-                </a>
-            </div><!-- /.links-grid -->
+            <h1>Проектирование</h1>
+            <div class="padded-text">
+                <p>Уже более <strong>16 лет </strong>наша компания занимается производством и строительством домов из клееного бруса, а также производством деревянных окон. Название нашей компании позаимствовано от названия реки Кадрин в Горном Алтае, что в переводе с алтайского языка означает <strong>«крепкое, надежное плечо».</strong></p>
+                <p>Для производства клееного бруса <strong>мы используем сосну, лиственницу и кедр Горного Алтая,</strong> именно поэтому наши дома отличаются особой экологичностью. Мы самостоятельно производим клееный брус, а также проводим полный цикл всех строительных работ, и это позволяет нам быть уверенными в высоком качестве наших домов и окон.</p>
+                <p><strong>Нам важно, чтобы Вы оставались довольны своим выбором. </strong>С каждым годом мы оптимизируем и совершенствуем все процессы производства и строительства, чтобы достичь лучшего результата.</p>
+                <p>Мы заботимся об окружающем мире, поэтому мы используем самые передовые технологии – солнечные батареи. Используя солнечные батареи, мы снижаем свои издержки на электроэнергию и рады предложить Вам <strong>более низкие цены, чем у конкурентов.</strong></p>
+                <p><strong>Вместе с Вами мы уже построили более 500 домов из клееного бруса по всей России. Мы рады помочь каждому из наших клиентов обрести свой теплый и уютный дом.</strong></p>
+                <a href="catalog.html" class="button">Перейти к проектам</a>
+            </div>
         </div><!-- /.wrapper -->
-    </section><!-- /.links-section -->
-
+    </section><!-- /.text-section -->
+        
+        
+    <!-- =========================== main form section =========================== -->
+    <section class="main-form-section ">
+        <div class="wrapper">
+            <h3>Заказать расчет стоимости проекта</h3>
+            <p class="subheading">Заполните и отравьте форму заявки</p>
+            <form action="" class="main-form" method="POST">
+                <div class="form-inputs-block">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="Телефон">
+                    <input type="email" placeholder="Электронная почта">
+                </div>
+                <div class="form-textarea-block">
+                    <textarea name="" id="" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="form-buttons-block">
+                    <div>
+                        <input type="submit" class="button">
+                        <a href="javascript:void(0);">Политика конфиденциальности</a>
+                    </div>
+                    <div>
+                        <input type="file" id="upload" class="hidden">
+                        <label for="upload" class="button">Загрузить</label>
+                        <span>Не понравились наши проекты? Пришлите нам свой!</span>
+                    </div>
+                </div>
+            </form>
+            <a href="services.html" class="back-link">Вернуться назад</a>
+        </div><!-- /.wrapper -->
+    </section><!-- /.main-form-section -->
+    
     <!-- =========================== footer =========================== -->
     <footer class="footer">
         <div class="wrapper">

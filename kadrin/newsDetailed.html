@@ -10,8 +10,9 @@
     <link rel="apple-touch-icon" href="img/favicon/57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+    <link rel="stylesheet" type="text/css" href="libs/slick-1.6.0/slick.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Услуги компании</title>
+    <title>Кадрин Строй Комплект приняло участие в выставке "Красивые дома"</title>
   </head>
   <body>
 
@@ -113,41 +114,43 @@
         <div class="wrapper">
             <div class="path-cont">
                 <span>Главная</span>
-                <span>Услуги компании</span>
+                <span>О компании</span>
+                <span>Новости</span>
+                <span>Кадрин Строй Комплект приняло участие в выставке "Красивые дома"</span>
             </div>
         </div><!-- /.wrapper -->
     </section><!-- /.path-section -->
 
         
-    <!-- =========================== links section =========================== -->
-    <section class="links-section">
+    <!-- =========================== news detail section =========================== -->
+    <section class="news-detailed-section text-section">
         <div class="wrapper">
-            <h1>Услуги компании</h1>
-            <div class="links-grid">
-                <a  href=" designing.html" class="link-item designing">
-                    <span>Проектирование</span> <!-- wrapped with span for IE fix ! -->
-                </a>
-                <a href="barsProduction.html" class="link-item bars-production">
-                    <span>Производство клееного бруса</span>
-                </a>
-                <a href="stages.html" class="link-item build-stages">
-                    <span>Этапы&nbsp;строительства</span>
-                </a>
-                <a href="ourProduction.html" class="link-item windows-production">
-                    <span>Производство деревянных окон</span>
-                </a>
-                <a href="add-services.html" class="link-item add-services">
-                    <span>Дополнительные услуги</span>
-                </a>
-                <a href="request.html" class="link-item request">
-                    <span>Оформить заявку</span>
-                </a>
-                <a href="javascript:void(0);" class="link-item maintenance">
-                    <span>Техобслуживание деревянных&nbsp;домов</span>
-                </a>
-            </div><!-- /.links-grid -->
+            <h1>Кадрин Строй Комплект приняло участие в выставке "Красивые дома"</h1>
+            <div class="simple-slider-cont">
+                <div class="js-simple-slider" id="js-simple-slider">
+                    <img src="img/newsImgs/news-big.jpg" alt="">
+                    <img src="img/newsImgs/news-big.jpg" alt="">
+                    <img src="img/newsImgs/news-big.jpg" alt="">
+                    <img src="img/newsImgs/news-big.jpg" alt="">
+                </div><!-- /.js-simple-slider -->
+            </div><!-- /.simple-slider-cont -->
+            <div class="padded-text">
+                <div class="news-main-text">
+                    <p>Мы рады сообщить Вам, что в период с 1-4 марта 2018 года мы участвуем в Выставке «Деревянный Дом. 2018», проходящей в МВЦ Крокус Экспо! Для получения более подробной информации о предстоящей Выставке, а также получения бесплатного пригласительного, пожалуйста, обратитесь к нашим специалистам.</p>
+                    <p>Уже на протяжении более 6 лет, мы каждый год участвуем в различных мероприятиях, посвященных строительству деревянных домов. Для наглядного примера наших работ, мы разрабатываем наши стенды – уникальные макеты деревянных строений, которые привлекают Клиентов своей оригинальностью, качеством и приятным внешним видом. Каждый проект, который мы представляем на мероприятиях, удивляет не только посетителей, но и организаторов Выставки. Наши труд и творчество высоко оцениваются, ведь на каждом мероприятии мы награждаемся сертификатами и дипломами. Вы можете посмотреть фотоотчеты с Выставок, а также наши дипломы и сертификаты в галерее.</p>
+                    <p>Благодаря нашему участию на выставках мы познакомились с прекрасными людьми, которые впоследствии стали нашими клиентами. Мы внимательно относимся к Вашим пожеланиям и следим, чтобы после нашего сотрудничества Вы остались довольны. С каждым годом мы совершенствуемся, именно поэтому наши дома из клееного бруса такие качественные и надежные.</p>
+                    <p>Каждая Выставка важна для нас, именно поэтому мы тщательно готовимся к участию. Вы можете задать нашим специалистам все интересующие Вас вопросы. Наши сотрудники будут рады помочь Вам в выборе своего деревянного дома, ведь нам важно, чтобы наше с Вами сотрудничество приносило только радость!</p>
+                </div>
+                <p class="news-detailed-date">Опубликовано: 11 июля 2018 года</p>
+                <div class="back-links-cont">
+                    <a href="news.html" class="back-link">Вернуться назад</a>
+                    <a href="javascript:void(0);" class="back-link">Перейти к предыдущей новости</a>
+                </div>
+            </div><!-- /.padded-text -->
         </div><!-- /.wrapper -->
-    </section><!-- /.links-section -->
+    </section><!-- /.news-detailed-section -->
+
+ 
 
     <!-- =========================== footer =========================== -->
     <footer class="footer">
@@ -206,6 +209,22 @@
     </div>
 
     <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/slick-1.6.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //slick.js slider   http://kenwheeler.github.io/slick/
+            $('#js-simple-slider').slick({
+              infinite: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 3000,
+              arrows: false,
+              dots: true,
+              appendDots:$('.simple-slider-cont')
+            });
+        });
+    </script>
     <script src="js/common.js"></script>
 
   </body>

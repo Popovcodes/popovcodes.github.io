@@ -11,7 +11,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Услуги компании</title>
+    <link rel="stylesheet" type="text/css" href="libs/slick-1.6.0/slick.css">
+    <title>Этапы строительства</title>
   </head>
   <body>
 
@@ -113,42 +114,108 @@
         <div class="wrapper">
             <div class="path-cont">
                 <span>Главная</span>
-                <span>Услуги компании</span>
+                <span>Услуги</span>
+                <span>Этапы строительства</span>
             </div>
         </div><!-- /.wrapper -->
     </section><!-- /.path-section -->
 
-        
-    <!-- =========================== links section =========================== -->
-    <section class="links-section">
+    <!-- =========================== stages slider section =========================== -->
+    <section class="stages-slider-section">
         <div class="wrapper">
-            <h1>Услуги компании</h1>
-            <div class="links-grid">
-                <a  href=" designing.html" class="link-item designing">
-                    <span>Проектирование</span> <!-- wrapped with span for IE fix ! -->
-                </a>
-                <a href="barsProduction.html" class="link-item bars-production">
-                    <span>Производство клееного бруса</span>
-                </a>
-                <a href="stages.html" class="link-item build-stages">
-                    <span>Этапы&nbsp;строительства</span>
-                </a>
-                <a href="ourProduction.html" class="link-item windows-production">
-                    <span>Производство деревянных окон</span>
-                </a>
-                <a href="add-services.html" class="link-item add-services">
-                    <span>Дополнительные услуги</span>
-                </a>
-                <a href="request.html" class="link-item request">
-                    <span>Оформить заявку</span>
-                </a>
-                <a href="javascript:void(0);" class="link-item maintenance">
-                    <span>Техобслуживание деревянных&nbsp;домов</span>
-                </a>
-            </div><!-- /.links-grid -->
-        </div><!-- /.wrapper -->
-    </section><!-- /.links-section -->
+            <h1>Этапы строительства</h1>
+            <div class="stages-slider-cont">
+                <div class="js-stages-slider" id="js-stages-slider">
+                    
+                    <div>
+                        <div class="stages-slide">
+                            <div class="img-cont">
+                                <img src="img/stagesSlider/stagesSlide.jpg" alt="">
+                            </div>
+                            <div class="side-text">
+                                <h2>Этап 1<br>Планирование</h2>
+                                <p>Фракция, несмотря на внешние воздействия, усиливает равновесный карбонат кальция. Пескование ускоряет кислый коллоид. Если принять во внимание физическую неоднородность почвенного индивидуума, можно прийти к выводу о том, что подбел перманентно стекает в непромывной карбонат кальция.</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div>
+                        <div class="stages-slide">
+                            <div class="img-cont">
+                                <img src="img/stagesSlider/stagesSlide.jpg" alt="">
+                            </div>
+                            <div class="side-text">
+                                <h2>Этап 2<br>Lorem ipsum dolor.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, minima, aperiam? Dicta voluptate quasi qui voluptatem aliquid consequatur nobis eum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="stages-slide">
+                            <div class="img-cont">
+                                <img src="img/stagesSlider/stagesSlide.jpg" alt="">
+                            </div>
+                            <div class="side-text">
+                                <h2>Этап 3<br>Lorem ipsum adipisicing.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto provident consequuntur accusamus tempore omnis. Minima.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="stages-slide">
+                            <div class="img-cont">
+                                <img src="img/stagesSlider/stagesSlide.jpg" alt="">
+                            </div>
+                            <div class="side-text">
+                                <h2>Этап 4<br>Lorem ipsum amet, consectetur.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /.js-stages-slider -->
+
+                <div class="slider-arr-cont">
+                    <span id="stages-prev" class="nav-arr nav-arr-l"></span>
+                    <span id="stages-next" class="nav-arr nav-arr-r"></span>
+                </div>
+            </div><!-- /.stages-slider-cont -->
+
+        </div><!-- /.wrapper -->
+    </section><!-- /.stages-slider-section -->
+
+    <!-- =========================== main form section =========================== -->
+    <section class="main-form-section ">
+        <div class="wrapper">
+            <h3>Заказать расчет стоимости проекта</h3>
+            <p class="subheading">Заполните и отравьте форму заявки</p>
+            <form action="" class="main-form" method="POST">
+                <div class="form-inputs-block">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="Телефон">
+                    <input type="email" placeholder="Электронная почта">
+                </div>
+                <div class="form-textarea-block">
+                    <textarea name="" id="" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="form-buttons-block">
+                    <div>
+                        <input type="submit" class="button">
+                        <a href="javascript:void(0);">Политика конфиденциальности</a>
+                    </div>
+                    <div>
+                        <input type="file" id="upload" class="hidden">
+                        <label for="upload" class="button">Загрузить</label>
+                        <span>Не понравились наши проекты? Пришлите нам свой!</span>
+                    </div>
+                </div>
+            </form>
+            <a href="services.html" class="back-link">Вернуться назад</a>
+        </div><!-- /.wrapper -->
+    </section><!-- /.main-form-section -->
+    
     <!-- =========================== footer =========================== -->
     <footer class="footer">
         <div class="wrapper">
@@ -206,6 +273,29 @@
     </div>
 
     <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/slick-1.6.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          //slick.js slider   http://kenwheeler.github.io/slick/
+          // stages
+          $('#js-stages-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            dots: true,
+            appendDots:$('.stages-slider-cont')
+          });
+          $('#stages-prev').click(function(){
+              $('#js-stages-slider').slick('slickPrev');
+          });
+          $('#stages-next').click(function(){
+              $('#js-stages-slider').slick('slickNext');
+          });
+       });
+    </script>
     <script src="js/common.js"></script>
 
   </body>

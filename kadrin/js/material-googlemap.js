@@ -12,7 +12,7 @@ function init() {
         mapTypeControl: false,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(51.9962683,85.6579965,13), 
+        center: new google.maps.LatLng(51.9962683,85.6579965), 
 
     };
 
