@@ -5,7 +5,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
     html {
-        font-size: 5px;
+        font-size: 6px;
     }
     body {
         //font-size: 16px;
@@ -39,6 +39,9 @@
 
         padding-right: 0;
         margin-bottom: 20px;
+    }
+    .resume-form-section {
+        background-image: none;
     }
     .item-img-cont {
         flex-basis: auto;
@@ -265,6 +268,9 @@
     .complex-list li {
         max-width: 48%;
     }
+    .map-cont {
+        margin-right: 20px;
+    }
 }
 @media only screen and (max-width : 1024px) {
     .text {
@@ -388,6 +394,24 @@
     .complex-title:after {
         max-width: 5%;
     }
+    .links-half {
+        padding-left: 0;
+    }
+    .links-half:before {
+        top: -70px;
+        left: auto;
+        right: 10%;
+    }
+    .contacts-content {
+        flex-wrap: wrap;
+    }
+    .links-half {
+        margin-right: 0;
+    }
+    .links-half:before {
+        right: 0;
+    }
+
 
 }
 
@@ -416,6 +440,9 @@
     .form-text h4 {
         font-size: 30px;
         margin-bottom: 8px;
+    }
+    .resume-form .submit-wrap {
+        margin-bottom: 40px;
     }
     .title {
         font-size: 18px;
@@ -459,10 +486,30 @@
         margin: 0 auto 20px;
     }
     .index-services-section p + ul,
-    .text-section p + ul {
-        margin-top: -5rem;
+    .text-section p + ul,
+    .main-text-section p + ul {
+        margin-top: -10px;
     }
-
+    .resume-form-section .form-text {
+        text-align: center;
+    }
+    .resume-form {
+        justify-content: center;
+    }
+    .resume-form input[type="text"],
+    .resume-form input[type="email"],
+    .resume-form input[type="tel"],
+    .resume-form .upload-btn {
+        max-width: 500px;
+    }
+    .resume-form {
+        input[type="submit"] {
+            width: 255px;
+        }
+    }
+    .links-half:before {
+        opacity: .2;
+    }
 
     .footer .wrapper {
         flex-wrap: wrap;
@@ -664,6 +711,9 @@
         padding-right: 10px;
         font-size: 14px;
     }
+    .resume-form-section .resume-form input {
+        font-size: 14px;
+    }
     ::-webkit-input-placeholder {
         font-size: 14px;
     }
@@ -676,6 +726,27 @@
     ::placeholder {
         font-size: 14px;
     }
+    .upload-btn {
+        font-size: 14px;
+    }
+    .resume-form input[type="text"],
+    .resume-form input[type="email"],
+    .resume-form input[type="tel"],
+    .resume-form .upload-btn {
+        height: 50px;
+        line-height: 50px;
+        border-radius: 25px;
+     }
+     .upload-btn span {
+        width: 50px;
+        height: 50px;
+     }
+     .resume-form {
+        input[type="submit"] {
+            height: 50px;
+            line-height: 50px;
+        }
+    }
     .types-logo-section,
     .types-section {
         h3 {
@@ -687,6 +758,12 @@
         .button {
             margin-right: 0;
         }
+    }
+    .map-cont {
+        margin-right: 0;
+    }
+    .map-cont:after {
+        display: none;
     }
 
 }
@@ -738,15 +815,19 @@
             font-size: 90px;
         }
     }
+    
     .text-section,
     .text-content {
-        p {
+        p,
+        ul {
             margin-bottom: 3rem;
         }
+        ul:last-child,
         p:last-child {
             margin-bottom: 0;
         }
     }
+
     .text-section,
     .image-section-protect .text-content,
     .image-section-planning .text-content,
@@ -781,7 +862,13 @@
             }
         }
     }
-
+    .main-text-section {
+        h2 {
+            &:first-letter {
+                letter-spacing: 2px;
+            }
+        }
+    }
 
     .circle-center {
         &:first-letter {
