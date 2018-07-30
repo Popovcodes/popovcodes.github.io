@@ -343,9 +343,9 @@ $(document).ready(function(){
   $('input[type="tel"]').mask("+7 (999) 999-99-99");
   
   // particles.js animation https://vincentgarreau.com/particles.js/
-  particlesJS.load('particles-js-1', '../libs/particles/particles-1.json', function() {});
-  particlesJS.load('particles-js-2', '../libs/particles/particles-2.json', function() {});
-  particlesJS.load('particles-js-3', '../libs/particles/particles-3.json', function() {});
+  //particlesJS.load('particles-js-1', '../libs/particles/particles-1.json', function() {});
+  //particlesJS.load('particles-js-2', '../libs/particles/particles-2.json', function() {});
+  //particlesJS.load('particles-js-3', '../libs/particles/particles-3.json', function() {});
 
   // page scroll to #id
   $("a[rel='Scroll2id']").mPageScroll2id({
