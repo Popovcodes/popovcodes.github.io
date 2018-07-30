@@ -36,7 +36,7 @@
 
 <!-- =========================== mobile nav =========================== -->
 <div class="btn-menu" id="btn-menu"><span></span></div>
-<div class="mob-cont">
+<div class="mob-cont" id="mob-cont">
     <div class="mob-top">
         <a href="index.html" class="mob-logo-cont">
             <img src="img/commonImgs/logo-dark.png" alt="">
@@ -65,10 +65,10 @@
                 <p>Наша работа направлена на решение конкретных задач клиента и достижение результата в следующих направлениях:</p>
             </div>
             <ul class="services-list">
-                <li class="protect wow pulse" data-wow-delay=".5s"><a href="#protect-section" rel="Scroll2id">Защита бизнеса</a></li>
-                <li class="international wow pulse" data-wow-delay=".7s"><a href="#planning-section" rel="Scroll2id">Международное налоговое планирование</a></li>
-                <li class="support wow pulse" data-wow-delay=".9s"><a href="#ico-section" rel="Scroll2id">Юридическое сопровождение ICO проектов</a></li>
-                <li class="consult wow pulse" data-wow-delay="1.1s"><a href="#consult-section" rel="Scroll2id">Консалтинговые услуги в сфере инвестиции</a></li>
+                <li class="protect"><a href="#protect-section" rel="Scroll2id">Защита бизнеса</a></li>
+                <li class="international"><a href="#planning-section" rel="Scroll2id">Международное налоговое планирование</a></li>
+                <li class="support"><a href="#ico-section" rel="Scroll2id">Юридическое сопровождение ICO проектов</a></li>
+                <li class="consult"><a href="#consult-section" rel="Scroll2id">Консалтинговые услуги в сфере инвестиции</a></li>
             </ul>
     </div><!--/.wrapper-->
 </section><!--/.services-section-->
@@ -381,7 +381,7 @@
 <section class="image-section-consult" id="consult-section">
     <div class="wrapper">
         <div class="text-content">
-            <h2>Консалтинговые услуги<br>в сфере инвестиций</h2>
+            <h2>Консалтинговые услуги<br> в сфере инвестиций</h2>
             <p>В любое время важно делать грамотные вложения, но нельзя забывать о высокой степени рисков, особенно в кризис. Наша задача — минимизировать их. Мы сэкономим Ваше время и деньги и найдем для Вас прибыльные инвестиционные возможности как в России, так и заграницей.</p>
             <p>Поиск инвестиционных возможностей — трудоемкий процесс, который может обернуться потерей капитала. Лучше всего — доверить его профессионалам. IDEA legal group имеет все необходимые ресурсы для того, чтобы со стратегической точностью определять перспективу инвестиций. Мы находимся в тесной взаимосвязи с ведущими Хедж-фондами и инвестиционными площадками, и рекомендуем исключительно безопасные и проверенные временем варианты инвестирования.</p>
             <p>В своей работе мы опираемся только на компетентных партнеров. Наша команда сэкономит Ваше время и ресурсы и поможет совершать только «умные» инвестиции</p>
@@ -1928,7 +1928,7 @@
 <section class="image-section-ico" id="ico-section">
     <div class="wrapper">
         <div class="text-content">
-            <h2>Юридическое<br>сопровождение ICO проектов</h2>
+            <h2>Юридическое<br> сопровождение ICO проектов</h2>
             <p>ICO совмещает в себе преимущества IPO, краудфандинга и децентрализованных технологий и представляет собой исключительную возможность получения финансирования на самой ранней стадии реализации проекта путем привлечения инвесторов со всего мира.</p>
             <p>В связи с высоким уровнем требований к процедурам привлечения финансирования от неограниченного круга лиц во всем мире, проведение ICO без квалифицированного юридического сопровождения существенно повышает риски членов команды проекта.</p>
             <p>пециалисты IDEA Legal Group в рамках работы по проекту окажут целый комплекс услуг, направленных на сохранение баланса интересов между командой проекта и потенциальными инвесторами для успешной и что не менее важно безопасной реализации проекта.</p>
@@ -2201,7 +2201,26 @@
     </div>
 </div>
 
-<div class="overlay" id="overlay"></div>
+<div class="overlay hidden" id="overlay"></div>
+
+<!-- =========================== modal form =========================== -->
+<div class="modal-cont hidden" id="modal-cont">
+    <div class="modal-top">
+        <div class="modal-logo">
+            <img src="img/commonImgs/logo-dark.png" alt="">
+        </div>
+        <span class="modal-close" id="modal-close">&#10006;</span>
+    </div>
+    <form action="" class="modal-form">
+        <input type="text" placeholder="ФИО" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="tel" placeholder="Телефон" required>
+        <textarea placeholder="Ваше сообщение"></textarea>
+        <div class="submit-wrap">
+            <input type="submit" value="Записаться">
+        </div>
+    </form>
+</div>
 
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/slick-1.6.0/slick.min.js"></script>

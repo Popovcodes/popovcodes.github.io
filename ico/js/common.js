@@ -1,11 +1,19 @@
 $(document).ready(function(){
 
-  // mobile navigation
-  $('#btn-menu, #mob-nav a, #overlay, #close' ).click(function(){
-    $('.mob-cont').toggleClass('active');
-    $('#overlay').toggleClass('active');
-    $('section, #header, #footer').toggleClass('blur');
+  // mobile navigation and modal form showing
+  $('.btn-menu').click(function(){
+    $('#overlay').removeClass('hidden');
+    $('#mob-cont').addClass('active');
+    $('section, #header, #footer').addClass('blur');
+  });
 
+  $('.modal-call').click(function(){
+    $('#modal-cont, #overlay').removeClass('hidden');
+  });
+
+  $('#mob-nav a, #overlay, #close, #modal-close').click(function(){
+    $('#modal-cont, #overlay').addClass('hidden');
+    $('#mob-cont').removeClass('active');
   });
 
   //header fixing

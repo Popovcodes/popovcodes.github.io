@@ -6,7 +6,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -33,7 +33,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -60,7 +60,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -87,7 +87,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -114,7 +114,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -141,7 +141,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -168,7 +168,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -195,7 +195,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -222,7 +222,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -249,7 +249,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -276,7 +276,7 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     dots: true,
@@ -343,30 +343,12 @@ $(document).ready(function(){
   $('input[type="tel"]').mask("+7 (999) 999-99-99");
   
   // particles.js animation https://vincentgarreau.com/particles.js/
-  //particlesJS.load('particles-js-1', '../libs/particles/particles-1.json', function() {});
-  //particlesJS.load('particles-js-2', '../libs/particles/particles-2.json', function() {});
-  //particlesJS.load('particles-js-3', '../libs/particles/particles-3.json', function() {});
+  particlesJS.load('particles-js-1', '../libs/particles/particles-1.json', function() {});
+  particlesJS.load('particles-js-2', '../libs/particles/particles-2.json', function() {});
+  particlesJS.load('particles-js-3', '../libs/particles/particles-3.json', function() {});
 
   // page scroll to #id
   $("a[rel='Scroll2id']").mPageScroll2id({
     offset: 58
   });
-
-    // $("#to-top").click(function () {
-  //   $("body, html").animate({
-  //     scrollTop: 0
-  //   }, 800);
-  // });
-
-    // modal windows
-  // $('.callback_btn').on('click', function(){
-  //   $('.overlay, .callback_modal').fadeIn(200);
-  // });
-  // $('.appoint_btn, .consult_btn').on('click', function(){
-  //   $('.overlay, .appointment_modal').fadeIn(200);
-  // });
-  // $('.overlay, .modal_close').on('click', function(){
-  //   $('.overlay, .callback_modal, .appointment_modal').fadeOut(200);
-  // });
-
 });
