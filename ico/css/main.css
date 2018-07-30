@@ -1613,7 +1613,7 @@ input[type="submit"] {
 
 .buttons-cont .button {
   margin-right: 24px;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
   padding-left: 5.4rem;
   padding-right: 5.4rem;
 }
@@ -3171,6 +3171,9 @@ input[type="file"] {
     padding-left: 60px;
     margin-left: 0;
   }
+  #cfc-section .buttons-cont {
+    text-align: center;
+  }
   .alt-services-section ul {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -3566,6 +3569,7 @@ input[type="file"] {
   }
   .buttons-cont .button {
     margin-right: 0;
+    margin-bottom: 36px;
   }
   .map-cont {
     margin-right: 0;
