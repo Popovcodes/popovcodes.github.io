@@ -619,6 +619,7 @@ nav a:hover:after, nav a.active:after {
   line-height: 1.7;
   text-align: justify;
   margin-right: 20px;
+  max-width: 736px;
 }
 
 .index-text p:last-of-type {
@@ -630,6 +631,9 @@ nav a:hover:after, nav a.active:after {
   -webkit-box-flex: 2;
       -ms-flex: 2 1 140px;
           flex: 2 1 140px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   max-width: 255px;
 }
 
@@ -706,11 +710,9 @@ nav a:hover:after, nav a.active:after {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-width: 540px;
+  max-width: 542px;
   height: 56px;
-  border-radius: 28px;
-  background-color: #fff;
-  overflow: hidden;
+  padding-right: 10px;
 }
 
 .appoint-form {
@@ -723,7 +725,25 @@ nav a:hover:after, nav a.active:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   height: 100%;
+  border-radius: 28px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.appoint-form:after {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 5px;
+  border-radius: 28px;
+  background: #fff;
+  z-index: -2;
 }
 
 input[type="tel"] {
@@ -734,7 +754,7 @@ input[type="tel"] {
 input[type="submit"] {
   display: block;
   height: 56px;
-  min-width: 255px;
+  min-width: 257px;
   border-radius: 28px;
   line-height: 36px;
   padding: 10px 42px;
@@ -752,6 +772,7 @@ input[type="submit"] {
 
 .submit-wrap {
   position: relative;
+  right: 0px;
   height: 56px;
   border-radius: 28px;
   -webkit-box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
@@ -761,6 +782,9 @@ input[type="submit"] {
   background-color: #ebebeb;
   overflow: hidden;
   z-index: 0;
+  -webkit-transition: all 0s .4s;
+  -o-transition: all 0s .4s;
+  transition: all 0s .4s;
 }
 
 /*-------------------------- services section --------------------------*/
@@ -3374,6 +3398,20 @@ input[type="file"] {
         -ms-transform: none;
             transform: none;
   }
+  .index-text .wrapper {
+    display: block;
+  }
+  .index-text .wrapper:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+  }
+  .logo-big {
+    max-width: 160px;
+    float: left;
+    margin-right: 20px;
+  }
   .services-list li {
     font-size: 14px;
   }
@@ -3509,6 +3547,9 @@ input[type="file"] {
   }
   h2 br {
     display: none;
+  }
+  .logo-big {
+    max-width: 100px;
   }
   .form-cont,
   .submit-wrap,
@@ -3772,12 +3813,19 @@ input[type="file"] {
   .submit-wrap:after {
     bottom: 0;
     left: 0;
+    right: 0;
     height: 0;
     width: 100%;
     background: #353f68;
     -webkit-transition-delay: .2s;
          -o-transition-delay: .2s;
             transition-delay: .2s;
+  }
+  .submit-wrap:hover {
+    -webkit-transition: all .4s .8s;
+    -o-transition: all .4s .8s;
+    transition: all .4s .8s;
+    background: #353f68;
   }
   .submit-wrap:hover:before {
     -webkit-transition-delay: 0;
@@ -3906,8 +3954,8 @@ input[type="file"] {
               filter: blur(200px);
     }
     100% {
-      -webkit-filter: blur(0);
-              filter: blur(0);
+      -webkit-filter: blur(0.1px);
+              filter: blur(0.1px);
     }
   }
   @keyframes blur {
@@ -3916,8 +3964,8 @@ input[type="file"] {
               filter: blur(200px);
     }
     100% {
-      -webkit-filter: blur(0);
-              filter: blur(0);
+      -webkit-filter: blur(0.1px);
+              filter: blur(0.1px);
     }
   }
   @-webkit-keyframes particle-location {
@@ -4025,6 +4073,10 @@ input[type="file"] {
             animation-fill-mode: forwards;
   }
   .main-heading span {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
     -webkit-filter: blur(200px);
             filter: blur(200px);
     -webkit-animation: blur 2.5s;
