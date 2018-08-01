@@ -2523,6 +2523,7 @@ input[type="file"] {
 
 .team-section h2 {
   color: #ebebeb;
+  max-width: 230px;
 }
 
 .team-section .slider-cont {
