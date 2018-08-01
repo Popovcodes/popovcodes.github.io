@@ -2179,10 +2179,6 @@ input[type="submit"] {
   width: 100%;
 }
 
-.alt-services-section ul:first-of-type {
-  margin-bottom: 100px;
-}
-
 .alt-services-section li {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
@@ -3094,10 +3090,6 @@ input[type="file"] {
   #cfc-section .buttons-cont {
     text-align: center;
   }
-  .alt-services-section ul {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
   .alt-services-section li {
     max-width: 40%;
     font-size: 16px;
@@ -3258,6 +3250,19 @@ input[type="file"] {
   .links-half:before {
     opacity: .2;
   }
+  .alt-services-section {
+    background-size: 160% auto;
+    background-position: 50% 95%;
+  }
+  .alt-services-section .wrapper {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .alt-services-section li {
+    max-width: 100%;
+    font-size: 14px;
+    letter-spacing: 0;
+  }
   .team-section .wrapper:before {
     display: none;
   }
@@ -3330,11 +3335,6 @@ input[type="file"] {
   .complex-list li {
     max-width: 100%;
     margin-bottom: 15px;
-  }
-  .alt-services-section li {
-    max-width: 100%;
-    font-size: 14px;
-    letter-spacing: 0;
   }
   .text li ul,
   .text li ol {
