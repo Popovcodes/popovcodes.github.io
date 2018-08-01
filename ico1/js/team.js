@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  // select styling  https://github.com/Dimox/jQueryFormStyler
   $('#select').styler();
 
   //slick.js slider   http://kenwheeler.github.io/slick/
