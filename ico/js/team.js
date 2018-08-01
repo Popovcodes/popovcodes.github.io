@@ -14,6 +14,7 @@ $(document).ready(function(){
     thisName.html(newHtml);
   });
 
+  
   // select styling https://github.com/FormstoneClassic/Selecter; https://formstone.it/components/dropdown/
   $("#select").selecter({
     label: 'руководители'
