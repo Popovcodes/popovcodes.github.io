@@ -9,7 +9,8 @@
     <link rel="apple-touch-icon" href="img/favicon/57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
-
+    <link rel="stylesheet" type="text/css" href="libs/wow.js/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick-1.6.0/slick.css">
     <link rel="stylesheet" type="text/css" href="libs/selecter/jquery.fs.selecter.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Команда</title>
@@ -53,6 +54,38 @@
             </ul>
         </nav>
 </div><!--/.mob-cont-->
+
+<!-- =========================== team slider section =========================== -->
+<section class="team-section">
+    <div class="wrapper">
+        <div class="team-heading">
+            <h2>Команда</h2>
+            <select name="" id="select">
+                <option value="managers">руководители</option>
+                <option value="specialists">специалисты</option>
+                <option value="other">другая категория</option>
+            </select>
+        </div>
+        
+        <div class="slider-cont">
+            <div id="">
+
+               
+
+            </div><!--/.slider-->
+
+
+            <div class="left-arr team-left-arr" id="left-arr"></div>
+            <div class="right-arr team-right-arr" id="right-arr"></div>
+
+            <div class="button-cont">
+                <a href="javascript:void(0);" class="button">загрузить еще</a>
+            </div>
+            <div class="team-dots-cont"></div>
+        </div><!--/slider-cont-->
+      <a href="index.html" class="back-link">Вернуться назад</a>
+    </div><!--/.wrapper-->
+</section>
 
 <!-- =========================== footer =========================== -->
 <footer class="footer" id="footer">
@@ -98,11 +131,22 @@
         </div>
     </div><!--/.wrapper-->
 </footer>
+<!-- =========================== vertical decor lines =========================== -->
+<div class="v-lines-cont">
+    <div class="wrapper">
+        <div class="v-line"><div class="v-line-in"></div></div>
+        <div class="v-line"><div class="v-line-in"></div></div>
+        <div class="v-line"><div class="v-line-in"></div></div>
+        <div class="v-line"><div class="v-line-in"></div></div>
+        <div class="v-line"><div class="v-line-in"></div></div> 
+    </div>
+</div>
 
-
-
+<div class="overlay hidden" id="overlay"></div>
 
 <script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/slick-1.6.0/slick.min.js"></script>
+<script src="libs/wow.js/wow.min.js"></script>
 <script src="libs/selecter/jquery.fs.selecter.min.js"></script>
 <script src="js/team.js"></script>
 <script src="js/common.js"></script>

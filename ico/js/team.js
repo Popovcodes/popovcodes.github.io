@@ -1,41 +1,6 @@
 $(document).ready(function(){
 
   //slick.js slider   http://kenwheeler.github.io/slick/
-  $('#slider-1').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    dots: true,
-    appendDots:$('.team-dots-cont'),
-    responsive: [
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 730,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-
-  // sliders prev/next buttons
-  $('#left-arr').click(function(){
-    $('#slider-1').slick('slickPrev');
-  });
-
-  $('#right-arr').click(function(){
-    $('#slider-1').slick('slickNext');
-  });
 
 
   // specialists names first letters of each word styling
@@ -52,7 +17,7 @@ $(document).ready(function(){
   // select styling https://github.com/FormstoneClassic/Selecter; https://formstone.it/components/dropdown/
   $("#select").selecter({
     label: 'руководители',
-    mobile: true
+    mobile: false
   });
 
 });
