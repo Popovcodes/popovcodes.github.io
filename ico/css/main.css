@@ -3949,6 +3949,7 @@ input[type="file"] {
               filter: grayscale(0) brightness(100%);
     }
   }
+  */
   @-webkit-keyframes blur {
     0% {
       -webkit-filter: blur(200px);
@@ -3968,7 +3969,7 @@ input[type="file"] {
       -webkit-filter: blur(0.1px);
               filter: blur(0.1px);
     }
-  }*/
+  }
   @-webkit-keyframes particle-location {
     0% {
       top: 1%;
