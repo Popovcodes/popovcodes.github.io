@@ -3929,7 +3929,7 @@ input[type="file"] {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  @-webkit-keyframes main-img {
+ /* @-webkit-keyframes main-img {
     0% {
       -webkit-filter: grayscale(100%) brightness(85%);
               filter: grayscale(100%) brightness(85%);
@@ -3968,7 +3968,7 @@ input[type="file"] {
       -webkit-filter: blur(0.1px);
               filter: blur(0.1px);
     }
-  }
+  }*/
   @-webkit-keyframes particle-location {
     0% {
       top: 1%;
@@ -4061,10 +4061,12 @@ input[type="file"] {
       left: -1%;
     }
   }
+  
   .types-logo-section h3,
   .types-section h3 {
     white-space: nowrap;
   }
+  /*
   .main-img {
     -webkit-filter: grayscale(100%) brightness(85%);
             filter: grayscale(100%) brightness(85%);
@@ -4073,6 +4075,7 @@ input[type="file"] {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
+  */
   .main-heading span {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
