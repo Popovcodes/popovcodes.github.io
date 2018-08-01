@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+alert(222);
   //slick.js slider   http://kenwheeler.github.io/slick/
 
 
