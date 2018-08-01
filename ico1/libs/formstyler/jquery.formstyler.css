@@ -125,10 +125,10 @@
     margin: 0;
     overflow: hidden;
     padding: 5px 20px 5px 0;
-    margin: 20px 0 0 0;
     border-bottom: 1px solid #ebebeb;
     text-overflow: clip;
     z-index: 2;
+    background: #888;
 }
 
 .jq-selectbox__select-text:after {
