@@ -339,9 +339,6 @@ $(document).ready(function(){
     thisName.html(newHtml);
   });
 
-  // masked phone input https://github.com/digitalBush/jquery.maskedinput
-  $('input[type="tel"]').mask("+7 (999) 999-99-99");
-  
   // particles.js animation https://vincentgarreau.com/particles.js/
   particlesJS.load('particles-js-1', '../libs/particles/particles-1.json', function() {});
   particlesJS.load('particles-js-2', '../libs/particles/particles-2.json', function() {});

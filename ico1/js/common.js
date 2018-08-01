@@ -37,6 +37,10 @@ $(document).ready(function(){
     }
   });
 
+  // masked phone input https://github.com/digitalBush/jquery.maskedinput
+  $('input[type="tel"]').mask("+7 (999) 999-99-99");
+  
+
   if(document.documentElement.clientWidth > 1199) {
     // wow.js animation  http://mynameismatthieu.com/WOW/
     new WOW().init();
