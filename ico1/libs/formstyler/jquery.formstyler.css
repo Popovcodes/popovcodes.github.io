@@ -113,6 +113,10 @@
 
 /*CUSTOM*/
 
+.jq-selectbox {
+	z-index: 2;
+}
+
 .jq-selectbox__select-text {
 	box-sizing: border-box;
 	position: relative;
@@ -128,7 +132,6 @@
     border-bottom: 1px solid #ebebeb;
     text-overflow: clip;
     z-index: 2;
-    background: #888;
 }
 
 .jq-selectbox__select-text:after {

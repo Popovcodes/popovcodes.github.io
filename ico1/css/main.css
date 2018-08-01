@@ -3434,6 +3434,7 @@ input[type="file"] {
   .team-heading h2 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-bottom: 30px;
   }
 }
 
