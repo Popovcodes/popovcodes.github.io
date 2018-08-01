@@ -2535,9 +2535,8 @@ input[type="file"] {
 }
 
 .team-section select {
-  //display: none;
+  display: none;
 }
-
 
 .team-section .slider-cont {
   position: relative;
