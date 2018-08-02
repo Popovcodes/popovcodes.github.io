@@ -31,6 +31,20 @@ $(document).ready(function(){
     ]
   });
 
+  $('#select').change(function(){
+    var filter = $(this).val();
+    $('#slider-1').slick('slickUnfilter');
+    if (filter == 'manager') {
+      $('#slider-1').slick('slickFilter', '.manager');
+    }
+    else if(filter == 'specialist') {
+      $('#slider-1').slick('slickFilter', '.specialist');
+    }
+    else if(filter == 'other') {
+      $('#slider-1').slick('slickFilter', '.other');
+    }
+  });
+
   // sliders prev/next buttons
   $('#left-arr').click(function(){
     $('#slider-1').slick('slickPrev');
