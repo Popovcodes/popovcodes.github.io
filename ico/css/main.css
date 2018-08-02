@@ -2230,6 +2230,10 @@ input[type="submit"] {
   width: 100%;
 }
 
+.news-section .back-link {
+  padding-top: 50px;
+}
+
 /*-------------------------- career page --------------------------*/
 .main-text-section {
   padding: 3.5rem 0 4rem;
