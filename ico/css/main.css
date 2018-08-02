@@ -2239,6 +2239,14 @@ input[type="submit"] {
   margin-bottom: 3.5rem;
 }
 
+.main-text-section .news-head {
+  color: #252525;
+}
+
+.main-text-section .news-head:first-letter {
+  letter-spacing: -3px;
+}
+
 .top-padded {
   padding-top: 8rem;
 }
