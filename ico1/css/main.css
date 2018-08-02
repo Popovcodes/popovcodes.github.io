@@ -898,7 +898,7 @@ input[type="submit"] {
 
 /*-------------------------- news section --------------------------*/
 .news-section {
-  padding: 2.5rem 0 6rem;
+  padding: 5rem 0;
 }
 
 .news-section h2 {
@@ -1764,6 +1764,7 @@ input[type="submit"] {
 }
 
 .services-mob-head {
+  display: none;
   font-family: GaramoundBold, serif;
   font-size: 60px;
   color: #515151;
@@ -2140,7 +2141,7 @@ input[type="submit"] {
 }
 
 .delimiter {
-  padding: 1.5rem 0 3rem;
+  padding: 1.5rem 0 7rem;
   font-family: GaramoundBold, serif;
   font-size: 38px;
   letter-spacing: 1.2px;
@@ -2150,7 +2151,7 @@ input[type="submit"] {
 .alt-services-section {
   padding: 6.8rem 0 1rem;
   margin-bottom: 5rem;
-  background-color: #10131f;
+  background-color: #000;
   background-image: url(../img/commonImgs/ourServices.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
