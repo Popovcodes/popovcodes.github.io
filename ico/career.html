@@ -156,6 +156,11 @@
 <script>
     // masked phone input https://github.com/digitalBush/jquery.maskedinput
     $('input[type="tel"]').mask("+7 (999) 999-99-99");
+
+    // display attached file name
+    $('input[type=file]').change(function(e){
+      $(this).parents('form').find('.upload-btn').addClass('attached').html(e.target.files[0].name+'<span><span>');
+    });
 </script>
 <script src="js/common.js"></script>
 </body>
