@@ -2305,19 +2305,16 @@ input[type="submit"] {
   margin-bottom: 15px;
 }
 
-.resume-form input[type="text"].attached,
-.resume-form input[type="email"].attached,
-.resume-form input[type="tel"].attached,
-.resume-form .upload-btn.attached {
-  color: #1e1e1e;
-}
-
 .resume-form input[type="text"],
 .resume-form input[type="email"],
 .resume-form input[type="tel"] {
   font-family: OpenSansSemiBold, sans-serif;
   font-size: 18px;
   padding: 5px 30px;
+}
+
+.resume-form .upload-btn.attached {
+  color: #515151;
 }
 
 .resume-form .submit-wrap {
