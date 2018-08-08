@@ -1,20 +1,21 @@
 $(document).ready(function(){
 
-
   //header fixing
-  $(window).scroll(function(){
+  var headerSticky = function(){
     var pageIsScrolled = $(window).scrollTop();
     if(pageIsScrolled > 0) {
       var headerHeight = $('#header').outerHeight();
       $('#header-visible, #header').addClass('sticky');
       $('body').css('padding-top', headerHeight + '+px');
     } else {
-      if(!$('#header-hidden').is(':visible')){
-        $('#header-visible, #header').removeClass('sticky');
-      };
+    if(!$('#header-hidden').is(':visible')){
+      $('#header-visible, #header').removeClass('sticky');
+    };
       $('body').css('padding-top', headerHeight + '+px');
-    }
-  });
+    };
+  };
+  headerSticky();
+  $(window).scroll(headerSticky);
 
   // show/hide menu
   $('#menu-btn').click(function(){
@@ -75,8 +76,9 @@ $(document).ready(function(){
   });
   $('.num-decored').each(function(){
     $(this).find('li').each(function(){
-      var thisNum = $(this).index()+1;
-      $(this).prepend('<span><span>' + thisNum + '</span></span>');
+      var thisNum = $(this).index()+1; /*декоративная нумерация*/
+      var thisText = $(this).html(); /*оборачивание текста в <span>, фикс IE10*/
+      $(this).html('<span class="number"><span>' + thisNum + '</span></span>'+'<span>'+ thisText + '</span>' );
     });
   });
 
@@ -95,13 +97,8 @@ $(document).ready(function(){
     }
   });
 
-  // разворачивает аккордеон до уровня текущего товара/услуги (если ссылка в аккордеоне совпадает с URL страницы), заполнение крайнего breadcrumb
-  if(document.documentElement.clientWidth > 1199) {
-    $('.aside-accordion a.active').parents('ul').slideDown();
-  };
-  var productName = $('.aside-accordion a.active').html();
-  var lastBreadcrumb = '<li>'+ productName + '</li>'
-  $('.breadcrumbs').append(lastBreadcrumb);
+
+
 
   // аккордеон категорий каталога
   // добавляет стрелку (через addClass(.extended)), если пункт имеет подкатегории
@@ -111,6 +108,22 @@ $(document).ready(function(){
       $(this).addClass('extended');
     }
   });
+
+  // разворачивает аккордеон до уровня текущего товара/услуги (если ссылка в аккордеоне совпадает с URL страницы), заполнение крайнего breadcrumb
+  if(document.documentElement.clientWidth > 1199) {
+    $('.aside-accordion a.active').parents('ul').slideDown();
+    $('.aside-accordion a.active').parents('.extended').addClass('active');
+  };
+
+  // подставляет значение в крайний breadcrumb из .html() активной ссылки аккордеона
+  /*
+  var productName = $('.aside-accordion a.active').html();
+  if (productName != undefined ) {
+    var lastBreadcrumb = '<li>'+ productName + '</li>'
+  $('.breadcrumbs').append(lastBreadcrumb);
+  }
+  */
+
 
   // Открытие/закрытие аккордеона
   $('.extended>a, .extended>span').click(function(){
@@ -132,7 +145,17 @@ $(document).ready(function(){
     }
   });
 
+  // modal form
+  $('.modal-call').click(function(){
+    $('#modal-cont, #modal-overlay').fadeIn();
+  });
 
+  $('#modal-overlay, #modal-close').click(function(){
+    $('#modal-cont, #modal-overlay').fadeOut();
+  });
+
+  // masked phone input https://github.com/digitalBush/jquery.maskedinput
+  $('input[type="tel"]').mask("+7 (999) 999-99-99");
 
 
 

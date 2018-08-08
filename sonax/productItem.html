@@ -10,7 +10,6 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="libs/formstyler/jquery.formstyler.css">
     <title>Карточка товара</title>
 </head>
 <body>
@@ -116,7 +115,7 @@
                 <ul class="breadcrumbs">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
-                    <!-- еще один <li> вставляется с $('.aside-accordion a.active').html(), см. common.js -->
+                    <li>Этот товар</li>
                 </ul>
             </div>
             <div class="catalog-content">
@@ -467,13 +466,6 @@
     <div class="overlay hidden" id="overlay"></div>
 
 <script src="libs/jquery/jquery.min.js"></script>
-<script src="libs/formstyler/jquery.formstyler.min.js"></script>
-<script>
-    $(document).ready(function(){
-        // select styling  https://github.com/Dimox/jQueryFormStyler
-        $('#sort-select').styler();
-    });
-</script>
 <script src="js/common.js"></script>
 </body>
 </html>
