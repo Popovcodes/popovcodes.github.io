@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="img/favicon/16.ico">
+    <link rel="apple-touch-icon" href="img/favicon/57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="libs/formstyler/jquery.formstyler.css">
+    <title>Карточка товара</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="wrapper">
+            <div class="header-visible" id="header-visible">
+                <div class="header-l">
+                    <div class="menu-btn" id="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="tel:+78005553535" class="phone-link">+7 (800) 555 35 35</a>
+                </div>
+                <div class="header-c">
+                    <a href="index.html" class="logo-cont">
+                       <img src="img/common/logo.png" alt=""> 
+                    </a>
+                    <a href="tel:+78005553535" class="mob-phone-link">+7 (800) 555 35 35</a>
+                    <ul class="social">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="img/social/ig.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="img/social/fb.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="img/social/vk.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-r" id="header-r">
+                    <form action="" class="search-form">
+                        <input type="text" placeholder="поиск" required>
+                        <div class="submit-wrap">
+                            <input type="submit" value="">
+                        </div>
+                    </form>
+                </div>
+                <div class="search-mob-btn" id="search-mob-btn"></div>
+            </div><!--/.header-visible-->
+            <div class="header-hidden" id="header-hidden">
+                <nav class="hidden-wrap">
+                    <ul>
+                        <li>
+                            <a href="index.html">Главная</a>
+                            <ul>
+                                <li><a href="javascript:void(0);">Спецпредложение</a></li>
+                                <li><a href="javascript:void(0);">Наши услуги</a></li>
+                                <li><a href="javascript:void(0);">Наши преимущества</a></li>
+                                <li><a href="javascript:void(0);">Наш Инстаграм</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index.html">Наши услуги</a>
+                            <ul>
+                                <li><a href="javascript:void(0);">Кузов</a></li>
+                                <li><a href="javascript:void(0);">Салон</a></li>
+                                <li><a href="javascript:void(0);">Обучение</a></li>
+                                <li><a href="javascript:void(0);">ТО Мерседес</a></li>
+                            </ul>
+                        </li>
+                    </ul><!--/.first column-->
+                    <ul>
+                        <li>
+                            <a href="price.html">Прайс-лист</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="about.html">О компании</a>
+                            <ul>
+                                <li><a href="javascript:void(0);">О компании</a></li>
+                                <li><a href="javascript:void(0);">О команде</a></li>
+                                <li><a href="javascript:void(0);">Вакансии</a></li>
+                                <li><a href="javascript:void(0);">Лицензии и благодарственные письма</a></li>
+                            </ul>
+                        </li>
+                    </ul><!--/.2nd column-->
+                    <ul>
+                        <li><a href="testimonials.html">Отзывы</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="catalog.html">Каталог товаров</a></li>
+                    </ul>
+                </nav>
+            </div><!--/.header-hidden-->
+        </div><!--/.wrapper-->
+    </header>
+
+    <!-- =========================== catalog =========================== -->
+
+    <section class="catalog-section">
+        <div class="wrapper">
+            <div class="breadcrumbs-cont">
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <!-- еще один <li> вставляется с $('.aside-accordion a.active').html(), см. common.js -->
+                </ul>
+            </div>
+            <div class="catalog-content">
+                <div class="aside-accordion">
+                    <ul>
+                        <li>
+                            <span>Категория 1</span>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Категория 2</span>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="productItem.html">Этот товар</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);">Long text long text long text long text long text</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Long text long text long text long text long text</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Long text long text long text long text long text</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Категория 3 long text long text</span>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Подтип товара</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Категория long text long</span>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Категория long text long text long text</span>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Категория long text long text long text long text</span>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара</a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара long text long text long text long text long text long text long text</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара long text long text long text long text long text long text long text</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Тип товара text long text long text </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.aside-accordion-->
+                <div class="items-outer">
+                    <div class="product-img-cont">
+                        <img src="img/products/product.jpg" alt="">
+                    </div>
+                    <h1 class="product-name">Наименование товара</h1>
+                    <div class="price"><span>5000</span> руб</div>
+                    <p>Медиа переворачивает медиавес. До недавнего времени считалось, что начальная стадия проведения исследования консолидирует пак-шот. К тому же размещение спонтанно концентрирует ребрендинг. Агентская комиссия тормозит повседневный SWOT-анализ. Диктат потребителя развивает конвергентный рекламный клаттер. Внутрифирменная реклама трансформирует потребительский рынок.</p>
+                    <p>К тому же размещение спонтанно концентрирует ребрендинг. Агентская комиссия тормозит повседневный SWOT-анализ.</p>
+                    <div class="list-cont">
+                        <h4 class="list-heading">Характеристики товара</h4>
+                        <ul class="num-decored">
+                            <li>Личность топ менеджера инновационна. Анализ зарубежного опыта отталкивает медиаплан.</li>
+                            <li>Личность топ менеджера инновационна. Анализ зарубежного опыта отталкивает медиаплан. Личность топ менеджера инновационна. Анализ зарубежного опыта отталкивает медиаплан.</li>
+                            <li>Личность топ менеджера инновационна. Анализ зарубежного опыта отталкивает медиаплан.</li>
+                        </ul>
+                    </div>
+                    <div class="btn-cont">
+                        <a href="javascript:void(0);" class="button"><span>В корзину</span></a>
+                    </div>
+                </div><!--/.items-outer-->
+            </div><!--/.catalog-content-->
+            <a href="index.html" class="back">Вернуться назад</a>
+        </div><!--/.wrapper-->
+    </section><!--/.catalog-section-->
+    
+
+    <!-- =========================== footer =========================== -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-top">
+                <div class="footer-contacts">
+                    <a href="index.html" class="footer-logo">
+                        <img src="img/common/f-logo.jpg" alt="">
+                    </a>
+                    <ul class="contacts-list">
+                        <li class="phone"><a href="tel:+78005553535">7 (800) 555-35-35</a></li>
+                        <li class="mail"><a href="mailto:loremipsum@mail.ru">loremipsum@mail.ru</a></li>
+                        <li class="address">Москва, ул. Название Улицы, д. 1, стр. 1</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Форма обратной связи</h2>
+                    <p>Оставьте свои данные и мы с Вами свяжемся</p>
+                    <form action="" class="footer-form">
+                        <input type="text" placeholder="ФИО" required>
+                        <input type="email" placeholder="E-mail" required>
+                        <div class="button">
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </form>
+                </div>
+            </div><!--/.footer-top-->
+            <nav class="footer-bottom">
+                <ul>
+                    <li>
+                        <a href="index.html">Главная</a>
+                        <ul>
+                            <li><a href="javascript:void(0);">Спецпредложение</a></li>
+                            <li><a href="javascript:void(0);">Наши услуги</a></li>
+                            <li><a href="javascript:void(0);">Наши преимущества</a></li>
+                            <li><a href="javascript:void(0);">Наш Инстаграм</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html">Наши услуги</a>
+                        <ul>
+                            <li><a href="javascript:void(0);">Кузов</a></li>
+                            <li><a href="javascript:void(0);">Салон</a></li>
+                            <li><a href="javascript:void(0);">Обучение</a></li>
+                            <li><a href="javascript:void(0);">ТО Мерседес</a></li>
+                        </ul>
+                    </li>
+                </ul><!--/.first column-->
+                <ul>
+                    <li>
+                        <a href="price.html">Прайс-лист</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="about.html">О компании</a>
+                        <ul>
+                            <li><a href="javascript:void(0);">О компании</a></li>
+                            <li><a href="javascript:void(0);">О команде</a></li>
+                            <li><a href="javascript:void(0);">Вакансии</a></li>
+                            <li><a href="javascript:void(0);">Лицензии и благодарственные письма</a></li>
+                        </ul>
+                    </li>
+                </ul><!--/.2nd column-->
+                <ul>
+                    <li><a href="testimonials.html">Отзывы</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="catalog.html">Каталог товаров</a></li>
+                </ul>
+            </nav><!--/.footer-bottom-->
+        </div><!--/.wrapper-->
+    </footer>
+
+    <div class="overlay hidden" id="overlay"></div>
+
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // select styling  https://github.com/Dimox/jQueryFormStyler
+        $('#sort-select').styler();
+    });
+</script>
+<script src="js/common.js"></script>
+</body>
+</html>
