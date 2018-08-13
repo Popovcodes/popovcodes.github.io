@@ -1677,7 +1677,7 @@ strong {
   .links-cont a:hover > p:before, .links-cont a:hover > p:after {
     opacity: 1;
   }
-  .slick-center img {
+  .testimonials-section .slick-center img {
     -webkit-transform: scale(1.5);
         -ms-transform: scale(1.5);
             transform: scale(1.5);
