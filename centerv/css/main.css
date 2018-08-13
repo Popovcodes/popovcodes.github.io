@@ -291,11 +291,11 @@ strong {
 .nav-links:after {
   content: "";
   display: block;
-  height: 72%;
+  height: 83%;
   width: 1px;
   background-color: #949493;
   position: absolute;
-  top: 11%;
+  top: 6%;
   left: 51%;
 }
 
