@@ -469,9 +469,9 @@ strong {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .links-cont a {
@@ -998,6 +998,8 @@ strong {
   opacity: 0;
   position: absolute;
   left: -1000vw;
+  bottom: 50vw;
+  z-index: -20;
 }
 
 .modal-service {
@@ -1127,11 +1129,10 @@ strong {
           transform: rotate(-90deg);
 }
 
-/* ==================== Addictional styles ======================= */
 /* ==================== Media queries ======================= */
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1900px) {
   .about-section .wrapper-in {
     position: static;
     -webkit-transform: none;
@@ -1158,7 +1159,7 @@ strong {
     max-height: 260px;
   }
   .central-img {
-    width: 400px;
+    width: 310px;
     top: auto;
     left: auto;
     bottom: -15px;
@@ -1272,7 +1273,7 @@ strong {
     font-size: 20px;
   }
   .central-img {
-    display: none;
+    display: none !important;
   }
   .content {
     padding: 40px 10px;
@@ -1414,6 +1415,8 @@ strong {
   }
   .slider-lg-cont img {
     min-width: 0 !important;
+    max-height: 70vh;
+    margin: 0 auto;
   }
   .modal-slider-controls {
     position: static;
@@ -1594,43 +1597,60 @@ strong {
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width: 1300px) {
-  .logo-cont img {
-    -webkit-transform: translateY(-200vh);
-        -ms-transform: translateY(-200vh);
-            transform: translateY(-200vh);
+@media only screen and (min-width: 1200px) {
+  .logo-img {
+    -webkit-transform: translateY(-1000px);
+        -ms-transform: translateY(-1000px);
+            transform: translateY(-1000px);
     opacity: 0;
-    -webkit-animation: fromTop 1.2s;
-            animation: fromTop 1.2s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
   }
-  .logo-cont h1 {
-    -webkit-transform: translateY(200vh);
-        -ms-transform: translateY(200vh);
-            transform: translateY(200vh);
-    opacity: 0;
-    -webkit-animation: fromBottom 1.2s;
-            animation: fromBottom 1.2s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+  .logo-img.animated {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
   }
-  .logo-cont p {
+  .name {
+    -webkit-transform: translateY(1000px);
+        -ms-transform: translateY(1000px);
+            transform: translateY(1000px);
     opacity: 0;
-    -webkit-animation: opacity 1.2s 1.3s;
-            animation: opacity 1.2s 1.3s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    -webkit-transition: all 1.5s .5s;
+    -o-transition: all 1.5s .5s;
+    transition: all 1.5s .5s;
+  }
+  .name.animated {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  .logo-p {
+    opacity: 0;
+    -webkit-transition: all 1.2s 2.2s;
+    -o-transition: all 1.2s 2.2s;
+    transition: all 1.2s 2.2s;
+  }
+  .logo-p.animated {
+    opacity: 1;
   }
   .slider-call {
     opacity: 0;
-    -webkit-transform: translateX(200vw);
-        -ms-transform: translateX(200vw);
-            transform: translateX(200vw);
-    -webkit-animation: fromRight 1.2s .5s;
-            animation: fromRight 1.2s .5s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    -webkit-transform: translateX(1000px);
+        -ms-transform: translateX(1000px);
+            transform: translateX(1000px);
+    -webkit-transition: all .7s 2.2s;
+    -o-transition: all .7s 2.2s;
+    transition: all .7s 2.2s;
+  }
+  .slider-call.animated {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
   .links-cont a:hover {
     -webkit-box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.4), -3px 15px 15px rgba(0, 0, 0, 0.4);
@@ -1673,94 +1693,6 @@ strong {
     -webkit-transition: all .8s;
     -o-transition: all .8s;
     transition: all .8s;
-  }
-  @-webkit-keyframes fromTop {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(-200vh);
-              transform: translateY(-200vh);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: none;
-              transform: none;
-    }
-  }
-  @keyframes fromTop {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(-200vh);
-              transform: translateY(-200vh);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: none;
-              transform: none;
-    }
-  }
-  @-webkit-keyframes fromBottom {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(200vh);
-              transform: translateY(200vh);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: none;
-              transform: none;
-    }
-  }
-  @keyframes fromBottom {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(200vh);
-              transform: translateY(200vh);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: none;
-              transform: none;
-    }
-  }
-  @-webkit-keyframes fromRight {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(200vw);
-              transform: translateX(200vw);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: none;
-              transform: none;
-    }
-  }
-  @keyframes fromRight {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(200vw);
-              transform: translateX(200vw);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: none;
-              transform: none;
-    }
-  }
-  @-webkit-keyframes opacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes opacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 }
 

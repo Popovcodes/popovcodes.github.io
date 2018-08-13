@@ -1,12 +1,13 @@
 $(document).ready(function(){
 
+    //animation in header
+    $('.logo-img, .name, .logo-p, .slider-call').addClass('animated');
+
     // mobile navigation and modal form showing
     $('.btn-menu').click(function(){
       $('#overlay').fadeIn();
       $('#mob-cont').addClass('active');
     });
-
-
 
     $('#mob-nav a, #overlay, #close').click(function(){
       $('#overlay').fadeOut();
@@ -130,7 +131,7 @@ $(document).ready(function(){
   $("a[rel='Scroll2id']").mPageScroll2id({});
 
 
-  if(document.documentElement.clientWidth > 1300) {
+  if(document.documentElement.clientWidth > 1199) {
     // wow.js animation  http://mynameismatthieu.com/WOW/
     new WOW().init();
   };
