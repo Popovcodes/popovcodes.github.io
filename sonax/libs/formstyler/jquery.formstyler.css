@@ -66,6 +66,7 @@
 }
 .jq-selectbox__select {
 	position: relative;
+	text-align: left;
 }
 .jq-selectbox__select-text {
 	overflow: hidden;
@@ -121,6 +122,7 @@
 
 .jq-selectbox__select-text {
 	display: block;
+	min-width: 100%;
 	box-sizing: border-box;
 	line-height: 1;
 	position: relative;
@@ -151,14 +153,20 @@
 
 .jq-selectbox__dropdown {
 	padding: 20px;
-	width: 100%;
+	min-width: 100%;
 	left: 0;
 	background: #fff;
-	border: 1px solid #999;
+	border: 1px solid #888;
+	text-align: left;
+}
+
+.jq-selectbox__dropdown ul {
+	white-space: normal;
 }
 
 .jq-selectbox li {
 	display: inline-block;
+	min-width: 51%;
 	position: relative;
 	font-size: 18px;
 	line-height: 1.2;
@@ -184,17 +192,38 @@
 .jq-selectbox li:last-child {
 	margin-bottom: 0;
 }
+
 @media only screen and (max-width : 1023px) {
 	.jq-selectbox {
 		vertical-align: bottom;
 	}
 }
 
-@media only screen and (max-width : 679px) {
+@media only screen and (max-width : 767px) {
 	.jq-selectbox__select-text,
 	.jq-selectbox li {
 		font-size: 16px;
 		padding-left: 0;
+	}
+	.jq-selectbox__select-text {
+		padding-left: 20px;
+	}
+
+}
+
+@media only screen and (max-width : 480px) {
+	.jq-selectbox__select-text {
+		padding-left: 8px;
+	}
+	.jq-selectbox__dropdown {
+		padding: 8px;
+	}
+}
+
+@media only screen and (max-width : 370px) {
+	.blog-section .jq-selectbox,
+	.portfolio-section .jq-selectbox {
+		min-width: 220px;
 	}
 }
 
@@ -205,3 +234,12 @@
 	}
 }
 
+@media only screen and (min-width : 1200px) {
+	.vacancies-section .jq-selectbox {
+		min-width: 355px;
+	}
+	.vacancies-section .jq-selectbox__select-text {
+		font-size: 20px;
+	}
+
+} 

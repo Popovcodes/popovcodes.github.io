@@ -89,7 +89,7 @@ $(document).ready(function(){
   });
 
   //decoration of current page link in navigation
-  $('.hidden-wrap a, .footer-bottom a, .aside-accordion a').each(function(){
+  $('.hidden-wrap a, .footer-bottom a, .accordion-cont a').each(function(){
     var location = window.location.href;
     var link = this.href
     if(location == link) {
@@ -97,12 +97,9 @@ $(document).ready(function(){
     }
   });
 
-
-
-
   // аккордеон категорий каталога
   // добавляет стрелку (через addClass(.extended)), если пункт имеет подкатегории
-  $('.aside-accordion li').each(function(){
+  $('.accordion-cont li').each(function(){
     var hasSubmenu = $(this).children('ul');
     if(hasSubmenu.length >0) {
       $(this).addClass('extended');
@@ -111,19 +108,9 @@ $(document).ready(function(){
 
   // разворачивает аккордеон до уровня текущего товара/услуги (если ссылка в аккордеоне совпадает с URL страницы), заполнение крайнего breadcrumb
   if(document.documentElement.clientWidth > 1199) {
-    $('.aside-accordion a.active').parents('ul').slideDown();
-    $('.aside-accordion a.active').parents('.extended').addClass('active');
+    $('.accordion-cont a.active').parents('ul').slideDown();
+    $('.accordion-cont a.active').parents('.extended').addClass('active');
   };
-
-  // подставляет значение в крайний breadcrumb из .html() активной ссылки аккордеона
-  /*
-  var productName = $('.aside-accordion a.active').html();
-  if (productName != undefined ) {
-    var lastBreadcrumb = '<li>'+ productName + '</li>'
-  $('.breadcrumbs').append(lastBreadcrumb);
-  }
-  */
-
 
   // Открытие/закрытие аккордеона
   $('.extended>a, .extended>span').click(function(){
@@ -146,7 +133,7 @@ $(document).ready(function(){
   });
 
   // modal form
-  $('.modal-call').click(function(){
+  $('.modal-call, #buy').click(function(){
     $('#modal-cont, #modal-overlay').fadeIn();
   });
 
@@ -154,91 +141,9 @@ $(document).ready(function(){
     $('#modal-cont, #modal-overlay').fadeOut();
   });
 
-  // masked phone input https://github.com/digitalBush/jquery.maskedinput
-  $('input[type="tel"]').mask("+7 (999) 999-99-99");
-
-
-
-
-
-  //main page slider
-/*  $('.js-index-slider').bxSlider({
-    mode: 'vertical',
-    pagerCustom: '.js-index-slider__pager',
-    controls: false,
-    auto: true
+  // display attached file name in modal form
+  $('.modal-form input[type=file]').change(function(e){ 
+    $(this).parents('.attach-cont').find('.attached-name').addClass('attached').html(e.target.files[0].name); 
   });
-  // product preview slider
-  $('.product-item__slider').bxSlider({
-    pagerCustom: '.product-item__colors',
-    controls: false
-  });
-  //product page slider
-  $('.js-product-view-slider').bxSlider({
-    pagerCustom: '.js-product-view-pager',
-    controls: false,
-    auto: true
-  });*/
 
-
-
-  //slick.js slider   http://kenwheeler.github.io/slick/
-  // $('#slider').slick({
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   arrows: true,
-  //   dots: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 620,
-  //       settings: {
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //       }
-  //     }
-  //   ]
-  // });
-
-  //page scroll
-  // $("a[rel='Scroll2id']").mPageScroll2id({
-  //   offset: 35
-  // });
-
-
-  //scroll to top
-  // $(window).on ('scroll', function(){
-  //   if ($(this).scrollTop() > 800) {
-  //     $('#to-top').fadeIn(2000);
-  //   } else {
-  //     $('#to-top').fadeOut();
-  //   }
-  // });
-
-  // $("#to-top").click(function () {
-  //   $("body, html").animate({
-  //     scrollTop: 0
-  //   }, 800);
-  // });
-
-  // modal windows
-  // $('.callback_btn').on('click', function(){
-  //   $('.overlay, .callback_modal').fadeIn(200);
-  // });
-  // $('.appoint_btn, .consult_btn').on('click', function(){
-  //   $('.overlay, .appointment_modal').fadeIn(200);
-  // });
-  // $('.overlay, .modal_close').on('click', function(){
-  //   $('.overlay, .callback_modal, .appointment_modal').fadeOut(200);
-  // });
-
-  if(document.documentElement.clientWidth > 768) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    // new WOW().init();
-  };
 });

@@ -1149,6 +1149,9 @@ strong {
   .slider-call {
     max-width: 30%;
   }
+  .central-img {
+    left: 10%;
+  }
 }
 
 @media only screen and (max-width: 1639px) {

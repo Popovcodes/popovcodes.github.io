@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" href="img/favicon/16.ico">
+    <link rel="apple-touch-icon" href="img/favicon/57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="libs/formstyler/jquery.formstyler.css">
+    <title>Прайс-лист</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="wrapper">
+            <div class="header-visible" id="header-visible">
+                <div class="header-l">
+                    <div class="menu-btn" id="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="tel:+78005553535" class="phone-link">+7 (800) 555 35 35</a>
+                </div>
+                <div class="header-c">
+                    <a href="index.html" class="logo-cont">
+                       <img src="img/common/logo.png" alt=""> 
+                    </a>
+                    <a href="tel:+78005553535" class="mob-phone-link">+7 (800) 555 35 35</a>
+                    <ul class="social">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="img/social/ig.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="img/social/fb.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="img/social/vk.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-r" id="header-r">
+                    <form action="" class="search-form">
+                        <input type="text" placeholder="поиск" required>
+                        <div class="submit-wrap">
+                            <input type="submit" value="">
+                        </div>
+                    </form>
+                </div>
+                <div class="search-mob-btn" id="search-mob-btn"></div>
+            </div><!--/.header-visible-->
+            <div class="header-hidden" id="header-hidden">
+                <nav class="hidden-wrap">
+                    <ul>
+                        <li>
+                            <a href="index.html">Главная</a>
+                            <ul>
+                                <li><a href="javascript:void(0);">Спецпредложение</a></li>
+                                <li><a href="javascript:void(0);">Наши услуги</a></li>
+                                <li><a href="javascript:void(0);">Наши преимущества</a></li>
+                                <li><a href="javascript:void(0);">Наш Инстаграм</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index.html">Наши услуги</a>
+                            <ul>
+                                <li><a href="javascript:void(0);">Кузов</a></li>
+                                <li><a href="javascript:void(0);">Салон</a></li>
+                                <li><a href="javascript:void(0);">Обучение</a></li>
+                                <li><a href="javascript:void(0);">ТО Мерседес</a></li>
+                            </ul>
+                        </li>
+                    </ul><!--/.first column-->
+                    <ul>
+                        <li>
+                            <a href="price.html">Прайс-лист</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="about.html">О компании</a>
+                            <ul>
+                                <li><a href="javascript:void(0);">О компании</a></li>
+                                <li><a href="javascript:void(0);">О команде</a></li>
+                                <li><a href="javascript:void(0);">Вакансии</a></li>
+                                <li><a href="javascript:void(0);">Лицензии и благодарственные письма</a></li>
+                            </ul>
+                        </li>
+                    </ul><!--/.2nd column-->
+                    <ul>
+                        <li><a href="testimonials.html">Отзывы</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="catalog.html">Каталог товаров</a></li>
+                    </ul>
+                </nav>
+            </div><!--/.header-hidden-->
+        </div><!--/.wrapper-->
+    </header>
+
+    <!-- =========================== price list section =========================== -->
+    <section class="price-section">
+        <div class="wrapper">
+            <div class="breadcrumbs-cont">
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li>Прайс-лист</li>
+                </ul>
+            </div>
+            <div class="price-heading">
+                <div>
+                    <p>Наименование товара</p>
+                </div>
+                <div>
+                    <p>Стоимость</p>
+                    <div>
+                        <span>Класс:</span>
+                        <select name="" id="class-select">
+                            <option value="mine">мини</option>
+                            <option value="sedan">седан</option>
+                            <option value="crossover">кроссовер</option>
+                            <option value="premium">премиум</option>
+                            <option value="jeep">джип</option>
+                            <option value="minivan">минивен</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-cont">
+                <ul>
+                    <li>
+                        <span>Кузов</span>
+                        <ul>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Полировка кузова</span>
+                                    <span class="price"><span>100000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Нано-защита ЛКП (Sonax)</span>
+                                    <span class="price"><span>1000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Жидкое стекло для авто</span>
+                                    <span class="price"><span>100000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Детейлинг моторного отсека</span>
+                                    <span class="price"><span>1000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Нанозащита автостекол</span>
+                                    <span class="price"><span>100000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Нано защита дисков</span>
+                                    <span class="price"><span>1000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Антигравийная пленка на автомобиль (люмар и сантек)</span>
+                                    <span class="price"><span>100000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Удаление царапин и сколов</span>
+                                    <span class="price"><span>1000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Локальный ремонт</span><span class="price">
+                                        <span>100000</span> руб</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Защитные пленки</span>
+                                    <span class="price"><span>1000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Тонировка</span><span class="price">
+                                        <span>1000</span> руб</span>
+                                    </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Ремонт стекол</span>
+                                    <span class="price"><span>100000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Локальный ремонт ЛКП</span>
+                                    <span class="price"><span>1000</span> руб</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Салон</span>
+                        <ul>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Химчистка</span>
+                                    <span class="price"><span>10000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Ремонт</span>
+                                    <span class="price"><span>5000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Защита</span>
+                                    <span class="price"><span>10000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Перетяжка салона</span>
+                                    <span class="price"><span>5000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Ремонт кожи</span>
+                                    <span class="price"><span>10000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Ремонт пластика</span>
+                                    <span class="price"><span>5000</span> руб</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Обучение</span>
+                        <ul>
+                            <li>
+                                <a href="trainings.html">
+                                    <span>Курсы</span>
+                                    <span class="price"><span>10000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="trainings.html">
+                                    <span>Семинары</span>
+                                    <span class="price"><span>5000</span> руб</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>ТО Мерседес</span>
+                        <ul>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>ТО авто Мерседес с оригинал запчастями</span>
+                                    <span class="price"><span>10000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Партнер программы Мерседес-Бенц «Независимый специалист»</span>
+                                    <span class="price"><span>5000</span> руб</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="serviceItem.html">
+                                    <span>Клубный сервис Mecedes&#8209;Benz Club Russia</span>
+                                    <span class="price"><span>10000</span> руб</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.accordion-cont-->
+            <div class="download">
+                <a href="javascript:void(0);">Скачать прайс-лист</a>
+            </div>
+            <div class="btn-cont">
+                <a href="javascript:void(0);" class="button"><span>Загрузить еще</span></a>
+            </div>
+            <a href="index.html" class="back">Вернуться назад</a>
+        </div><!--/.wrapper-->
+    </section>
+
+
+    <!-- =========================== footer =========================== -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-top">
+                <div class="footer-contacts">
+                    <a href="index.html" class="footer-logo">
+                        <img src="img/common/f-logo.jpg" alt="">
+                    </a>
+                    <ul class="contacts-list">
+                        <li class="phone"><a href="tel:+78005553535">7 (800) 555-35-35</a></li>
+                        <li class="mail"><a href="mailto:loremipsum@mail.ru">loremipsum@mail.ru</a></li>
+                        <li class="address">Москва, ул. Название Улицы, д. 1, стр. 1</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Форма обратной связи</h2>
+                    <p>Оставьте свои данные и мы с Вами свяжемся</p>
+                    <form action="" class="footer-form">
+                        <input type="text" placeholder="ФИО" required>
+                        <input type="email" placeholder="E-mail" required>
+                        <div class="button">
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </form>
+                </div>
+            </div><!--/.footer-top-->
+            <nav class="footer-bottom">
+                <ul>
+                    <li>
+                        <a href="index.html">Главная</a>
+                        <ul>
+                            <li><a href="javascript:void(0);">Спецпредложение</a></li>
+                            <li><a href="javascript:void(0);">Наши услуги</a></li>
+                            <li><a href="javascript:void(0);">Наши преимущества</a></li>
+                            <li><a href="javascript:void(0);">Наш Инстаграм</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html">Наши услуги</a>
+                        <ul>
+                            <li><a href="javascript:void(0);">Кузов</a></li>
+                            <li><a href="javascript:void(0);">Салон</a></li>
+                            <li><a href="javascript:void(0);">Обучение</a></li>
+                            <li><a href="javascript:void(0);">ТО Мерседес</a></li>
+                        </ul>
+                    </li>
+                </ul><!--/.first column-->
+                <ul>
+                    <li>
+                        <a href="price.html">Прайс-лист</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="about.html">О компании</a>
+                        <ul>
+                            <li><a href="javascript:void(0);">О компании</a></li>
+                            <li><a href="javascript:void(0);">О команде</a></li>
+                            <li><a href="javascript:void(0);">Вакансии</a></li>
+                            <li><a href="javascript:void(0);">Лицензии и благодарственные письма</a></li>
+                        </ul>
+                    </li>
+                </ul><!--/.2nd column-->
+                <ul>
+                    <li><a href="testimonials.html">Отзывы</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="catalog.html">Каталог товаров</a></li>
+                </ul>
+            </nav><!--/.footer-bottom-->
+        </div><!--/.wrapper-->
+    </footer>
+
+    <div class="overlay hidden" id="overlay"></div>
+
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // select styling  https://github.com/Dimox/jQueryFormStyler
+        $('#class-select').styler();
+    });
+</script>
+<script src="js/common.js"></script>
+</body>
+</html>

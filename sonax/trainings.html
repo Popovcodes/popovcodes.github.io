@@ -119,7 +119,7 @@
                 </ul>
             </div>
             <div class="catalog-content">
-                <div class="aside-accordion">
+                <div class="accordion-cont">
                     <ul>
                         <li>
                             <span>Кузов</span>
@@ -219,7 +219,7 @@
                             </ul>
                         </li>
                     </ul>
-                </div><!--/.aside-accordion-->
+                </div><!--/.accordion-cont-->
                 <div class="items-outer trainings-items-outer">
 
                     <div class="product-detail-wrap">
@@ -290,7 +290,7 @@
                 </div><!--/.items-outer-->
             </div><!--/.catalog-content-->
 
-            <a href="index.html" class="back">Вернуться назад</a>
+            <a href="services.html" class="back">Вернуться назад</a>
         </div><!--/.wrapper-->
     </section><!--/.catalog-section-->
     
@@ -385,6 +385,11 @@
             <input type="email" placeholder="E-mail" required>
             <input type="tel" placeholder="Телефон" required>
             <textarea placeholder="Ваше сообщение"></textarea>
+            <div class="attach-cont">
+                <input type="file" id="file-attach">
+                <label for="file-attach" class="attach-btn"></label>
+                <span class="attached-name" id="attached-name">Прикрепить файл</span>
+            </div>
             <div class="button">
                 <input type="submit" value="Отправить">
             </div>
@@ -393,6 +398,12 @@
 
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+<script>
+    $(document).ready(function(){
+      // masked phone input https://github.com/digitalBush/jquery.maskedinput
+      $('input[type="tel"]').mask("+7 (999) 999-99-99");
+    });
+</script>
 <script src="js/common.js"></script>
 </body>
 </html>

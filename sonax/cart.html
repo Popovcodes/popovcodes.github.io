@@ -10,7 +10,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Sonax</title>
+    <link rel="stylesheet" type="text/css" href="libs/formstyler/jquery.formstyler.css">
+    <title>Корзина</title>
 </head>
 <body>
     <header class="header" id="header">
@@ -107,103 +108,71 @@
         </div><!--/.wrapper-->
     </header>
 
-    <!-- =========================== video section =========================== -->
-    <section class="video-section">
-        <div class="video-cont">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/raZPw0yNVA4?rel=0&amp;controls=0&amp;showinfo=0&amp;repeat=1&amp;start=415&amp;mute=1&amp;autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+    <!-- =========================== cart section =========================== -->
+    <section class="cart-section">
         <div class="wrapper">
-            <div class="offer-content">
-                <h1>Специальное предложение</h1>
-                <p>Колебание отклоняет вихрь. Взрыв устойчиво отклоняет внутримолекулярный атом. Неоднородность ненаблюдаемо отталкивает </p>
-                <a href="javascript:void(0);" class="button"><span>Подробнее</span></a>
+            <div class="breadcrumbs-cont">
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li>Корзина</li>
+                </ul>
             </div>
-        </div><!--/.wrapper-->
-    </section><!--/.video-section-->
-
-    <!-- =========================== services section =========================== -->
-    <section class="services-section">
-        <div class="wrapper">
-            <h2>Услуги</h2>
-            <div class="services-cont">
-                <div class="car-body">
-                    <p>Кузов</p>
-                    <ul>
-                        <li><a href="javascript:void(0);">Керамика</a></li>
-                        <li><a href="javascript:void(0);">Полировка</a></li>
-                        <li><a href="javascript:void(0);">Удаление вмятин</a></li>
-                        <li><a href="javascript:void(0);">Защитные пленки</a></li>
-                        <li><a href="javascript:void(0);">Тонировка</a></li>
-                        <li><a href="javascript:void(0);">Ремонт стекол</a></li>
-                        <li><a href="javascript:void(0);">Локальный ремонт ЛКП</a></li>
-                    </ul>
-                </div>
-                <div class="salon">
-                    <p>Салон</p>
-                    <ul>
-                        <li><a href="javascript:void(0);">Химчистка</a></li>
-                        <li><a href="javascript:void(0);">Ремонт</a></li>
-                        <li><a href="javascript:void(0);">Защита</a></li>
-                        <li><a href="javascript:void(0);">Перетяжка салона</a></li>
-                        <li><a href="javascript:void(0);">Ремонт кожи</a></li>
-                        <li><a href="javascript:void(0);">Ремонт пластика</a></li>
-                    </ul>
-                </div>
-                <div class="training">
-                    <p>Обучение</p>
-                    <ul>
-                        <li><a href="trainings.html">Курсы</a></li>
-                        <li><a href="javascript:void(0);">Семинары</a></li>
-                    </ul>
-                </div>
-                <div class="maintenance">
-                    <p>ТО Мерседес</p>
-                    <ul>
-                         <li><a href="javascript:void(0);">ТО авто Мерседес с оригинал запчастями</a></li>
-                         <li><a href="javascript:void(0);">Партнер программы Мерседес-Бенц «Независимый специалист»</a></li>
-                         <li><a href="javascript:void(0);">Клубный сервис Mecedes&#8209;Benz Club Russia</a></li>
-                     </ul> 
-                </div>
-            </div>
+            <div class="cart-list-cont">
+                <ul class="cart-list">
+                    <li>
+                        <span>Наименование услуги</span>
+                        <span>стоимость</span>
+                    </li>
+                    <li>
+                        <a href="productItem.html">
+                            <span>Потребительская культура тормозит эксклюзивный конкурент</span>
+                            <span class="price"><span>5000</span> руб</span>
+                        </a>
+                        <button class="delete"><span><span></span></span></button>
+                    </li>
+                    <li>
+                        <a href="productItem.html">
+                            <span>Потребительская культура тормозит эксклюзивный конкурент</span>
+                            <span class="price"><span>3200</span> руб</span>
+                        </a>
+                        <button class="delete"><span><span></span></span></button>
+                    </li>
+                    <li>
+                        <a href="productItem.html">
+                            <span>Потребительская культура тормозит эксклюзивный конкурент</span>
+                            <span class="price"><span>120000</span> руб</span>
+                        </a>
+                        <button class="delete"><span><span></span></span></button>
+                    </li>
+                    <li>
+                        <a href="productItem.html">
+                            <span>Потребительская культура конкурент</span>
+                            <span class="price"><span>500</span> руб</span>
+                        </a>
+                        <button class="delete"><span><span></span></span></button>
+                    </li>
+                    <li>
+                        <a href="productItem.html">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ad molestiae adipisci impedi tscipit ad molestiae adipisci impedit dignissimos!</span>
+                            <span class="price"><span>12000</span> руб</span>
+                        </a>
+                        <button class="delete"><span><span></span></span></button>
+                    </li>
+                    <li>
+                        <span>Итого</span>
+                        <span class="price"><span id="price-total"></span> руб</span>
+                    </li>
+                </ul>
+            </div><!--/.cart-list-cont-->
             <div class="btn-cont">
-                <a href="price.html" class="button"><span>Прайс-лист</span></a>
+                <button class="button" id="buy"><span>Купить</span></button>
+                <button class="button clear" id=""><span>Очистить корзину</span></button>
             </div>
+            <a href="index.html" class="back">Вернуться назад</a>
         </div><!--/.wrapper-->
-    </section><!--/.services-section-->
-    <!-- =========================== text section =========================== -->
-    <section>
-        <div class="wrapper">
-            <h2>Заголовок</h2>
-            <p>Взаимодействие корпорации и клиента вполне выполнимо. Начальная стадия проведения исследования традиционно трансформирует имидж предприятия. Психология восприятия рекламы, согласно Ф.Котлеру, обуславливает охват аудитории, работая над проектом. Программа лояльности позиционирует рекламоноситель. В рамках концепции Акоффа и Стэка, стратегический рыночный план изменяет экспериментальный BTL.</p>
-            <p>Целевой трафик ускоряет имидж. Социальная ответственность интегрирована. По сути, стиль менеджмента усиливает общественный рейтинг, размещаясь во всех медиа. Целевой трафик без оглядки на авторитеты специфицирует социометрический анализ зарубежного опыта.</p>
-        </div>
-    </section>
-    <!-- =========================== advantages section =========================== -->
-    <section class="advantages-section">
-        <div class="wrapper">
-            <h2>Наши преимущества</h2>
-            <ul class="num-decored">
-                <li>Преимущество один</li>
-                <li>Преимущество два</li>
-                <li>Преимущество три</li>
-                <li>Преимущество четыре</li>
-                <li>Lorem ipsum dolor sit amet, consectetur.</li>
-                <li>Consectetur adipi sicing a voluptatem!</li>
-            </ul>
-        </div><!--/.wrapper-->
-    </section><!--/.advantages-section-->
 
-    <!-- =========================== contacts section =========================== -->
-    <section class="contacts-section">
-        <div class="wrapper">
-            <h2>Контакты</h2>
-            <ul class="contacts-list">
-                <li class="phone"><a href="tel:+78005553535">7 (800) 555-35-35</a></li>
-                <li class="mail"><a href="mailto:loremipsum@mail.ru">loremipsum@mail.ru</a></li>
-                <li class="address">Москва, ул. Название Улицы, д. 1, стр. 1</li>
-            </ul>
-        </div><!--/.wrapper-->
-    </section><!--/.contacts-section-->
+    </section>
+
 
     <!-- =========================== footer =========================== -->
     <footer class="footer">
@@ -281,7 +250,44 @@
 
     <div class="overlay hidden" id="overlay"></div>
 
+    <!-- =========================== modal =========================== -->
+    <div class="modal-overlay hidden" id="modal-overlay"></div>
+    <div class="modal-cont hidden" id="modal-cont">
+        <div class="modal-top">
+            <div class="modal-logo">
+                <img src="img/common/logo.png" alt="">
+            </div>
+            <span class="modal-close" id="modal-close">&#10006;</span>
+        </div>
+        <form action="" class="modal-form">
+            <input type="text" placeholder="ФИО" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="tel" placeholder="Телефон" required>
+            <textarea placeholder="Ваше сообщение"></textarea>
+            <div class="attach-cont">
+                <input type="file" id="file-attach">
+                <label for="file-attach" class="attach-btn"></label>
+                <span class="attached-name" id="attached-name">Прикрепить файл</span>
+            </div>
+            <div class="button">
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
+    </div>
+
 <script src="libs/jquery/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+    // Сумма товаров в корзине
+    var totalSum = 0;
+    $('.cart-list .price>span:not(#price-total)').each(function(){
+        var current = $(this).html()
+        var currentSum = parseInt(current);
+        totalSum = totalSum + currentSum
+    });
+    $('#price-total').html(totalSum);
+   });
+</script>
 <script src="js/common.js"></script>
 </body>
 </html>

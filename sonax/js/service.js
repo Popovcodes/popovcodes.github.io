@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
   //slick.js slider   http://kenwheeler.github.io/slick/
 
   $('#js-slider-1').slick({
@@ -67,6 +66,18 @@ $(document).ready(function(){
       dots: true,
       appendDots:$('.calc-dots-cont'),
     });
+
+   // set equal height of slides content (for landscapes imgs vertical centering)
+    var setEqualHeight = function() {
+      $(this).find('.slide').each(function(){
+        var currentHeight = $(this).parents('.slick-track').outerHeight();
+        $(this).height(currentHeight);
+      });
+    };
+    $('.slider').each(setEqualHeight);
+    $(window).resize(function(){
+      $('.slider').each(setEqualHeight);
+    });
     
     // all sliders prev/next buttons
     $('.left-arr').click(function(){
@@ -80,12 +91,4 @@ $(document).ready(function(){
     //popup images
     $('.popup').fancybox({});
 
-
-  
-
-
-  if(document.documentElement.clientWidth > 768) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    // new WOW().init();
-  };
 });
