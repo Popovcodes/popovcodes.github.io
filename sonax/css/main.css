@@ -186,11 +186,9 @@ input[type="submit"] {
 section {
   position: relative;
   max-width: 100%;
-  outline: 1px solid gold;
 }
 
 .wrapper {
-  outline: 1px solid blue;
   position: relative;
   width: 96%;
   max-width: 1110px;
@@ -334,6 +332,11 @@ h2 {
   -webkit-transition-delay: .2s;
        -o-transition-delay: .2s;
           transition-delay: .2s;
+}
+
+.header-compensate {
+  padding-top: 135px !important;
+  margin-top: -85px !important;
 }
 
 .phone-link {
@@ -668,13 +671,14 @@ h2 {
 }
 
 .breadcrumbs-cont {
-  padding: 15px 0 20px;
+  padding: 15px 0 10px;
 }
 
 .breadcrumbs {
   white-space: nowrap;
   max-width: 94vw;
   overflow: hidden;
+  padding-bottom: 10px;
   text-align: left;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
@@ -1716,6 +1720,8 @@ p + .list-cont {
 .about-texts-section .wrapper > div {
   display: inline-block;
   width: 100%;
+  padding-top: 6rem;
+  margin-top: -6rem;
   margin-bottom: 12rem;
 }
 
@@ -2380,7 +2386,6 @@ p + .list-cont {
 }
 
 .testim-text {
-  outline: 1px solid cyan;
   padding-left: 30px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -2433,7 +2438,6 @@ p + .list-cont {
 .testim-form {
   width: 100%;
   padding-top: 18px;
-  outline: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2687,7 +2691,6 @@ textarea {
 }
 
 .blog-section .filters-form {
-  outline: 1px solid lime;
   max-width: 400px;
 }
 
@@ -2937,13 +2940,20 @@ textarea {
   padding-left: 10rem;
 }
 
-.footer-bottom a:after {
+.footer-bottom > ul > li > a {
+  color: #fff;
+}
+
+.footer-bottom > ul > li > a:after {
   background-color: #fff;
 }
 
-.footer-bottom > ul > li > a,
 .footer-bottom ul li ul a {
-  color: #fff;
+  color: #b6b5b5;
+}
+
+.footer-bottom ul li ul a:after {
+  background-color: #b6b5b5;
 }
 
 /*-------------------------- modal --------------------------*/
@@ -3201,11 +3211,9 @@ textarea {
     z-index: 3;
   }
   .accordion-cont > ul ul {
-    /*!*/
     outline: 1px solid #aaa;
   }
   .accordion-cont li {
-    /*!*/
     outline: 1px solid #aaa;
   }
   .price-section .accordion-cont ul li {
@@ -3548,6 +3556,10 @@ textarea {
   .header-visible {
     padding: 5px 0;
   }
+  .header-compensate {
+    padding-top: 145px !important;
+    margin-top: -105px !important;
+  }
   .phone-link {
     display: none;
   }
@@ -3832,6 +3844,9 @@ textarea {
   .video-cont {
     min-height: 0;
   }
+  .services-section h2 {
+    text-align: center;
+  }
   .services-cont > div {
     max-width: 100%;
     text-align: center;
@@ -3899,10 +3914,7 @@ textarea {
 }
 
 /*479*/
-/* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .header-r {

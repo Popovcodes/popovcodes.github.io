@@ -17,6 +17,16 @@ $(document).ready(function(){
   headerSticky();
   $(window).scroll(headerSticky);
 
+  // Compensation for anchors of height of the fixed header
+ /* 
+  var headerCompensation = function(){
+    var headerHeight = $('#header-visible').outerHeight();
+    $('.header-compensate').css({"padding-top": headerHeight + 6 +'px', "margin-top": -headerHeight + 'px'});
+  };
+  headerCompensation();
+  $(window).scroll(headerCompensation).resize(headerCompensation);
+*/
+
   // show/hide menu
   $('#menu-btn').click(function(){
     if(document.documentElement.clientWidth < 768) {
@@ -58,6 +68,11 @@ $(document).ready(function(){
     $(this).addClass('hidden');
   });
 
+  $('#header-hidden a').click(function(){
+    $('#header-hidden').slideUp();
+    $('#overlay').addClass('hidden');
+  });
+
   $(window).resize(function(){
     if(document.documentElement.clientWidth < 768){
       if(!$('#header-r').is(':visible')&&!$('#header-hidden').is(':visible')){
@@ -89,13 +104,19 @@ $(document).ready(function(){
   });
 
   //decoration of current page link in navigation
-  $('.hidden-wrap a, .footer-bottom a, .accordion-cont a').each(function(){
-    var location = window.location.href;
-    var link = this.href
-    if(location == link) {
-      $(this).addClass('active');
-    }
-  });
+  var getCurrentLink = function(){
+    $('.hidden-wrap a, .footer-bottom a, .accordion-cont a').each(function(){
+      $(this).removeClass('active');
+      var location = window.location.href;
+      var link = this.href
+      if(location == link) {
+        $(this).addClass('active');
+      }
+    });
+  };
+  getCurrentLink();
+  $('.hidden-wrap a, .footer-bottom a, .accordion-cont a').click(getCurrentLink);
+  
 
   // аккордеон категорий каталога
   // добавляет стрелку (через addClass(.extended)), если пункт имеет подкатегории
@@ -122,7 +143,6 @@ $(document).ready(function(){
       parentLi.removeClass('active');
 
     } else {
-      //$('.extended ul').slideUp();
       $('.extended').removeClass('active');
       parentLi.addClass('active');
       parentLi.addClass('active');
