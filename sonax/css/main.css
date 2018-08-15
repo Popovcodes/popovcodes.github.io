@@ -3212,6 +3212,15 @@ textarea {
     right: 0;
     z-index: 3;
   }
+  .accordion-cont > ul ul {
+    outline: 1px solid #aaa;
+  }
+  .accordion-cont li {
+    outline: 1px solid #aaa;
+  }
+  .accordion-cont li a, .accordion-cont li > span {
+    border-bottom: none;
+  }
   .price-section .accordion-cont ul li {
     max-width: 100%;
   }
