@@ -3210,12 +3210,6 @@ textarea {
     right: 0;
     z-index: 3;
   }
-  .accordion-cont > ul ul {
-    outline: 1px solid #aaa;
-  }
-  .accordion-cont li {
-    outline: 1px solid #aaa;
-  }
   .price-section .accordion-cont ul li {
     max-width: 100%;
   }
@@ -3544,7 +3538,7 @@ textarea {
   .breadcrumbs-cont {
     padding: 5px 0;
   }
-  .breadcrumbs li {
+  .img-section .breadcrumbs li {
     font-size: 12px;
     text-shadow: 0 0 8px #000;
   }
