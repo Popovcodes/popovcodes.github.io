@@ -151,9 +151,13 @@ $(document).ready(function(){
     $('#modal-cont, #modal-overlay').fadeOut();
   });
 
-  // display attached file name in modal form
+  // display attached file name
   $('.modal-form input[type=file]').change(function(e){ 
     $(this).parents('.attach-cont').find('.attached-name').addClass('attached').html(e.target.files[0].name); 
   });
 
+  $('#upl-photo').change(function(e){
+      var fileName = e.target.files[0].name;
+      $(this).siblings('label').html('Загружен файл: <br>' + e.target.files[0].name).css('color', '#000'); 
+  });
 });

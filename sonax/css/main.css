@@ -631,12 +631,8 @@ h2 {
 }
 
 .video-cont {
-  min-height: 500px;
-  height: 0;
   position: relative;
-  padding-bottom: 56.25%;
   width: 100vw;
-  max-width: 2400px;
   margin: 0 auto;
   overflow: hidden;
   -webkit-filter: brightness(55%);
@@ -2530,16 +2526,25 @@ p + .list-cont {
 }
 
 .photo-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   display: block;
   width: 255px;
   min-width: 255px;
   height: 255px;
-  line-height: 255px;
   border-radius: 50%;
   background-color: #e8e8e8;
   border: 1px solid #aeaeae;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .photo-cont img {
@@ -2555,7 +2560,19 @@ p + .list-cont {
 }
 
 .photo-cont label {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   position: absolute;
   top: 0;
@@ -3716,7 +3733,7 @@ textarea {
     height: 165px;
   }
   .photo-cont label {
-    line-height: 165px;
+    font-size: 12px;
   }
   .testim-text,
   .inputs-cont {
@@ -4097,12 +4114,6 @@ textarea {
   .vacancies-item:hover {
     -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  }
-}
-
-@media only screen and (min-width: 2400px) {
-  .video-cont {
-    padding-bottom: 36%;
   }
 }
 
