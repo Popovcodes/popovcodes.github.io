@@ -88,6 +88,7 @@ body {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
+  overflow-x: hidden;
 }
 
 *,
