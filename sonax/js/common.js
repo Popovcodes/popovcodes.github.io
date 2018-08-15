@@ -17,16 +17,6 @@ $(document).ready(function(){
   headerSticky();
   $(window).scroll(headerSticky);
 
-  // Compensation for anchors of height of the fixed header
- /* 
-  var headerCompensation = function(){
-    var headerHeight = $('#header-visible').outerHeight();
-    $('.header-compensate').css({"padding-top": headerHeight + 6 +'px', "margin-top": -headerHeight + 'px'});
-  };
-  headerCompensation();
-  $(window).scroll(headerCompensation).resize(headerCompensation);
-*/
-
   // show/hide menu
   $('#menu-btn').click(function(){
     if(document.documentElement.clientWidth < 768) {
@@ -134,7 +124,8 @@ $(document).ready(function(){
   };
 
   // Открытие/закрытие аккордеона
-  $('.extended>a, .extended>span').click(function(){
+  $('.accordion-cont a, .accordion-cont span').click(function(){
+
     var parentLi = $(this).parent('.extended');
    
     if(parentLi.hasClass('active')){
@@ -144,7 +135,6 @@ $(document).ready(function(){
 
     } else {
       $('.extended').removeClass('active');
-      parentLi.addClass('active');
       parentLi.addClass('active');
       parentLi.parents('.extended').addClass('active');
       $('.extended:not(.active)').find('ul').slideUp();

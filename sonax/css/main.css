@@ -3213,10 +3213,10 @@ textarea {
     z-index: 3;
   }
   .accordion-cont > ul ul {
-    outline: 1px solid #aaa;
+    outline: 1px solid #ccc;
   }
   .accordion-cont li {
-    outline: 1px solid #aaa;
+    outline: 1px solid #ccc;
   }
   .accordion-cont li a, .accordion-cont li > span {
     border-bottom: none;
