@@ -1,0 +1,8 @@
+в js/libs.min.js собраны:
+1. jQuery.js - используется на всех страницах
+2. maskedinput.js - маска ввода телефона, на всех страницах
+3. waypoints.js + counterUp.js (анимированный счетчик) - на главной
+4. fancybox.js - "О компании"
+
+архив без объединения плагинов тут
+https://yadi.sk/d/FVBwJ6sc3aZayj
