@@ -67,20 +67,14 @@ $(document).ready(function(){
     $('#overlay').css('z-index', '5');
   });
 
-
-
-  //decoration of current page link in navigation
-  var getCurrentLink = function(){
-    $('.hidden-wrap a, .footer-bottom a, .accordion-cont a').each(function(){
-      $(this).removeClass('active');
-      var location = window.location.href;
-      var link = this.href
-      if(location == link) {
-        $(this).addClass('active');
-      }
-    });
-  };
-  getCurrentLink();
+  //decoration of current link in navigation
+  $('nav a').each(function(){
+    var location = window.location.href;
+    var link = this.href;
+    if(location == link) {
+      $(this).addClass('active');
+    }
+  });
   
   // masked phone input https://github.com/digitalBush/jquery.maskedinput
     $('input[type="tel"]').mask("+7 (999) 999-99-99");
