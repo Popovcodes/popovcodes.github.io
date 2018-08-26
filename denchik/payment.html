@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Контакты</title>
+    <title>Оплата</title>
 </head>
 <body>
     <header class="header">
@@ -394,29 +394,35 @@
         <div class="wrapper">
             <ul class="breadcrumbs">
                 <li><a href="index.html">Главная</a></li>
-                <li>Контакты</li>
+                <li>Оплата</li>
             </ul>
         </div>
     </div>
     
     <!-- =========================== section =========================== -->
-    <section class="map-section">
+    <section class="payments-section">
         <div class="wrapper">
-            <h1>Контакты</h1>
-            <h3 class="subheading">Как нас найти</h3>
-            <div class="address-cont map-toggler">
-                <div class="address-item active" id="address1">
-                    <div>Пролетарская</div>
-                    <div>ул.Марксистская <br>34к11, 2 этаж</div>
+            <h2>Оплата</h2>
+            <h3 class="subheading">На любой вкус</h3>
+            <div class="payments-method">
+                <div class="payment-item">
+                    <img src="img/common/pay-1.jpg" alt="">
+                    <h4>Наличные</h4>
+                    <p>Наличными средствами в мастерской или курьеру при доставке устройства по адресу.</p>
                 </div>
-                <div class="address-item" id="address2">
-                    <div>Багратионовская</div>
-                    <div>ул.Барклая 8, <br>офис 477</div>
+                <div class="payment-item">
+                    <img src="img/common/pay-2.jpg" alt="">
+                    <h4>Банковской картой</h4>
+                    <p>Банковской картой. Мы принимаем <br>к оплате карты платежных систем Visa, MasterCard, Maestro, МИР. Также в нашей мастерской возможна бесконтактная оплата Apple Pay, Samsung Pay, Android Pay и перевод Сбербанк-Онлайн.​</p>
+                </div>
+                <div class="payment-item">
+                    <img src="img/common/pay-3.jpg" alt="">
+                    <h4>Безналичный расчет</h4>
+                    <p>Безналичный расчет для юридических лиц и индивидуальных предпринимателей. Для получения счета необходимы реквизиты организации и предварительное согласование для оформления документов.</p>
                 </div>
             </div>
         </div><!--/.wrapper-->
-        <div class="map" id="map"></div>
-    </section>
+    </section><!--/.news-section -->
 
     <!-- =========================== form section =========================== -->
     <section class="form-section">
@@ -536,20 +542,6 @@
 
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
-
-<!-- only for this page: -->
-<script>
-    $(document).ready(function(){
-        $('.map-toggler .address-item').click(function(){
-            $('.map-toggler .address-item').removeClass('active');
-            $(this).addClass('active');
-        });
-    });
-</script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<script src="js/ymap.js"></script>
-
-<!-- /only for this page - end -->
 <script src="js/common.js"></script>
 </body>
 </html>
