@@ -1,18 +1,5 @@
 $(document).ready(function(){
 
-//slick.js slider   http://kenwheeler.github.io/slick/
-$('#main-slider').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  arrows: false,
-  dots: true,
-  appendDots:$('#slider-cont')
-});
-$('.js-slider').css({'opacity': '1', 'max-height': 'none'});
-
 //фиксированный хедер и расположение кнопки корзины
 $('.cart-link').css('opacity', '1');
 var headerSticky = function(){
@@ -60,7 +47,6 @@ $('.size-switch input[type="radio"]').change(function(){
   thisItemImg.attr('src', 'img/pizza/' + thisVal +'.jpg');
 });
 
-
 // модальные окна
 $('.call-btn').click(function(){
   $('#overlay').fadeIn();
@@ -82,11 +68,18 @@ $('#to-recover').click(function(){
   $('#authorization-modal').slideUp();
   $('#recover-modal').delay(400).slideDown();
 });
-
+$('.map-call').click(function(){
+  $('#map-modal').slideDown();
+  $('#overlay').fadeIn();
+});
+$('#map-close').click(function(){
+  $('#map-modal').slideUp();
+  $('#overlay').fadeOut();
+});
 
 // тултипы (добавить/удалить ингридиенты; информация о товаре)
 $('.ingredients-btn').click(function(){
-  $(this).parents('.ingredients-control').find('.ingredients-tooltip').slideDown();
+  $(this).parents('.ingredients-control').find('.ingredients-tooltip').slideToggle();
 });
 $('.plus').click(function(){
   var thisQuantity = $(this).parents('.ingr-counter-cont').find('.ingr-quant');
@@ -117,6 +110,43 @@ $('#header-bottom').click(function(){
   $('#overlay').fadeOut();
 });
 
+// фильтры каталога
+$('#choose-btn').click(function(){
+  $('#components-dropdown').slideToggle();
+});
+$('#components-close').click(function(){
+  $('#components-dropdown').slideUp();
+});
+$('#components-list input[type="checkbox"]').change(function(){
+  var thisValue = $(this).val();
+  if($(this).prop('checked')) {
+    var thisHtml = $(this).siblings('label').html();
+    $('#chosen-list').append('<li class="chosen-item" data-component="' + thisValue + '"><span class="chosen-name">' + thisHtml + '</span><span class="cancel-chosen">X</span></li>');
+  } else {
+    $('#chosen-list li[data-component="' + thisValue + '"]').remove();
+  }
+  $('.cancel-chosen').click(function(){
+    var thisData = $(this).parents('.chosen-item').attr('data-component');
+    $('#components-list input[type="checkbox"][value="' + thisData + '"]').prop('checked', false);
+    $(this).parents('.chosen-item').remove();
+  });
+});
+$('#filter-reset').click(function(){
+  $('#components-list input[type="checkbox"]').prop('checked', false);
+  $('.chosen-item').remove();
+});
+$('#filter-apply').click(function(){
+  $('#components-dropdown').slideUp();
+});
+
+//decoration of current page link in navigation
+$('a').each(function(){
+  var location = window.location.href;
+  var link = this.href
+  if(location == link) {
+    $(this).addClass('active');
+  }
+});
 
 // overlay click events
 $('#overlay').click(function(){
@@ -127,10 +157,7 @@ $('#overlay').click(function(){
 
 // masked phone input https://github.com/digitalBush/jquery.maskedinput
 $('input[type="tel"]').mask("+7 (999) 999-99-99");
-
-
-
-
+$('#date-input').mask("99.99.9999");
 
 
   if(document.documentElement.clientWidth > 768) {
