@@ -28,12 +28,10 @@ $(window).scroll(headerSticky).resize(headerSticky);
 $('.btn-menu').click(function(){
   $('#overlay').fadeIn();
   $('.tooltip').slideUp();
-  //$('#overlay').css('z-index', '7');
   $('#mob-cont').addClass('active');
 });
 $('#mob-nav a, #overlay, #close').click(function(){
   $('#overlay').fadeOut();
-  //$('#overlay').css('z-index', '6');
   $('#mob-cont').removeClass('active');
 });
 $('#mob-cont .call-btn, #mob-cont .map-call').click(function(){
@@ -45,6 +43,19 @@ $('.size-switch input[type="radio"]').change(function(){
   var thisVal = $(this).val();
   var thisItemImg = $(this).parents('.item').find('.product-img');
   thisItemImg.attr('src', 'img/pizza/' + thisVal +'.jpg');
+});
+
+// аккордеон вакансий
+$('.vac-heading').click(function(){
+  if($(this).hasClass('active')) {
+    $(this).parent('li').find('ul').slideUp();
+    $(this).removeClass('active');
+  } else {
+    $('.vac-accordion').find('ul').slideUp();
+    $('.vac-heading.active').removeClass('active');
+    $(this).addClass('active');
+    $(this).parent('li').find('ul').slideDown();
+  }
 });
 
 // модальные окна
@@ -68,6 +79,10 @@ $('#to-recover').click(function(){
   $('#authorization-modal').slideUp();
   $('#recover-modal').delay(400).slideDown();
 });
+$('#comment-btn').click(function(){
+  $('#overlay').fadeIn();
+  $('#comment-modal').slideDown();
+});
 $('.map-call').click(function(){
   $('#map-modal').slideDown();
   $('#overlay').fadeIn();
@@ -77,17 +92,18 @@ $('#map-close').click(function(){
   $('#overlay').fadeOut();
 });
 
+
 // тултипы (добавить/удалить ингридиенты; информация о товаре)
 $('.ingredients-btn').click(function(){
   $(this).parents('.ingredients-control').find('.ingredients-tooltip').slideToggle();
 });
-$('.plus').click(function(){
+$('.ingr-counter .plus').click(function(){
   var thisQuantity = $(this).parents('.ingr-counter-cont').find('.ingr-quant');
   var thisQuantityNum = parseInt(thisQuantity.html());
   thisQuantity.html(thisQuantityNum + 1);
   $(this).parents('.ingr-counter-cont').find('.minus, .ingr-quant').css('display', 'inline-block');
 });
-$('.minus').click(function(){
+$('.ingr-counter .minus').click(function(){
   var thisQuantity = $(this).parents('.ingr-counter-cont').find('.ingr-quant');
   var thisQuantityNum = parseInt(thisQuantity.html());
   if(thisQuantityNum > 0) {
@@ -109,6 +125,7 @@ $('#header-bottom').click(function(){
   $('.tooltip').slideUp();
   $('#overlay').fadeOut();
 });
+
 
 // фильтры каталога
 $('#choose-btn').click(function(){
@@ -139,6 +156,23 @@ $('#filter-apply').click(function(){
   $('#components-dropdown').slideUp();
 });
 
+// количество единицы товара в корзине, удаление строки
+$('.cart-item-quant .plus').click(function(){
+  var thisQuantity = $(this).parents('.cart-item-quant').find('.current-quant');
+  var thisQuantityNum = parseInt(thisQuantity.html());
+  thisQuantity.html(thisQuantityNum + 1);
+});
+$('.cart-item-quant .minus').click(function(){
+  var thisQuantity = $(this).parents('.cart-item-quant').find('.current-quant');
+  var thisQuantityNum = parseInt(thisQuantity.html());
+  if(thisQuantityNum > 1) {
+    thisQuantity.html(thisQuantityNum - 1);
+  };
+});
+$('.cart-item-del').click(function(){
+  $(this).parents('.cart-item').remove();
+});
+
 //decoration of current page link in navigation
 $('a').each(function(){
   var location = window.location.href;
@@ -159,9 +193,4 @@ $('#overlay').click(function(){
 $('input[type="tel"]').mask("+7 (999) 999-99-99");
 $('#date-input').mask("99.99.9999");
 
-
-  if(document.documentElement.clientWidth > 768) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    // new WOW().init();
-  };
 });

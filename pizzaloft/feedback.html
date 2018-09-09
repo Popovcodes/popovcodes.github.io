@@ -9,11 +9,9 @@
   <link rel="apple-touch-icon" href="img/favicon/57.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
-  <link rel="stylesheet" type="text/css" href="libs/jquery-ui/jquery-ui.css">
-  <link rel="stylesheet" type="text/css" href="libs/formstyler/jquery.formstyler.css"><!-- for this page only -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
-  <title>Оформление заказа</title>
+  <title>Обратная связь</title>
 </head>
 <body>
   <header class="header">
@@ -111,127 +109,127 @@
       </nav>
   </div><!--/.mob-cont-->
 
-  <!-- ============================== order form ============================== -->
-  <section>
+  <!-- ============================== feedback section ============================== -->
+  <section class="feedback-section">
     <div class="wrapper">
-      <h1>Оформление заказа</h1>
-      <form action="" class="order-form">
-        <h4>Кому доставить</h4>
-        <div class="form-row">
-          <span>Имя</span>
-          <input type="text" class="length-md">
+      <h1>Обратная связь</h1>
+      <div class="feedback-preface">
+        <div class="preface-left">
+          <p>Поделитесь Вашим мнением о нашем сервисе и товарах!</p>
+          <p>Мы обязательно читаем каждый Ваш отзыв и отвечаемна все возникшие вопросы!</p>
+          <p>Ознакомьтесь с <a href="javascript:void(0);">правилами обратной связи</a>.</p>
         </div>
-        <div class="form-row">
-          <span>Номер телефона</span>
-          <input type="tel" placeholder="+7 (___) ___-__-__"  class="length-md">
+        <div class="preface-right">
+          <button class="comment-btn" id="comment-btn">Отправить отзыв</button>
         </div>
-        <h4>Куда доставить</h4>
-        <div class="form-row">
-          <span>Город</span>
-          <select name="" data-placeholder="не выбрано" class="location-select">
-            <option value=""></option><!-- leave empty to show placeholder -->
-            <option value="">Lorem ipsum dolor 1</option>
-            <option value="">Lorem ipsum dolor 2</option>
-            <option value="">Lorem ipsum dolor 3</option>
-            <option value="">Lorem ipsum dolor 4</option>
-            <option value="">Lorem ipsum dm ipsum dm ipsum dolor sit amet, consectetur adipisicing.</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <span>Метро</span>
-          <select name="" data-placeholder="не выбрано" class="location-select">
-            <option value=""></option>
-            <option value="">Lorem ipsum dolor 1</option>
-            <option value="">Lorem ipsum dolor 2</option>
-            <option value="">Lorem ipsum dolor 3</option>
-            <option value="">Lorem ipsum dolor 4</option>
-            <option value="">Lorem ipsum dolor sit amet, consectetur adipisicing.</option>
-            <option value="">Lorem ipsum dolor 1</option>
-            <option value="">Lorem ipsum dolor 2</option>
-            <option value="">Lorem ipsum dolor 3</option>
-            <option value="">Lorem ipsum dolor 4</option>
-            <option value="">Lorem ipsum dolor sit amet, consectetur adipisicing.</option>
-            <option value="">Lorem ipsum dolor 1</option>
-            <option value="">Lorem ipsum dolor 2</option>
-            <option value="">Lorem ipsum dolor 3</option>
-            <option value="">Lorem ipsum dolor 4</option>
-            <option value="">Lorem ipsum dolor sit amet, consectetur adipisicing.</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <span class="top-aligned">Адрес</span>
-          <div class="double-row">
-            <div class="row-top">
-              <input type="text" placeholder="введите название улицы">
-              <div class="small-inputs-cont">
-                <input type="text" placeholder="дом" class="length-sm">
-                <input type="text" placeholder="корпус" class="length-sm">
-                <input type="text" placeholder="кв.офис" class="length-sm">
-                <input type="text" placeholder="подъезд" class="length-sm">
-              </div>
-            </div>
-            <div class="row-bottom">
-              <input type="text" placeholder="ключ домофона">
-              <input type="text" placeholder="этаж" class="length-sm">
-            </div>
+      </div><!-- /.feedback-preface -->
+
+      <div class="messages-cont">
+
+        <div class="msg-item">
+          <div class="msg-text">
+            <p>Все очень вкусно! Доставка особенно порадовала!</p>
+            <p>Теперь я ваш постоянный клиент!</p>
+          </div>
+          <div class="msg-info">
+            <div class="msg-author">Леонид, Москва</div>
+            <div>Доставка заказа по адресу</div>
+            <div class="msg-date">02.04.2018&nbsp;<br>15:39</div>
           </div>
         </div>
-        <div class="form-row">
-          <span class="top-aligned">Дата и время доставки</span>
-          <div class="double-row">
-            <div class="asap-cont">
-              <input type="checkbox" id="asap">
-              <label for="asap"></label>
-              <span>как можно раньше</span>
-            </div>
-            <div class="date-select-cont">
-              <div class="time-input-cont">
-                <input type="text" placeholder="выберите дату" id="datepicker" class="time-input">
-              </div>
-              <select name="" data-placeholder="выберите время" class="time-input">
-                <option value=""></option>
-                <option value="">18:00</option>
-                <option value="">18:15</option>
-                <option value="">18:30</option>
-                <option value="">18:45</option>
-                <option value="">19:00</option>
-                <option value="">19:15</option>
-                <option value="">19:30</option>
-                <option value="">19:45</option>
-                <option value="">20:00</option>
-                <option value="">20:15</option>
-                <option value="">20:30</option>
-                <option value="">20:45</option>
-                <option value="">21:00</option>
-                <option value="">21:15</option>
-                <option value="">21:30</option>
-                <option value="">21:45</option>
-              </select>
-            </div>
+
+        <div class="msg-item admin-msg">
+          <div class="msg-text">
+            <p>Всегда пожалуйста!</p>
+            <p>Администратор!</p>
+          </div>
+          <div class="msg-info">
+            <div class="msg-date">02.04.2018&nbsp;<br>15:39</div>
           </div>
         </div>
-        <div class="form-row">
-          <span class="top-aligned"><strong>Способ оплаты</strong></span>
-          <div class="pay-cont">
-            <input type="radio" name="payment" id="payment-1" checked>
-            <label for="payment-1">Наличными курьеру</label>
-            <input type="radio" name="payment" id="payment-2">
-            <label for="payment-2">Банковской картой</label>
-            <input type="radio" name="payment" id="payment-3">
-            <label for="payment-3">Сертификат</label>
+
+        <div class="msg-item">
+          <div class="msg-text">
+            <p>Заказали пиццу "Моцарелла". Думали что это обычная моцарелла, а оказывается там не было ПЕРЦА!!! Пришлось отдавать обратно и дозаказывать ингредиенты.</p>
+          </div>
+          <div class="msg-info">
+            <div class="msg-author">Милена, Москва</div>
+            <div>Самовывоз</div>
+            <div class="msg-date">01.04.2018&nbsp;<br>18:03</div>
           </div>
         </div>
-        <h4>Комментарий к заказу</h4>
-        <div class="submit-row">
-          <textarea name=""></textarea>
-          <div class="submit-cont">
-            <span class="order-sum">Ваш заказ на сумму:<span>2010 руб.</span></span>
-            <input type="submit" value="Подтвердить" class="submit-btn">
+
+        <div class="msg-item admin-msg">
+          <div class="msg-text">
+            <p>Милена, Ваше мнение мы учли, внесем коррективы на сайт. Спасибо за отзыв!</p>
+            <p>Администратор!</p>
+          </div>
+          <div class="msg-info">
+            <div class="msg-date">01.04.2018&nbsp;<br>19:50</div>
           </div>
         </div>
-      </form>
+
+      </div><!-- /.messages-cont -->
+      <div class="more-cont">
+        <button class="more">Смотрите еще . . .</button>
+      </div>
+
+      <h2>Наши вакансии</h2>
+      <div class="vacancies-cont">
+
+        <div class="vac-accordion-cont">
+          <ul class="vac-accordion">
+            <li>
+              <div class="vac-heading">Повар (2)</div>
+              <ul>
+                <li>
+                  <span><strong>Вакансия: </strong>Повар - пиццайоло</span>
+                  <span><strong>Город: </strong>Москва, ст. м. Волоколамская</span>
+                  <span><strong>Описание вакансии: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolore nisi eligendi necessitatibus in nobis numquam minima odit perferendis nam.</span>
+                </li>
+                <li>
+                  <span><strong>Вакансия: </strong>Повар - пиццайоло</span>
+                  <span><strong>Город: </strong>Москва, ст. м. Волоколамская</span>
+                  <span><strong>Описание вакансии: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolore nisi eligendi necessitatibus in nobis numquam minima odit perferendis nam.</span>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="vac-heading">Разнорабочий (1)</div>
+              <ul>
+                <li>
+                  <span><strong>Вакансия: </strong>Разнорабочий</span>
+                  <span><strong>Город: </strong>Москва, ст. м. Волоколамская</span>
+                  <span><strong>Описание вакансии: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolorein numquam minima odit perferendis nam.</span>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="vac-heading">Кассир-операционист (2)</div>
+              <ul>
+                <li>
+                  <span><strong>Вакансия: </strong>Кассир-операционист</span>
+                  <span><strong>Город: </strong>Москва, ст. м. Волоколамская</span>
+                  <span><strong>Описание вакансии: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem perferendis nam.</span>
+                </li>
+                <li>
+                  <span><strong>Вакансия: </strong>Кассир-операционист</span>
+                  <span><strong>Город: </strong>Москва, ст. м. Волоколамская</span>
+                  <span><strong>Описание вакансии: </strong>Lorem ipsum dolor sit amet nam.</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.vac-accordion-cont -->
+
+        <div class="vac-contacts-cont">
+          <h3>Наши контакты</h3>
+          <div class="vac-phone-cont"><a href="tel:+70002644525">+7 (000) 264-45-24</a><span>Отдел кадров</span></div>
+          <div class="vac-mail-cont"><a href="mailto:hr@company.com">hr@company.com</a><span>Электронная почта</span></div>
+        </div>
+      </div>
     </div><!-- /.wrapper -->
-  </section>
+  </section><!-- /.feedback-section -->
 
   <!-- ============================== footer ============================== -->
   <footer class="footer">
@@ -341,6 +339,17 @@
   <div class="overlay" id="overlay"></div>
 
   <!-- ============================== modals windows ============================== -->
+  <!-- comment modal, IS USED AT FEEDBACK PAGE ONLY-->
+  <div class="modal" id="comment-modal">
+    <h3 class="modal-heading">Оставьте свой комментарий</h3>
+    <form action="">
+      <input type="text" placeholder="Ваше имя">
+      <input type="text" placeholder="Ваш город">
+      <textarea placeholder="Ваш комментарий"></textarea>
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
+
   <!-- call-back modal -->
   <div class="modal" id="callback-modal">
     <h3 class="modal-heading">Укажите свой телефон<br>и мы перезвоним</h3>
@@ -441,31 +450,6 @@
   </div>
 
   <script src="libs/jquery/jquery.min.js"></script>
-  <script src="libs/jquery-ui/jquery-ui.min.js"></script><!-- for this page only -->
-  <script src="libs/jquery-ui/jquery.ui.datepicker-ru.js"></script><!-- for this page only -->
-  <script src="libs/formstyler/jquery.formstyler.js"></script><!-- for this page only -->
-  <script>
-    $(document).ready(function(){
-      $('#datepicker').datepicker({
-        minDate: new Date()
-      });
-
-      $('select').styler({
-        selectPlaceholder: true
-      });
-    });
-    $('#asap').change(function(){
-      if($(this).prop('checked')==true) {
-        $('.time-input').attr('disabled', true)
-        .trigger('refresh');
-        $('.date-select-cont').css('opacity', '.4');
-      } else {
-        $('.time-input').removeAttr('disabled')
-        .trigger('refresh');
-        $('.date-select-cont').css('opacity', '1');
-      }
-    });
-  </script><!-- for this page only -->
   <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
   <script src="js/common.js"></script>
 </body>
