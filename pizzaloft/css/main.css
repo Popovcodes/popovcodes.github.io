@@ -2149,6 +2149,8 @@ textarea {
 .order-form input.time-input,
 .order-form .time-input {
   min-width: 70px;
+  height: 32px;
+  line-height: 30px;
 }
 
 .order-form ::-webkit-input-placeholder {
@@ -3886,6 +3888,7 @@ div + .msg-date {
   .small-inputs-cont input.length-sm {
     width: 48%;
     min-width: 48%;
+    padding: 0 20px;
     margin-left: 0;
   }
   .small-inputs-cont {
@@ -3920,6 +3923,10 @@ div + .msg-date {
   .related-item:last-child {
     margin-left: auto;
     margin-right: auto;
+  }
+  .row-bottom input {
+    width: 48% !important;
+    padding: 0 20px !important;
   }
 }
 
