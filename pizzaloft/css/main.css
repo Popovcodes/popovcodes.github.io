@@ -386,6 +386,7 @@ h4 {
 }
 
 .call-btn {
+  display: inline-block;
   height: 27px;
   line-height: 25px;
   min-width: 165px;
