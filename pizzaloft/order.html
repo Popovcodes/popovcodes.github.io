@@ -446,6 +446,9 @@
   <script src="libs/formstyler/jquery.formstyler.js"></script><!-- for this page only -->
   <script>
     $(document).ready(function(){
+      $('#datepicker').click(function(e){
+        e.preventDefault();
+      });
       $('#datepicker').datepicker({
         minDate: new Date()
       });
