@@ -1386,7 +1386,7 @@ h4 {
           transform: translate(-50%, -50%);
   width: 695px;
   max-width: 92%;
-  max-height: 98vh;
+  max-height: 85vh;
   overflow-y: auto;
   font-family: "Helvetica Neue Cyr Regular", sans-serif;
   font-size: 18px;
@@ -3425,6 +3425,7 @@ div + .msg-date {
         -ms-transform: none;
             transform: none;
     max-width: 100%;
+    padding: 7px 0;
     text-align: center;
   }
   .slider-cont .slick-dots li {
