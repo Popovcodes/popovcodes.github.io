@@ -1387,7 +1387,7 @@ h4 {
           transform: translate(-50%, -50%);
   width: 695px;
   max-width: 92%;
-  max-height: 85vh;
+  max-height: 94vh;
   overflow-y: auto;
   font-family: "Helvetica Neue Cyr Regular", sans-serif;
   font-size: 18px;
@@ -1547,14 +1547,13 @@ input[type="radio"] {
   bottom: -2px;
   left: 0;
   background-color: #283066;
-  opacity: 1;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
 }
 
 .modal-link:hover:after {
-  opacity: 0;
+  background-color: transparent;
 }
 
 .modal-link.non-padded {
