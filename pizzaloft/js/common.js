@@ -126,6 +126,29 @@ $('#header-bottom').click(function(){
   $('#overlay').fadeOut();
 });
 
+// товар - анимация перемещения в корзину
+$('.to-cart').click(function(e){
+  e.preventDefault();
+  var cartIconPosX = $('#cart-link').offset().left;
+  var cartIconPosY = $('#cart-link').offset().top;
+  var thisItemImg = $(this).parents('.item').find('.product-img');
+  var imgHeight = thisItemImg.outerHeight();
+  var imgWidth = thisItemImg.outerWidth();
+  var btnWidth = $(this).outerWidth();
+  var offsetTop = $(this).offset().top - imgHeight;
+  var offsetLeft = $(this).offset().left - imgWidth + btnWidth/2;
+  thisItemImg.clone()
+  .css({'position': 'absolute', 'z-index': '20', top: offsetTop, left: offsetLeft})
+  .appendTo('body')
+  .animate({
+    top: cartIconPosY +8,
+    left: cartIconPosX + 8,
+    width: 40,
+    height: 40
+  }, 300, 'linear', function(){
+    $(this).remove();
+  });
+});
 
 // фильтры каталога
 $('#choose-btn').click(function(){
