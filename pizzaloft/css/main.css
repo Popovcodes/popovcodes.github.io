@@ -2483,7 +2483,7 @@ input.time-input:focus {
   letter-spacing: 0;
 }
 
-.submit-btn,
+.submit-confirm-btn,
 .order-submit-btn {
   display: block;
   min-width: 146px;
@@ -2504,7 +2504,7 @@ input.time-input:focus {
   transition: all .4s;
 }
 
-.submit-btn:hover,
+.submit-confirm-btn:hover,
 .order-submit-btn:hover {
   color: #fff;
   background-color: #e41f28;
