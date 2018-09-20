@@ -1,19 +1,19 @@
 $(document).ready(function(){
 
-  $('#notice-close').click(function(){
-    $('#cookies-notice').slideUp();
-  });
+$('#notice-close').click(function(){
+  $('#cookies-notice').slideUp();
+});
 
-    // mobile navigation
-  $('#btn-menu').click(function(){
-    $('#overlay').fadeIn();
-    $('#mob-cont').addClass('active');
-  });
+  // mobile navigation
+$('#btn-menu').click(function(){
+  $('#overlay').fadeIn();
+  $('#mob-cont').addClass('active');
+});
 
-  $('#mob-nav a, #overlay, #mob-close').click(function(){
-    $('#overlay').fadeOut();
-    $('#mob-cont').removeClass('active');
-  });
+$('#mob-nav a, #overlay, #mob-close').click(function(){
+  $('#overlay').fadeOut();
+  $('#mob-cont').removeClass('active');
+});
   
 //parallax
 var parallax = function(){
@@ -76,7 +76,7 @@ var parallax = function(){
       var featItemPosition = $(this).offset().top;
       var featItemVisible = scrolledToWindowBottom - featItemPosition;
       if(featItemVisible > 0) {
-        $(this).parents('li').css({"transform":  "translate(0%, "+ -featItemVisible/30+"%)"});
+        $(this).parents('li').css({"transform": "translate(0%, "+ -featItemVisible/30+"%)"});
       };
     });
   }
@@ -100,8 +100,16 @@ $('.accord-item-title').click(function(){
 
 // price tables
 var priceTables = function(){
-  var mainHeight = $('#main-table').outerHeight()+$('#price-form-cont').outerHeight();
-  $('#table-viewport').css('height', mainHeight);
+  var mainTableHeight = $('#main-table').outerHeight();
+  var addTableHeight = $('#add-table').outerHeight();
+
+  var setHeight;
+  if (mainTableHeight >= addTableHeight) {
+    setHeight = mainTableHeight;
+  } else {
+    setHeight = addTableHeight;
+  }
+  $('#table-viewport, .price-table-cont').css('height', setHeight);
 
   $('#main-prices').on('mouseenter click', function(){
     $(this).addClass('active');
@@ -111,7 +119,7 @@ var priceTables = function(){
   $('#addict-prices').on('mouseenter click', function(){
     $(this).addClass('active');
     $('#main-prices').removeClass('active');
-    $('#tables-cont').css({"transform":  "translate(0%, "+ -mainHeight+"px)"});
+    $('#tables-cont').css({"transform":  "translate(0%, "+ -setHeight+"px)"});
   });
 };
 
@@ -190,37 +198,6 @@ $('[data-fancybox="gallery"], [data-fancybox="scheme-gallery"]').fancybox({
 
 // masked phone input https://github.com/digitalBush/jquery.maskedinput
 $('input[type="tel"]').mask("+7(999)999-99-99");
-
-
-
-/*
-//parallax
-var parallax = function(){
-var pageScrolled = $(window).scrollTop();
-var windowHeight = $(window).height();
-var scrolledToWindowBottom = pageScrolled + windowHeight;
-var giftsSectionPosition = $('.gifts-section').offset().top;
-var giftsSectionVisible = scrolledToWindowBottom - giftsSectionPosition;
-var insuranceSectionPosition = $('.insurance-section').offset().top;
-var insuranceSectionVisible = scrolledToWindowBottom - insuranceSectionPosition;
-
-if (giftsSectionVisible > 0) {
-  $('.present-box-1').css({"transform":  "translate(0%, "+ -giftsSectionVisible/1 +"px)"});
-  $('.present-box-2').css({"transform":  "translate(0%, "+ -giftsSectionVisible/5+"px)"});
-  $('.present-box-3').css({"transform":  "translate(0%, "+ -giftsSectionVisible/21+"px)"});
-} else {};
-
-if (insuranceSectionVisible > 0) {
-  $('.coin-1').css({"transform":  "translate(0%, "+ -insuranceSectionVisible/1 +"px)"});
-  $('.coin-2').css({"transform":  "translate(0%, "+ -insuranceSectionVisible/3+"px)"});
-  $('.coin-3').css({"transform":  "translate(0%, "+ -insuranceSectionVisible/21+"px)"});
-} else {};
-
-};
-$(window).scroll(parallax);
-};
-
-*/
 
 
 });

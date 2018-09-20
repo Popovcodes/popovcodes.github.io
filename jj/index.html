@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="keywords" content="">
   <link rel="shortcut icon" href="img/favicon/icon.ico">
-  <link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" type="text/css" href="css/fancybox.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>Батутные арены JUSTJUMP! в Москве</title>
 </head>
@@ -373,130 +373,135 @@
           <div class="table-switch" id="addict-prices">дополнительные услуги</div>
         </div>
         <div class="table-viewport" id="table-viewport">
-
           <div class="tables-cont" id="tables-cont">
-            <table class="price-table" id="main-table">
-              <colgroup>
-                <col span="1">
-                <col span="2" class="color-2">
-                <col span="2" class="color-3">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>ТАРИФ</th>
-                  <th colspan="2">БУДНИЕ ДНИ</th>
-                  <th colspan="2">ВЫХОДНЫЕ и ПРАЗДНИКИ</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>ВЗРОСЛЫЙ</td>
-                  <td>300 <span>руб</span></td>
-                  <td rowspan="3">30 <span>минут</span></td>
-                  <td>500 <span>руб</span></td>
-                  <td rowspan="3">30 <span>минут</span></td>
-                </tr>
-                <tr>
-                  <td>ДЕТСКИЙ <span class="kids">детям от 1 до 18 лет</span></td>
-                  <td>250 <span>руб</span></td>
-                  <td>450 <span>руб</span></td>
-                </tr>
-                <tr>
-                  <td>СОЦИАЛЬНЫЙ</td>
-                  <td>200 <span>руб</span></td>
-                  <td>300 <span>руб</span></td>
-                </tr>
-                <tr>
-                  <td>СПОРТ FREE 
-                    <span class="free-tooltip-btn" id="free-tooltip-btn">i
-                      <span class="free-tooltip" id="free-tooltip">Да, это <span class="red">БЕСПЛАТНЫЙ</span> тариф для профессиональных спортсменов
-                        
+
+            <div class="price-table-cont">
+              <table class="price-table" id="main-table">
+                <colgroup>
+                  <col span="1">
+                  <col span="2" class="color-2">
+                  <col span="2" class="color-3">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>ТАРИФ</th>
+                    <th colspan="2">БУДНИЕ ДНИ</th>
+                    <th colspan="2">ВЫХОДНЫЕ и ПРАЗДНИКИ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ВЗРОСЛЫЙ</td>
+                    <td>300 <span>руб</span></td>
+                    <td rowspan="3">30 <span>минут</span></td>
+                    <td>500 <span>руб</span></td>
+                    <td rowspan="3">30 <span>минут</span></td>
+                  </tr>
+                  <tr>
+                    <td>ДЕТСКИЙ <span class="kids">детям от 1 до 18 лет</span></td>
+                    <td>250 <span>руб</span></td>
+                    <td>450 <span>руб</span></td>
+                  </tr>
+                  <tr>
+                    <td>СОЦИАЛЬНЫЙ</td>
+                    <td>200 <span>руб</span></td>
+                    <td>300 <span>руб</span></td>
+                  </tr>
+                  <tr>
+                    <td>СПОРТ FREE 
+                      <span class="free-tooltip-btn" id="free-tooltip-btn">i
+                        <span class="free-tooltip" id="free-tooltip">Да, это <span class="red">БЕСПЛАТНЫЙ</span> тариф для профессиональных спортсменов
+                          
+                        </span>
                       </span>
-                    </span>
-                  </td>
-                  <td colspan="2">Бесплатно до <span class="time">15:00</span></td>
-                  <td colspan="2">Бесплатно до <span class="time">13:00</span></td>
-                </tr>
-                <tr>
-                  <td>ПРОБНЫЙ</td>
-                  <td>200 <span>руб</span></td>
-                  <td>15 <span>минут</span></td>
-                  <td>300 <span>руб</span></td>
-                  <td>15 <span>минут</span></td>
-                </tr>
-              </tbody>
-            </table>
-
-            <div class="form-cont" id="price-form-cont">
-              <h3 class="form-heading">Давай посчитаем твой тариф <span class="red">вместе</span></h3>
-              <form action="" class="price-form">
-                <div class="form-l">
-                  <input type="text" placeholder="ФИО" required>
-                  <input type="tel" placeholder="+7(___)___-__-__" required>
-                  <input type="email" placeholder="__________@_____">
-                </div>
-                <div class="form-r">
-                  <textarea name="" id="" placeholder="Сообщение"></textarea>
-                  <input type="submit" value="ОТПРАВИТЬ">
-                </div>
-              </form>
-            </div><!-- /.form-cont -->
-
-            <table class="price-table" id="add-table">
-              <colgroup>
-                <col span="1">
-                <col span="2" class="color-2">
-                <col span="2" class="color-3">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>НАИМЕНОВАНИЕ</th>
-                  <th colspan="2">БУДНИЕ ДНИ</th>
-                  <th colspan="2">ВЫХОДНЫЕ и ПРАЗДНИКИ</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>ПЕРСОНАЛЬНЫЙ ТРЕНЕР</td>
-                  <td>600 <span>руб</span></td>
-                  <td rowspan="2">30 <span>минут</span></td>
-                  <td>800 <span>руб</span></td>
-                  <td rowspan="2">30 <span>минут</span></td>
-                </tr>
-                <tr>
-                  <td>ИНСТРУКТОР ДЛЯ ГРУППЫ</td>
-                  <td>400 <span>руб</span></td>
-                  <td>400 <span>руб</span></td>
-                </tr>
-                <tr>
-                  <td>CHILLOUT / ЧИЛАУТ</td>
-                  <td colspan="2">1500 <span>руб / час</span></td>
-                  <td colspan="2">2000 <span>руб / час</span></td>
-                </tr>
-                <tr>
-                  <td>НОСКИ JUST JUMP!</td>
-                  <td colspan="4">200 <span>руб</span></td>
-                </tr>
-                <tr>
-                  <td>КОМПЛЕКТ ДЛЯ ДУША</td>
-                  <td colspan="4">150 <span>руб</span></td>
-                </tr>
-                <tr>
-                  <td>МАЙКА С ПРИНТОМ</td>
-                  <td colspan="4">500 <span>руб</span></td>
-                </tr>
-                <tr>
-                  <td>СПОРТИВНЫЕ ШОРТЫ</td>
-                  <td colspan="4">600 <span>руб</span></td>
-                </tr>
-                <tr>
-                  <td>ЗАЛОГ ЗА БРАСЛЕТ</td>
-                  <td colspan="4">500 <span>руб</span></td>
-                </tr>
-              </tbody>
-            </table>
+                    </td>
+                    <td colspan="2">Бесплатно до <span class="time">15:00</span></td>
+                    <td colspan="2">Бесплатно до <span class="time">13:00</span></td>
+                  </tr>
+                  <tr>
+                    <td>ПРОБНЫЙ</td>
+                    <td>200 <span>руб</span></td>
+                    <td>15 <span>минут</span></td>
+                    <td>300 <span>руб</span></td>
+                    <td>15 <span>минут</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="price-table-cont">
+              <table class="price-table" id="add-table">
+                <colgroup>
+                  <col span="1">
+                  <col span="2" class="color-2">
+                  <col span="2" class="color-3">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>НАИМЕНОВАНИЕ</th>
+                    <th colspan="2">БУДНИЕ ДНИ</th>
+                    <th colspan="2">ВЫХОДНЫЕ и ПРАЗДНИКИ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ПЕРСОНАЛЬНЫЙ ТРЕНЕР</td>
+                    <td>600 <span>руб</span></td>
+                    <td rowspan="2">30 <span>минут</span></td>
+                    <td>800 <span>руб</span></td>
+                    <td rowspan="2">30 <span>минут</span></td>
+                  </tr>
+                  <tr>
+                    <td>ИНСТРУКТОР ДЛЯ ГРУППЫ</td>
+                    <td>400 <span>руб</span></td>
+                    <td>400 <span>руб</span></td>
+                  </tr>
+                  <tr>
+                    <td>CHILLOUT / ЧИЛАУТ</td>
+                    <td colspan="2">1500 <span>руб / час</span></td>
+                    <td colspan="2">2000 <span>руб / час</span></td>
+                  </tr>
+                  <tr>
+                    <td>НОСКИ JUST JUMP!</td>
+                    <td colspan="4">200 <span>руб</span></td>
+                  </tr>
+                  <tr>
+                    <td>КОМПЛЕКТ ДЛЯ ДУША</td>
+                    <td colspan="4">150 <span>руб</span></td>
+                  </tr>
+                  <tr>
+                    <td>МАЙКА С ПРИНТОМ</td>
+                    <td colspan="4">500 <span>руб</span></td>
+                  </tr>
+                  <tr>
+                    <td>СПОРТИВНЫЕ ШОРТЫ</td>
+                    <td colspan="4">600 <span>руб</span></td>
+                  </tr>
+                  <tr>
+                    <td>ЗАЛОГ ЗА БРАСЛЕТ</td>
+                    <td colspan="4">500 <span>руб</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div><!-- /.tables-cont -->
         </div><!-- /.table-viewport -->
+
+        <div class="form-cont" id="price-form-cont">
+          <h3 class="form-heading">Давай посчитаем твой тариф <span class="red">вместе</span></h3>
+          <form action="" class="price-form">
+            <div class="form-l">
+              <input type="text" placeholder="ФИО" required>
+              <input type="tel" placeholder="+7(___)___-__-__" required>
+              <input type="email" placeholder="__________@_____">
+            </div>
+            <div class="form-r">
+              <textarea name="" id="" placeholder="Сообщение"></textarea>
+              <input type="submit" value="ОТПРАВИТЬ">
+            </div>
+          </form>
+        </div><!-- /.form-cont -->
+
       </div><!-- /.prices-block -->
       <div class="below-prices-block">
         <div class="below-l">
@@ -702,10 +707,8 @@
   </div>
 
   <div class="overlay" id="overlay"></div>
-
-<script src="libs/jquery/jquery.min.js"></script>
-<script src="libs/fancybox/jquery.fancybox.min.js"></script>
-<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+  
+<script src="js/libs-index.min.js"></script><!-- includes: jQuery, fancybox.js, maskedinput.js -->
 <script src="js/common.js"></script>
 </body>
 </html>
