@@ -3453,6 +3453,12 @@ input[type="submit"] {
   }
 }
 
+@media only screen and (min-width: 768px) and (min-height: 588px) {
+  .modal-cont {
+    overflow-y: visible;
+  }
+}
+
 /*==========  Mobile First Method  ==========*/
 @media only screen and (min-width: 480px) {
   .equip-section {
