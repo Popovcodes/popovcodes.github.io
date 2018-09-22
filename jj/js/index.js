@@ -2,8 +2,9 @@ $(document).ready(function(){
 
 //page scroll
 $('nav a').click(function(){
-  var el = $(this).attr('href');
-  var dest = $(el).offset().top;
+  //var el = $(this).attr('href');
+  var anchor = $(this).attr('href').split('#').pop();
+  var dest = $('#'+anchor).offset().top;
   $('html, body').animate({'scrollTop': dest}, 1000);
   return false;
 });
@@ -12,7 +13,7 @@ $(window).scroll(function(){
     var id = $(this).attr('id');
     if($(this).offset().top - 200 < $(window).scrollTop()){
       $('nav a').removeClass('active');
-      $('a[href="#'+id+'"]').addClass('active');
+      $('a[href$="#'+id+'"]').addClass('active');
     }
     if($(window).scrollTop() < 500) {
       $('nav a').removeClass('active');
