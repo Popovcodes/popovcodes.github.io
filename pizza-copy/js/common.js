@@ -60,36 +60,36 @@ $('.vac-heading').click(function(){
 
 // модальные окна
 $('.call-btn').click(function(){
-  $('#overlay').fadeIn();
-  $('#callback-modal').slideDown();
+  $('#overlay').css('display', 'block');
+  $('#callback-modal').css('display', 'block');
 });
 $('#auth-btn').click(function(){
-  $('#overlay').fadeIn();
-  $('#authorization-modal').slideDown();
+  $('#overlay').css('display', 'block');
+  $('#authorization-modal').css('display', 'block');
 });
 $('#to-registration').click(function(){
-  $('#authorization-modal').slideUp();
-  $('#registration-modal').delay(400).slideDown();
+  $('#authorization-modal').css('display', 'none');
+  $('#registration-modal').delay(400).css('display', 'block');
 });
 $('#to-authorization').click(function(){
-  $('#registration-modal').slideUp();
-  $('#authorization-modal').delay(400).slideDown();
+  $('#registration-modal').css('display', 'none');
+  $('#authorization-modal').delay(400).css('display', 'block');
 });
 $('#to-recover').click(function(){
-  $('#authorization-modal').slideUp();
-  $('#recover-modal').delay(400).slideDown();
+  $('#authorization-modal').css('display', 'none');
+  $('#recover-modal').delay(400).css('display', 'block');
 });
 $('#comment-btn').click(function(){
-  $('#overlay').fadeIn();
-  $('#comment-modal').slideDown();
+  $('#overlay').css('display', 'block');
+  $('#comment-modal').css('display', 'block');
 });
 $('.map-call').click(function(){
-  $('#map-modal').slideDown();
-  $('#overlay').fadeIn();
+  $('#map-modal').css('display', 'block');
+  $('#overlay').css('display', 'block');
 });
 $('#map-close').click(function(){
-  $('#map-modal').slideUp();
-  $('#overlay').fadeOut();
+  $('#map-modal').css('display', 'none');
+  $('#overlay').css('display', 'none');
 });
 
 
@@ -207,8 +207,8 @@ $('a').each(function(){
 
 // overlay click events
 $('#overlay').click(function(){
-  $('.modal').slideUp();
-  $(this).fadeOut();
+  $('.modal').css('display', 'none');
+  $(this).css('display', 'none');
 });
 
 
