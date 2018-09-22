@@ -2791,13 +2791,9 @@ input[type="submit"] {
   z-index: 3;
 }
 
-.map-section {
-  height: 100vh;
-  max-height: 1080px;
-}
-
 .map {
-  height: 100%;
+  height: 1080px;
+  max-height: 100vh;
 }
 
 .map-heading-cont {
@@ -2820,7 +2816,7 @@ input[type="submit"] {
 .map-name {
   display: block;
   width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .map-address {
@@ -3683,7 +3679,8 @@ input[type="submit"] {
     display: block;
     margin-bottom: 0;
     height: 34px;
-    line-height: 24px;
+    line-height: 26px;
+    border-width: 4px;
   }
   .arena .modal-call {
     width: 100%;
@@ -4060,12 +4057,17 @@ input[type="submit"] {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .map {
+    padding-top: 143px;
+  }
   .map-heading-cont {
     background-image: url(../img/geometry/redbg-1200.jpg);
     background-repeat: repeat;
   }
   .map-heading-cont {
-    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: auto;
     padding: 10px;
