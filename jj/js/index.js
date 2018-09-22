@@ -21,6 +21,11 @@ $(window).scroll(function(){
   });
 });
 
+$('[id ^= fig-').each(function(){
+  $(this).find('img').clone()
+  .appendTo($(this))
+  .addClass('clone');
+});
 //parallax
 var parallax = function(){
   if(document.body.clientWidth > 1199 ) {
@@ -49,7 +54,6 @@ var parallax = function(){
 
     var redLineVisible = scrolledToWindowBottom - $('#red-line').offset().top;
     if (redLineVisible > 0 ) {
-      //$('#red-line').css({"transform": "rotate(7deg) translate(0%, "+ -redLineVisible/2.5+"px)", "filter": "hue-rotate(" + redLineVisible/2 +"deg)"});
       $('#red-line').css({"transform": "rotate(-7deg) translate(0%, "+ -redLineVisible/1.8+"px)"});
     };
 

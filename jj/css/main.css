@@ -3105,6 +3105,8 @@ input[type="submit"] {
     position: absolute;
     width: 120vw;
     left: -10%;
+    -webkit-box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.2);
   }
   #red-line {
     display: block;
@@ -3131,6 +3133,12 @@ input[type="submit"] {
     -o-transition: all 4s cubic-bezier(0.21, 1.83, 0.63, 0.74);
     transition: all 4s cubic-bezier(0.21, 1.83, 0.63, 0.74);
     z-index: 2;
+  }
+  .clone {
+    -webkit-filter: brightness(0%) blur(4px) !important;
+            filter: brightness(0%) blur(4px) !important;
+    z-index: -1;
+    opacity: .3;
   }
 }
 
