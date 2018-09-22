@@ -6,8 +6,8 @@ $(document).ready(function(){
 
   function init(){     
       myMap = new ymaps.Map("map", {
-          center: [55.792311, 37.676699],
-          zoom: 14
+          center: [55.793780, 37.676734],
+          zoom: 15
       });
 
       myMap.controls
