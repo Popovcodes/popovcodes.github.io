@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   function init(){     
       myMap = new ymaps.Map("map", {
-          center: [55.792311, 37.676699],
+          center: [55.708403, 37.638027],
           zoom: 14
       });
 
@@ -30,8 +30,8 @@ $(document).ready(function(){
 
       });
 
-      myPlacemark1 = new ymaps.Placemark([55.792311, 37.676699], { 
-         balloonContentBody: 'Батутная арена JUST JUMP! "Сокольники" Москва, парк "Сокольники", ул. Сокольнический Вал, д.1 (м. "Сокольники")',
+      myPlacemark1 = new ymaps.Placemark([55.705446, 37.638972], { 
+         balloonContentBody: 'Батутная арена JUST JUMP! "Автозаводская" Москва, ул. Автозаводская, влад. 18, ТРК "Ривьера" (м. "Автозаводская")',
          hintContent: '',
       }, {
         preset: 'islands#redDotIcon'

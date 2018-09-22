@@ -2831,8 +2831,14 @@ input[type="submit"] {
 }
 
 .map-shedule {
-  font-size: 14px;
+  font-size: 15px;
   color: #FBB03B;
+}
+
+.map-shedule sup {
+  font-size: 10px;
+  vertical-align: super;
+  text-decoration: underline;
 }
 
 /* ==================== css-animations ======================= */
@@ -3680,7 +3686,6 @@ input[type="submit"] {
     margin-bottom: 0;
     height: 34px;
     line-height: 26px;
-    border-width: 4px;
   }
   .arena .modal-call {
     width: 100%;

@@ -6,8 +6,8 @@ $(document).ready(function(){
 
   function init(){     
       myMap = new ymaps.Map("map", {
-          center: [55.792311, 37.676699],
-          zoom: 14
+          center: [55.749794, 37.539414],
+          zoom: 16
       });
 
       myMap.controls
@@ -30,8 +30,8 @@ $(document).ready(function(){
 
       });
 
-      myPlacemark1 = new ymaps.Placemark([55.792311, 37.676699], { 
-         balloonContentBody: 'Батутная арена JUST JUMP! "Сокольники" Москва, парк "Сокольники", ул. Сокольнический Вал, д.1 (м. "Сокольники")',
+      myPlacemark1 = new ymaps.Placemark([55.749059, 37.539204], { 
+         balloonContentBody: 'Россия, Москва, Пресненская набережная 2, Батутная Арена JUST JUMP "Деловой Центр"',
          hintContent: '',
       }, {
         preset: 'islands#redDotIcon'
