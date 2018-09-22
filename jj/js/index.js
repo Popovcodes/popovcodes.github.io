@@ -74,7 +74,7 @@ var parallax = function(){
       var eqItemPosition = $(this).offset().top;
       var eqItemVisible = scrolledToWindowBottom - eqItemPosition;
       if(eqItemVisible > 0) {
-        $(this).parents('li').css({"transform":  "translate(0%, "+ -eqItemVisible/25+"%)"});
+        $(this).parents('li').css({"transform":  "translate(0%, "+ -eqItemVisible/18+"%)"});
       };
     });
     $('.feat-img-cont').each(function(){
