@@ -1437,17 +1437,18 @@ h4 {
 }
 
 .modal .modal-submit {
+  display: block;
   font-family: "Helvetica Neue Cyr Medium", sans-serif;
   font-size: 18px;
   width: 100%;
   color: #fff;
-  background-color: #e41f28;
+  background-color: #e41f28 !important;
   height: 50px;
   line-height: 48px;
   text-align: center;
   letter-spacing: .8px;
   border: 1px solid #e41f28;
-  border-radius: 6px;
+  border-radius: 6px !important;
   margin-bottom: 20px;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
