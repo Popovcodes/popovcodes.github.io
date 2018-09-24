@@ -21,11 +21,6 @@ $(window).scroll(function(){
   });
 });
 
-$('[id ^= fig-').each(function(){
-  $(this).find('img').clone()
-  .appendTo($(this))
-  .addClass('clone');
-});
 //parallax
 var parallax = function(){
   if(document.body.clientWidth > 1199 ) {

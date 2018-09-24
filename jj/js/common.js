@@ -25,7 +25,7 @@ $('#mob-nav a, #overlay, #mob-close').click(function(){
 
 //overlay click events
 $('#overlay').click(function(){
-  $('#free-tooltip, #modal-cont').fadeOut();
+  $('#free-tooltip, #modal-cont, #modal-appoint-cont').fadeOut();
   $(this).removeClass('transparent').fadeOut(0);
 });
 
@@ -38,14 +38,15 @@ $('nav a').each(function(){
   }
 });
 
-
-
 //modal form
 $('.modal-call, #celebrate-block, .vac-btn').click(function(){
   $('#modal-cont, #overlay').fadeIn();
 });
-$('#modal-close').click(function(){
-    $('#modal-cont, #overlay').fadeOut();
+$('.appoint-btn').click(function(){
+  $('#modal-appoint-cont, #overlay').fadeIn();
+});
+$('#modal-close, #modal-appoint-close').click(function(){
+    $('#modal-cont, #modal-appoint-cont, #overlay').fadeOut();
 });
 
 
