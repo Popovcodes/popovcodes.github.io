@@ -768,9 +768,9 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  max-width: 320px;
   background-color: #f5f5f5;
   border-radius: 8px;
-  margin-bottom: 20px;
 }
 
 .switch li {
@@ -828,6 +828,7 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 320px;
   margin-bottom: 23px;
 }
 
@@ -3205,6 +3206,151 @@ div + .msg-date {
   background-image: url(../img/icons/mail.png);
 }
 
+.card-outer,
+.card-control,
+.card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-outer {
+  padding-top: 45px;
+}
+
+.card-img-wrap {
+  margin-right: 15px;
+}
+
+.card-control {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-top-left {
+  max-width: 360px;
+  margin-right: 12px;
+}
+
+.card-top,
+.card-bottom {
+  min-width: 100%;
+}
+
+.card-top {
+  margin-bottom: 47px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card-top-right {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.card-outer .card-img-wrap {
+  min-width: 380px;
+  max-width: 100%;
+}
+
+.card-outer .product-desc {
+  margin-bottom: 32px;
+}
+
+.card-outer .switch,
+.card-outer .control-heading {
+  margin-bottom: 15px;
+}
+
+.ingred-checkboxes {
+  overflow: hidden;
+}
+
+.ingred-checkboxes li {
+  margin-bottom: 8px;
+}
+
+.ingred-checkboxes label {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  padding-left: 32px;
+  padding-bottom: 5px;
+}
+
+.ingred-checkboxes label:before {
+  content: "+";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  width: 22px;
+  height: 22px;
+  line-height: 18px;
+  text-align: center;
+  color: #c8c7c7;
+  border-radius: 50%;
+  border: 1px solid #c8c7c7;
+}
+
+.ingred-checkboxes input[type="checkbox"]:checked + label {
+  font-family: "Helvetica Neue Cyr Bold", sans-serif;
+}
+
+.ingred-checkboxes input[type="checkbox"]:checked + label:before {
+  content: "-";
+  color: #000;
+  border-color: #000;
+}
+
+.cart-counter-wrap {
+  display: none;
+  width: 142px;
+}
+
+.cart-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  font-family: "Helvetica Neue Cyr Medium", sans-serif;
+}
+
+.cart-minus,
+.cart-plus {
+  width: 45px;
+  border-radius: 6px;
+  text-align: center;
+  height: 51px;
+  line-height: 49px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #e41f28;
+  border: 1px solid #e41f28;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.cart-minus:hover,
+.cart-plus:hover {
+  color: #e41f28;
+  background-color: #fff;
+}
+
 /* ==================== Media queries ======================= */
 @media only screen and (max-width: 1199px) {
   html {
@@ -3385,6 +3531,20 @@ div + .msg-date {
   .more-cont {
     padding-right: 208px;
   }
+  .card-outer .card-img-wrap {
+    min-width: 250px;
+  }
+  .ingred-checkboxes li {
+    margin-bottom: 25px;
+  }
+  .modal {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -3437,6 +3597,14 @@ div + .msg-date {
   .vac-phone-cont span,
   .vac-mail-cont span {
     width: 100%;
+  }
+  .card-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card-top-left {
+    min-width: 100%;
+    margin-bottom: 15px;
   }
 }
 
@@ -3875,6 +4043,15 @@ div + .msg-date {
   .cart-item-del {
     width: auto;
   }
+  .card-outer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 0;
+  }
+  .card-outer .card-img-wrap {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -3964,6 +4141,17 @@ div + .msg-date {
 @media only screen and (min-width: 1024px) {
   .info-btn:hover {
     background-image: url(../img/icons/info-red.png);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
