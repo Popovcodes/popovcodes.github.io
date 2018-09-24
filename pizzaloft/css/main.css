@@ -1436,7 +1436,7 @@ h4 {
   z-index: 17;
 }
 
-.modal input[type="submit"] {
+.modal .modal-submit {
   font-family: "Helvetica Neue Cyr Medium", sans-serif;
   font-size: 18px;
   width: 100%;
@@ -1454,7 +1454,7 @@ h4 {
   transition: all .4s;
 }
 
-.modal input[type="submit"]:hover {
+.modal .modal-submit:hover {
   background-color: #fff;
   color: #e41f28;
 }
@@ -1613,7 +1613,7 @@ input[type="text"],
 input[type="tel"],
 input[type="email"] {
   height: 55px;
-  line-height: 53;
+  line-height: 53px;
   padding: 0 40px;
 }
 
