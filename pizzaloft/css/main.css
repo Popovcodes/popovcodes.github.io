@@ -187,11 +187,11 @@ strong {
   font-family: "Helvetica Neue Cyr Bold", sans-serif;
 }
 
-input[type="submit"],
+input,
 button,
 a {
   border-radius: 0;
-  background-color: none;
+  background-color: transparent;
 }
 
 section {
