@@ -187,6 +187,13 @@ strong {
   font-family: "Helvetica Neue Cyr Bold", sans-serif;
 }
 
+input[type="submit"],
+button,
+a {
+  border-radius: 0;
+  background-color: none;
+}
+
 section {
   position: relative;
   padding: 8.5rem 0 6rem;
