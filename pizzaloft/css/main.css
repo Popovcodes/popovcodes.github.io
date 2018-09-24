@@ -3313,7 +3313,7 @@ div + .msg-date {
 .ingred-checkboxes input[type="checkbox"]:checked + label:before {
   content: "-";
   color: #000;
-  border-color: #000;
+  border-color: #888;
 }
 
 .cart-counter-wrap {
