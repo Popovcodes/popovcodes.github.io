@@ -2455,9 +2455,21 @@ input[type="submit"] {
 .vac-desc {
   font-family: "PFDinTextCondPro-Regular", sans-serif;
   font-size: 20px;
-  color: #b5e200;
+  color: #CBF816;
   line-height: 1.5;
   margin-bottom: 25px;
+}
+
+.vac-desc ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-bottom: 10px;
+}
+
+.vac-desc li {
+  line-height: 1.2;
+  margin-bottom: 6px;
 }
 
 .vac-salary {
