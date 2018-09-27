@@ -3273,15 +3273,6 @@ input[type="submit"] {
   height: 100%;
 }
 
-.tariffes-section:before {
-  background-image: url(../img/common/together-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-attachment: fixed;
-  z-index: -1;
-}
-
 .tariffes-section:after {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: -1;
@@ -4661,6 +4652,14 @@ input[type="submit"] {
   .map-heading-cont {
     background-image: url(../img/geometry/r3.png);
     background-size: 100% 100%;
+  }
+  .tariffes-section:before {
+    background-image: url(../img/common/together-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    z-index: -1;
   }
 }
 
