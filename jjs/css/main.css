@@ -1272,8 +1272,8 @@ section {
   position: relative;
   background-color: #81CC00;
   margin-bottom: 55px;
-  -webkit-box-shadow: 30px 30px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 30px 30px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 30px 30px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 30px 30px 5px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
