@@ -55,7 +55,7 @@ $(window).resize(setEqualHeight);
 
 $('#slider-outer').css('opacity', '1');
 
-// modal slider prev/next buttons
+//  slider prev/next buttons
 $('#slider-prev').click(function(){
   $('#js-big-slider').slick('slickPrev');
   $('#js-small-slider').slick('slickPrev');
@@ -65,6 +65,9 @@ $('#slider-next').click(function(){
   $('#js-big-slider').slick('slickNext');
   $('#js-small-slider').slick('slickNext');
 });
+
+//show form after 30 sec
+$('#modal-cont, #overlay').delay(30000).fadeIn();
 
 
 });

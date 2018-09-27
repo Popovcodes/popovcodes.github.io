@@ -25,8 +25,8 @@ $('#mob-nav a, #overlay, #mob-close').click(function(){
 
 //overlay click events
 $('#overlay').click(function(){
-  $('#free-tooltip, #modal-cont').fadeOut();
-  $(this).removeClass('transparent').fadeOut(0);
+  $('#free-tooltip, #modal-cont, #modal-appoint-cont').fadeOut(0);
+  $(this).fadeOut(0);
 });
 
 //decoration of current page link in navigation
@@ -38,19 +38,25 @@ $('nav a').each(function(){
   }
 });
 
-
-
 //modal form
 $('.modal-call, #celebrate-block, .vac-btn').click(function(){
+  $('#overlay').removeClass('transparent');
   $('#modal-cont, #overlay').fadeIn();
 });
-$('#modal-close').click(function(){
-    $('#modal-cont, #overlay').fadeOut();
+$('.appoint-btn').click(function(){
+  $('#overlay').removeClass('transparent');
+  $('#modal-appoint-cont, #overlay').fadeIn();
+});
+$('#modal-close, #modal-appoint-close').click(function(){
+    $('#modal-cont, #modal-appoint-cont, #overlay').fadeOut();
 });
 
+// cyrilic symbols validation
+$('input[type="text"], textarea').on('keyup', function() {
+    this.value = this.value.replace(/[^а-яА-ЯёЁ0-9 -]/ig,'');
+});
 
 // masked phone input https://github.com/digitalBush/jquery.maskedinput
 $('input[type="tel"]').mask("+7(999)999-99-99");
-
 
 });

@@ -1,15 +1,5 @@
 $(document).ready(function(){
 
-//shadows of flying figure
-if(document.body.clientWidth > 1199 ) {
-  $('[id ^= fig-').each(function(){
-  $(this).find('img').clone()
-    .appendTo($(this))
-    .addClass('clone');
-  });
-};
-
-
 //parallax
 var parallax = function(){
   if(document.body.clientWidth > 1199 ) {
@@ -19,7 +9,7 @@ var parallax = function(){
     $('#main-bg-img').css({"transform":  "translate(0%, "+ pageIsScrolled/2+"px)"});
 
     // flying objects
-    $('[id ^= fig-').each(function(){
+    $('.figure').each(function(){
       var thisPosition = $(this).offset().top;
       var coefX = $(this).attr('data-coefX');
       var coefY = $(this).attr('data-coefY');

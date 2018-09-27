@@ -20,7 +20,7 @@ var parallax = function(){
     var pageIsScrolled = $(window).scrollTop();
     var windowHeight = $(window).height();
     var scrolledToWindowBottom = pageIsScrolled + windowHeight;
-    $('[id ^= fig-').each(function(){
+    $('.figure').each(function(){
       var thisPosition = $(this).offset().top;
       var coefX = $(this).attr('data-coefX');
       var coefY = $(this).attr('data-coefY');

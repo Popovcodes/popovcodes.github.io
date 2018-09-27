@@ -123,7 +123,9 @@
   <!-- ==============================  ============================== -->
   <section class="vacancies-section">
 
-    <div class="vac-head-cont">
+    <div class="vac-wrap">
+      
+      <div class="vac-head-cont">
           <h1 class="vac-heading">ВАКАНСИИ</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <strong>veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <strong>consequat</strong>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
@@ -259,10 +261,50 @@
           </div><!-- /.vac-content -->
         </div><!-- /.vac-item -->
 
-      </div><!-- /.vac-cont -->
+        <div class="vac-item">
+          <div class="vac-content">
+            <div class="vac-left">
+              <h4 class="vac-name">Название вакансии Lorem ipsum Lorem ipsum Lorem ipsum</h4>
+              <div class="vac-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit</p>
+              </div>
+              <div class="vac-salary">
+                <span class="salary-sum">20000</span>
+                <span class="currency">&#8381;</span>
+              </div>
+            </div><!-- /.vac-left -->
+            <div class="vac-right">
+              <button class="vac-btn">Откликнуться</button>
+            </div>
+          </div><!-- /.vac-content -->
+        </div><!-- /.vac-item -->
 
-      <button class="load-more">Загрузить еще</button>
-    </div><!-- /.wrapper -->
+        <div class="vac-item">
+          <div class="vac-content">
+            <div class="vac-left">
+              <h4 class="vac-name">Название вакансии Lorem ipsum Lorem ipsum Lorem ipsum</h4>
+              <div class="vac-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit</p>
+              </div>
+              <div class="vac-salary">
+                <span class="salary-sum">20000</span>
+                <span class="currency">&#8381;</span>
+              </div>
+            </div><!-- /.vac-left -->
+            <div class="vac-right">
+              <button class="vac-btn">Откликнуться</button>
+            </div>
+          </div><!-- /.vac-content -->
+        </div><!-- /.vac-item -->
+
+
+      </div><!-- /.vac-cont -->
+      
+      <div class="load-more-cont">
+        <button class="load-more">Загрузить еще</button>
+      </div>
+      
+    </div><!-- /.vac-wrap -->
 
     <div class="boy-img">
       <img src="img/common/boyjump.png" alt="">
@@ -374,6 +416,26 @@
       </div><!-- /.form-cont -->
   </div>
 
+  <div class="modal modal-cont modal-appoint-cont" id="modal-appoint-cont">
+    <div class="call-form-cont">
+        <div class="modal-head">
+          <h3 class="call-form-heading">Записаться <br>на занятие</h3>
+          <span class="modal-close" id="modal-appoint-close">X</span>
+        </div>
+        <form action="" class="call-form">
+          <div class="form-l">
+            <input type="text" placeholder="ФИО" required>
+            <input type="tel" placeholder="+7(___)___-__-__" required>
+            <input type="email" placeholder="__________@_____">
+          </div>
+          <div class="form-r">
+            <textarea name=""  placeholder="Сообщение"></textarea>
+            <input type="submit" value="ОТПРАВИТЬ">
+          </div>
+        </form>
+      </div><!-- /.form-cont -->
+  </div>
+  
   <div class="overlay" id="overlay"></div>
   
 
