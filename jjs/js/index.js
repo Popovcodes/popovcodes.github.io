@@ -57,10 +57,6 @@ $('.intro-heading').clone()
 $('.social-block').clone()
   .prependTo('.follow-block')
   .addClass('clone3');
-
-  $('.divided-text-bg').clone()
-  .prependTo('.divided-text-block')
-  .addClass('clone4');
 };
 //parallax
 var parallax = function(){

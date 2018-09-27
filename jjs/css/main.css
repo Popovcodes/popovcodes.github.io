@@ -3351,19 +3351,11 @@ input[type="submit"] {
   z-index: 0;
 }
 
-.clone4 {
-  position: absolute;
-  height: 100%;
-  top: 40px;
-  right: -40px;
-  -webkit-filter: brightness(0%) blur(4px) !important;
-          filter: brightness(0%) blur(4px) !important;
-  opacity: .3;
-  z-index: 0;
-}
-
 @supports (-ms-ime-align: auto) {
-  .clone {
+  .clone,
+  .clone1,
+  .clone2,
+  .clone3 {
     display: none  !important;
   }
 }
