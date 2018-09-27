@@ -9,16 +9,26 @@ $('nav a').click(function(){
   return false;
 });
 $(window).scroll(function(){
-  $('[id ^= nav-').each(function(){
+  $('.nav-anchor').each(function(){
     var id = $(this).attr('id');
+    console.log(id);
     if($(this).offset().top - 200 < $(window).scrollTop()){
       $('nav a').removeClass('active');
-      $('a[href$="#'+id+'"]').addClass('active');
+      $('a[href="#'+id+'"]').addClass('active');
     }
     if($(window).scrollTop() < 500) {
       $('nav a').removeClass('active');
     }
   });
+});
+
+//scroll on anchors buttons click
+$('.scroll-i').click(function(e){
+    e.preventDefault();
+    var anchorId = $(this).attr('href');
+    var anchorDest = $('#'+anchorId).offset().top - 65;
+    $('html, body').animate({'scrollTop': anchorDest}, 1000);
+    return false;
 });
 
 //parallax
@@ -49,6 +59,7 @@ var parallax = function(){
 
     var redLineVisible = scrolledToWindowBottom - $('#red-line').offset().top;
     if (redLineVisible > 0 ) {
+      //$('#red-line').css({"transform": "rotate(7deg) translate(0%, "+ -redLineVisible/2.5+"px)", "filter": "hue-rotate(" + redLineVisible/2 +"deg)"});
       $('#red-line').css({"transform": "rotate(-7deg) translate(0%, "+ -redLineVisible/1.8+"px)"});
     };
 
@@ -58,7 +69,7 @@ var parallax = function(){
     };
 
     // flying objects
-    $('[id ^= fig-').each(function(){
+    $('.figure').each(function(){
       var thisPosition = $(this).offset().top;
       var coefX = $(this).attr('data-coefX');
       var coefY = $(this).attr('data-coefY');
@@ -128,21 +139,33 @@ var priceTables = function(){
 priceTables();
 $(window).resize(priceTables);
 
-//free tarif tooltip
-$('#free-tooltip-btn').click(function(){
-  $('#free-tooltip').fadeToggle(400);
-  $('#overlay').addClass('transparent').fadeIn();
-});
-
+//free tarif tooltip and form call after 2 click on table
 var clickOnPriceTable = 0;
 $('.price-table').click(function(){
   clickOnPriceTable = clickOnPriceTable + 1;
   if (clickOnPriceTable > 1) {
-    $('#modal-cont, #overlay').fadeIn();
+    $('#modal-cont, #overlay').fadeIn(0);
     $('#overlay').removeClass('transparent');
     $('#free-tooltip').fadeOut(0);
     clickOnPriceTable = 0;
-  }
+  };
+});
+
+$('#free-tooltip-btn').click(function(e){
+  e.stopPropagation();
+  $('#free-tooltip').fadeToggle(400);
+  $('#overlay').addClass('transparent').fadeIn();
+});
+
+//form call after 2 click on table
+var clickOnGalleryLink = 0;
+$('.eq-img-cont').click(function(){
+    clickOnGalleryLink = clickOnGalleryLink + 1;
+    if (clickOnGalleryLink > 1) {
+        $('#modal-cont, #overlay').delay(2000).fadeIn(0);
+        $('#overlay').removeClass('transparent');
+        clickOnGalleryLink = 0;
+    };
 });
 
 // fancybox http://fancyapps.com/fancybox/3/
