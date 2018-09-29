@@ -5005,9 +5005,9 @@ input[type="submit"] {
   display: none;
   position: fixed;
   top: 1vh;
+  bottom: 1vh;
   left: 1%;
   width: 98%;
-  height: 98vh;
   overflow-x: hidden;
   overflow-y: auto;
   text-align: center;
