@@ -5068,6 +5068,7 @@ input[type="submit"] {
           animation: pulse-sm 7s linear infinite;
   max-height: 50vh;
   margin-bottom: -30px;
+  min-height: 240px;
 }
 
 .gr-heading {
