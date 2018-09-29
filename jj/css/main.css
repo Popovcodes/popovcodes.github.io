@@ -5011,6 +5011,7 @@ input[type="submit"] {
   overflow-x: hidden;
   overflow-y: auto;
   text-align: center;
+  background-color: #34B30E;
   background-image: url(../img/geometry/rg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
