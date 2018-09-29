@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+$('#gr-close').click(function(){
+  $('#gr-wrap, #overlay').fadeOut(400);
+});
+
 $('#notice-close').click(function(){
   $('#cookies-notice').slideUp();
 });
