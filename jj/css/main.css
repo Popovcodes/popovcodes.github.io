@@ -5041,7 +5041,7 @@ input[type="submit"] {
 
 .gr-close {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 18px;
   left: 45px;
   font-family: "CodePro-Bold", sans-serif;
