@@ -5102,6 +5102,9 @@ input[type="submit"] {
 }
 
 @media only screen and (max-width: 690px) {
+  .gr-content {
+    padding-top: 10px;
+  }
   .gr-logo {
     width: 330px;
   }
