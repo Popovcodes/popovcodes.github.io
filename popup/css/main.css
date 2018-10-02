@@ -1,0 +1,151 @@
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.popup-wrap {
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 500px;
+  max-width: 94%;
+  max-height: 96vh;
+  font-family: 'Solomon Sans Normal', sans-serif;
+  color: #0a0a0a;
+  padding: 30px 40px;
+  border-radius: 8px;
+  overflow-y: auto;
+  z-index: 11;
+}
+
+.popup-heading {
+  font-family: "Solomon Sans Black", sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  padding-right: 30px;
+  margin: 0 0 22px;
+}
+
+.popup-wrap ::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #0a0a0a;
+}
+
+.popup-wrap :-ms-input-placeholder {
+  font-size: 18px;
+  color: #0a0a0a;
+}
+
+.popup-wrap ::-ms-input-placeholder {
+  font-size: 18px;
+  color: #0a0a0a;
+}
+
+.popup-wrap ::placeholder {
+  font-size: 18px;
+  color: #0a0a0a;
+}
+
+.popup-wrap input[type="text"],
+.popup-wrap input[type="tel"],
+.popup-wrap input[type="email"],
+.popup-wrap textarea {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-family: "Solomon Sans", sans-serif;
+  font-size: 18px;
+  outline: none;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.popup-wrap input[type="text"],
+.popup-wrap input[type="tel"],
+.popup-wrap input[type="email"] {
+  border-bottom: 1px solid #0a0a0a;
+}
+
+.popup-wrap textarea {
+  resize: none;
+  height: 120px;
+  margin-top: 35px;
+  border: 1px solid #0a0a0a;
+}
+
+.popup-close {
+  position: absolute;
+  top: 35px;
+  right: 28px;
+  font-family: "Solomon Sans Black", sans-serif;
+  font-size: 36px;
+  color: #ff4807;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-btn {
+  display: block;
+  width: 260px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  background-color: #ff4807;
+  font-size: 18px;
+  text-align: center;
+  margin: 35px auto 0;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #ba1212;
+}
+
+@media only screen and (max-width: 767px) {
+  .popup-heading {
+    font-size: 28px;
+  }
+  .popup-close {
+    top: 25px;
+  }
+  .popup-wrap input[type="text"], .popup-wrap input[type="tel"], .popup-wrap input[type="email"], .popup-wrap textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .popup-wrap {
+    padding: 20px;
+  }
+  .popup-close {
+    top: 12px;
+    right: 18px;
+  }
+  .popup-heading {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
