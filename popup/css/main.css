@@ -112,6 +112,7 @@
   font-size: 18px;
   text-align: center;
   margin: 0 auto;
+  outline: none;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
