@@ -1,0 +1,15 @@
+
+/* ==================== css-animations ======================= */
+
+@keyframes pulse {
+	0% {transform: scale(1); box-shadow: 5px 7px 1px rgba(0,0,0,.3);}
+	50% {transform: scale(1.2); box-shadow: 12px 19px 10px rgba(0,0,0,.1);}
+	100% {transform: scale(1); box-shadow: 5px 7px 1px rgba(0,0,0,.3);}
+}
+
+@keyframes pulse-sm {
+	0% {transform: scale(1);}
+	50% {transform: scale(1.15);}
+	100% {transform: scale(1);}
+}
+
