@@ -3,7 +3,7 @@ $(document).ready(function(){
 var isSafari;
 var ua = detect.parse(navigator.userAgent);
 var browserFamily = ua.browser.family;
-alert(browserFamily);
+alert('='+browserFamily+'=');
 if (browserFamily == 'Safari' ) {
   isSafari = 1;
 } else {
