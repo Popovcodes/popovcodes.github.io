@@ -33,10 +33,12 @@ $('.scroll-i').click(function(e){
 
 //parallax
 var parallax = function(){
+	/*
   if(document.body.clientWidth > 1199 ) {
     var pageIsScrolled = $(window).scrollTop();
     var windowHeight = $(window).height();
     var scrolledToWindowBottom = pageIsScrolled + windowHeight;
+
     $('#main-bg-img').css({"transform":  "translate(0%, "+ pageIsScrolled/2+"px)"});
     var togetherSectionVisible = scrolledToWindowBottom - $('.together-section').offset().top;
     if (togetherSectionVisible > 0) {
@@ -81,6 +83,7 @@ var parallax = function(){
     });
 
   }
+  */
 };
 
 parallax();
