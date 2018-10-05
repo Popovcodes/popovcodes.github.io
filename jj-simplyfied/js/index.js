@@ -33,7 +33,7 @@ $('.scroll-i').click(function(e){
 
 //parallax
 var parallax = function(){
-	/*
+
   if(document.body.clientWidth > 1199 ) {
     var pageIsScrolled = $(window).scrollTop();
     var windowHeight = $(window).height();
@@ -83,7 +83,7 @@ var parallax = function(){
     });
 
   }
-  */
+
 };
 
 parallax();
