@@ -826,7 +826,7 @@ section {
   padding: 210px 0 168px;
   background-image: url(../img/common/equip-bg-480.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
 }
 
 .equip-section .divided-text-block {
@@ -2552,7 +2552,7 @@ input[type="submit"] {
   padding: 400px 0 200px;
   background-image: url(../img/common/head.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
 }
 
 .vacancies-form-section .wrapper {
@@ -2697,7 +2697,7 @@ input[type="submit"] {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   z-index: 0;
 }
 
@@ -4711,7 +4711,7 @@ input[type="submit"] {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     z-index: -1;
   }
 }
