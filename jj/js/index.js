@@ -76,7 +76,7 @@ var parallax = function(){
       var thisVisible = scrolledToWindowBottom - thisPosition;
       var rotate = 360/thisVisible*80/coefX;
       if(thisVisible > 0) {
-        $(this).find('img').css({"left": thisVisible/coefX, "bottom": thisVisible/coefY, "transform": "rotate("+ rotate*2.5 +"deg)", "filter": "hue-rotate("+ rotate*3 +"deg)"})
+        $(this).find('img').css({"left": thisVisible/coefX, "bottom": thisVisible/coefY, "transform": "rotate("+ rotate*2.5 +"deg)"});
       };
     });
 
