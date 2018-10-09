@@ -4720,8 +4720,8 @@ input[type="submit"] {
   .girl-img,
   .boy-img {
     display: block;
-    -webkit-animation: pulse-sm 10s linear infinite;
-    animation: pulse-sm 10s linear infinite;
+    /*-webkit-animation: pulse-sm 10s linear infinite;
+    animation: pulse-sm 10s linear infinite;*/
   }
   .girl-img {
     display: block;
@@ -4729,8 +4729,8 @@ input[type="submit"] {
     position: absolute;
     top: 33%;
     right: 61%;
-    -webkit-animation: pulse-sm 10s linear infinite;
-    animation: pulse-sm 10s linear infinite;
+    /*-webkit-animation: pulse-sm 10s linear infinite;
+    animation: pulse-sm 10s linear infinite;*/
     z-index: 4;
   }
   .boy-img {
@@ -4751,8 +4751,8 @@ input[type="submit"] {
     background-position: 50% 62%;
     background-size: 44px 30px;
     margin: 0 auto;
-    -webkit-animation: pulse 1.2s linear infinite;
-    animation: pulse 1.2s linear infinite;
+   /* -webkit-animation: pulse 1.2s linear infinite;
+    animation: pulse 1.2s linear infinite;*/
     z-index: 4;
   }
   .main-slogan {
@@ -5064,8 +5064,8 @@ input[type="submit"] {
 }
 
 .gr-girl-img {
-  -webkit-animation: pulse-sm 7s linear infinite;
-          animation: pulse-sm 7s linear infinite;
+ /* -webkit-animation: pulse-sm 7s linear infinite;
+          animation: pulse-sm 7s linear infinite;*/
   max-height: 50vh;
   margin-bottom: -30px;
   min-height: 240px;
