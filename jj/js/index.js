@@ -4,7 +4,7 @@ $(document).ready(function(){
 $('nav a').click(function(){
   //var el = $(this).attr('href');
   var anchor = $(this).attr('href').split('#').pop();
-  var dest = $('#'+anchor).offset().top;
+  var dest = $(anchor).offset().top;
   $('html, body').animate({'scrollTop': dest}, 1000);
   return false;
 });
