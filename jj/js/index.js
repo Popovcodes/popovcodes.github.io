@@ -96,10 +96,10 @@ var parallax = function(){
     });
   }
 };
-
+/*
 parallax();
 $(window).scroll(parallax).resize(parallax);
-
+*/
 //accordion
 $('.accord-item-title').click(function(){
   var parentLi = $(this).parents('li');
