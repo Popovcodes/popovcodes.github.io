@@ -2910,6 +2910,7 @@ input[type="submit"] {
 }
 
 /* ==================== css-animations ======================= */
+/*
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
@@ -2981,7 +2982,7 @@ input[type="submit"] {
     transform: scale(1);
   }
 }
-
+*/
 /* ==================== Addictional styles ======================= */
 @media only screen and (min-width: 1200px) {
   .celebrate-block {
