@@ -43,6 +43,7 @@ var parallax = function(){
     var pageIsScrolled = $(window).scrollTop();
     var windowHeight = $(window).height();
     var scrolledToWindowBottom = pageIsScrolled + windowHeight;
+    /*
     $('#main-bg-img').css({"transform":  "translate(0%, "+ pageIsScrolled/2+"px)"});
     var togetherSectionVisible = scrolledToWindowBottom - $('.together-section').offset().top;
     if (togetherSectionVisible > 0) {
@@ -57,11 +58,12 @@ var parallax = function(){
     if (addressSectionVisible > 0 ) {
       $('#address-bg-img').css({"transform": "translate(-50%, "+ addressSectionVisible/4+"px)"});
     }
-
+*/
     var abonementImgVisible = scrolledToWindowBottom - $('#abonement-img').offset().top;
     if (abonementImgVisible > 300) {
       $('#abonement-img').addClass('non-rotated');
     }
+    
 /*
     var redLineVisible = scrolledToWindowBottom - $('#red-line').offset().top;
     if (redLineVisible > 0 ) {
