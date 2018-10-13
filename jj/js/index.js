@@ -65,7 +65,6 @@ var parallax = function(){
       $('#abonement-img').addClass('non-rotated');
     }
 
-/*
     var redLineVisible = scrolledToWindowBottom - $('#red-line').offset().top;
     if (redLineVisible > 0 ) {
       //$('#red-line').css({"transform": "rotate(7deg) translate(0%, "+ -redLineVisible/2.5+"px)", "filter": "hue-rotate(" + redLineVisible/2 +"deg)"});
@@ -76,18 +75,18 @@ var parallax = function(){
     if (blueLineVisible > 0 ) {
       $('#blue-line').css({"transform": "rotate(8deg) translate(0%, "+ -blueLineVisible/4+"px)"});
     };
-*/
+
     // flying objects
-    /*$('.figure').each(function(){
+    $('.figure').each(function(){
       var thisPosition = $(this).offset().top;
       var coefX = $(this).attr('data-coefX');
       var coefY = $(this).attr('data-coefY');
-      var thisVisible = scrolledToWindowBottom - thisPosition;*/
-      /*var rotate = 360/thisVisible*80/coefX;*/
-      /*if(thisVisible > 0) {
-        $(this).find('img').css({"left": thisVisible/coefX, "bottom": thisVisible/coefY});
+      var thisVisible = scrolledToWindowBottom - thisPosition;
+      var rotate = 360/thisVisible*80/coefX;
+      if(thisVisible > 0) {
+        $(this).find('img').css({"left": thisVisible/coefX, "bottom": thisVisible/coefY, "transform": "rotate("+ rotate*2.5 +"deg)"});
       };
-    });*/
+    });
 /*
     $('.eq-img-cont').each(function(){
       var eqItemPosition = $(this).offset().top;

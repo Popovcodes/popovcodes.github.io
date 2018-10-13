@@ -3000,6 +3000,7 @@ input[type="submit"] {
     z-index: 3;
   }
   .figure img {
+    position: relative;
     width: auto;
     height: auto;
   }
@@ -3162,6 +3163,42 @@ input[type="submit"] {
     bottom: 3%;
     left: 51%;
     z-index: 2;
+  }
+  .f-1 {
+    -webkit-filter: hue-rotate(30deg);
+    filter: hue-rotate(30deg);
+  }
+  .f-2 {
+    -webkit-filter: hue-rotate(-20deg);
+    filter: hue-rotate(-20deg);
+  }
+  .f-3 {
+    -webkit-filter: hue-rotate(-15deg);
+    filter: hue-rotate(-15deg);
+  }
+  .f-4 {
+    -webkit-filter: hue-rotate(32deg);
+    filter: hue-rotate(32deg);
+  }
+  .f-5 {
+    -webkit-filter: hue-rotate(50deg);
+    filter: hue-rotate(50deg);
+  }
+  .f-6 {
+    -webkit-filter: hue-rotate(-2deg);
+    filter: hue-rotate(-2deg);
+  }
+  .f-7 {
+    -webkit-filter: hue-rotate(-5deg);
+    filter: hue-rotate(-5deg);
+  }
+  .f-9 {
+    -webkit-filter: hue-rotate(30deg);
+    filter: hue-rotate(30deg);
+  }
+  .f-10 {
+    -webkit-filter: hue-rotate(45deg);
+    filter: hue-rotate(45deg);
   }
   .f-1 img {
     -webkit-transform: rotate(10deg);
@@ -4911,6 +4948,9 @@ input[type="submit"] {
   .abonement-img {
     -webkit-transform: rotateY(90deg);
     transform: rotateY(90deg);
+    -webkit-transition: all 1.2s cubic-bezier(0.53, 1.83, 0.36, 0.93);
+    -o-transition: all 1.2s cubic-bezier(0.53, 1.83, 0.36, 0.93);
+    transition: all 1.2s cubic-bezier(0.53, 1.83, 0.36, 0.93);
   }
   .abonement-img.non-rotated {
     -webkit-transform: rotateY(0deg);
