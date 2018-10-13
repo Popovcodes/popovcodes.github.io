@@ -1191,7 +1191,7 @@ section {
   top: -10%;
   left: 0;
   right: 0;
-  bottom: -10%;
+  bottom: -200px;
   background-image: url(../img/common/dots.png);
   background-repeat: repeat;
   z-index: -1;
