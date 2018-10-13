@@ -30,11 +30,12 @@ $(window).scroll(function(){
 */
 //scroll on anchors buttons click
 $('.scroll-i').click(function(e){
-    e.preventDefault();
-    var anchorId = $(this).attr('href');
-    var anchorDest = $(anchorId).offset().top - 65;
-    $('html, body').animate({'scrollTop': anchorDest}, 1000);
-    return false;
+    // e.preventDefault();
+    // var anchorId = $(this).attr('href');
+    // console.log(anchorId);
+    // var anchorDest = $(anchorId).offset().top - 65;
+    // $('html, body').animate({'scrollTop': anchorDest}, 1000);
+    // return false;
 });
 
 //parallax
@@ -87,21 +88,21 @@ var parallax = function(){
         $(this).find('img').css({"left": thisVisible/coefX, "bottom": thisVisible/coefY});
       };
     });*/
-
+/*
     $('.eq-img-cont').each(function(){
       var eqItemPosition = $(this).offset().top;
       var eqItemVisible = scrolledToWindowBottom - eqItemPosition;
       if(eqItemVisible > 0) {
-        $(this).parents('li').css({"transform":  "translate(0%, "+ -eqItemVisible/18+"%)"});
+        $(this).parents('li').css({"transform":  "translate(0%, "+ -eqItemVisible/30+"%)"});
       };
     });
     $('.feat-img-cont').each(function(){
       var featItemPosition = $(this).offset().top;
       var featItemVisible = scrolledToWindowBottom - featItemPosition;
       if(featItemVisible > 0) {
-        $(this).parents('li').css({"transform": "translate(0%, "+ -featItemVisible/30+"%)"});
+        $(this).parents('li').css({"transform": "translate(0%, "+ -featItemVisible/50+"%)"});
       };
-    });
+    });*/
   }
 };
 
