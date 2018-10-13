@@ -87,7 +87,7 @@ var parallax = function(){
         $(this).find('img').css({"left": thisVisible/coefX, "bottom": thisVisible/coefY, "transform": "rotate("+ rotate*2.5 +"deg)"});
       };
     });
-/*
+
     $('.eq-img-cont').each(function(){
       var eqItemPosition = $(this).offset().top;
       var eqItemVisible = scrolledToWindowBottom - eqItemPosition;
@@ -101,7 +101,7 @@ var parallax = function(){
       if(featItemVisible > 0) {
         $(this).parents('li').css({"transform": "translate(0%, "+ -featItemVisible/50+"%)"});
       };
-    });*/
+    });
   }
 };
 
