@@ -2869,6 +2869,143 @@ input[type="file"] {
   height: 100%;
 }
 
+/*****/
+.country-section {
+  padding-top: 5rem;
+}
+
+.country-section .text {
+  margin-bottom: 15px;
+}
+
+.country-section .text.img-right {
+  padding-top: 30px;
+  margin-bottom: 6rem;
+}
+
+.country-section strong {
+  font-family: OpenSansBold, sans-serif;
+}
+
+.country-section .subhead {
+  margin-bottom: 2rem;
+}
+
+.country-section p,
+.country-section ul,
+.country-section ol {
+  margin-bottom: 3.5rem;
+}
+
+.country-section ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.heading-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.country-heading {
+  font-family: GaramoundBold, serif;
+  font-size: 72px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.flag-img {
+  width: 255px;
+}
+
+.pre-table-wrap {
+  position: relative;
+  margin-top: 6rem;
+}
+
+.pre-table-wrap img {
+  display: block;
+}
+
+.pre-table-text {
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+  text-align: right;
+  font-family: GaramoundBold, serif;
+  font-size: 30px;
+  line-height: 1.3;
+  color: #363f68;
+}
+
+.price-table {
+  font-family: OpenSansRegular, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+.price-table thead tr:last-child,
+.price-table tbody tr:last-child {
+  color: #fff;
+  background-color: #363F69;
+}
+
+.price-table tr {
+  min-height: 90px;
+}
+
+.price-table th {
+  font-family: GaramoundBold, serif;
+  font-size: 28px;
+  padding-top: 17px;
+  padding-bottom: 24px;
+}
+
+.price-table td {
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.price-table th:first-child,
+.price-table td:first-child {
+  width: 77%;
+  text-align: left;
+  padding-left: 95px;
+}
+
+.price-table th:last-child,
+.price-table td:last-child {
+  width: 23%;
+  text-align: center;
+}
+
+.price-table tbody td:last-child {
+  font-family: OpenSansBold, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #353e68;
+}
+
+.price-table tbody tr:last-child {
+  font-family: OpenSansBold, sans-serif;
+}
+
+.price-table tbody tr:last-child td:last-child {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-size: 24px;
+}
+
 /* ==================== Media queries ======================= */
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -3112,6 +3249,27 @@ input[type="file"] {
   .empty {
     display: none;
   }
+  .pre-table-text {
+    font-size: 22px;
+    top: 8px;
+    right: 8px;
+  }
+  .price-table th:first-child,
+  .price-table td:first-child,
+  .price-table td,
+  .price-table th {
+    padding: 10px;
+  }
+  .price-table {
+    font-size: 16px;
+  }
+  .price-table td {
+    border: 1px solid #eee;
+  }
+  .price-table tbody td:last-child,
+  .price-table tbody tr:last-child td:last-child {
+    font-size: 20px;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -3157,6 +3315,14 @@ input[type="file"] {
   .person-text ul,
   .person-text ol {
     font-size: 14px;
+  }
+  .country-heading {
+    font-size: 50px;
+  }
+  .country-section .text,
+  .country-section .text.img-right {
+    padding-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -3299,6 +3465,26 @@ input[type="file"] {
   .v-lines-cont {
     display: none;
   }
+  .pre-table-text {
+    font-size: 16px;
+    line-height: 1.1;
+    position: static;
+    padding: 10px 0;
+  }
+  .pre-table-text br {
+    display: none;
+  }
+  .price-table {
+    line-height: 1.2;
+  }
+  .price-table th {
+    font-size: 16px;
+  }
+  .price-table,
+  .price-table tbody td:last-child,
+  .price-table tbody tr:last-child td:last-child {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 679px) {
@@ -3363,6 +3549,21 @@ input[type="file"] {
   .footer-nav li {
     display: list-item;
     margin-right: 0;
+  }
+  .heading-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .country-heading {
+    min-width: 100%;
+    font-size: 40px;
+    margin-right: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .country-heading br {
+    display: none;
   }
 }
 
@@ -3452,6 +3653,12 @@ input[type="file"] {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 30px;
+  }
+  .country-heading {
+    font-size: 28px;
+  }
+  .flag-img {
+    width: 180px;
   }
 }
 
@@ -3577,6 +3784,22 @@ input[type="file"] {
   .v-line:nth-child(5) .v-line-in {
     -webkit-animation-duration: 2.8s;
             animation-duration: 2.8s;
+  }
+  .country-section .text p:first-child:first-letter {
+    font-family: GaramoundBold, serif;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #353f68;
+    line-height: .5;
+    letter-spacing: -2px;
+  }
+  .country-section .text.img-right p:first-child:first-letter {
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: initial;
+    color: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
   }
 }
 
