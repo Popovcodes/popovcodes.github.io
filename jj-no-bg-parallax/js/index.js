@@ -40,7 +40,7 @@ $('.scroll-i').click(function(e){
 
 //parallax
 var parallax = function(){
-  console.log(5);
+  console.log(7);
   if(document.body.clientWidth > 1199 ) {
     var pageIsScrolled = $(window).scrollTop();
     var windowHeight = $(window).height();
