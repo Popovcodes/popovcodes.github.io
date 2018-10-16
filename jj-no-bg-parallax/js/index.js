@@ -67,7 +67,7 @@ var parallax = function(){
       $('#abonement-img').addClass('non-rotated');
     }
 */
-/*
+
     var redLineVisible = scrolledToWindowBottom - $('#red-line').offset().top;
     if (redLineVisible > 0 ) {
       //$('#red-line').css({"transform": "rotate(7deg) translate(0%, "+ -redLineVisible/2.5+"px)", "filter": "hue-rotate(" + redLineVisible/2 +"deg)"});
@@ -78,7 +78,7 @@ var parallax = function(){
     if (blueLineVisible > 0 ) {
       $('#blue-line').css({"transform": "rotate(8deg) translate(0%, "+ -blueLineVisible/4+"px)"});
     };
-	*/
+
 
     // flying objects
     $('.f-1, .f-6').each(function(){
