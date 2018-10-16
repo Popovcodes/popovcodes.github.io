@@ -121,47 +121,7 @@ var parallax = function(){
       };
     });
 
-/*
-    $('.f-6').each(function(){
-      var thisPosition = $(this).offset().top;
-      var thisVisible = scrolledToWindowBottom - thisPosition;
-      if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/-3});
-      };
-    });
 
-    $('.f-7').each(function(){
-      var thisPosition = $(this).offset().top;
-      var thisVisible = scrolledToWindowBottom - thisPosition;
-      if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/4});
-      };
-    });
-
-    $('.f-8').each(function(){
-      var thisPosition = $(this).offset().top;
-      var thisVisible = scrolledToWindowBottom - thisPosition;
-      if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/1.8});
-      };
-    });
-
-    $('.f-9').each(function(){
-      var thisPosition = $(this).offset().top;
-      var thisVisible = scrolledToWindowBottom - thisPosition;
-      if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/1.5});
-      };
-    });
-
-    $('.f-10').each(function(){
-      var thisPosition = $(this).offset().top;
-      var thisVisible = scrolledToWindowBottom - thisPosition;
-      if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/1.5});
-      };
-    });
-*/
 
 /*
     $('.eq-img-cont').each(function(){
