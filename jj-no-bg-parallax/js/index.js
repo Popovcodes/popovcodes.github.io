@@ -40,7 +40,7 @@ $('.scroll-i').click(function(e){
 
 //parallax
 var parallax = function(){
-  console.log(1);
+  console.log(23);
   if(document.body.clientWidth > 1199 ) {
     var pageIsScrolled = $(window).scrollTop();
     var windowHeight = $(window).height();
@@ -123,7 +123,7 @@ var parallax = function(){
 
 
 
-/*
+
     $('.eq-img-cont').each(function(){
       var eqItemPosition = $(this).offset().top;
       var eqItemVisible = scrolledToWindowBottom - eqItemPosition;
@@ -137,7 +137,7 @@ var parallax = function(){
       if(featItemVisible > 0) {
         $(this).parents('li').css({"transform": "translate(0%, "+ -featItemVisible/50+"%)"});
       };
-    });*/
+    });
   }
 };
 
