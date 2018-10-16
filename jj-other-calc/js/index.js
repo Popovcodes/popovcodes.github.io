@@ -121,7 +121,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/1.5, "bottom": thisVisible/6});
+        $(this).find('img').css({"left": thisVisible/-3, "bottom": thisVisible/6});
       };
     });
 
@@ -129,7 +129,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/1.5, "bottom": thisVisible/6});
+        $(this).find('img').css({"left": thisVisible/4, "bottom": thisVisible/6});
       };
     });
 
@@ -137,7 +137,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/1.5, "bottom": thisVisible/6});
+        $(this).find('img').css({"left": thisVisible/1.8, "bottom": thisVisible/6});
       };
     });
 
