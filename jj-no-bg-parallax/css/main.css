@@ -452,6 +452,7 @@ section {
   left: 0;
   background-image: url(../img/common/dots.png);
   background-repeat: repeat;
+  background-attachment: fixed;
   z-index: 0;
 }
 
