@@ -77,7 +77,7 @@ var parallax = function(){
     };
 
     // flying objects
-    $('.f-1').each(function(){
+    $('.f-1, .f-6').each(function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
@@ -85,7 +85,7 @@ var parallax = function(){
       };
     });
 
-    $('.f-2').each(function(){
+    $('.f-2, .f-7').each(function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
@@ -93,7 +93,7 @@ var parallax = function(){
       };
     });
 
-    $('.f-3').each(function(){
+    $('.f-3, .f-8').each(function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
@@ -101,7 +101,7 @@ var parallax = function(){
       };
     });
 
-    $('.f-4').each(function(){
+    $('.f-4, .f-9').each(function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
@@ -109,14 +109,14 @@ var parallax = function(){
       };
     });
 
-    $('.f-5').each(function(){
+    $('.f-5, .f-10').each(function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
         $(this).find('img').css({"left": thisVisible/3});
       };
     });
-
+/*
     $('.f-6').each(function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
@@ -156,7 +156,7 @@ var parallax = function(){
         $(this).find('img').css({"left": thisVisible/1.5});
       };
     });
-
+*/
 
 /*
     $('.eq-img-cont').each(function(){
