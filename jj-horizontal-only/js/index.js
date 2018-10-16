@@ -81,7 +81,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/2.5, "bottom": thisVisible/5});
+        $(this).find('img').css({"left": thisVisible/2.5});
       };
     });
 
@@ -89,7 +89,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/1.5, "bottom": thisVisible/6});
+        $(this).find('img').css({"left": thisVisible/1.5});
       };
     });
 
@@ -97,7 +97,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/-1.5, "bottom": thisVisible/1.5});
+        $(this).find('img').css({"left": thisVisible/-1.5});
       };
     });
 
@@ -105,7 +105,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/-2, "bottom": thisVisible/10});
+        $(this).find('img').css({"left": thisVisible/-2});
       };
     });
 
@@ -113,7 +113,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/3, "bottom": thisVisible/-2});
+        $(this).find('img').css({"left": thisVisible/3});
       };
     });
 
@@ -121,7 +121,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/-3, "bottom": thisVisible/2});
+        $(this).find('img').css({"left": thisVisible/-3});
       };
     });
 
@@ -129,7 +129,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/4, "bottom": thisVisible/-2});
+        $(this).find('img').css({"left": thisVisible/4});
       };
     });
 
@@ -137,7 +137,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/1.8, "bottom": thisVisible/3});
+        $(this).find('img').css({"left": thisVisible/1.8});
       };
     });
 
@@ -145,7 +145,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/1.5, "bottom": thisVisible/10});
+        $(this).find('img').css({"left": thisVisible/1.5});
       };
     });
 
@@ -153,7 +153,7 @@ var parallax = function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
       if(thisVisible > 0 && thisVisible < windowHeight) {
-        $(this).find('img').css({"left": thisVisible/1.5, "bottom": thisVisible/1});
+        $(this).find('img').css({"left": thisVisible/1.5});
       };
     });
 
