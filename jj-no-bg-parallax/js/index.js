@@ -40,6 +40,7 @@ $('.scroll-i').click(function(e){
 
 //parallax
 var parallax = function(){
+  console.log(5);
   if(document.body.clientWidth > 1199 ) {
     var pageIsScrolled = $(window).scrollTop();
     var windowHeight = $(window).height();
@@ -60,10 +61,12 @@ var parallax = function(){
       $('#address-bg-img').css({"transform": "translate(-50%, "+ addressSectionVisible/4+"px)"});
     }
 */
+/*
     var abonementImgVisible = scrolledToWindowBottom - $('#abonement-img').offset().top;
     if (abonementImgVisible > 300) {
       $('#abonement-img').addClass('non-rotated');
     }
+*/
 /*
     var redLineVisible = scrolledToWindowBottom - $('#red-line').offset().top;
     if (redLineVisible > 0 ) {
@@ -177,10 +180,10 @@ var parallax = function(){
     });*/
   }
 };
-/*
+
 parallax();
 $(window).scroll(parallax).resize(parallax);
-*/
+
 //accordion
 $('.accord-item-title').click(function(){
   var parentLi = $(this).parents('li');
