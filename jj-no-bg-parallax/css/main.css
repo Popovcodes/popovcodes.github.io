@@ -1182,6 +1182,7 @@ section {
 .together-section {
   padding: 150px 0 50px;
   text-align: center;
+  z-index: -1;
 }
 
 .together-section:before {
@@ -4897,8 +4898,8 @@ input[type="submit"] {
     margin-bottom: -350px;
   }
   .together-section {
-    padding: 356px 0 70px;
-    margin-bottom: -210px;
+    padding: 356px 0 170px;
+    margin-bottom: -310px;
   }
   .price-form {
     max-width: 980px;
