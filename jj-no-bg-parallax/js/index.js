@@ -79,7 +79,7 @@ var parallax = function(){
       $('#blue-line').css({"transform": "rotate(8deg) translate(0%, "+ -blueLineVisible/4+"px)"});
     };
 	*/
-/*
+
     // flying objects
     $('.f-1, .f-6').each(function(){
       var thisPosition = $(this).offset().top;
@@ -120,7 +120,7 @@ var parallax = function(){
         $(this).find('img').css({"left": thisVisible/3});
       };
     });
-	*/
+
 /*
     $('.f-6').each(function(){
       var thisPosition = $(this).offset().top;
