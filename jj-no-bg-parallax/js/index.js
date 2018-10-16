@@ -61,12 +61,12 @@ var parallax = function(){
       $('#address-bg-img').css({"transform": "translate(-50%, "+ addressSectionVisible/4+"px)"});
     }
 */
-/*
+
     var abonementImgVisible = scrolledToWindowBottom - $('#abonement-img').offset().top;
     if (abonementImgVisible > 300) {
       $('#abonement-img').addClass('non-rotated');
     }
-*/
+
 
     var redLineVisible = scrolledToWindowBottom - $('#red-line').offset().top;
     if (redLineVisible > 0 ) {
