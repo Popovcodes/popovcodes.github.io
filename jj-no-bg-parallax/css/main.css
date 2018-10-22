@@ -4675,6 +4675,8 @@ input[type="submit"] {
 }
 
 @media only screen and (min-width: 768px) {
+
+  
   .slogan-section,
   .together-section,
   .subscr-section,
@@ -4694,6 +4696,8 @@ input[type="submit"] {
   .address-section {
     background-image: url(../img/common/address-bg.jpg);
   }
+
+
   .divided-text-bg {
     background-image: url(../img/geometry/red.png);
     -webkit-transform: rotate(180deg);
