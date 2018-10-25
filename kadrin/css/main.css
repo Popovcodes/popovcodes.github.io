@@ -1320,10 +1320,32 @@ sup {
           justify-content: space-between;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+        align-items: flex-start;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 875px;
           flex: 1 1 875px;
   margin: 0 -15px;
+}
+
+.catalog-items-cont:after {
+  content: "";
+  display: inline-block;
+  -ms-flex-preferred-size: 260px;
+  flex-basis: 260px;
+  width: 260px;
+  height: 1px;
+
+  margin: 0 15px 30px;
+}
+
+.holder {
+  display: none;
+}
+
+.jp-disabled {
+  opacity: .2;
 }
 
 .items-wrap {
