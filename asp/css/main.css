@@ -9496,7 +9496,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   max-width: 230px;
-  margin-bottom: 36px;
+  margin-bottom: 50px;
 }
 
 .inputs_wrap:after {
@@ -9567,27 +9567,28 @@ body {
   position: absolute;
   height: 4px;
   background-color: #414141;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
 }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default {
   position: absolute;
-  top: -23px;
+  top: -32px;
   display: block;
-  width: 40px;
+  width: 50px;
   height: 40px;
-  margin-left: -20px;
+  margin-left: -25px;
   cursor: pointer;
   background-image: url(../img/mark.png);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center 9px;
   outline: none;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
+  outline: 1px solid red;
+}
+
+.ui-state-default:focus, .ui-state-default:active,
+.ui-widget-content .ui-state-default:focus,
+.ui-widget-content .ui-state-default:active {
+  outline: 1px solid lime;
 }
 
 .slider_limits {
