@@ -9577,9 +9577,9 @@ body {
   position: absolute;
   top: -23px;
   display: block;
-  width: 20px;
+  width: 40px;
   height: 40px;
-  margin-left: -10px;
+  margin-left: -20px;
   cursor: pointer;
   background-image: url(../img/mark.png);
   background-repeat: no-repeat;
