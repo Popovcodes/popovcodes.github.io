@@ -129,7 +129,7 @@
                     <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу.</p>
                     <p>Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.</p>
                     <div class="btns_cont">
-                        <button class="apply_btn">В корзину</button>
+                        <button class="apply_btn" id="buy-btn">Купить</button>
                         <form action="">
                             <input type="file" id="upload">
                             <label for="upload" class="upl_btn">Загрузить изображение</label>
@@ -172,6 +172,24 @@
 
     </div><!-- /.wrapper -->
 </section>
+
+<!-- =========================== modal =========================== -->
+<div class="overlay hidden" id="overlay"></div>
+<div class="modal_cont hidden" id="modal-cont">
+    <div class="modal_top">
+        <div class="modal_logo">
+            <img src="img/logo.jpg" alt="">
+        </div>
+        <span class="modal_close" id="modal-close">&#10006;</span>
+    </div>
+    <form action="" class="modal_form">
+        <input type="text" placeholder="ФИО" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="tel" placeholder="Телефон" required>
+        <textarea placeholder="Ваше сообщение"></textarea>
+        <button id="" class="apply_btn">Отправить</button>
+    </form>
+</div>
 
 <script src="js/jquery/jquery.js"></script>
 <script src="js/slickSlider/slick.min.js"></script>

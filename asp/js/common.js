@@ -16,4 +16,13 @@ $(window).ready(function(){
    $('.accordion>li ul').click(function(event){
        event.stopPropagation();
    });
+
+  // всплывающее окно с формой
+  $('#buy-btn').click(function(){
+    $('#modal-cont, #overlay').fadeIn();
+  });
+
+  $('#overlay, #modal-close').click(function(){
+    $('#modal-cont, #overlay').fadeOut();
+  });
 });
