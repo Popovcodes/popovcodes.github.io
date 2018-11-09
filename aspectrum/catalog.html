@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="ru-RU">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Каталог</title>
+</head>
+<body>
+
+<section class="catalog_section">
+    <div class="wrapper flex_wrapper">
+
+        <div class="aside">
+            <form action="" class="filter_form" id="filter-form">
+                <div class="filter_heading_wrap">
+                    <h4 class="filter_heading">Фильтр</h4>
+                    <span class="filter_reset" id="filter-reset">Сбросить все</span>
+                </div>
+                <div class="filters_content">
+                    <div class="filters_block">
+                        <h5 class="filter_title">Цена:</h5>
+                        <div class="inputs_wrap">
+                            <input type="number" id="price-from" name="price-from">
+                            <input type="number" id="price-to" name="price-to">
+                        </div>
+                        <div id="slider-range"></div>
+                        <div class="slider_limits">
+                            <span>0</span>
+                            <span>1300</span>
+                        </div>
+                    </div><!-- /.filters_block -->
+                    <div class="filters_block">
+                        <h5 class="filter_title">Акция:</h5>
+                        <div class="check_wrap">
+                            <input type="checkbox" name="action" id="action-check">
+                            <label for="action-check">Да</label>
+                        </div>
+                    </div><!-- /.filters_block -->
+                    <div class="filters_block">
+                        <h5 class="filter_title">Статус:</h5>
+                        <div class="check_wrap">
+                            <input type="checkbox" name="available" id="available-1" checked>
+                            <label for="available-1">В наличии</label>
+                            <input type="checkbox" name="available" id="available-0">
+                            <label for="available-0">Нет в наличии</label>
+                        </div>
+                    </div><!-- /.filters_block -->
+                </div><!-- /.filters_content -->
+                <button class="apply_btn">Показать</button>
+            </form>
+            
+            <div class="accordion_block">
+                <div class="filter_heading_wrap">
+                    <h4 class="filter_heading">Каталог товаров</h4>
+                </div>
+                <ul class="accordion">
+                    <li>
+                        <span>Кружки</span>
+                        <ul>
+                            <li><a href="javascript:void(0);">Позиция номер 1</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 2</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 3</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Футболки, майки</span>
+                        <ul>
+                            <li><a href="javascript:void(0);">Позиция номер 1</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 2</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 3</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Свитшоты</span>
+                        <ul>
+                            <li><a href="javascript:void(0);">Позиция номер 1</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 2</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 3</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Толстовки</span>
+                        <ul>
+                            <li><a href="javascript:void(0);">Позиция номер 1</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 2</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 3</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Поло</span>
+                        <ul>
+                            <li><a href="javascript:void(0);">Позиция номер 1</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 2</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 3</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Кепки</span>
+                        <ul>
+                            <li><a href="javascript:void(0);">Позиция номер 1</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 2</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 3</a></li>
+                            <li><a href="javascript:void(0);">Позиция номер 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.accordion_block -->
+        </div><!-- /.aside -->
+
+        <div class="product_outer">
+            <h1 class="h_md">Каталог кружек</h1>
+            <div class="grid">
+
+                <a href="javascript:void(0);" class="item">
+                    <div class="item_img_wrap">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="item_price">220 <span class="currency rub"></span></p>
+                    <p class="item_name">Кружка желтая ручка и ободок</p>
+                    <p class="item_desc">Фото на кружке</p>
+                </a><!-- /.item -->
+
+                <a href="javascript:void(0);" class="item">
+                    <div class="item_img_wrap">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="item_price">220 <span class="currency rub"></span></p>
+                    <p class="item_name">Кружка оранжевая ручка и ободок</p>
+                    <p class="item_desc">Фото на кружке</p>
+                </a><!-- /.item -->
+
+                <a href="javascript:void(0);" class="item">
+                    <div class="item_img_wrap">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="item_price">220 <span class="currency rub"></span></p>
+                    <p class="item_name">Кружка оранжевая ручка и ободок</p>
+                    <p class="item_desc">Фото на кружке</p>
+                </a><!-- /.item -->
+
+                <a href="javascript:void(0);" class="item">
+                    <div class="item_img_wrap">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="item_price">220 <span class="currency rub"></span></p>
+                    <p class="item_name">Кружка желтая ручка и ободок</p>
+                    <p class="item_desc">Фото на кружке</p>
+                </a><!-- /.item -->
+
+                <a href="javascript:void(0);" class="item">
+                    <div class="item_img_wrap">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="item_price">220 <span class="currency rub"></span></p>
+                    <p class="item_name">Кружка оранжевая ручка и ободок</p>
+                    <p class="item_desc">Фото на кружке</p>
+                </a><!-- /.item -->
+
+                <a href="javascript:void(0);" class="item">
+                    <div class="item_img_wrap">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="item_price">220 <span class="currency rub"></span></p>
+                    <p class="item_name">Кружка желтая ручка и ободок</p>
+                    <p class="item_desc">Фото на кружке</p>
+                </a><!-- /.item -->
+
+                <a href="javascript:void(0);" class="item">
+                    <div class="item_img_wrap">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="item_price">220 <span class="currency rub"></span></p>
+                    <p class="item_name">Кружка оранжевая ручка и ободок</p>
+                    <p class="item_desc">Фото на кружке</p>
+                </a><!-- /.item -->
+
+                <a href="javascript:void(0);" class="item">
+                    <div class="item_img_wrap">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="item_price">220 <span class="currency rub"></span></p>
+                    <p class="item_name">Кружка желтая ручка и ободок</p>
+                    <p class="item_desc">Фото на кружке</p>
+                </a><!-- /.item -->
+
+                <a href="javascript:void(0);" class="item">
+                    <div class="item_img_wrap">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="item_price">220 <span class="currency rub"></span></p>
+                    <p class="item_name">Кружка желтая ручка и ободок</p>
+                    <p class="item_desc">Фото на кружке</p>
+                </a><!-- /.item -->
+
+                <a href="javascript:void(0);" class="item">
+                    <div class="item_img_wrap">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="item_price">220 <span class="currency rub"></span></p>
+                    <p class="item_name">Кружка оранжевая ручка и ободок</p>
+                    <p class="item_desc">Фото на кружке</p>
+                </a><!-- /.item -->
+
+            </div><!-- /.grid -->
+        </div><!-- /.product_outer -->
+
+
+    </div><!-- /.wrapper -->
+</section>
+
+<script src="js/jquery/jquery.js"></script>
+<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
