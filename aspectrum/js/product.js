@@ -13,7 +13,7 @@ $('#lg-slider').slick({
   asNavFor: '#sm-slider',
   responsive: [
     {
-      breakpoint: 479,
+      breakpoint: 480,
       settings: {
         vertical: false,
         verticalSwiping: false,
@@ -39,7 +39,7 @@ $('#sm-slider').slick({
   focusOnSelect: true,
    responsive: [
     {
-      breakpoint: 479,
+      breakpoint: 480,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -67,6 +67,14 @@ $('#slider-arr-next').click(function(){
 $('#tabs-container').responsiveTabs({
   startCollapsed: 'tabs',
   rotate: false,
+});
+
+// fancybox http://fancyapps.com/fancybox/3/
+$('[data-fancybox="gallery"]').fancybox({
+  loop: true,
+  toolbar: true,
+  idleTime: 1000,
+  hideScrollbar: false
 });
 
 });

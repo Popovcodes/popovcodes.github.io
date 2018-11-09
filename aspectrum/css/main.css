@@ -9254,6 +9254,11 @@ input::-webkit-inner-spin-button {
 }
 
 /* NEW STYLES */
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   min-width: 320px;
 }
@@ -10033,6 +10038,10 @@ body {
   }
   .item_img_wrap {
     margin-bottom: 8px;
+  }
+  .sliders_cont {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
