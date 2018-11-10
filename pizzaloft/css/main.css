@@ -3359,6 +3359,138 @@ div + .msg-date {
   background-color: #fff;
 }
 
+#Stage {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.promo-modal {
+  display: none;
+  width: auto;
+  width: 96% !important;
+  max-width: 350px;
+  padding: 30px 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.promo-img-wrap {
+  margin-bottom: 16px;
+}
+
+.promo-img-wrap img {
+  display: block;
+  max-height: 150px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.promo-text {
+  font-weight: 700;
+  text-align: center;
+  font-size: 15px;
+}
+
+.promo-text p {
+  margin-bottom: 8px;
+}
+
+.promo-text p:first-child {
+  font-size: 22px;
+}
+
+.promo-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  padding: 5px 8px;
+  margin: 0 auto 20px;
+  border: 1px solid #e41f28;
+  border-radius: 6px;
+  font-size: 32px;
+  text-align: center;
+  background-color: #FFE4ED;
+}
+
+.promo-area,
+.promo-copy {
+  width: 274px;
+}
+
+.promo-code-cont {
+  cursor: text;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}
+
+.promo-copy {
+  height: 50px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: inherit;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.promo-copy.default {
+  border: 1px solid #e41f28;
+  color: #fff;
+  background-color: #e41f28;
+  cursor: pointer;
+}
+
+.promo-copy.default:hover {
+  color: #e41f28;
+  background-color: #fff;
+}
+
+.promo-copy.success {
+  border: 1px solid #009A44;
+  color: #009A44;
+  background-color: #E7FFED;
+  font-size: 14px;
+}
+
+.promo-copy.fail {
+  border: 1px solid #9F0000;
+  color: #9F0000;
+  background-color: #FF8E97;
+  font-size: 14px;
+}
+
+.promo-close {
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  right: 0;
+  color: #e41f28;
+  font-size: 30px;
+  cursor: pointer;
+}
+
 /* ==================== Media queries ======================= */
 @media only screen and (max-width: 1199px) {
   html {
