@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="img/favicon/icon.ico">
+  <link rel="stylesheet" type="text/css" href="libs/wow/animate.css">
+  <link rel="stylesheet" type="text/css" href="libs/slick-1.6.0/slick.css">
+  <link rel="stylesheet" type="text/css" href="libs/formstyler/jquery.formstyler.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Title</title>
+</head>
+<body>
+
+      <div class="selects-block">
+        <select name="thickness" data-placeholder="Выберите толщину">
+          <option value=""></option> <!-- 1й должен быть пустым --> 
+          <option value="0.02">0,02 м</option>
+          <option value="0.03">0,03 м</option>
+          <option value="0.04">0,04 м</option>
+          <option value="0.05">0,05 м</option>
+          <option value="0.06">0,06 м</option>
+        </select>
+        <select name="filler">
+          <option value="filler-1">Наполнитель-1</option>
+          <option value="filler-2">Наполнитель-2</option>
+          <option value="filler-3">Наполнитель-3</option>
+          <option value="filler-4">Наполнитель-4</option>
+          <option value="filler-5">Наполнитель-5</option>
+        </select>
+        <select name="type">
+          <option value="type-1">Тип номер 1</option>
+          <option value="type-2">Тип номер 2</option>
+          <option value="type-3">Тип номер 3</option>
+          <option value="type-4">Тип номер 4</option>
+          <option value="type-5">Тип номер 5</option>
+        </select>
+        <select name="stiffener">
+          <option value="type-1">Тип номер 1</option>
+          <option value="type-2">Тип номер 2</option>
+          <option value="type-3">Тип номер 3</option>
+          <option value="type-4">Тип номер 4</option>
+          <option value="type-5">Тип номер 5</option>
+        </select>
+        <!-- <input type="range" min="0" max="10000" value="10000" step="100"> -->
+
+        <div class="range" data-value="50">
+          <div class="label">
+            <div class="value">50</div>
+            <div class="drop"></div>    
+          </div>
+          <div class="input-box">
+            <input id="input-range" type="range" min="0" max="100" value="50"/>
+            <div class="bar"></div>
+          </div>
+        </div>
+
+
+      </div><!-- /.selects-block -->
+    </form>
+  </div><!-- /.wrapper -->
+</section><!-- /.catalog-section -->
+
+
+
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/wow/wow.min.js"></script>
+<script src="libs/slick-1.6.0/slick.min.js"></script>
+<script src="libs/formstyler/jquery.formstyler.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
