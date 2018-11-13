@@ -15,6 +15,31 @@
 </head>
 <body>
 
+<section class="catalog-section">
+  <div class="wrapper">
+    <div class="shadow-cont">
+      <h2 class="to-shadow">Каталог продукции</h2>
+    </div>
+    <form class="filters-form">
+      <div class="color-select">
+        <span>Выберите цвет:</span>
+        <input type="radio" name="color" id="blue">
+        <label for="blue"></label> 
+        <input type="radio" name="color" id="maroon">
+        <label for="maroon"></label>
+        <input type="radio" name="color" id="white">
+        <label for="white"></label>
+        <input type="radio" name="color" id="green">
+        <label for="green"></label>
+        <input type="radio" name="color" id="black">
+        <label for="black"></label>
+        <input type="radio" name="color" id="yellow">
+        <label for="yellow"></label>
+        <input type="radio" name="color" id="orange">
+        <label for="orange"></label>
+        <input type="radio" name="color" id="multi">
+        <label for="multi"></label>
+      </div>
       <div class="selects-block">
         <select name="thickness" data-placeholder="Выберите толщину">
           <option value=""></option> <!-- 1й должен быть пустым --> 
@@ -22,7 +47,7 @@
           <option value="0.03">0,03 м</option>
           <option value="0.04">0,04 м</option>
           <option value="0.05">0,05 м</option>
-          <option value="0.06">0,06 м </option>
+          <option value="0.06">0,06 м</option>
         </select>
         <select name="filler">
           <option value="filler-1">Наполнитель-1</option>
@@ -47,14 +72,12 @@
         </select>
         <!-- <input type="range" min="0" max="10000" value="10000" step="100"> -->
 
-        <div class="range" data-value="50">
-          <div class="label">
-            <div class="value">50</div>
-            <div class="drop"></div>    
+        <div class="range" id="range" data-value="50">
+          <div class="float" id="float">
+            <div><span id="value"></span><sup> руб</sup></div>
           </div>
           <div class="input-box">
-            <input id="input-range" type="range" min="0" max="100" value="50"/>
-            <div class="bar"></div>
+            <input id="input-range" type="range" min="0" max="10000" value="10000" step="100">
           </div>
         </div>
 

@@ -32,20 +32,33 @@ $(document).ready(function(){
   $('select').styler();
 
 
+// ползунок цены
 var input = $('#input-range');
+var startMax = input.attr('max');
+var startVal = input.val();
+var startPercent = startVal/startMax*100 + '%';
+$('#value').text(startVal);
+$('#float').css('left', startPercent);
+
 
 input.bind('input', function(){
-  getRangeValue(input);
-}).bind('change', function(){
-  getRangeValue(input); /* for IE */
+    getRangeValue(input);
+  })
+.bind('change', function(){
+    getRangeValue(input); /* for IE */
 });
 
 function getRangeValue(e){
   var value = $(e).val();
-  $('.value').text(value);
-  $('.range').attr('data-value', value);
+  $('#value').text(value);
+  $('#range').attr('data-value', value);
   input.attr('value', value);
+  var maxVal = $('#input-range').attr('max');
+  var percent = value/maxVal*100 + '%';
+  $('#float').css('left', percent);
 }
+
+
 
   //page scroll
   // $("a[rel='Scroll2id']").mPageScroll2id({
