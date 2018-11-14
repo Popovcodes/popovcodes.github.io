@@ -109,7 +109,18 @@ $(window).scroll(function(){
       $('a[href="#'+id+'"]').addClass('active');
     }
   });
+  lastSection();
 });
+var lastSection = function(){
+  var pageScrolled = $(window).scrollTop();
+  var windowHeight = $(window).height();
+  var scrolledToWindowBottom = pageScrolled + windowHeight;
+  var pageHeight = $('body').height();
+  if (pageHeight - scrolledToWindowBottom < 300) {
+    $('nav a').removeClass('active');
+    $('nav li:last-child a').addClass('active');
+  };
+}
 
 // анимация "показать в каталоге"
 $('.show-product').click(function(){
