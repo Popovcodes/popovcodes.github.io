@@ -1950,7 +1950,8 @@ input[type=range]::-webkit-slider-thumb {
             justify-content: center;
   }
   .color-select,
-  .range-block {
+  .range-block,
+  .selects-block {
     text-align: center;
   }
 }
@@ -2035,6 +2036,9 @@ input[type=range]::-webkit-slider-thumb {
   .top-content .button {
     height: 50px;
     line-height: 50px;
+  }
+  .range {
+    min-width: 260px;
   }
 }
 
