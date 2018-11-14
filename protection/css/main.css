@@ -1824,7 +1824,9 @@ input[type=range]::-webkit-slider-thumb {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .item {
+  .item,
+  .catalog-cont:before,
+  .catalog-cont:after {
     width: 300px;
   }
 }
