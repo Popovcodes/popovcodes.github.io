@@ -1954,16 +1954,6 @@ input[type=range]::-webkit-slider-thumb {
   .selects-block {
     text-align: center;
   }
-  .jq-selectbox__select {
-    margin-left: 7px;
-    margin-right: 7px;
-  }
-  .jq-selectbox__select-text {
-    padding-right: 20px;
-  }
-  .jq-selectbox__select-text:after {
-    right: 5px;
-  }
 }
 
 /* Small Devices, Tablets */
