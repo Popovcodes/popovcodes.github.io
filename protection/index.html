@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="keywords" content="">
+  <meta name="theme-color" content="#ff00ff">
   <link rel="shortcut icon" href="img/favicon/16.ico">
   <link rel="apple-touch-icon" href="img/favicon/57.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
@@ -117,7 +118,7 @@
                   Стеновые протекторы (мягкие настенные покрытия) используются для безопасности в помещениях при занятиях спортом. Предотвращают травматизм при ударах спортсменов о стены и выступающие конструкции. 
                 </p>
               </div>
-              <a href="javascript:void(0);" class="button">Показать в каталоге</a>
+              <a href="#item-2" class="button show-product">Показать в каталоге</a>
             </div><!-- /.slide-text -->
             <div class="slide-img-cont">
               <img src="img/slideImg1.png" alt="" class="slide-img">
@@ -185,7 +186,7 @@
                   Стеновые протекторы (мягкие настенные покрытия) используются для безопасности в помещениях при занятиях спортом. Предотвращают травматизм при ударах спортсменов о стены и выступающие конструкции. 
                 </p>
               </div>
-              <a href="javascript:void(0);" class="button">Показать в каталоге</a>
+              <a href="#item-4" class="button show-product">Показать в каталоге</a>
             </div><!-- /.slide-text -->
             <div class="slide-img-cont">
               <img src="img/slideImg2.png" alt="" class="slide-img">
@@ -376,7 +377,7 @@
 
     <div class="catalog-cont">
 
-      <div class="item">
+      <div class="item" id="item-1">
         <div class="img-cont">
           <img src="img/item.jpg" alt="">
         </div>
@@ -387,12 +388,12 @@
           </div>
           <div class="buy-row">
             <span class="price">2985<sup> РУБ</sup></span>
-            <button class="buy-btn modal-call"></button>
+            <button class="buy-btn"></button>
           </div>
         </div>
       </div><!-- /.item -->
 
-      <div class="item">
+      <div class="item" id="item-1">
         <div class="img-cont">
           <img src="img/item.jpg" alt="">
         </div>
@@ -404,12 +405,12 @@
           </div>
           <div class="buy-row">
             <span class="price">11000<sup> РУБ</sup></span>
-            <button class="buy-btn modal-call"></button>
+            <button class="buy-btn"></button>
           </div>
         </div>
       </div><!-- /.item -->
 
-      <div class="item">
+      <div class="item" id="item-2">
         <div class="img-cont">
           <img src="img/item.jpg" alt="">
         </div>
@@ -421,12 +422,12 @@
           </div>
           <div class="buy-row">
             <span class="price">990<sup> РУБ</sup></span>
-            <button class="buy-btn modal-call"></button>
+            <button class="buy-btn"></button>
           </div>
         </div>
       </div><!-- /.item -->
 
-      <div class="item">
+      <div class="item" id="item-3">
         <div class="img-cont">
           <img src="img/item.jpg" alt="">
         </div>
@@ -437,12 +438,12 @@
           </div>
           <div class="buy-row">
             <span class="price">2985<sup> РУБ</sup></span>
-            <button class="buy-btn modal-call"></button>
+            <button class="buy-btn"></button>
           </div>
         </div>
       </div><!-- /.item -->
 
-      <div class="item">
+      <div class="item" id="item-4">
         <div class="img-cont">
           <img src="img/item.jpg" alt="">
         </div>
@@ -502,6 +503,25 @@
     <input type="text" placeholder="Введите ваше имя" required>
     <textarea placeholder="Ваше сообщение"></textarea>
     <button id="" class="button">Отправить заявку</button>
+  </form>
+</div>
+
+<!-- модальное окно при клике "в корзину" -->
+<div class="modal-cont" id="buy-modal-cont">
+  <span class="modal-close" id="buy-modal-close">+</span>
+  <div class="img-cont">
+    <img src="img/item.jpg" alt="">
+  </div>
+  <p class="item-name">Стеновой протектор 1х2х0,03м "Эконом+" Lorem ipsum dolor.</p>
+  <form action="" class="modal-form">
+    <input type="tel" placeholder="Введите номер телефона" required>
+    <input type="text" placeholder="Введите ваше имя" required>
+    <textarea placeholder="Ваше сообщение"></textarea>
+    <p class="confirm-quest">Подтвердите покупку</p>
+    <div class="confirm-row">
+      <button class="button">Подтвердить</button>
+      <button class="button cancel">Отмена</button>
+    </div>
   </form>
 </div>
 

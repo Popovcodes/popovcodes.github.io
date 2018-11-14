@@ -111,6 +111,16 @@ $(window).scroll(function(){
   });
 });
 
+// анимация "показать в каталоге"
+$('.show-product').click(function(){
+  var target = $(this).attr('href');
+  var targetPos = $(target).offset().top - 80;
+  $('html, body').animate({'scrollTop': targetPos}, 1000);
+  $('.target').removeClass('target');
+  $(target).addClass('target');
+  return false;
+});
+
 // позиция соц. иконок в хедере
 var socIconsPosition = function(){
   if($(window).outerWidth() < 1330) {
@@ -129,6 +139,14 @@ $('.modal-call').click(function(){
 });
 $('#overlay, #modal-close').click(function(){
   $('#modal-cont, #overlay').fadeOut();
+});
+
+// модальное окно при клике "в корзину"
+$('.buy-btn').click(function(){
+  $('#buy-modal-cont, #overlay').fadeIn();
+});
+$('#overlay, #buy-modal-close, .cancel').click(function(){
+  $('#buy-modal-cont, #overlay').fadeOut();
 });
 
 // моб меню
