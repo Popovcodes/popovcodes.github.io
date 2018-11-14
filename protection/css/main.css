@@ -1884,10 +1884,10 @@ input[type=range]::-webkit-slider-thumb {
             order: -1;
     margin: 0 auto 20px;
     padding-top: 0;
-    height: 215px;
   }
   .slide-img {
     min-width: 0;
+    height: 215px;
   }
   .dot-tooltip {
     width: 176px;
