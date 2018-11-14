@@ -1938,6 +1938,23 @@ input[type=range]::-webkit-slider-thumb {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .slide .button,
+  .range-block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slider-controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .color-select,
+  .range-block {
+    text-align: center;
+  }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   h1 {
