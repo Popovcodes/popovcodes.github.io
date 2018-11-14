@@ -396,6 +396,7 @@ nav a:hover:before, nav a.active:before {
   max-width: 800px;
   margin-right: 10px;
   z-index: 0;
+  width: 800px;
 }
 
 .top-content h3 {
@@ -576,7 +577,8 @@ nav a:hover:before, nav a.active:before {
 }
 
 .slide-text {
-  margin-right: 10px;
+  margin-right: 20px;
+  width: 660px;
 }
 
 .slide-head {
@@ -1223,6 +1225,10 @@ input[type=range]::-webkit-slider-thumb {
   line-height: 1.4;
 }
 
+.item-text div {
+  max-width: 100%;
+}
+
 .item-text p {
   line-height: 1.4;
 }
@@ -1465,6 +1471,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 80px;
   padding: 10px 20px;
   resize: none;
+  overflow: hidden;
 }
 
 ::-webkit-input-placeholder {
@@ -1717,6 +1724,10 @@ input[type=range]::-webkit-slider-thumb {
   p {
     font-size: 13px !important;
     line-height: 1.2 !important;
+  }
+  .top-content,
+  .slide-text {
+    width: auto;
   }
   .top-headings:before {
     display: none;
