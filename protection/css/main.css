@@ -778,6 +778,7 @@ sup {
   bottom: -3px;
   z-index: -1;
   color: #F9F9F9;
+  white-space: nowrap;
 }
 
 .help {
@@ -1813,6 +1814,9 @@ input[type=range]::-webkit-slider-thumb {
   .jq-selectbox__select:after {
     display: none;
   }
+  .shadow {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1220px) {
@@ -2044,4 +2048,4 @@ input[type=range]::-webkit-slider-thumb {
   }
 }
 
-/**/
+/*# sourceMappingURL=main.css.map */
