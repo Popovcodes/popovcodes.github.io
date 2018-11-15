@@ -1,14 +1,46 @@
 $(document).ready(function(){
 
-//анимация появления
+//анимация, тень заголовков
 if(document.documentElement.clientWidth > 1023) {
-  $('#top-content').addClass('visible');
-  $('#back-text').addClass('visible');
+  $('#top-content, #back-text, #social-cont, #top-img-cont, #header-outer, #scroll-cont').addClass('visible');
   $('.to-shadow').each(function(){
     var thisParent = $(this).parents('.shadow-cont');
     $(this).clone().appendTo(thisParent).addClass('shadow');
   });
 };
+
+var animations = function(){
+  if(document.documentElement.clientWidth > 1023) {
+
+    var pageScrolled = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var scrolledToWindowBottom = pageScrolled + windowHeight;
+
+    var featPosition = $('#delivery-features').offset().top;
+    var featVisible = scrolledToWindowBottom - featPosition;
+
+    if (featVisible > 100) {
+      $('.feature').addClass('visible');
+    };
+
+    var questPosition = $('#question-section').offset().top;
+    var questVisible = scrolledToWindowBottom - questPosition;
+    if (questVisible > 200) {
+      $('.part-1, .part-2, .part-3').addClass('visible');
+    };
+
+    $('.to-shadow').each(function(){
+      var thisPosition = $(this).offset().top;
+      var thisVisible = scrolledToWindowBottom - thisPosition;
+      if (thisVisible > 260) {
+        $(this).addClass('visible');
+      };
+    });
+
+  };
+};
+animations();
+$(window).scroll(animations);
 
 //фиксированный хедер
 $(window).scroll(function(){
@@ -24,34 +56,34 @@ $(window).scroll(function(){
   };
 });
 
-  //slick.js slider   http://kenwheeler.github.io/slick/
-  $('#slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    arrows: false,
-    dots: false
-  });
-  $('#slider-prev').click(function(){
-    $('#slider').slick('slickPrev');
-  });
-    
-  $('#slider-next').click(function(){
-    $('#slider').slick('slickNext');
-  });
-
+//slick.js slider   http://kenwheeler.github.io/slick/
+$('#slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  arrows: false,
+  dots: false
+});
+$('#slider-prev').click(function(){
+  $('#slider').slick('slickPrev');
+});
   
-  var slidesCount = $("#slider").slick("getSlick").slideCount;
-  $('#total-slide').text(slidesCount);
+$('#slider-next').click(function(){
+  $('#slider').slick('slickNext');
+});
 
-  $("#slider").on("afterChange", function(event, slick, currentSlide){
-    $('#current-slide').text(currentSlide + 1);
-  });
 
-  // select styling  https://github.com/Dimox/jQueryFormStyler
-  $('select').styler();
+var slidesCount = $("#slider").slick("getSlick").slideCount;
+$('#total-slide').text(slidesCount);
+
+$("#slider").on("afterChange", function(event, slick, currentSlide){
+  $('#current-slide').text(currentSlide + 1);
+});
+
+// select styling  https://github.com/Dimox/jQueryFormStyler
+$('select').styler();
 
 
 // ползунок цены
@@ -61,15 +93,12 @@ var startVal = input.val();
 var startPercent = startVal/startMax*100 + '%';
 $('#value').text(startVal);
 $('#float').css('left', startPercent);
-
-
 input.bind('input', function(){
     getRangeValue(input);
   })
 .bind('change', function(){
     getRangeValue(input); /* for IE */
 });
-
 function getRangeValue(e){
   var value = $(e).val();
   $('#value').text(value);
