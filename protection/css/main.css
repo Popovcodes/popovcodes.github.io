@@ -499,22 +499,12 @@ nav a:hover:before, nav a.active:before {
 }
 
 .social-cont {
-  width: 1760px;
-  max-width: 96vw;
   position: absolute;
   top: 54%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.header-social li {
-  margin-bottom: 20px;
-}
-
-.header-social li:last-child {
-  margin-bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .header-social a {
@@ -522,13 +512,6 @@ nav a:hover:before, nav a.active:before {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
-  -webkit-filter: grayscale(100%) brightness(150%);
-          filter: grayscale(100%) brightness(150%);
-}
-
-.header-social a:hover {
-  -webkit-filter: none;
-          filter: none;
 }
 
 .header-social.replaced {
@@ -1200,7 +1183,7 @@ input[type=range]::-webkit-slider-thumb {
   transition: all .4s;
 }
 
-.item.target, .item:hover {
+.item:hover {
   -webkit-box-shadow: 0 0 30px 4px #1d40dd;
           box-shadow: 0 0 30px 4px #1d40dd;
 }
@@ -1382,16 +1365,14 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .footer-social a {
+  opacity: .8;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
-  -webkit-filter: grayscale(100%) brightness(50%);
-          filter: grayscale(100%) brightness(50%);
 }
 
 .footer-social a:hover {
-  -webkit-filter: none;
-          filter: none;
+  opacity: 1;
 }
 
 .footer-phone {
@@ -2110,6 +2091,29 @@ input[type=range]::-webkit-slider-thumb {
 /*==========  Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1024px) {
+  .header-social a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 70px;
+    width: 36px;
+    padding-right: 6px;
+  }
+  .header-social a:hover {
+    width: 100px;
+  }
+  .vk {
+    background-color: #4A76A8;
+  }
+  .ig {
+    background-color: #DD2B72;
+  }
   .header-outer {
     position: relative;
     top: -300px;
@@ -2131,7 +2135,7 @@ input[type=range]::-webkit-slider-thumb {
   }
   .social-cont.visible {
     opacity: 1;
-    left: 50%;
+    left: 0;
   }
   .scroll-cont {
     position: relative;

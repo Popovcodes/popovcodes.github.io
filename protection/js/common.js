@@ -32,7 +32,7 @@ var animations = function(){
     $('.to-shadow').each(function(){
       var thisPosition = $(this).offset().top;
       var thisVisible = scrolledToWindowBottom - thisPosition;
-      if (thisVisible > 260) {
+      if (thisVisible > 100) {
         $(this).addClass('visible');
       };
     });
