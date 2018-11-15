@@ -202,10 +202,6 @@ b {
   border-radius: 2px;
   -webkit-box-shadow: 0 0 20px rgba(29, 64, 221, 0.7);
           box-shadow: 0 0 20px rgba(29, 64, 221, 0.7);
-  background-image: url(../img/hover.png);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: 0 -20%;
   -webkit-transition: all 1.2s linear;
   -o-transition: all 1.2s linear;
   transition: all 1.2s linear;
@@ -215,13 +211,6 @@ b {
 .button:active {
   -webkit-box-shadow: 0 0 20px rgba(29, 64, 221, 0.1);
           box-shadow: 0 0 20px rgba(29, 64, 221, 0.1);
-}
-
-.button:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: #1437D4;
-  background-position: 0 bottom;
 }
 
 p {
@@ -2306,6 +2295,18 @@ input[type=range]::-webkit-slider-thumb {
     opacity: 1;
     -webkit-animation: move 12s;
             animation: move 12s;
+  }
+  .button {
+    background-image: url(../img/hover.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0 -20%;
+  }
+  .button:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #1437D4;
+    background-position: 0 bottom;
   }
 }
 
