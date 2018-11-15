@@ -156,8 +156,6 @@ $('.show-product').click(function(){
   var target = $(this).attr('href');
   var targetPos = $(target).offset().top - 80;
   $('html, body').animate({'scrollTop': targetPos}, 1000);
-  $('.target').removeClass('target');
-  $(target).addClass('target');
   return false;
 });
 
