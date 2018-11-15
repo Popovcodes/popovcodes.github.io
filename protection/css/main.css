@@ -1200,7 +1200,7 @@ input[type=range]::-webkit-slider-thumb {
   transition: all .4s;
 }
 
-.item.target {
+.item.target, .item:hover {
   -webkit-box-shadow: 0 0 30px 4px #1d40dd;
           box-shadow: 0 0 30px 4px #1d40dd;
 }
