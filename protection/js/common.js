@@ -1,16 +1,20 @@
 $(document).ready(function(){
 
 //анимация, тень заголовков
-if(document.documentElement.clientWidth > 1023) {
-  $('#top-content, #back-text, #social-cont, #top-img-cont, #header-outer, #scroll-cont').addClass('visible');
-  $('.to-shadow').each(function(){
-    var thisParent = $(this).parents('.shadow-cont');
-    $(this).clone().appendTo(thisParent).addClass('shadow');
-  });
+var windowWidth = function(){
+  if(window.innerWidth > 1023) {
+    $('#top-content, #back-text, #social-cont, #top-img-cont, #header-outer, #scroll-cont').addClass('visible');
+    $('.to-shadow').each(function(){
+      var thisParent = $(this).parents('.shadow-cont');
+      $(this).clone().appendTo(thisParent).addClass('shadow');
+    });
+  };
 };
+windowWidth();
+$(window).resize(windowWidth);
 
 var animations = function(){
-  if(document.documentElement.clientWidth > 1023) {
+  if(window.innerWidth > 1023) {
 
     var pageScrolled = $(window).scrollTop();
     var windowHeight = $(window).height();
@@ -45,7 +49,7 @@ $(window).scroll(animations);
 //фиксированный хедер
 $(window).scroll(function(){
   var pageIsScrolled = $(window).scrollTop();
-  if(document.documentElement.clientWidth > 991) {
+  if(window.innerWidth > 991) {
     if(pageIsScrolled > 0) {
       $('#header').addClass('fixed');
     } else {
@@ -161,7 +165,7 @@ $('.show-product').click(function(){
 
 // позиция соц. иконок в хедере
 var socIconsPosition = function(){
-  if($(window).outerWidth() < 1330) {
+  if(window.innerWidth < 1024) {
     $('#header-social').appendTo('#header-wrapper').addClass('replaced');
   } else {
     $('#header-social').appendTo('#social-cont').removeClass('replaced');
