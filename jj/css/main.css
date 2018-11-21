@@ -5979,6 +5979,9 @@ h1 {
   background-image: url(../img/geometry/circlebg.png);
   background-size: cover;
   z-index: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
 }
 
 .circle-content {
@@ -6029,14 +6032,27 @@ h1 {
 }
 
 .circle:hover {
-  -webkit-box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.4);
-          box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.5);
 }
 
 .circle:hover .hol-link {
   border-bottom-color: transparent;
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+}
+
+.circle:hover:before {
+  -webkit-transform: translate(-50%, -50%) rotate(2000deg) !important;
+      -ms-transform: translate(-50%, -50%) rotate(2000deg) !important;
+          transform: translate(-50%, -50%) rotate(2000deg) !important;
+  -webkit-transition: all 30s;
+  -o-transition: all 30s;
+  transition: all 30s;
+}
+
+.circle:nth-child(5n+1):before {
+  -webkit-transform: translate(-50%, -50%) rotate(10deg);
+      -ms-transform: translate(-50%, -50%) rotate(10deg);
+          transform: translate(-50%, -50%) rotate(10deg);
 }
 
 .circle:nth-child(5n+2):before {
