@@ -5469,6 +5469,14 @@ input[type="submit"] {
   display: none;
 }
 
+sup {
+  position: relative;
+  top: 3px;
+  font-size: .3em;
+  line-height: 1;
+  vertical-align: top;
+}
+
 .footer {
   z-index: 3;
 }
@@ -5781,7 +5789,7 @@ h1 {
 
 .red-btn:hover {
   color: #CCFF00;
-  background-color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(255, 0, 0, 0.7);
 }
 
 /*video popup*/
