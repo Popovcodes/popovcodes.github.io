@@ -5629,6 +5629,7 @@ h1 {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
+  margin-bottom: 16px;
 }
 
 .vid-text {
