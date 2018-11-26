@@ -4362,6 +4362,9 @@ input[type="file"] {
 }
 
 @media only screen and (max-width: 767px) {
+  .image-section-ico {
+    background-position: -190px 50%;
+  }
   .service-item,
   .service-item:nth-child(even) {
     width: 100%;
