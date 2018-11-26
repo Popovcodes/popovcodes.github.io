@@ -309,7 +309,8 @@ ol {
   padding: 18px 0 20px;
   -webkit-box-shadow: 0 5px 20px rgba(100, 100, 100, 0.3);
           box-shadow: 0 5px 20px rgba(100, 100, 100, 0.3);
-  z-index: 1;
+  z-index: 2;
+  /*ch*/
 }
 
 .header.sticky {
@@ -3167,6 +3168,10 @@ input[type="file"] {
   font-family: OpenSansBold, sans-serif;
 }
 
+.fund-section strong {
+  color: #363f69;
+}
+
 .flies-cont img {
   display: none;
 }
@@ -4303,6 +4308,7 @@ input[type="file"] {
   .flies-cont img {
     display: block;
     position: absolute;
+    left: -120vw;
     z-index: 0;
   }
   .flies-cont img:nth-child(1) {
