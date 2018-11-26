@@ -4316,12 +4316,12 @@ input[type="file"] {
             animation: particle-location 160s -80s linear infinite;
   }
   .flies-cont img:nth-child(2) {
-    -webkit-animation: particle-location 140s -40s linear infinite;
-            animation: particle-location 140s -40s linear infinite;
+    -webkit-animation: particle-location 130s -40s linear infinite;
+            animation: particle-location 130s -40s linear infinite;
   }
   .flies-cont img:nth-child(3) {
-    -webkit-animation: particle-location 150s -55s linear infinite;
-            animation: particle-location 150s -55s linear infinite;
+    -webkit-animation: particle-location 180s -55s linear infinite;
+            animation: particle-location 180s -55s linear infinite;
   }
   .flies-cont img:nth-child(4) {
     -webkit-animation: particle-location 130s -20s linear infinite;
