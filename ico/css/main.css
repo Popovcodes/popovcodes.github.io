@@ -3162,6 +3162,7 @@ input[type="file"] {
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #E3E5E5;
   background-image: url(../img/commonImgs/chart.gif);
   background-size: 100% auto;
   background-repeat: no-repeat;
