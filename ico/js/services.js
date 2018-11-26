@@ -299,6 +299,89 @@ $(document).ready(function(){
     ]
   });
 
+  $('#slider-12').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: true,
+    appendDots:$('.dots-cont-12'),
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 730,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $('#slider-13').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: true,
+    appendDots:$('.dots-cont-13'),
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 730,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $('#slider-14').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: true,
+    appendDots:$('.dots-cont-14'),
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 730,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+
+
 
   // set equal height of news slides
   var setEqualHeight = function() {
@@ -344,11 +427,19 @@ $(document).ready(function(){
   
   // particles.js animation https://vincentgarreau.com/particles.js/
   particlesJS.load('particles-js-1', '../libs/particles/particles-1.json', function() {});
-  particlesJS.load('particles-js-2', '../libs/particles/particles-2.json', function() {});
-  particlesJS.load('particles-js-3', '../libs/particles/particles-3.json', function() {});
+  // particlesJS.load('particles-js-2', '../libs/particles/particles-2.json', function() {});
+  // particlesJS.load('particles-js-3', '../libs/particles/particles-3.json', function() {});
 
   // page scroll to #id
   $("a[rel='Scroll2id']").mPageScroll2id({
     offset: 58
   });
+
+    // scroll to #section correction
+    var thisLocation = window.location.href;
+    var hrefId = thisLocation.split(/#/)[1]
+    var anchoredEl = $('#'+hrefId);
+    var anchoredOffset = anchoredEl.offset().top;
+    console.log(anchoredOffset);
+    $('html, body').scrollTop(anchoredOffset);
 });

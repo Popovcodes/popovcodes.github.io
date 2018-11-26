@@ -3006,6 +3006,172 @@ input[type="file"] {
   font-size: 24px;
 }
 
+/*=new*/
+/*=new*/
+/*=new*/
+/*=new*/
+/*=new*/
+.image-section-ico {
+  /*ch*/
+  background-size: cover;
+}
+
+.image-section-ico .buttons-cont {
+  /*ch*/
+  padding-top: 6.5rem;
+}
+
+.links-section {
+  padding: 3.5rem 0 8rem;
+}
+
+.services-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #353f68;
+  margin-bottom: 50px;
+}
+
+.service-item:nth-child(even) {
+  width: 40%;
+}
+
+.service-item:hover {
+  text-decoration: underline;
+}
+
+.img-cont {
+  width: 73px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 26px;
+}
+
+.crypto-section,
+.fund-section {
+  padding: 7.5rem 0 13rem;
+  font-family: OpenSansRegular, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.crypto-section h2,
+.fund-section h2 {
+  font-family: GaramoundBold, serif;
+  font-size: 58px;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.crypto-section .text-content,
+.fund-section .text-content {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.crypto-section .text-content p,
+.crypto-section .text-content ul,
+.crypto-section .text-content ol,
+.fund-section .text-content p,
+.fund-section .text-content ul,
+.fund-section .text-content ol {
+  margin-bottom: 0;
+}
+
+.crypto-section ul > li:before,
+.fund-section ul > li:before {
+  content: "\2022";
+  padding: 0 28px 0 34px;
+}
+
+.crypto-section ol,
+.fund-section ol {
+  list-style: none;
+  counter-reset: liCounter;
+}
+
+.crypto-section ol > li:before,
+.fund-section ol > li:before {
+  content: counter(liCounter) ".";
+  counter-increment: liCounter;
+  padding: 0 28px 0 34px;
+}
+
+.crypto-section {
+  background-color: #202645;
+  background-image: url(../img/commonImgs/bg.jpg);
+  background-size: cover;
+  text-shadow: 1px 1px 0px #212746, -1px -1px 0px #212746, -1px 1px 0px #212746, 1px -1px 0px #212746;
+}
+
+.crypto-section .wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.crypto-section h2 {
+  text-align: right;
+}
+
+.jurisdiction-section {
+  padding: 30px 0 10px;
+}
+
+.jurisdiction-section h2 {
+  font-family: GaramoundBold, serif;
+  font-size: 43px;
+  color: #353f68;
+  margin-bottom: 30px;
+}
+
+.jurisdiction-section h2:first-letter {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.fund-section {
+  padding: 0 0 30px;
+}
+
+.fund-section .text-content {
+  padding-top: 30px;
+  color: #363f69;
+}
+
+.fund-section h4 {
+  font-size: 24px;
+  color: #363F69;
+}
+
+.fund-section h4 strong {
+  font-family: OpenSansBold, sans-serif;
+}
+
+.flies-cont img {
+  display: none;
+}
+
+/* /new */
 /* ==================== Media queries ======================= */
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -3570,7 +3736,8 @@ input[type="file"] {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 479px) {
   h2 {
-    font-size: 38px !important;
+    font-size: 36px !important;
+    /*ch*/
   }
   h2 br {
     display: none;
@@ -3940,22 +4107,28 @@ input[type="file"] {
          -o-transition-delay: .8s;
             transition-delay: .8s;
   }
+  /*ch*/
   .news-section .item:hover .title,
   .news-section .item:hover .date,
-  .news-section .item:hover .more {
+  .news-section .item:hover .more,
+  .jurisdiction-section .item:hover .title,
+  .jurisdiction-section .item:hover .date,
+  .jurisdiction-section .item:hover .more {
     color: #fff;
     -webkit-transition: all .4s .4s;
     -o-transition: all .4s .4s;
     transition: all .4s .4s;
   }
-  .news-section .item:hover .prev-text:before {
+  .news-section .item:hover .prev-text:before,
+  .jurisdiction-section .item:hover .prev-text:before {
     -webkit-transition-delay: 0s;
          -o-transition-delay: 0s;
             transition-delay: 0s;
     left: 0;
     width: 100%;
   }
-  .news-section .item:hover .prev-text:after {
+  .news-section .item:hover .prev-text:after,
+  .jurisdiction-section .item:hover .prev-text:after {
     -webkit-transition-delay: .4s;
          -o-transition-delay: .4s;
             transition-delay: .4s;
@@ -4126,6 +4299,40 @@ input[type="file"] {
     -webkit-animation: particle-location 100s -50s linear infinite;
             animation: particle-location 100s -50s linear infinite;
   }
+  /*ch*/
+  .flies-cont img {
+    display: block;
+    position: absolute;
+    z-index: 0;
+  }
+  .flies-cont img:nth-child(1) {
+    -webkit-animation: particle-location 160s -80s linear infinite;
+            animation: particle-location 160s -80s linear infinite;
+  }
+  .flies-cont img:nth-child(2) {
+    -webkit-animation: particle-location 140s -40s linear infinite;
+            animation: particle-location 140s -40s linear infinite;
+  }
+  .flies-cont img:nth-child(3) {
+    -webkit-animation: particle-location 150s -55s linear infinite;
+            animation: particle-location 150s -55s linear infinite;
+  }
+  .flies-cont img:nth-child(4) {
+    -webkit-animation: particle-location 130s -20s linear infinite;
+            animation: particle-location 130s -20s linear infinite;
+  }
+  .flies-cont img:nth-child(5) {
+    -webkit-animation: particle-location 140s -30s linear infinite;
+            animation: particle-location 140s -30s linear infinite;
+  }
+  .flies-cont img:nth-child(6) {
+    -webkit-animation: particle-location 140s -50s linear infinite;
+            animation: particle-location 140s -50s linear infinite;
+  }
+  .flies-cont img:nth-child(7) {
+    -webkit-animation: particle-location 150s -15s linear infinite;
+            animation: particle-location 150s -15s linear infinite;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -4134,5 +4341,58 @@ input[type="file"] {
         flex-basis: 120px;
   }
 }
+
+/*=new*/
+@media only screen and (max-width: 991px) {
+  .service-item,
+  .service-item:nth-child(even) {
+    font-size: 15px;
+    width: 48%;
+    margin-bottom: 26px;
+  }
+  .img-cont {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .service-item,
+  .service-item:nth-child(even) {
+    width: 100%;
+  }
+  .service-item br,
+  .service-item:nth-child(even) br {
+    display: none;
+  }
+  .crypto-section,
+  .fund-section {
+    font-size: 16px;
+  }
+  .crypto-section ul > li:before,
+  .fund-section ul > li:before,
+  .crypto-section ol > li:before,
+  .fund-section ol > li:before {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .fund-section h4 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .crypto-section h2:first-letter {
+    font-size: 80px;
+  }
+  .crypto-section .text-content p:first-of-type:first-letter,
+  .fund-section .text-content p:first-of-type:first-letter {
+    font-family: GaramoundBold, serif;
+    font-size: 90px;
+    line-height: 0.8;
+    letter-spacing: 3px;
+  }
+}
+
+/* /new */
 
 /*# sourceMappingURL=main.css.map */
