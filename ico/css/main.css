@@ -4176,96 +4176,97 @@ input[type="file"] {
               filter: blur(0.1px);
     }
   }
+  /*ch*/
   @-webkit-keyframes particle-location {
     0% {
-      top: 1%;
-      left: -1%;
+      -webkit-transform: translate(-50vw, 0);
+              transform: translate(-50vw, 0);
     }
     10% {
-      top: 6%;
-      left: 6%;
+      -webkit-transform: translate(-40vw, -1200px);
+              transform: translate(-40vw, -1200px);
     }
     20% {
-      top: 11%;
-      left: 3%;
+      -webkit-transform: translate(0, -800px);
+              transform: translate(0, -800px);
     }
     30% {
-      top: 5%;
-      left: 30%;
+      -webkit-transform: translate(-20vw, -1400px);
+              transform: translate(-20vw, -1400px);
     }
     40% {
-      top: 50%;
-      left: 40%;
+      -webkit-transform: translate(-10vw, 0);
+              transform: translate(-10vw, 0);
     }
     50% {
-      top: 90%;
-      left: 30%;
+      -webkit-transform: translate(-20vw, 1000px);
+              transform: translate(-20vw, 1000px);
     }
     60% {
-      top: 60%;
-      left: 90%;
+      -webkit-transform: translate(40vw, 200px);
+              transform: translate(40vw, 200px);
     }
     70% {
-      top: 40%;
-      left: 60%;
+      -webkit-transform: translate(10vw, -300px);
+              transform: translate(10vw, -300px);
     }
     80% {
-      top: 60%;
-      left: 40%;
+      -webkit-transform: translate(-10vw, 300px);
+              transform: translate(-10vw, 300px);
     }
     90% {
-      top: 20%;
-      left: 20%;
+      -webkit-transform: translate(-30vw, -1000px);
+              transform: translate(-30vw, -1000px);
     }
     100% {
-      top: 1%;
-      left: -1%;
+      -webkit-transform: translate(-50vw, 0);
+              transform: translate(-50vw, 0);
     }
   }
   @keyframes particle-location {
     0% {
-      top: 1%;
-      left: -1%;
+      -webkit-transform: translate(-50vw, 0);
+              transform: translate(-50vw, 0);
     }
     10% {
-      top: 6%;
-      left: 6%;
+      -webkit-transform: translate(-40vw, -1200px);
+              transform: translate(-40vw, -1200px);
     }
     20% {
-      top: 11%;
-      left: 3%;
+      -webkit-transform: translate(0, -800px);
+              transform: translate(0, -800px);
     }
     30% {
-      top: 5%;
-      left: 30%;
+      -webkit-transform: translate(-20vw, -1400px);
+              transform: translate(-20vw, -1400px);
     }
     40% {
-      top: 50%;
-      left: 40%;
+      -webkit-transform: translate(-10vw, 0);
+              transform: translate(-10vw, 0);
     }
     50% {
-      top: 90%;
-      left: 30%;
+      -webkit-transform: translate(-20vw, 1000px);
+              transform: translate(-20vw, 1000px);
     }
     60% {
-      top: 60%;
-      left: 90%;
+      -webkit-transform: translate(40vw, 200px);
+              transform: translate(40vw, 200px);
     }
     70% {
-      top: 40%;
-      left: 60%;
+      -webkit-transform: translate(10vw, -300px);
+              transform: translate(10vw, -300px);
     }
     80% {
-      top: 60%;
-      left: 40%;
+      -webkit-transform: translate(-10vw, 300px);
+              transform: translate(-10vw, 300px);
     }
     90% {
-      top: 20%;
-      left: 20%;
+      -webkit-transform: translate(-30vw, -1000px);
+              transform: translate(-30vw, -1000px);
     }
     100% {
-      top: 1%;
-      left: -1%;
+      -webkit-transform: translate(-50vw, 0);
+              transform: translate(-50vw, 0);
     }
   }
   .types-logo-section h3,
@@ -4308,9 +4309,14 @@ input[type="file"] {
   .flies-cont img {
     display: block;
     position: absolute;
-    left: -120vw;
-    -webkit-animation: particle-location 160s linear infinite;
-            animation: particle-location 160s linear infinite;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+    -webkit-animation: particle-location 130s linear infinite;
+            animation: particle-location 130s linear infinite;
+    animation-direction: alternate-reverse;
     z-index: 0;
   }
   .flies-cont img:nth-child(1) {
@@ -4322,12 +4328,12 @@ input[type="file"] {
             animation-delay: -40s;
   }
   .flies-cont img:nth-child(3) {
-    -webkit-animation-delay: -140s;
-            animation-delay: -140s;
-  }
-  .flies-cont img:nth-child(4) {
     -webkit-animation-delay: -20s;
             animation-delay: -20s;
+  }
+  .flies-cont img:nth-child(4) {
+    -webkit-animation-delay: -15s;
+            animation-delay: -15s;
   }
   .flies-cont img:nth-child(5) {
     -webkit-animation-delay: -30s;
@@ -4338,8 +4344,8 @@ input[type="file"] {
             animation-delay: -50s;
   }
   .flies-cont img:nth-child(7) {
-    -webkit-animation-delay: -15s;
-            animation-delay: -15s;
+    -webkit-animation-delay: -90s;
+            animation-delay: -90s;
   }
 }
 
