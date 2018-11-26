@@ -3154,23 +3154,6 @@ input[type="file"] {
   padding: 0 0 30px;
 }
 
-.fund-section:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #E3E5E5;
-  background-image: url(../img/commonImgs/chart.gif);
-  background-size: 100% auto;
-  background-position: 50% 40px;
-  background-repeat: no-repeat;
-  opacity: .3;
-  z-index: 0;
-}
-
 .fund-section .text-content {
   padding-top: 30px;
   color: #363f69;
@@ -4418,6 +4401,22 @@ input[type="file"] {
     font-size: 90px;
     line-height: 0.8;
     letter-spacing: 3px;
+  }
+  .fund-section:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #E3E5E5;
+    background-image: url(../img/commonImgs/chart.gif);
+    background-size: 100% auto;
+    background-position: 50% 40px;
+    background-repeat: no-repeat;
+    opacity: .3;
+    z-index: 0;
   }
 }
 
