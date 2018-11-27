@@ -64,7 +64,7 @@ $('input[type="text"], textarea').on('keyup', function() {
 $('input[type="tel"]').mask("+7(999)999-99-99");
 
 var flies = function(){
-  if(document.body.clientWidth > 1199 ) {
+  if(window.innerWidth > 1199 ) {
 
     var pageIsScrolled = $(window).scrollTop();
     var windowHeight = $(window).height();
@@ -149,6 +149,8 @@ var flies = function(){
         $(this).find('img').css({"left": thisVisible/1.5});
       };
     });
+
+
 
     if($('div').is('#red-line')) {
       var redLineVisible = scrolledToWindowBottom - $('#red-line').offset().top;

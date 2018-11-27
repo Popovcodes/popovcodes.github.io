@@ -2192,7 +2192,8 @@ input[type="submit"] {
 }
 
 .footer-top {
-  padding: 15px 0 0;
+  padding: 10px 0 0;
+  /*ch*/
   background-color: #515151;
 }
 
@@ -2212,9 +2213,11 @@ input[type="submit"] {
   -ms-flex: 1 1 320px;
   flex: 1 1 320px;
   padding: 0 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  /*ch*/
   border-right: 1px solid #FF000C;
-  font-size: 13px;
+  font-size: 15px;
+  /*ch*/
   color: #939393;
   text-align: center;
 }
@@ -2255,7 +2258,8 @@ input[type="submit"] {
 }
 
 .footer-bottom {
-  padding: 24px 0;
+  padding: 18px 0;
+  /*ch*/
   font-family: "PFDinTextCondPro-Regular", sans-serif;
 }
 
@@ -2437,7 +2441,7 @@ input[type="submit"] {
   left: -40px;
   font-family: "CodePro-Bold", sans-serif;
   font-size: 48px;
-  color: #B5E200;
+  color: #f33;
   cursor: pointer;
   text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.4), 0px 6px 10px rgba(0, 0, 0, 0.1), 0px 13px 16px rgba(0, 0, 0, 0.1);
 }
@@ -3887,6 +3891,14 @@ input[type="submit"] {
     background-repeat: repeat;
     padding: 50px 0 30px;
   }
+  .modal-appoint-cont .modal-close {
+    top: -55px;
+    /*ch*/
+  }
+  .modal-close {
+    top: -25px;
+    /*ch*/
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -4635,6 +4647,18 @@ input[type="submit"] {
   ::placeholder {
     font-size: 16px;
   }
+  .modal-appoint-cont .modal-close {
+    top: -25px;
+    /*ch*/
+    color: #B5E200;
+    /*ch*/
+  }
+  .modal-close {
+    top: -6px;
+    /*ch*/
+    color: #B5E200;
+    /*ch*/
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -4850,7 +4874,7 @@ input[type="submit"] {
     bottom: 0;
     right: 60px;
     left: 0;
-    background-image: url(../img/geometry/red.png);
+    background-image: url(../img/geometry/green-mod.png);
     background-repeat: no-repeat;
     background-size: 70% 90%;
     background-position: top right;
@@ -5302,13 +5326,13 @@ input[type="submit"] {
 /*new styles ===================================================================================================================================================================================================================================================*/
 #fig-39 {
   top: 9%;
-  left: 65%;
+  left: -32%;
   z-index: 0;
 }
 
 #fig-40 {
   top: 9%;
-  left: 40%;
+  left: -22%;
   z-index: 0;
 }
 
@@ -5324,7 +5348,7 @@ input[type="submit"] {
 
 #fig-43 {
   bottom: 3%;
-  left: 70%;
+  left: 90%;
 }
 
 #fig-44 {
@@ -5334,7 +5358,7 @@ input[type="submit"] {
 
 #fig-45 {
   top: 19%;
-  left: 5%;
+  left: -12%;
   z-index: 0;
 }
 
@@ -5358,11 +5382,13 @@ input[type="submit"] {
 #fig-49 {
   bottom: 3%;
   left: 88%;
+  z-index: 0;
 }
 
 #fig-50 {
   bottom: 4%;
-  left: 95%;
+  left: 85%;
+  z-index: 0;
 }
 
 #fig-51 {
@@ -5402,17 +5428,72 @@ input[type="submit"] {
 #fig-57 {
   bottom: 17%;
   left: 95%;
+  z-index: 0;
 }
 
 #fig-58 {
   bottom: 21%;
   left: 12%;
+  z-index: 0;
 }
 
 #fig-59 {
   top: 24%;
   left: -22%;
   z-index: 0;
+}
+
+#fig-60 {
+  top: 12%;
+  left: -28%;
+  z-index: 0;
+}
+
+#fig-61 {
+  top: 5%;
+  left: -8%;
+  z-index: 0;
+}
+
+#fig-62 {
+  bottom: 5%;
+  left: 70%;
+}
+
+#fig-63 {
+  bottom: 4%;
+  left: 80%;
+}
+
+#fig-64 {
+  bottom: 3%;
+  left: 98%;
+}
+
+#fig-65 {
+  bottom: 2%;
+  left: 105%;
+}
+
+#fig-66 {
+  bottom: 10%;
+  left: 80%;
+  z-index: 0;
+}
+
+#fig-67 {
+  bottom: 9%;
+  left: 85%;
+}
+
+#fig-68 {
+  bottom: 11%;
+  left: 95%;
+}
+
+#fig-69 {
+  bottom: 12%;
+  left: 105%;
 }
 
 .figure img {
@@ -6064,7 +6145,7 @@ h1 {
   font-size: 18px;
   text-align: center;
   margin: 0 auto;
-  z-index: 3;
+  z-index: 4;
 }
 
 .text-content h2 {
@@ -6693,7 +6774,7 @@ h1 {
 .action-content {
   position: relative;
   margin-bottom: 100px;
-  z-index: 1;
+  z-index: 4;
 }
 
 .content-text {
