@@ -1,0 +1,171 @@
+.map-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  max-width: 1050px;
+  margin: 30px auto 26px;
+}
+
+.map-outer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.map-cont {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.map-block svg {
+  width: auto;
+  max-width: 100%;
+}
+
+.region-list-cont {
+  position: relative;
+  margin: 55px 10px 0 26px;
+  max-height: 538px;
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow-y: scroll;
+}
+
+.region-list {
+  position: relative;
+  list-style-type: none;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.region-list li {
+  font-family: "MyriadProCond", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: #292b2c;
+  margin: 0 20px 18px 0;
+  overflow: hidden;
+}
+
+.region-list a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #292B2C;
+  padding-left: 20px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.region-list a:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 3px solid #00A9FC;
+  margin-right: 12px;
+}
+
+.region-list a.active,
+.region-list a:hover {
+  color: #007CE5;
+}
+
+#ascrail2000 {
+  display: block !important;
+}
+
+.pin {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 25px;
+  height: 33px;
+  font-family: "MyriadProCond", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+.pin:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../img/pin.png);
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 1024px) {
+  .map-block svg {
+    height: 702px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .region-list-cont {
+    margin-top: 20px;
+  }
+  .region-list li {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .map-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .map-outer {
+    width: 100%;
+  }
+  .region-list-cont {
+    height: 320px;
+    max-height: 90vh;
+    margin: 10px auto 20px;
+    border: 1px solid #eee;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .map-block {
+    margin-bottom: 165px;
+  }
+  .region-list-cont {
+    position: absolute;
+    bottom: -145px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pin {
+    display: none;
+  }
+  .map-block svg {
+    display: block;
+    max-height: 96vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
