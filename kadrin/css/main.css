@@ -5093,7 +5093,7 @@ textarea {
     position: absolute;
     background-color: #f8f8f8;
 	background-image: url(../img/common/bg.jpg);
-	background-size: cover;
+	background-position: 100% 0;
     z-index: -1;
   }
   .popular-offers-section:after,
