@@ -1138,7 +1138,7 @@ label {
   padding: 40px 35px 35px;
   margin-bottom: 30px;
   background: #f8f8f8;
-  background-image: url(../img/common/q.jpg); 
+  background-image: url(../img/common/bg.jpg); 
   width: 100%;
 }
 
@@ -1174,7 +1174,7 @@ label {
   white-space: nowrap;
   font-family: "Lato Heavy", sans-serif;
   text-align: left;
-  color: #b8b8b8;
+  color: #8e8e8e;
   margin-bottom: 16px;
   cursor: pointer;
 }
@@ -1184,7 +1184,7 @@ label {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 2px solid #d6d6d6;
+  border: 2px solid #8e8e8e;
   margin-right: 24px;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -1882,7 +1882,7 @@ sup {
 
 .news-date {
   font-family: "Lato Heavy", sans-serif;
-  color: #bababa;
+  color: #5e5e5e;
   margin-bottom: 16px;
 }
 
@@ -5092,7 +5092,7 @@ textarea {
     display: block;
     position: absolute;
     background: #f8f8f8;
-	background-image: url(../img/common/q.jpg);
+	background-image: url(../img/common/bg.jpg);
     z-index: -1;
   }
   .popular-offers-section:after,
