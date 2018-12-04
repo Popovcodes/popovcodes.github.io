@@ -1138,7 +1138,7 @@ label {
   padding: 40px 35px 35px;
   margin-bottom: 30px;
   background: #f8f8f8;
-  background-image: url(../img/common/b.jpg); 
+  background-image: url(../img/common/q.jpg); 
   width: 100%;
 }
 
@@ -5092,7 +5092,7 @@ textarea {
     display: block;
     position: absolute;
     background: #f8f8f8;
-	background-image: url(../img/common/b.jpg);
+	background-image: url(../img/common/q.jpg);
     z-index: -1;
   }
   .popular-offers-section:after,
