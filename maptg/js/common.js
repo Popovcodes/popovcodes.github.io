@@ -3,10 +3,16 @@ $(window).ready(function(){
 $('.region-list a').hover(function(){
   var thisData = $(this).data('region');
   $('#' + thisData).addClass('active');
+  if(thisData == 'moscow') {
+    $('.moscow').addClass('active');
+  };
 });
 $('.region-list a').mouseleave(function(){
   var thisData = $(this).data('region');
   $('#' + thisData).removeClass('active');
+  if(thisData == 'moscow') {
+    $('.moscow').removeClass('active');
+  };
 });
 
 var thisTimeout;
@@ -14,7 +20,12 @@ var thisName;
 $('path.region').hover(function(){
     $('#region-list-cont').stop().clearQueue();
     thisName = $(this).attr('id');
-    var thisLink = $('.region-list a[data-region="'+thisName+'"]');
+    if ($(this).hasClass('moscow')) {
+      var thisLink = $('.region-list a[data-region="moscow"]');
+      $('.moscow').addClass('active');
+    } else {
+      var thisLink = $('.region-list a[data-region="'+thisName+'"]');
+    }
     var pos = thisLink.position().top;
     var contHeightHalf = $('#region-list-cont').outerHeight()/2-32;
     thisTimeout = setTimeout(function(){
@@ -25,24 +36,10 @@ $('path.region').hover(function(){
 }, function(){
   $('#region-list').stop();
   clearTimeout(thisTimeout);
-  //$('.region-list a[data-region="'+thisName+'"]').removeClass('active');
+  if ($(this).hasClass('moscow')) {
+    $('.moscow').removeClass('active');
+  };
 });
-
-// сокращение "район"
-var divisionName = function(){
-    if(window.innerWidth < 767) {
-        $('.region-list a').each(function(){
-            $(this).html($(this).html().replace(' район', ' р-н'));
-        });
-    } else {
-        $('.region-list a').each(function(){
-            $(this).html($(this).html().replace(' р-н', ' район'));
-        });
-    };
-};
-divisionName();
-$(window).resize(divisionName);
-
 
 // nicescroll  https://github.com/inuyaksa/jquery.nicescroll
 var scrollStyle = function(){
@@ -63,5 +60,21 @@ var scrollStyle = function(){
 };
 scrollStyle();
 $(window).resize(scrollStyle);
+
+// сокращение "район"
+var divisionName = function(){
+    if(window.innerWidth < 767) {
+        $('.region-list a').each(function(){
+            $(this).html($(this).html().replace(' район', ' р-н'));
+        });
+    } else {
+        $('.region-list a').each(function(){
+            $(this).html($(this).html().replace(' р-н', ' район'));
+        });
+    };
+};
+divisionName();
+$(window).resize(divisionName);
+
 });
 

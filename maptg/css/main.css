@@ -87,34 +87,6 @@
   display: block !important;
 }
 
-.pin {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  width: 25px;
-  height: 33px;
-  font-family: "MyriadProCond", sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  text-align: center;
-  color: #fff;
-  padding-top: 5px;
-  z-index: 1;
-}
-
-.pin:before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: url(../img/pin.png);
-  background-size: 100% 100%;
-  z-index: -1;
-}
-
 @media only screen and (min-width: 1024px) {
   .map-block svg {
     height: 702px;
@@ -157,9 +129,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .pin {
-    display: none;
-  }
   .map-block svg {
     display: block;
     max-height: 96vh;
