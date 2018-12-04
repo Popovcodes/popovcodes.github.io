@@ -1413,6 +1413,7 @@ sup {
   min-height: 110px;
   padding: 17px 20px 15px;
   /*background: #f8f8f8;*/
+  background-image: url(../img/common/bg.jpg);
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
