@@ -5091,8 +5091,9 @@ textarea {
     content: "";
     display: block;
     position: absolute;
-    background: #f8f8f8;
+    background-color: #f8f8f8;
 	background-image: url(../img/common/bg.jpg);
+	background-size: cover;
     z-index: -1;
   }
   .popular-offers-section:after,
