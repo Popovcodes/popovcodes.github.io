@@ -3374,11 +3374,17 @@ canvas {
   font-size: 24px;
   font-weight: 700;
   height: 100px;
-  margin: 0 10px 20px;
+  margin: 0 10px 30px;
 }
 
 .crypto-section.green {
   background: #010;
+}
+
+.crypto-section.green p,
+.crypto-section.green ul,
+.crypto-section.green ol {
+  margin-bottom: 14px;
 }
 
 @media only screen and (max-width: 1199px) {
