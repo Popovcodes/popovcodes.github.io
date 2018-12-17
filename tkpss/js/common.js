@@ -1,6 +1,25 @@
 $(document).ready(function(){
 
-
+// modal form and mobile navigation call
+$('.modal-call').click(function(){
+  $('#overlay, #modal-cont').fadeIn();
+  $('#btn-menu').addClass('reduced').removeClass('active');
+});
+$('#btn-menu').click(function(){
+  $('#mob-cont').toggleClass('active');
+  $('#overlay').fadeToggle();
+  $(this).toggleClass('active');
+});
+$('.mob-modal-call').click(function(){
+  $('#mob-cont, #btn-menu').removeClass('active');
+  $('#btn-menu').addClass('reduced');
+  $('#modal-cont').fadeIn();
+});
+$('#overlay, #modal-close, #mob-cont a').click(function(){
+  $('#overlay, #modal-cont').fadeOut();
+  $('#mob-cont, #btn-menu').removeClass('active');
+  $('#btn-menu').removeClass('reduced');
+});
 
 //slick.js slider   http://kenwheeler.github.io/slick/
 $('#main-slider').slick({
@@ -71,20 +90,20 @@ $('.fancy').fancybox();
 
 
 // input animation on focus
-  if($('.input-wr').length > 0) {
-    $(".input-wr input, .modal-cont input, textarea").focusout(function(){
-      if($(this).val() != ""){
-        $(this).addClass("non-empty");
-      }else{
-        $(this).removeClass("non-empty");
-      };
-    });
-    $('input[type="tel"]').focusout(function(){
-      if($(this).val().indexOf('_') != -1) {
-        $(this).removeClass("non-empty");
-      };
-    });
-  };
+if($('.input-wr').length > 0) {
+  $(".input-wr input, .modal-cont input, textarea").focusout(function(){
+    if($(this).val() != ""){
+      $(this).addClass("non-empty");
+    }else{
+      $(this).removeClass("non-empty");
+    };
+  });
+  $('input[type="tel"]').focusout(function(){
+    if($(this).val().indexOf('_') != -1) {
+      $(this).removeClass("non-empty");
+    };
+  });
+};
 
 // https://github.com/digitalBush/jquery.maskedinput
 $('input[type="tel"]').mask("+7 (999) 999-99-99");
@@ -115,25 +134,4 @@ var unattachFile = function(){
 };
 $('.unattach-btn').click(unattachFile);
 
-// modal form and mobile navigation call
-$('.modal-call').click(function(){
-  $('#overlay, #modal-cont').fadeIn();
-});
-$('#btn-menu').click(function(){
-  $('#mob-cont').addClass('active');
-  $('#overlay').fadeIn();
-});
-$('.mob-modal-call').click(function(){
-  $('#mob-cont').removeClass('active');
-  $('#modal-cont').fadeIn();
-});
-$('#overlay, #modal-close, #mob-close, #mob-cont a').click(function(){
-  $('#overlay, #modal-cont').fadeOut();
-  $('#mob-cont').removeClass('active');
-});
-
-  if(document.documentElement.clientWidth > 768) {
-    // wow.js animation  http://mynameismatthieu.com/WOW/
-    // new WOW().init();
-  };
 });
