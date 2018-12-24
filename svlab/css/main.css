@@ -2576,6 +2576,36 @@ ul.h-links a:hover:before, ul.h-links a.active:before {
   }
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .compensate-for-scrollbar {
   margin-right: 0 !important;
 }
@@ -3600,6 +3630,10 @@ textarea {
 /*min 768*/
 /*min 992*/
 @media only screen and (min-width: 1200px) {
+  .ground {
+    -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+  }
   .modal-cont {
     -webkit-transform: translate(-200vw, -50%) skewX(60deg);
         -ms-transform: translate(-200vw, -50%) skewX(60deg);
@@ -3665,6 +3699,5 @@ textarea {
 }
 
 /*min 1200*/
-/* 768 to 1200*/
 
 /*# sourceMappingURL=main.css.map */
