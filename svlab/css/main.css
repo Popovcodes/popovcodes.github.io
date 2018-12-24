@@ -1453,6 +1453,7 @@ ul.h-links a:hover:before, ul.h-links a.active:before {
 }
 
 .img-wr {
+  display: block;
   position: relative;
   border: 1px solid #F0F0F0;
   border-radius: 10px;
@@ -3459,6 +3460,9 @@ textarea {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 24px;
+  }
+  .f-phone {
+    text-align: center;
   }
   .f-phone-link {
     font-size: 24px;
