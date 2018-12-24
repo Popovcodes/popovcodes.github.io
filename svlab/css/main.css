@@ -2608,95 +2608,95 @@ ul.h-links a:hover:before, ul.h-links a.active:before {
 
 @-webkit-keyframes flies {
   0% {
-    top: 10%;
-    left: 10%;
+    -webkit-transform: translate(0vw, 0px);
+            transform: translate(0vw, 0px);
   }
   10% {
-    top: 20%;
-    left: 60%;
+    -webkit-transform: translate(20vw, 800px);
+            transform: translate(20vw, 800px);
   }
   20% {
-    top: 40%;
-    left: 90%;
+    -webkit-transform: translate(40vw, 400px);
+            transform: translate(40vw, 400px);
   }
   30% {
-    top: 60%;
-    left: 70%;
+    -webkit-transform: translate(0vw, 200px);
+            transform: translate(0vw, 200px);
   }
   40% {
-    top: 80%;
-    left: 10%;
+    -webkit-transform: translate(0vw, 0px);
+            transform: translate(0vw, 0px);
   }
   50% {
-    top: 90%;
-    left: 50%;
+    -webkit-transform: translate(-40vw, -200px);
+            transform: translate(-40vw, -200px);
   }
   60% {
-    top: 80%;
-    left: 10%;
+    -webkit-transform: translate(0vw, -400px);
+            transform: translate(0vw, -400px);
   }
   70% {
-    top: 60%;
-    left: 30%;
+    -webkit-transform: translate(0vw, -800px);
+            transform: translate(0vw, -800px);
   }
   80% {
-    top: 40%;
-    left: 70%;
+    -webkit-transform: translate(40vw, -1000px);
+            transform: translate(40vw, -1000px);
   }
   90% {
-    top: 50%;
-    left: 40%;
+    -webkit-transform: translate(0vw, -400px);
+            transform: translate(0vw, -400px);
   }
   100% {
-    top: 10%;
-    left: 10%;
+    -webkit-transform: translate(0vw, 0px);
+            transform: translate(0vw, 0px);
   }
 }
 
 @keyframes flies {
   0% {
-    top: 10%;
-    left: 10%;
+    -webkit-transform: translate(0vw, 0px);
+            transform: translate(0vw, 0px);
   }
   10% {
-    top: 20%;
-    left: 60%;
+    -webkit-transform: translate(20vw, 800px);
+            transform: translate(20vw, 800px);
   }
   20% {
-    top: 40%;
-    left: 90%;
+    -webkit-transform: translate(40vw, 400px);
+            transform: translate(40vw, 400px);
   }
   30% {
-    top: 60%;
-    left: 70%;
+    -webkit-transform: translate(0vw, 200px);
+            transform: translate(0vw, 200px);
   }
   40% {
-    top: 80%;
-    left: 10%;
+    -webkit-transform: translate(0vw, 0px);
+            transform: translate(0vw, 0px);
   }
   50% {
-    top: 90%;
-    left: 50%;
+    -webkit-transform: translate(-40vw, -200px);
+            transform: translate(-40vw, -200px);
   }
   60% {
-    top: 80%;
-    left: 10%;
+    -webkit-transform: translate(0vw, -400px);
+            transform: translate(0vw, -400px);
   }
   70% {
-    top: 60%;
-    left: 30%;
+    -webkit-transform: translate(0vw, -800px);
+            transform: translate(0vw, -800px);
   }
   80% {
-    top: 40%;
-    left: 70%;
+    -webkit-transform: translate(40vw, -1000px);
+            transform: translate(40vw, -1000px);
   }
   90% {
-    top: 50%;
-    left: 40%;
+    -webkit-transform: translate(0vw, -400px);
+            transform: translate(0vw, -400px);
   }
   100% {
-    top: 10%;
-    left: 10%;
+    -webkit-transform: translate(0vw, 0px);
+            transform: translate(0vw, 0px);
   }
 }
 
@@ -3084,6 +3084,8 @@ textarea {
 }
 
 .flies-wr .fly {
+  top: 50%;
+  left: 50%;
   -webkit-animation: flies 200s linear infinite;
           animation: flies 200s linear infinite;
   z-index: -1;
@@ -3152,8 +3154,8 @@ img[src$="m2.png"] {
 }
 
 img[src$="m3.png"] {
-  -webkit-animation: rotation-ccw7ss linear infinite;
-          animation: rotation-ccw7ss linear infinite;
+  -webkit-animation: rotation-ccw 7s linear infinite;
+          animation: rotation-ccw 7s linear infinite;
 }
 
 .x-coord,
