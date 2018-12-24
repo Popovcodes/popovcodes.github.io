@@ -151,33 +151,6 @@ $('input[type="tel"]').mask("+7 (999) 999-99-99");
 $('.fancy').fancybox();
 
 
-//flying objects
-$('.flies-wr .fly').each(function(){
-  var x1 = Math.floor((Math.random() * 100) -10);
-  var y1 = Math.floor((Math.random() * 100) -10);
-  $(this).css({'top': x1+'%', 'left': y1 + '%'});
-  $(this).append('<span class="x-coord">'+x1+'%</span><span class="y-coord">'+y1+'%</span>');
-});
-
-$(window).mousemove(function(event){
-  var mouseX = event.pageX;
-  var mouseY = event.pageY;
-  $('.flies-wr .fly').each(function(){
-    var thisX = $(this).offset().left;
-    var thisY = $(this).offset().top;
-    var Xdef = mouseX - thisX;
-    var Ydef = mouseY - thisY;
-    if(-200<Xdef && 300>Xdef && -200<Ydef && 300>Ydef) {
-      $(this).css({'left' : mouseX, 'top': mouseY});
-    } else {
-      var restoreX = $(this).find('.x-coord').text();
-      var restoreY = $(this).find('.y-coord').text();
-      $(this).css({'left' : restoreX, 'top': restoreY});
-    }
-  });
-});
-
-
 //
 if($('.area-404').length > 0) {
   var footerCompensate = function(){
