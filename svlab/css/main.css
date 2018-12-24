@@ -3440,6 +3440,18 @@ textarea {
     -ms-flex-preferred-size: 44%;
         flex-basis: 44%;
     margin: 0 10px 16px;
+    text-align: center;
+  }
+  .contacts-list > li .vk-link,
+  .contacts-list > li .img-cont {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacts-text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-right: 0;
+    text-align: center;
   }
   .f-top .wrapper {
     -webkit-box-pack: start;
@@ -3566,6 +3578,10 @@ textarea {
   .cont-outer .contacts-list li {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
