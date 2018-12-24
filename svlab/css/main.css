@@ -3147,13 +3147,13 @@ textarea {
 
 img[src$="m1.png"],
 img[src$="m2.png"] {
-  -webkit-animation: rotation-cw 4s linear infinite;
-          animation: rotation-cw 4s linear infinite;
+  -webkit-animation: rotation-cw 7s linear infinite;
+          animation: rotation-cw 7s linear infinite;
 }
 
 img[src$="m3.png"] {
-  -webkit-animation: rotation-ccw 4s linear infinite;
-          animation: rotation-ccw 4s linear infinite;
+  -webkit-animation: rotation-ccw7ss linear infinite;
+          animation: rotation-ccw7ss linear infinite;
 }
 
 .x-coord,
