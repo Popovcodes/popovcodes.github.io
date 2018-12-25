@@ -164,19 +164,19 @@ if(window.innerWidth > 1299) {
 if($('div').is('#grid')) {
   $('#grid').imagesLoaded(function(){
     if(window.innerWidth > 1299) {
-      $('.grid').masonry({
+      $('#grid').masonry({
         itemSelector: '.card',
         columnWidth: 370,
         gutter: 30
       });
-      alert(1);
+      $('#grid').addClass('loaded');
     } else {
-      $('.grid').masonry({
+      $('#grid').masonry({
         itemSelector: '.card',
         columnWidth: 350,
         gutter: 20
       });
-      alert(2);
+      $('#grid').addClass('loaded');
     };
   });
 };

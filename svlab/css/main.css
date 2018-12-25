@@ -861,6 +861,14 @@ ul.h-links a:hover:before, ul.h-links a.active:before {
   margin-bottom: 55px;
 }
 
+.grid {
+  opacity: 0;
+}
+
+.grid.loaded {
+  opacity: 1;
+}
+
 .card {
   display: block;
   position: relative;
@@ -870,6 +878,7 @@ ul.h-links a:hover:before, ul.h-links a.active:before {
   border-radius: 8px;
   padding: 18px 20px;
   margin: 0 0 30px;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .card:before {
@@ -885,7 +894,7 @@ ul.h-links a:hover:before, ul.h-links a.active:before {
   background-image: url(../img/common/bg2.png);
   background-size: cover;
   background-position: 50% 50%;
-  z-index: -1;
+  z-index: 0;
   opacity: 0;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
@@ -903,9 +912,11 @@ ul.h-links a:hover:before, ul.h-links a.active:before {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
+  z-index: 1;
 }
 
 .card-top {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,6 +927,7 @@ ul.h-links a:hover:before, ul.h-links a.active:before {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
+  z-index: 1;
 }
 
 .pos-quant-wr {
@@ -985,8 +997,10 @@ ul.h-links a:hover:before, ul.h-links a.active:before {
 }
 
 .card-desc {
+  position: relative;
   font-family: Circe-Regular, serif;
   font-size: 14px;
+  z-index: 1;
 }
 
 .card-title {
