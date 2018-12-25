@@ -56,22 +56,6 @@ $('#tabs-container').responsiveTabs({
   rotate: false,
 });
 
-
-//catalog grid
-if(window.innerWidth > 1299) {
-  $('.grid').masonry({
-    itemSelector: '.card',
-    columnWidth: 370,
-    gutter: 30
-  });
-} else {
-  $('.grid').masonry({
-    itemSelector: '.card',
-    columnWidth: 350,
-    gutter: 20
-  });
-};
-
 // animated counter https://github.com/bfintal/Counter-Up
 $('.js-counter').counterUp({
   time: 1400
@@ -160,5 +144,42 @@ if($('.area-404').length > 0) {
   footerCompensate();
   $(window).resize(footerCompensate);
 };
+
+//catalog grid
+/*
+if(window.innerWidth > 1299) {
+  $('.grid').masonry({
+    itemSelector: '.card',
+    columnWidth: 370,
+    gutter: 30
+  });
+} else {
+  $('.grid').masonry({
+    itemSelector: '.card',
+    columnWidth: 350,
+    gutter: 20
+  });
+};
+*/
+if($('div').is('#grid')) {
+  $('#grid').imagesLoaded(function(){
+    if(window.innerWidth > 1299) {
+      $('.grid').masonry({
+        itemSelector: '.card',
+        columnWidth: 370,
+        gutter: 30
+      });
+    } else {
+      $('.grid').masonry({
+        itemSelector: '.card',
+        columnWidth: 350,
+        gutter: 20
+      });
+    };
+  });
+};
+
+
+
 
 });
