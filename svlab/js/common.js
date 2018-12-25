@@ -169,12 +169,14 @@ if($('div').is('#grid')) {
         columnWidth: 370,
         gutter: 30
       });
+      alert(1);
     } else {
       $('.grid').masonry({
         itemSelector: '.card',
         columnWidth: 350,
         gutter: 20
       });
+      alert(2);
     };
   });
 };
