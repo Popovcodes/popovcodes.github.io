@@ -693,6 +693,44 @@ ul.h-links a:hover:before, ul.h-links a.active:before {
           transition-duration: 3s;
 }
 
+/*1228*/
+.back-1.offset-2 {
+  top: 27%;
+  left: 12%;
+  z-index: 1;
+}
+
+.back-1.offset-3 {
+  top: 31%;
+  left: 21%;
+  z-index: -1;
+}
+
+.front-1.offset-1 {
+  top: 4%;
+}
+
+.front-1.offset-2 {
+  top: 4%;
+  z-index: 2;
+}
+
+.front-1.offset-3 {
+  top: 1%;
+  left: 36%;
+}
+
+.front-2.offset-1 {
+  top: 56%;
+  left: 12%;
+}
+
+.front-2.offset-2 {
+  top: 50%;
+  left: 23%;
+}
+
+/*1228*/
 .slick-active .back-1,
 .slick-active .back-2,
 .slick-active .front-1,
