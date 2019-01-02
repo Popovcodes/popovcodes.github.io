@@ -134,4 +134,24 @@ var unattachFile = function(){
 };
 $('.unattach-btn').click(unattachFile);
 
+// catalog pagination https://github.com/luis-almeida/jPages
+if($('div').is('#pagination')){
+  $("#pagination").jPages({
+    containerID : "articles-list",
+    perPage: 5,
+  });
+};
+
+//decoration of current page link in navigation
+var getCurrentLink = function(){
+  $('nav a').each(function(){
+    var location = window.location.href;
+    var link = this.href
+    if(location == link) {
+      $(this).addClass('active');
+    }
+  });
+};
+getCurrentLink();
+
 });
