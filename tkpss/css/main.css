@@ -938,6 +938,7 @@ textarea::-ms-clear {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-width: 100px;
+  max-width: 653px;
   min-height: 68px;
   margin: 0 12px 16px;
   overflow: hidden;
@@ -2363,58 +2364,16 @@ h1 {
   padding: 65px 0 90px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+.tabs-list {
+  padding-left: 0;
+}
+
+.tabs-list li {
+  white-space: normal;
+}
+
+.tabs-list li:before {
   display: none;
-}
-
-.togglers-wr {
-  margin-bottom: 40px;
-}
-
-.togglers {
-  text-align: center;
-  padding: 0;
-  font-size: 0;
-}
-
-.togglers li {
-  display: inline-block;
-}
-
-.togglers li:before {
-  display: none;
-}
-
-.togglers label {
-  display: inline-block;
-  height: 64px;
-  line-height: 62px;
-  border: 1px solid #E0E0E0;
-  margin-bottom: 12px;
-  font-size: 17px;
-  text-align: center;
-  padding: 0 8px;
-  cursor: pointer;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
-  border-right-width: 0;
-}
-
-.togglers label:last-child {
-  border-right-width: 1px;
-}
-
-.togglers input[type="radio"]:checked + label,
-.togglers label:hover {
-  color: #fff;
-  background-color: #001a65;
-  border-color: #001a65;
-}
-
-.downloads-section .togglers label {
-  min-width: 300px;
 }
 
 .dl-grid {
@@ -2524,18 +2483,6 @@ input[type="checkbox"] {
 
 .production-section {
   padding: 70px 0 60px;
-}
-
-.production-section .togglers-wr {
-  margin-bottom: 26px;
-}
-
-.production-section .togglers label {
-  min-width: 250px;
-}
-
-.production-section .togglers > li:first-child label {
-  min-width: 140px;
 }
 
 .objects-section {
@@ -3190,6 +3137,9 @@ input[type="checkbox"] {
         flex-basis: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .dl-grid {
+    text-align: center;
   }
 }
 

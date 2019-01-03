@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="libs/fancybox/fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/responsive-tabs/responsive-tabs.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Лигресс / Загрузки</title>
   </head>
@@ -104,99 +105,208 @@
 
   <section class="downloads-section">
     <div class="wrapper">
-      <div class="togglers-wr">
-        <form>
-          <ul class="togglers">
-            <li>
-              <input type="radio" name="dl-type" id="sertificates">
-              <label for="sertificates">Cертификаты</label>
-            </li>
-            <li>
-              <input type="radio" name="dl-type" id="catalogs" checked>
-              <label for="catalogs">Каталоги</label>
-            </li>
-            <li>
-              <input type="radio" name="dl-type" id="equipment">
-              <label for="equipment">Подбор оборудования</label>
-            </li>
-          </ul>
-        </form>
-      </div><!-- /.togglers-wr -->
-      <div class="dl-grid">
 
-        <div class="dl-item">
-          <div class="dl-item-top">
-            <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
-              <img src="img/common/doc.jpg" alt="">
-            </a>
-            <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
-          </div>
-          <div class="dl-item-bottom">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-          </div>
-        </div><!-- /.dl-item -->
+      <div class="tabs-container" id="tabs-container">
+        <ul class="tabs-list">
+          <li><a href="#tab-1">Сертификаты</a></li>
+          <li><a href="#tab-2">Каталоги</a></li>
+          <li><a href="#tab-3">Подбор оборудования</a></li>
+        </ul>
 
-        <div class="dl-item">
-          <div class="dl-item-top">
-            <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
-              <img src="img/common/doc.jpg" alt="">
-            </a>
-            <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
-          </div>
-          <div class="dl-item-bottom">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-          </div>
-        </div><!-- /.dl-item -->
+        <!-- tab-1 begin -->
+        <div id="tab-1">
+          <div class="dl-grid">
 
-        <div class="dl-item">
-          <div class="dl-item-top">
-            <a href="img/common/doc-h.jpg" class="fancy" data-fancybox="gallery">
-              <img src="img/common/doc-h.jpg" alt="">
-            </a>
-            <a href="img/common/doc-h.jpg" class="dl-link" download>скачать</a>
-          </div>
-          <div class="dl-item-bottom">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-          </div>
-        </div><!-- /.dl-item -->
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc.jpg" alt="">
+                </a>
+                <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Сертификат Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
 
-        <div class="dl-item">
-          <div class="dl-item-top">
-            <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
-              <img src="img/common/doc.jpg" alt="">
-            </a>
-            <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
-          </div>
-          <div class="dl-item-bottom">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-          </div>
-        </div><!-- /.dl-item -->
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc.jpg" alt="">
+                </a>
+                <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Сертификат Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
 
-        <div class="dl-item">
-          <div class="dl-item-top">
-            <a href="img/common/doc-h.jpg" class="fancy" data-fancybox="gallery">
-              <img src="img/common/doc-h.jpg" alt="">
-            </a>
-            <a href="img/common/doc-h.jpg" class="dl-link" download>скачать</a>
-          </div>
-          <div class="dl-item-bottom">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-          </div>
-        </div><!-- /.dl-item -->
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc-h.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc-h.jpg" alt="">
+                </a>
+                <a href="img/common/doc-h.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Сертификат Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
 
-        <div class="dl-item">
-          <div class="dl-item-top">
-            <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
-              <img src="img/common/doc.jpg" alt="">
-            </a>
-            <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
-          </div>
-          <div class="dl-item-bottom">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-          </div>
-        </div><!-- /.dl-item -->
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc.jpg" alt="">
+                </a>
+                <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Сертификат Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
 
-      </div><!-- /.dl-grid -->
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc-h.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc-h.jpg" alt="">
+                </a>
+                <a href="img/common/doc-h.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Сертификат Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
+
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc.jpg" alt="">
+                </a>
+                <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Сертификат Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
+
+          </div><!-- /.dl-grid -->
+        </div><!-- /#tab-1 -->
+        <!-- tab-1 end -->
+
+        <!-- tab-2 begin -->
+        <div id="tab-2">
+          <div class="dl-grid" id="tab-2">
+
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc.jpg" alt="">
+                </a>
+                <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Каталог Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
+
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc-h.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc-h.jpg" alt="">
+                </a>
+                <a href="img/common/doc-h.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Каталог Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
+
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc-h.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc-h.jpg" alt="">
+                </a>
+                <a href="img/common/doc-h.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Каталог Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
+
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc.jpg" alt="">
+                </a>
+                <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Каталог Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
+
+          </div><!-- /.dl-grid -->
+        </div><!-- /#tab-2 -->
+        <!-- tab-2 end -->
+
+        <!-- tab-3 begin -->
+        <div id="tab-3">
+          <div class="dl-grid">
+
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc-h.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc-h.jpg" alt="">
+                </a>
+                <a href="img/common/doc-h.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Подбор Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
+
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc.jpg" alt="">
+                </a>
+                <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Подбор Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
+
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc.jpg" alt="">
+                </a>
+                <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Подбор Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
+
+            <div class="dl-item">
+              <div class="dl-item-top">
+                <a href="img/common/doc.jpg" class="fancy" data-fancybox="gallery">
+                  <img src="img/common/doc.jpg" alt="">
+                </a>
+                <a href="img/common/doc.jpg" class="dl-link" download>скачать</a>
+              </div>
+              <div class="dl-item-bottom">
+                <p>Подбор Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </div><!-- /.dl-item -->
+
+          </div><!-- /.dl-grid -->
+        </div><!-- /#tab-3 -->
+        <!-- tab-3 end -->
+
+      </div><!-- /.tabs-container -->
+
     </div><!-- /.wrapper -->
   </section><!-- /.downloads-section -->
 
@@ -326,14 +436,12 @@
         </form>
     </div>
 
-
-
-
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
-
+    <script src="libs/responsive-tabs/responsive-tabs.min.js"></script>
+    <script src="libs/pagination/jPages.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

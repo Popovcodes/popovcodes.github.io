@@ -154,4 +154,10 @@ var getCurrentLink = function(){
 };
 getCurrentLink();
 
+// табы https://github.com/jellekralt/Responsive-Tabs
+$('#tabs-container').responsiveTabs({
+  startCollapsed: 'tabs',
+  rotate: false
+});
+
 });

@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="libs/fancybox/fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/responsive-tabs/responsive-tabs.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Лигресс / Продукция</title>
   </head>
@@ -104,88 +105,131 @@
 
   <section class="production-section">
     <div class="wrapper">
-      <div class="togglers-wr">
-        <form>
-          <ul class="togglers">
-            <li>
-              <input type="radio" name="category" id="all">
-              <label for="all">Все</label>
-            </li>
-            <li>
-              <input type="radio" name="category" id="cat-1" checked>
-              <label for="cat-1">Оборудование вентиляции</label>
-            </li>
-            <li>
-              <input type="radio" name="category" id="cat-2">
-              <label for="cat-2">Противопожарные клапаны</label>
-            </li>
-            <li>
-              <input type="radio" name="category" id="cat-3">
-              <label for="cat-3">Автоматика</label>
-            </li>
-            <li>
-              <input type="radio" name="category" id="cat-4">
-              <label for="cat-4">Расходные материалы</label>
-            </li>
-          </ul>
-        </form>
-      </div><!-- /.togglers-wr -->
-      
-      <div class="categories-wr">
+      <div class="tabs-container" id="tabs-container">
+        <ul class="tabs-list">
+          <li><a href="#tab-1">Все</a></li>
+          <li><a href="#tab-2">Оборудование вентиляции</a></li>
+          <li><a href="#tab-3">Противопожарные клапаны</a></li>
+          <li><a href="#tab-4">Автоматика</a></li>
+          <li><a href="#tab-5">Расходные материалы</a></li>
+        </ul>
 
-          <a href="javascript:void(0);" class="cat-link">
-            <img src="img/i1.jpg" alt="">
-            <span class="cat-title"><span>Приточно вытяжные установки</span></span>
-          </a>
+        <!-- tab-1 begin -->
+        <div id="tab-1">
+          <div class="categories-wr">
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i1.jpg" alt="">
+              <span class="cat-title"><span>Приточно вытяжные установки</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i2.jpg" alt="">
+              <span class="cat-title"><span>Промышленные вентеляторы</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i3.jpg" alt="">
+              <span class="cat-title"><span>Решетки винтиляционные</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i4.jpg" alt="">
+              <span class="cat-title"><span>Детали винтеляции</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i5.jpg" alt="">
+              <span class="cat-title"><span>Воздуховоды</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i6.jpg" alt="">
+              <span class="cat-title"><span>Противопожарные клапаны</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i7.jpg" alt="">
+              <span class="cat-title"><span>Клапаны дымоудаления</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i8.jpg" alt="">
+              <span class="cat-title"><span>Решетка дымоудаления</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i9.jpg" alt="">
+              <span class="cat-title"><span>Автоматика</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i10.jpg" alt="">
+              <span class="cat-title"><span>Расходные материалы</span></span>
+            </a>
+          </div>
+        </div><!-- /#tab-1 -->
+        <!-- tab-1 end -->
 
-          <a href="javascript:void(0);" class="cat-link">
-            <img src="img/i2.jpg" alt="">
-            <span class="cat-title"><span>Промышленные вентеляторы</span></span>
-          </a>
+        <!-- tab-2 begin -->
+        <div id="tab-2">
+          <div class="categories-wr">
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i1.jpg" alt="">
+              <span class="cat-title"><span>Приточно вытяжные установки</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i3.jpg" alt="">
+              <span class="cat-title"><span>Решетки винтиляционные</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i2.jpg" alt="">
+              <span class="cat-title"><span>Промышленные вентеляторы</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i4.jpg" alt="">
+              <span class="cat-title"><span>Детали винтеляции</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i5.jpg" alt="">
+              <span class="cat-title"><span>Воздуховоды</span></span>
+            </a>
+          </div>
+        </div><!-- /#tab-2 -->
+        <!-- tab-2 end -->
 
-          <a href="javascript:void(0);" class="cat-link">
-            <img src="img/i3.jpg" alt="">
-            <span class="cat-title"><span>Решетки винтиляционные</span></span>
-          </a>
+        <!-- tab-3 begin -->
+        <div id="tab-3">
+          <div class="categories-wr">
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i6.jpg" alt="">
+              <span class="cat-title"><span>Противопожарные клапаны</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i7.jpg" alt="">
+              <span class="cat-title"><span>Клапаны дымоудаления</span></span>
+            </a>
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i8.jpg" alt="">
+              <span class="cat-title"><span>Решетка дымоудаления</span></span>
+            </a>
+          </div>
+        </div><!-- /#tab-3 -->
+        <!-- tab-3 end -->
 
-          <a href="javascript:void(0);" class="cat-link">
-            <img src="img/i4.jpg" alt="">
-            <span class="cat-title"><span>Детали винтеляции</span></span>
-          </a>
+        <!-- tab-4 begin -->
+        <div id="tab-4">
+          <div class="categories-wr">
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i9.jpg" alt="">
+              <span class="cat-title"><span>Автоматика</span></span>
+            </a>
+          </div>
+        </div><!-- /#tab-4 -->
+        <!-- tab-4 end -->
 
-          <a href="javascript:void(0);" class="cat-link">
-            <img src="img/i5.jpg" alt="">
-            <span class="cat-title"><span>Воздуховоды</span></span>
-          </a>
+        <!-- tab-5 begin -->
+        <div id="tab-5">
+          <div class="categories-wr">
+            <a href="javascript:void(0);" class="cat-link">
+              <img src="img/i10.jpg" alt="">
+              <span class="cat-title"><span>Расходные материалы</span></span>
+            </a>
+          </div>
+        </div><!-- /#tab-5 -->
+        <!-- tab-5 end -->
 
-          <a href="javascript:void(0);" class="cat-link">
-            <img src="img/i6.jpg" alt="">
-            <span class="cat-title"><span>Противопожарные клапаны</span></span>
-          </a>
-
-          <a href="javascript:void(0);" class="cat-link">
-            <img src="img/i7.jpg" alt="">
-            <span class="cat-title"><span>Клапаны дымоудаления</span></span>
-          </a>
-
-          <a href="javascript:void(0);" class="cat-link">
-            <img src="img/i8.jpg" alt="">
-            <span class="cat-title"><span>Решетка дымоудаления</span></span>
-          </a>
-
-          <a href="javascript:void(0);" class="cat-link">
-            <img src="img/i9.jpg" alt="">
-            <span class="cat-title"><span>Автоматика</span></span>
-          </a>
-
-          <a href="javascript:void(0);" class="cat-link">
-            <img src="img/i10.jpg" alt="">
-            <span class="cat-title"><span>Расходные материалы</span></span>
-          </a>
-
-        </div>
-
-
+      </div><!-- /#tabs-container -->
     </div><!-- /.wrapper -->
   </section><!-- /.production-section -->
 
@@ -322,7 +366,8 @@
     <script src="libs/slick/slick.min.js"></script>
     <script src="libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
-
+    <script src="libs/responsive-tabs/responsive-tabs.min.js"></script>
+    <script src="libs/pagination/jPages.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>
