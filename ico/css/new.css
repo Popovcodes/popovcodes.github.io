@@ -2,6 +2,10 @@ section {
   padding: 55px 0;
 }
 
+.righted {
+  color: #353f68 !important;
+}
+
 .text-section {
   background-image: url(../img/commonImgs/bgp.png);
   background-position: -68px 0;
