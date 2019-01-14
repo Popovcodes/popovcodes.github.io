@@ -440,15 +440,6 @@
     // masked phone input https://github.com/digitalBush/jquery.maskedinput
     $('input[type="tel"]').mask("+7 (999) 999-99-99");
 
-    $('.list-animated li').each(function(){
-    $(this).prepend('<span class="prime"><span class="secondary"></span></span>')
-    var ind = $(this).index();
-    var indSixth = ind%6;
-    $(this).find('.prime, .secondary').css({
-      '-webkit-animation-delay': -30+indSixth+'s',
-      'animation-delay': -30+indSixth+'s'
-    });
-  });
 </script>
 <script src="js/common.js"></script>
 </body>

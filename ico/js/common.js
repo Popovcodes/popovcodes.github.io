@@ -117,12 +117,56 @@ $(document).ready(function(){
     });
   };
 
-  
-    
+  // анимация точек списка
+  if($('.list-animated').length > 0) {
+        $('.list-animated li').each(function(){
+        $(this).prepend('<span class="prime"><span class="secondary"></span></span>')
+        var ind = $(this).index();
+        var indSixth = ind%6;
+        $(this).find('.prime, .secondary').css({
+          '-webkit-animation-delay': -30+indSixth+'s',
+          'animation-delay': -30+indSixth+'s'
+        });
+    });
+  };
 
 
   if(document.documentElement.clientWidth > 1199) {
     // wow.js animation  http://mynameismatthieu.com/WOW/
     new WOW().init();
   };
+
+
+  // $('.list-animated li span').each(function(){
+  //   var t = $(this);
+  //   var now = 0;
+  //   var thisText = $(this).text();
+  //   t.text('');
+  //   var len = thisText.length;
+  //   show();
+  //   function show(){
+  //       t.text(t.text() + thisText.substr(now,1));
+  //       now+=1;
+  //       if(now<len){
+  //         setTimeout(show,30);
+  //       } else {
+  //         t.siblings('i').css('opacity', 1);
+  //       }
+  //     }
+  // });
+// $('.list-animated li').each(function(){
+//     $(this).prepend('<span class="prime"><span class="secondary"></span></span>')
+//     var ind = $(this).index();
+//     var indSixth = ind%6;
+//     $(this).find('.prime, .secondary').css({
+//       '-webkit-animation-delay': -30+indSixth+'s',
+//       'animation-delay': -30+indSixth+'s'
+//     });
+    // $(this).find('.secondary+i').css({
+    //   '-webkit-animation-delay': -28+indSixth+'s',
+    //   'animation-delay': -29+indSixth+'s'
+    // });
+
+  // });
+
 });
