@@ -86,7 +86,7 @@ section {
 }
 
 .list-imaged > li > img {
-  width: 45px;
+  width: 50px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -226,101 +226,6 @@ section {
   list-style-type: circle;
 }
 
-/* ==================== 
-Media queries 
-======================= */
-@media only screen and (max-width: 1399px) {
-  .resume-form-section.new {
-    background-image: url(../img/commonImgs/bgnew2.jpg);
-    background-position: 0 0;
-  }
-  .resume-form-section.new h4 {
-    text-shadow: 1px 1px 2px #353f68, -1px -1px 2px #353f68, 1px -1px 2px #353f68, -1px 1px 2px #353f68;
-  }
-  .resume-form-section.new p {
-    text-shadow: 1px 1px 2px #353f68, -1px -1px 2px #353f68, 1px -1px 2px #353f68, -1px 1px 2px #353f68;
-  }
-}
-
-/*<=1399px;*/
-@media only screen and (max-width: 1023px) {
-  .center-heading {
-    font-size: 36px;
-  }
-  .center-subtitle {
-    font-size: 30px;
-  }
-  .list-imaged {
-    font-size: 16px;
-  }
-}
-
-/*<=1023px;*/
-@media only screen and (max-width: 767px) {
-  .resume-form-section.new {
-    background-image: url(../img/commonImgs/bg-mob-2.png);
-    background-position: -40px 0;
-    padding-bottom: 50px;
-  }
-  .resume-form-section.new textarea {
-    max-width: 500px;
-    height: 240px;
-  }
-  .resume-form-section.new h4 {
-    font-size: 26px;
-  }
-  .resume-form-section.new p {
-    font-size: 16px;
-  }
-  .resume-form-section.new .submit-wrap {
-    margin-top: 0;
-    margin-bottom: 24px;
-  }
-  .center-heading {
-    font-size: 28px;
-  }
-  .center-subtitle {
-    font-size: 22px;
-  }
-  .center-heading.top-padded,
-  .center-subtitle.top-padded {
-    padding-top: 30px;
-  }
-  .list-imaged {
-    font-size: 14px;
-  }
-  .modal-2-call {
-    font-size: 14px;
-  }
-  .list-imaged a {
-    border-bottom: 0;
-    text-decoration: underline;
-  }
-  .list-imaged > li {
-    padding-left: 60px !important;
-  }
-  .license-links.styled li {
-    margin-bottom: 20px;
-  }
-  .license-links.styled li:before {
-    display: none;
-  }
-  .text-section.dot-pattern {
-    background-position: -300px 0;
-  }
-}
-
-/*<=767px;*/
-@media only screen and (max-width: 479px) {
-  .center-heading {
-    font-size: 24px;
-  }
-  .subtitle {
-    font-size: 16px;
-  }
-}
-
-/*<=480px;*/
 .text-section.dot-pattern {
   background-image: url(../img/commonImgs/e.jpg);
 }
@@ -632,6 +537,33 @@ Media queries
   }
 }
 
+@media only screen and (max-width: 1399px) {
+  .resume-form-section.new {
+    background-image: url(../img/commonImgs/bgnew2.jpg);
+    background-position: 0 0;
+  }
+  .resume-form-section.new h4 {
+    text-shadow: 1px 1px 2px #353f68, -1px -1px 2px #353f68, 1px -1px 2px #353f68, -1px 1px 2px #353f68;
+  }
+  .resume-form-section.new p {
+    text-shadow: 1px 1px 2px #353f68, -1px -1px 2px #353f68, 1px -1px 2px #353f68, -1px 1px 2px #353f68;
+  }
+}
+
+/*<=1399px;*/
+@media only screen and (max-width: 1023px) {
+  .center-heading {
+    font-size: 36px;
+  }
+  .center-subtitle {
+    font-size: 30px;
+  }
+  .list-imaged {
+    font-size: 16px;
+  }
+}
+
+/*<=1023px;*/
 @media only screen and (max-width: 991px) {
   .font-reduced {
     font-size: 42px !important;
@@ -639,6 +571,57 @@ Media queries
 }
 
 @media only screen and (max-width: 767px) {
+  .resume-form-section.new {
+    background-image: url(../img/commonImgs/bg-mob-2.png);
+    background-position: -40px 0;
+    padding-bottom: 50px;
+  }
+  .resume-form-section.new textarea {
+    max-width: 500px;
+    height: 240px;
+  }
+  .resume-form-section.new h4 {
+    font-size: 26px;
+  }
+  .resume-form-section.new p {
+    font-size: 16px;
+  }
+  .resume-form-section.new .submit-wrap {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .center-heading {
+    font-size: 28px;
+  }
+  .center-subtitle {
+    font-size: 22px;
+  }
+  .center-heading.top-padded,
+  .center-subtitle.top-padded {
+    padding-top: 30px;
+  }
+  .list-imaged {
+    font-size: 14px;
+  }
+  .modal-2-call {
+    font-size: 14px;
+  }
+  .list-imaged a {
+    border-bottom: 0;
+    text-decoration: underline;
+  }
+  .list-imaged > li {
+    padding-left: 60px !important;
+  }
+  .license-links.styled li {
+    margin-bottom: 20px;
+  }
+  .license-links.styled li:before {
+    display: none;
+  }
+  .text-section.dot-pattern {
+    background-position: -300px 0;
+  }
   .font-reduced {
     font-size: 32px !important;
   }
@@ -659,7 +642,14 @@ Media queries
   }
 }
 
+/*<=767px;*/
 @media only screen and (max-width: 479px) {
+  .center-heading {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
   .font-reduced {
     font-size: 24px !important;
   }
@@ -667,5 +657,7 @@ Media queries
     font-size: 11px;
   }
 }
+
+/*<=480px;*/
 
 /*# sourceMappingURL=new.css.map */
