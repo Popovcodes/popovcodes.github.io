@@ -160,4 +160,12 @@ $('#tabs-container').responsiveTabs({
   rotate: false
 });
 
+//вакансии - открытие
+if($('.vacancy-item').length > 0 ) {
+  $('.vac-title').click(function(){
+    $(this).parents('.vacancy-item').toggleClass('shown');
+    $(this).parents('.vacancy-item').find('.vac-content').slideToggle();
+  });
+}
+
 });

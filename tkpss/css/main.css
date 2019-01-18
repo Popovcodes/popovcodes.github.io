@@ -2835,6 +2835,96 @@ h1 {
   margin-bottom: 50px;
 }
 
+/*vacancy*/
+.vacancy-item {
+  margin-bottom: 10px;
+}
+
+.vac-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: ProximaNovaBold, sans-serif;
+  font-size: 22px;
+  padding: 40px 0;
+  border-bottom: 1px solid #ECECEC;
+  cursor: pointer;
+}
+
+.vac-title:after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 12px;
+  background-image: url(../img/arr-b.png);
+  background-size: 100% 100%;
+  margin: 0 20px 0 30px;
+  vertical-align: middle;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.vac-subtitle {
+  font-family: ProximaNovaBold, sans-serif;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.vac-content {
+  background-color: #F9F9F9;
+  padding: 20px 30px;
+  margin-right: 30px;
+  display: none;
+}
+
+.vac-content ul {
+  margin-bottom: 30px;
+}
+
+.vac-content ul:last-child {
+  margin-bottom: 0;
+}
+
+.vacancy-item.shown .vac-title {
+  border-bottom-color: transparent;
+}
+
+.vacancy-item.shown .vac-title:after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 991px) {
+  .vac-content {
+    margin-right: 0;
+  }
+  .vac-title {
+    font-size: 18px;
+  }
+  .vac-subtitle {
+    font-size: 16px;
+  }
+  .vac-title:after {
+    width: 7px;
+    height: 9px;
+  }
+}
+
+/*<=991px;*/
+@media only screen and (max-width: 480px) {
+  .vac-title {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+/*<=480px;*/
 /* ==================== Addictional styles ======================= */
 /* ==================== Media queries ======================= */
 /*==========  Desktop First Method  ==========*/
