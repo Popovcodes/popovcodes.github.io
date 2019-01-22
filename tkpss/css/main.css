@@ -2925,6 +2925,196 @@ h1 {
 }
 
 /*<=480px;*/
+/*new*/
+.header-nav-links ul {
+  display: none;
+  width: 220px;
+  border: 1px solid #C5DFFF;
+  position: absolute;
+  z-index: 9;
+}
+
+.header-nav-links > li > ul {
+  top: 100%;
+  left: 0;
+}
+
+.header-nav-links > li > ul li {
+  display: list-item;
+  position: relative;
+}
+
+.header-nav-links > li > ul li:after {
+  display: none;
+}
+
+.header-nav-links > li > ul li ul {
+  top: 0;
+  left: 100%;
+}
+
+.header-nav-links > li > ul li.hasSubmenu:after {
+  display: block;
+  content: ">";
+  right: 4px;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  background-color: transparent;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.header-nav-links > li > span {
+  display: inline-block;
+  font-family: ProximaNovaSemibold, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 11px 34px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.header-nav-links li {
+  cursor: pointer;
+}
+
+.header-nav-links li:hover > ul, .header-nav-links li:active > ul {
+  display: block;
+}
+
+.header-nav-links li li a,
+.header-nav-links li li span {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 26px 8px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.header-nav-links li li {
+  background-color: #001a65;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.header-nav-links li li:hover,
+.header-nav-links li li:active {
+  background-color: #3E58A3;
+}
+
+.mob-nav > ul > .hasSubmenu:after {
+  top: 6px;
+}
+
+.mob-nav > ul > li > span {
+  font-family: ProximaNovaSemibold, sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.mob-nav > ul > li > ul {
+  margin-top: 14px;
+}
+
+.mob-nav li ul {
+  display: none;
+  background-color: #eee;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+}
+
+.mob-nav li ul li {
+  margin: 0;
+}
+
+.mob-nav li ul ul {
+  background-color: #ddd;
+}
+
+.mob-nav li ul ul ul {
+  background-color: #ccc;
+}
+
+.mob-nav li ul ul ul ul {
+  background-color: #bbb;
+}
+
+.mob-nav li li a,
+.mob-nav li li span {
+  display: inline-block;
+  text-transform: uppercase;
+  white-space: normal;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+}
+
+.mob-nav > ul > li > ul > li > a,
+.mob-nav > ul > li > ul > li > span {
+  font-family: ProximaNovaBold, sans-serif;
+  font-size: 16px;
+  padding-left: 12px;
+}
+
+.mob-nav > ul > li > ul > li > ul > li > a,
+.mob-nav > ul > li > ul > li > ul > li > span {
+  font-size: 14px;
+  padding-left: 24px;
+}
+
+.mob-nav > ul > li > ul > li > ul > li > ul > li a,
+.mob-nav > ul > li > ul > li > ul > li > ul > li span {
+  font-size: 12px;
+  padding-left: 36px;
+}
+
+.mob-nav > ul > li > ul > li > ul > li > ul > li > ul > li a,
+.mob-nav > ul > li > ul > li > ul > li > ul > li > ul > li span {
+  font-size: 12px;
+  padding-left: 48px;
+  font-family: ProximaNovaReg, sans-serif;
+}
+
+.mob-nav .hasSubmenu {
+  position: relative;
+}
+
+.mob-nav .hasSubmenu:after {
+  content: ">";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  background-color: transparent;
+  font-size: 16px;
+  text-align: center;
+  font-family: ProximaNovaExtrabold, sans-serif;
+  font-weight: 900;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+}
+
+.mob-nav .hasSubmenu.arrRotated:after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 /* ==================== Addictional styles ======================= */
 /* ==================== Media queries ======================= */
 /*==========  Desktop First Method  ==========*/

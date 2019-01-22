@@ -166,6 +166,28 @@ if($('.vacancy-item').length > 0 ) {
     $(this).parents('.vacancy-item').toggleClass('shown');
     $(this).parents('.vacancy-item').find('.vac-content').slideToggle();
   });
-}
+};
+
+
+$('.header-nav-links li li, .mob-nav li').each(function(){
+  var hasSubmenu = $(this).find('ul').length;
+  if(hasSubmenu > 0) {
+    $(this).addClass('hasSubmenu');
+  };
+});
+
+$('.mob-nav .hasSubmenu').click(function(e){
+  e.stopPropagation();
+  $(this).children('ul').slideToggle().toggleClass('shown');
+  if($(this).children('ul').hasClass('shown')){
+    $(this).addClass('arrRotated');
+  } else {
+    $(this).removeClass('arrRotated');
+  };
+});
+
+
+
+
 
 });
