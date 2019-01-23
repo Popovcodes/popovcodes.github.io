@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==================== styles reset ======================= */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -3113,6 +3114,102 @@ h1 {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+/*новый слайдер*/
+.rec-heading {
+  margin: 50px 0 10px !important;
+}
+
+.rec-slider-wr {
+  position: relative;
+  padding: 10px 40px;
+}
+
+.rec-slider-wr .slick-dots li {
+  border-color: #001a65;
+}
+
+.rec-slider-wr .slick-dots li.slick-active {
+  background-color: #001a65;
+}
+
+.rec-slider .slick-track {
+  padding: 16px 0;
+}
+
+.rec-slide {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  margin: 0 8px;
+  -webkit-box-shadow: 3px 6px 10px #aaa;
+          box-shadow: 3px 6px 10px #aaa;
+}
+
+.rec-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 140px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.rec-img img {
+  max-height: 100%;
+}
+
+.rec-title {
+  display: block;
+  font-family: ProximaNovaSemibold, sans-serif;
+  min-height: 38px;
+  margin-bottom: 16px;
+}
+
+.dots-wr {
+  padding: 16px 5px;
+  text-align: center;
+}
+
+.rec-arr {
+  display: inline-block;
+  width: 27px;
+  height: 72px;
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url(../img/arr2.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.rec-arr:hover {
+  opacity: 1;
+}
+
+.rec-prev {
+  left: 0;
+}
+
+.rec-next {
+  right: 0;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
 }
 
 /* ==================== Addictional styles ======================= */

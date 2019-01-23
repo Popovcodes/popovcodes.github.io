@@ -22,6 +22,67 @@ $('#overlay, #modal-close, #mob-cont a').click(function(){
 });
 
 //slick.js slider   http://kenwheeler.github.io/slick/
+
+$('.rec-slide').each(function(){
+  var numThis = $(this).index() + 1;
+  $(this).find('.num-this').text(numThis);
+});
+
+$('#rec-slider').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  autoplay: false,
+  autoplaySpeed: 3000,
+  arrows: false,
+  dots: true,
+  appendDots: $('#dots-wr'),
+  responsive: [
+    {
+      breakpoint: 1299,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 680,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+$('#rec-prev').click(function(){
+    $('#rec-slider').slick('slickPrev');
+});
+$('#rec-next').click(function(){
+    $('#rec-slider').slick('slickNext');
+});
+
+var slidesTotal = $("#rec-slider").slick("getSlick").slideCount;
+$('#rec-slider .num-total').text(slidesTotal);
+
+
+/**/
+
+
+
 $('#main-slider').slick({
   infinite: true,
   slidesToShow: 1,
