@@ -3144,6 +3144,20 @@ h1 {
   margin: 0 8px;
   -webkit-box-shadow: 3px 6px 10px #aaa;
           box-shadow: 3px 6px 10px #aaa;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.rec-slide:hover {
+  -webkit-box-shadow: 3px 6px 10px #333;
+          box-shadow: 3px 6px 10px #333;
+}
+
+.rec-slide:hover .rec-img img {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .rec-img {
@@ -3163,6 +3177,9 @@ h1 {
 
 .rec-img img {
   max-height: 100%;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .rec-title {
