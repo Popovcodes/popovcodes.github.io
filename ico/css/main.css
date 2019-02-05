@@ -2791,14 +2791,12 @@ input[type="file"] {
 .modal-form input[type="tel"] {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 15px;
   background: #fff;
   height: 50px;
   border-radius: 25px;
   line-height: 30px;
   padding: 10px 20px;
   font-size: 18px;
-  border: 1px solid #353f68;
 }
 
 .modal-form .submit-wrap {
@@ -2820,7 +2818,8 @@ input[type="file"] {
   height: 100px;
   border-radius: 25px;
   padding: 10px 20px;
-  margin-bottom: 45px;
+  /*margin-bottom: 45px;*/
+  /*1213*/
   font-size: 18px;
   border: 1px solid #353f68;
   resize: none;
@@ -3419,6 +3418,113 @@ canvas {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+}
+
+/*1213*/
+.input-wrap {
+  position: relative;
+  margin-bottom: 25px;
+  border: 1px solid #353f68;
+  border-radius: 26px;
+}
+
+.input-wrap input,
+.input-wrap textarea {
+  position: relative;
+  background: transparent !important;
+  border: none;
+  z-index: 4;
+}
+
+.input-wrap label {
+  position: relative;
+  z-index: 2;
+}
+
+.input-wrap > span,
+.input-wrap > i {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 25px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.input-wrap > span:before, .input-wrap > span:after,
+.input-wrap > i:before,
+.input-wrap > i:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  background-color: #fafafa;
+  -webkit-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.input-wrap > span:before {
+  top: 0;
+  left: 0;
+}
+
+.input-wrap > span:after {
+  bottom: 0;
+  right: 0;
+}
+
+.input-wrap > i:before {
+  bottom: 0;
+  left: 0;
+}
+
+.input-wrap > i:after {
+  top: 0;
+  right: 0;
+}
+
+.modal-form label {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-family: OpenSansSemiBold, sans-serif;
+  font-size: 18px;
+  color: #969696;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.modal-form input:focus ~ label, .modal-form input.non-empty ~ label,
+.modal-form textarea:focus ~ label,
+.modal-form textarea.non-empty ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.modal-form input:focus ~ span:before,
+.modal-form input:focus ~ span:after,
+.modal-form input:focus ~ i:before,
+.modal-form input:focus ~ i:after, .modal-form input.non-empty ~ span:before,
+.modal-form input.non-empty ~ span:after,
+.modal-form input.non-empty ~ i:before,
+.modal-form input.non-empty ~ i:after,
+.modal-form textarea:focus ~ span:before,
+.modal-form textarea:focus ~ span:after,
+.modal-form textarea:focus ~ i:before,
+.modal-form textarea:focus ~ i:after,
+.modal-form textarea.non-empty ~ span:before,
+.modal-form textarea.non-empty ~ span:after,
+.modal-form textarea.non-empty ~ i:before,
+.modal-form textarea.non-empty ~ i:after {
+  width: 50.5%;
+  height: 50.5%;
 }
 
 /* ==================== Media queries ======================= */

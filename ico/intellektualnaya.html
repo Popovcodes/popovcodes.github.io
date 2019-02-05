@@ -14,6 +14,9 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/new.css">
     <title>Интеллектуальная собственность</title>
+
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="js/animation.js"></script>
 </head>
 <body>
 <!-- =========================== header =========================== -->
@@ -54,9 +57,14 @@
             </ul>
         </nav>
 </div><!--/.mob-cont-->
-
+<a href="javascript:void(0);"></a>
 <!-- =========================== BEGIN OF NEW =========================== -->
 <section class="text-section new-text-section ip-section">
+    <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1080px">
+        <canvas id="canvas" width="1920" height="1080" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1080px; position: absolute; left: 0px; top: 0px; display: block;">
+        </div>
+    </div>
     <div class="wrapper">
         <h1 class="righted font-reduced">Интеллектуальная собственность: <br>Защита. Консалтинг. Регистрация.</h1>
         <p>Любой бизнес, как правило, построен на активах. Одним из таких активов является интеллектуальная собственность (intellectual property — IP) — так или иначе закрепленные исключительные права компании на результаты интеллектуальной деятельности или средства индивидуализации. Чем сложнее продукт, чем выше в нем инновационная составляющая, тем существеннее вклад IP в экономическую модель такого бизнеса. Разумеется, все успешные продукты и бизнес-модель компании в целом нуждаются в эффективной защите, так как без защиты на конкурентном рынке они будут практически немедленно скопированы и растиражированы.</p>
@@ -118,44 +126,67 @@
 
         <div class="scheme-block-wr">
             <div class="scheme-block">
-                <a href="#" class="scheme-link">
-                    <img src="img/gifs/ic_ip_isx_04.gif" alt="">
-                    <span>Изобретения и полезные модели</span>
-                </a>
-                <a href="#" class="scheme-link">
-                    <img src="img/gifs/ic_ip_isx_05.gif" alt="">
-                    <span>Промышленные образцы</span>
-                </a>
-                <div class="braces-wr"><div class="braces"><div></div></div></div>
-                <a href="#" class="scheme-link">
-                    <img src="img/gifs/ic_ip_isx_06.gif" alt="">
-                    <span>Патентование за рубежом</span>
-                </a>
+
+                <div class="scheme-l">
+                    <a href="#" class="scheme-link">
+                        <img src="img/gifs/ic_ip_isx_04.gif" alt="">
+                        <span>Изобретения и полезные модели</span>
+                    </a>
+                </div>
+
+                <div class="scheme-c no-arr shrink last">
+                    <a href="#" class="scheme-link">
+                        <img src="img/gifs/ic_ip_isx_06.gif" alt="">
+                        <span>Патентование за рубежом</span>
+                    </a>
+                </div>
+                
+                <div class="scheme-r">
+                    <a href="#" class="scheme-link">
+                        <img src="img/gifs/ic_ip_isx_05.gif" alt="">
+                        <span>Промышленные образцы</span>
+                    </a>
+                </div>
+
             </div>
             <div class="schemes-delimiter"></div>
             <div class="scheme-block">
-                <a href="#" class="scheme-link">
-                    <img src="img/gifs/ic_ip_isx_07.gif" alt="">
-                    <span>Разработка товарного знака</span>
-                </a>
-                <a href="#" class="scheme-link">
-                    <img src="img/gifs/ic_ip_isx_08.gif" alt="">
-                    <span>Экспертный поиск по товарным знакам</span>
-                </a>
-                <a href="#" class="scheme-link">
-                    <img src="img/gifs/ic_ip_isx_09.gif" alt="">
-                    <span>Оценка охраноспособности</span>
-                </a>
-                <div class="braces-wr"><div class="braces"><div></div></div></div>
-                  <a href="#" class="scheme-link">
-                    <img src="img/gifs/ic_ip_isx_10.gif" alt="">
-                    <span>Товарные знаки</span>
-                </a>
-                <div class="down-arr"><span>&#10144;</span></div>
-                <a href="#" class="scheme-link">
-                    <img src="img/gifs/ic_ip_isx_11.gif" alt="">
-                    <span>Регистрация товарного знака</span>
-                </a>
+
+
+                <div class="scheme-c single first">
+                    <a href="#" class="scheme-link">
+                        <img src="img/gifs/ic_ip_isx_08.gif" alt="">
+                        <span>Экспертный поиск по товарным знакам</span>
+                    </a>
+                </div>
+
+                <div class="scheme-l">
+                    <a href="#" class="scheme-link">
+                        <img src="img/gifs/ic_ip_isx_07.gif" alt="">
+                        <span>Разработка <br>товарного знака</span>
+                    </a>
+                </div>
+
+                <div class="scheme-c shrink penult">
+                    <a href="#" class="scheme-link">
+                        <img src="img/gifs/ic_ip_isx_10.gif" alt="">
+                        <span>Товарные знаки</span>
+                    </a>
+                </div>
+
+                <div class="scheme-r">
+                    <a href="#" class="scheme-link">
+                        <img src="img/gifs/ic_ip_isx_09.gif" alt="">
+                        <span>Оценка <br>охрано&shy;способности</span>
+                    </a>
+                </div>
+ 
+                <div class="scheme-c no-arr single last">
+                    <a href="#" class="scheme-link">
+                        <img src="img/gifs/ic_ip_isx_11.gif" alt="">
+                        <span>Регистрация товарного знака</span>
+                    </a>
+                </div>
             </div>
         </div><!-- /.scheme-block-wr -->
         <div class="schemes-delimiter"></div>
@@ -189,7 +220,7 @@
                             <span class="more">Подробнее</span>
                         </div>
                     </a>
-                </div><!--/.item-->
+                </div>
 
                 <div class="item">
                     <a href="newsItem.html" class="item-wrap-link">
@@ -204,7 +235,7 @@
                             <span class="more">Подробнее</span>
                         </div>
                     </a>
-                </div><!--/.item-->
+                </div>
 
                 <div class="item">
                     <a href="newsItem.html" class="item-wrap-link">
@@ -219,7 +250,7 @@
                             <span class="more">Подробнее</span>
                         </div>
                     </a>
-                </div><!--/.item-->
+                </div>
 
                 <div class="item">
                     <a href="newsItem.html" class="item-wrap-link">
@@ -234,7 +265,7 @@
                             <span class="more">Подробнее</span>
                         </div>
                     </a>
-                </div><!--/.item-->
+                </div>
 
                 <div class="item">
                     <a href="newsItem.html" class="item-wrap-link">
@@ -249,7 +280,7 @@
                             <span class="more">Подробнее</span>
                         </div>
                     </a>
-                </div><!--/.item-->
+                </div>
 
                  <div class="item">
                     <a href="newsItem.html" class="item-wrap-link">
@@ -264,7 +295,7 @@
                             <span class="more">Подробнее</span>
                         </div>
                     </a>
-                </div><!--/.item-->
+                </div>
 
                 <div class="item">
                     <a href="newsItem.html" class="item-wrap-link">
@@ -279,7 +310,7 @@
                             <span class="more">Подробнее</span>
                         </div>
                     </a>
-                </div><!--/.item-->
+                </div>
 
                 <div class="item">
                     <a href="newsItem.html" class="item-wrap-link">
@@ -294,7 +325,7 @@
                             <span class="more">Подробнее</span>
                         </div>
                     </a>
-                </div><!--/.item-->
+                </div>
 
                 <div class="item">
                     <a href="newsItem.html" class="item-wrap-link">
@@ -309,7 +340,7 @@
                             <span class="more">Подробнее</span>
                         </div>
                     </a>
-                </div><!--/.item-->
+                </div>
 
                 <div class="item">
                     <a href="newsItem.html" class="item-wrap-link">
@@ -324,21 +355,21 @@
                             <span class="more">Подробнее</span>
                         </div>
                     </a>
-                </div><!--/.item-->
+                </div>
 
-            </div><!--/.slider-->
+            </div>
             <div class="slider-control">
                 <div class="left-arr"></div>
                 <div class="dots-cont dots-cont-1"></div>
                 <div class="right-arr"></div>
             </div>
-        </div><!--/slider-cont-->
+        </div>
 
         <div class="button-cont top-sm-padded">
             <button class="button nowrap-btn modal-2-call">Запись на консультацию</button>
         </div>
-    </div><!--/.wrapper-->
-</section><!--/.news-slider-section-->
+    </div>
+</section>
 
 
 <!-- =========================== END OF NEW =========================== -->
@@ -441,6 +472,8 @@
     $('input[type="tel"]').mask("+7 (999) 999-99-99");
 
 </script>
+
+
 <script src="js/common.js"></script>
 </body>
 </html>
