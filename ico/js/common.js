@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   // mobile navigation and modal form showing
   $('.btn-menu').click(function(){
     $('#overlay').removeClass('hidden');
@@ -131,10 +130,18 @@ $(document).ready(function(){
   };
 
 
+
+//
   if(document.documentElement.clientWidth > 1199) {
     // wow.js animation  http://mynameismatthieu.com/WOW/
     new WOW().init();
   };
+
+    /*2202*/
+  for (var i = 0; i < 5; i++) {
+    $('.country-list').append('<li class="empty"></li>');
+  };
+  $('.opacity').css('opacity', '1');
 
 
   // $('.list-animated li span').each(function(){
@@ -168,5 +175,6 @@ $(document).ready(function(){
     // });
 
   // });
+
 
 });
