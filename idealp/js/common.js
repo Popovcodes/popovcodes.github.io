@@ -118,7 +118,6 @@ $('.bar li, .stage').each(function(){
 });
 
 
-
 //parallax & animation
 var parallax = function(){
   var pageScrolled = $(window).scrollTop();
@@ -151,13 +150,13 @@ var parallax = function(){
     };
   });
 
-  var stagesPos = $('#stages-block').offset().top;
-  var stagesVis = scrolledToWindowBottom - stagesPos;
-  if (stagesVis > 200) {
-    $('#stages-block').addClass('visible');
-  };
-
-
+  $('.stage').each(function(){
+    var stagePos = $(this).offset().top + $(this).outerHeight();
+    var stageVis = scrolledToWindowBottom - stagePos;
+    if (stageVis + 100 > 0) {
+      $(this).addClass('visible');
+    };
+  });
 
 };
 parallax();

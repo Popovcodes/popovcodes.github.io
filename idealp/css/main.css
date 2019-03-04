@@ -1435,7 +1435,7 @@ nav a:hover:before {
   transition: all .8s;
 }
 
-.stages-block.visible .stage {
+.stage.visible {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
