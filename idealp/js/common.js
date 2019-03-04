@@ -183,8 +183,12 @@ if($('.input-wr').length > 0) {
 // https://github.com/digitalBush/jquery.maskedinput
 $('input[type="tel"]').mask("+9 (999) 999-99-99");
 
+
 // unfixed background for IE, Edge
 if (/MSIE 10/i.test(navigator.userAgent) || /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /Edge\/\d./i.test(navigator.userAgent)) 
-  $('.price-section, .top-section').css('background-attachment', 'scroll');
+  {
+    $('#prices, #top-section').css('background-attachment', 'scroll');
+    $('#about-l').addClass('non-animated');
+  };
 
 });

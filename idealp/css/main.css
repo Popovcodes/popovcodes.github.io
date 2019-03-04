@@ -532,25 +532,11 @@ nav a:hover:before {
   }
 }
 
-.stripes {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  z-index: 0;
-}
-
-.stripes i {
-  width: 2px;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.05);
+.notebook-img-mob {
+  display: none;
+  float: right;
+  margin-left: 12px;
+  width: 32vw;
 }
 
 .notebook-holder {
@@ -599,6 +585,12 @@ nav a:hover:before {
 }
 
 .btn-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   margin: 52px 0 30px;
 }
@@ -610,20 +602,35 @@ nav a:hover:before {
   margin-right: 37px;
 }
 
+.btn-row .message-rect {
+  display: inline-block;
+}
+
+.btn-row .message-rect img {
+  height: 70px;
+}
+
+.btn-row .message-rect span {
+  top: 46%;
+  margin: 0 auto;
+}
+
 .globe-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: Circe-Bold, sans-serif;
   font-size: 15px;
   line-height: 1.33;
 }
 
-.globe-row span {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .globe-circle-wr {
   display: inline-block;
   width: 120px;
+  min-width: 120px;
   height: 91px;
   border-radius: 45px;
   overflow: hidden;
@@ -774,70 +781,6 @@ nav a:hover:before {
   margin-bottom: -70px;
 }
 
-.axe {
-  position: absolute;
-  top: 56%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(120deg);
-      -ms-transform: translate(-50%, -50%) rotate(120deg);
-          transform: translate(-50%, -50%) rotate(120deg);
-  height: 0;
-  -webkit-transition: all 2s;
-  -o-transition: all 2s;
-  transition: all 2s;
-  -webkit-transform-origin: center center;
-      -ms-transform-origin: center center;
-          transform-origin: center center;
-}
-
-.axe span {
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  -webkit-transform: translateY(-50%) rotate(-120deg);
-      -ms-transform: translateY(-50%) rotate(-120deg);
-          transform: translateY(-50%) rotate(-120deg);
-  -webkit-transform-origin: left center;
-      -ms-transform-origin: left center;
-          transform-origin: left center;
-  min-width: 270px;
-  padding-left: 24px;
-  opacity: 0;
-  -webkit-transition: all 2s;
-  -o-transition: all 2s;
-  transition: all 2s;
-}
-
-.axe span:before {
-  content: "";
-  position: absolute;
-  left: -8px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  display: block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  background-color: #ffd962;
-  -webkit-box-shadow: 0px 0px 17px rgba(255, 217, 98, 0.4);
-          box-shadow: 0px 0px 17px rgba(255, 217, 98, 0.4);
-  -webkit-animation: pulse 3s infinite;
-          animation: pulse 3s infinite;
-}
-
-.axe:nth-child(3n+2) span:before {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.axe:nth-child(3n+3) span:before {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
 .bar li:nth-child(3n+2):before {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
@@ -953,13 +896,97 @@ nav a:hover:before {
   background-repeat: no-repeat;
 }
 
-.about-l.active #axe-1 {
+.axe {
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(120deg);
+      -ms-transform: translate(-50%, -50%) rotate(120deg);
+          transform: translate(-50%, -50%) rotate(120deg);
+  height: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.axe span {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-120deg);
+      -ms-transform: translateY(-50%) rotate(-120deg);
+          transform: translateY(-50%) rotate(-120deg);
+  -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+          transform-origin: left center;
+  min-width: 270px;
+  padding-left: 24px;
+  opacity: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+.axe span:before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #ffd962;
+  -webkit-box-shadow: 0px 0px 17px rgba(255, 217, 98, 0.4);
+          box-shadow: 0px 0px 17px rgba(255, 217, 98, 0.4);
+  -webkit-animation: pulse 3s infinite;
+          animation: pulse 3s infinite;
+}
+
+.axe:nth-child(2) span:before {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.axe:nth-child(3) span:before {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#axe-1 {
   width: 100%;
+}
+
+#axe-2 {
+  width: 71.4%;
+}
+
+#axe-3 {
+  width: 44.6%;
+}
+
+.about-l.non-animated .axe,
+.about-l.non-animated .axe span {
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.about-l.non-animated #axe-1,
+.about-l.active #axe-1 {
   -webkit-transform: translate(-50%, -50%) rotate(-66deg);
       -ms-transform: translate(-50%, -50%) rotate(-66deg);
           transform: translate(-50%, -50%) rotate(-66deg);
 }
 
+.about-l.non-animated #axe-1 span,
 .about-l.active #axe-1 span {
   -webkit-transform: translateY(-50%) rotate(66deg);
       -ms-transform: translateY(-50%) rotate(66deg);
@@ -967,13 +994,14 @@ nav a:hover:before {
   opacity: 1;
 }
 
+.about-l.non-animated #axe-2,
 .about-l.active #axe-2 {
-  width: 71.4%;
   -webkit-transform: translate(-50%, -50%) rotate(-20deg);
       -ms-transform: translate(-50%, -50%) rotate(-20deg);
           transform: translate(-50%, -50%) rotate(-20deg);
 }
 
+.about-l.non-animated #axe-2 span,
 .about-l.active #axe-2 span {
   -webkit-transform: translateY(-50%) rotate(20deg);
       -ms-transform: translateY(-50%) rotate(20deg);
@@ -981,13 +1009,14 @@ nav a:hover:before {
   opacity: 1;
 }
 
+.about-l.non-animated #axe-3,
 .about-l.active #axe-3 {
-  width: 44.6%;
   -webkit-transform: translate(-50%, -50%) rotate(46deg);
       -ms-transform: translate(-50%, -50%) rotate(46deg);
           transform: translate(-50%, -50%) rotate(46deg);
 }
 
+.about-l.non-animated #axe-3 span,
 .about-l.active #axe-3 span {
   -webkit-transform: translateY(-50%) rotate(-46deg);
       -ms-transform: translateY(-50%) rotate(-46deg);
@@ -1169,9 +1198,9 @@ nav a:hover:before {
 .bar li {
   position: relative;
   padding: 0 0 30px 18px;
-  -webkit-transform: translateY(-1000px);
-      -ms-transform: translateY(-1000px);
-          transform: translateY(-1000px);
+  -webkit-transform: translateY(1000px);
+      -ms-transform: translateY(1000px);
+          transform: translateY(1000px);
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
@@ -2055,6 +2084,10 @@ textarea {
   }
   .globe-row span {
     line-height: 1.4;
+    font-family: Circe-Regular, sans-serif;
+  }
+  .top-content p {
+    line-height: 1.4;
   }
   .about-wr {
     -ms-flex-wrap: wrap;
@@ -2148,6 +2181,12 @@ textarea {
   .feat span {
     max-width: 100%;
   }
+  .btn-row .message-rect img {
+    height: 55px;
+  }
+  .btn-row .message-rect span {
+    font-size: 13px;
+  }
 }
 
 /*max 1365*/
@@ -2179,7 +2218,9 @@ textarea {
   .heading {
     font-size: 36px;
   }
-  .globe-row span,
+  .top-section {
+    background-position: 80% 50%;
+  }
   .btn-row span {
     display: block;
     width: 100%;
@@ -2340,6 +2381,9 @@ textarea {
   .footer .wrapper .nav ul li {
     margin-bottom: 16px;
   }
+  .btn-row .message-rect {
+    display: none;
+  }
 }
 
 /*max 767*/
@@ -2352,28 +2396,20 @@ textarea {
   }
   .top-content {
     max-width: 100%;
+    width: 100%;
   }
   .notebook-holder {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
+    display: none;
   }
   .notebook-img {
-    position: static;
-    max-width: 200px;
     -webkit-animation: none;
             animation: none;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
   }
-  .globe-circle-wr {
-    width: 100%;
+  .notebook-img-mob {
+    display: inline-block;
   }
   .globe-img {
     -webkit-animation: none;
