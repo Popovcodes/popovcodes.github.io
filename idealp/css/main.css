@@ -1426,6 +1426,20 @@ nav a:hover:before {
   line-height: 1.5;
   letter-spacing: 1.5px;
   margin-bottom: 22px;
+  -webkit-transform: translateX(110vw);
+      -ms-transform: translateX(110vw);
+          transform: translateX(110vw);
+  opacity: 0;
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  transition: all .8s;
+}
+
+.stages-block.visible .stage {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
 }
 
 .stage-lead {

@@ -109,7 +109,7 @@ $('#slider').css('opacity', '1');
 
 
 //
-$('.bar li').each(function(){
+$('.bar li, .stage').each(function(){
   var ind = $(this).index();
   $(this).css({
       '-webkit-transition-delay': ind*0.4+'s',
@@ -151,6 +151,14 @@ var parallax = function(){
     };
   });
 
+  var stagesPos = $('#stages-block').offset().top;
+  var stagesVis = scrolledToWindowBottom - stagesPos;
+  if (stagesVis > 200) {
+    $('#stages-block').addClass('visible');
+  };
+
+
+
 };
 parallax();
 $(window).scroll(parallax);
@@ -176,7 +184,7 @@ if($('.input-wr').length > 0) {
 // https://github.com/digitalBush/jquery.maskedinput
 $('input[type="tel"]').mask("+9 (999) 999-99-99");
 
-
+// unfixed background for IE, Edge
 if (/MSIE 10/i.test(navigator.userAgent) || /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /Edge\/\d./i.test(navigator.userAgent)) 
   $('.price-section, .top-section').css('background-attachment', 'scroll');
 
