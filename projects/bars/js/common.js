@@ -91,7 +91,7 @@ $(document).ready(function(){
 
 		},1000)
 	}
-	timerLeft(2018, 08, 25);
+	timerLeft(2019, 03, 25);
 	// end of timer script
 
 	// slick slider  http://kenwheeler.github.io/slick/
