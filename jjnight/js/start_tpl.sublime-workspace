@@ -1,0 +1,2370 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"i",
+				"inline\tdisplay"
+			],
+			[
+				"opac",
+				"opacity\tproperty"
+			],
+			[
+				"border-b",
+				"border-bottom-color\tproperty"
+			],
+			[
+				"o-",
+				"o-c\toutl-cyan"
+			],
+			[
+				"b",
+				"border-box\tbox-sizing"
+			],
+			[
+				"box-",
+				"box-sizing\tproperty"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"bg-s",
+				"bgsz-a\tbackground-size: auto;"
+			],
+			[
+				"co",
+				"commonImgs/"
+			],
+			[
+				"pb",
+				"padding-bottom"
+			],
+			[
+				"c",
+				"commonImgs/"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"list-st",
+				"list-style-position"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"le",
+				"letter-spacing"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/work/2018 start template html/app/test.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/work/2018 start template html/app/temp.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "common.js",
+			"settings":
+			{
+				"buffer_size": 2178,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "commonsnippets.txt",
+			"settings":
+			{
+				"buffer_size": 2707,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "jssnippets.js",
+			"settings":
+			{
+				"buffer_size": 6268,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/work/2018 start template html/app/sass/_additional.scss",
+			"settings":
+			{
+				"buffer_size": 7635,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/work/2018 start template html/app/sass/_common_styles.scss",
+			"settings":
+			{
+				"buffer_size": 1731,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/work/2018 start template html/app",
+		"/D/work/2018 start template html/app/css",
+		"/D/work/2018 start template html/app/js",
+		"/D/work/2018 start template html/app/sass"
+	],
+	"file_history":
+	[
+		"/D/work/2018 start template html/app/index.html",
+		"/D/work/2018 start template html/app/test.html",
+		"/D/work/2018 start template html/app/css/main.css",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/Theme - Glacier/glacier.tmTheme",
+		"/D/work/2018 start template html/app/sass/_common_styles.scss",
+		"/D/___DOWNLOADS/styles_b8dda350c4.min.css",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Installed Packages/Theme - Tech49.sublime-package",
+		"/D/work/2018 start template html/app/sass/_reset.scss",
+		"/D/work/ukkom/app/sass/_common_styles.scss",
+		"/D/work/ukkom/app/sass/_media.scss",
+		"/D/work/ukkom/app/sass/version.scss",
+		"/D/work/ukkom/app/sass/_fonts.scss",
+		"/D/work/ukkom/app/sass/_variables.scss",
+		"/D/work/ukkom/app/js/common.js",
+		"/D/work/ukkom/app/test.html",
+		"/D/work/ukkom/app/price-table.html",
+		"/D/work/ukkom/app/index.html",
+		"/D/work/ukkom/app/sostav.html",
+		"/D/work/maptg/maptg/index.html",
+		"/D/work/ukkom/app/dokumenty.html",
+		"/D/work/ukkom/app/kontakty.html",
+		"/D/work/ukkom/app/stoimost.html",
+		"/D/work/ukkom/app/svedeniya.html",
+		"/D/work/ukkom/app/text.html",
+		"/D/work/ukkom/app/usluga.html",
+		"/D/work/ukkom/app/sass/lg.scss",
+		"/D/work/ukkom/app/js/jssnippets.js",
+		"/D/work/ukkom/app/info.html",
+		"/D/work/ukkom/app/Новый текстовый документ.txt",
+		"/D/work/ukkom/app/sass/_additional.scss",
+		"/D/work/ukkom/app/img/temps/0015a.png",
+		"/D/work/ukkom/app/libs/responsive-tabs/responsive-tabs.css",
+		"/D/work/ukkom/app/js/ymap.js",
+		"/D/work/ligress/app/sass/_media.scss",
+		"/D/work/ligress/app/js/common.js",
+		"/D/work/ligress/app/sass/_common_styles.scss",
+		"/D/work/ligress/app/index.html",
+		"/D/work/ligress/app/js/ymap.js",
+		"/D/work/ligress/app/publications.html",
+		"/D/work/ligress/app/libs/responsive-tabs/responsive-tabs.css",
+		"/D/work/ligress/app/downloads.html",
+		"/D/work/ligress/app/objects.html",
+		"/D/work/ligress/app/vacancy.html",
+		"/D/work/ligress/app/production.html",
+		"/D/work/ligress/app/price.html",
+		"/D/work/ligress/app/contacts.html",
+		"/D/work/ligress/app/article.html",
+		"/D/work/ligress/app/about.html",
+		"/D/work/ligress/app/product.html",
+		"/D/work/ligress/app/sass/_fonts.scss",
+		"/D/work/ligress/app/libs/fancybox/fancybox.min.css",
+		"/D/work/ligress/app/sass/_variables.scss",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/css/comment.sublime-snippet",
+		"/D/work/GitHub/popovcodes.github.io/нмт/index.html",
+		"/D/work/GitHub/popovcodes.github.io/mt555/index.html",
+		"/D/work/GitHub/MT/index.html",
+		"/D/work/ligress/app/css/main.css",
+		"/D/work/ligress/app/sass/main.scss",
+		"/D/work/ico/app/sass/_media.scss",
+		"/D/work/ico/app/sass/_common_styles.scss",
+		"/D/work/ico/app/js/common.js",
+		"/D/work/ico/app/index.html",
+		"/D/work/ico/app/kripto-licenzii.html",
+		"/D/work/ico/app/igornie-licenzii.html",
+		"/D/work/ico/app/finansovie-licenzii.html",
+		"/D/work/ico/app/usligi-licenzirovaniya.html",
+		"/D/work/ico/app/css/main.css",
+		"/D/work/ico/app/js/matrix.js",
+		"/D/work/ico/app/js/services.js",
+		"/D/work/ico/app/s2.html",
+		"/D/work/ico/app/services.html",
+		"/D/work/ico/app/country.html",
+		"/D/work/ico/app/poo.js",
+		"/D/___DOWNLOADS/Kurpatov_Chertogi-razuma-Ubey-v-sebe-idiota-.rLJnXQ.522056.fb2",
+		"/D/index.html",
+		"/D/work/ico/app/js/team.js",
+		"/D/work/ico/app/career.html",
+		"/D/work/ico/app/team.html",
+		"/D/work/ico/app/js/about.js",
+		"/D/work/ico/app/libs/formstyler/jquery.formstyler.css",
+		"/D/work/ico/app/newsItem.html",
+		"/D/work/ico/app/news.html",
+		"/D/work/ico/app/about.html",
+		"/D/work/ico/app/sass/_fonts.scss",
+		"/D/work/ico/app/sass/_variables.scss",
+		"/D/work/ico/app/sass/main.scss",
+		"/D/work/ico/app/libs/slick-1.6.0/slick.css",
+		"/D/work/ico/app/libs/selecter/jquery.fs.selecter.css",
+		"/D/work/ico/app/css/main.css.map",
+		"/D/work/ico/app/js/slidersInit.js",
+		"/D/work/ico/app/libs/particles/particles-3.json",
+		"/D/work/ico/app/libs/particles/particles-2.json",
+		"/D/work/ico/app/libs/particles/particles-1.json",
+		"/D/work/ico/app/libs/particles/particles.json",
+		"/D/work/ico/app/libs/particles/particle.json",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/css/bgimgurl.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/Celeste.sublime-color-scheme",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/reserved_my/Monokai.sublime-color-scheme",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/reserved_my/Celeste.sublime-color-scheme",
+		"/D/work/ico/app/sass/_animations.scss",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/work/ico/app/sass/_additional.scss",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/html/javascriptvoid0;.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/AutoFileName/autofilename.sublime-settings",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/css/margin0auto.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/Better Bookmarks/BetterBookmarks.sublime-settings",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/html/newb-html.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/html/section-html.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/html/wrapper-html.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/html/endof-html.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/js/consolelog-js.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/js/alert-js.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/css/css-comment.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/SublimeBookmarks/Default.sublime-keymap",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/css/outline blue.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/css/outline red.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/css/translateX-50p.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/css/transition.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/css/content.sublime-snippet",
+		"/D/work/ico/исходники/opensans/opensans.css",
+		"/F/reserve_install/SublimeTextPortable_3.0.0.3047(32-bit)/user1_AppData_Roaming_Sublime Text 3 rjgbz 22082017/Packages/User/css-comment-lines.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/css-comment.sublime-snippet",
+		"/D/work/factoryMebel/app/sass/_common_styles.scss",
+		"/D/work/kadrin/app/contacts.html",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/html/div-html.sublime-snippet",
+		"/D/work/metalam/app/sass/_common_styles.scss",
+		"/F/reserve_install/SublimeTextPortable_3.0.0.3047(32-bit)/user1_AppData_Roaming_Sublime Text 3 rjgbz 22082017/Packages/User/+wrap.sublime-snippet"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"",
+			"<a href=\"info.html\">",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"select",
+			"price",
+			"to-top",
+			"</p>\n</td>",
+			"<td>\n<p>",
+			"strong",
+			"<td  width=\"473\">",
+			"<td  width=\"42\">",
+			"<td  width=\"93\">",
+			"<td  width=\"79\">",
+			"<td width=\"473\">",
+			"             ",
+			"                 ",
+			"                     ",
+			"<p align=\"center\">",
+			"valign=\"top\"",
+			"<!--/.mob-cont--><!-- /mobile navigation -->",
+			"outline: 1",
+			".price",
+			"class=\"price-val\"",
+			"price ",
+			"11a",
+			"section",
+			"<a href=\"info.html\">Сведения об образовательной организации</a>",
+			"<meta name=\"theme-color\" content=\"#007dc6\">",
+			"<li>Сведения об образовательной организации</a></li>",
+			".price-link",
+			"электробез",
+			"delim",
+			"del",
+			"  <!-- <button id=\"to-top\" class=\"hidden\">&#8679;</button> -->",
+			"26px",
+			"<li>Основные сведения</a></li>",
+			"<a href=\"svedeniya.html\">",
+			"350px",
+			"26px",
+			"    .",
+			"h1",
+			"320",
+			"foo",
+			"орган",
+			"slide-text-wr",
+			"lg",
+			"wrapp",
+			"transit",
+			"h2",
+			"mob-c",
+			" class=\"sp-menu\"",
+			"togglers",
+			"991",
+			"decor",
+			"h1",
+			"fanc",
+			"h2",
+			"td",
+			"TH",
+			"991",
+			"-title",
+			"section ",
+			"section",
+			"feat",
+			"slide-title",
+			"h1",
+			" alt=\"X\"",
+			"<td><span class=\"num\"></span><a href=\"\" class=\"fancy\" data-fancybox=\"gal\"><img src=\"\" alt=\"X\"></a><span class=\"text\"></span></td>",
+			"<td><span class=\"num\"></span><a href=\"\" class=\"fancy\"><img src=\"\" alt=\"X\"></a><span class=\"text\"></span></td>",
+			"<td><span class=\"num\"></span><a href=\"\" class=\"fancy\"><img src=\"\" alt=\"X\"></a></td>",
+			"<td><span></span>",
+			".btn-",
+			"textarea ",
+			".triplet-item",
+			"form-sect",
+			"outline",
+			"action=\"",
+			".header",
+			"nattac",
+			"textar",
+			"modal_form",
+			"modal_close",
+			"modal_logo",
+			"modal_top",
+			"modal_cont",
+			">i:before",
+			".bu",
+			"calc",
+			".h-borders",
+			".v-border",
+			"slick",
+			"<a <a href=\"javascript:void(0);\"",
+			"href=\"#\"",
+			"input-box",
+			"placeh",
+			"line: 1",
+			"crypto-s",
+			"top-pad",
+			"lic-heading",
+			"<a href=\"newsItem.html\" class=\"item-wrap-link\">",
+			".licenses-list",
+			"&:first-letter",
+			"h3",
+			"!importan",
+			"h2",
+			"font-size: 36px !",
+			"h2",
+			"*****************************",
+			"v-line",
+			"particle-location",
+			"animatio",
+			"<span class=\"more\">Читать</span>",
+			"first-l",
+			"keyfr",
+			"сопро",
+			"countr",
+			"wow",
+			"first-lett",
+			"partic",
+			"<a href=\"javascript:void(0);\" class=\"item-wrap-link\">",
+			".services-mob-head",
+			"е время важно делать грамотные вложения, но не",
+			"display: non",
+			"1199",
+			"circle",
+			"background-i",
+			"<div class=\"submit-wrap wow SlideInRight\">",
+			"<div class=\"submit-wrap wow fadeInRight\">",
+			"\n    ",
+			"//",
+			".jpg\" alt=\"\" class=\"wow fadeInUp\" data-wow-offset=\"200\">"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"</td>",
+			"<td>",
+			"b",
+			"<td>",
+			"",
+			"<p>",
+			"",
+			"<!--/.mob-cont-->",
+			"class=\"price price-val\"",
+			"<a href=\"svedeniya.html\">Сведения об образовательной организации</a>",
+			"<meta name=\"theme-color\" content=\"#034f7b\">",
+			"<li><a href=\"info.html\">Сведения об образовательной организации</a></li>",
+			"",
+			"<li><a href=\"info.html\">Основные сведения</a></li>",
+			"",
+			"<td><span class=\"num\"></span><a href=\"\" class=\"fancy\" data-fancybox=\"gal\" data-caption=\"\"><img src=\"\" alt=\"X\"></a><span class=\"text\"></span></td>",
+			"<td><span class=\"num\"></span><a href=\"\" class=\"fancy\" data-fancybox=\"gal\"><img src=\"\" alt=\"X\"></a><span class=\"text\"></span></td>",
+			"<td><span class=\"num\"></span><a href=\"\" class=\"fancy\"><img src=\"\" alt=\"X\"></a><span class=\"text\"></span></td>",
+			"<td><span class=\"num\"></span>",
+			"modal-form",
+			"modal-close",
+			"modal-logo",
+			"modal-top",
+			"modal-cont",
+			".h-borders",
+			".v-borders",
+			"<a href=\"javascript:void(0);\"",
+			"input-wrap",
+			"<a href=\"javascript:void(0);\" class=\"item-wrap-link\">",
+			"<span class=\"more\">читать</span>",
+			"<a href=\"newsItem.html\" class=\"item-wrap-link\">",
+			"<div class=\"submit-wrap wow slideInRight\">",
+			"<div class=\"submit-wrap wow SlideInRight\">",
+			".jpg\" alt=\"\" class=\"wow fadeInUp\">",
+			"<div class=\"submit-wrap wow fadeInRight\">",
+			"type arbitration",
+			"type maintenance",
+			"type revisions",
+			"type crime",
+			"type revisions",
+			"type crime",
+			"type arbitration",
+			"type maintenance",
+			".png\" alt=\"\">",
+			"<img src=\"img/persons/person2.png\" alt=\"\">",
+			"<div class=\"person-desc\">",
+			"<img src=\"img/persons/person1.png\" alt=\"\">",
+			"<div class=\"form-wrap\">",
+			"autoplay: true,",
+			"",
+			"<p class=\"person-position\">Lorem ipsum dolor sit amet</p>",
+			"<p class=\"person-position\">Lorem ipsum dolor sit amet, consectetur.</p>",
+			"<a href=\"tel:+79876543210\">+7 (987) 654 - 32 - 10</a>",
+			"@mail.com</a>",
+			"<p class=\"person-position\">Lorem ipsu</p>",
+			"<p class=\"person-position\">Генеральный директор</p>",
+			"<p class=\"person-position\">Lorem ipsum dolor sit amet, consectetur.</p>",
+			"<p class=\"person-position\">HR - директор</p>",
+			"",
+			"Василий",
+			"Пасилий",
+			"<a href=\"javascript:void(0);\"",
+			"main-text-section",
+			"<div class=\"submit-wrap wow fadeInRight\" data-wow-delay=\".8s\">",
+			"<div class=\"form-wrap wow fadeInUp\">",
+			"rel=\"Scroll2id\"",
+			"Персональное",
+			"item-wrap-link",
+			"<!--/.slider-->",
+			"<!--/slider-cont-->",
+			"<div class=\"slider\"",
+			"<div>",
+			"<div class=\"head-cont\">",
+			"<div class=\"type arbitration wow fadeInLeft\"><span>арбитражные споры<span></div>",
+			"<div class=\"type maintenance wow fadeInLeft\"><span>правовое сопровождение (абонентское обслуживание)</span></div>",
+			"<div class=\"type revisions wow fadeInRight\"><span>проверки государственных органов<span></div>",
+			"<div class=\"type crime wow fadeInRight\"><span>защита по уголовным делам</span></div>",
+			"<div class=\"type revisions wow slideInRight\"><span>проверки государственных органов</span></div>",
+			"<div class=\"type crime wow slideInRight\"><span>защита по уголовным делам</span></div>",
+			"<div class=\"type arbitration wow slideInLeft\"><span>арбитражные споры</span></div>",
+			"<div class=\"type maintenance wow slideInLeft\"><span>правовое сопровождение (абонентское обслуживание)</span></div>",
+			"<div class=\"head-cont wow slideInLeft\">",
+			"logo-big",
+			"support ",
+			"types-logo-section",
+			"ow fadeInRight\"",
+			" 1px solid #aeaeae;",
+			" #aeaeae;",
+			" 2px solid red",
+			"<span class=\"more\">подробнее</span>",
+			"Lorem ipsum dolo elit amet, consectetur! ",
+			"Lorem ipsum dolo elit ipsum dolor sit amet, consectetur! ",
+			"alt=\"\" class=\"wow fadeInRight\" data-wow-delay=\"0.2s\">",
+			"<div class=\"person-desc wow fadeInLeft\" data-wow-delay=\"0.3s\">",
+			"<div class=\"person-desc wow fadeInLeft\" data-wow-delay=\"0.2s\">",
+			"<div class=\"person-desc wow fadeInLeft\" data-wow-delay=\"0.4s\">",
+			"<div class=\"person-desc wow fadeInLeft\">",
+			"person-photo-cont",
+			"index-services-section",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/work/2018 start template html/app/test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										9288,
+										9289
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										9284,
+										9285
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/work/2018 start template html/app/temp.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "common.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2178,
+						"regions":
+						{
+							"better_bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+								],
+								"scope": "string"
+							}
+						},
+						"selection":
+						[
+							[
+								2178,
+								2178
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": 22,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 936.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "commonsnippets.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2707,
+						"regions":
+						{
+							"better_bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+								],
+								"scope": "string"
+							},
+							"col_00000099":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1213,
+										1227
+									]
+								],
+								"scope": "col_00000099"
+							},
+							"col_000000CC":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1688,
+										1706
+									],
+									[
+										1743,
+										1761
+									]
+								],
+								"scope": "col_000000CC"
+							},
+							"col_010101FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2467,
+										2471
+									]
+								],
+								"scope": "col_010101FF"
+							},
+							"col_C80500FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2123,
+										2130
+									],
+									[
+										2605,
+										2612
+									]
+								],
+								"scope": "col_C80500FF"
+							},
+							"col_CE0500FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1907,
+										1914
+									]
+								],
+								"scope": "col_CE0500FF"
+							},
+							"col_F9B700FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2388,
+										2395
+									]
+								],
+								"scope": "col_F9B700FF"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1630,
+										1634
+									],
+									[
+										2625,
+										2629
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							}
+						},
+						"selection":
+						[
+							[
+								1116,
+								1117
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 26.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "jssnippets.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6268,
+						"regions":
+						{
+							"better_bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+								],
+								"scope": "string"
+							},
+							"col_0000FFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										4734,
+										4738
+									],
+									[
+										4972,
+										4976
+									]
+								],
+								"scope": "col_0000FFFF"
+							}
+						},
+						"selection":
+						[
+							[
+								801,
+								801
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										6241,
+										6242
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										6102,
+										6103
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										946,
+										947
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										753,
+										754
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/work/2018 start template html/app/sass/_additional.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7635,
+						"regions":
+						{
+							"better_bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+								],
+								"scope": "string"
+							},
+							"col_00000019":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										3574,
+										3592
+									]
+								],
+								"scope": "col_00000019"
+							},
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1490,
+										1494
+									],
+									[
+										3338,
+										3342
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_0000FFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1271,
+										1275
+									],
+									[
+										2630,
+										2634
+									],
+									[
+										5341,
+										5345
+									]
+								],
+								"scope": "col_0000FFFF"
+							},
+							"col_007DC6FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7408,
+										7415
+									]
+								],
+								"scope": "col_007DC6FF"
+							},
+							"col_010101FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1490,
+										1494
+									],
+									[
+										3338,
+										3342
+									]
+								],
+								"scope": "col_010101FF"
+							},
+							"col_333333FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2324,
+										2328
+									],
+									[
+										3006,
+										3010
+									]
+								],
+								"scope": "col_333333FF"
+							},
+							"col_550055FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										146,
+										150
+									]
+								],
+								"scope": "col_550055FF"
+							},
+							"col_91ABF6FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										3880,
+										3887
+									]
+								],
+								"scope": "col_91ABF6FF"
+							},
+							"col_DDDDFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										5374,
+										5378
+									]
+								],
+								"scope": "col_DDDDFFFF"
+							},
+							"col_E0FAFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										3920,
+										3927
+									]
+								],
+								"scope": "col_E0FAFFFF"
+							},
+							"col_FEFEFEFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1332,
+										1339
+									]
+								],
+								"scope": "col_FEFEFEFF"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										172,
+										176
+									],
+									[
+										307,
+										311
+									],
+									[
+										594,
+										598
+									],
+									[
+										817,
+										821
+									],
+									[
+										2395,
+										2399
+									],
+									[
+										7428,
+										7432
+									],
+									[
+										7456,
+										7460
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							}
+						},
+						"selection":
+						[
+							[
+								1459,
+								1461
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1591,
+										1592
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1248,
+										1249
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1591,
+										1592
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1248,
+										1249
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"class_or_id": "table-wr",
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 844.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/work/2018 start template html/app/sass/_common_styles.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1731,
+						"regions":
+						{
+							"better_bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+								],
+								"scope": "string"
+							},
+							"col_0000007F":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										460,
+										475
+									]
+								],
+								"scope": "col_0000007F"
+							},
+							"col_010101FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										201,
+										205
+									],
+									[
+										1550,
+										1554
+									]
+								],
+								"scope": "col_010101FF"
+							},
+							"col_333333FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1619,
+										1623
+									]
+								],
+								"scope": "col_333333FF"
+							},
+							"col_888888FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										838,
+										842
+									],
+									[
+										877,
+										881
+									],
+									[
+										920,
+										924
+									],
+									[
+										954,
+										958
+									]
+								],
+								"scope": "col_888888FF"
+							},
+							"col_CCCCCCFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1645,
+										1649
+									]
+								],
+								"scope": "col_CCCCCCFF"
+							}
+						},
+						"selection":
+						[
+							[
+								1109,
+								1109
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 780.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.814877833551,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "start_tpl.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\work\\JJ\\jj.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 95.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}

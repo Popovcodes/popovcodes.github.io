@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 2550" style="enable-background:new 0 0 1920 2550;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="957.5" y1="45.0045" x2="957.5" y2="2631.0044">
+	<stop  offset="4.464285e-03" style="stop-color:#15004F"/>
+	<stop  offset="0.117" style="stop-color:#1F004B"/>
+	<stop  offset="0.3069" style="stop-color:#39003F"/>
+	<stop  offset="0.5509" style="stop-color:#64002B"/>
+	<stop  offset="0.8367" style="stop-color:#9F0011"/>
+	<stop  offset="1" style="stop-color:#C40000"/>
+</linearGradient>
+<polygon class="st0" points="1920,2631 -5,2631 -5,202 571,330 1920,45 "/>
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_2_" y="313" width="1501.1" height="1074.1"/>
+		</defs>
+		<clipPath id="SVGID_3_">
+			<use xlink:href="#SVGID_2_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_3_);">
+			
+				<image style="overflow:visible;" width="1502" height="1075" xlink:href="53E31880.png"  transform="matrix(1 0 0 1 0 312.9574)">
+			</image>
+		</g>
+	</g>
+</g>
+</svg>
