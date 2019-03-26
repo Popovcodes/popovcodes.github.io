@@ -2019,7 +2019,7 @@ sup {
 @media only screen and (max-width: 1199px) {
   .feat-section {
     padding-top: 240px;
-    background-position: 100% 0;
+    background-position: 98% 0;
   }
   .obj-bg {
     display: none !important;
@@ -2126,7 +2126,6 @@ sup {
 }
 
 /*max 1050*/
-/*max 991*/
 @media only screen and (max-width: 767px) {
   body {
     font-size: 14px;
