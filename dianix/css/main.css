@@ -2924,8 +2924,9 @@ sup {
 }
 
 .prices-selects-block .jq-selectbox__dropdown li {
-  padding: 12px 12px;
+  padding: 12px 2px;
   border-radius: 4px;
+  white-space: normal;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
