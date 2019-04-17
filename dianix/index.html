@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="">
+  <meta name="theme-color" content="#ee0e09">
+  <link rel="shortcut icon" href="img/favicon/16.ico">
+  <link rel="apple-touch-icon" href="img/favicon/57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+
+  <!-- стили только для этой страницы: -->
+  <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="libs/farbtastic/farbtastic.css">
+  <link rel="stylesheet" type="text/css" href="libs/formstyler/jquery.formstyler.css">
+  <link rel="stylesheet" type="text/css" href="libs/responsive-tabs/responsive-tabs.css">
+  <link rel="stylesheet" type="text/css" href="libs/fancybox/fancybox.min.css">
+  <!-- /стили только для этой страницы -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <title>Дианикс</title>
+</head>
+<body>
+
+<section class="main-top-section">
+  <div class="top-slider-wr">
+    <div class="top-slider slider" id="top-slider">
+      <div class="slide">
+        <img src="img/sl1.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="img/sl2.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="btn-menu" id="btn-menu"><span><i></i></span></div>
+  <div class="top-outer">
+    <div class="wrapper">
+      <header class="header">
+        <div class="h-center">
+          <a href="index.html" class="logo">
+            <img src="img/logo-shadow.png" alt="">
+          </a>
+          <div class="h-links">
+            <button class="master-call">Вызвать замерщика</button>
+            <a href="calculator.html">Калькулятор</a>
+          </div>
+        </div>
+        <div class="h-right">
+          <a href="tel:+79295967274" class="h-phone">+7 (929) 596-72-74</a><br>
+          <button class="recall-call">Заказать звонок</button>
+        </div>
+      </header>
+
+      <div class="top-center">
+        <h1 class="main-heading">Цвет потолка <br> в подарок</h1>
+        <p>Воспользуйтесь установкой ярких и необычных <br>потолков по стоимости белых</p>
+        <button class="button recall-call">Заказать потолок</button>
+        <div class="top-slider-dots" id="top-slider-dots"></div>
+      </div><!-- /.top-center -->
+
+      <span class="arr-down"></span>
+    </div><!-- /.wrapper -->
+  </div><!-- /.top-outer -->
+
+</section><!-- /.main-top-section -->
+
+<section class="catalog-slider-section">
+  <div class="wrapper">
+    <span class="pre-heading">К вашим услугам</span>
+    <div class="slider-heading-wr">
+      <h2>Каталог натяжных <br>потолков</h2>
+      <div class="slider-heading-r">
+        <div class="catalog-arrows">
+          <button class="circle-arr circle-arr-prev" id="cat-slider-prev"></button>
+          <button class="circle-arr circle-arr-next" id="cat-slider-next"></button>
+        </div>
+        <a href="catalog.html" class="button small">Все варианты</a>
+      </div>
+    </div>
+  </div><!-- /.wrapper -->
+  <div class="catalog-slider-wr">
+    <div class="catalog-slider slider" id="catalog-slider">
+
+      <div class="card" data-hit="1"><!-- метка "хит продаж", если =="1" -->
+        <div class="img-wr">
+          <img src="img/img1.jpg" alt="">
+        </div>
+        <div class="text-wr">
+          <div>
+            <span class="card-name">Белые</span>
+            <p>Белые натяжные потолки считаются классическим вариантом отделки, который используют для интерьеров различной стилистики.</p>
+          </div>
+          <div>
+            <span class="card-price">От 400 руб.</span>
+            <a href="product.html" class="button white small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-hit="">
+        <div class="img-wr">
+          <img src="img/img1.jpg" alt="">
+        </div>
+        <div class="text-wr">
+          <div>
+            <span class="card-name">Фактурные</span>
+            <p>Если вы мечтаете создать в своем жилище по-настоящему уникальную атмосферу, в которой потолок будет выступать яркой акцентной деталью, выбирайте фактурные натяжные потолки.</p>
+          </div>
+          <div>
+            <span class="card-price">От 900 руб.</span>
+            <a href="product.html" class="button white small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-hit="">
+        <div class="img-wr">
+          <img src="img/img1.jpg" alt="">
+        </div>
+        <div class="text-wr">
+          <div>
+            <span class="card-name">Белые матовые</span>
+            <p>Белый матовый натяжной потолок позволяет создать в помещении сдержанную приятную атмосферу, которая лучше всего подойдет для классических интерьеров.</p>
+          </div>
+          <div>
+            <span class="card-price">От 400 руб.</span>
+            <a href="product.html" class="button white small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-hit="">
+        <div class="img-wr">
+          <img src="img/img1.jpg" alt="">
+        </div>
+        <div class="text-wr">
+          <div>
+            <span class="card-name">Белые глянцевые</span>
+            <p>Если вы хотите, чтобы потолки вашего жилища привлекали внимание и выступали эффектной деталью интерьера, выбирайте белый глянцевый натяжной потолок.</p>
+          </div>
+          <div>
+            <span class="card-price">От 400 руб.</span>
+            <a href="product.html" class="button white small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-hit="1">
+        <div class="img-wr">
+          <img src="img/img1.jpg" alt="">
+        </div>
+        <div class="text-wr">
+          <div>
+            <span class="card-name">Лаковые</span>
+            <p>Лаковые натяжные потолки способны придать изюминку любому интерьеру. Их высокая отражающая способность помогает исправить многие изъяны помещения. </p>
+          </div>
+          <div>
+            <span class="card-price">От 400 руб.</span>
+            <a href="product.html" class="button white small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-hit="">
+        <div class="img-wr">
+          <img src="img/img1.jpg" alt="">
+        </div>
+        <div class="text-wr">
+          <div>
+            <span class="card-name">Фактурные</span>
+            <p>Если текста мало</p>
+          </div>
+          <div>
+            <span class="card-price">От 400 руб.</span>
+            <a href="product.html" class="button white small">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+  </div><!-- /.wrapper -->
+</section><!-- /.catalog-slider-section -->
+
+<section class="colorpick-section">
+  <div class="wrapper">
+    <h2>Подбор цвета</h2>
+    <p class="subheading">Узнайте как будет выглядеть ваша квартира</p>
+    <div class="colorpickers-wr">
+      <div class="colorpickers-bar">
+        <div class="colorpicker">
+          <span class="colorpicker-title">Выберите цвет потолка</span>
+          <div id="colorpicker-top" class="colorpicker-input"></div>
+        </div>
+        <div class="colorpicker">
+          <span class="colorpicker-title">Выберите цвет стен</span>
+          <div id="colorpicker-bottom" class="colorpicker-input"></div>
+        </div>
+      </div>
+
+      <div class="colorpick-area">
+        <img src="img/colorpicker/prim1.jpg" alt="">
+        
+        <svg
+           xmlns:dc="http://purl.org/dc/elements/1.1/"
+           xmlns:cc="http://creativecommons.org/ns#"
+           xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+           xmlns:svg="http://www.w3.org/2000/svg"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+           xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+           version="1.1"
+           id="svg4485"
+           width="896"
+           height="612"
+           viewBox="0 0 896 612"
+           sodipodi:docname="prim-top.svg"
+           inkscape:version="0.92.1 r15371">
+          <metadata
+             id="metadata4491">
+            <rdf:RDF>
+              <cc:Work
+                 rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                   rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                <dc:title></dc:title>
+              </cc:Work>
+            </rdf:RDF>
+          </metadata>
+          <defs>
+             id="defs4489",
+             <style type="text/css">
+              .fillTop {fill:rgb(255,255,255);}
+            </style>
+          </defs>
+          <path class="fillTop"
+             style="stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:.6;opacity:1"
+             d="M 10.761085,0.92409664 26.518388,138.12793 494.24127,197.3139 855.89059,83.938182 896.24466,99.31116 896,0 Z"
+             id="path4495"
+             inkscape:connector-curvature="0" />
+        </svg>
+  
+        <svg
+           xmlns:dc="http://purl.org/dc/elements/1.1/"
+           xmlns:cc="http://creativecommons.org/ns#"
+           xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+           xmlns:svg="http://www.w3.org/2000/svg"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+           xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+           version="1.1"
+           id="svg4485"
+           width="896"
+           height="612"
+           viewBox="0 0 896 612"
+           sodipodi:docname="prim-bottom.svg"
+           inkscape:version="0.92.1 r15371">
+          <metadata
+             id="metadata4491">
+            <rdf:RDF>
+              <cc:Work
+                 rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                   rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                <dc:title></dc:title>
+              </cc:Work>
+            </rdf:RDF>
+          </metadata>
+          <defs>
+             id="defs4489",
+             <style type="text/css">
+              .fillBottom {fill:rgb(200, 200, 200);}
+            </style>
+          </defs>
+          <path class="fillBottom" 
+             style="display:inline;opacity:1;fill-opacity:.6;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0"
+             d="M 848.97266,113.05078 498.94922,211.9707 8.6953125,157.61914 0,121.74805 -1.0878906,532.64648 9.7832031,501.12305 496.77539,453.29297 l 351.11133,83.70117 47.82812,-9.7832 1.08789,-398.94141 z m -701.67969,84.78906 271.21484,25.54493 v 162.51171 l 8.15235,0.54493 0.54492,4.34765 -287.02344,11.65821 -0.19141,-5.86133 7.87891,-0.28711 z"
+             id="path4499"
+             inkscape:connector-curvature="0" />
+        </svg>
+
+      </div>
+    </div><!-- /.colorpickers-wr -->
+
+  </div><!-- /.wrapper -->
+</section><!-- /.colorpick-section -->
+
+
+<section class="calculator-section ind-calculator-section" id="calculator">
+  <div class="wrapper">
+    <h2>Калькулятор натяжных потолков</h2>
+    <!-- calculator begin. The same html for index.html and calculator.html -->
+    <div class="calculator-wr"> 
+
+      <div class="calc-l">
+        <div class="scale-wr">
+          <div class="scale-down">
+            <span class="current-minus-two neighbour" id="current-minus-two"></span>
+            <span class="current-minus-one neighbour" id="current-minus-one"></span>
+          </div><!-- /.scale-down -->
+          <input maxlength="3" class="scale-current quant-input" id="scale-current" value="16">
+          <div class="scale-up">
+            <span class="current-plus-one neighbour" id="current-plus-one"></span>
+            <span class="current-plus-two neighbour" id="current-plus-two"></span>
+          </div><!-- /.scale-up -->
+        </div><!-- /.scale-wr -->
+        <div class="scale-btns-wr">
+          <button class="scale-btn" id="scale-minus">-</button>
+          <span class="scale-btns-text">Площадь потолка, м<sup>2</sup></span>
+          <button class="scale-btn" id="scale-plus">+</button>
+        </div>
+        <div class="calc-addict-data">
+          <div class="calc-data">
+            <span>Количество люстр </span>
+            <span class="calc-inputs-wr">
+              <input type="text" maxlength="3" class="quant-input" id="chandelier-num" placeholder="0">
+            </span>
+            <span> шт.</span>
+          </div>
+          <div class="calc-data">
+            <span>Количество точечных светильников</span>
+            <span class="calc-inputs-wr">
+              <input type="text" maxlength="3" class="quant-input" id="spotlights-num" placeholder="0">
+            </span>
+            <span> шт.</span>
+          </div>
+          <div class="calc-data">
+            <span>Количество труб отопления </span>
+            <span class="calc-inputs-wr">
+              <input type="text" maxlength="3" class="quant-input" id="pipes-num" placeholder="0">
+            </span>
+            <span> шт.</span>
+          </div>
+        </div><!-- /.calc-addict-data -->
+      </div><!-- /. calc-l -->
+      <div class="calc-r">
+        <h2>Калькулятор <span>натяжных </span>потолков</h2>
+        <div class="calc-select-sw">
+          <!-- value = стоимость м2 для калькулятора -->
+          <select id="calc-select" data-placeholder="Выберите тип потолка">
+            <option value=""></option> <!-- 1й пустой -->
+            <option value="400">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="450">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="500">ПВХ глянцевые-галактика (CLIPSO, Франция) lorem ipsum</option>
+            <option value="550">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="600">ПВХ фактурные-галактика (CLIPSO, Франция)</option>
+            <option value="650">ПВХ глянцевые-галактика (MSD, Китай) lorem ipsum</option>
+            <option value="700">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="750">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="800">ПВХ глянцевые-галактика (CLIPSO, Франция) lorem ipsum</option>
+            <option value="850">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="900">ПВХ фактурные-галактика (MSD, Китай)</option>
+          </select>
+        </div>
+        
+        <div class="approximate-cost">
+          <span class="approx-text">Примерная стоимость <br>потолка</span>
+          <span class="approx-val" id="approx-val">
+              <span id="cost-calculated"></span>
+              <span> руб.</span>
+          </span>
+        </div><!-- /.approximate-cost -->
+        <div class="accurate-cost">
+          <a href="calculator.html" class="button small" id="calculate-btn">точный расчет</a>
+          <span class="accurate-consist">Что входит в&nbsp;стоимость
+            <span class="accurate-tooltip">
+              <span class="tooltip-content">
+                <span class="tooltip-heading">В стоимость входит:</span>
+                <ul>
+                  <li>Выезд специалиста - замерщика</li>
+                  <li>Материалы и комплектующие для натяжного потолка</li>
+                  <li>Монтаж натяжного потолка "Под Ключ"</li>
+                </ul>
+            </span>
+          </span>
+        </div><!-- /.accurate-cost -->
+      </div><!-- /.calc-r -->
+    </div><!-- /.calculator-wr -->
+    <!-- calculator end -->
+
+  </div><!-- /.wrapper -->
+</section><!-- /.ind-calculator-section -->
+
+<section class="stages-section">
+  <div class="wrapper">
+    <h2>Этапы установки натяжных потолков</h2>
+    <p class="subheading">Ознакомьтесь с последовательностью работы с нами</p>
+    <div class="stages-wr">
+      <div class="stage-i stage-1">
+        <img src="img/st1.png" alt="">
+        <div class="stage-text">
+          <h4>Заявка</h4>
+          <p>Оформление <br>заявки по <br>телефону: <br><a href="tel:+79999999999">+7(999)999-99-99</a></p>
+        </div>
+      </div><!-- /.stage-i -->
+      <div class="stage-i stage-2">
+        <img src="img/st2.png" alt="">
+        <div class="stage-text">
+          <h4>Подбор <br>материала <br>и цвета</h4>
+          <p>Потолки из Китая, <br>Германии и Бельгии, <br>Любой цвет.</p>
+        </div>
+      </div><!-- /.stage-i -->
+      <div class="stage-i stage-3">
+        <img src="img/st3.png" alt="">
+        <div class="stage-text">
+          <h4>Выезд <br>замерщика</h4>
+          <p>Бесплатный выезд <br>по Москве <br>и области.</p>
+        </div>
+      </div><!-- /.stage-i -->
+      <div class="stage-i stage-4">
+        <img src="img/st4.png" alt="">
+        <div class="stage-text">
+          <h4>Заключение<br> договора</h4>
+          <p>Составление <br>договора, по <br>которому будет <br>действовать <br>гарантия.</p>
+        </div>
+      </div><!-- /.stage-i -->
+      <div class="stage-i stage-5">
+        <img src="img/st5.png" alt="">
+        <div class="stage-text">
+          <h4>Производство</h4>
+          <p>Изготавливаем <br>полотно по <br>вашему заказу</p>
+        </div>
+      </div><!-- /.stage-i -->
+      <div class="stage-i stage-6">
+        <img src="img/st6.png" alt="">
+        <div class="stage-text">
+          <h4>Установка</h4>
+          <p>Монтаж в течение <br>24 часов после <br>заказа</p>
+        </div>
+      </div><!-- /.stage-i -->
+      <img src="img/centerlight.png" alt="" class="stage-center">
+    </div>
+  </div><!-- /.wrapper -->
+  <img src="img/objects/el9.png" alt="" class="prlx1 el1">
+  <img src="img/objects/el5.png" alt="" class="prlx1 el2">
+  <img src="img/objects/el4.png" alt="" class="prlx1 el3">
+  <img src="img/objects/el3.png" alt="" class="prlx1 el4">
+  <img src="img/objects/el2.png" alt="" class="prlx1 el5">
+  <img src="img/objects/el1.png" alt="" class="prlx1 el6">
+</section><!-- /.stages-section -->
+
+<section class="ind-about-section">
+  <div class="wrapper">
+    <h2>О компании</h2>
+    <p class="subheading">Почему выбирают именно нас?</p>
+    <div class="ind-about-content">
+      <div class="ind-about-img-wr prlx3">
+        <img src="img/roomimg.jpg" alt="">
+      </div>
+      <div class="about-bar prlx2">
+        <div class="about-bar-content">
+          <div>
+            <h4 class="about-head">2003</h4>
+            <p>Харизматическое лидерство вызывает христианско-демократический национализм. Элемент политического </p>
+          </div>
+          <div>
+            <h4 class="about-head">2009</h4>
+            <p>Харизматическое лидерство вызывает христианско-демократический национализм. Элемент политического</p>
+          </div>
+          <div class="btn-wr">
+            <a href="about.html" class="button white small">Подробнее</a> 
+          </div>
+        </div>
+      </div><!-- /.about-bar -->
+    </div><!-- /.ind-about-content -->
+  </div><!-- /.wrapper -->
+</section><!-- /.ind-about-section -->
+
+<section class="sertificates-section">
+  <div class="wrapper">
+    <h2>Сертификаты</h2>
+    <p class="subheading">Наши сертификаты и свидетельства</p>
+    <div class="sert-wr">
+      <div class="sert-item">
+        <a href="img/sert.jpg" class="fancy sert-img" data-fancybox="gallery">
+          <img src="img/sert.jpg" alt="">
+        </a>
+        <span>Германия</span>
+      </div>
+      <div class="sert-item">
+        <a href="img/sert.jpg" class="fancy sert-img" data-fancybox="gallery">
+          <img src="img/sert.jpg" alt="">
+        </a>
+        <span>Китай</span>
+      </div>
+      <div class="sert-item">
+        <a href="img/sert.jpg" class="fancy sert-img" data-fancybox="gallery">
+          <img src="img/sert.jpg" alt="">
+        </a>
+        <span>Франция</span>
+      </div>
+    </div><!-- /.sert-wr -->
+  </div><!-- /.wrapper -->
+  <img src="img/objects/el8.png" alt="" class="prlx1 el7">
+  <img src="img/objects/el7.png" alt="" class="prlx1 el8">
+  <img src="img/objects/el6.png" alt="" class="prlx1 el9">
+</section><!-- /.sertificates-section -->
+
+<section class="warranty-section">
+  <div class="wrapper">
+    <h2>Персональная гарантия результата</h2>
+    <p class="subheading">От руководителя компании</p>
+    <div class="video-wr">
+      <iframe src="https://www.youtube.com/embed/YrddaP6ml1M?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div><!-- /.wrapper -->
+</section><!-- /.warranty-section -->
+
+<section class="faq-section">
+  <div class="wrapper">
+    <h2>Вопросы и ответы</h2>
+    <div class="faq-wr faq-head-wr">
+      <div class="faq-l">Вопрос</div>
+      <div class="faq-r">Ответ</div>
+    </div>
+    <div class="faq-wr" id="tabs-container">
+      <ul class="faq-l">
+          <li><a href="#tab-1">Какие показания к посещению соляной пещеры?</a></li>
+          <li><a href="#tab-2">Есть ли противопоказания к посещению?</a></li>
+          <li><a href="#tab-3">Какая соль используется в вашей пещере?</a></li>
+          <li><a href="#tab-4">Как часто необходимо посещать пещеру?</a></li>
+          <li><a href="#tab-5">Можно попробовать раз, а уже потом купить абонемент?</a></li>
+          <li><a href="#tab-6">Сколько по времени длится сеанс в соляной пещере?</a></li>
+          <li><a href="#tab-7">С какого возраста детям можно посещать соляную пещеру?</a></li>
+          <li><a href="#tab-8">Можно ли прийти с двумя детьми?</a></li>
+      </ul>
+      <div class="faq-r">
+        <div class="tab" id="tab-1">
+          <p><strong>Какие показания к посещению соляной комнаты?</strong></p>
+          <p>Очень полезны процедуры в соляной пещере для тех, кто страдает от частых простуд. Посетив пещеру на начальном этапе заболевания, можно пресечь его развитие.</p>
+          <p>Рекомендуется посещать галокамеру и аллергикам, а также людям с ослабленным иммунитетом.</p>
+          <p>Спелеокамера восстанавливает организм после серьезных заболеваний, успокаивает нервную систему и улучшает мозговую деятельность.</p>
+        </div><!-- /.tab -->
+        <div class="tab" id="tab-2">
+          <p><strong>Есть ли противопоказания к посещению?</strong></p>
+          <p>Quis quos !?</p>
+          <p>Nobis rerum quis quos nemo praesentium, vitae aliquam exercitationem, dolorem maxime ducimus, eos recusandae fugiat blanditiis possimus tenetur ut quibusdam inventore commodi. Officia, quia.</p>
+          <p>Saepe, optio rem? Amet et neque ratione illum dolorum quos quibusdam repellendus. Similique voluptatibus numquam accusamus praesentium pariatur, neque dolor maxime repudiandae, eius sapiente.</p>
+        </div><!-- /.tab -->
+        <div class="tab" id="tab-3">
+          <p><strong>Какая соль используется в вашей пещере?</strong></p>
+          <p>dit harum itaque exercitationem quae cum cumque perferendis</p>
+          <p>Eum nihil, voluptatibus perferendis. Aut temporibus consequatur qui reprehenderit cumque, numquam alias, ut dolorum accusamus officia reiciendis nesciunt provident dolorem, a quibusdam quo nam!</p>
+          <p>Odit harum itaque exercitationem quae cum cumque perferendis molestias consequuntur voluptates, dolorum sequi. Commodi quis tempore accusamus dolorem incidunt atque eveniet tempora. Mollitia, rem?</p>
+        </div><!-- /.tab -->
+        <div class="tab" id="tab-4">
+          <p><strong>Как часто необходимо посещать пещеру?</strong></p>
+          <p>dit harum itaque exercitationem quae cum cumque perferendis</p>
+          <p>Odit harum itaque exercitationem quae cum cumque perferendis molestias consequuntur voluptates, dolorum sequi. Commodi quis tempore accusamus dolorem incidunt atque eveniet tempora. Mollitia, rem?</p>
+        </div><!-- /.tab -->
+        <div class="tab" id="tab-5">
+          <p><strong>Можно попробовать раз, а уже потом купить абонемент?</strong></p>
+          <p>dit harum itaque exercitationem quae cum cumque perferendis</p>
+          <p>Harum itaque exercitationem quae cum cumque perferendis molestias consequuntur voluptates, dolorum sequi. Commodi quis tempore accusamus dolorem incidunt atque eveniet tempora. Mollitia, rem?</p>
+        </div><!-- /.tab -->
+        <div class="tab" id="tab-6">
+          <p><strong>Сколько по времени длится сеанс в соляной пещере?</strong></p>
+          <p>dit harum itaque exercitationem quae cum cumque perferendis</p>
+          <p>Molestias consequuntur voluptates, dolorum sequi. Commodi quis tempore accusamus dolorem incidunt atque eveniet tempora. Mollitia, rem?</p>
+        </div><!-- /.tab -->
+        <div class="tab" id="tab-7">
+          <p><strong>С какого возраста детям можно посещать соляную пещеру?</strong></p>
+          <p>dit harum itaque exercitationem quae cum cumque perferendis</p>
+          <p>Odit harum itaque exercitationem quae cum cumque  incidunt atque eveniet tempora. Mollitia, rem?</p>
+        </div><!-- /.tab -->
+        <div class="tab" id="tab-8">
+          <p><strong>Можно ли прийти с двумя детьми?</strong></p>
+          <p>dit harum itaque exercitationem quae cum cumque perferendis</p>
+          <p>Odit harum itaque exercitationem quae cum cumque perferendis molestias consequuntur voluptates, dolorum sequi. Commodi quis tempore accusamus dolorem incidunt atque eveniet tempora. Mollitia, rem?</p>
+        </div><!-- /.tab -->
+      </div><!-- /.faq-answers -->
+    </div><!-- /.faq-wr -->
+
+  </div><!-- /.wrapper -->
+</section><!-- /.faq-section -->
+
+
+<section class="map-section">
+  <div class="map" id="map"></div>
+</section>
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer-top">
+      <div class="f-nav-wr">
+        <h5 class="f-subhead">Страницы</h5>
+        <nav class="f-nav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="works.html">Наши работы</a></li>
+            <li><a href="price.html">Цены</a></li>
+            <li><a href="calculator.html">Калькулятор</a></li>
+          </ul>
+        </nav>
+      </div><!-- /.f-nav-wr -->
+      <div>
+        <h5 class="f-subhead">Адрес</h5>
+        <p>г. Москва, Зеленоградский АО,<br> ул. Заводская д.1-Б, 3 этаж,<br> пав. 3</p>
+      </div>
+      <div>
+        <h5 class="f-subhead">Соцсети</h5>
+        <ul class="f-social">
+          <li>
+            <a href="javascript:void(0);">
+              <img src="img/icons/fb.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <img src="img/icons/tw.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <img src="img/icons/ig.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div><!-- /.footer-top -->
+    <div class="footer-bottom">
+      <a href="index.html" class="f-logo">
+        <img src="img/logo.png" alt="">
+      </a>
+      <p class="copy">&copy; 2019 «ДИАНИКС» - натяжные потолки в Зеленограде<br>ООО «РемСервис» ИНН 7735171566</p>
+      <button class="button small recall-call">Заказать звонок</button>
+    </div><!-- /.footer-bottom -->
+  </div><!-- /.wrapper -->
+  
+</footer>
+
+
+
+<div class="overlay hidden" id="overlay"></div>
+
+<!-- =========================== navigation =========================== -->
+<div class="fullscreen-menu" id="fullscreen-menu">
+  <button class="full-close" id="full-close">&#10006;</button>
+  <div class="wrapper full-menu-content">
+    <nav class="full-nav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="lights.html">Светильники</a></li>
+        <li><a href="colors.html">Цвета</a></li>
+        <li><a href="works.html">Наши работы</a></li>
+        <li><a href="price.html">Цены</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="full-r">
+      <ul class="full-social">
+        <li>
+          <a href="javascript:void(0);">
+            <img src="img/icons/tw2.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);">
+            <img src="img/icons/fb2.png" alt="">
+          </a>
+        </li>
+      </ul>
+      <ul class="full-contacts">
+        <li>
+          <a href="tel:+74993981019">+7 (499) 398-10-19</a>
+        </li>
+        <li>
+          <a href="tel:+79295967274">+7 (929) 596-72-74</a>
+        </li>
+        <li>пн-вс с 9.00-21.00</li>
+        <li>
+          <a href="mailto:info@dianix.ru">info@dianix.ru</a>
+        </li>
+      </ul>
+      <a href="https://yandex.ru/maps/?um=constructor%3A4a12386743b91e57c8d84f1bfc667f4da419ea63b23dcc74f03b5a910af2687c&source=constructorLink" class="button small transparent" target="_blanc">Смотреть на карте</a>
+    </div>
+    <div class="full-bottom">
+      <p>&copy; 2019 «ДИАНИКС» - натяжные потолки в Зеленограде <br>ООО «РемСервис» ИНН 7735171566</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- =========================== modals =========================== -->
+<div class="modal-cont hidden" id="call-modal-cont">
+  <button class="modal-close">&#10006;</button>
+  <img src="img/logo-dark.png" class="modal-logo" alt="">
+  <h3 class="modal-head">Заказать обратный звонок</h3>
+  <p class="modal-subhead">Мы перезвоним вам в ближайшее время</p>
+  <form class="modal-form">
+    <input type="text" placeholder="Имя" required>
+    <input type="tel" placeholder="Телефон" required>
+    <textarea placeholder="Комментарий"></textarea>
+    <button class="button" type="submit">Заказать звонок</button>
+  </form>
+</div>
+
+<div class="modal-cont hidden" id="master-modal-cont">
+  <button class="modal-close">&#10006;</button>
+  <img src="img/logo-dark.png" class="modal-logo" alt="">
+  <h3 class="modal-head">Вызвать замерщика</h3>
+  <p class="modal-subhead">Мы перезвоним вам в ближайшее время</p>
+  <form class="modal-form">
+    <input type="text" placeholder="Имя" required>
+    <input type="tel" placeholder="Телефон" required>
+    <textarea placeholder="Комментарий"></textarea>
+    <button class="button" type="submit">Отправить</button>
+  </form>
+</div>
+
+
+
+
+<script src="libs/jquery_3.3.1/jquery.min.js"></script>
+
+<!-- скрипты только для этой страницы -->
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/farbtastic/farbtastic.js"></script>
+<script src="libs/formstyler/jquery.formstyler.js"></script>
+<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+<script src="libs/responsive-tabs/responsive-tabs.min.js"></script>
+<script src="js/calculator.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/ymap.js"></script>
+<!-- /скрипты только для этой страницы -->
+
+<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

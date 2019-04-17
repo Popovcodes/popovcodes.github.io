@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="">
+  <meta name="theme-color" content="#ee0e09">
+  <link rel="shortcut icon" href="img/favicon/16.ico">
+  <link rel="apple-touch-icon" href="img/favicon/57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/114.png">
+
+  <!-- стили только для этой страницы: -->
+   <link rel="stylesheet" type="text/css" href="libs/formstyler/jquery.formstyler.css">
+  <!-- /стили только для этой страницы -->
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <title>Калькулятор</title>
+</head>
+<body>
+
+<section class="top-section">
+  <div class="btn-menu" id="btn-menu"><span><i></i></span></div>
+  <div class="wrapper top-section-wrapper">
+    <header class="header">
+        <div class="h-center">
+          <a href="index.html" class="logo">
+            <img src="img/logo-shadow.png" alt="">
+          </a>
+          <div class="h-links">
+            <button class="master-call">Вызвать замерщика</button>
+            <a href="calculator.html">Калькулятор</a>
+          </div>
+        </div>
+        <div class="h-right">
+          <a href="tel:+79295967274" class="h-phone">+7 (929) 596-72-74</a><br>
+          <button class="recall-call">Заказать звонок</button>
+        </div>
+      </header>
+
+      <div class="top-center">
+        <h2 class="main-heading">Калькулятор</h2>
+        <p class="top-subhead">Узнай стоимость натяжного<br>потолка с помощью онлайн<br>калькулятора</p>
+      </div><!-- /.top-center -->
+
+      <span class="arr-down"></span>
+  </div><!-- /.wrapper -->
+  <img src="img/topImgs/calculator.png" alt="" class="top-img">
+</section>
+
+<section class="calc-text-section">
+  <div class="wrapper">
+    <h1>Онлайн калькулятор потолков</h1>
+    <h4 class="subhead">Расчет стоимости потолка онлайн</h4>
+    <div class="cols">
+      <p>Расчет стоимости потолка онлайн – это прекрасная альтернатива общению с менеджером по телефону. Так, указав параметры комнаты, в которой необходимо установить ПВХ или тканевое полотно, и материал, выбранный в качестве базового, вы сможете получить предварительную цену за потолок.</p>
+      <p>Так в нашем онлайн калькуляторе вам достаточно заполнить два основных поля для расчета потолка:</p>
+      <ul>
+        <li>площадь потолка</li>
+        <li>тип потолка</li>
+      </ul>
+      <p>Учитывая эти параметры, наш сервис сможет оценить затраты материала на комнату, а также объем работ.</p>
+      <p>Для более точной оценки бюджета вы также можете указать:</p>
+      <ul>
+        <li>количество люстр</li>
+        <li>количество точечных светильников</li>
+        <li>количество труб отопления</li>
+      </ul>
+      <p>Для подбора материала мы предлагаем вам более 30 вариантов ПВХ и тканевых пленок производства Германии, Франции, Бельгии и Китая.</p>
+      <img src="img/master.jpg" alt="">
+      <p>Также у нас вы можете заказать:</p>
+      <ul>
+        <li>Потолки с фотопечатью</li>
+        <li>Многоуровневые потолки</li>
+        <li>Парящие потолки</li>
+        <li>Потолки с перфорацией</li>
+        <li>Потолки с декоративной подсветкой</li>
+      </ul>
+      <p>Однако предупреждаем, что расчет на онлайн калькуляторе потолков является лишь приблизительным, и сумма при заключении договора на изготовление и монтаж ПВХ и тканевых полотен может варьироваться как в меньшую, так и в большую сторону.</p>
+      <p>Минимальная стоимость заказа составляет 7000 рублей.</p>      
+    </div><!-- /.cols -->
+
+  </div><!-- /.wrapper -->
+
+  <i class="reds l-sticky prlx2"></i>
+  <i class="dotted sm l-sticky"></i>
+  <i class="reds sm r-sticky prlx2"></i>
+  <i class="dotted r-sticky"></i>
+</section><!-- /.calc-text-section -->
+
+<section class="calculator-section full-calculator-section">
+  <div class="wrapper">
+    <h2>Калькулятор натяжных потолков</h2>
+    <!-- calculator begin. The same html for index.html and calculator.html -->
+    <div class="calculator-wr"> 
+
+      <div class="calc-l">
+        <div class="scale-wr">
+          <div class="scale-down">
+            <span class="current-minus-two neighbour" id="current-minus-two"></span>
+            <span class="current-minus-one neighbour" id="current-minus-one"></span>
+          </div><!-- /.scale-down -->
+          <input maxlength="3" class="scale-current quant-input" id="scale-current" value="16">
+          <div class="scale-up">
+            <span class="current-plus-one neighbour" id="current-plus-one"></span>
+            <span class="current-plus-two neighbour" id="current-plus-two"></span>
+          </div><!-- /.scale-up -->
+        </div><!-- /.scale-wr -->
+        <div class="scale-btns-wr">
+          <button class="scale-btn" id="scale-minus">-</button>
+          <span class="scale-btns-text">Площадь потолка, м<sup>2</sup></span>
+          <button class="scale-btn" id="scale-plus">+</button>
+        </div>
+        <div class="calc-addict-data">
+          <div class="calc-data">
+            <span>Количество люстр </span>
+            <span class="calc-inputs-wr">
+              <input type="text" maxlength="3" class="quant-input" id="chandelier-num" placeholder="0">
+            </span>
+            <span> шт.</span>
+          </div>
+          <div class="calc-data">
+            <span>Количество точечных светильников</span>
+            <span class="calc-inputs-wr">
+              <input type="text" maxlength="3" class="quant-input" id="spotlights-num" placeholder="0">
+            </span>
+            <span> шт.</span>
+          </div>
+          <div class="calc-data">
+            <span>Количество труб отопления </span>
+            <span class="calc-inputs-wr">
+              <input type="text" maxlength="3" class="quant-input" id="pipes-num" placeholder="0">
+            </span>
+            <span> шт.</span>
+          </div>
+        </div><!-- /.calc-addict-data -->
+      </div><!-- /. calc-l -->
+      <div class="calc-r">
+        <h2>Калькулятор <span>натяжных </span>потолков</h2>
+        <div class="calc-select-sw">
+          <!-- value = стоимость м2 для калькулятора -->
+          <select id="calc-select" data-placeholder="Выберите тип потолка">
+            <option value=""></option> <!-- 1й пустой -->
+            <option value="400">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="450">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="500">ПВХ глянцевые-галактика (CLIPSO, Франция) lorem ipsum</option>
+            <option value="550">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="600">ПВХ фактурные-галактика (CLIPSO, Франция)</option>
+            <option value="650">ПВХ глянцевые-галактика (MSD, Китай) lorem ipsum</option>
+            <option value="700">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="750">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="800">ПВХ глянцевые-галактика (CLIPSO, Франция) lorem ipsum</option>
+            <option value="850">ПВХ фактурные-галактика (MSD, Китай)</option>
+            <option value="900">ПВХ фактурные-галактика (MSD, Китай)</option>
+          </select>
+        </div>
+        
+        <div class="approximate-cost">
+          <span class="approx-text">Примерная стоимость <br>потолка</span>
+          <span class="approx-val" id="approx-val">
+              <span id="cost-calculated"></span>
+              <span> руб.</span>
+          </span>
+        </div><!-- /.approximate-cost -->
+        <div class="accurate-cost">
+          <a href="calculator.html" class="button small" id="calculate-btn">точный расчет</a>
+          <span class="accurate-consist">Что входит в&nbsp;стоимость
+            <span class="accurate-tooltip">
+              <span class="tooltip-content">
+                <span class="tooltip-heading">В стоимость входит:</span>
+                <ul>
+                  <li>Выезд специалиста - замерщика</li>
+                  <li>Материалы и комплектующие для натяжного потолка</li>
+                  <li>Монтаж натяжного потолка "Под Ключ"</li>
+                </ul>
+            </span>
+          </span>
+        </div><!-- /.accurate-cost -->
+      </div><!-- /.calc-r -->
+    </div><!-- /.calculator-wr -->
+    <!-- calculator end -->
+
+  </div><!-- /.wrapper -->
+</section><!-- /.ind-calculator-section -->
+
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer-top">
+      <div class="f-nav-wr">
+        <h5 class="f-subhead">Страницы</h5>
+        <nav class="f-nav">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="works.html">Наши работы</a></li>
+            <li><a href="price.html">Цены</a></li>
+            <li><a href="calculator.html">Калькулятор</a></li>
+          </ul>
+        </nav>
+      </div><!-- /.f-nav-wr -->
+      <div>
+        <h5 class="f-subhead">Адрес</h5>
+        <p>г. Москва, Зеленоградский АО,<br> ул. Заводская д.1-Б, 3 этаж,<br> пав. 3</p>
+      </div>
+      <div>
+        <h5 class="f-subhead">Соцсети</h5>
+        <ul class="f-social">
+          <li>
+            <a href="javascript:void(0);">
+              <img src="img/icons/fb.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <img src="img/icons/tw.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <img src="img/icons/ig.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div><!-- /.footer-top -->
+    <div class="footer-bottom">
+      <a href="index.html" class="f-logo">
+        <img src="img/logo.png" alt="">
+      </a>
+      <p class="copy">&copy; 2019 «ДИАНИКС» - натяжные потолки в Зеленограде<br>ООО «РемСервис» ИНН 7735171566</p>
+      <button class="button small recall-call">Заказать звонок</button>
+    </div><!-- /.footer-bottom -->
+  </div><!-- /.wrapper -->
+  
+</footer>
+
+
+
+<div class="overlay hidden" id="overlay"></div>
+
+<!-- =========================== navigation =========================== -->
+<div class="fullscreen-menu" id="fullscreen-menu">
+  <button class="full-close" id="full-close">&#10006;</button>
+  <div class="wrapper full-menu-content">
+    <nav class="full-nav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="lights.html">Светильники</a></li>
+        <li><a href="colors.html">Цвета</a></li>
+        <li><a href="works.html">Наши работы</a></li>
+        <li><a href="price.html">Цены</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="full-r">
+      <ul class="full-social">
+        <li>
+          <a href="javascript:void(0);">
+            <img src="img/icons/tw2.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);">
+            <img src="img/icons/fb2.png" alt="">
+          </a>
+        </li>
+      </ul>
+      <ul class="full-contacts">
+        <li>
+          <a href="tel:+74993981019">+7 (499) 398-10-19</a>
+        </li>
+        <li>
+          <a href="tel:+79295967274">+7 (929) 596-72-74</a>
+        </li>
+        <li>пн-вс с 9.00-21.00</li>
+        <li>
+          <a href="mailto:info@dianix.ru">info@dianix.ru</a>
+        </li>
+      </ul>
+      <a href="https://yandex.ru/maps/?um=constructor%3A4a12386743b91e57c8d84f1bfc667f4da419ea63b23dcc74f03b5a910af2687c&source=constructorLink" class="button small transparent" target="_blanc">Смотреть на карте</a>
+    </div>
+    <div class="full-bottom">
+      <p>&copy; 2019 «ДИАНИКС» - натяжные потолки в Зеленограде <br>ООО «РемСервис» ИНН 7735171566</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- =========================== modals =========================== -->
+<div class="modal-cont hidden" id="call-modal-cont">
+  <button class="modal-close">&#10006;</button>
+  <img src="img/logo-dark.png" class="modal-logo" alt="">
+  <h3 class="modal-head">Заказать обратный звонок</h3>
+  <p class="modal-subhead">Мы перезвоним вам в ближайшее время</p>
+  <form class="modal-form">
+    <input type="text" placeholder="Имя" required>
+    <input type="tel" placeholder="Телефон" required>
+    <textarea placeholder="Комментарий"></textarea>
+    <button class="button" type="submit">Заказать звонок</button>
+  </form>
+</div>
+
+<div class="modal-cont hidden" id="master-modal-cont">
+  <button class="modal-close">&#10006;</button>
+  <img src="img/logo-dark.png" class="modal-logo" alt="">
+  <h3 class="modal-head">Вызвать замерщика</h3>
+  <p class="modal-subhead">Мы перезвоним вам в ближайшее время</p>
+  <form class="modal-form">
+    <input type="text" placeholder="Имя" required>
+    <input type="tel" placeholder="Телефон" required>
+    <textarea placeholder="Комментарий"></textarea>
+    <button class="button" type="submit">Отправить</button>
+  </form>
+</div>
+
+
+<script src="libs/jquery_3.3.1/jquery.min.js"></script>
+
+<!-- скрипты только для этой страницы -->
+<script src="js/calculator.js"></script>
+<script src="libs/formstyler/jquery.formstyler.js"></script>
+<!-- /скрипты только для этой страницы -->
+
+<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
