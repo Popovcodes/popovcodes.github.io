@@ -2611,18 +2611,30 @@ sup {
   position: absolute;
   left: 5%;
   font-size: 22px;
+  line-height: 1;
   opacity: 0;
-  -webkit-transition: all 0s;
-  -o-transition: all 0s;
-  transition: all 0s;
+  -webkit-transition: opacity 0s, -webkit-transform 3s;
+  transition: opacity 0s, -webkit-transform 3s;
+  -o-transition: opacity 0s, transform 3s;
+  transition: opacity 0s, transform 3s;
+  transition: opacity 0s, transform 3s, -webkit-transform 3s;
+  cursor: pointer;
+}
+
+.full-close:hover {
+  -webkit-transform: rotate(1440deg) scale(1.4);
+      -ms-transform: rotate(1440deg) scale(1.4);
+          transform: rotate(1440deg) scale(1.4);
 }
 
 .fullscreen-menu.active .full-close {
   position: fixed;
   opacity: 1;
-  -webkit-transition: all 0s .5s;
-  -o-transition: all 0s .5s;
-  transition: all 0s .5s;
+  -webkit-transition: opacity 0s .5s, -webkit-transform 1s;
+  transition: opacity 0s .5s, -webkit-transform 1s;
+  -o-transition: opacity 0s .5s, transform 1s;
+  transition: opacity 0s .5s, transform 1s;
+  transition: opacity 0s .5s, transform 1s, -webkit-transform 1s;
 }
 
 .top-section {
