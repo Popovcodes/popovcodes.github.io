@@ -2695,10 +2695,13 @@ sup {
   height: 1px;
 }
 
-.grid .grid-i,
-.grid .card {
+.grid .grid-i {
   display: block;
   margin: 0 0 30px;
+}
+
+.grid .card {
+  margin-bottom: 30px;
 }
 
 .grid:after,
