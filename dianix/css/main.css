@@ -5516,6 +5516,11 @@ sup {
   .testim-i img {
     margin-right: 10px;
   }
+  .full-close {
+    -webkit-transform: none !important;
+        -ms-transform: none !important;
+            transform: none !important;
+  }
 }
 
 /*max 1299*/
