@@ -1,0 +1,2241 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"initial\ttext-transform"
+			],
+			[
+				"bor",
+				"border-color\tproperty"
+			],
+			[
+				"bgu",
+				"background-image"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"bor-r",
+				"border-radius"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"m",
+				"middle"
+			],
+			[
+				"c",
+				"check.png\tw:15 h:11"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"i",
+				"icons/"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"o",
+				"o-c\toutline cyan"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"p",
+				"paperclip.png\tw:29 h:26"
+			],
+			[
+				"bord-",
+				"border-radius"
+			],
+			[
+				"a",
+				"about2.jpg\tw:1920 h:1122"
+			],
+			[
+				"l",
+				"list-item"
+			],
+			[
+				"text",
+				"text-overflow\tproperty"
+			],
+			[
+				"s",
+				"sprite/"
+			],
+			[
+				"lh",
+				"line-height"
+			],
+			[
+				"b",
+				"border-box\tbox-sizing"
+			],
+			[
+				"box-",
+				"box-sizing\tproperty"
+			],
+			[
+				"bg-s",
+				"bgsz-a\tbackground-size: auto;"
+			],
+			[
+				"co",
+				"commonImgs/"
+			],
+			[
+				"pb",
+				"padding-bottom"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"list-st",
+				"list-style-position"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"le",
+				"letter-spacing"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/work/shs/app/index.html",
+			"settings":
+			{
+				"buffer_size": 11294,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_variables.scss",
+			"settings":
+			{
+				"buffer_size": 229,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_media.scss",
+			"settings":
+			{
+				"buffer_size": 1739,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_common_styles.scss",
+			"settings":
+			{
+				"buffer_size": 11326,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/work/shs/app/js/common.js",
+			"settings":
+			{
+				"buffer_size": 3267,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 252.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/work/shs/app",
+		"/D/work/shs/app/fonts",
+		"/D/work/shs/app/fonts/acrom",
+		"/D/work/shs/app/js",
+		"/D/work/shs/app/sass"
+	],
+	"file_history":
+	[
+		"/D/work/shs/app/sass/_additional.scss",
+		"/D/work/shs/app/sass/_variables.scss",
+		"/D/work/shs/app/sass/_fonts.scss",
+		"/D/work/JJ/app/sass/_common_styles.scss",
+		"/D/work/JJ/app/img/prom/prom_promocodes.js",
+		"/D/work/JJ/app/img/prom/prom_discount.js",
+		"/D/work/JJ/app/index.html",
+		"/D/work/JJ/app/kid-birth.html",
+		"/D/work/JJ/app/bingotimer.js",
+		"/D/work/JJ/app/js/promocodes.js",
+		"/D/work/JJ/app/js/common.js",
+		"/D/work/JJ/app/sass/_media.scss",
+		"/D/work/JJ/app/bingo/bingo_2.html",
+		"/D/work/JJ/app/bingoscript.js",
+		"/D/work/JJ/app/prices.html",
+		"/D/work/JJ/app/testdeletemr.html",
+		"/D/work/JJ/app/css/main.css",
+		"/D/work/JJ/app/img/geometry/bgel2.svg",
+		"/D/work/JJ/app/tarifs.html",
+		"/D/work/JJ/app/sertificates.html",
+		"/D/___DOWNLOADS/styles_b8dda350c4.min.css",
+		"/D/work/pizzaloft/app/sass/_media.scss",
+		"/D/work/pizzaloft/app/sass/_common_styles.scss",
+		"/D/work/JJ/app/faq.html",
+		"/D/work/JJ/app/adult-birth.html",
+		"/D/work/JJ/app/teambuilding.html",
+		"/D/work/JJ/app/holidays.html",
+		"/D/work/JJ/app/kid-holiday.html",
+		"/D/work/JJ/app/business-holiday.html",
+		"/D/work/JJ/app/adult-holiday.html",
+		"/D/work/JJ/app/actions.html",
+		"/D/work/JJ/app/action1.html",
+		"/D/work/JJ/app/action2.html",
+		"/D/work/JJ/app/jj_sokolniki.html",
+		"/D/work/JJ/app/jj_delovoy.html",
+		"/D/work/JJ/app/jj_avtozavodskaya.html",
+		"/D/work/JJ/app/vacancies.html",
+		"/D/work/JJ/app/photo.html",
+		"/D/work/JJ/app/sass/_variables.scss",
+		"/D/work/JJ/app/sass/_fonts.scss",
+		"/D/work/JJ/app/action.html",
+		"/D/work/JJ/app/business-teambuilding.html",
+		"/D/work/JJ/app/css/main.css.map",
+		"/D/work/JJ/app/single-action.html",
+		"/D/work/JJ/app/dr-vzros.html",
+		"/D/work/JJ/app/dr-reb.html",
+		"/D/work/JJ/app/js/index.js",
+		"/D/work/JJ/app/sass/main.scss",
+		"/D/work/JJ/_NEW/123/ФОНЫ АКЦИИ-20181115T100033Z-001/ФОНЫ АКЦИИ/АНОНСЫ.psd",
+		"/D/work/GitHub/popovcodes.github.io/jj-no-bg-parallax/css/main.css",
+		"/D/work/GitHub/popovcodes.github.io/jj-no-bg-parallax/js/index.js",
+		"/D/work/GitHub/popovcodes.github.io/jj-no-bg-parallax/index.html",
+		"/D/work/GitHub/popovcodes.github.io/jj-parallax-bg/css/main.css",
+		"/D/work/GitHub/popovcodes.github.io/jj-parallax-bg/js/index.js",
+		"/D/work/GitHub/popovcodes.github.io/jj-parallax-bg/index.html",
+		"/D/work/GitHub/popovcodes.github.io/jj-horizontal-only/index.html",
+		"/D/work/JJ/app/js/faq.js",
+		"/D/work/JJ/app/js/vacancies.js",
+		"/D/work/JJ/app/js/libs.min.js",
+		"/D/work/JJ/app/libs/detect/detect.min.js",
+		"/D/___DOWNLOADS/optimized_contents/js/common.js",
+		"/D/work/JJ/app/sass/_animations.scss",
+		"/D/work/JJ/app/sass/_additional.scss",
+		"/D/work/JJ/app/css/ie.css",
+		"/D/work/JJ/app/js/ymap-sokolniki.js",
+		"/D/work/JJ/app/js/ymap-avtozavodskaya.js",
+		"/D/work/JJ/app/js/ymap-delovoy.js",
+		"/D/work/JJ/app/js/photo.js",
+		"/D/work/JJ/app/libs/slick-1.6.0/slick.css",
+		"/D/work/JJ/gulpfile.js",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/BetterBookmarks.sublime-settings",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/Better Bookmarks/BetterBookmarks.sublime-settings",
+		"/D/work/JJ/app/libs/fancybox/jquery.fancybox.css",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/css/letter-spacing.sublime-snippet",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/User/snippets/css/transform-rotate.sublime-snippet",
+		"/D/___DOWNLOADS/KeepFocused.exe",
+		"/D/work/denchik/app/js/common.js",
+		"/D/work/denchik/app/sass/_media.scss",
+		"/D/work/denchik/app/index.html",
+		"/D/work/denchik/app/about.html",
+		"/D/work/denchik/app/prepair.html",
+		"/D/work/denchik/app/samsung.html",
+		"/D/work/denchik/app/warranty.html",
+		"/D/work/denchik/app/s8.html",
+		"/D/work/denchik/app/payment.html",
+		"/D/work/denchik/app/delivery.html",
+		"/D/work/denchik/gulpfile.js",
+		"/D/work/denchik/app/sass/_common_styles.scss",
+		"/D/work/denchik/app/css/main.css",
+		"/D/work/denchik/app/contacts.html",
+		"/D/work/denchik/app/sass/_variables.scss",
+		"/D/work/denchik/app/js/ymap.js",
+		"/C/Users/user1/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/GitHub.tmTheme",
+		"/C/Users/user1/AppData/Local/Temp/fz3temp-2/main.css",
+		"/D/work/denchik/app/sass/_animations.scss",
+		"/D/work/sonax/app/sass/_media.scss",
+		"/D/work/sonax/app/sass/_common_styles.scss",
+		"/D/work/sonax/app/js/common.js",
+		"/D/work/sonax/app/index.html",
+		"/D/work/sonax/app/contacts.html",
+		"/D/work/sonax/app/catalog.html",
+		"/D/work/sonax/app/cart.html",
+		"/D/work/sonax/app/blog.html",
+		"/D/work/sonax/app/article.html",
+		"/D/work/sonax/app/about.html",
+		"/D/work/sonax/app/trainings.html",
+		"/D/work/sonax/app/testimonials.html",
+		"/D/work/sonax/app/serviceItem.html",
+		"/D/work/sonax/app/productItem.html",
+		"/D/work/sonax/app/price.html",
+		"/D/work/sonax/app/portfolio.html",
+		"/D/work/sonax/app/js/about.js",
+		"/D/work/sonax/app/js/service.js",
+		"/D/work/sonax/app/libs/formstyler/jquery.formstyler.css",
+		"/D/work/sonax/app/sass/_fonts.scss",
+		"/D/work/sonax/app/js/ymap.js",
+		"/D/work/sonax/app/sass/_variables.scss",
+		"/D/work/sonax/app/sass/main.scss",
+		"/D/work/sonax/app/css/main.css",
+		"/D/work/sonax/app/css/main.css.map",
+		"/D/work/ico/app/js/common.js",
+		"/D/work/sonax/app/training.html",
+		"/D/work/sonax/app/libs/fancybox/jquery.fancybox.min.css",
+		"/D/work/sonax/app/service.html",
+		"/D/work/ico/app/sass/_common_styles.scss",
+		"/D/work/ico/app/js/team.js",
+		"/D/work/ico/app/career.html",
+		"/D/work/ico/app/team.html"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 376.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"strong",
+			".btn",
+			"cooki",
+			"-close",
+			"showD",
+			"prices-b",
+			"/*qwe",
+			"randC",
+			"mask",
+			"/*sert",
+			"placeh",
+			"line: 1p",
+			"patter",
+			"number",
+			"кирилл",
+			"place",
+			"red",
+			"f-2",
+			"fancy",
+			"popup",
+			"fancy",
+			"ng2.png",
+			"holiday-section",
+			".tariffs-section",
+			"holidays-section",
+			".tariffs-section",
+			".event-section",
+			"vid-cont",
+			"red-btn",
+			"geometry/nr2.png\" alt",
+			"/ng3.png",
+			"/nr5.png",
+			"/r2-sm\"",
+			"/nr4.png",
+			"/nr1.png",
+			"/ng1.png",
+			"/ng2.png",
+			"/nr3.png",
+			"<img src=\"img/common/header-logo.png\" alt=\"\">",
+			"action.html",
+			"-face",
+			".action-img",
+			"86vh",
+			".holiday-section/*h*/",
+			"/*h*/",
+			"<button class=\"transp-btn\">Покажите варианты!</button>",
+			"виде",
+			"vid-cont",
+			"<button class=\"lime-button\">Подробнее >>></button>",
+			"geometry-new",
+			"/common-new/",
+			"/geometry-new/",
+			"line: 2",
+			"line: 1",
+			"light-btn",
+			"{\n",
+			"birth-head",
+			".holidays-section",
+			"holiday-section",
+			"holidays-section",
+			".holidays-section {",
+			".holiday-section {",
+			"#f-53",
+			"holidays-s",
+			".actions-section {",
+			"birth-heading",
+			".holiday-section",
+			"767",
+			"section",
+			".btn-cont",
+			"birth-h",
+			"sloped",
+			"<button class=\"lime-button\">",
+			";\n",
+			"<span class=\"hol-name\">",
+			"page-heading",
+			".character-wrap",
+			"vid-btn",
+			"figure",
+			"line: 1px sol",
+			"ребе",
+			"divided",
+			"attach",
+			"figure",
+			"background-attachment: fixed;",
+			"bg-",
+			"subscr-section",
+			"icons",
+			"768",
+			"figure",
+			".gr-wrap",
+			"gr-close",
+			"gr-wrap",
+			"attach",
+			"bezi",
+			"#red-l",
+			".figure",
+			"geometry/g2.png",
+			"g2.png",
+			"green.png",
+			"red.png",
+			"r2.png",
+			"red.png",
+			"figure",
+			"115%",
+			"data-co",
+			"quip-bg-ligh",
+			"-->",
+			"n-top: -",
+			"n-bottom: -",
+			"bg-img",
+			": flex",
+			"divided-text",
+			"display: flex",
+			"margin-top: -",
+			"margin-bottom: -",
+			"bg-img",
+			"<img",
+			".svg\"",
+			".svg",
+			"bezier",
+			".header ",
+			"cubic-bezier",
+			".inertion",
+			"cubic",
+			".header ",
+			".header",
+			"scroll-i"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ng1.png",
+			"geometry/red-sm.png\" alt",
+			"/g2-sm.png",
+			"/r2-sm.png",
+			"/r2-sm.png\"",
+			"/r1.png",
+			"/r2-sm",
+			"/g1.png",
+			"/g2-sm.png",
+			"/red-sm.png",
+			"<img src=\"img/common/header-logo-tm.png\" alt=\"\">",
+			"action1.html",
+			".holidays-section/*h*/",
+			"<span class=\"transp-btn\">Покажите варианты!</span>",
+			"<span class=\"lime-button\">Подробнее >>></span>",
+			"/common/",
+			"/geometry/",
+			".holiday-section/*h*/",
+			".holiday-section",
+			"<button class=\"lime-btn\">",
+			"<span>",
+			"birth-heading",
+			"geometry/g2-sm.png",
+			".png\"",
+			"",
+			"href=\"",
+			"",
+			"<span>руб</span>",
+			"<span class=\"smaller\">руб</span>",
+			"divided-text",
+			"<li><a href=\"prepair.html\">Другие услуги</a></li>",
+			"<li><a href=\"prepair.html\">Ремонт телевизоров</a></li>",
+			"<li><a href=\"prepair.html\">Ремонт компьютеров</a></li>",
+			"<li><a href=\"prepair.html\">Ремонт ноутбуков</a></li>",
+			"<li><a href=\"prepair.html\">Ремонт планшетов</a></li>",
+			"<li><a href=\"prepair.html\">Ремонт телефонов</a></li>",
+			"specify",
+			"Samsung",
+			"Brand Name",
+			"Sony",
+			"samsung",
+			".children(",
+			"Brand Name",
+			"Samsung",
+			"autoplay: true,",
+			"<li><a href=\"index.html#offer\">Спецпредложение</a></li>",
+			"<li><a href=\"about.html#sertificates\">Лицензии и благодарственные письма</a></li>",
+			"<li><a href=\"about.html#vacancies\">Вакансии</a></li>",
+			"<li><a href=\"about.html#team\">О команде</a></li>",
+			"<li><a href=\"about.html#about\">О компании</a></li>",
+			"<a href=\"javascript:void(0);\">Наши услуги</a>",
+			"<a href=\"services.html\">Наши услуги</a>",
+			"<li><a h<a href=\"index.html#offer\">Спецпредложение</a></li>",
+			"<li><a href=\"index.html#offer\">Спецпредложение</a></li>",
+			"<li><a href=\"index.html#services\">Наши услуги</a></li>",
+			"<li><a href=\"index.html#advantages\">Наши преимущества</a></li>",
+			"<li><a href=\"index.html#services-section\">Наши услуги</a></li>",
+			"<a href=\"index.html#videosection\">Спецпредложение</a>",
+			"<span class=\"more\">подробнее</span>",
+			"accordion-cont",
+			"<div>",
+			"<a href=\"trainings.html\">Курсы</a>",
+			"<img src=\"img/services/training.jpg\" alt=\"\">",
+			"",
+			"<img src=\"img/slider/i2.jpg\" alt=\"\">",
+			"<a href=\"javascript:void(0);\">Подтип товара</a>",
+			"<a href=\"productItem.html\">Подтип товара</a>",
+			"<a href=\"productItem.html\">",
+			"<a href=\"newsItem.html\" class=\"item-wrap-link\">",
+			"<div class=\"submit-wrap wow slideInRight\">",
+			"<div class=\"submit-wrap wow SlideInRight\">",
+			".jpg\" alt=\"\" class=\"wow fadeInUp\">",
+			"<div class=\"submit-wrap wow fadeInRight\">",
+			"type arbitration",
+			"type maintenance",
+			"type revisions",
+			"type crime",
+			"type revisions",
+			"type crime",
+			"type arbitration",
+			"type maintenance",
+			".png\" alt=\"\">",
+			"<img src=\"img/persons/person2.png\" alt=\"\">",
+			"<div class=\"person-desc\">",
+			"<img src=\"img/persons/person1.png\" alt=\"\">",
+			"<div class=\"form-wrap\">",
+			"autoplay: true,",
+			"",
+			"<p class=\"person-position\">Lorem ipsum dolor sit amet</p>",
+			"<p class=\"person-position\">Lorem ipsum dolor sit amet, consectetur.</p>",
+			"<a href=\"tel:+79876543210\">+7 (987) 654 - 32 - 10</a>",
+			"@mail.com</a>",
+			"<p class=\"person-position\">Lorem ipsu</p>",
+			"<p class=\"person-position\">Генеральный директор</p>",
+			"<p class=\"person-position\">Lorem ipsum dolor sit amet, consectetur.</p>",
+			"<p class=\"person-position\">HR - директор</p>",
+			"",
+			"Василий",
+			"Пасилий",
+			"<a href=\"javascript:void(0);\"",
+			"main-text-section",
+			"<div class=\"submit-wrap wow fadeInRight\" data-wow-delay=\".8s\">",
+			"<div class=\"form-wrap wow fadeInUp\">",
+			"rel=\"Scroll2id\"",
+			"Персональное",
+			"item-wrap-link",
+			"<!--/.slider-->",
+			"<!--/slider-cont-->",
+			"<div class=\"slider\"",
+			"<div>",
+			"<div class=\"head-cont\">",
+			"<div class=\"type arbitration wow fadeInLeft\"><span>арбитражные споры<span></div>",
+			"<div class=\"type maintenance wow fadeInLeft\"><span>правовое сопровождение (абонентское обслуживание)</span></div>",
+			"<div class=\"type revisions wow fadeInRight\"><span>проверки государственных органов<span></div>",
+			"<div class=\"type crime wow fadeInRight\"><span>защита по уголовным делам</span></div>",
+			"<div class=\"type revisions wow slideInRight\"><span>проверки государственных органов</span></div>",
+			"<div class=\"type crime wow slideInRight\"><span>защита по уголовным делам</span></div>",
+			"<div class=\"type arbitration wow slideInLeft\"><span>арбитражные споры</span></div>",
+			"<div class=\"type maintenance wow slideInLeft\"><span>правовое сопровождение (абонентское обслуживание)</span></div>",
+			"<div class=\"head-cont wow slideInLeft\">",
+			"logo-big",
+			"support ",
+			"types-logo-section",
+			"ow fadeInRight\"",
+			" 1px solid #aeaeae;",
+			" #aeaeae;",
+			" 2px solid red",
+			"<span class=\"more\">подробнее</span>"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/work/shs/app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11294,
+						"regions":
+						{
+							"better_bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+								],
+								"scope": "string"
+							},
+							"col_151285FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										286,
+										293
+									]
+								],
+								"scope": "col_151285FF"
+							},
+							"col_FF0000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2177,
+										2180
+									],
+									[
+										2505,
+										2508
+									],
+									[
+										2843,
+										2846
+									],
+									[
+										8169,
+										8172
+									]
+								],
+								"scope": "col_FF0000FF"
+							}
+						},
+						"selection":
+						[
+							[
+								8306,
+								8306
+							],
+							[
+								8347,
+								8347
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										8306,
+										8307
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										8287,
+										8288
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2611.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_variables.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 229,
+						"regions":
+						{
+							"better_bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+								],
+								"scope": "string"
+							},
+							"col_0000FFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										200,
+										204
+									]
+								],
+								"scope": "col_0000FFFF"
+							},
+							"col_3963DCFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										206,
+										213
+									]
+								],
+								"scope": "col_3963DCFF"
+							},
+							"col_CF2D2DFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										221,
+										228
+									]
+								],
+								"scope": "col_CF2D2DFF"
+							},
+							"col_FF0000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										216,
+										219
+									]
+								],
+								"scope": "col_FF0000FF"
+							}
+						},
+						"selection":
+						[
+							[
+								213,
+								207
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"class_or_id": "brands-section",
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_media.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1739,
+						"regions":
+						{
+							"better_bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+								],
+								"scope": "string"
+							}
+						},
+						"selection":
+						[
+							[
+								948,
+								948
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1165,
+										1166
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										807,
+										808
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1175,
+										1176
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										853,
+										854
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"class_or_id": "brands-section",
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "_common_styles.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11326,
+						"regions":
+						{
+							"better_bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+								],
+								"scope": "string"
+							},
+							"col_00000001":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1808,
+										1822
+									]
+								],
+								"scope": "col_00000001"
+							},
+							"col_0000007F":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										505,
+										520
+									]
+								],
+								"scope": "col_0000007F"
+							},
+							"col_000000B2":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1927,
+										1941
+									]
+								],
+								"scope": "col_000000B2"
+							},
+							"col_0000FFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1559,
+										1563
+									],
+									[
+										4790,
+										4794
+									],
+									[
+										4895,
+										4899
+									],
+									[
+										5388,
+										5392
+									]
+								],
+								"scope": "col_0000FFFF"
+							},
+							"col_010101FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										201,
+										205
+									]
+								],
+								"scope": "col_010101FF"
+							},
+							"col_25304BFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										3002,
+										3009
+									]
+								],
+								"scope": "col_25304BFF"
+							},
+							"col_2750C3FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2392,
+										2399
+									]
+								],
+								"scope": "col_2750C3FF"
+							},
+							"col_3963DCCC":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										8050,
+										8069
+									]
+								],
+								"scope": "col_3963DCCC"
+							},
+							"col_4975F3FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2383,
+										2390
+									],
+									[
+										2405,
+										2412
+									]
+								],
+								"scope": "col_4975F3FF"
+							},
+							"col_888888FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										883,
+										887
+									],
+									[
+										922,
+										926
+									],
+									[
+										965,
+										969
+									],
+									[
+										999,
+										1003
+									]
+								],
+								"scope": "col_888888FF"
+							},
+							"col_BE464601":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7768,
+										7787
+									]
+								],
+								"scope": "col_BE464601"
+							},
+							"col_BE4646CC":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										8661,
+										8680
+									],
+									[
+										8740,
+										8759
+									]
+								],
+								"scope": "col_BE4646CC"
+							},
+							"col_C72525FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2590,
+										2597
+									]
+								],
+								"scope": "col_C72525FF"
+							},
+							"col_DDDDDDFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										9510,
+										9514
+									],
+									[
+										9545,
+										9549
+									]
+								],
+								"scope": "col_DDDDDDFF"
+							},
+							"col_F3F6FBFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7373,
+										7380
+									],
+									[
+										9816,
+										9823
+									],
+									[
+										10947,
+										10954
+									]
+								],
+								"scope": "col_F3F6FBFF"
+							},
+							"col_FF0000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1390,
+										1393
+									],
+									[
+										4100,
+										4103
+									],
+									[
+										4701,
+										4704
+									],
+									[
+										5642,
+										5645
+									],
+									[
+										10013,
+										10016
+									]
+								],
+								"scope": "col_FF0000FF"
+							},
+							"col_FF3C3CFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2581,
+										2588
+									],
+									[
+										2603,
+										2610
+									]
+								],
+								"scope": "col_FF3C3CFF"
+							},
+							"col_FFFFFF19":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										3232,
+										3252
+									],
+									[
+										5883,
+										5903
+									],
+									[
+										6598,
+										6618
+									]
+								],
+								"scope": "col_FFFFFF19"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2180,
+										2184
+									],
+									[
+										3020,
+										3024
+									],
+									[
+										3558,
+										3562
+									],
+									[
+										5100,
+										5104
+									],
+									[
+										5476,
+										5480
+									],
+									[
+										7649,
+										7653
+									],
+									[
+										8595,
+										8599
+									],
+									[
+										9747,
+										9751
+									],
+									[
+										10230,
+										10234
+									],
+									[
+										10557,
+										10561
+									],
+									[
+										10583,
+										10587
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							}
+						},
+						"selection":
+						[
+							[
+								7290,
+								7290
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										10240,
+										10241
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										10166,
+										10167
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										7289,
+										7290
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										7215,
+										7216
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"class_or_id": "brands-section",
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6351.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/work/shs/app/js/common.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3267,
+						"regions":
+						{
+							"better_bookmarks":
+							{
+								"flags": 144,
+								"icon": "Packages/Theme - Default/common/bookmark.png",
+								"regions":
+								[
+								],
+								"scope": "string"
+							}
+						},
+						"selection":
+						[
+							[
+								2974,
+								2974
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1726,
+										1727
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1713,
+										1714
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2974,
+										2975
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2968,
+										2969
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1591.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 44.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.645752895753,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 579.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "shs.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\work\\dianix\\dianix.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 172.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
