@@ -2741,7 +2741,6 @@ input[type="checkbox"]:checked + label {
 }
 
 /*max 1299*/
-/*max 1023*/
 @media only screen and (max-width: 991px) {
   .header {
     display: none;
@@ -3132,9 +3131,6 @@ input[type="checkbox"]:checked + label {
 }
 
 /*==========  Mobile First Method  ==========*/
-/*min 480*/
-/*min 768*/
-/*min 1024*/
 @media only screen and (min-width: 1300px) {
   .blur {
     -webkit-filter: blur(5px);
@@ -3143,6 +3139,5 @@ input[type="checkbox"]:checked + label {
 }
 
 /*min 1300*/
-/* 768 to 1200*/
 
 /*# sourceMappingURL=main.css.map */
