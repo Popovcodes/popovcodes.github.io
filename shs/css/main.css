@@ -44,31 +44,10 @@ table {
 }
 
 @font-face {
-  font-family: "AcromLight";
-  src: url("../fonts/acrom/Acrom-Light.woff") format("woff");
-  font-style: normal;
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "AcromThin";
-  src: url("../fonts/acrom/Acrom-Thin.woff") format("woff");
-  font-style: normal;
-  font-weight: 100;
-}
-
-@font-face {
   font-family: "AcromMedium";
   src: url("../fonts/acrom/Acrom-Medium.woff") format("woff");
   font-style: normal;
   font-weight: 600;
-}
-
-@font-face {
-  font-family: "AcromBold";
-  src: url("../fonts/acrom/Acrom-Bold.woff") format("woff");
-  font-style: normal;
-  font-weight: 700;
 }
 
 @font-face {
@@ -86,6 +65,14 @@ html {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
   min-width: 320px;
   overflow-x: hidden;
   color: #000;
@@ -93,7 +80,6 @@ body {
   font-size: 15px;
   line-height: 1.67;
   padding-top: 116px;
-  padding-bottom: 1000px;
 }
 
 .pattern {
@@ -102,6 +88,9 @@ body {
 }
 
 .common-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
@@ -202,7 +191,6 @@ textarea:focus {
 }
 
 section {
-  outline: 1px solid red;
   position: relative;
   padding: 55px 0 55px;
 }
@@ -216,7 +204,6 @@ strong {
   width: 96%;
   max-width: 1170px;
   margin: 0 auto;
-  outline: 1px solid blue;
 }
 
 .btn {
@@ -226,7 +213,7 @@ strong {
   width: 196px;
   height: 50px;
   line-height: 50px;
-  font-family: "AcromBold", sans-serif;
+  font-family: "AcromExtrabold", sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   text-align: center;
@@ -360,7 +347,6 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  outline: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo > img {
@@ -406,7 +392,7 @@ ol {
   display: inline-block;
   position: relative;
   padding: 6px 0;
-  font-family: "AcromBold", sans-serif;
+  font-family: "AcromExtrabold", sans-serif;
 }
 
 .h-nav a:after {
@@ -546,7 +532,6 @@ a.h-phone span {
 
 .top-slider-wr {
   position: relative;
-  outline: 2px solid red;
   padding: 150px 0 40px;
   margin-bottom: -100px;
 }
@@ -631,7 +616,6 @@ a.h-phone span {
   display: inline-block;
   width: 20px;
   height: 16px;
-  outline: 1px solid rgba(255, 255, 255, 0.1);
   margin-left: 10px;
   background-image: url(../img/icons/arrblue.png);
   background-repeat: no-repeat;
@@ -694,7 +678,6 @@ a.h-phone span {
   position: absolute;
   display: block;
   background-color: #F3F6FB;
-  outline: 1px solid red;
   z-index: -1;
 }
 
@@ -907,7 +890,6 @@ a.h-phone span {
 }
 
 .defect-ex-wr {
-  outline: 1px solid red;
   text-align: right;
   margin-bottom: 35px;
   position: relative;
@@ -938,7 +920,6 @@ a.h-phone span {
 .defect-text {
   position: absolute;
   top: 57%;
-  outline: 1px solid red;
   left: 0;
   width: 567px;
   max-width: 100%;
@@ -1014,7 +995,7 @@ a.h-phone span {
 }
 
 .advantages-section {
-  padding-top: 110px;
+  padding-top: 60px;
   font-family: "AcromExtrabold", sans-serif;
   font-size: 14px;
   text-align: center;
@@ -1131,7 +1112,6 @@ a.h-phone span {
 }
 
 .stages-wr > div:before {
-  outline: 1px solid rgba(255, 0, 0, 0.1);
   position: absolute;
   top: -10px;
   left: 50%;
@@ -1203,7 +1183,6 @@ a.h-phone span {
           flex: 1 1 100%;
   max-width: 24.5%;
   margin-bottom: 25px;
-  outline: 1px solid rgba(0, 255, 255, 0.4);
 }
 
 .portfolio-section .e1 {
@@ -1470,7 +1449,7 @@ a.h-phone span {
 }
 
 .crumbs {
-  padding: 60px 50px 0 0;
+  padding: 50px 50px 0 0;
   margin-bottom: 0;
 }
 
@@ -1530,7 +1509,6 @@ a.h-phone span {
 
 .table-wr {
   max-height: 100%;
-  outline: 1px solid red;
   overflow-y: auto;
   padding-right: 20px;
 }
@@ -1606,7 +1584,6 @@ tr:nth-child(even) {
 }
 
 .spares-block > div {
-  outline: 1px solid #eee;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
@@ -1708,7 +1685,6 @@ tr:nth-child(even) {
 .about-block {
   position: relative;
   text-align: left;
-  outline: 1px solid blue;
 }
 
 .about-block img {
@@ -1797,7 +1773,6 @@ tr:nth-child(even) {
   font-size: 16px;
   margin-bottom: 43px;
   padding-left: 92px;
-  outline: 1px solid rgba(0, 255, 255, 0.5);
 }
 
 .contact-i:before {
@@ -1876,7 +1851,6 @@ tr:nth-child(even) {
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   max-width: 49%;
-  outline: 1px solid red;
 }
 
 .contacts-block p {
@@ -1885,8 +1859,7 @@ tr:nth-child(even) {
 
 .map-half-wr {
   position: relative;
-  background-color: pink;
-  height: 200px;
+  height: 560px;
   max-height: 100vh;
 }
 
@@ -1895,7 +1868,7 @@ tr:nth-child(even) {
   top: 0;
   bottom: 0;
   left: 0;
-  height: 200px;
+  height: 560px;
   max-height: 100vh;
   width: 50vw;
   background-color: #ccc;
@@ -1934,6 +1907,205 @@ tr:nth-child(even) {
 .r-tabs-accordion-title {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.service-block {
+  padding: 0 25px;
+  border: 6px solid #E4EAF1;
+  margin-bottom: 24px;
+}
+
+.service-block.mt {
+  margin-top: 45px;
+}
+
+.service-block ul {
+  padding-left: 15px;
+  list-style-type: disc;
+}
+
+.service-title {
+  position: relative;
+  font-family: "AcromExtrabold", sans-serif;
+  font-size: 18px;
+  text-transform: initial;
+  text-align: left;
+  padding: 25px 30px 23px 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.service-title:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 13px;
+  height: 8px;
+  background-image: url(../img/icons/shevron.jpg);
+  background-repeat: no-repeat;
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.service-title.active:after {
+  -webkit-transform: translateY(-50%) rotateX(180deg);
+          transform: translateY(-50%) rotateX(180deg);
+}
+
+.service-content {
+  display: none;
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+
+.service-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service-grid:after,
+.service-grid:before {
+  content: "";
+  display: block;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  height: 1px;
+}
+
+.service-grid:after,
+.service-grid:before,
+.service-subitem {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  max-width: 23.7%;
+}
+
+.service-subitem {
+  display: block;
+  font-family: "AcromExtrabold", sans-serif;
+  line-height: 1.4;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.service-subitem img {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.service-subitem p,
+.service-subitem h3,
+.service-subitem h4,
+.service-subitem h5,
+.service-subitem h6 {
+  max-width: 194px;
+  margin: 0 auto;
+}
+
+.service-subitem:hover {
+  color: #3963dc;
+  text-decoration: underline;
+}
+
+.service-subitem:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.img-wr {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.article-content {
+  padding-top: 20px;
+}
+
+.article-content img {
+  float: right;
+  margin: 0 0 24px 24px;
+  max-width: calc(50% - 12px);
+}
+
+.article-content img.even {
+  float: left;
+  margin: 0 24px 24px 0;
+}
+
+.article-content ul {
+  list-style-type: disc;
+  padding-left: 15px;
+}
+
+.article-content:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+  height: 1px;
+}
+
+.section-404 {
+  padding: 0;
+  font-size: 15px;
+}
+
+.section-404 > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 20px;
+}
+
+.section-404 h5 {
+  font-family: "AcromExtrabold", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.section-404 img {
+  margin-bottom: 30px;
+}
+
+.section-404 .btn {
+  margin-top: 20px;
+  text-transform: initial;
 }
 
 /*mobile navigation*/
@@ -2199,7 +2371,6 @@ tr:nth-child(even) {
 
 .modal-cont .input-wr {
   width: 100%;
-  outline: 1px solid rgba(0, 255, 255, 0.1);
 }
 
 .input-wr {
@@ -2365,13 +2536,11 @@ input[type="checkbox"]:checked + label {
     width: 30px;
     height: 30px;
     left: 10px;
-    outline: 1px solid red;
   }
   .basic-links-section .e2 {
     width: 24px;
     height: 24px;
     right: 10px;
-    outline: 1px solid red;
   }
   .brands-section .e1 {
     width: 40px;
@@ -2523,7 +2692,7 @@ input[type="checkbox"]:checked + label {
     padding-bottom: 55px;
   }
   .crumbs {
-    padding-top: 16px;
+    padding-top: 20px;
   }
   .brands-wr {
     margin-bottom: 30px;
@@ -2705,6 +2874,18 @@ input[type="checkbox"]:checked + label {
   .team-i {
     max-width: 48%;
   }
+  .service-grid:after,
+  .service-grid:before,
+  .service-subitem {
+    max-width: 32%;
+  }
+  .article-content img {
+    max-width: 45%;
+    margin: 0 0 10px 10px;
+  }
+  .article-content img.even {
+    margin: 0 10px 10px 0;
+  }
 }
 
 /*max 991*/
@@ -2866,6 +3047,17 @@ input[type="checkbox"]:checked + label {
   .mail-i {
     padding-top: 15px;
   }
+  .service-grid:after,
+  .service-grid:before {
+    display: none;
+  }
+  .service-subitem {
+    max-width: 48%;
+  }
+  .service-subitem {
+    font-size: 13px;
+    line-height: 1.2;
+  }
 }
 
 /*max 767*/
@@ -2896,11 +3088,9 @@ input[type="checkbox"]:checked + label {
         -ms-flex-pack: center;
             justify-content: center;
     max-width: 100%;
-    outline: 1px solid red;
   }
   .footer .h-nav ul li {
     display: list-item;
-    outline: 1px solid lime;
     min-width: 100%;
     max-width: 100%;
     width: 100%;
@@ -2925,6 +3115,9 @@ input[type="checkbox"]:checked + label {
     min-width: 100%;
     text-align: center;
     margin-bottom: 20px;
+  }
+  .service-subitem {
+    max-width: 100%;
   }
 }
 

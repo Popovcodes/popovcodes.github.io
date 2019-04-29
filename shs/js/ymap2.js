@@ -8,8 +8,8 @@ ymaps.ready(init);
 
     function init(){     
         myMap = new ymaps.Map("map", {
-            center: [55.915791, 37.510506],
-            zoom: 10
+            center: [55.932111, 37.546150],
+            zoom: 9
         });
 
         myMap.controls

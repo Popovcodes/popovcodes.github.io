@@ -22,13 +22,13 @@ $(window).scroll(function(){
 // modal form and mobile navigation call
 $('.modal-call').click(function(){
   $('#overlay, #modal-cont').fadeIn();
-  $('#common-wrapper, #header').addClass('blur');
+  $('#common-wrapper, #header, #footer').addClass('blur');
   $('#btn-menu').removeClass('active').addClass('z-reduced');
 });
 $('#btn-menu').click(function(){
   $('#mob-cont').toggleClass('active');
   $('#overlay').fadeToggle();
-  $('#common-wrapper, #header').toggleClass('blur');
+  $('#common-wrapper, #header, #footer').toggleClass('blur');
   $(this).toggleClass('active');
 });
 $('.mob-modal-call').click(function(){
@@ -38,7 +38,7 @@ $('.mob-modal-call').click(function(){
 });
 $('#overlay, #modal-close, #mob-cont a').click(function(){
   $('#overlay, #modal-cont').fadeOut();
-  $('#common-wrapper, #header').toggleClass('blur');
+  $('#common-wrapper, #header, #footer').toggleClass('blur');
   $('#mob-cont, #btn-menu').removeClass('active');
   $('#btn-menu').removeClass('z-reduced');
 });
@@ -160,6 +160,27 @@ var parallax = function(){
 parallax();
 $(window).scroll(parallax).resize(parallax);
 
+
+//услуга, разворачивание
+$('.service-title').click(function(){
+  $(this).parents('.service-block').find('.service-content').slideToggle();
+  $(this).toggleClass('active');
+});
+// 1й открыт сразу
+$('.service-block').eq(0).addClass('mt');
+$('.service-block').eq(0).find('.service-title').addClass('active');
+$('.service-block').eq(0).find('.service-content').slideDown();
+
+//статья, четное изображение слева
+var n = 1;
+$('.article-content img').each(function(){
+  if(n%2 == 0) {
+    $(this).addClass('even');
+  };
+  n++;
+});
+
+
 //нестандартная сетка
 //https://masonry.desandro.com/
 //https://masonry.desandro.com/methods.html
@@ -175,9 +196,11 @@ if($('div').is('#broken-grid')) {
 };
 
 // fancybox http://fancyapps.com/fancybox/3/
-$('.fancy').fancybox({
-  loop: true
-});//tpl
+if($('.fancy').length > 0) {
+  $('.fancy').fancybox({
+    loop: true
+  });//tpl
+};
 
 //горизонтальный скрол стилизация
 // nicescroll  https://github.com/inuyaksa/jquery.nicescroll
@@ -209,6 +232,7 @@ if($('#tabs-container').length>0){
   });
 };
 
+
 //decoration of current page link in navigation //tpl
 var getCurrentLink = function(){
   $('nav a').each(function(){
@@ -220,5 +244,18 @@ var getCurrentLink = function(){
   });
 };
 getCurrentLink();
+
+// страница 404 - высота
+if($('.section-404').length > 0){
+  var height404 = function(){
+    var windowH = window.innerHeight;
+    var headerH = $('.header').outerHeight();
+    var footerH = $('.footer').outerHeight();
+    $('.section-404>.wrapper').css('min-height', windowH - headerH - footerH +'px');
+  };
+  height404();
+  $(window).resize(height404);
+};
+
 
 });
