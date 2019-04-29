@@ -366,7 +366,7 @@ ol {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: 14px;
   bottom: 0;
   left: 0;
   width: 1px;
