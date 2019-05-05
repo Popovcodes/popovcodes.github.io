@@ -1,0 +1,49 @@
+
+/* ==================== fonts ======================= */
+
+@font-face {
+	font-family: "PFDinTextCondPro-Regular";
+	src: url("../fonts/PFDin/PFDinTextCondPro-Regular.woff") format("woff"),
+	url("../fonts/PFDin/PFDinTextCondPro-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "PFDinTextCondPro-Medium";
+	src: url("../fonts/PFDin/PFDinTextCondPro-Medium.woff") format("woff"),
+	url("../fonts/PFDin/PFDinTextCondPro-Medium.ttf") format("truetype");;
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "CodePro-Bold";
+	src: url("../fonts/CodePro/Code-Pro-Bold.woff") format("woff"),
+	url("../fonts/CodePro/Code-Pro-Bold.ttf") format("truetype");;
+	font-style: normal;
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "CodePro-Reg";
+	src: url("../fonts/CodePro/Code-Pro.woff") format("woff"),
+	url("../fonts/CodePro/Code-Pro.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "MullerExtraBold";
+	src:url("../fonts/Muller/MullerExtraBold.woff") format("woff"),
+	url("../fonts/Muller/MullerExtraBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "MullerMedium";
+	src:url("../fonts/Muller/MullerMedium.woff") format("woff");
+	font-style: normal;
+	font-weight: 600;
+}

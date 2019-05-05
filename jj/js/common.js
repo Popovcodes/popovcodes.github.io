@@ -60,8 +60,8 @@ $('input[type="text"], textarea').on('keyup', function() {
     this.value = this.value.replace(/[^а-яА-ЯёЁ0-9 -]/ig,'');
 });
 
-// masked phone input https://github.com/digitalBush/jquery.maskedinput
-$('input[type="tel"]').mask("+7(999)999-99-99");
+// // masked phone input https://github.com/digitalBush/jquery.maskedinput
+// $('input[type="tel"]').mask("+7(999)999-99-99");
 
 var flies = function(){
   if(window.innerWidth > 1199 ) {
@@ -69,6 +69,7 @@ var flies = function(){
     var pageIsScrolled = $(window).scrollTop();
     var windowHeight = $(window).height();
     var scrolledToWindowBottom = pageIsScrolled + windowHeight;
+    
     // flying objects
     $('.f-1').each(function(){
       var thisPosition = $(this).offset().top;
@@ -150,7 +151,12 @@ var flies = function(){
       };
     });
 
-
+    if($('img').is('#abonement-img')) {
+      var abonementImgVisible = scrolledToWindowBottom - $('#abonement-img').offset().top;
+      if (abonementImgVisible > 300) {
+        $('#abonement-img').addClass('non-rotated');
+      };
+    };
 
     if($('div').is('#red-line')) {
       var redLineVisible = scrolledToWindowBottom - $('#red-line').offset().top;
@@ -184,5 +190,112 @@ var flies = function(){
 };
 flies();
 $(window).scroll(flies).resize(flies);
+
+/**/
+
+// //slick.js slider   http://kenwheeler.github.io/slick/
+//   // modal slider
+//   $('#slider-lg').slick({
+//     infinite: true,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: false,
+//     autoplaySpeed: 3000,
+//     arrows: false,
+//     dots: false,
+//     asNavFor: '#slider-sm'
+//   });
+
+//    $('#slider-sm').slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: false,
+//     autoplaySpeed: 3000,
+//     arrows: false,
+//     dots: false,
+//     asNavFor: '#slider-lg',
+//     focusOnSelect: true
+//   });
+
+  // modal slider prev/next buttons
+  $('#s-prev').click(function(){
+    $('#slider-lg').slick('slickPrev');
+    $('#slider-sm').slick('slickPrev');
+  });
+    
+  $('#s-next').click(function(){
+    $('#slider-lg').slick('slickNext');
+    $('#slider-sm').slick('slickNext');
+  });
+
+$('#slider-sm, #slider-lg').css('opacity', '1');
+/**/
+
+//
+$('#img-upl').change(function(){
+  $('#upl-btn').html('Файл<br>выбран!');
+});
+
+//не проверяем на кирилицу
+$('.sert-form input, .sert-form textarea').off('keyup');
+
+//
+$('.sum-input, .quant-input').on('keyup', function(){
+  this.value = this.value.replace(/[^0-9]/ig,'');
+});
+
+//
+$('.sum-input').change(function(){
+  var thisVal = $(this).val();
+  if (thisVal < 300) {
+    $(this).val(300);
+  } else if (thisVal > 50000) {
+    $(this).val(50000);
+  }
+});
+
+//
+$('.quant-input').change(function(){
+  var thisVal = $(this).val();
+
+  if(thisVal > 0) {
+    var lastDigit = thisVal % 10;
+    if(lastDigit == 1) {
+      $('#quant-text').text('штука');
+    } else if(lastDigit == 0 || lastDigit > 4) {
+      $('#quant-text').text('штук');
+    } else {
+      $('#quant-text').text('штуки');
+    };
+  };
+  if (thisVal < 0) {
+    $(this).val(1);
+    $('#quant-text').text('штука');
+  };
+});
+
+//
+// $('#date').mask("99.99.9999");
+
+//
+// $('#date').datepicker({
+//   minDate: new Date()
+// });
+//
+$("#sum-input").change(function(){
+  if($(this).val() != ""){
+    $('input[name="sert-sum"]').prop('checked', false);
+  };
+});
+
+$('.radio-wr input[type="radio"]').change(function(){
+  $("#sum-input").val('');
+});
+//
+//$('.slider-lg input[type="radio"]').eq(1).attr('checked', true);
+
+
+
 
 });

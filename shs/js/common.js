@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
 //
-if($('.top-slider-section').length>0) {
-  $('.header').addClass('white');
-};
+// if($('.top-slider-section').length>0) {
+//   $('.header').addClass('white');
+// };
 
 //фиксированный хедер
 $(window).scroll(function(){

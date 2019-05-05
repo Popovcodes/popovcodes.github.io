@@ -1,0 +1,569 @@
+@media only screen and (max-width: 1919px) {
+    .sloped-bg {
+        left: -50px;
+    }
+    .action-img {
+        right: -200px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    
+    .birth-heading,
+    .holiday-heading,
+    .action-heading,
+    .actions-heading {
+        font-size: 60px;
+        filter: brightness(115%);
+    }
+    .birth-heading {
+        height: 220px;
+    }
+    .holiday-heading-wrap {
+        margin-left: 250px;
+    }
+    .holiday-heading span {
+        font-size: 46px;
+        min-width: 0;
+        left: -104px;
+        top: -77px;
+    }
+    .character-img {
+        top: -125px;
+        right: -470px;
+    }
+    .circle {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .subhead-text {
+        top: -135px;
+        left: 370px;
+    }
+    .action-text:before {
+        right: -90px;
+    }
+    .blue-text,
+    .red-text {
+        font-size: 26px;
+    }
+    .red-text {
+        top: 45px;
+        right: 385px;
+    }
+    .holidays-section/*h*/ .wrapper:after {
+        top: 6px;
+        right: 180px;
+    }
+    .actions-heading {
+        left: 50px;
+        height: auto;
+        padding-bottom: 130px;
+
+    }
+    .act-link-title {
+        font-size: 42px;
+    }
+    .action-heading.non-padded {
+        margin: 0 0 36px;
+    }
+
+}
+
+@media only screen and (max-width: 1365px) {
+    .events-cont {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .actions-cont {
+        justify-content: space-around;
+    }
+    .actions-link {
+        height: auto;
+        min-height: 300px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 1199px) {
+    .birth-heading {
+        left: 0;
+    }
+    .character-img {
+        max-height: 560px;
+        top: 0;
+        right: -20px;
+    }
+    .circles-block {
+        max-width: 700px;
+    }
+    .tariffs-section,
+    .holidays-section/*h*/,
+    .actions-section {
+        //padding-top: 60px;
+    }
+    .subhead-text {
+        position: static;
+        max-width: 856px;
+        margin: 0 auto;
+        p {
+            max-width: 600px;
+        }
+    }
+    .btn-cont {
+        filter: brightness(115%);
+    }
+    .tariffs-section .btn-cont {
+        padding-top: 58px;
+        padding-bottom: 58px;
+    }
+    .action-heading {
+        margin-bottom: 180px;
+    }
+    .action-text:before {
+        top: 30px;
+        right: -150px;
+        transform: rotate(152deg);
+    }
+    .action-text:after {
+        transform: rotate(-20deg);
+        
+    }
+    .red-text {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 400px;
+    }
+    .actions-heading {
+        left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        background-position: 50% 50%;
+    }
+    .action-img {
+        right: -14px;
+        max-height: 450px;
+
+    }
+
+    .action-section .text-content {
+        margin-bottom: 450px;
+    }
+
+
+    
+
+}
+
+@media only screen and (max-width: 991px) {
+    
+.birth-heading,
+.action-heading,
+.actions-heading {
+    font-size: 44px;
+}
+.birth-heading {
+    height: 190px;
+    padding-left: 40px;
+}
+.holiday-heading-wrap {
+    margin-left: 110px;
+    margin-bottom: 130px;
+}
+
+.center-block,
+.slogan-sm {
+    font-size: 28px;
+}
+.vid-img {
+    width: 100px;
+    height: 62px;
+}
+.vid-text {
+    font-size: 18px;
+}
+.green-grad-btn, .red-btn, .light-btn {
+    width: 300px;
+}
+.event-section .btn-cont .red-btn {
+    font-size: 26px;
+}
+.buttons-block {
+    justify-content: space-around;
+}
+.tariffs-block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tariff-item {
+  margin-bottom: 60px;
+}
+
+.holidays-section/*h*/ .action-heading {
+    padding-left: 50px;
+}
+.action-title {
+    font-size: 30px;
+}
+.action-content {
+    margin-bottom: 40px;
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+    .holiday-heading {
+        font-size: 44px;
+    }
+    .holiday-heading span {
+        font-size: 36px;
+        padding-right: 40px;
+    }
+    .actions-link {
+        width: 345px;
+    }
+    .act-link-title {
+        font-size: 32px;
+    }
+    .content-text {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .buttons-block {
+        flex-wrap: wrap;
+    }
+    .circle-content:before {
+        height: 0;
+    }
+    .holidays-section/*h*/ .text-content h2,
+    .text-content h2 {
+        font-size: 26px;
+    }
+    
+    .holidays-section/*h*/ .wrapper:after {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .red-text {
+        text-align: center;
+        left: 20px;
+        p {
+            padding-right: 8px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 690px) {
+
+    .birth-heading-wrap {
+        text-align: center;
+        margin-bottom: -50px;
+    }
+    .birth-heading {
+        display: inline-block;
+    }
+    .character-wrap,
+    .character-img {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+    }
+    .character-wrap {
+        margin-bottom: -100px;
+    }
+    .character-img {
+        display: block;
+        margin: 0 auto;
+    }
+    .sloped-bg,
+    .divided,
+    .center-block,
+    .buttons-block {
+        z-index: 1;
+    }
+    .divided {
+        flex-wrap: wrap;
+    }
+    .slogan-sm {
+        flex-basis: 100%;
+        text-align: left;
+        margin-bottom: 12px;
+        font-size: 24px;
+    }
+    .divided > div:last-child {
+        font-size: 20px;
+    }
+.center-block {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+}
+    .center-block ul {
+        margin-bottom: 16px;
+    }
+    .green-grad-btn,
+    .red-btn,
+    .light-btn {
+        height: 52px;
+        line-height: 48px;
+    }
+    .holiday-section {
+        //padding-top: 120px;
+    }
+    .holiday-heading-wrap {
+        margin-bottom: -36px;
+    }
+    .action-heading {
+        margin-bottom: 0;
+    }
+    .action-text {
+        font-size: 24px;
+        margin-bottom: 140px;
+    }
+    .action-text:before {
+        filter: brightness(115%);
+        right: -250px;
+    }
+    .action-text:after {
+        left: -54px;
+    }
+
+    .blue-text {
+        padding-left: 0px;
+    }
+    .actions-heading {
+        padding-top: 90px;
+        padding-bottom: 110px;
+        margin-bottom: -50px;
+        background-size: contain;
+    }
+    .action-btns-cont {
+        flex-wrap: wrap;
+        justify-content: center;
+        .red-btn-sm, .light-btn {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .birth-heading,
+    .holiday-heading,
+    .action-heading {
+        font-size: 32px;
+    }
+
+    .actions-heading {
+        font-size: 40px;
+    }
+
+    .birth-heading {
+        height: 130px;
+        padding-top: 36px;
+    }
+    .holiday-heading-wrap {
+        margin-left: 30px;
+    }
+    .holiday-heading span {
+        font-size: 27px;
+        left: -26px;
+    }
+    .center-block {
+        font-size: 22px;
+    }
+    .center-block ul {
+        flex-basis: 100%;
+    }
+    .green-grad-btn, .red-btn, .light-btn {
+        font-size: 22px;
+        max-width: 90%;
+    }
+    .buttons-half p {
+        font-size: 17px;
+    }
+    .circles-block {
+        margin-bottom: 20px;
+    }
+    .links-wrap .red-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .holidays-section/*h*/ .btn-cont,
+    .actions-section .btn-cont,
+    .btn-cont {
+        background-size: cover;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .action-text:before {
+        //top: 120px;
+    }
+    .action-text {
+        margin-bottom: 60px;
+    }
+    .actions-heading {
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+    
+    .action-section .text-content {
+        margin-bottom: 10px;
+    }
+    .action-title {
+        font-size: 26px;
+    } 
+    .action-img {
+        position: relative;
+        right: 0;
+        width: 100%;
+        max-height: none;
+    }
+    .event-section {
+        padding-bottom: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 479px) {
+    .action-text:before {
+        top: 60px;
+    }
+    .action-text:after {
+        left: -254px;
+    }
+    .action-text {
+        font-size: 22px;
+    }
+    .transp-btn {
+        font-size: 22px;
+        width: 270px;
+    }
+    .events-link-title > span {
+        font-size: 36px;
+    }
+    .events-link-title > img {
+        max-width: 270px;
+    }
+    .holidays-section/*h*/ .action-heading {
+        padding-left: 20px;
+    }
+    .blue-text,
+    .red-text {
+        font-size: 22px;
+
+    }
+    .events-link > img {
+        height: auto;
+        min-height: 500px;
+    }
+    .transp-btn {
+        bottom: 50px;
+    }
+
+    
+    .act-link-content p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 479px) and (max-width: 767px) {
+    .circle:nth-child(3n+3) {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+    .actions-link {
+        width: 350px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    #scarlet-line,
+    #green-line {
+        display: block;
+        position: absolute;
+        width: 120vw;
+        height: 3px;
+        left: -10%;
+        z-index: 2;
+    }
+
+    #scarlet-line {
+        top: 100%;
+        background-color: #f00;
+        transform: rotate(10deg);
+
+    }
+
+    #green-line {
+        top: 102%;
+        background-color: #8BFF00;
+        transform: rotate(22deg);
+
+    }
+
+    .holidays-section/*h*/ {
+        #scarlet-line {
+            top: 92%;
+        }
+        #green-line {
+            top: 87%;
+        }
+    }
+    .tariffs-section {
+      .character-img {
+        top: 15px;
+      }
+    }
+}
+
+
+@media only screen and (min-width: 1700px) {
+    .holiday-section {
+      
+      &.blue-bg {
+        .character-img {
+          top: -45px;
+          right: -570px;
+        }
+      }
+      &.purple-bg {
+        .character-img {
+          top: -205px;
+          right: -540px;
+        }
+      }
+      &.orange-bg {
+        .character-img {
+          top: -55px;
+          right: -480px;
+        }
+      }
+    }
+}
+
+
+
+
