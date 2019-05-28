@@ -6,7 +6,8 @@ $('#btn-menu').click(function(){
   $(this).toggleClass('active');
 });
 
-$('#overlay, .modal-close,  .modal-cont, #mob-cont a').click(function(){
+$('#overlay, .modal-close, .modal-cont, #mob-cont a').click(function(e){
+  e.stopPropagation();
   $('#overlay, .modal-cont:not(.popup-desc)').fadeOut();
   $('.popup-desc').removeClass('shown');
   $('#mob-cont, #btn-menu').removeClass('active');
@@ -16,7 +17,6 @@ $('.popup-in').click(function(e){
   e.stopPropagation();
 });
 
-
 //вызов попапа описания кухни
 $('.item').click(function(){
   $(this).next('.popup-desc').addClass('shown');
@@ -25,9 +25,37 @@ $('.item').click(function(){
 
 //попап Описание работы
 $('.work-popup-btn').click(function(){
+  $(this).parents('.popup-desc').css('visibility', 'hidden');
   $(this).parents('.popup-desc').next('.work-popup').fadeIn();
-  $(this).parents('.popup-desc').removeClass('shown');
+  $('#overlay').off();
+  $('#overlay').click(function(){
+    $('.work-popup').fadeOut();
+    $('.popup-desc.shown').css('visibility', 'visible');
+    $(this).addClass('listener');
+    $('#overlay.listener').click(function(){
+      $('#overlay, .modal-cont:not(.popup-desc)').fadeOut();
+      $('.popup-desc').removeClass('shown');
+      $('#mob-cont, #btn-menu').removeClass('active');
+      $(this).removeClass('listener');
+    });
+  });
 });
+
+
+$('.work-popup-close').off();
+$('.work-popup-close').click(function(e){
+  $(this).parents('.work-popup').fadeOut();
+  $('.popup-desc.shown').css('visibility', 'visible');
+  $('#overlay').addClass('listener');
+  $('#overlay.listener').click(function(){
+    $('#overlay, .modal-cont:not(.popup-desc)').fadeOut();
+    $('.popup-desc').removeClass('shown');
+    $('#mob-cont, #btn-menu').removeClass('active');
+    $(this).removeClass('listener');
+  });
+});
+
+
 
 //попап Заказать рассчет
 $('.order-calculate').click(function(e){
@@ -213,8 +241,12 @@ $('.similar-arr.next').click(function(){
 
 // табы https://github.com/jellekralt/Responsive-Tabs
 $('#tabs-container').responsiveTabs({
-  startCollapsed: 'tabs',
+  startCollapsed: 'accordion',
   rotate: false
+});
+$('.r-tabs-accordion-title').click(function(){
+    var scrollFit = $(this).offset().top;
+    $('html, body').animate({'scrollTop': scrollFit}, 1000);
 });
 
 // разделитель групп разрядов
@@ -253,9 +285,18 @@ var scrollAnim = function(){
 scrollAnim();
 $(window).scroll(scrollAnim).resize(scrollAnim);
 
-
 // https://github.com/digitalBush/jquery.maskedinput
 $('input[type="tel"]').mask("+7 (999) 999-99-99");
+
+
+//пагинация (фильтры) внутренней
+// catalog pagination https://github.com/luis-almeida/jPages
+if($('#pagination-container').length > 0){
+  $("#pagination").jPages({
+    containerID : "pagination-container",
+    perPage: 9,
+  });
+};
 
 
 });
