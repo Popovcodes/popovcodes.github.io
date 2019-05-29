@@ -46,9 +46,9 @@
         <!-- href="index.html#..." только во внутренней странице -->
         <li><a href="index.html#top-section">Главная</a></li>
         <li><a href="index.html#about-section">О нас</a></li>
-        <li><a href="index.html#tabs-container" data-tab="1">Коллекция Классика</a></li>
-        <li><a href="index.html#tabs-container" data-tab="2">Коллекция Модерн</a></li>
-        <li><a href="index.html#tabs-container" data-tab="3">Коллекция Кантри</a></li>
+        <li><a href="index.html#fignya1" data-tab="1">Коллекция Классика</a></li>
+        <li><a href="index.html#fignya2" data-tab="2">Коллекция Модерн</a></li>
+        <li><a href="index.html#fignya3" data-tab="3">Коллекция Кантри</a></li>
         <li><a href="index.html#map-section">Контакты</a></li>
       </ul>
     </nav>
@@ -67,208 +67,97 @@
         <span>Выбор кухни</span>
       </li>
     </ul>
-    <div>
-      <form action="" class="filter-switchers">
-        <input type="radio" name="filter" id="filter-1" checked>
-        <label for="filter-1">Угловые механизмы</label>
-        <input type="radio" name="filter" id="filter-2">
-        <label for="filter-2">Выдвижные системы</label>
-        <input type="radio" name="filter" id="filter-3">
-        <label for="filter-3">Системы сортировки</label>
-        <input type="radio" name="filter" id="filter-4">
-        <label for="filter-4">Посудосушители и рейлинги</label>
-      </form>
-    </div><!-- /.filter-btns-wr -->
-    <div class="tab-inner-wr" id="pagination-container">
-      <div class="item">
-        <img src="img/samples/p1.jpg" alt="">
-        <div class="desc">
-          <div class="name">Кухня “Классика”</div>
-          <div class="price">от <span>55000</span> руб</div>
-          <button class="btn order-calculate">Заказать расчет</button>
-        </div>
-      </div><!-- /.item -->
-      <!-- =========================== попап описание кухни (следует сразу за своим a.item)=========================== -->
-      <div class="modal-cont popup-desc">
-        <div class="popup-in popup-desc-in">
-          <button class="modal-close">&#10006;</button>
-          <div class="popup-desc-main">
-            <a href="img/samples/i-lg.jpg" class="fancy i-lg">
-              <img src="img/samples/i-lg.jpg" alt="">
-            </a>
-            <div class="popup-desc-title">
-              <h3>Кухня Топмайсер 1</h3>
-              <div>
-                <span class="footnote">Стоимость базовой комплектации </span>
-                <div class="price">от <span>67000</span> руб</div>
+    <div id="tabs-container" class="tabs-container">
+      <ul class="filter-switchers">
+        <li>
+          <a href="#tab-1">Угловые механизмы</a>
+        </li>
+        <li>
+          <a href="#tab-2">Выдвижные системы</a>
+        </li>
+        <li>
+          <a href="#tab-3">Выдвижные системы</a>
+        </li>
+        <li>
+          <a href="#tab-4">Посудосушители и рейлинги</a>
+        </li>
+      </ul>
+      <div class="tabs-wr">
+
+        <div class="catalog-tab" id="tab-1">
+          <div class="tab-inner-wr">
+
+            <div class="item">
+              <img src="img/samples/p2.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Классика”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
               </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
-            <div class="popup-desc-row">
-              <button class="btn arrowed order-recall">Оставить заявку</button>
-              <button class="btn white arrowed work-popup-btn">Узнать больше</button>
-            </div>
-            <div class="similar-block">
-              <div class="similar-title">
-                <h3>Вместе с этим покупают</h3>
-                <div class="similar-arrows">
-                  <button class="similar-arr prev" id="similar-prev"></button>
-                  <button class="similar-arr next" id="similar-next"></button>
-                </div>
+            </div><!-- /.item -->
+
+            <div class="item">
+              <img src="img/samples/p2.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Классика”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
               </div>
-              <div class="similar-slider-wr">
-                <div class="similar-slider">
-                  <a href="javascript:void(0);" class="similar-slide"><img src="img/samples/i-md.jpg" alt=""></a>
-                  <a href="javascript:void(0);" class="similar-slide"><img src="img/samples/i-md.jpg" alt=""></a>
-                  <a href="javascript:void(0);" class="similar-slide"><img src="img/samples/i-md.jpg" alt=""></a>
-                  <a href="javascript:void(0);" class="similar-slide"><img src="img/samples/i-md.jpg" alt=""></a>
-                </div><!-- /.similar-slider -->
-              </div><!-- /.similar-slider-wr -->
-            </div><!-- /.similar-block -->
-          </div><!-- /.popup-desc-main -->
-          <div class="popup-desc-aside">
-            <h4>Возможное исполнение в следующих декорах</h4>
-            <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
-              <img src="img/samples/i-sm.jpg" alt="">
-            </a>
-            <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
-              <img src="img/samples/i-sm.jpg" alt="">
-            </a>
-            <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
-              <img src="img/samples/i-sm.jpg" alt="">
-            </a>
-            <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
-              <img src="img/samples/i-sm.jpg" alt="">
-            </a>
-            <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
-              <img src="img/samples/i-sm.jpg" alt="">
-            </a>
-            <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
-              <img src="img/samples/i-sm.jpg" alt="">
-            </a>
-            <a href="img/samples/i-sm.jpg" class="fancy aside-sample" data-fancybox="gallery-1" data-caption="текст описания">
-              <img src="img/samples/i-sm.jpg" alt="">
-            </a>
-          </div><!-- /.popup-desc-aside -->
-        </div><!-- /.popup-desc-in -->
-      </div><!-- /.popup-desc -->
-      <!-- =========================== /попап описание кухни =========================== -->
-      <!-- =========================== popup Описание работы =========================== -->
-      <div class="modal-cont work-popup hidden">
-        <div class="popup-in">
-          <button class="modal-close work-popup-close">&#10006;</button>
-          <a href="img/samples/img-lg.jpg" class="fancy">
-            <img src="img/samples/img-lg.jpg" alt="">
-          </a>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione esse incidunt perspiciatis, tempore quod tempora minima beatae molestias optio maxime voluptatum illo blanditiis? Aliquid, magnam.</li>
-          </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-          <div class="price-wr">
-            <span>Стоимость базовой комплектации:</span>
-            <span class="price">от <span>66953</span> руб</span>
-          </div>
-        </div><!-- /.popup-in -->
-      </div>
-      <!-- =========================== /popup Описание работы =========================== -->
+            </div><!-- /.item -->
 
-      <div class="item">
-        <img src="img/samples/p2.jpg" alt="">
-        <div class="desc">
-          <div class="name">Кухня “Классика”</div>
-          <div class="price">от <span>55000</span> руб</div>
-          <button class="btn order-calculate">Заказать расчет</button>
-        </div>
-      </div><!-- /.item -->
+          </div><!-- /.tab-inner-wr -->
+        </div><!-- /.catalog-tab -->
 
-      <div class="item">
-        <img src="img/samples/p2.jpg" alt="">
-        <div class="desc">
-          <div class="name">Кухня “Классика”</div>
-          <div class="price">от <span>55000</span> руб</div>
-          <button class="btn order-calculate">Заказать расчет</button>
-        </div>
-      </div><!-- /.item -->
+        <div class="catalog-tab" id="tab-2">
+          <div class="tab-inner-wr">
 
-      <div class="item">
-        <img src="img/samples/p2.jpg" alt="">
-        <div class="desc">
-          <div class="name">Кухня “Классика”</div>
-          <div class="price">от <span>55000</span> руб</div>
-          <button class="btn order-calculate">Заказать расчет</button>
-        </div>
-      </div><!-- /.item -->
+            <div class="item">
+              <img src="img/samples/p1.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Модерн”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
 
-      <div class="item">
-        <img src="img/samples/p2.jpg" alt="">
-        <div class="desc">
-          <div class="name">Кухня “Классика”</div>
-          <div class="price">от <span>55000</span> руб</div>
-          <button class="btn order-calculate">Заказать расчет</button>
-        </div>
-      </div><!-- /.item -->
+          </div><!-- /.tab-inner-wr -->
+        </div><!-- /.catalog-tab -->
 
-      <div class="item">
-        <img src="img/samples/p2.jpg" alt="">
-        <div class="desc">
-          <div class="name">Кухня “Классика”</div>
-          <div class="price">от <span>55000</span> руб</div>
-          <button class="btn order-calculate">Заказать расчет</button>
-        </div>
-      </div><!-- /.item -->
+        <div class="catalog-tab" id="tab-3">
+          <div class="tab-inner-wr">
 
-      <div class="item">
-        <img src="img/samples/p2.jpg" alt="">
-        <div class="desc">
-          <div class="name">Кухня “Классика”</div>
-          <div class="price">от <span>55000</span> руб</div>
-          <button class="btn order-calculate">Заказать расчет</button>
-        </div>
-      </div><!-- /.item -->
+            <div class="item">
+              <img src="img/samples/p3.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Кантри”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
 
-      <div class="item">
-        <img src="img/samples/p2.jpg" alt="">
-        <div class="desc">
-          <div class="name">Кухня “Классика”</div>
-          <div class="price">от <span>55000</span> руб</div>
-          <button class="btn order-calculate">Заказать расчет</button>
-        </div>
-      </div><!-- /.item -->
+          </div><!-- /.tab-inner-wr -->
+        </div><!-- /.catalog-tab -->
 
-      <div class="item">
-        <img src="img/samples/p2.jpg" alt="">
-        <div class="desc">
-          <div class="name">Кухня “Классика”</div>
-          <div class="price">от <span>55000</span> руб</div>
-          <button class="btn order-calculate">Заказать расчет</button>
-        </div>
-      </div><!-- /.item -->
+        <div class="catalog-tab" id="tab-4">
+          <div class="tab-inner-wr">
 
-      <div class="item">
-        <img src="img/samples/p2.jpg" alt="">
-        <div class="desc">
-          <div class="name">Кухня “Классика”</div>
-          <div class="price">от <span>55000</span> руб</div>
-          <button class="btn order-calculate">Заказать расчет</button>
-        </div>
-      </div><!-- /.item -->
+            <div class="item">
+              <img src="img/samples/p2.jpg" alt="">
+              <div class="desc">
+                <div class="name">Кухня “Lorem Ipsum”</div>
+                <div class="price">от <span>55000</span> руб</div>
+                <button class="btn order-calculate">Заказать расчет</button>
+              </div>
+            </div><!-- /.item -->
 
-      <div class="item">
-        <img src="img/samples/p2.jpg" alt="">
-        <div class="desc">
-          <div class="name">Кухня “Классика”</div>
-          <div class="price">от <span>55000</span> руб</div>
-          <button class="btn order-calculate">Заказать расчет</button>
-        </div>
-      </div><!-- /.item -->
+          </div><!-- /.tab-inner-wr -->
+        </div><!-- /.catalog-tab -->
 
-      
+      </div><!-- /.tabs-wr -->
+
+    </div><!-- /.tabs-container -->
 
 
-    </div><!-- /.tab-inner-wr #pagination-container-->
-    <div id="pagination"></div>
 
   </div><!-- /.wrapper -->
 </section><!-- /.catalog-section -->
@@ -334,7 +223,7 @@
       <li><a href="index.html#top-section">Главная</a></li>
       <li><a href="index.html#about-section">О нас</a></li>
       <li><a href="index.html#tabs-wr" data-tab="1">Коллекция Классика</a></li>
-      <li><a href="index.html#tabs-wr" data-tab="2">Коллекция Модерн</a></li>
+      <li><a href="index.html#fignya2" data-tab="2">Коллекция Модерн</a></li>
       <li><a href="index.html#tabs-wr" data-tab="3">Коллекция Кантри</a></li>
       <li><a href="index.html#map-section">Контакты</a></li>
     </ul>
@@ -429,7 +318,7 @@
 <!-- libs.min.js includes: jQuery, fancybox.js, slick.js, responsive-tabs.js, maskedinput.js -->
 <script src="js/libs.min.js"></script>
 
-<script src="libs/pagination/jPages.js"></script>
+<!-- <script src="libs/pagination/jPages.js"></script> -->
 
 <script src="js/common.js"></script>
 </body>

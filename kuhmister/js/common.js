@@ -291,12 +291,12 @@ $('input[type="tel"]').mask("+7 (999) 999-99-99");
 
 //пагинация (фильтры) внутренней
 // catalog pagination https://github.com/luis-almeida/jPages
-if($('#pagination-container').length > 0){
-  $("#pagination").jPages({
-    containerID : "pagination-container",
-    perPage: 9,
-  });
-};
+// if($('#pagination-container').length > 0){
+//   $("#pagination").jPages({
+//     containerID : "pagination-container",
+//     perPage: 9,
+//   });
+// };
 
 
 });

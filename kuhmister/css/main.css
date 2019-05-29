@@ -1625,43 +1625,77 @@ h4 {
   z-index: 2;
 }
 
-div .filter-switchers label {
+.filter-switchers .r-tabs-tab {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   height: 54px;
   line-height: 54px;
   border-radius: 27px;
-  padding: 0 5px !important;
+  padding: 0;
   margin: 0 !important;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+  overflow: hidden;
+}
+
+.filter-switchers .r-tabs-tab a {
+  display: block;
+  height: 100%;
+  padding: 0 20px;
   -webkit-transition: all 2s;
   -o-transition: all 2s;
   transition: all 2s;
 }
 
-.filter-switchers label:hover,
-.filter-switchers input[type="radio"]:checked + label {
+.filter-switchers .r-tabs-tab:hover a,
+.filter-switchers .r-tabs-state-active a {
   background-color: #902914;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
 }
 
-.filter-switchers label:before, .filter-switchers label:after {
-  display: none !important;
+.inner-section .r-tabs-accordion-title {
+  width: 500px;
+  max-width: 96%;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 22px;
+  margin: 0 auto;
+  font-family: FuturaPTLight, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid #902914;
+  overflow: hidden;
+}
+
+.inner-section .r-tabs-accordion-title a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.r-tabs-accordion-title.r-tabs-state-active {
+  background-color: #902914;
 }
 
 /*кнопки пагинации*/
-#pagination-container {
+.pagination-container {
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  min-width: 100%;
 }
 
-#pagination {
+.pagination {
   margin-top: 60px;
 }
 
-#pagination a {
+.pagination a {
   display: inline-block;
   font-family: FuturaPTLight, sans-serif;
   font-size: 19px;
@@ -1676,7 +1710,7 @@ div .filter-switchers label {
   vertical-align: middle;
 }
 
-#pagination a:hover,
+.pagination a:hover,
 .jp-current {
   background-color: #902914;
 }
@@ -2862,30 +2896,6 @@ section ol,
   .inner-section:after {
     right: -170px;
   }
-  .filter-switchers {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  div .filter-switchers label {
-    min-width: 100%;
-    height: 44px;
-    line-height: 42px;
-    font-size: 14px;
-    border: 1px solid #902914;
-    border-radius: 0;
-  }
-  div .filter-switchers label:first-of-type {
-    border-radius: 22px 22px 0px 0px;
-  }
-  div .filter-switchers label:last-of-type {
-    border-radius: 0px 0px  22px 22px;
-  }
 }
 
 /*max 1299*/
@@ -2970,6 +2980,16 @@ section ol,
   }
   .inner-section {
     padding: 50px 0;
+  }
+  .filter-switchers {
+    font-size: 14px;
+  }
+  .filter-switchers .r-tabs-tab {
+    height: 40px;
+    line-height: 40px;
+  }
+  .inner-section .catalog-tab {
+    padding-top: 30px;
   }
 }
 
